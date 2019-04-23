@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "debug": "node --nolazy --inspect-brk=9229 ./node_modules/.bin/vuepress dev src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "algoliasearch": "^3.32.1",
+    "clipboard": "^2.0.4",
+    "docsearch.js": "^2.6.2",
+    "expose-loader": "^0.7.5",
+    "js-cookie": "^2.1.4",
+    "lodash": "^4.17.11",
+    "lunr": "^2.3.6",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "1.0.0-alpha.47"
+  },
+  "devDependencies": {
+    "webpack-dev-middleware": "^3.6.0"
+  }
+}
