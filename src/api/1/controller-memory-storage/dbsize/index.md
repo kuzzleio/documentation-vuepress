@@ -5,7 +5,7 @@ title: dbsize
 
 # dbsize
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the number of keys in the application database.
 
@@ -19,7 +19,7 @@ Returns the number of keys in the application database.
 
 ```http
 URL: http://kuzzle:7512/ms/_dbsize
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols

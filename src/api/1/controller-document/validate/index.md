@@ -5,9 +5,9 @@ title: validate
 
 # validate
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Validates data against existing validation rules. 
+Validates data against existing validation rules.
 
 Documents are always valid if no validation rules are defined on the provided index and collection.
 
@@ -21,7 +21,7 @@ This request does not store the document.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_validate
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -31,9 +31,7 @@ Body:
 }
 ```
 
-
 ### Other protocols
-
 
 ```js
 {
@@ -51,8 +49,8 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -66,8 +64,8 @@ Document content to validate.
 
 Returns the document validation status, with the following properties:
 
-* `errorMessages`: the exhaustive list of violated validation rules. Present only if `valid` is false
-* `valid`: a boolean telling whether the provided pass all validation rules
+- `errorMessages`: the exhaustive list of violated validation rules. Present only if `valid` is false
+- `valid`: a boolean telling whether the provided pass all validation rules
 
 ```js
 {
@@ -78,7 +76,7 @@ Returns the document validation status, with the following properties:
   "controller": "document",
   "action": "validate",
   "result": {
-    "valid": true 
-  }  
+    "valid": true
+  }
 }
 ```

@@ -5,7 +5,7 @@ title: rename
 
 # rename
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Renames a key.
 
@@ -21,7 +21,7 @@ If the new key name is already used, then it is overwritten.
 
 ```http
 URL: http://kuzzle:7512/ms/_rename/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -44,18 +44,17 @@ Body:
 }
 ```
 
-
 ---
 
 ## Argument
 
-* `_id`: key to rename
+- `_id`: key to rename
 
 ---
 
 ## Body properties
 
-* `newkey`: the new key name
+- `newkey`: the new key name
 
 ---
 

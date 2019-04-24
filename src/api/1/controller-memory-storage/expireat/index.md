@@ -5,7 +5,7 @@ title: expireat
 
 # expireat
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets an expiration timestamp on a key. After the timestamp has been reached, the key will automatically be deleted.
 
@@ -21,7 +21,7 @@ The `timestamp` parameter accepts an [Epoch time](https://en.wikipedia.org/wiki/
 
 ```http
 URL: http://kuzzle:7512/ms/_expireat/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,13 +48,13 @@ Body:
 
 ## Arguments
 
-* `_id`: key to update
+- `_id`: key to update
 
 ---
 
 ## Body properties
 
-* `timestamp`: timestamp of when the key expires, in Epoch format (integer)
+- `timestamp`: timestamp of when the key expires, in Epoch format (integer)
 
 ---
 

@@ -5,7 +5,7 @@ title: hexists
 
 # hexists
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks if a field exists in a hash.
 
@@ -37,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
-* `field`: field name to check
+- `_id`: hash key identifier
+- `field`: field name to check
 
 ---
 

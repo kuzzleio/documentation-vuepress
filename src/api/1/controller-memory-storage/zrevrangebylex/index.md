@@ -5,7 +5,7 @@ title: zrevrangebylex
 
 # zrevrangebylex
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Identical to [zrangebylex](/api/1/controller-memory-storage/zrangebylex) except that the sorted set is traversed in descending order.
 

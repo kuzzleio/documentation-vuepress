@@ -5,7 +5,7 @@ title: sinter
 
 # sinter
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the intersection of the provided sets of unique values.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Argument
 
-* `keys`: list of set identifiers to intersect
+- `keys`: list of set identifiers to intersect
 
 ---
 

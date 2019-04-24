@@ -5,7 +5,7 @@ title: decr
 
 # decr
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Decrements the number stored at `key` by 1. If the key does not exist, it is set to 0 before performing the operation.
 
@@ -19,7 +19,7 @@ Decrements the number stored at `key` by 1. If the key does not exist, it is set
 
 ```http
 URL: http://kuzzle:7512/ms/_decr/<_id>
-Method: POST  
+Method: POST
 ```
 
 ### Other protocols
@@ -36,7 +36,7 @@ Method: POST
 
 ## Arguments
 
-* `_id`: key to decrement
+- `_id`: key to decrement
 
 ---
 

@@ -5,7 +5,7 @@ title: incr
 
 # incr
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Increments the number stored at `key` by 1. If the key does not exist, it is set to 0 before performing the operation.
 
@@ -36,7 +36,7 @@ Method: POST
 
 ## Arguments
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 

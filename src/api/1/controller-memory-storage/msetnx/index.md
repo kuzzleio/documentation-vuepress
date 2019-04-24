@@ -5,7 +5,7 @@ title: msetnx
 
 # msetnx
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets the provided keys to their respective values, only if they do not exist. If a key exists, then the whole operation is aborted and no key is set.
 
@@ -19,7 +19,7 @@ Sets the provided keys to their respective values, only if they do not exist. If
 
 ```http
 URL: http://kuzzle:7512/ms/_msetnx
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -53,9 +53,9 @@ Body:
 
 ## Body properties
 
-* `entries`: an array of objects. Each object describes a new key-value pair to set, using the following properties:
-  * `key`: key identifier
-  * `value`: new value
+- `entries`: an array of objects. Each object describes a new key-value pair to set, using the following properties:
+  - `key`: key identifier
+  - `value`: new value
 
 ---
 

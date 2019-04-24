@@ -5,7 +5,7 @@ title: getStrategies
 
 # getStrategies
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets the exhaustive list of registered authentication strategies.
 

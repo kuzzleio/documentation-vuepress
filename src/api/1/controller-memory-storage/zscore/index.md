@@ -5,7 +5,7 @@ title: zscore
 
 # zscore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the score of an element in a sorted set.
 
@@ -37,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `member`: member value to examine
+- `_id`: sorted set identifier
+- `member`: member value to examine
 
 ---
 

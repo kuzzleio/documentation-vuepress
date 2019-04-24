@@ -5,7 +5,7 @@ title: decrby
 
 # decrby
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Decrements the number stored at `key` by a provided integer value. If the key does not exist, it is set to 0 before performing the operation.
 
@@ -19,8 +19,8 @@ Decrements the number stored at `key` by a provided integer value. If the key do
 
 ```http
 URL: http://kuzzle:7512/ms/_decrby/<_id>
-Method: POST  
-Body:  
+Method: POST
+Body:
 ```
 
 ```js
@@ -46,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `_id`: key to decrement
+- `_id`: key to decrement
 
 ---
 
 ## Body properties
 
-* `value`: the decrement value
+- `value`: the decrement value
 
 ---
 

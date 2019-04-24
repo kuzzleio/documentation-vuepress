@@ -5,7 +5,7 @@ title: adminExists
 
 # adminExists
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks that an administrator account exists.
 
@@ -37,8 +37,8 @@ Returns an `exists` boolean telling whether an administrator account exists.
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "index": null,
   "collection": null,
   "action": "adminExists",

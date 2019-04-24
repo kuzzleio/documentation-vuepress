@@ -5,7 +5,7 @@ title: trigger
 
 # trigger
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Triggers a custom event.
 

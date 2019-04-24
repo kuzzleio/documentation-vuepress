@@ -11,7 +11,7 @@ Dynamically adds or removes [authentication strategies](/plugins/1/essentials/st
 
 ## add
 
-{{{since "1.2.0"}}}
+<SinceBadge version="1.2.0" />
 
 Adds a new authentication strategy.
 
@@ -75,7 +75,7 @@ try {
 
 ## remove
 
-{{{since "1.2.0"}}}
+<SinceBadge version="1.2.0" />
 
 Removes an authentication strategy, preventing new authentications from using it.
 

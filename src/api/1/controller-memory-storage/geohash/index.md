@@ -5,7 +5,7 @@ title: geohash
 
 # geohash
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Converts a key's geopoints (see [geoadd](/api/1/controller-memory-storage/geoadd/)) into [geohashes](https://en.wikipedia.org/wiki/Geohash).
 

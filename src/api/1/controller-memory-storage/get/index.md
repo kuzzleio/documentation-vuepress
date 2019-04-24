@@ -5,7 +5,7 @@ title: get
 
 # get
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets the value of a key.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -37,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key to fetch
+- `_id`: key to fetch
 
 ---
 

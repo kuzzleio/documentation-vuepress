@@ -5,7 +5,7 @@ title: deleteByQuery
 
 # deleteByQuery
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes documents matching the provided search query.
 
@@ -17,7 +17,7 @@ Deletes documents matching the provided search query.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_query
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -49,14 +49,14 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
 ## Body properties
 
-* `query`: documents matching this search query will be deleted. Uses the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl.html) syntax.
+- `query`: documents matching this search query will be deleted. Uses the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl.html) syntax.
 
 ---
 
@@ -75,9 +75,9 @@ Returns a `hits` array containing the list of deleted document identifiers.
   "requestId": "<unique request identifier>",
   "result": {
     "hits": [
-      "id 1", 
-      "id 2", 
-      "id ...", 
+      "id 1",
+      "id 2",
+      "id ...",
       "id n"
     ]
   }

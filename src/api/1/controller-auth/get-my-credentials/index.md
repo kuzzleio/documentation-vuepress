@@ -5,7 +5,7 @@ title: getMyCredentials
 
 # getMyCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns credential information for the currently logged in user.
 
@@ -21,7 +21,7 @@ The result can be an empty object.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/_me
-Method: GET  
+Method: GET
 Headers: Authorization: "Bearer <authentication token>"
 ```
 
@@ -40,14 +40,14 @@ Headers: Authorization: "Bearer <authentication token>"
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
-* `strategy`: name of the authentication strategy to retrieve
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `strategy`: name of the authentication strategy to retrieve
 
 ---
 
 ## Response
 
-The result content depends on the authentication strategy. 
+The result content depends on the authentication strategy.
 
 Example with the `local` authentication strategy:
 

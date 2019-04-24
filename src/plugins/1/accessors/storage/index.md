@@ -15,7 +15,7 @@ The only way documents stored in this space can be accessed using Kuzzle is if t
 
 ## bootstrap
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Initializes the plugin storage.
 
@@ -66,7 +66,7 @@ try {
 
 ## createCollection
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a data collection in the plugin storage.
 

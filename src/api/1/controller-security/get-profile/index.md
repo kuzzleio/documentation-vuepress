@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: getProfile
 ---
 
-
 # getProfile
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets a security profile.
 
@@ -35,7 +34,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: profile identifier
+- `_id`: profile identifier
 
 ---
 
@@ -43,13 +42,13 @@ Method: GET
 
 Returns the queried profile information:
 
-* `_id`: profile identifier
-* `_source`: profile content
+- `_id`: profile identifier
+- `_source`: profile content
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "result": {
     "_id": "<profileId>",
     "_source": {

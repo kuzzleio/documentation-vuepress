@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: expire
 ---
 
-
 # expire
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a timeout (in seconds) on a key. After the timeout has expired, the key is automatically deleted.
 
@@ -20,7 +19,7 @@ Sets a timeout (in seconds) on a key. After the timeout has expired, the key is 
 
 ```http
 URL: http://kuzzle:7512/ms/_expire/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -31,7 +30,6 @@ Body:
 ```
 
 ### Other protocols
-
 
 ```js
 {
@@ -48,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `_id`: key to update
+- `_id`: key to update
 
 ---
 
 ## Body properties
 
-* `seconds`: number of seconds before the key expires (integer)
+- `seconds`: number of seconds before the key expires (integer)
 
 ---
 

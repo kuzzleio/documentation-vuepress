@@ -5,7 +5,7 @@ title: Request
 
 # Request
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Object representation of a Kuzzle [API call](/api/1/essentials/query-syntax).
 
@@ -29,13 +29,13 @@ To customize the response content, read the [RequestResponse](https://github.com
 
 ## Constructor
 
-{{{since "1.0.0"}}} / {{{deprecated "1.2.0"}}}
+<SinceBadge version="1.0.0" /> / <DeprecatedBadge version="1.2.0" />
 
 ```js
 new Request(request, data, [options]);
 ```
 
-{{{since "1.2.0"}}}
+<SinceBadge version="1.2.0" />
 
 ```js
 new Request(data, [options]);
@@ -53,14 +53,14 @@ new Request(data, [options]);
 
 The `options` argument accepts the following parameters:
 
-| Options        | Type                                                        | Description                                                                                                                                                                                                     |
-| -------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `connection`   | <pre>object</pre>                                           | {{{since "1.4.1"}}} Connection information (see the <a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#requestcontextconnection-object-format>connection</a> object documentation) |
-| `connectionId` | <pre>string</pre>                                           | {{{deprecated "1.4.1"}}} Connection unique identifier                                                                                                                                                           |
-| `error`        | <pre><a href=/plugins/1/errors>KuzzleError</a>, Error</pre> | Sets the request response with the provided error                                                                                                                                                               |
-| `requestId`    | <pre>string</pre>                                           | User-defined request identifier                                                                                                                                                                                 |
-| `result`       | <pre>\*</pre>                                               | Sets the request response with the provided result, and the request status is set to `200`                                                                                                                      |
-| `status`       | <pre>integer</pre>                                          | Request status, following the [HTTP error code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) standard                                                                                               |
+| Options        | Type                                                        | Description                                                                                                                                                                                                                |
+| -------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `connection`   | <pre>object</pre>                                           | <SinceBadge version="1.4.1" /> Connection information (see the <a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#requestcontextconnection-object-format>connection</a> object documentation) |
+| `connectionId` | <pre>string</pre>                                           | <DeprecatedBadge version="1.4.1" /> Connection unique identifier                                                                                                                                                           |
+| `error`        | <pre><a href=/plugins/1/errors>KuzzleError</a>, Error</pre> | Sets the request response with the provided error                                                                                                                                                                          |
+| `requestId`    | <pre>string</pre>                                           | User-defined request identifier                                                                                                                                                                                            |
+| `result`       | <pre>\*</pre>                                               | Sets the request response with the provided result, and the request status is set to `200`                                                                                                                                 |
+| `status`       | <pre>integer</pre>                                          | Request status, following the [HTTP error code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) standard                                                                                                          |
 
 ---
 
@@ -88,7 +88,7 @@ Writable:
 
 ## clearError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Clears the error: sets the `error` property to `null`, and the request status to `200`.
 
@@ -96,7 +96,7 @@ Clears the error: sets the `error` property to `null`, and the request status to
 
 ## serialize
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Serializes the request into into a pair of objects that can be sent across the network, and then used to rebuild another equivalent `Request` object.
 
@@ -111,7 +111,7 @@ const bar = new context.constructors.Request(foo.data, foo.options);
 
 ## setError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Adds an error to the request.
 
@@ -137,7 +137,7 @@ Otherwise, the provided error is embedded into a [InternalError](/plugins/1/erro
 
 ## setResult
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets the request result.
 

@@ -5,7 +5,7 @@ title: count
 
 # count
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Counts documents in a data collection.
 

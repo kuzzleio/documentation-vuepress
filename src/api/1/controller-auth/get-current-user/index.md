@@ -5,7 +5,7 @@ title: getCurrentUser
 
 # getCurrentUser
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns information about the currently logged in user.
 

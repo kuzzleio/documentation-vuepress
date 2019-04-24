@@ -5,7 +5,7 @@ title: incrby
 
 # incrby
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Increments the number stored at `key` by the provided integer value. If the key does not exist, it is set to 0 before performing the operation.
 
@@ -19,7 +19,7 @@ Increments the number stored at `key` by the provided integer value. If the key 
 
 ```http
 URL: http://kuzzle:7512/ms/_incrby/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `value`: the integer value to add to the key value
+- `value`: the integer value to add to the key value
 
 ---
 

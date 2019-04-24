@@ -5,7 +5,7 @@ title: zremrangebyscore
 
 # zremrangebyscore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes members from a sorted set, with a score between the provided interval.
 
@@ -19,7 +19,7 @@ Removes members from a sorted set, with a score between the provided interval.
 
 ```http
 URL: http://kuzzle:7512/ms/_zremrangebyscore/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 
 ## Body properties
 
-* `min`: minimum score value
-* `max`: maximum score value
+- `min`: minimum score value
+- `max`: maximum score value
 
 The `min` and `max` values are inclusive, but this behavior can be changed (see the [redis documentation](https://redis.io/commands/zrangebyscore)).
 

@@ -5,7 +5,7 @@ title: sdiff
 
 # sdiff
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the difference between a reference set and a list of other sets.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -38,8 +37,8 @@ Method: GET
 
 ## Argument
 
-* `_id`: reference set key identifier
-* `keys`: list of sets to compare to the reference set
+- `_id`: reference set key identifier
+- `keys`: list of sets to compare to the reference set
 
 ---
 

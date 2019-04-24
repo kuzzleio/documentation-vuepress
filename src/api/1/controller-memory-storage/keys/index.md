@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: keys
 ---
 
-
 # keys
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns all keys matching the provided pattern.
 
@@ -25,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -38,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `pattern`: match pattern
+- `pattern`: match pattern
 
 ---
 

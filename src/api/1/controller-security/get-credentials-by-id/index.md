@@ -5,7 +5,7 @@ title: getCredentialsById
 
 # getCredentialsById
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets credential information for the user identified by the strategy's unique user identifier `userId`.
 

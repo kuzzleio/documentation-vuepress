@@ -19,7 +19,7 @@ Such filters are optimized by Koncorde, thus <a href="/koncorde/1/essentials/adv
 
 ## and
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 The `and` filter takes an array of filter objects, combining them with AND operands.
 
@@ -61,7 +61,7 @@ The `and` filter takes an array of filter objects, combining them with AND opera
 
 ## bool
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns documents matching a combination of filters.
 
@@ -145,7 +145,7 @@ Each one of these attributes are an array of filter objects.
 
 ## not
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 The `not` filter omits the matching data.
 
@@ -180,7 +180,7 @@ The `not` filter omits the matching data.
 
 ## or
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 The `or` filter takes an array containing filter objects, combining them using OR operands.
 

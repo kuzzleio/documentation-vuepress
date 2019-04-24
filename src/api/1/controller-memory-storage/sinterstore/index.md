@@ -5,7 +5,7 @@ title: sinterstore
 
 # sinterstore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Computes the intersection of the provided sets of unique values, and stores the result in a destination key.
 
@@ -21,7 +21,7 @@ If the destination key already exists, it is overwritten.
 
 ```http
 URL: http://kuzzle:7512/ms/_sinterstore
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -49,8 +49,8 @@ Body:
 
 ## Body properties
 
-* `destination`: new set to create, holding the intersection
-* `keys`: source sets to intersect with the reference set
+- `destination`: new set to create, holding the intersection
+- `keys`: source sets to intersect with the reference set
 
 ---
 

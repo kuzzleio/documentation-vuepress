@@ -5,7 +5,7 @@ title: smove
 
 # smove
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Moves a member from a set of unique values to another.
 
@@ -19,7 +19,7 @@ Moves a member from a set of unique values to another.
 
 ```http
 URL: http://kuzzle:7512/ms/_smove/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Argument
 
-* `_id`: source set identifier
+- `_id`: source set identifier
 
 ---
 
 ## Body properties
 
-* `destination`: destination set identifier
-* `member`: member value to move
+- `destination`: destination set identifier
+- `member`: member value to move
 
 ---
 

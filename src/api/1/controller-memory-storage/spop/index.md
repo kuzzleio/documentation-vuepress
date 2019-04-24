@@ -5,7 +5,7 @@ title: spop
 
 # spop
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes and returns one or more elements at random from a set of unique values. If multiple elements are removed, the result set will be an array of removed elements, instead of a string.
 
@@ -19,7 +19,7 @@ Removes and returns one or more elements at random from a set of unique values. 
 
 ```http
 URL: http://kuzzle:7512/ms/_spop/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,7 +48,7 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
@@ -56,7 +56,7 @@ Body:
 
 ### Optional:
 
-* `count`: number of elements to remove (default: `1`)
+- `count`: number of elements to remove (default: `1`)
 
 ---
 
@@ -90,7 +90,7 @@ If multiple elements are removed (`count > 1`), an array of removed elements is 
   "index": null,
   "result": [
     "removed element 1",
-    "removed element 2", 
+    "removed element 2",
     "..."
   ]
 }

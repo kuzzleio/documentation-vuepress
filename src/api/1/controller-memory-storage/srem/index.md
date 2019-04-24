@@ -5,7 +5,7 @@ title: srem
 
 # srem
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes members from a set of unique values.
 
@@ -19,7 +19,7 @@ Removes members from a set of unique values.
 
 ```http
 URL: http://kuzzle:7512/ms/_srem/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -46,14 +46,13 @@ Body:
 
 ## Argument
 
-* `_id`: set key identifier
+- `_id`: set key identifier
 
 ---
 
 ## Body properties
 
-* `members`: list of member values to remove
-
+- `members`: list of member values to remove
 
 ---
 

@@ -5,12 +5,12 @@ title: sscan
 
 # sscan
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Iterates incrementally over members contained in a set of unique values, using a cursor.
 
 An iteration starts when the cursor is set to 0.  
-To get the next page of results, simply re-send the request with the updated cursor position provided in the result set.  
+To get the next page of results, simply re-send the request with the updated cursor position provided in the result set.
 
 The scan ends when the cursor returned by the server is 0.
 
@@ -45,14 +45,13 @@ Method: GET
 
 ## Arguments
 
-* `_id`: set key identifier
-* `cursor`: cursor offset
+- `_id`: set key identifier
+- `cursor`: cursor offset
 
 ### Optional:
 
-* `count`: return an _approximate_ number of items per result set (the default is 10)
-* `match`: search only keys matching the provided pattern
-
+- `count`: return an _approximate_ number of items per result set (the default is 10)
+- `match`: search only keys matching the provided pattern
 
 ---
 
@@ -60,8 +59,8 @@ Method: GET
 
 Returns an array containing the following two elements:
 
-* a new cursor position, to be used to get the next page of results (or `0` when at the end of the cursor)
-* an array of found keys
+- a new cursor position, to be used to get the next page of results (or `0` when at the end of the cursor)
+- an array of found keys
 
 ### Example
 

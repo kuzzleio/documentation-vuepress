@@ -5,7 +5,7 @@ title: hlen
 
 # hlen
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the number of fields contained in a hash.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 

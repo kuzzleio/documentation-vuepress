@@ -5,7 +5,7 @@ title: getbit
 
 # getbit
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the bit value at the provided offset, in the string value stored in a key.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -38,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key containing the geopoints to fetch
-* `offset`: bit offset to return
+- `_id`: key containing the geopoints to fetch
+- `offset`: bit offset to return
 
 ---
 

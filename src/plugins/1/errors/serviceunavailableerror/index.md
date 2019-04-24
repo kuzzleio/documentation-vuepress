@@ -5,7 +5,7 @@ title: ServiceUnavailableError
 
 # ServiceUnavailableError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Temporarily unable to respond.
 

@@ -5,7 +5,7 @@ title: exists
 
 # exists
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks if the specified keys exist in the database.
 
@@ -19,7 +19,7 @@ Checks if the specified keys exist in the database.
 
 ```http
 URL: http://kuzzle:7512/ms/_exists?keys=key1,key2,...
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `keys`: list of keys to verify
+- `keys`: list of keys to verify
 
 ---
 

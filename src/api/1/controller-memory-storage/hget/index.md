@@ -5,7 +5,7 @@ title: hget
 
 # hget
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the field's value of a hash.
 
@@ -37,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
-* `field`: field name to retrieve
+- `_id`: hash key identifier
+- `field`: field name to retrieve
 
 ---
 

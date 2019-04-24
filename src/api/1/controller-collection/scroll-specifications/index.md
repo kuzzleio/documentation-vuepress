@@ -5,7 +5,7 @@ title: scrollSpecifications
 
 # scrollSpecifications
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Moves a result set cursor forward, created by the [`searchSpecifications` request](/api/1/controller-collection/search-specifications/) when the `scroll` argument is provided.
 

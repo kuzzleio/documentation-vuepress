@@ -5,7 +5,7 @@ title: sdiffstore
 
 # sdiffstore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Computes the difference between a reference set of unique values, and other sets. The differences are then stored in the provided destination key.
 
@@ -21,7 +21,7 @@ If the destination key already exists, it is overwritten.
 
 ```http
 URL: http://kuzzle:7512/ms/_sdiffstore/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -50,14 +50,14 @@ Body:
 
 ## Argument
 
-* `_id`: reference set identifier
+- `_id`: reference set identifier
 
 ---
 
 ## Body properties
 
-* `destination`: the new set to create
-* `keys`: source sets to diff with the reference set
+- `destination`: the new set to create
+- `keys`: source sets to diff with the reference set
 
 ---
 

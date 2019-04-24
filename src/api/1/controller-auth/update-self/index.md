@@ -5,7 +5,7 @@ title: updateSelf
 
 # updateSelf
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Updates the currently logged in user information.
 

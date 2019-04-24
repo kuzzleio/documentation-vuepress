@@ -5,7 +5,7 @@ title: scan
 
 # scan
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Iterates incrementally over the set of keys in the database using a cursor.
 
@@ -44,12 +44,12 @@ Method: GET
 
 ## Arguments
 
-* `cursor`: cursor offset (set it to `0` to start a new scan)
+- `cursor`: cursor offset (set it to `0` to start a new scan)
 
 ### Optional:
 
-* `count`: return an _approximate_ number of items per result set (the default is 10)
-* `match`: search only keys matching the provided pattern
+- `count`: return an _approximate_ number of items per result set (the default is 10)
+- `match`: search only keys matching the provided pattern
 
 ---
 
@@ -57,8 +57,8 @@ Method: GET
 
 Returns an array containing the following two elements:
 
-* a new cursor position, to be used to get the next page of results (or `0` when at the end of the cursor)
-* an array of found keys
+- a new cursor position, to be used to get the next page of results (or `0` when at the end of the cursor)
+- an array of found keys
 
 ### Example
 

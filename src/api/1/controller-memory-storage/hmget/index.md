@@ -5,7 +5,7 @@ title: hmget
 
 # hmget
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the values of the specified hash's fields.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -38,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
-* `fields`: the list of fields to fetch
+- `_id`: hash key identifier
+- `fields`: the list of fields to fetch
 
 ---
 

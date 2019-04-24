@@ -5,7 +5,7 @@ title: ltrim
 
 # ltrim
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Trims an existing list so that it will contain only the specified range of elements specified.
 
@@ -19,7 +19,7 @@ Trims an existing list so that it will contain only the specified range of eleme
 
 ```http
 URL: http://kuzzle:7512/ms/_ltrim/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `start`: start index
-* `stop`: end index
+- `start`: start index
+- `stop`: end index
 
 The arguments `start` and `stop` can be negative. In that case, the index is calculated from the end of the list, going backward. For instance, `-3` is the third element from the end of the list.
 

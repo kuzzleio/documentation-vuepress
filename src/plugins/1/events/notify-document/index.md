@@ -5,7 +5,7 @@ title: notify:document
 
 # notify:document
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 | Arguments | Type                                                                 | Description                           |
 | --------- | -------------------------------------------------------------------- | ------------------------------------- |

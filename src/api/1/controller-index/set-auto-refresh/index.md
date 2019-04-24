@@ -5,7 +5,7 @@ title: setAutoRefresh
 
 # setAutoRefresh
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Changes the `autoRefresh` configuration of an index.
 

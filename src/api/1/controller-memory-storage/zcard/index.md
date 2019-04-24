@@ -5,7 +5,7 @@ title: zcard
 
 # zcard
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the number of elements held by a sorted set.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 

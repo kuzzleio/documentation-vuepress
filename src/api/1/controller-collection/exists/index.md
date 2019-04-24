@@ -5,7 +5,7 @@ title: exists
 
 # exists
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks whether a collection exists.
 

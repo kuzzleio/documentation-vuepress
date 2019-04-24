@@ -5,7 +5,7 @@ title: sunion
 
 # sunion
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the union of sets of unique values.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `keys`: array of set identifiers
+- `keys`: array of set identifiers
 
 ---
 

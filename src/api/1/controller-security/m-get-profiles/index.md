@@ -5,7 +5,7 @@ title: mGetProfiles
 
 # mGetProfiles
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets multiple security profiles.
 
@@ -17,7 +17,7 @@ Gets multiple security profiles.
 
 ```http
 URL: http://kuzzle:7512/profiles/_mGet
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -43,7 +43,7 @@ Body:
 
 ## Body properties
 
-* `ids`: an array of profile identifiers to get
+- `ids`: an array of profile identifiers to get
 
 ---
 
@@ -51,13 +51,13 @@ Body:
 
 Returns a `hits` array of objects. Each object is a profile description, with the following properties:
 
-* `_id`: profile unique identifier
-* `_source`: profile description
+- `_id`: profile unique identifier
+- `_source`: profile description
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "mGetProfiles",
   "controller": "security",
   "requestId": "<unique request identifier>",

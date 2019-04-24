@@ -5,7 +5,7 @@ title: removeConnection
 
 # removeConnection
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes a client connection from Kuzzle.
 

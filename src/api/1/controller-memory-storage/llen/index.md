@@ -5,7 +5,7 @@ title: llen
 
 # llen
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the length of a list.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 

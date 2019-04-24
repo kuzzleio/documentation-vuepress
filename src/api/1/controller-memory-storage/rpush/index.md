@@ -5,14 +5,13 @@ title: rpush
 
 # rpush
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Appends values at the end of a list. 
+Appends values at the end of a list.
 
 If the destination list does not exist, it is created holding an empty list before performing the operation.
 
 [[_Redis documentation_]](https://redis.io/commands/rpush)
-
 
 ---
 
@@ -22,7 +21,7 @@ If the destination list does not exist, it is created holding an empty list befo
 
 ```http
 URL: http://kuzzle:7512/ms/_rpush/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -49,13 +48,13 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `values`: an array of values to push to the list
+- `values`: an array of values to push to the list
 
 ---
 

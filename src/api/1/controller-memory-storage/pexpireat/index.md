@@ -5,7 +5,7 @@ title: pexpireat
 
 # pexpireat
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets an expiration timestamp on a key. After the timestamp has been reached, the key will automatically be deleted.
 
@@ -17,7 +17,7 @@ The `timestamp` parameter accepts an [Epoch time](https://en.wikipedia.org/wiki/
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
@@ -27,7 +27,7 @@ The `timestamp` parameter accepts an [Epoch time](https://en.wikipedia.org/wiki/
 
 ```http
 URL: http://kuzzle:7512/ms/_pexpireat/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -54,13 +54,13 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `timestamp`: the key expiration timestamp, using the Epoch-millis format
+- `timestamp`: the key expiration timestamp, using the Epoch-millis format
 
 ---
 

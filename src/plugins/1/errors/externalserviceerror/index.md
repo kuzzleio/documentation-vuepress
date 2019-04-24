@@ -5,7 +5,7 @@ title: ExternalServiceError
 
 # ExternalServiceError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 External service failure.
 

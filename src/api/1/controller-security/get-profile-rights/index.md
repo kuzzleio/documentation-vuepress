@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: getProfileRights
 ---
 
-
 # getProfileRights
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets the detailed rights configured by a security profile.
 
@@ -35,7 +34,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: profile identifier
+- `_id`: profile identifier
 
 ---
 
@@ -43,11 +42,11 @@ Method: GET
 
 Returns a `hits` array of objects. Each object is a security right described by the security profile:
 
-* `controller`: impacted Kuzzle controller
-* `action`: impacted controller action
-* `index`: data index
-* `collection`: data collection
-* `value`: tell if access is `allowed` or `denied`. If closures have been configured on the detailed scope, the value is `conditional`.
+- `controller`: impacted Kuzzle controller
+- `action`: impacted controller action
+- `index`: data index
+- `collection`: data collection
+- `value`: tell if access is `allowed` or `denied`. If closures have been configured on the detailed scope, the value is `conditional`.
 
 ```javascript
 {
@@ -60,8 +59,8 @@ Returns a `hits` array of objects. Each object is a security right described by 
         "controller": "auth",
         "action": "login",
         "value": "allowed"
-      }, 
-      { 
+      },
+      {
         "controller": "document",
         "action": "get",
         "index": "foo",

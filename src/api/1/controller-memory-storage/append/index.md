@@ -5,7 +5,7 @@ title: append
 
 # append
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Appends a value to a key. If the key does not exist, it is created.
 
@@ -19,7 +19,7 @@ Appends a value to a key. If the key does not exist, it is created.
 
 ```http
 URL: http://kuzzle:7512/ms/_append/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `key`: key to update or create
+- `key`: key to update or create
 
 ---
 
 ## Body properties
 
-* `value`: the value to append
+- `value`: the value to append
 
 ---
 

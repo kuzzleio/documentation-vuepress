@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: unsubscribe
 ---
 
-
 # unsubscribe
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes a subscription.
 
@@ -34,7 +33,7 @@ Due to the synchronous nature of the HTTP protocol, real-time messaging is not s
 
 ## Body properties
 
-* `roomId`: subscription identifier to room
+- `roomId`: subscription identifier to room
 
 ---
 

@@ -5,7 +5,7 @@ title: logout
 
 # logout
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Revokes the provided authentication token.
 
@@ -19,7 +19,7 @@ If there were any, real-time subscriptions are cancelled.
 
 ```http
 URL: http://kuzzle:7512/_logout
-Method: POST  
+Method: POST
 Headers: Authorization: "Bearer <authentication token>"
 ```
 
@@ -37,7 +37,7 @@ Headers: Authorization: "Bearer <authentication token>"
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
 
 ---
 

@@ -5,11 +5,11 @@ title: zadd
 
 # zadd
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Adds elements to a sorted set. 
+Adds elements to a sorted set.
 
-If the key does not exist, it is created, holding an empty sorted set. 
+If the key does not exist, it is created, holding an empty sorted set.
 
 If the key already exists but does not hold a sorted set, an error is returned.
 
@@ -25,7 +25,7 @@ If a member to insert is already in the sorted set, its score is updated and the
 
 ```http
 URL: http://kuzzle:7512/ms/_zadd/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -60,22 +60,22 @@ Body:
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 
 ## Body properties
 
-* `elements`: an array of objects. Each object describes a sorted set member, using the following properties:
-  * `member`: member value
-  * `score`: member score (floating-point number)
+- `elements`: an array of objects. Each object describes a sorted set member, using the following properties:
+  - `member`: member value
+  - `score`: member score (floating-point number)
 
 ### Optional:
 
-* `ch` (boolean): if true, instead of returning the number of added elements, returns the number of changes performed
-* `incr` (boolean): if true, instead of adding elements, increments the existing member with the provided `score`. Only one score-element pair can be specified if this option is set
-* `nx` (boolean): if true, only adds new elements, without altering existing ones
-* `xx` (boolean): if true, ignores new elements, alters only existing ones
+- `ch` (boolean): if true, instead of returning the number of added elements, returns the number of changes performed
+- `incr` (boolean): if true, instead of adding elements, increments the existing member with the provided `score`. Only one score-element pair can be specified if this option is set
+- `nx` (boolean): if true, only adds new elements, without altering existing ones
+- `xx` (boolean): if true, ignores new elements, alters only existing ones
 
 ---
 

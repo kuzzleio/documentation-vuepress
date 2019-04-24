@@ -5,7 +5,7 @@ title: linsert
 
 # linsert
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Inserts a value in a list, either before or after a pivot value.
 
@@ -19,7 +19,7 @@ Inserts a value in a list, either before or after a pivot value.
 
 ```http
 URL: http://kuzzle:7512/ms/_linsert/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -50,15 +50,15 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `position`: tell whether the value is to be inserted before or after the pivot value. Accepted values: `before`, `after`
-* `pivot`: value in the list used as a pivot
-* `value`: new value to insert in the list
+- `position`: tell whether the value is to be inserted before or after the pivot value. Accepted values: `before`, `after`
+- `pivot`: value in the list used as a pivot
+- `value`: new value to insert in the list
 
 ---
 

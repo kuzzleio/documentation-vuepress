@@ -5,7 +5,7 @@ title: BaseValidationType
 
 # BaseValidationType
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Abstract class, used to create custom validation types (see the [validation](/plugins/1/accessors/validation) accessor).
 

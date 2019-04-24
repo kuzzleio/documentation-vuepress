@@ -5,14 +5,14 @@ title: resetKuzzleData
 
 # resetKuzzleData
 
-{{{since "1.4.0"}}}
+<SinceBadge version="1.4.0" />
 
 Asynchronously starts the following sequence, in this order:
 
-* Invalidates and deletes all users along with their associated credentials
-* Deletes all user-defined roles and profiles
-* Resets the default roles and profiles to their default values
-* Deletes all document validation specifications
+- Invalidates and deletes all users along with their associated credentials
+- Deletes all user-defined roles and profiles
+- Resets the default roles and profiles to their default values
+- Deletes all document validation specifications
 
 This action has no impact on Plugin and Document storages.
 

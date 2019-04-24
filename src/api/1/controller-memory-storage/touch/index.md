@@ -5,7 +5,7 @@ title: touch
 
 # touch
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Alters the last access time of multiple keys. A key is ignored if it does not exist.
 
@@ -19,7 +19,7 @@ Alters the last access time of multiple keys. A key is ignored if it does not ex
 
 ```http
 URL: http://kuzzle:7512/ms/_touch
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -45,7 +45,7 @@ Body:
 
 ## Arguments
 
-* `keys`: array of key identifiers to alter
+- `keys`: array of key identifiers to alter
 
 ---
 

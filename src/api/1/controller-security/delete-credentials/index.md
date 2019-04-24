@@ -5,7 +5,7 @@ title: deleteCredentials
 
 # deleteCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes user credentials for the specified authentication strategy.
 

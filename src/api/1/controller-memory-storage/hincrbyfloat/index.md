@@ -5,7 +5,7 @@ title: hincrbyfloat
 
 # hincrbyfloat
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Increments the number stored in a hash field by the provided float value.
 
@@ -19,7 +19,7 @@ Increments the number stored in a hash field by the provided float value.
 
 ```http
 URL: http://kuzzle:7512/ms/_hincrbyfloat/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 
 ## Body properties
 
-* `field`: the hash field to increment
-* `value`: the float to add to the field value
+- `field`: the hash field to increment
+- `value`: the float to add to the field value
 
 ---
 

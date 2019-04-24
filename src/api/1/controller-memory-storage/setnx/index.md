@@ -5,7 +5,7 @@ title: setnx
 
 # setnx
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a value on a key, only if it does not already exist.
 
@@ -19,7 +19,7 @@ Sets a value on a key, only if it does not already exist.
 
 ```http
 URL: http://kuzzle:7512/ms/_setnx/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `value`: new key value
+- `value`: new key value
 
 ---
 

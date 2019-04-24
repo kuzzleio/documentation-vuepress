@@ -5,7 +5,7 @@ title: geodist
 
 # geodist
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the distance between two geospatial members of a key (see [geoadd](/api/1/controller-memory-storage/geoadd/)).
 

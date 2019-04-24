@@ -5,7 +5,7 @@ title: mget
 
 # mget
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the values of the provided keys.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Argument
 
-* `keys`: a list of keys to get
+- `keys`: a list of keys to get
 
 ---
 

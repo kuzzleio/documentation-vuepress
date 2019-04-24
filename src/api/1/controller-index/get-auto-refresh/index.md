@@ -5,7 +5,7 @@ title: getAutoRefresh
 
 # getAutoRefresh
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the current `autoRefresh` status for the given index.
 

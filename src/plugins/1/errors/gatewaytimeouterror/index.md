@@ -5,7 +5,7 @@ title: GatewayTimeoutError
 
 # GatewayTimeoutError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Timeout error.
 

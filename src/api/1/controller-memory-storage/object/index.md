@@ -5,7 +5,7 @@ title: object
 
 # object
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Inspects the low-level properties of a key.
 
@@ -37,8 +37,8 @@ Method: GET
 
 ## Argument
 
-* `_id`: key identifier
-* `subcommand`: the object property to inspect. Allowed values: `refcount`, `encoding`, `idletime`
+- `_id`: key identifier
+- `subcommand`: the object property to inspect. Allowed values: `refcount`, `encoding`, `idletime`
 
 ---
 

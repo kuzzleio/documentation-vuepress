@@ -5,12 +5,11 @@ title: smembers
 
 # smembers
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the members of a set of unique values.
 
 [[_Redis documentation_]](https://redis.io/commands/smembers)
-
 
 ---
 
@@ -37,7 +36,7 @@ Method: GET
 
 ## Argument
 
-* `_id`: set key identifier
+- `_id`: set key identifier
 
 ---
 

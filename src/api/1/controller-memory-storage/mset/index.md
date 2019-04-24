@@ -5,7 +5,7 @@ title: mset
 
 # mset
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets the provided keys to their respective values. If a key does not exist, it is created. Otherwise, the key's value is overwritten.
 
@@ -19,7 +19,7 @@ Sets the provided keys to their respective values. If a key does not exist, it i
 
 ```http
 URL: http://kuzzle:7512/ms/_mset
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -53,9 +53,9 @@ Body:
 
 ## Body properties
 
-* `entries`: an array of objects. Each object describes a new key-value pair to set, using the following properties:
-  * `key`: key identifier
-  * `value`: new value
+- `entries`: an array of objects. Each object describes a new key-value pair to set, using the following properties:
+  - `key`: key identifier
+  - `value`: new value
 
 ---
 

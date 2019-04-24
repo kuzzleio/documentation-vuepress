@@ -5,7 +5,7 @@ title: exists
 
 # exists
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks if the given index exists in Kuzzle.
 

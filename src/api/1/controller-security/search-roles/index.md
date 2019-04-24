@@ -5,7 +5,7 @@ title: searchRoles
 
 # searchRoles
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Searches security roles, optionally returning only those allowing access to the provided controllers.
 
@@ -17,7 +17,7 @@ Searches security roles, optionally returning only those allowing access to the 
 
 ```http
 URL: http://kuzzle:7512/roles/_search[?from=0][&size=42]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -52,8 +52,8 @@ Body:
 
 ### Optional:
 
-* `from`: the offset from the first result you want to fetch.  Usually used with the `size` argument
-* `size`: the maximum number of profiles returned in one response page
+- `from`: the offset from the first result you want to fetch. Usually used with the `size` argument
+- `size`: the maximum number of profiles returned in one response page
 
 ---
 
@@ -61,7 +61,7 @@ Body:
 
 ### Optional:
 
-* `controllers`: an array of controller names. Restrict the search to roles linked to the provided controllers.
+- `controllers`: an array of controller names. Restrict the search to roles linked to the provided controllers.
 
 ---
 
@@ -69,10 +69,10 @@ Body:
 
 Returns an object with the following properties:
 
-* `hits`: array of object. Each object describes a found role:
-  * `_id`: role identifier
-  * `_source`: role definition
-* `total`: total number of roles found. Depending on pagination options, this can be greater than the actual number of roles in a single result page
+- `hits`: array of object. Each object describes a found role:
+  - `_id`: role identifier
+  - `_source`: role definition
+- `total`: total number of roles found. Depending on pagination options, this can be greater than the actual number of roles in a single result page
 
 ```javascript
 {
@@ -80,7 +80,7 @@ Returns an object with the following properties:
   "controller": "security",
   "error": null,
   "requestId": "<unique request identifier>",
-  "result": 
+  "result":
   {
     "total": 1,
     "hits": [

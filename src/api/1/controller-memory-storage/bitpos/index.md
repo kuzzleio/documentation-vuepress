@@ -5,7 +5,7 @@ title: bitpos
 
 # bitpos
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the position of the first bit set to 1 or 0 in a string, or in a substring.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -40,13 +39,13 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key to examine
-* `bit`: bit to look for. Accepted values: `0`, `1`
+- `_id`: key to examine
+- `bit`: bit to look for. Accepted values: `0`, `1`
 
 ### Optional:
 
-* `start`: search starts at the provided offset
-* `end`: search ends at the provided offset
+- `start`: search starts at the provided offset
+- `end`: search ends at the provided offset
 
 ---
 

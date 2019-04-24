@@ -5,7 +5,7 @@ title: core:kuzzleStart
 
 # core:kuzzleStart
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Triggered when Kuzzle has finished booting and is ready to process user requests.
 

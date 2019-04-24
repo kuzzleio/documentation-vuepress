@@ -5,7 +5,7 @@ title: dump
 
 # dump
 
-{{{since "1.4.0"}}}
+<SinceBadge version="1.4.0" />
 
 Asynchronously create a snapshot of Kuzzle's state.  
 Depending on the configuration of Kuzzle, it may include the following:

@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: getCredentialFields
 ---
 
-
 # getCredentialFields
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Retrieves the list of accepted field names by the specified authenticaiton strategy.
 
@@ -18,7 +17,7 @@ Retrieves the list of accepted field names by the specified authenticaiton strat
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/_fields
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols
@@ -35,7 +34,7 @@ Method: GET
 
 ## Arguments
 
-* `strategy`: authentication strategy
+- `strategy`: authentication strategy
 
 ---
 
@@ -47,8 +46,8 @@ Returns an array of accepted field names.
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "getCredentialFields",
   "controller": "security",
   "result": ["username", "password"]

@@ -5,7 +5,7 @@ title: sort
 
 # sort
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sorts and returns elements contained in a list, a set of unique values or a sorted set.  
 By default, sorting is numeric and elements are compared by their value, interpreted as double precision floating point number.
@@ -20,7 +20,7 @@ By default, sorting is numeric and elements are compared by their value, interpr
 
 ```http
 URL: http://kuzzle:7512/ms/_sort/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -54,12 +54,11 @@ Body:
 }
 ```
 
-
 ---
 
 ## Arguments
 
-* `_id`: list, set or sorted set key identifier
+- `_id`: list, set or sorted set key identifier
 
 ---
 
@@ -67,13 +66,12 @@ Body:
 
 ### Optional:
 
-* `alpha`: perform an alphanumerical sort instead of a numeric one
-* `by`: instead of sorting by values directly, sort by values contained in external keys, using a pattern completed by values of the list/set/sorted set to sort
-* `direction`: sort in ascendant or descendant order
-* `get`: instead of returning the sorted values directly, return the values contained in external keys, using patterns completed by the sorted values
-* `limit`: limit the result set to a range of matching elements (similar to _SELECT LIMIT offset, count_ in SQL). Format: `[<offset(int)>, <count(int)>]`
-* `store`: instead of returning the result set, store it in a list at `destination` key
-
+- `alpha`: perform an alphanumerical sort instead of a numeric one
+- `by`: instead of sorting by values directly, sort by values contained in external keys, using a pattern completed by values of the list/set/sorted set to sort
+- `direction`: sort in ascendant or descendant order
+- `get`: instead of returning the sorted values directly, return the values contained in external keys, using patterns completed by the sorted values
+- `limit`: limit the result set to a range of matching elements (similar to _SELECT LIMIT offset, count_ in SQL). Format: `[<offset(int)>, <count(int)>]`
+- `store`: instead of returning the result set, store it in a list at `destination` key
 
 ---
 

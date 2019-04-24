@@ -5,7 +5,7 @@ title: set
 
 # set
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a key holding the provided value, or overwrites it if it already exists.
 
@@ -19,7 +19,7 @@ Creates a key holding the provided value, or overwrites it if it already exists.
 
 ```http
 URL: http://kuzzle:7512/ms/_set/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,12 +46,11 @@ Body:
 }
 ```
 
-
 ---
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
@@ -59,10 +58,10 @@ Body:
 
 ### Optional:
 
-* `ex`: set the specified expire time, in seconds
-* `px`: set the specified expire time, in milliseconds
-* `nx`: if true, only set the key if it does not already exist
-* `xx`: if true, only set the key if it already exists
+- `ex`: set the specified expire time, in seconds
+- `px`: set the specified expire time, in milliseconds
+- `nx`: if true, only set the key if it does not already exist
+- `xx`: if true, only set the key if it already exists
 
 **Note:** `ex` and `px` options are mutually exclusive, and setting values to both lead to a `BadRequestError` error. Same thing goes for `nx` and `xx`.
 

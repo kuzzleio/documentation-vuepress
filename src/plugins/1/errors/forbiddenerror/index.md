@@ -5,7 +5,7 @@ title: ForbiddenError
 
 # ForbiddenError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Unauthorized access to a resource.
 

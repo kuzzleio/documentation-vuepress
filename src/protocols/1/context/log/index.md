@@ -16,7 +16,7 @@ Levels above the threshold configued in the `logs` section of Kuzzle's [configur
 
 ## error
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ### Priority
 
@@ -32,7 +32,7 @@ context.log.error('error message');
 
 ## warn
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ### Priority
 
@@ -48,7 +48,7 @@ context.log.warn('warning message');
 
 ## info
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ### Priority
 
@@ -64,7 +64,7 @@ context.log.info('info message');
 
 ## verbose
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ### Priority
 
@@ -80,7 +80,7 @@ context.log.verbose('verbose message');
 
 ## debug
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ### Priority
 
@@ -96,7 +96,7 @@ context.log.debug('debug message');
 
 ## silly
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ### Priority
 

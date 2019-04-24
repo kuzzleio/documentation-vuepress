@@ -5,9 +5,9 @@ title: zremrangebylex
 
 # zremrangebylex
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Removes members within a provided range, from a sorted set where all elements have the same score, using lexicographical ordering. 
+Removes members within a provided range, from a sorted set where all elements have the same score, using lexicographical ordering.
 
 [[_Redis documentation_]](https://redis.io/commands/zremrangebylex)
 
@@ -19,7 +19,7 @@ Removes members within a provided range, from a sorted set where all elements ha
 
 ```http
 URL: http://kuzzle:7512/ms/_zremrangebylex/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 
 ## Body properties
 
-* `min`: minimum range value
-* `max`: maximum range value
+- `min`: minimum range value
+- `max`: maximum range value
 
 The `min` and `max` interval are inclusive. See the [Redis documentation](https://redis.io/commands/zrangebylex) to change this behavior.
 

@@ -5,14 +5,13 @@ title: lrange
 
 # lrange
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the list elements between the `start` and `stop` positions.
 
 Offsets start at `0`, and the range is inclusive.
 
 [[_Redis documentation_]](https://redis.io/commands/lrange)
-
 
 ---
 
@@ -41,9 +40,9 @@ Method: GET
 
 ## Argument
 
-* `_id`: list key identifier
-* `start`: starting index
-* `stop`: ending index
+- `_id`: list key identifier
+- `start`: starting index
+- `stop`: ending index
 
 The arguments `start` and `stop` can be negative. In that case, the offset is calculated from the end of the list, going backward. For instance, `-3` is the third element from the end of the list.
 

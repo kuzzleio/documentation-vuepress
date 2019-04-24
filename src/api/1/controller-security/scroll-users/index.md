@@ -5,7 +5,7 @@ title: scrollUsers
 
 # scrollUsers
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Moves a result set cursor forward, created by a [searchUsers](/api/1/controller-security/search-users) query with the `scroll` argument provided.
 

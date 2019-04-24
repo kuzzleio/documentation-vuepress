@@ -5,7 +5,7 @@ title: resetSecurity
 
 # resetSecurity
 
-{{{since "1.4.0"}}}
+<SinceBadge version="1.4.0" />
 
 Asynchronously deletes all users, profiles and roles.  
 Then resets `anonymous`, `default` and `admin` profiles and roles to default values, specified in Kuzzle configuration files.
@@ -22,7 +22,6 @@ Method: POST
 ```
 
 ### Other protocols
-
 
 ```js
 {

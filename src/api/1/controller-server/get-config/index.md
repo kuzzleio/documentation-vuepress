@@ -5,7 +5,7 @@ title: getConfig
 
 # getConfig
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the current Kuzzle configuration.
 
@@ -39,8 +39,8 @@ Returns the complete Kuzzle configuration, in JSON format.
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "getConfig",
   "controller": "server",
   "result": {

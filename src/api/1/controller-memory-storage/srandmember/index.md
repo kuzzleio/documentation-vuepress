@@ -5,9 +5,9 @@ title: srandmember
 
 # srandmember
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Returns one or more members of a set of unique values, at random.  
+Returns one or more members of a set of unique values, at random.
 
 [[_Redis documentation_]](https://redis.io/commands/srandmember)
 
@@ -38,11 +38,11 @@ Method: GET
 
 ## Arguments
 
-* `_id`: set key identifier
+- `_id`: set key identifier
 
 ### Optional:
 
-* `count`: return `count` members, at random (default: `1`). If positive, then returned values are unique. If negative, a set member can be returned multiple times.
+- `count`: return `count` members, at random (default: `1`). If positive, then returned values are unique. If negative, a set member can be returned multiple times.
 
 ---
 
@@ -76,7 +76,7 @@ If the absolute count value is greater than `1`, then an array of random members
   "index": null,
   "result": [
     "random member 1",
-    "random member 2", 
+    "random member 2",
     "..."
   ]
 }

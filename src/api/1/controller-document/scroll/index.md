@@ -5,7 +5,7 @@ title: scroll
 
 # scroll
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Moves a search cursor forward.
 

@@ -5,7 +5,7 @@ title: validate
 
 # validate
 
-{{{deprecated "1.5.0"}}}
+<DeprecatedBadge version="1.5.0" />
 
 This API route is deprecated and should not be used. Instead, use [document:validate](/api/1/controller-document/validate).
 

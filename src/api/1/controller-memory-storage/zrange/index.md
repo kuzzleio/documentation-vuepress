@@ -5,7 +5,7 @@ title: zrange
 
 # zrange
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns elements depending on their position in the sorted set.
 
@@ -40,13 +40,13 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `start`: starting position index, inclusive
-* `stop`: ending position index, inclusive
+- `_id`: sorted set identifier
+- `start`: starting position index, inclusive
+- `stop`: ending position index, inclusive
 
 ### Optional:
 
-* `withscores`: return the score alongside the found elements
+- `withscores`: return the score alongside the found elements
 
 ---
 

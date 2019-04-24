@@ -16,7 +16,7 @@ To subscribe, you must provide a callback that will be called each time a new no
 Once you have subscribed, depending on the subscription configuration you provided, you may receive a notification when:
 
 - a pub/sub message matches your criteria (real-time)
-- a matching document is about to be created or deleted in real-time (deactivated by default) {{{deprecated "1.5.0"}}}
+- a matching document is about to be created or deleted in real-time (deactivated by default) <DeprecatedBadge version="1.5.0" />
 - a matching document is created, updated or deleted (once the change is effective in the database)
 - a user enters or leaves the room (deactivated by default)
 
@@ -32,12 +32,12 @@ You may subscribe multiple times to the same room, with identical or different s
 
 ## Document Notification
 
-| Notification field | Type                                      | Description                                                                                     | Possible values   |
-| ------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------- |
-| `document`         | [Document](/sdk-reference/js/5/document/) | Content of the document or real-time message that generated the notification                    |                   |
-| `scope`            | string                                    | Indicates if the document enters or exits the subscription scope                                | `in`, `out`       |
-| `state`            | string                                    | {{{deprecated "1.5.0"}}} Shows if the document is about to be changed, or if the change is done | `pending`, `done` |
-| `type`             | string                                    | Notification type                                                                               | `document`        |
+| Notification field | Type                                      | Description                                                                                                | Possible values   |
+| ------------------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------- |
+| `document`         | [Document](/sdk-reference/js/5/document/) | Content of the document or real-time message that generated the notification                               |                   |
+| `scope`            | string                                    | Indicates if the document enters or exits the subscription scope                                           | `in`, `out`       |
+| `state`            | string                                    | <DeprecatedBadge version="1.5.0" /> Shows if the document is about to be changed, or if the change is done | `pending`, `done` |
+| `type`             | string                                    | Notification type                                                                                          | `document`        |
 
 #### Example
 

@@ -5,9 +5,9 @@ title: zrangebylex
 
 # zrangebylex
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Returns elements within a provided interval, in a sorted set where all members have equal score, using lexicographical ordering. 
+Returns elements within a provided interval, in a sorted set where all members have equal score, using lexicographical ordering.
 
 [[_Redis documentation_]](https://redis.io/commands/zrangebylex)
 
@@ -40,15 +40,15 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `min`: minimum element value
-* `max`: maximum element value
+- `_id`: sorted set identifier
+- `min`: minimum element value
+- `max`: maximum element value
 
 The `min` and `max` values are inclusive by default. To change this behavior, check the full Redis documentation.
 
 ### Optional:
 
-* `limit`: an array of 2 integers, used to limit the number of returned matching elements (similar to _SELECT LIMIT offset, count_ in SQL). Format: `[<offset>,<count>]` 
+- `limit`: an array of 2 integers, used to limit the number of returned matching elements (similar to _SELECT LIMIT offset, count_ in SQL). Format: `[<offset>,<count>]`
 
 ---
 

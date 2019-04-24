@@ -5,14 +5,14 @@ title: publish
 
 # publish
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sends a real-time message to Kuzzle. The message will be dispatched to all clients with subscriptions matching the index, the collection and the message content.
 
 A `_kuzzle_info` object will be added to the message content, with the following properties:
 
-* `author`: sender kuid (or `-1` if the message is sent by an anonymous connection)
-* `createdAt`: message timestamp, using the Epoch-millis format
+- `author`: sender kuid (or `-1` if the message is sent by an anonymous connection)
+- `createdAt`: message timestamp, using the Epoch-millis format
 
 **Note:** real-time messages are not persisted in the database.
 
@@ -24,7 +24,7 @@ A `_kuzzle_info` object will be added to the message content, with the following
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_publish
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -52,8 +52,8 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 

@@ -5,7 +5,7 @@ title: hstrlen
 
 # hstrlen
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the string length of a field's value in a hash.
 
@@ -37,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
-* `field`: hash field name
+- `_id`: hash key identifier
+- `field`: hash field name
 
 ---
 

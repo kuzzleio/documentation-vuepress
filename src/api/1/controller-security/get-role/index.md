@@ -5,7 +5,7 @@ title: getRole
 
 # getRole
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets a security role.
 
@@ -34,7 +34,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: role identifier
+- `_id`: role identifier
 
 ---
 
@@ -42,13 +42,13 @@ Method: GET
 
 Returns the queried role:
 
-* `_id`: role identifier
-* `_source`: role description
+- `_id`: role identifier
+- `_source`: role description
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "result": {
     "_id": "<roleId>",
     "_source": {

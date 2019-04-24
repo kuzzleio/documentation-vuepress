@@ -5,7 +5,7 @@ title: createMyCredentials
 
 # createMyCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates new credentials for the current user.
 
@@ -17,8 +17,8 @@ Creates new credentials for the current user.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/_me/_create
-Method: POST  
-Headers: Authorization: "Bearer <authentication token>"  
+Method: POST
+Headers: Authorization: "Bearer <authentication token>"
 Body:
 ```
 
@@ -29,7 +29,6 @@ Body:
   "password": "MyPassword"
 }
 ```
-
 
 ### Other protocols
 
@@ -50,8 +49,8 @@ Body:
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
-* `strategy`: name of the authentication strategy to use
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `strategy`: name of the authentication strategy to use
 
 ---
 
@@ -63,7 +62,7 @@ Credentials to be created. The properties to send will depend on the chosen auth
 
 ## Response
 
-The result content depends on the authentication strategy. 
+The result content depends on the authentication strategy.
 
 Example with the `local` authentication strategy:
 

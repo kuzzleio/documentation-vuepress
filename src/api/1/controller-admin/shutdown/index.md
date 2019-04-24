@@ -5,7 +5,7 @@ title: shutdown
 
 # shutdown
 
-{{{since "1.4.0"}}}
+<SinceBadge version="1.4.0" />
 
 Safely stops a Kuzzle instance after all remaining requests are processed.
 

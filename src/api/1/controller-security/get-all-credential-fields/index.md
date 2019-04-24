@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: getAllCredentialFields
 ---
 
-
 # getAllCredentialFields
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Retrieves the list of fields accepted by authentication strategies.
 
@@ -18,7 +17,7 @@ Retrieves the list of fields accepted by authentication strategies.
 
 ```http
 URL: http://kuzzle:7512/credentials/_fields
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols
@@ -38,8 +37,8 @@ Returns an object with a property per authentication strategy, pointing to an ar
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "getAllCredentialFields",
   "controller": "security",
   "result": {
@@ -48,4 +47,3 @@ Returns an object with a property per authentication strategy, pointing to an ar
   }
 }
 ```
-

@@ -5,7 +5,7 @@ title: getCredentials
 
 # getCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets a user's credential information for the specified authentication strategy.
 

@@ -5,7 +5,7 @@ title: zcount
 
 # zcount
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the number of elements held by a sorted set with a score within the provided `min` and `max` values.
 
@@ -38,9 +38,9 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `min`: minimum score
-* `max`: maximum score
+- `_id`: sorted set identifier
+- `min`: minimum score
+- `max`: maximum score
 
 By default, the provided min and max values are inclusive. This behavior can be changed using the syntax described in the Redis [ZRANGEBYSCORE](https://redis.io/commands/zrangebyscore) documentation.
 

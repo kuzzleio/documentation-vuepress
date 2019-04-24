@@ -5,7 +5,7 @@ title: psetex
 
 # psetex
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a key with the provided value, and an expiration delay expressed in milliseconds. If the key does not exist, it is created beforehand.
 
@@ -19,7 +19,7 @@ Sets a key with the provided value, and an expiration delay expressed in millise
 
 ```http
 URL: http://kuzzle:7512/ms/_psetex/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `milliseconds`: the key time to live, in milliseconds
-* `value`: new value
+- `milliseconds`: the key time to live, in milliseconds
+- `value`: new value
 
 ---
 

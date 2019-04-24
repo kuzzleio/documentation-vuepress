@@ -5,7 +5,7 @@ title: createUser
 
 # createUser
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a new user.
 

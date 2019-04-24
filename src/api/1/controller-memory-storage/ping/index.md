@@ -5,7 +5,7 @@ title: ping
 
 # ping
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Pings the memory storage database.
 

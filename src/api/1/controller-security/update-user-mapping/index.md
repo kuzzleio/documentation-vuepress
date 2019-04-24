@@ -5,10 +5,9 @@ title: updateUserMapping
 
 # updateUserMapping
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Updates the internal user storage mapping.
-
 
 ---
 
@@ -18,7 +17,7 @@ Updates the internal user storage mapping.
 
 ```http
 URL: http://kuzzle:7512/users/_mapping
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -49,7 +48,7 @@ Body:
 
 ## Body properties
 
-* `properties`: mapping definition using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html)
+- `properties`: mapping definition using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html)
 
 ---
 
@@ -59,8 +58,8 @@ Returns an acknowledgement.
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "updateUserMapping",
   "controller": "security",
   "requestId": "<unique request identifier>",

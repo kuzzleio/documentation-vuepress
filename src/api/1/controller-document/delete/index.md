@@ -5,7 +5,7 @@ title: delete
 
 # delete
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes a document.
 
@@ -36,13 +36,13 @@ Method: DELETE
 
 ## Arguments
 
-* `collection`: data collection
-* `documentId`: document unique identifier
-* `index`: data index
+- `collection`: data collection
+- `documentId`: document unique identifier
+- `index`: data index
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the deletion has been indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the deletion has been indexed
 
 ---
 

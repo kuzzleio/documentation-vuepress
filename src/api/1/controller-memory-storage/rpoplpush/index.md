@@ -5,7 +5,7 @@ title: rpoplpush
 
 # rpoplpush
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes the last element of a list, and pushes it back at the start of another list.
 
@@ -19,7 +19,7 @@ Removes the last element of a list, and pushes it back at the start of another l
 
 ```http
 URL: http://kuzzle:7512/ms/_rpoplpush
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -43,12 +43,12 @@ Body:
 }
 ```
 
---- 
+---
 
 ## Body properties
 
-* `destination`: the destination list to push the value into
-* `source`: the source list from which the value is popped
+- `destination`: the destination list to push the value into
+- `source`: the source list from which the value is popped
 
 ---
 

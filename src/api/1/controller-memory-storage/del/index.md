@@ -5,7 +5,7 @@ title: del
 
 # del
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes a list of keys.
 
@@ -20,7 +20,7 @@ Deletes a list of keys.
 ```http
 URL: http://kuzzle:7512/ms
 Method: DELETE
-Body:  
+Body:
 ```
 
 ```js
@@ -45,7 +45,7 @@ Body:
 
 ## Body properties
 
-* `keys`: an array of keys to delete
+- `keys`: an array of keys to delete
 
 ---
 

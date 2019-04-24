@@ -5,7 +5,7 @@ title: pexpire
 
 # pexpire
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a timeout (in milliseconds) on a key. After the timeout has expired, the key will automatically be deleted.
 
@@ -19,7 +19,7 @@ Sets a timeout (in milliseconds) on a key. After the timeout has expired, the ke
 
 ```http
 URL: http://kuzzle:7512/ms/_pexpire/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -45,13 +45,13 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `milliseconds`: the number of milliseconds after which the key is deleted
+- `milliseconds`: the number of milliseconds after which the key is deleted
 
 ---
 

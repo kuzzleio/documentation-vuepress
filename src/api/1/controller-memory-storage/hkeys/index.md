@@ -5,7 +5,7 @@ title: hkeys
 
 # hkeys
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns all field names contained in a hash.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -37,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 

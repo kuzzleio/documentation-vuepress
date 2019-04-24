@@ -5,7 +5,7 @@ title: getrange
 
 # getrange
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns a substring of a key's value.
 
@@ -38,9 +38,9 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key identifier
-* `start`: substring starting position. 
-* `end`: substring ending position
+- `_id`: key identifier
+- `start`: substring starting position.
+- `end`: substring ending position
 
 The arguments `start` and `end` can be negative. In that case, the offset is calculated from the end of the string, going backward. For instance, `-3` is the third character from the end of the string.
 

@@ -5,7 +5,7 @@ title: rpop
 
 # rpop
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes the last element of a list and returns it.
 
@@ -36,7 +36,7 @@ Method: POST
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 

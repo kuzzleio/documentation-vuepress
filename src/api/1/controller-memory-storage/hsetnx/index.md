@@ -5,7 +5,7 @@ title: hsetnx
 
 # hsetnx
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a field and its value in a hash, only if the field does not already exist.
 
@@ -19,7 +19,7 @@ Sets a field and its value in a hash, only if the field does not already exist.
 
 ```http
 URL: http://kuzzle:7512/ms/_hsetnx/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 
 ## Body properties
 
-* `field`: new hash field name
-* `value`: hash field value
+- `field`: new hash field name
+- `value`: hash field value
 
 ---
 

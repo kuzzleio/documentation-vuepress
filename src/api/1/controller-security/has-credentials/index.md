@@ -5,7 +5,7 @@ title: hasCredentials
 
 # hasCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks if a user has credentials registered for the specified authentication strategy.
 

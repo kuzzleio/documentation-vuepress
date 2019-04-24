@@ -5,7 +5,7 @@ title: zrank
 
 # zrank
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the position of an element in a sorted set, with scores sorted in ascending order. The index returned is 0-based (the lowest score member has an index of 0).
 
@@ -37,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `member`: member value to search
+- `_id`: sorted set identifier
+- `member`: member value to search
 
 ---
 

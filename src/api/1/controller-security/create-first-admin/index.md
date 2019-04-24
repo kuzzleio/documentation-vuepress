@@ -5,7 +5,7 @@ title: createFirstAdmin
 
 # createFirstAdmin
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a Kuzzle administrator account, only if none exist.
 

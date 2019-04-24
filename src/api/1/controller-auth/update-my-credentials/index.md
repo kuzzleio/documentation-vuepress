@@ -5,7 +5,7 @@ title: updateMyCredentials
 
 # updateMyCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Updates the credentials of the currently logged in user.
 
@@ -17,8 +17,8 @@ Updates the credentials of the currently logged in user.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/_me/_update
-Method: PUT  
-Headers: Authorization: "Bearer <authentication token>"  
+Method: PUT
+Headers: Authorization: "Bearer <authentication token>"
 Body:
 ```
 
@@ -46,8 +46,8 @@ Body:
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
-* `strategy`: name of the authentication strategy to update
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `strategy`: name of the authentication strategy to update
 
 ---
 
@@ -63,7 +63,7 @@ The API request examples in this page are for the [`local` authentication plugin
 
 ## Response
 
-The result content depends on the authentication strategy. 
+The result content depends on the authentication strategy.
 
 Example with the "local" authentication strategy:
 

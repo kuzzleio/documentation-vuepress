@@ -5,7 +5,7 @@ title: geoadd
 
 # geoadd
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Adds geospatial points to the specified key.
 
@@ -19,7 +19,7 @@ Adds geospatial points to the specified key.
 
 ```http
 URL: http://kuzzle:7512/ms/_geoadd/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -33,7 +33,7 @@ Body:
     },
     {
       "lon": 3.897105,
-      "lat": 43.6002203, 
+      "lat": 43.6002203,
       "name": "our other HQ"
     }
   ]
@@ -55,7 +55,7 @@ Body:
         "name": "kuzzle HQ"
       },
       {
-        "lon": 43.6002203, 
+        "lon": 43.6002203,
         "lat": 3.897105,
         "name": "our other HQ"
       }
@@ -68,16 +68,16 @@ Body:
 
 ## Arguments
 
-* `_id`: key to update
+- `_id`: key to update
 
 ---
 
 ## Body properties
 
-* `points`: an array of objects. Each object describes a geographical point, with the following properties:
-  * `lon`: longitude (float)
-  * `lat`: latitude (float)
-  * `name`: point unique identifier
+- `points`: an array of objects. Each object describes a geographical point, with the following properties:
+  - `lon`: longitude (float)
+  - `lat`: latitude (float)
+  - `name`: point unique identifier
 
 ---
 

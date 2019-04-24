@@ -5,7 +5,7 @@ title: zremrangebyrank
 
 # zremrangebyrank
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes members from a sorted set, with their position in the set within a provided index range.
 
@@ -21,7 +21,7 @@ Positions are 0-based, meaning the first member of the set has a position of 0.
 
 ```http
 URL: http://kuzzle:7512/ms/_zremrangebyrank/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -50,14 +50,14 @@ Body:
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 
 ## Body properties
 
-* `start`: starting index position, inclusive
-* `stop`: ending index position, inclusive
+- `start`: starting index position, inclusive
+- `stop`: ending index position, inclusive
 
 ---
 

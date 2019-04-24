@@ -5,7 +5,7 @@ title: execute
 
 # execute
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Executes a Kuzzle's [API action](/api/1/).
 

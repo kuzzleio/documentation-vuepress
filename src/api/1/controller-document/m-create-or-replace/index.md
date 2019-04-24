@@ -5,7 +5,7 @@ title: mCreateOrReplace
 
 # mCreateOrReplace
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates or replaces multiple documents.
 

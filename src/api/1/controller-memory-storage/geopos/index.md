@@ -5,7 +5,7 @@ title: geopos
 
 # geopos
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the position (`[longitude, latitude]`) of the provided key's members (see [geoadd](/api/1/controller-memory-storage/geoadd/)).
 

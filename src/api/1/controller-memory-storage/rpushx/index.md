@@ -5,7 +5,7 @@ title: rpushx
 
 # rpushx
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Appends a value at the end of a list, only if the destination key already exists, and if it holds a list.
 
@@ -19,7 +19,7 @@ Appends a value at the end of a list, only if the destination key already exists
 
 ```http
 URL: http://kuzzle:7512/ms/_rpushx/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `value`: the value to push to the list
+- `value`: the value to push to the list
 
 ---
 

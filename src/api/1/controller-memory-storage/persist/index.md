@@ -5,7 +5,7 @@ title: persist
 
 # persist
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes the expiration delay or timestamp from a key, making it persistent.
 
@@ -36,7 +36,7 @@ Method: POST
 
 ## Argument
 
-* `_id`: key to persist
+- `_id`: key to persist
 
 ---
 

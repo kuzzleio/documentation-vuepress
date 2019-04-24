@@ -5,7 +5,7 @@ title: create
 
 # create
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a new document in the persistent data storage.
 
@@ -20,7 +20,7 @@ Returns an error if the document already exists.
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_create[?refresh=wait_for]
 URL(2): http://kuzzle:7512/<index>/<collection>/<documentId>/_create[?refresh=wait_for]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -38,7 +38,7 @@ Body:
   "collection": "<collection>",
   "controller": "document",
   "action": "create",
-  "_id": "<documentId>",            
+  "_id": "<documentId>",
   "body": {
     // document content
   }
@@ -49,13 +49,13 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `documentId`: set the document unique ID to the provided value, instead of auto-generating a random ID
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the newly created document is indexed
+- `documentId`: set the document unique ID to the provided value, instead of auto-generating a random ID
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the newly created document is indexed
 
 ---
 
@@ -69,9 +69,9 @@ Document content to create.
 
 Returns an object with the following properties:
 
-* `_id`: created document unique identifier
-* `_source`: document content
-* `_version`: version of the created document (should be `1`)
+- `_id`: created document unique identifier
+- `_source`: document content
+- `_version`: version of the created document (should be `1`)
 
 ```javascript
 {

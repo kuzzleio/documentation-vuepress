@@ -5,7 +5,7 @@ title: now
 
 # now
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the current server timestamp, in Epoch-millis format.
 
@@ -37,8 +37,8 @@ Returns a `now` property containing the server timestamp, in Epoch-millis format
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "controller": "server",
   "action": "now",
   "requestId": "<unique request identifier>",

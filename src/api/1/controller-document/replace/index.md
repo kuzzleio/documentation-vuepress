@@ -5,7 +5,7 @@ title: replace
 
 # replace
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Replaces the content of an existing document.
 
@@ -17,7 +17,7 @@ Replaces the content of an existing document.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/<documentId>/_replace[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -47,13 +47,13 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `documentId`: unique ID of the document to replace
-* `index`: data index
+- `collection`: data collection
+- `documentId`: unique ID of the document to replace
+- `index`: data index
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the new document content is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the new document content is indexed
 
 ---
 
@@ -67,9 +67,9 @@ New document content.
 
 Returns an object containing updated document information, with the following properties:
 
-* `_id`: document unique identifier
-* `_source`: new document content
-* `_version`: updated document version number
+- `_id`: document unique identifier
+- `_source`: new document content
+- `_version`: updated document version number
 
 ```javascript
 {

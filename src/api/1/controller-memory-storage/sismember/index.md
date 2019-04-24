@@ -5,7 +5,7 @@ title: sismember
 
 # sismember
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks if a value is a member of a set of unique values.
 
@@ -33,13 +33,12 @@ Method: GET
 }
 ```
 
-
 ---
 
 ## Argument
 
-* `_id`: set key identifier
-* `member`: member value to check
+- `_id`: set key identifier
+- `member`: member value to check
 
 ---
 

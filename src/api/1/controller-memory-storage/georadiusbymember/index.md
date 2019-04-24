@@ -5,7 +5,7 @@ title: georadiusbymember
 
 # georadiusbymember
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the members (added with [geoadd](/api/1/controller-memory-storage/geoadd/)) of a given key inside the provided geospatial radius, centered around one of a key's member.
 

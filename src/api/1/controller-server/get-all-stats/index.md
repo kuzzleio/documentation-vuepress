@@ -5,7 +5,7 @@ title: getAllStats
 
 # getAllStats
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets all stored internal statistic snapshots.
 
@@ -35,18 +35,18 @@ Method: GET
 
 Returns a statistic objects with the following properties:
 
-* `hits`: an array of statistic snapshots. By default, snapshots are made every 10 seconds and they are stored for 1 hour. Each snapshot is an object with the following properties:
-  * `completedRequests`: completed requests, per network protocol
-  * `connections`: number of active connections, per network protocol
-  * `failedRequests`: failed requests, per network protocol
-  * `ongoingRequests`: requests underway, per network protocol
-  * `timestamp`: snapshot timestamp, in Epoch-millis format
-* `total`: total number of available snapshots
+- `hits`: an array of statistic snapshots. By default, snapshots are made every 10 seconds and they are stored for 1 hour. Each snapshot is an object with the following properties:
+  - `completedRequests`: completed requests, per network protocol
+  - `connections`: number of active connections, per network protocol
+  - `failedRequests`: failed requests, per network protocol
+  - `ongoingRequests`: requests underway, per network protocol
+  - `timestamp`: snapshot timestamp, in Epoch-millis format
+- `total`: total number of available snapshots
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "getAllStats",
   "controller": "server",
   "requestId": "<unique request identifier>",

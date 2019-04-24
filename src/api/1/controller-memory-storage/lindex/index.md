@@ -5,7 +5,7 @@ title: lindex
 
 # lindex
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the element at the provided index in a list.
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -38,8 +37,8 @@ Method: GET
 
 ## Argument
 
-* `_id`: list key identifier
-* `index`: index of the list. Lists are 0-indexed. If negative, it goes backward from the end of the list
+- `_id`: list key identifier
+- `index`: index of the list. Lists are 0-indexed. If negative, it goes backward from the end of the list
 
 ---
 

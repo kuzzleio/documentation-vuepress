@@ -5,7 +5,7 @@ title: getUserRights
 
 # getUserRights
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets the detailed rights granted to a user.
 

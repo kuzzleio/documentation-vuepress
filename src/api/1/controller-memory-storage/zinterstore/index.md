@@ -5,7 +5,7 @@ title: zinterstore
 
 # zinterstore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Computes the intersection of the provided sorted sets, and stores the result in a new sorted set.
 
@@ -19,7 +19,7 @@ Computes the intersection of the provided sorted sets, and stores the result in 
 
 ```http
 URL: http://kuzzle:7512/ms/_zinterstore/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -52,7 +52,7 @@ Body:
 
 ## Argument
 
-* `_id`: sorted set to create/overwrite with the computed intersection
+- `_id`: sorted set to create/overwrite with the computed intersection
 
 ---
 
@@ -60,8 +60,8 @@ Body:
 
 ### Optional:
 
-* `aggregate` (default: `sum`): specifies how members' scores are aggregated during the intersection
-* `weights`: specifies a multiplication factor for each input sorted set
+- `aggregate` (default: `sum`): specifies how members' scores are aggregated during the intersection
+- `weights`: specifies a multiplication factor for each input sorted set
 
 ---
 

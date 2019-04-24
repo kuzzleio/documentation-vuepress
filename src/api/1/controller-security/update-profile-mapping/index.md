@@ -5,7 +5,7 @@ title: updateProfileMapping
 
 # updateProfileMapping
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Updates the internal profile storage mapping.
 
@@ -17,7 +17,7 @@ Updates the internal profile storage mapping.
 
 ```http
 URL: http://kuzzle:7512/profiles/_mapping
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -47,7 +47,7 @@ Body:
 
 ## Body properties
 
-* `properties`: mapping definition using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html)
+- `properties`: mapping definition using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html)
 
 ---
 

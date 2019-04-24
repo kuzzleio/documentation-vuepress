@@ -5,9 +5,9 @@ title: sadd
 
 # sadd
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Adds members to a set of unique values stored at `key`. 
+Adds members to a set of unique values stored at `key`.
 
 If the destination set does not exist, it is created beforehand.
 
@@ -21,7 +21,7 @@ If the destination set does not exist, it is created beforehand.
 
 ```http
 URL: http://kuzzle:7512/ms/_sadd/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,13 +48,13 @@ Body:
 
 ## Argument
 
-* `_id`: set key identifier
+- `_id`: set key identifier
 
 ---
 
 ## Body properties
 
-* `members`: an array of values to add to the set
+- `members`: an array of values to add to the set
 
 ---
 

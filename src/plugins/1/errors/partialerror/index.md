@@ -5,7 +5,7 @@ title: PartialError
 
 # PartialError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Partial request success.
 

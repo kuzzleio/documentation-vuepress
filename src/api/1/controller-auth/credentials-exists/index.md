@@ -5,7 +5,7 @@ title: credentialsExist
 
 # credentialsExist
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks that the current authenticated user has credentials for the specified authentication strategy.
 
@@ -17,7 +17,7 @@ Checks that the current authenticated user has credentials for the specified aut
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/_me/_exists
-Method: GET  
+Method: GET
 Headers: Authorization: "Bearer <authentication token>"
 ```
 
@@ -36,8 +36,8 @@ Headers: Authorization: "Bearer <authentication token>"
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
-* `strategy`: name of the authentication strategy to be tested
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `strategy`: name of the authentication strategy to be tested
 
 ---
 

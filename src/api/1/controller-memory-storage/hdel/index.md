@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: hdel
 ---
 
-
 # hdel
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes fields from a hash.
 
@@ -20,7 +19,7 @@ Removes fields from a hash.
 
 ```http
 URL: http://kuzzle:7512/ms/_hdel/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -31,7 +30,6 @@ Body:
 ```
 
 ### Other protocols
-
 
 ```js
 {
@@ -48,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 
 ## Body properties
 
-* `fields`: an array of hash fields to delete
+- `fields`: an array of hash fields to delete
 
 ---
 

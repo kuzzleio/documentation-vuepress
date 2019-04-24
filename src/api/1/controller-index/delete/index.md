@@ -5,7 +5,7 @@ title: delete
 
 # delete
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes an [index](/guide/1/essentials/persisted).
 

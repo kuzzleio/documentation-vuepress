@@ -5,9 +5,9 @@ title: resetDatabase
 
 # resetDatabase
 
-{{{since "1.4.0"}}}
+<SinceBadge version="1.4.0" />
 
-Asynchronously deletes all indexes created by users. 
+Asynchronously deletes all indexes created by users.
 
 Neither Kuzzle internal indexes nor Plugin indexes are deleted.
 
@@ -23,7 +23,6 @@ Method: POST
 ```
 
 ### Other protocols
-
 
 ```js
 {

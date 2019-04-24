@@ -5,7 +5,7 @@ title: getset
 
 # getset
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a new value for a key, and returns its previously stored value.
 
@@ -19,7 +19,7 @@ Sets a new value for a key, and returns its previously stored value.
 
 ```http
 URL: http://kuzzle:7512/ms/_getset/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -30,7 +30,6 @@ Body:
 ```
 
 ### Other protocols
-
 
 ```js
 {
@@ -47,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `_id`: key to get and set
+- `_id`: key to get and set
 
 ---
 
 ## Body properties
 
-* `value`: the new key value
+- `value`: the new key value
 
 ---
 

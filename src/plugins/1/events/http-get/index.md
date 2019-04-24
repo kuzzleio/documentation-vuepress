@@ -5,7 +5,7 @@ title: http:get
 
 # http:get
 
-{{{since "1.2.0"}}}
+<SinceBadge version="1.2.0" />
 
 | Arguments | Type                                                           | Description                |
 | --------- | -------------------------------------------------------------- | -------------------------- |

@@ -5,7 +5,7 @@ title: randomkey
 
 # randomkey
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns a key identifier from the memory storage, at random.
 
@@ -19,7 +19,7 @@ Returns a key identifier from the memory storage, at random.
 
 ```http
 URL: http://kuzzle:7512/ms/_randomkey
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols

@@ -5,7 +5,7 @@ title: mGetRoles
 
 # mGetRoles
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets multiple security roles.
 
@@ -17,7 +17,7 @@ Gets multiple security roles.
 
 ```http
 URL: http://kuzzle:7512/roles/_mGet
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -38,11 +38,12 @@ Body:
   }
 }
 ```
+
 ---
 
 ## Body properties
 
-* `ids`: an array of role identifiers to get
+- `ids`: an array of role identifiers to get
 
 ---
 
@@ -50,8 +51,8 @@ Body:
 
 Returns a `hits` array of objects. Each object is a role description, with the following properties:
 
-* `_id`: role unique identifier
-* `_source`: role description
+- `_id`: role unique identifier
+- `_source`: role description
 
 ```javascript
 {

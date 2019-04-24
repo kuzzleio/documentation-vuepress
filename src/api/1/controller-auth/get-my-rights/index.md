@@ -5,7 +5,7 @@ title: getMyRights
 
 # getMyRights
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the exhaustive list of granted or denied rights for the currently logged in user.
 
@@ -17,7 +17,7 @@ Returns the exhaustive list of granted or denied rights for the currently logged
 
 ```http
 URL: http://kuzzle:7512/users/_me/_rights
-Method: GET  
+Method: GET
 Headers: Authorization: "Bearer <authentication token>"
 ```
 
@@ -35,7 +35,7 @@ Headers: Authorization: "Bearer <authentication token>"
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
 
 ---
 
@@ -45,11 +45,11 @@ The result contains a `hits` array, listing the rights for the current user.
 
 Each right is an object with the following properties:
 
-* `controller`: API controller
-* `action`: controller's action
-* `index`: authorized or denied data index
-* `collection`: authorized or denied data collection
-* `value`: one of the following value: `denied`, `allowed`, or `conditional`
+- `controller`: API controller
+- `action`: controller's action
+- `index`: authorized or denied data index
+- `collection`: authorized or denied data collection
+- `value`: one of the following value: `denied`, `allowed`, or `conditional`
 
 ```javascript
 {

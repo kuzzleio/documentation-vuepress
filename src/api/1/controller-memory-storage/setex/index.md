@@ -5,7 +5,7 @@ title: setex
 
 # setex
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets a value and a time to live (in seconds) on a key. If the key already exists, it is overwritten.
 
@@ -19,7 +19,7 @@ Sets a value and a time to live (in seconds) on a key. If the key already exists
 
 ```http
 URL: http://kuzzle:7512/ms/_setex/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,15 +48,14 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `seconds`: expiration duration, in seconds
-* `value`: new key value
-
+- `seconds`: expiration duration, in seconds
+- `value`: new key value
 
 ---
 

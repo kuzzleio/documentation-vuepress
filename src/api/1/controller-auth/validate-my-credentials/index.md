@@ -5,11 +5,11 @@ title: validateMyCredentials
 
 # validateMyCredentials
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Validates the provided credentials against a specified authentication strategy. 
+Validates the provided credentials against a specified authentication strategy.
 
-This route neither creates nor modifies credentials. 
+This route neither creates nor modifies credentials.
 
 ---
 
@@ -19,8 +19,8 @@ This route neither creates nor modifies credentials.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/_me/_validate
-Method: POST  
-Headers: Authorization: "Bearer <authentication token>"  
+Method: POST
+Headers: Authorization: "Bearer <authentication token>"
 Body:
 ```
 
@@ -50,8 +50,8 @@ Body:
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
-* `strategy`: name of the authentication strategy used to validate the provided credentials
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `strategy`: name of the authentication strategy used to validate the provided credentials
 
 ---
 

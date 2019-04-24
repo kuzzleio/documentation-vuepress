@@ -5,7 +5,7 @@ title: ParseError
 
 # ParseError
 
-{{{since "1.0.0"}}} / {{{deprecated "1.4.1"}}}
+<SinceBadge version="1.0.0" /> / <DeprecatedBadge version="1.4.1" />
 
 Parse error. Use [BadRequestError](/plugins/1/errors/badrequesterror) instead.
 

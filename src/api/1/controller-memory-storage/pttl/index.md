@@ -5,12 +5,11 @@ title: pttl
 
 # pttl
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the remaining time to live of a key, in milliseconds.
 
 [[_Redis documentation_]](https://redis.io/commands/pttl)
-
 
 ---
 
@@ -37,7 +36,7 @@ Method: GET
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 

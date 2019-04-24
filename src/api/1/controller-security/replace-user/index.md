@@ -5,7 +5,7 @@ title: replaceUser
 
 # replaceUser
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Replaces a user with new configuration.
 

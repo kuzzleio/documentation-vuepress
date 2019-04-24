@@ -5,7 +5,7 @@ title: bitop
 
 # bitop
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Performs a bitwise operation between multiple keys (containing string values) and stores the result in the destination key.
 
@@ -48,14 +48,14 @@ Body:
 
 ## Arguments
 
-* `_id`: destination key to create
+- `_id`: destination key to create
 
 ---
 
 ## Body properties
 
-* `keys`: the list of keys to combine
-* `operation`: the bitwise operand to use to combine keys. Allowed values: `AND`, `NOT`, `OR`, `XOR`
+- `keys`: the list of keys to combine
+- `operation`: the bitwise operand to use to combine keys. Allowed values: `AND`, `NOT`, `OR`, `XOR`
 
 ---
 

@@ -5,7 +5,7 @@ title: time
 
 # time
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the current server time.
 
@@ -34,11 +34,11 @@ Method: GET
 ---
 
 ## Response
- 
-Returns the time as a two items array: 
 
-* a timestamp in [Epoch time](https://en.wikipedia.org/wiki/Unix_time) 
-* the number of microseconds already elapsed in the current second
+Returns the time as a two items array:
+
+- a timestamp in [Epoch time](https://en.wikipedia.org/wiki/Unix_time)
+- the number of microseconds already elapsed in the current second
 
 ### Example
 

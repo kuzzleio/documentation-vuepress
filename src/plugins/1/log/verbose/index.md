@@ -6,13 +6,13 @@ order: 3
 
 # verbose
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ## Priority
 
 `3` (ignored by default)
 
-## Example 
+## Example
 
 ```js
 context.log.verbose('verbose message');

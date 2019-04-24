@@ -5,7 +5,7 @@ title: resetCache
 
 # resetCache
 
-{{{since "1.4.0"}}}
+<SinceBadge version="1.4.0" />
 
 Asynchronously clears the cache database.
 

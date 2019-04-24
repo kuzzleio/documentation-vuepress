@@ -6,7 +6,7 @@ order: 2
 
 # info
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ## Priority
 

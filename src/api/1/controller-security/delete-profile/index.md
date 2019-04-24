@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: deleteProfile
 ---
 
-
 # deleteProfile
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes a security profile.
 
@@ -37,11 +36,11 @@ Method: DELETE
 
 ## Arguments
 
-* `_id`: profile identifier
+- `_id`: profile identifier
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the profile deletion is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the profile deletion is indexed
 
 ---
 
@@ -51,8 +50,8 @@ Returns the deleted profile identifier.
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "result": {
     "_id": "<profileId>"
   },
@@ -61,4 +60,3 @@ Returns the deleted profile identifier.
   "requestId": "<unique request identifier>"
 }
 ```
-

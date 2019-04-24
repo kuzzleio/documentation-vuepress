@@ -6,7 +6,7 @@ order: 4
 
 # debug
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 ## Priority
 

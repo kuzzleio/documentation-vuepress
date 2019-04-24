@@ -5,7 +5,7 @@ title: core:overload
 
 # core:overload
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 | Arguments | Type              | Description                    |
 | --------- | ----------------- | ------------------------------ |

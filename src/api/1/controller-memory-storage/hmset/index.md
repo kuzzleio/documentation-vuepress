@@ -5,7 +5,7 @@ title: hmset
 
 # hmset
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets multiple fields at once in a hash.
 
@@ -19,7 +19,7 @@ Sets multiple fields at once in a hash.
 
 ```http
 URL: http://kuzzle:7512/ms/_hmset/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -54,15 +54,15 @@ Body:
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 
 ## Body properties
 
-* `entries`: an array of objects. Each object describes a new hash field to set, with the following properties:
-  * `field`: hash field name
-  * `value`: hash field value
+- `entries`: an array of objects. Each object describes a new hash field to set, with the following properties:
+  - `field`: hash field name
+  - `value`: hash field value
 
 ---
 

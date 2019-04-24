@@ -5,7 +5,7 @@ title: list
 
 # list
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the list of data collections associated to a provided data index.
 

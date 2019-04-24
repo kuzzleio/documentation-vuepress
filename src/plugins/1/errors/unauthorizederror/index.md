@@ -5,7 +5,7 @@ title: UnauthorizedError
 
 # UnauthorizedError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Authentication failed.
 
@@ -13,7 +13,7 @@ Authentication failed.
 
 `401`
 
-## Example 
+## Example
 
 ```js
 const err = new context.errors.UnauthorizedError('error message');

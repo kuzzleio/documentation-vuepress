@@ -5,7 +5,7 @@ title: lset
 
 # lset
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Sets the list element at `index` with the provided value.
 
@@ -19,7 +19,7 @@ Sets the list element at `index` with the provided value.
 
 ```http
 URL: http://kuzzle:7512/ms/_lset/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `index`: index of the list. Lists are 0-indexed. If negative, it goes backward from the end of the list
-* `value`: the new value to set
+- `index`: index of the list. Lists are 0-indexed. If negative, it goes backward from the end of the list
+- `value`: the new value to set
 
 ---
 

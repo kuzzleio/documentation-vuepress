@@ -11,7 +11,7 @@ Accessor to the [data validation API](/guide/1/datavalidation)
 
 ## addType
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Adds a new data type, to be used for document validation.
 
@@ -31,7 +31,7 @@ addType(Type);
 
 ## validate
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Validates the content of a request body (mutates the request).
 

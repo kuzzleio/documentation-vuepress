@@ -5,7 +5,7 @@ title: renamenx
 
 # renamenx
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Renames a key, only if the new name is not already used.
 
@@ -19,7 +19,7 @@ Renames a key, only if the new name is not already used.
 
 ```http
 URL: http://kuzzle:7512/ms/_renamenx/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Argument
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 
 ## Body properties
 
-* `newkey`: the new key name
+- `newkey`: the new key name
 
 ---
 

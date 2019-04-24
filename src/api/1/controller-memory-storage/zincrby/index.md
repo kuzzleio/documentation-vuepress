@@ -5,7 +5,7 @@ title: zincrby
 
 # zincrby
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Increments the score of a sorted set member by the provided value.
 
@@ -19,7 +19,7 @@ Increments the score of a sorted set member by the provided value.
 
 ```http
 URL: http://kuzzle:7512/ms/_zincrby/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,14 +48,14 @@ Body:
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 
 ## Body properties
 
-* `member`: sorted set value
-* `value`: integer value used to increment the member's score
+- `member`: sorted set value
+- `value`: integer value used to increment the member's score
 
 ---
 

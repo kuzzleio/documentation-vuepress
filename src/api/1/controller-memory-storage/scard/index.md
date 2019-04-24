@@ -5,7 +5,7 @@ title: scard
 
 # scard
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the number of members stored in a set of unique values.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Argument
 
-* `_id`: set key identifier
+- `_id`: set key identifier
 
 ---
 

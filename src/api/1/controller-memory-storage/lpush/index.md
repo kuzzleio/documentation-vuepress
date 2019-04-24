@@ -5,9 +5,9 @@ title: lpush
 
 # lpush
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Prepends the specified values to a list. 
+Prepends the specified values to a list.
 
 If the key does not exist, it is created holding an empty list before performing the operation.
 
@@ -21,7 +21,7 @@ If the key does not exist, it is created holding an empty list before performing
 
 ```http
 URL: http://kuzzle:7512/ms/_lpush/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,13 +48,13 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `values`: array of values to push to the list
+- `values`: array of values to push to the list
 
 ---
 

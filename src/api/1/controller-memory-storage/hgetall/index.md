@@ -5,7 +5,7 @@ title: hgetall
 
 # hgetall
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns all fields and values of a hash.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
 ---
 

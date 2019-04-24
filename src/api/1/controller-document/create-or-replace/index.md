@@ -5,7 +5,7 @@ title: createOrReplace
 
 # createOrReplace
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a new document in the persistent data storage, or replaces its content if it already exists.
 
@@ -17,7 +17,7 @@ Creates a new document in the persistent data storage, or replaces its content i
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/<documentId>[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -35,7 +35,7 @@ Body:
   "collection": "<collection>",
   "controller": "document",
   "action": "createOrReplace",
-  "_id": "<documentId>",    
+  "_id": "<documentId>",
   "body": {
     // document content
   }
@@ -46,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `documentId`: unique identifier of the document to create or replace
-* `index`: data index
+- `collection`: data collection
+- `documentId`: unique identifier of the document to create or replace
+- `index`: data index
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced document is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced document is indexed
 
 ---
 
@@ -66,10 +66,10 @@ New document content.
 
 Returns an object with the following properties:
 
-* `_id`: created document unique identifier
-* `_source`: document content
-* `_version`: version of the created document
-* `created`: a boolean telling if a new document has been created
+- `_id`: created document unique identifier
+- `_source`: document content
+- `_version`: version of the created document
+- `created`: a boolean telling if a new document has been created
 
 ```javascript
 {
@@ -85,7 +85,7 @@ Returns an object with the following properties:
     "_source": {
       // document content
     },
-    "_version": 1, 
+    "_version": 1,
     "created": true
   }
 }

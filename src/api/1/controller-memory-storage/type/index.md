@@ -5,7 +5,7 @@ title: type
 
 # type
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the type of the value held by a key.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key identifier
+- `_id`: key identifier
 
 ---
 

@@ -5,7 +5,7 @@ title: zrem
 
 # zrem
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes members from a sorted set.
 
@@ -19,7 +19,7 @@ Removes members from a sorted set.
 
 ```http
 URL: http://kuzzle:7512/ms/_zrem/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Arguments
 
-* `_id`: sorted set identifier
+- `_id`: sorted set identifier
 
 ---
 
 ## Body properties
 
-* `members`: an array of member values to remove from the sorted set
+- `members`: an array of member values to remove from the sorted set
 
 ---
 

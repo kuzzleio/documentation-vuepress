@@ -5,11 +5,11 @@ title: create
 
 # create
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Creates a new [collection](/guide/1/essentials/persisted), in the provided `index`.
 
-{{{since "1.3.0"}}}
+<SinceBadge version="1.3.0" />
 
 You can also provide an optional body with a data mapping that allow you to exploit the full capabilities of our persistent data storage layer.
 

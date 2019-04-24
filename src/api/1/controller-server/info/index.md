@@ -5,7 +5,7 @@ title: info
 
 # info
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns information about Kuzzle: available API (base + extended), plugins, external services (Redis, Elasticsearch, ...), servers, etc.
 
@@ -36,8 +36,8 @@ Method: GET
 
 Returns a serverInfo object with the following properties:
 
-* `kuzzle`: kuzzle information about its API, active plugins, and system information
-* `services`: description and status of external services (e.g. Redis, Elasticsearch, ...)
+- `kuzzle`: kuzzle information about its API, active plugins, and system information
+- `services`: description and status of external services (e.g. Redis, Elasticsearch, ...)
 
 ```javascript
 {

@@ -6,7 +6,7 @@ description: Returns the current server timestamp, in Epoch-millis
 
 # now
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the current server timestamp, in Epoch-millis format.
 

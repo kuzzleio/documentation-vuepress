@@ -5,7 +5,7 @@ title: pfadd
 
 # pfadd
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Adds elements to a [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) data structure.
 
@@ -19,7 +19,7 @@ Adds elements to a [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) data
 
 ```http
 URL: http://kuzzle:7512/ms/_pfadd/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Argument
 
-* `_id`: hyperloglog key identifier
+- `_id`: hyperloglog key identifier
 
 ---
 
 ## Body properties
 
-* `elements`: an array of values to add to the hyperloglog structure
+- `elements`: an array of values to add to the hyperloglog structure
 
 ---
 

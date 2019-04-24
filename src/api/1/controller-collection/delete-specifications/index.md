@@ -5,7 +5,7 @@ title: deleteSpecifications
 
 # deleteSpecifications
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes validation specifications for a data collection.
 

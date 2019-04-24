@@ -5,7 +5,7 @@ title: lpushx
 
 # lpushx
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Prepends the specified value to a list, only if the key already exists and if it holds a list.
 
@@ -19,7 +19,7 @@ Prepends the specified value to a list, only if the key already exists and if it
 
 ```http
 URL: http://kuzzle:7512/ms/_lpushx/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,13 +46,13 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `value`: value to push to the list
+- `value`: value to push to the list
 
 ---
 

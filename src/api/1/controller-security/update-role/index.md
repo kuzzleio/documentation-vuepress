@@ -5,7 +5,7 @@ title: updateRole
 
 # updateRole
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Updates a security role definition.
 

@@ -5,11 +5,11 @@ title: hset
 
 # hset
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Sets a field and its value in a hash. 
+Sets a field and its value in a hash.
 
-If the key does not exist, a new key holding a hash is created. 
+If the key does not exist, a new key holding a hash is created.
 
 If the field already exists, its value is overwritten.
 
@@ -23,7 +23,7 @@ If the field already exists, its value is overwritten.
 
 ```http
 URL: http://kuzzle:7512/ms/_hset/<_id>
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -52,14 +52,14 @@ Body:
 
 ## Arguments
 
-* `_id`: hash key identifier
+- `_id`: hash key identifier
 
---- 
+---
 
 ## Body properties
 
-* `field`: hash field name to set
-* `value`: hash field value
+- `field`: hash field name to set
+- `value`: hash field value
 
 ---
 

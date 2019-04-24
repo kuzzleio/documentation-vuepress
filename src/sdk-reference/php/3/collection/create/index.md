@@ -8,7 +8,7 @@ description: Collection:create
 
 Creates a new [collection](/guide/1/essentials/persisted) in Kuzzle via the persistence engine, in the provided `index`.
 
-{{{since "1.3.0"}}}
+<SinceBadge version="1.3.0" />
 
 You can also provide an optional data mapping that allow you to exploit the full capabilities of our
 persistent data storage layer, [ElasticSearch](https://www.elastic.co/products/elasticsearch) (check here the [mapping capabilities of ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/5.4/mapping.html)).

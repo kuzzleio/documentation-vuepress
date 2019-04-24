@@ -3,10 +3,9 @@ layout: full.html.hbs
 title: lrem
 ---
 
-
 # lrem
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes the first occurences of an element from a list.
 
@@ -20,7 +19,7 @@ Removes the first occurences of an element from a list.
 
 ```http
 URL: http://kuzzle:7512/ms/_lrem/<_id>
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
@@ -49,14 +48,14 @@ Body:
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 
 ## Body properties
 
-* `count`: the number of the first found occurences to remove
-* `value`: the value to remove
+- `count`: the number of the first found occurences to remove
+- `value`: the value to remove
 
 ---
 

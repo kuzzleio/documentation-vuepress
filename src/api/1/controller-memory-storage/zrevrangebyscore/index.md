@@ -5,7 +5,7 @@ title: zrevrangebyscore
 
 # zrevrangebyscore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Identical to [zrangebyscore](/api/1/controller-memory-storage/zrangebyscore), except that the sorted set is traversed in descending order.
 

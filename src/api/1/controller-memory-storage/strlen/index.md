@@ -5,7 +5,7 @@ title: strlen
 
 # strlen
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the length of a value.
 
@@ -36,7 +36,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key identifier holding a string value
+- `_id`: key identifier holding a string value
 
 ---
 

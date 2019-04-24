@@ -5,7 +5,7 @@ title: checkToken
 
 # checkToken
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Checks a JWT validity.
 
@@ -19,8 +19,8 @@ This API route does not require the caller to be logged in.
 
 ```http
 URL: http://kuzzle:7512/_checkToken
-Method: POST  
-Body:  
+Method: POST
+Body:
 ```
 
 ```js
@@ -45,7 +45,7 @@ Body:
 
 ## Body properties
 
-* `token`: the JWT to be tested
+- `token`: the JWT to be tested
 
 ---
 
@@ -53,9 +53,9 @@ Body:
 
 The returned result contains the following properties:
 
-* `valid`: a boolean telling whether the provided token is valid
-* `state`: the reason why a token is invalid. Present only if `valid` is false
-* `expiresAt`: token expiration timestamp. Present only if `valid` is true
+- `valid`: a boolean telling whether the provided token is valid
+- `state`: the reason why a token is invalid. Present only if `valid` is false
+- `expiresAt`: token expiration timestamp. Present only if `valid` is true
 
 Example:
 

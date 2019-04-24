@@ -5,7 +5,7 @@ title: list
 
 # list
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Lists subscriptions on all indexes and all collections.
 
@@ -21,7 +21,6 @@ Method: GET
 ```
 
 ### Other protocols
-
 
 ```js
 {

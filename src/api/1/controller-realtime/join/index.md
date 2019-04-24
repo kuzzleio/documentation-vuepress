@@ -5,7 +5,7 @@ title: join
 
 # join
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Joins a previously created subscription.
 

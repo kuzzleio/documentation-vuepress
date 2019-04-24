@@ -5,9 +5,9 @@ title: zlexcount
 
 # zlexcount
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
-Counts elements in a sorted set where all members have equal score, using lexicographical ordering. 
+Counts elements in a sorted set where all members have equal score, using lexicographical ordering.
 
 [[_Redis documentation_]](https://redis.io/commands/zlexcount)
 
@@ -38,9 +38,9 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `min`: range minimum value
-* `max`: range maximum value
+- `_id`: sorted set identifier
+- `min`: range minimum value
+- `max`: range maximum value
 
 The `min` and `max` values are inclusive by default. To change this behavior, check the syntax detailed in the [Redis documentation](https://redis.io/commands/zrangebylex).
 

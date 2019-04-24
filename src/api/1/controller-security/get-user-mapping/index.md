@@ -5,7 +5,7 @@ title: getUserMapping
 
 # getUserMapping
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Gets the mapping of the internal users collection.
 
@@ -37,8 +37,8 @@ Returns the internal profiles mapping, using [Elasticsearch mapping format](http
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "controller": "security",
   "action": "getUserMapping",
   "requestId": "<unique request identifier>",

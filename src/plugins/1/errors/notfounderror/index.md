@@ -5,7 +5,7 @@ title: NotFoundError
 
 # NotFoundError
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Resource not found.
 

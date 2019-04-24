@@ -5,7 +5,7 @@ title: lpop
 
 # lpop
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Removes and returns the first element of a list.
 
@@ -36,7 +36,7 @@ Method: POST
 
 ## Argument
 
-* `_id`: list key identifier
+- `_id`: list key identifier
 
 ---
 

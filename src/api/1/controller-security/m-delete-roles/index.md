@@ -5,7 +5,7 @@ title: mDeleteRoles
 
 # mDeleteRoles
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Deletes multiple security roles.
 
@@ -17,7 +17,7 @@ Deletes multiple security roles.
 
 ```http
 URL: http://kuzzle:7512/roles/_mDelete[?refresh=wait_for]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -45,13 +45,13 @@ Body:
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the deletions are indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the deletions are indexed
 
 ---
 
 ## Body properties
 
-* `ids`: an array of role identifiers to delete
+- `ids`: an array of role identifiers to delete
 
 ---
 

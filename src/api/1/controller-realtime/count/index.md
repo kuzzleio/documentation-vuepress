@@ -5,7 +5,7 @@ title: count
 
 # count
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns the number of other connections sharing the same subscription.
 
@@ -33,7 +33,7 @@ Due to the synchronous nature of the HTTP protocol, real-time messaging is not s
 
 ## Body properties
 
-* `roomId`: subscription identifier, returned by Kuzzle during upon a successful subscription
+- `roomId`: subscription identifier, returned by Kuzzle during upon a successful subscription
 
 ---
 
@@ -41,8 +41,8 @@ Due to the synchronous nature of the HTTP protocol, real-time messaging is not s
 
 Returns an object with the following properties:
 
-* `count`: number of active connections using the same provided subscription
-* `roomId`: subscription identifier
+- `count`: number of active connections using the same provided subscription
+- `roomId`: subscription identifier
 
 ```js
 {

@@ -5,7 +5,7 @@ title: zrangebyscore
 
 # zrangebyscore
 
-{{{since "1.0.0"}}}
+<SinceBadge version="1.0.0" />
 
 Returns all sorted set elements with a score within a provided range.
 
@@ -43,16 +43,16 @@ Method: GET
 
 ## Arguments:
 
-* `_id`: sorted set identifier
-* `min`: minimum score
-* `max`: maximum score
+- `_id`: sorted set identifier
+- `min`: minimum score
+- `max`: maximum score
 
 By default, `min` and `max` are inclusive. Check the full Redis documentation for other options.
 
 ### Optional:
 
-* `limit`: an array of 2 integers, used to limit the number of returned matching elements (similar to _SELECT LIMIT offset, count_ in SQL). Format: `[<offset>,<count>]` 
-* `withscores`: return the score alongside the found elements
+- `limit`: an array of 2 integers, used to limit the number of returned matching elements (similar to _SELECT LIMIT offset, count_ in SQL). Format: `[<offset>,<count>]`
+- `withscores`: return the score alongside the found elements
 
 ---
 
