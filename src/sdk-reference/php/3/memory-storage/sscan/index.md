@@ -42,7 +42,7 @@ Returns a JSON array containing 2 entries:
 
 ## Usage
 
-[snippet=sscan-1]
+<<< ./snippets/sscan-1.php
 
 > Callback response:
 

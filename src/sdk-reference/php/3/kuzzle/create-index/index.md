@@ -34,7 +34,7 @@ Returns an object with the index creation status.
 
 ## Usage
 
-[snippet=create-index-1]
+<<< ./snippets/create-index-1.php
 
 > Callback response:
 

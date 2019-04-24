@@ -25,4 +25,4 @@ Returns the new [Role](/sdk-reference/php/3/role) object.
 
 ## Usage
 
-[snippet=role-1]
+<<< ./snippets/role-1.php

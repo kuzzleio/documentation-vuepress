@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: touch
 description: MemoryStorage:touch
 ---
-  
 
 # touch
+
 Alters the last access time of one or multiple keys. A key is ignored if it does not exist.
 
 [[_Redis documentation_]](https://redis.io/commands/touch)
@@ -14,19 +14,20 @@ Alters the last access time of one or multiple keys. A key is ignored if it does
 
 ## touch(keys, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `keys` | array | List of keys to alter |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description           |
+| ---------- | ----------- | --------------------- |
+| `keys`     | array       | List of keys to alter |
+| `options`  | JSON Object | Optional parameters   |
+| `callback` | function    | Callback              |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return value
@@ -41,7 +42,8 @@ Returns an integer containing the number of altered keys.
 
 ## Usage
 
-[snippet=touch-1]
+<<< ./snippets/touch-1.php
+
 > Callback response:
 
 ```json

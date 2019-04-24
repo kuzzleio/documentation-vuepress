@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: lindex
 description: MemoryStorage:lindex
 ---
-  
 
 # lindex
+
 Returns the element at the provided index in a list.
 
 [[_Redis documentation_]](https://redis.io/commands/lindex)
@@ -14,20 +14,20 @@ Returns the element at the provided index in a list.
 
 ## lindex(key, index, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `index` | int | Element position in the list |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                  |
+| ---------- | ----------- | ---------------------------- |
+| `key`      | string      | Key identifier               |
+| `index`    | int         | Element position in the list |
+| `options`  | JSON Object | Optional parameters          |
+| `callback` | function    | Callback                     |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -37,7 +37,8 @@ Returns a string containing the retrieved element's value.
 
 ## Usage
 
-[snippet=lindex-1]
+<<< ./snippets/lindex-1.php
+
 > Callback response:
 
 ```json

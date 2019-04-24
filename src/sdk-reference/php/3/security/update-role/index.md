@@ -42,4 +42,4 @@ Returns an updated [Role](/sdk-reference/php/3/role) object.
 
 ## Usage
 
-[snippet=update-role-1]
+<<< ./snippets/update-role-1.php

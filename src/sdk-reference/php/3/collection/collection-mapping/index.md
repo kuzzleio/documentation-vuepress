@@ -24,4 +24,4 @@ Returns the newly created [CollectionMapping](/sdk-reference/php/3/collection-ma
 
 ## Usage
 
-[snippet=collection-mapping-1]
+<<< ./snippets/collection-mapping-1.php

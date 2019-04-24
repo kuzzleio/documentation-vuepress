@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: updateSpecifications
 description: Collection:updateSpecifications
 ---
-  
 
 # updateSpecifications
+
 Update parts of a specification, by replacing some fields or adding new ones.  
 Note that you cannot remove fields this way: missing fields will simply be left unchanged.
 
@@ -13,21 +13,21 @@ Note that you cannot remove fields this way: missing fields will simply be left 
 
 ## updateSpecifications(content, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``content`` | JSON object | Content of the specification to update |
-| ``options`` | JSON object | Optional parameters |
-| ``callback`` | function | Optional callback |
+| Arguments  | Type        | Description                            |
+| ---------- | ----------- | -------------------------------------- |
+| `content`  | JSON object | Content of the specification to update |
+| `options`  | JSON object | Optional parameters                    |
+| `callback` | function    | Optional callback                      |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
-| ``refresh`` | string | If set to ``wait_for``, Kuzzle will wait the persistence layer to finish indexing (available with Elasticsearch 5.x and above) | ``undefined`` |
-| ``retryOnConflict`` | int | Number of retries to attempt before rejecting this update because of a cluster sync conflict | `0` |
+| Option            | Type    | Description                                                                                                                  | Default     |
+| ----------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `queuable`        | boolean | Make this request queuable or not                                                                                            | `true`      |
+| `refresh`         | string  | If set to `wait_for`, Kuzzle will wait the persistence layer to finish indexing (available with Elasticsearch 5.x and above) | `undefined` |
+| `retryOnConflict` | int     | Number of retries to attempt before rejecting this update because of a cluster sync conflict                                 | `0`         |
 
 ---
 
@@ -37,14 +37,15 @@ Returns the `Collection` object to allow chaining.
 
 ## Usage
 
-[snippet=update-specifications-1]
+<<< ./snippets/update-specifications-1.php
+
 > Callback response
 
 ```json
 {
   "index": {
     "collection": {
-      "strict":"true",
+      "strict": "true",
       "fields": {
         "foo": {
           "mandatory": "true",

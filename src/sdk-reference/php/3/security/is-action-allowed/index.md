@@ -38,4 +38,4 @@ Returns either `allowed`, `denied` or `conditional`.
 
 ## Usage
 
-[snippet=is-action-allowed-1]
+<<< ./snippets/is-action-allowed-1.php

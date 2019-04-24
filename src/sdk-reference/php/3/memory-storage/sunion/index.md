@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: sunion
 description: MemoryStorage:sunion
 ---
-  
 
 # sunion
+
 Returns the union of the provided sets of unique values.
 
 [[_Redis documentation_]](https://redis.io/commands/sunion)
@@ -14,19 +14,20 @@ Returns the union of the provided sets of unique values.
 
 ## sunion(keys, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `keys` | string | List of sets of unique values |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                   |
+| ---------- | ----------- | ----------------------------- |
+| `keys`     | string      | List of sets of unique values |
+| `options`  | JSON Object | Optional parameters           |
+| `callback` | function    | Callback                      |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Callback Response
@@ -35,13 +36,10 @@ Returns an array of values in the computed union.
 
 ## Usage
 
-[snippet=sunion-1]
+<<< ./snippets/sunion-1.php
+
 > Callback response:
 
 ```json
-[
-  "union value1",
-  "union value2",
-  "..."
-]
+["union value1", "union value2", "..."]
 ```

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: del
 description: MemoryStorage:del
 ---
-  
 
 # del
+
 Deletes a list of keys.
 
 [[_Redis documentation_]](https://redis.io/commands/del)
@@ -14,19 +14,19 @@ Deletes a list of keys.
 
 ## del(keys, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `keys` | array | List of keys to delete |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description            |
+| ---------- | ----------- | ---------------------- |
+| `keys`     | array       | List of keys to delete |
+| `options`  | JSON Object | Optional parameters    |
+| `callback` | function    | Callback               |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -42,7 +42,8 @@ Return an integer containing the number of deleted keys.
 
 ## Usage
 
-[snippet=del-1]
+<<< ./snippets/del-1.php
+
 > Callback response:
 
 ```json

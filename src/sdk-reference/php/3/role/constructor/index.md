@@ -40,4 +40,4 @@ Returns the `Role` object.
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.php

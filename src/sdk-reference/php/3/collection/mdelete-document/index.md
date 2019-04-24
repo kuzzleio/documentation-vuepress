@@ -35,7 +35,7 @@ Can return a 206 partial error in cases where some documents could not be delete
 
 ## Usage
 
-[snippet=mdelete-document-1]
+<<< ./snippets/mdelete-document-1.php
 
 > Callback response:
 

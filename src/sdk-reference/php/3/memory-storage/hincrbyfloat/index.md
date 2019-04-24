@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hincrbyfloat
 description: MemoryStorage:hincrbyfloat
 ---
-  
 
 # hincrbyfloat
+
 Increments the number stored in a hash field by the provided float value.
 
 [[_Redis documentation_]](https://redis.io/commands/hincrbyfloat)
@@ -14,21 +14,21 @@ Increments the number stored in a hash field by the provided float value.
 
 ## hincrbyfloat(key, field, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `field` | string | Hash field to increment |
-| `value` | double | Increment value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description             |
+| ---------- | ----------- | ----------------------- |
+| `key`      | string      | Key identifier          |
+| `field`    | string      | Hash field to increment |
+| `value`    | double      | Increment value         |
+| `options`  | JSON Object | Optional parameters     |
+| `callback` | function    | Callback                |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -44,7 +44,8 @@ Returns the newly incremented value, as a floating point number.
 
 ## Usage
 
-[snippet=hincrbyfloat-1]
+<<< ./snippets/hincrbyfloat-1.php
+
 > Callback response:
 
 ```json

@@ -46,4 +46,4 @@ Returns an instantiated [SearchResult](/sdk-reference/php/3/search-result) objec
 
 ## Usage
 
-[snippet=scroll-1]
+<<< ./snippets/scroll-1.php

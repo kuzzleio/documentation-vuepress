@@ -34,4 +34,4 @@ Returns a security [Profile](/sdk-reference/php/3/profile) object.
 
 ## Usage
 
-[snippet=fetch-profile-1]
+<<< ./snippets/fetch-profile-1.php

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: sinterstore
 description: MemoryStorage:sinterstore
 ---
-  
 
 # sinterstore
+
 Computes the intersection of the provided sets of unique values and stores the result in the `destination` key.
 
 If the destination key already exists, it is overwritten.
@@ -16,20 +16,21 @@ If the destination key already exists, it is overwritten.
 
 ## sinterstore(destination, keys, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `destination` | string | Destination key identifier |
-| `keys` | array | List of sets of unique values to intersect |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments     | Type        | Description                                |
+| ------------- | ----------- | ------------------------------------------ |
+| `destination` | string      | Destination key identifier                 |
+| `keys`        | array       | List of sets of unique values to intersect |
+| `options`     | JSON Object | Optional parameters                        |
+| `callback`    | function    | Callback                                   |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -44,7 +45,8 @@ Returns an integer containing the number of elements in the stored intersection.
 
 ## Usage
 
-[snippet=sinterstore-1]
+<<< ./snippets/sinterstore-1.php
+
 > Callback response:
 
 ```json

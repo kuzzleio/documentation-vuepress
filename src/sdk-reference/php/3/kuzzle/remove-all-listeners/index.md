@@ -3,18 +3,18 @@ layout: sdk.html.hbs
 title: removeAllListeners
 description: Kuzzle:removeAllListeners
 ---
-  
 
 # removeAllListeners
+
 Removes all listeners, either from a specific event or from all events
 
 ---
 
 ## removeAllListeners([event])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``event`` | string | One of the event described in the ``Event Handling`` section of this documentation |
+| Arguments | Type   | Description                                                                      |
+| --------- | ------ | -------------------------------------------------------------------------------- |
+| `event`   | string | One of the event described in the `Event Handling` section of this documentation |
 
 ---
 
@@ -24,4 +24,4 @@ Returns the `Kuzzle` object to allow chaining.
 
 ## Usage
 
-[snippet=remove-all-listeners-1]
+<<< ./snippets/remove-all-listeners-1.php

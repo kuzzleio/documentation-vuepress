@@ -28,4 +28,4 @@ Returns the `Role` object.
 
 ## Usage
 
-[snippet=set-content-1]
+<<< ./snippets/set-content-1.php

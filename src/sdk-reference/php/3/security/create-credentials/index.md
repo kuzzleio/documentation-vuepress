@@ -3,30 +3,30 @@ layout: sdk.html.hbs
 title: createCredentials
 description: Security:createCredentials
 ---
-  
 
 # createCredentials
+
 Create credentials of user with `kuid` for the specified `strategy`.
 
 ---
 
 ## createCredentials(strategy, kuid, credentials, [options], [callback])
 
-| Arguments | Type | Description
-|-----------|------|------------
-| `strategy` | string | Strategy you want to create credentials in
-| `kuid` | string | User's kuid
-| `credentials` | JSON object | The credentials
-| `options` | JSON object | Optional parameters
-| `callback`| function | Optional callback handling the response
+| Arguments     | Type        | Description                                |
+| ------------- | ----------- | ------------------------------------------ |
+| `strategy`    | string      | Strategy you want to create credentials in |
+| `kuid`        | string      | User's kuid                                |
+| `credentials` | JSON object | The credentials                            |
+| `options`     | JSON object | Optional parameters                        |
+| `callback`    | function    | Optional callback handling the response    |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default
-|--------|------|-------------|---------
-| `queuable` | boolean | Make this request queuable or not  | `true`
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -36,7 +36,8 @@ Returns an object with the created credentials.
 
 ## Usage
 
-[snippet=create-credentials-1]
+<<< ./snippets/create-credentials-1.php
+
 > Callback response
 
 ```json

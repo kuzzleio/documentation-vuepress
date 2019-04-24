@@ -54,4 +54,4 @@ Returns a [Document](/sdk-reference/php/3/document/) object containing the newly
 
 ## Usage
 
-[snippet=create-document-1]
+<<< ./snippets/create-document-1.php

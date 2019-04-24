@@ -45,4 +45,4 @@ Returns a JSON object containing the Kuzzle response.
 
 ## Usage
 
-[snippet=login-1]
+<<< ./snippets/login-1.php

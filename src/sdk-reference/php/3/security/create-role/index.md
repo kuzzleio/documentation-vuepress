@@ -41,4 +41,4 @@ Returns a [Role](/sdk-reference/php/3/role) object.
 
 ## Usage
 
-[snippet=create-role-1]
+<<< ./snippets/create-role-1.php

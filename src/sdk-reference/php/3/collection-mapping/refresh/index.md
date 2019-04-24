@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: refresh
 description: CollectionMapping:refresh
 ---
-  
 
 # refresh
+
 Instantiates a new CollectionMapping object with an up-to-date content.
 
 ---
 
 ## refresh([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -33,4 +33,4 @@ Returns the updated `CollectionMapping` object.
 
 ## Usage
 
-[snippet=refresh-1]
+<<< ./snippets/refresh-1.php

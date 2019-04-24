@@ -12,4 +12,4 @@ This action does not trigger a `disconnected` event since this event is triggere
 
 ## Usage
 
-[snippet=disconnect-1]
+<<< ./snippets/disconnect-1.php

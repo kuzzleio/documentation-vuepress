@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: lpush
 description: MemoryStorage:lpush
 ---
-  
 
 # lpush
+
 Prepends the specified values to a list. If the key does not exist, it is created holding an empty list before performing the operation.
 
 [[_Redis documentation_]](https://redis.io/commands/lpush)
@@ -14,18 +14,18 @@ Prepends the specified values to a list. If the key does not exist, it is create
 
 ## lpush(key, values, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `values` | array | Values to add at the beginning of the list |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                                |
+| ---------- | ----------- | ------------------------------------------ |
+| `key`      | string      | Key identifier                             |
+| `values`   | array       | Values to add at the beginning of the list |
+| `options`  | JSON Object | Optional parameters                        |
+| `callback` | function    | Callback                                   |
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -41,7 +41,8 @@ Returns an integer containing the updated number of items in the list.
 
 ## Usage
 
-[snippet=lpush-1]
+<<< ./snippets/lpush-1.php
+
 > Callback response:
 
 ```json

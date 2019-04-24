@@ -24,4 +24,4 @@ Returns an instantiated [User](/sdk-reference/php/3/user) object.
 
 ## Usage
 
-[snippet=who-am-i-1]
+<<< ./snippets/who-am-i-1.php

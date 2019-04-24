@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: logout
 description: Kuzzle:logout
 ---
-  
 
 # logout
+
 Logs the user out.
 
 <div class="alert alert-info">
@@ -16,9 +16,9 @@ This method is non-queuable, meaning that during offline mode, it will be discar
 
 ## logout([callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``callback`` | function | Optional callback handling the response |
+| Arguments  | Type     | Description                             |
+| ---------- | -------- | --------------------------------------- |
+| `callback` | function | Optional callback handling the response |
 
 This method empties the `jwtToken` property
 
@@ -37,4 +37,4 @@ The `Kuzzle` SDK object will unset the `jwtToken` property if the user is succes
 
 ## Usage
 
-[snippet=logout-1]
+<<< ./snippets/logout-1.php

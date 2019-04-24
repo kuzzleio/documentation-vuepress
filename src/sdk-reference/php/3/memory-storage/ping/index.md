@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: ping
 description: MemoryStorage:ping
 ---
-  
 
 # ping
+
 Pings the memory storage database.
 
 [[_Redis documentation_]](https://redis.io/commands/ping)
@@ -14,18 +14,19 @@ Pings the memory storage database.
 
 ## ping([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Callback Response
@@ -34,7 +35,8 @@ Returns a simple "PONG" string.
 
 ## Usage
 
-[snippet=ping-1]
+<<< ./snippets/ping-1.php
+
 > Callback response:
 
 ```json

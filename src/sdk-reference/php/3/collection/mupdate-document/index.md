@@ -41,7 +41,7 @@ Can return a 206 partial error in cases where documents could not be updated.
 
 ## Usage
 
-[snippet=mupdate-document-1]
+<<< ./snippets/mupdate-document-1.php
 
 > Callback response:
 

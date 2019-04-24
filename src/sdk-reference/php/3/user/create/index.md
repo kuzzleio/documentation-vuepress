@@ -39,4 +39,4 @@ Returns a `User` object.
 
 ## Usage
 
-[snippet=create-1]
+<<< ./snippets/create-1.php

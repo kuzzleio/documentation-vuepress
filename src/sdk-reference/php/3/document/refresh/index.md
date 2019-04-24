@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: refresh
 description: Document:refresh
 ---
-  
 
 # refresh
+
 Creates a new `Document` object with the last version of this document stored in Kuzzle.
 
 ---
 
 ## refresh([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -33,4 +33,4 @@ Return a new `Document` object containing the last document version.
 
 ## Usage
 
-[snippet=refresh-1]
+<<< ./snippets/refresh-1.php

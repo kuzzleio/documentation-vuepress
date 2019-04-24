@@ -45,7 +45,7 @@ Returns an array of matching members.
 
 ## Usage
 
-[snippet=zrevrangebyscore-1]
+<<< ./snippets/zrevrangebyscore-1.php
 
 > Callback response:
 

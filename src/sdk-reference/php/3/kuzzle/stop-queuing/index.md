@@ -16,4 +16,4 @@ Returns the `Kuzzle` SDK object to allow chaining.
 
 ## Usage
 
-[snippet=stop-queuing-1]
+<<< ./snippets/stop-queuing-1.php

@@ -37,7 +37,7 @@ Returns an array of longitude-latitude pairs, in the same order as the provided 
 
 ## Usage
 
-[snippet=geopos-1]
+<<< ./snippets/geopos-1.php
 
 > Callback response:
 

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: rpush
 description: MemoryStorage:rpush
 ---
-  
 
 # rpush
+
 Appends the specified values at the end of a list. If the key does not exist, it is created holding an empty list before performing the operation.
 
 [[_Redis documentation_]](https://redis.io/commands/rpush)
@@ -14,20 +14,21 @@ Appends the specified values at the end of a list. If the key does not exist, it
 
 ## rpush(key, values, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `values` | array | Values to add at the end of the list |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                          |
+| ---------- | ----------- | ------------------------------------ |
+| `key`      | string      | Key identifier                       |
+| `values`   | array       | Values to add at the end of the list |
+| `options`  | JSON Object | Optional parameters                  |
+| `callback` | function    | Callback                             |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return value
@@ -42,7 +43,8 @@ Returns an integer containing the updated number of items in the list.
 
 ## Usage
 
-[snippet=rpush-1]
+<<< ./snippets/rpush-1.php
+
 > Callback response:
 
 ```json

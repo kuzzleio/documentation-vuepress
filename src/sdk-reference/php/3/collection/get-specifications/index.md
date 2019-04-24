@@ -3,45 +3,46 @@ layout: sdk.html.hbs
 title: getSpecifications
 description: Collection:getSpecifications
 ---
-  
 
 # getSpecifications
+
 Retrieves the specifications linked to the collection object.
 
 ---
 
 ## getSpecifications([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                    |
+| ---------- | ----------- | ------------------------------ |
+| `options`  | JSON Object | Optional parameters            |
+| `callback` | function    | Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ## Usage
 
-[snippet=get-specifications-1]
+<<< ./snippets/get-specifications-1.php
+
 > Callback response
 
 ```json
 {
   "validation": {
     "strict": "true",
-      "fields": {
-        "foo": {
-          "mandatory": "true",
-          "type": "string",
-          "defaultValue": "bar"
-        }
+    "fields": {
+      "foo": {
+        "mandatory": "true",
+        "type": "string",
+        "defaultValue": "bar"
       }
-    },
+    }
+  },
   "index": "index",
   "collection": "collection"
 }

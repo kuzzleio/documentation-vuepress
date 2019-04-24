@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: sinter
 description: MemoryStorage:sinter
 ---
-  
 
 # sinter
+
 Returns the intersection of the provided sets of unique values.
 
 [[_Redis documentation_]](https://redis.io/commands/sinter)
@@ -14,19 +14,20 @@ Returns the intersection of the provided sets of unique values.
 
 ## sinter(keys, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `keys` | string | List of sets of unique values to intersect |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                                |
+| ---------- | ----------- | ------------------------------------------ |
+| `keys`     | string      | List of sets of unique values to intersect |
+| `options`  | JSON Object | Optional parameters                        |
+| `callback` | function    | Callback                                   |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Callback Response
@@ -35,13 +36,10 @@ Returns an array of values in the computed intersection.
 
 ## Usage
 
-[snippet=sinter-1]
+<<< ./snippets/sinter-1.php
+
 > Callback response:
 
 ```json
-[
-  "intersection value1",
-  "intersection value2",
-  "..."
-]
+["intersection value1", "intersection value2", "..."]
 ```

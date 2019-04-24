@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: apply
 description: CollectionMapping:apply
 ---
-  
 
 # apply
+
 Applies the new mapping to the data collection.
 
 ---
 
 ## apply([options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Optional callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Optional callback   |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -39,4 +39,4 @@ Returns the updated `CollectionMapping` object.
 
 ## Usage
 
-[snippet=apply-1]
+<<< ./snippets/apply-1.php

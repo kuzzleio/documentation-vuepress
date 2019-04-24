@@ -34,4 +34,4 @@ Returns a [User](/sdk-reference/php/3/user) object.
 
 ## Usage
 
-[snippet=fetch-user-1]
+<<< ./snippets/fetch-user-1.php

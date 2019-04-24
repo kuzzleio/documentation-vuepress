@@ -29,4 +29,4 @@ Returns a [Collection](/sdk-reference/php/3/collection) object.
 
 ## Usage
 
-[snippet=collection-1]
+<<< ./snippets/collection-1.php

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: pfadd
 description: MemoryStorage:pfadd
 ---
-  
 
 # pfadd
+
 Adds elements to an [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) data structure.
 
 [[_Redis documentation_]](https://redis.io/commands/pfadd)
@@ -14,20 +14,21 @@ Adds elements to an [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) dat
 
 ## pfadd(key, elements, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `elements` | array | Elements to add to the HyperLogLog structure |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                                  |
+| ---------- | ----------- | -------------------------------------------- |
+| `key`      | string      | Key identifier                               |
+| `elements` | array       | Elements to add to the HyperLogLog structure |
+| `options`  | JSON Object | Optional parameters                          |
+| `callback` | function    | Callback                                     |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -42,7 +43,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=pfadd-1]
+<<< ./snippets/pfadd-1.php
+
 > Callback response:
 
 ```json

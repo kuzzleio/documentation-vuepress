@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: delete
 description: Role:delete
 ---
-  
 
 # delete
+
 Deletes the role from Kuzzle.
 
 ---
 
 ## delete([options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | (Optional) Callback handling the response |
+| Arguments  | Type        | Description                               |
+| ---------- | ----------- | ----------------------------------------- |
+| `options`  | JSON Object | Optional parameters                       |
+| `callback` | function    | (Optional) Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -33,4 +33,4 @@ Returns the ID of the deleted role.
 
 ## Usage
 
-[snippet=delete-1]
+<<< ./snippets/delete-1.php

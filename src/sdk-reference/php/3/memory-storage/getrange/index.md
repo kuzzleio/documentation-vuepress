@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getrange
 description: MemoryStorage:getrange
 ---
-  
 
 # getrange
+
 Returns a substring of a key's value (index starts at position `0`).
 
 [[_Redis documentation_]](https://redis.io/commands/getrange)
@@ -14,21 +14,21 @@ Returns a substring of a key's value (index starts at position `0`).
 
 ## getrange(key, start, end, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `start` | int | Starting index |
-| `end` | int | Ending index |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `start`    | int         | Starting index      |
+| `end`      | int         | Ending index        |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -38,7 +38,8 @@ Returns a substring of the key's value.
 
 ## Usage
 
-[snippet=getrange-1]
+<<< ./snippets/getrange-1.php
+
 > Callback response:
 
 ```json

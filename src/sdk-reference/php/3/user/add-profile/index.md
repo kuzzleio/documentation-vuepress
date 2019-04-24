@@ -36,4 +36,4 @@ Returns the `User` object.
 
 ## Usage
 
-[snippet=add-profile-1]
+<<< ./snippets/add-profile-1.php

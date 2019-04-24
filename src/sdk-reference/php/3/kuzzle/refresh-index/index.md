@@ -54,4 +54,4 @@ Returns a JSON structure matching the response from Elasticsearch.
 
 ## Usage
 
-[snippet=refresh-index-1]
+<<< ./snippets/refresh-index-1.php

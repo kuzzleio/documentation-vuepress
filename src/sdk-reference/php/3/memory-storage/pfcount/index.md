@@ -36,7 +36,7 @@ Returns an integer containing the aggregated probabilistic cardinality of HyperL
 
 ## Usage
 
-[snippet=pfcount-1]
+<<< ./snippets/pfcount-1.php
 
 > Callback response:
 

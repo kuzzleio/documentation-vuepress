@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: persist
 description: MemoryStorage:persist
 ---
-  
 
 # persist
+
 Removes the expiration delay or timestamp from a key, making it persistent.
 
 [[_Redis documentation_]](https://redis.io/commands/persist)
@@ -14,17 +14,18 @@ Removes the expiration delay or timestamp from a key, making it persistent.
 
 ## persist(key, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -39,7 +40,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=persist-1]
+<<< ./snippets/persist-1.php
+
 > Callback response:
 
 ```json

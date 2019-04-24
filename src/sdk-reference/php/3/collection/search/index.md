@@ -55,4 +55,4 @@ Returns an instance of [SearchResult](/sdk-reference/php/3/search-result).
 
 ## Usage
 
-[snippet=search-1]
+<<< ./snippets/search-1.php

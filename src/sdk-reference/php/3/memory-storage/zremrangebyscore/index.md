@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: zremrangebyscore
 description: MemoryStorage:zremrangebyscore
 ---
-  
 
 # zremrangebyscore
+
 Removes members from a sorted set with a score between `min` and `max` (inclusive by default).
 
 [[_Redis documentation_]](https://redis.io/commands/zremrangebyscore)
@@ -14,21 +14,22 @@ Removes members from a sorted set with a score between `min` and `max` (inclusiv
 
 ## zremrangebyscore(key, min, max, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `min` | double | Minimum score (inclusive by default) |
-| `max` | double | Maximum score (inclusive by default) |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                          |
+| ---------- | ----------- | ------------------------------------ |
+| `key`      | string      | Key identifier                       |
+| `min`      | double      | Minimum score (inclusive by default) |
+| `max`      | double      | Maximum score (inclusive by default) |
+| `options`  | JSON Object | Optional parameters                  |
+| `callback` | function    | Callback                             |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return value
@@ -43,7 +44,8 @@ Returns an integer containing the number of removed members from the sorted set.
 
 ## Usage
 
-[snippet=zremrangebyscore-1]
+<<< ./snippets/zremrangebyscore-1.php
+
 > Callback response:
 
 ```json

@@ -20,4 +20,4 @@ It uses Redis internally, and most of its underlying functions are exposed by Ku
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.php

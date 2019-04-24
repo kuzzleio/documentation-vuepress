@@ -55,4 +55,4 @@ Returns an array of objects.
 
 ## Usage
 
-[snippet=get-user-rights-1]
+<<< ./snippets/get-user-rights-1.php

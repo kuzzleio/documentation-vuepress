@@ -3,28 +3,28 @@ layout: sdk.html.hbs
 title: updateSelf
 description: Kuzzle:updateSelf
 ---
-  
 
 # updateSelf
+
 ---
 
 ## updateSelf(content, [options], [callback])
 
 Performs a partial update on the current user.
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``content`` | JSON Object | A plain javascript object representing the user |
-| ``options`` | string | (Optional) Optional arguments |
-| ``callback`` | function | (Optional) Callback handling the response |
+| Arguments  | Type        | Description                                     |
+| ---------- | ----------- | ----------------------------------------------- |
+| `content`  | JSON Object | A plain javascript object representing the user |
+| `options`  | string      | (Optional) Optional arguments                   |
+| `callback` | function    | (Optional) Callback handling the response       |
 
 ---
 
 ## Options
 
-| Filter | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not | ``true`` |
+| Filter     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -40,4 +40,4 @@ Returns the updated user object.
 
 ## Usage
 
-[snippet=update-self-1]
+<<< ./snippets/update-self-1.php

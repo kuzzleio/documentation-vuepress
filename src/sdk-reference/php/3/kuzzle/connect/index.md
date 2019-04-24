@@ -3,11 +3,11 @@ layout: sdk.html.hbs
 title: connect
 description: Kuzzle:connect
 ---
-  
 
 # connect
+
 Connects to Kuzzle using the `host` parameter provided in the constructor.
-Has no effect if ``connect`` is set to ``auto``, unless ``disconnect`` has been called first.
+Has no effect if `connect` is set to `auto`, unless `disconnect` has been called first.
 
 ---
 
@@ -23,4 +23,4 @@ If a callback has been provided to the `Kuzzle` constructor, it will be called w
 
 ## Usage
 
-[snippet=connect-1]
+<<< ./snippets/connect-1.php

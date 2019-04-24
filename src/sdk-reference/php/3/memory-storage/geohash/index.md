@@ -37,7 +37,7 @@ Returns an array of geohashes, in the same order than the provided members list.
 
 ## Usage
 
-[snippet=geohash-1]
+<<< ./snippets/geohash-1.php
 
 > Callback response:
 

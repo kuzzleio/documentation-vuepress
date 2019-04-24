@@ -41,7 +41,7 @@ Can return a 206 partial error in cases where documents could not be replaced.
 
 ## Usage
 
-[snippet=mreplace-document-1]
+<<< ./snippets/mreplace-document-1.php
 
 > Callback response:
 

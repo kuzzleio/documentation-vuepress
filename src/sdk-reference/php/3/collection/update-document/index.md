@@ -45,4 +45,4 @@ Returns an up-to-date [Document](/sdk-reference/php/3/document/) object.
 
 ## Usage
 
-[snippet=update-document-1]
+<<< ./snippets/update-document-1.php

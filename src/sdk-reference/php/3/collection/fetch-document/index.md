@@ -34,4 +34,4 @@ Returns a [Document](/sdk-reference/php/3/document/) object.
 
 ## Usage
 
-[snippet=fetch-document-1]
+<<< ./snippets/fetch-document-1.php

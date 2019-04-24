@@ -3,28 +3,28 @@ layout: sdk.html.hbs
 title: validateSpecifications
 description: Collection:validateSpecifications
 ---
-  
 
 # validateSpecifications
+
 Validate a specification.
 
 ---
 
 ## validateSpecifications(content, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``content`` | JSON object | Content of the specification to validate |
-| ``options`` | JSON object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                              |
+| ---------- | ----------- | ---------------------------------------- |
+| `content`  | JSON object | Content of the specification to validate |
+| `options`  | JSON object | Optional parameters                      |
+| `callback` | function    | Callback handling the response           |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -34,4 +34,4 @@ Returns a boolean indicating whether or not the input specifications is valid or
 
 ## Usage
 
-[snippet=validate-specifications-1]
+<<< ./snippets/validate-specifications-1.php

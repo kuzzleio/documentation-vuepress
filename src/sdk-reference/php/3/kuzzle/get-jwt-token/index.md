@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getJwtToken
 description: Kuzzle:getJwtToken
 ---
-  
 
 # getJwtToken
+
 Get internal jwtToken used to request kuzzle.
 
 ---
@@ -16,4 +16,4 @@ Returns the stored JWT as a string value.
 
 ## Usage
 
-[snippet=get-jwt-token-1]
+<<< ./snippets/get-jwt-token-1.php

@@ -52,4 +52,4 @@ Returns the updated version of this object.
 
 ## Usage
 
-[snippet=update-1]
+<<< ./snippets/update-1.php

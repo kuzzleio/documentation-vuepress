@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: renamenx
 description: MemoryStorage:renamenx
 ---
-  
 
 # renamenx
+
 Renames a key to `newkey`, only if `newkey` does not already exist.
 
 [[_Redis documentation_]](https://redis.io/commands/renamenx)
@@ -14,20 +14,21 @@ Renames a key to `newkey`, only if `newkey` does not already exist.
 
 ## renamenx(key, newkey, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `newkey` | string | New key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `newkey`   | string      | New key identifier  |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -42,7 +43,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=renamenx-1]
+<<< ./snippets/renamenx-1.php
+
 > Callback response:
 
 ```json
