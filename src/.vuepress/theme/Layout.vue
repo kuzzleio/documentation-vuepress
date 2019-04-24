@@ -44,7 +44,6 @@
 <script>
 import Clipboard from 'clipboard';
 
-import Vue from 'vue';
 import Header from './Header.vue';
 import Sidebar from './Sidebar.vue';
 import TOC from './TOC.vue';
@@ -64,15 +63,14 @@ export default {
       return resolveSidebarItems(this.$page, this.$site);
     }
   },
-  mounted() {
-    // window.Clipboard = Clipboard;
-    window.copy = new Clipboard('.md-clipboard', {
-      target: trigger => {
-        return trigger.parentElement.nextElementSibling;
-      }
-    });
-
-    copy.on('success', action => {
+  methods: {
+    openSidebar() {
+      this.sidebarOpen = true;
+    },
+    closeSidebar() {
+      this.sidebarOpen = false;
+    },
+    onCodeCopied(action) {
       const message = action.trigger.parentElement.querySelector(
         '.md-clipboard__message'
       );
@@ -92,16 +90,18 @@ export default {
         message.dataset.mdTimer = '';
       }, 2000).toString();
 
-      // TODO add Google Analytics event
-    });
-  },
-  methods: {
-    openSidebar() {
-      this.sidebarOpen = true;
-    },
-    closeSidebar() {
-      this.sidebarOpen = false;
+      this.$ga('send', 'event', 'clipboard', 'copied', this.$route.path);
     }
+  },
+  mounted() {
+    // TODO condition isSupported()
+    const copy = new Clipboard('.md-clipboard', {
+      target: trigger => {
+        return trigger.parentElement.nextElementSibling;
+      }
+    });
+
+    copy.on('success', this.onCodeCopied);
   }
 };
 </script>

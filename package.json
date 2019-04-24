@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.47",
     "algoliasearch": "^3.32.1",
     "clipboard": "^2.0.4",
     "docsearch.js": "^2.6.2",

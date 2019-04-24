@@ -98,7 +98,23 @@ export default {
       }
     };
   },
-  computed: {},
+  computed: {
+    currentTags() {
+      return this.$route.path
+        .substring(1)
+        .split('/')
+        .slice(0, 4)
+        .map(tag => {
+          if (tag === 'sdk-reference') {
+            return 'sdk';
+          }
+          if (/^[0-9]+$/.test(tag)) {
+            return tag + '.x';
+          }
+          return tag;
+        });
+    }
+  },
   methods: {
     initializeAlgolia(options) {
       const client = algoliasearch(options.appId, options.apiKey);
@@ -130,6 +146,21 @@ export default {
         this.results = content.hits.sort(sortByTags);
       });
     },
+    sortByTags(a, b) {
+      const scoreA = this.getTagsScore(a.tags),
+        scoreB = this.getTagsScore(b.tags);
+
+      return Math.sign(scoreB - scoreA);
+    },
+    getTagsScore(tags) {
+      let score = 0;
+      for (const tag of Object.values(tags)) {
+        if (this.currentTags.includes(tag)) {
+          ++score;
+        }
+      }
+      return score;
+    },
     reset() {
       this.query = '';
       this.$emit('search::off');
@@ -157,37 +188,6 @@ export default {
     }
   }
 };
-
-function getTagsScore(tags) {
-  let score = 0;
-  for (const tag of Object.values(tags)) {
-    if (currentTags.includes(tag)) {
-      ++score;
-    }
-  }
-  return score;
-}
-
-function sortByTags(a, b) {
-  const scoreA = getTagsScore(a.tags),
-    scoreB = getTagsScore(b.tags);
-
-  return Math.sign(scoreB - scoreA);
-}
-
-const currentTags = window.location.pathname
-  .substring(1)
-  .split('/')
-  .slice(0, 4)
-  .map(tag => {
-    if (tag === 'sdk-reference') {
-      return 'sdk';
-    }
-    if (/^[0-9]+$/.test(tag)) {
-      return tag + '.x';
-    }
-    return tag;
-  });
 </script>
 
 <style lang="scss">

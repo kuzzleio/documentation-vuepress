@@ -40,10 +40,12 @@
           <div class="md-flex__cell md-flex__cell--shrink">
             <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
             <!-- Search interface -->
-            <Search
-              @search::on="toggleSearchTrigger(true)"
-              @search::off="toggleSearchTrigger(false)"
-            />
+            <ClientOnly>
+              <Search
+                @search::on="toggleSearchTrigger(true)"
+                @search::off="toggleSearchTrigger(false)"
+              />
+            </ClientOnly>
           </div>
 
           <!-- Repository containing source -->

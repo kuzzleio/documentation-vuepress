@@ -240,6 +240,9 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new webpack.DefinePlugin({
+        GA_ID:
+          JSON.stringify(process.env.GA_ID) || JSON.stringify('UA-67035328-7'),
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
         'process.env.RESET_APP_DATA_TIMER': JSON.stringify(
           process.env.RESET_APP_DATA_TIMER
         ),
