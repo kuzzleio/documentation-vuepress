@@ -58,4 +58,4 @@ This channel will receive a [KuzzleResponse](https://github.com/kuzzleio/sdk-go/
 
 ## Usage
 
-[snippet=query]
+<<< ./snippets/query.go

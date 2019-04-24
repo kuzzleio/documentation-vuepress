@@ -26,18 +26,18 @@ SetAutoRefresh(index string, autoRefresh bool, options types.QueryOptions) error
 
 ## Arguments
 
-| Arguments     | Type         | Description                           | Required |
-| ------------- | ------------ | ------------------------------------- | -------- |
-| `index`       | string       | Index name                            | yes      |
-| `autoRefresh` | Boolean      | autoRefresh flag                      | yes      |
-| `options`     | QueryOptions | Query options | no       |
+| Arguments     | Type         | Description      | Required |
+| ------------- | ------------ | ---------------- | -------- |
+| `index`       | string       | Index name       | yes      |
+| `autoRefresh` | Boolean      | autoRefresh flag | yes      |
+| `options`     | QueryOptions | Query options    | no       |
 
 ### **Options**
 
 Additional query options
 
-| Option     | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Option     | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -46,4 +46,4 @@ Return an error or `nil`.
 
 ## Usage
 
-[snippet=setAutoRefresh]
+<<< ./snippets/setAutoRefresh.go

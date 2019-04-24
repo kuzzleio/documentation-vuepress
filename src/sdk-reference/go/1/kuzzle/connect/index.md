@@ -21,4 +21,4 @@ Return a [Kuzzle error](/sdk-reference/go/1/error-handling) if the SDK can not c
 
 ## Usage
 
-[snippet=connect]
+<<< ./snippets/connect.go

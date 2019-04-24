@@ -18,12 +18,12 @@ func (a *Auth) GetCurrentUser() (*security.User, error)
 
 A pointer to security.User object containing:
 
-| Property     | Type    | Description                       |
-| ---------- | ------- | --------------------------------- |
-| `Id` | string | The user ID |
-| `Content` | map[string]interface{} | The user content |
-| `ProfileIds` | <pre>[]string</pre> | An array containing the profile ids |
+| Property     | Type                   | Description                         |
+| ------------ | ---------------------- | ----------------------------------- |
+| `Id`         | string                 | The user ID                         |
+| `Content`    | map[string]interface{} | The user content                    |
+| `ProfileIds` | <pre>[]string</pre>    | An array containing the profile ids |
 
 ## Usage
 
-[snippet=get-current-user]
+<<< ./snippets/get-current-user.go

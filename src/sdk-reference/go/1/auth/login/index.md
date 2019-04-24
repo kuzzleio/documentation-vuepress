@@ -37,4 +37,4 @@ The **login** action returns an encrypted JSON Web Token, that must then be sent
 
 ## Usage
 
-[snippet=login]
+<<< ./snippets/login.go

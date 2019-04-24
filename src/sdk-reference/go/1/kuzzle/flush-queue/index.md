@@ -16,4 +16,4 @@ FlushQueue()
 
 ## Usage
 
-[snippet=flush-queue]
+<<< ./snippets/flush-queue.go

@@ -6,4 +6,4 @@ description: This is an example
 
 # example
 
-[snippet=example]
+<<< ./snippets/example.cs

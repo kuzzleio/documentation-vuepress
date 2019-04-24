@@ -22,4 +22,4 @@ Return a [Kuzzle error](/sdk-reference/go/1/error-handling) if the connection ca
 
 ## Usage
 
-[snippet=disconnect]
+<<< ./snippets/disconnect.go

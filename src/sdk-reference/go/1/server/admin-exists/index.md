@@ -34,4 +34,4 @@ Returns a `bool` set to `true` if an admin exists and `false` if it does not, or
 
 ## Usage
 
-[snippet=admin-exists]
+<<< ./snippets/admin-exists.go

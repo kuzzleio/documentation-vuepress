@@ -76,4 +76,4 @@ Because this method does not freeze the research between two calls, if some upda
 
 ## Usage
 
-[snippet=search-result]
+<<< ./snippets/search-result.go

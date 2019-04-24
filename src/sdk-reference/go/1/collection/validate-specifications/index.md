@@ -62,4 +62,4 @@ A `types.ValidationResponse` which contain information about the specifications 
 
 ## Usage
 
-[snippet=validate-specifications]
+<<< ./snippets/validate-specifications.go

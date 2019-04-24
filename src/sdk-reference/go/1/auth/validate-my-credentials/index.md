@@ -16,24 +16,22 @@ func (a *Auth) ValidateMyCredentials(strategy string, credentials json.RawMessag
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | string | the strategy to use
-| `credentials` | string | the new credentials
-| `options`  | QueryOptions | QueryOptions object containing query options
-
+| Arguments     | Type         | Description                                  |
+| ------------- | ------------ | -------------------------------------------- |
+| `strategy`    | string       | the strategy to use                          |
+| `credentials` | string       | the new credentials                          |
+| `options`     | QueryOptions | QueryOptions object containing query options |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
+| Property   | Type    | Description                       | Default |
 | ---------- | ------- | --------------------------------- | ------- |
 | `Queuable` | boolean | Make this request queuable or not | `true`  |
-
 
 ## Return
 
 ## Usage
 
-[snippet=validate-my-credentials]
+<<< ./snippets/validate-my-credentials.go

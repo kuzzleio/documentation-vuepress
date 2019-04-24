@@ -63,4 +63,4 @@ Returns a pointer on [types.SearchResult](/sdk-reference/go/1/search-result) str
 
 ## Usage
 
-[snippet=search]
+<<< ./snippets/search.go

@@ -18,25 +18,26 @@ UpdateMapping(index string, collection string, mapping json.RawMessage, options 
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | string | Index name    | yes  |
-| ``collection`` | string | Collection name    | yes  |
-| ``mapping`` | json.RawMessage | Collection data mapping in JSON format  | yes  |
-| `options` | QueryOptions | Query options | no       |
+| Arguments    | Type            | Description                            | Required |
+| ------------ | --------------- | -------------------------------------- | -------- |
+| `index`      | string          | Index name                             | yes      |
+| `collection` | string          | Collection name                        | yes      |
+| `mapping`    | json.RawMessage | Collection data mapping in JSON format | yes      |
+| `options`    | QueryOptions    | Query options                          | no       |
 
 ### **mapping**
 
-An string containing the JSON representation of the collection data mapping.  
+An string containing the JSON representation of the collection data mapping.
 
 The mapping must have a root field `properties` that contain the mapping definition:
+
 ```json
 {
   "properties": {
     "field1": { "type": "text" },
     "field2": {
       "properties": {
-        "nestedField": { "type": "keyword"}
+        "nestedField": { "type": "keyword" }
       }
     }
   }
@@ -49,8 +50,8 @@ You can see the full list of Elasticsearch mapping types [here](https://www.elas
 
 Additional query options
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -59,4 +60,4 @@ Return an error if something went wrong.
 
 ## Usage
 
-[snippet=update-mapping]
+<<< ./snippets/update-mapping.go

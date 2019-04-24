@@ -16,18 +16,18 @@ GetSpecifications(index string, collection string, options types.QueryOptions) (
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | string | Index name    | yes  |
-| ``collection`` | string | Collection name    | yes  |
-| ``options`` | types.QueryOptions | Query options    | no  |
+| Arguments    | Type               | Description     | Required |
+| ------------ | ------------------ | --------------- | -------- |
+| `index`      | string             | Index name      | yes      |
+| `collection` | string             | Collection name | yes      |
+| `options`    | types.QueryOptions | Query options   | no       |
 
 ### **options**
 
 Additional query options
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -36,4 +36,4 @@ Return a json representation of the specifications and an error is something was
 
 ## Usage
 
-[snippet=get-specifications]
+<<< ./snippets/get-specifications.go

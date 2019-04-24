@@ -16,19 +16,18 @@ func (a *Auth) CredentialsExist(strategy string, options types.QueryOptions) (bo
 
 ## Arguments
 
-| Arguments  | Type             | Description                                             | Required |
-| ---------- | ---------------- | ------------------------------------------------------- | -------- |
-| `strategy` | string      | Strategy to use                                         | yes      |
-| `options` | QueryOptions | A structure containing query options | yes       |
+| Arguments  | Type         | Description                          | Required |
+| ---------- | ------------ | ------------------------------------ | -------- |
+| `strategy` | string       | Strategy to use                      | yes      |
+| `options`  | QueryOptions | A structure containing query options | yes      |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
+| Property   | Type    | Description                       | Default |
 | ---------- | ------- | --------------------------------- | ------- |
 | `Queuable` | boolean | Make this request queuable or not | `true`  |
-
 
 ## Return
 
@@ -36,4 +35,4 @@ True if exists, false if not.
 
 ## Usage
 
-[snippet=credentials-exist]
+<<< ./snippets/credentials-exist.go

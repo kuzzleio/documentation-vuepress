@@ -24,19 +24,19 @@ Validate(
 
 <br/>
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `document` | <pre>string</pre> | Document body |
-| `options` | <pre>types.QueryOptions</pre> | A struct containing query options |
+| Argument     | Type                          | Description                       |
+| ------------ | ----------------------------- | --------------------------------- |
+| `index`      | <pre>string</pre>             | Index name                        |
+| `collection` | <pre>string</pre>             | Collection name                   |
+| `document`   | <pre>string</pre>             | Document body                     |
+| `options`    | <pre>types.QueryOptions</pre> | A struct containing query options |
 
 ### options
 
 Additional query options
 
-| Option | Type<br/>(default) | Description |
-| --- | --- | --- |
+| Option     | Type<br/>(default)            | Description                                                                  |
+| ---------- | ----------------------------- | ---------------------------------------------------------------------------- |
 | `Queuable` | <pre>bool</pre> <br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Return
@@ -45,4 +45,4 @@ Returns a boolean value set to true if the document is valid and false otherwise
 
 ## Usage
 
-[snippet=validate]
+<<< ./snippets/validate.go

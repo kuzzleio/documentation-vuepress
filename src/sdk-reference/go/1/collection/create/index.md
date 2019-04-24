@@ -62,4 +62,4 @@ Return an error or `nil` if collection successfully created.
 
 ## Usage
 
-[snippet=create]
+<<< ./snippets/create.go

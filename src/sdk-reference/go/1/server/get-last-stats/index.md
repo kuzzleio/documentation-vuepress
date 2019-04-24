@@ -44,4 +44,4 @@ Returns the most recent statistics snapshot as a `json.RawMessage` or a `KuzzleE
 
 ## Usage
 
-[snippet=get-last-stats]
+<<< ./snippets/get-last-stats.go

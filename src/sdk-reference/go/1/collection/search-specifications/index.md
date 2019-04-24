@@ -57,4 +57,4 @@ Returns a [types.SearchResult](/sdk-reference/go/1/search-result) struct
 
 ## Usage
 
-[snippet=search-specifications]
+<<< ./snippets/search-specifications.go

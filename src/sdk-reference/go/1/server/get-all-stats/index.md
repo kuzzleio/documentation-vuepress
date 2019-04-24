@@ -42,4 +42,4 @@ Returns all stored internal statistic snapshots as a `json.RawMessage` or a `Kuz
 
 ## Usage
 
-[snippet=get-all-stats]
+<<< ./snippets/get-all-stats.go

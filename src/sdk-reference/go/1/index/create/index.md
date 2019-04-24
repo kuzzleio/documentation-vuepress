@@ -16,17 +16,17 @@ Create(index string, options types.QueryOptions) error
 
 ## Arguments
 
-| Arguments | Type         | Description                           | Required |
-| --------- | ------------ | ------------------------------------- | -------- |
-| `index`   | string       | Index name                            | yes      |
+| Arguments | Type         | Description   | Required |
+| --------- | ------------ | ------------- | -------- |
+| `index`   | string       | Index name    | yes      |
 | `options` | QueryOptions | Query options | no       |
 
 ### **Options**
 
 Additional query options
 
-| Option     | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Option     | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -35,4 +35,4 @@ Return an error or `nil` if index successfully created.
 
 ## Usage
 
-[snippet=create]
+<<< ./snippets/create.go

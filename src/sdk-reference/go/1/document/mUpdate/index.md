@@ -26,22 +26,22 @@ MUpdate(
 
 <br/>
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `documents` | <pre>json.RawMessage</pre> | Document contents to update |
-| `options` | <pre>types.QueryOptions</pre> | A struct containing query options |
+| Argument     | Type                          | Description                       |
+| ------------ | ----------------------------- | --------------------------------- |
+| `index`      | <pre>string</pre>             | Index name                        |
+| `collection` | <pre>string</pre>             | Collection name                   |
+| `documents`  | <pre>json.RawMessage</pre>    | Document contents to update       |
+| `options`    | <pre>types.QueryOptions</pre> | A struct containing query options |
 
 ### options
 
 Additional query options
 
-| Option | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `Queuable` | <pre>bool</pre> <br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `Refresh` | <pre>string</pre><br/>(`""`) | If set to `wait_for`, waits for the change to be reflected for `search` (up to 1s) |
-| `RetryOnConflict` | <pre>int</pre><br/>(`0`) | Number of times the database layer should retry in case of version conflict |
+| Option            | Type<br/>(default)            | Description                                                                        |
+| ----------------- | ----------------------------- | ---------------------------------------------------------------------------------- |
+| `Queuable`        | <pre>bool</pre> <br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again       |
+| `Refresh`         | <pre>string</pre><br/>(`""`)  | If set to `wait_for`, waits for the change to be reflected for `search` (up to 1s) |
+| `RetryOnConflict` | <pre>int</pre><br/>(`0`)      | Number of times the database layer should retry in case of version conflict        |
 
 ## Return
 
@@ -49,4 +49,4 @@ Returns a json.RawMessage containing the update documetns.
 
 ## Usage
 
-[snippet=m-update]
+<<< ./snippets/m-update.go

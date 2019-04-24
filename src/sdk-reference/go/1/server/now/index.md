@@ -34,4 +34,4 @@ Returns current server timestamp as `int64` or a `KuzzleError`. See how to [hand
 
 ## Usage
 
-[snippet=now]
+<<< ./snippets/now.go

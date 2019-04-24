@@ -16,33 +16,32 @@ func (a *Auth) GetMyRights(options types.QueryOptions) ([]*types.UserRights, err
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| `options`  | QueryOptions    | QueryOptions object containing query options | yes
+| Arguments | Type         | Description                                  | Required |
+| --------- | ------------ | -------------------------------------------- | -------- |
+| `options` | QueryOptions | QueryOptions object containing query options | yes      |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default
-| ---------- | ------- | --------------------------------- | -------
-| `Queuable` | bool | Make this request queuable or not | `true`
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
+| `Queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
 
 A pointer to an array of UserRight object containing:
 
-
-| Property     | Type    | Description                       |
-| ---------- | ------- | --------------------------------- |
-| `Controller` | string | Controller on wich the rights are applied |
-| `Action` | string | Action on wich the rights are applied |
-| `Index` | string | Index on wich the rights are applied |
-| `Collection` | string | Collection on wich the rights are applied |
-| `Value` | string | Rights (`allowed|denied|conditional`) |
+| Property      | Type   | Description                               |
+| ------------- | ------ | ----------------------------------------- |
+| `Controller`  | string | Controller on wich the rights are applied |
+| `Action`      | string | Action on wich the rights are applied     |
+| `Index`       | string | Index on wich the rights are applied      |
+|  `Collection` | string | Collection on wich the rights are applied |
+|  `Value`      | string | Rights (`allowed|denied|conditional`)     |
 
 and an error or `nil`
 
 ## Usage
 
-[snippet=get-my-rights]
+<<< ./snippets/get-my-rights.go

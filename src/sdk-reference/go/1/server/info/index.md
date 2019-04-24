@@ -34,4 +34,4 @@ Returns server informations as a `json.RawMessage` or a `KuzzleError`. See how t
 
 ## Usage
 
-[snippet=info]
+<<< ./snippets/info.go

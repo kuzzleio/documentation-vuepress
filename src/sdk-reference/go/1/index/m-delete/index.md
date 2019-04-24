@@ -19,14 +19,14 @@ MDelete(indexes []string, options types.QueryOptions) ([]string, error)
 | Arguments | Type         | Description                                   | Required |
 | --------- | ------------ | --------------------------------------------- | -------- |
 | `indexes` | Array        | An array of strings containing indexes names. | yes      |
-| `options` | QueryOptions | Query options         | no       |
+| `options` | QueryOptions | Query options                                 | no       |
 
 ### **Options**
 
 Additional query options
 
-| Option     | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Option     | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -35,4 +35,4 @@ Returns an `Array` of strings containing the list of indexes names deleted or an
 
 ## Usage
 
-[snippet=mDelete]
+<<< ./snippets/mDelete.go

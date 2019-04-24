@@ -17,18 +17,18 @@ Truncate(index string, collection string, options types.QueryOptions) error
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | string | Index name    | yes  |
-| ``collection`` | string | Collection name    | yes  |
-| ``options`` | types.QueryOptions | Query options    | no  |
+| Arguments    | Type               | Description     | Required |
+| ------------ | ------------------ | --------------- | -------- |
+| `index`      | string             | Index name      | yes      |
+| `collection` | string             | Collection name | yes      |
+| `options`    | types.QueryOptions | Query options   | no       |
 
 ### **options**
 
 Additional query options
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -37,4 +37,4 @@ Return an error is something was wrong.
 
 ## Usage
 
-[snippet=truncate]
+<<< ./snippets/truncate.go

@@ -21,4 +21,4 @@ You can find a detailed list of possible errors messages and statuses in the [do
 
 #### Example
 
-[snippet=error-handling]
+<<< ./snippets/error-handling.go

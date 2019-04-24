@@ -17,4 +17,4 @@ StopQueuing()
 
 ## Usage
 
-[snippet=stop-queuing]
+<<< ./snippets/stop-queuing.go

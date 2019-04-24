@@ -48,4 +48,4 @@ Returns snapshots within the provided timestamp range as a `json.RawMessage` or 
 
 ## Usage
 
-[snippet=get-stats]
+<<< ./snippets/get-stats.go

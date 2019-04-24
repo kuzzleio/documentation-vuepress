@@ -16,17 +16,17 @@ func (a *Auth) GetMyCredentials(strategy string, options types.QueryOptions) (js
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| `strategy` | string | the strategy to use    | yes
-| `options`  | QueryOptions    | QueryOptions object containing query options | yes
+| Arguments  | Type         | Description                                  | Required |
+| ---------- | ------------ | -------------------------------------------- | -------- |
+| `strategy` | string       | the strategy to use                          | yes      |
+| `options`  | QueryOptions | QueryOptions object containing query options | yes      |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `Queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -35,4 +35,4 @@ Returns a string representing a JSON with the credentials for the provided authe
 
 ## Usage
 
-[snippet=get-my-credentials]
+<<< ./snippets/get-my-credentials.go

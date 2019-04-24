@@ -6,7 +6,7 @@ description: Delete validation specifications for a collection
 
 # deleteSpecifications
 
-Delete the validation specifications associated with the collection.  
+Delete the validation specifications associated with the collection.
 
 ## Signature
 
@@ -16,18 +16,18 @@ DeleteSpecifications(index string, collection string, options types.QueryOptions
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | string | Index name    | yes  |
-| ``collection`` | string | Collection name    | yes  |
-| ``options`` | types.QueryOptions | Query options    | no  |
+| Arguments    | Type               | Description     | Required |
+| ------------ | ------------------ | --------------- | -------- |
+| `index`      | string             | Index name      | yes      |
+| `collection` | string             | Collection name | yes      |
+| `options`    | types.QueryOptions | Query options   | no       |
 
 ### **options**
 
 Additional query options
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -36,4 +36,4 @@ Return an error or `nil` if collection successfully created.
 
 ## Usage
 
-[snippet=delete-specifications]
+<<< ./snippets/delete-specifications.go

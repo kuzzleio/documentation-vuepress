@@ -17,4 +17,4 @@ StartQueuing()
 
 ## Usage
 
-[snippet=start-queuing]
+<<< ./snippets/start-queuing.go

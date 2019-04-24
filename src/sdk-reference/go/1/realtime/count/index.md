@@ -16,17 +16,17 @@ func (r *Realtime) Count(roomID string, options types.QueryOptions) (int, error)
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `roomId` | <pre>string</pre> | Subscription room ID  |
-| `options` | <pre>types.QueryOptions</pre> | Query options |
+| Arguments | Type                          | Description          |
+| --------- | ----------------------------- | -------------------- |
+| `roomId`  | <pre>string</pre>             | Subscription room ID |
+| `options` | <pre>types.QueryOptions</pre> | Query options        |
 
 ### options
 
 Additional query options
 
-| Option     | Type<br/>(default)    | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Option     | Type<br/>(default)           | Description                       |
+| ---------- | ---------------------------- | --------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | Make this request queuable or not |
 
 ## Return
@@ -35,4 +35,4 @@ Returns the number of active connections using the same provided subscription ro
 
 ## Usage
 
-[snippet=count]
+<<< ./snippets/count.go

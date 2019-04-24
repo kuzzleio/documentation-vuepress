@@ -55,4 +55,4 @@ Return an error with a global description of errors.
 
 ## Usage
 
-[snippet=update-specifications]
+<<< ./snippets/update-specifications.go

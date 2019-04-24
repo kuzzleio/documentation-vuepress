@@ -12,11 +12,13 @@ In this tutorial you will learn how to install the Kuzzle **Go SDK**.
 This page shows examples of scripts that **store** documents in Kuzzle, and of scripts that subcribe to real-time **notifications** for each new document created.
 
 <div class="alert alert-success">
-Before proceeding, please make sure your system meets the following requirements:
+  Before proceeding, please make sure your system meets the following requirements:
 
-- **Go** version 1.9 or higher (<a href="https://golang.org/doc/install">Go installation instructions</a>)
-- A running Kuzzle server (<a href="/guide/1/essentials/installing-kuzzle/">Kuzzle installation guide</a>)
-  </div>
+  <ul>
+    <li>**Go** version 1.9 or higher (<a href="https://golang.org/doc/install">Go installation instructions</a>)</li>
+    <li>A running Kuzzle server (<a href="/guide/1/essentials/installing-kuzzle/">Kuzzle installation guide</a>)</li>
+  </ul>
+</div>
 
 ## Installation
 
@@ -33,7 +35,7 @@ This fetches the SDK and installs it in your `GOPATH` directory.
 Initialize a new Go project as described in the [Go Documentation](https://golang.org/doc/code.html#Command).
 Then create a `init.go` file and start by adding the code below:
 
-[snippet=init]
+<<< ./snippets/init.go
 
 This program initializes the Kuzzle server storage by creating a data index, and a data collection inside it
 Run the program with the following command:
@@ -64,7 +66,7 @@ Here is how Kuzzle structures its storage space:
 - data collections contain documents
   Create a `document.go` file in the playground and add this code:
 
-[snippet=document]
+<<< ./snippets/document.go
 
 As you did before, run your program:
 
@@ -85,7 +87,7 @@ Now you know how to:
 
 Time to use realtime with Kuzzle. Create a new file `realtime.go` with the following code:
 
-[snippet=realtime]
+<<< ./snippets/realtime.go
 
 This program subscribes to changes made to documents with a `license` field set to `B`, within the `yellow-taxi` collection. Whenever a document matching the provided filters changes, a new notification is received from Kuzzle.
 Run your program:

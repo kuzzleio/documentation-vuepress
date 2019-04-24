@@ -38,4 +38,4 @@ Returns server configuration as a `json.RawMessage` or a `KuzzleError`. See how 
 
 ## Usage
 
-[snippet=get-config]
+<<< ./snippets/get-config.go

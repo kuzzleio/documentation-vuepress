@@ -17,4 +17,4 @@ PlayQueue()
 
 ## Usage
 
-[snippet=play-queue]
+<<< ./snippets/play-queue.go

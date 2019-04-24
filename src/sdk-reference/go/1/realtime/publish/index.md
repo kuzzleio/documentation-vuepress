@@ -25,19 +25,19 @@ func (r *Realtime) Publish(
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `index` | <pre>string</pre> | Index name    |
-| `collection` | <pre>string</pre> | Collection name    |
-| `message` | <pre>json.RawMessage</pre> | Message to send |
-| `options` | <pre>types.QueryOptions</pre> | Query options    |
+| Arguments    | Type                          | Description     |
+| ------------ | ----------------------------- | --------------- |
+| `index`      | <pre>string</pre>             | Index name      |
+| `collection` | <pre>string</pre>             | Collection name |
+| `message`    | <pre>json.RawMessage</pre>    | Message to send |
+| `options`    | <pre>types.QueryOptions</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Option     | Type<br/>(default)  | Description   |
-| ---------- | ------- | --------------------------------- |
+| Option     | Type<br/>(default)           | Description                       |
+| ---------- | ---------------------------- | --------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | Make this request queuable or not |
 
 ## Return
@@ -46,4 +46,4 @@ Return an error is something was wrong.
 
 ## Usage
 
-[snippet=publish]
+<<< ./snippets/publish.go

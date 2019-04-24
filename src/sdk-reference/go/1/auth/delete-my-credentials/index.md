@@ -16,18 +16,17 @@ func (a *Auth) DeleteMyCredentials(strategy string, options types.QueryOptions) 
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| `strategy` | string | the strategy to use    | yes
-| `options`  | QueryOptions    | QueryOptions object containing query options | yes       |
-
+| Arguments  | Type         | Description                                  | Required |
+| ---------- | ------------ | -------------------------------------------- | -------- |
+| `strategy` | string       | the strategy to use                          | yes      |
+| `options`  | QueryOptions | QueryOptions object containing query options | yes      |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `Queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return
@@ -36,4 +35,4 @@ Return an error or `nil` if the credentials are successfully deleted
 
 ## Usage
 
-[snippet=delete-my-credentials]
+<<< ./snippets/delete-my-credentials.go

@@ -16,21 +16,19 @@ func (a *Auth) UpdateMyCredentials(strategy string, credentials json.RawMessage,
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | string | the strategy to use
-| `credentials` | json.RawMessage | the new credentials
-| `options`  | QueryOptions    | QueryOptions object containing query options
-
+| Arguments     | Type            | Description                                  |
+| ------------- | --------------- | -------------------------------------------- |
+| `strategy`    | string          | the strategy to use                          |
+| `credentials` | json.RawMessage | the new credentials                          |
+| `options`     | QueryOptions    | QueryOptions object containing query options |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `Queuable` | bool | Make this request queuable or not | `true`  |
-
 
 ## Return
 
@@ -38,4 +36,4 @@ A JSON representing the new credentials and an error or `nil`.
 
 ## Usage
 
-[snippet=update-my-credentials]
+<<< ./snippets/update-my-credentials.go

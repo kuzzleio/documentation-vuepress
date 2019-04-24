@@ -47,4 +47,4 @@ The channel will receive an interface with the event data each time the register
 
 ## Usage
 
-[snippet=add-listener]
+<<< ./snippets/add-listener.go

@@ -16,26 +16,23 @@ func (a *Auth) UpdateSelf(data json.RawMessage, options types.QueryOptions) (*se
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `content` | string | the new credentials
-| `options`  | QueryOptions | QueryOptions object containing query options
-
+| Arguments | Type         | Description                                  |
+| --------- | ------------ | -------------------------------------------- |
+| `content` | string       | the new credentials                          |
+| `options` | QueryOptions | QueryOptions object containing query options |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type | Description                       | Default |
-| ---------- | -----| --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `Queuable` | bool | Make this request queuable or not | `true`  |
-
 
 ## Return
 
 A pointer to a security.User object and an error or `nil`
 
-
 ## Usage
 
-[snippet=update-self]
+<<< ./snippets/update-self.go
