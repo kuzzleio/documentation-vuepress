@@ -258,5 +258,16 @@ module.exports = {
       })
     ]
   },
-  plugins: [require('./meta-tags-plugin/index.js')]
+  plugins: [
+    require('./meta-tags-plugin/index.js'),
+    [
+      'container',
+      {
+        type: 'info',
+        before: '<div class="alert alert-info">',
+        after: '</div>'
+      }
+    ]
+    // TODO add another instance of container plugin for alert-success
+  ]
 };
