@@ -15,21 +15,21 @@ Returns the current Kuzzle configuration.
 <br/>
 
 ```javascript
-getConfig ([options])
+getConfig([options]);
 ```
 
 <br/>
 
-| Arguments | Type   | Description                         |
-| --------- | ------ | ----------------------------------- |
+| Arguments | Type              | Description   |
+| --------- | ----------------- | ------------- |
 | `options` | <pre>object</pre> | Query options |
 
 ### **Options**
 
 Additional query options
 
-| Property   | Type<br/>(default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -38,4 +38,4 @@ Resolves to an `object` containing server configuration.
 
 ## Usage
 
-[snippet=get-config]
+<<< ./snippets/get-config.js

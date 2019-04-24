@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getPolicies
 description: Profile:getPolicies
 ---
-  
 
 # getPolicies
+
 Returns roles associated to this security policy.
 
 ---
@@ -16,7 +16,8 @@ Returns an array of roles linked to this security policy.
 
 ## Usage
 
-[snippet=get-policies-1]
+<<< ./snippets/get-policies-1.js
+
 > Callback response
 
 ```json

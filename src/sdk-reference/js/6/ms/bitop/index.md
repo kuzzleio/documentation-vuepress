@@ -12,25 +12,24 @@ Performs a bitwise operation between multiple keys (containing string values) an
 ## Arguments
 
 ```js
-bitop(key, operation, keys, [options])
-
+bitop(key, operation, keys, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Key |
-| `operation` | <pre>string</pre> | The bitwise operand to use to combine keys.<br/>Allowed values: `AND`, `NOT`, `OR`, `XOR` |
-| `keys` | <pre>string[]</pre> | The list of keys to combine |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments   | Type                | Description                                                                               |
+| ----------- | ------------------- | ----------------------------------------------------------------------------------------- |
+| `key`       | <pre>string</pre>   | Key                                                                                       |
+| `operation` | <pre>string</pre>   | The bitwise operand to use to combine keys.<br/>Allowed values: `AND`, `NOT`, `OR`, `XOR` |
+| `keys`      | <pre>string[]</pre> | The list of keys to combine                                                               |
+| `options`   | <pre>object</pre>   | Optional query arguments                                                                  |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -39,4 +38,4 @@ Resolves to the new destination key length.
 
 ## Usage
 
-[snippet=bitop]
+<<< ./snippets/bitop.js

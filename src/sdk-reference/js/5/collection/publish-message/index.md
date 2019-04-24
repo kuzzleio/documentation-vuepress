@@ -51,4 +51,4 @@ Returns a raw Kuzzle response in JSON format.
 
 ## Usage
 
-[snippet=publish-message-1]
+<<< ./snippets/publish-message-1.js

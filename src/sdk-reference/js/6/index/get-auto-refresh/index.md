@@ -21,22 +21,22 @@ Without a refresh after a write request, the documents may not be immediately vi
 <br/>
 
 ```javascript
-getAutoRefresh (index, [options]);
+getAutoRefresh(index, [options]);
 ```
 
 <br/>
 
-| Arguments | Type   | Description                         |
-| --------- | ------ | ----------------------------------- |
-| `index`   | <pre>string</pre> | Index name                          |
+| Arguments | Type              | Description   |
+| --------- | ----------------- | ------------- |
+| `index`   | <pre>string</pre> | Index name    |
 | `options` | <pre>object</pre> | Query options |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
@@ -45,4 +45,4 @@ Resolves to a `boolean` that indicate the status of the **autoRefresh** flag.
 
 ## Usage
 
-[snippet=getAutoRefresh]
+<<< ./snippets/getAutoRefresh.js

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getServerInfo
 description: Kuzzle:getServerInfo
 ---
-  
 
 # getServerInfo
+
 > Callback response example:
 
 ```json
@@ -95,18 +95,18 @@ Retrieves information about Kuzzle plugins and active services.
 
 ## getServerInfo([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON object | Optional parameters |
-| ``callback`` | function | Optional callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON object | Optional parameters |
+| `callback` | function    | Optional callback   |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -116,4 +116,4 @@ Returns a JSON object containing server information.
 
 ## Usage
 
-[snippet=get-server-info-1]
+<<< ./snippets/get-server-info-1.js

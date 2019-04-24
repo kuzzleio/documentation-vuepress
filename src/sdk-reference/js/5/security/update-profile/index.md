@@ -42,4 +42,4 @@ Return an updated [Profile](/sdk-reference/js/5/profile) object.
 
 ## Usage
 
-[snippet=update-profile-1]
+<<< ./snippets/update-profile-1.js

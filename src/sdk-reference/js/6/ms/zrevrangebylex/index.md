@@ -41,4 +41,4 @@ Resolves to an array of matched elements.
 
 ## Usage
 
-[snippet=zrevrangebylex]
+<<< ./snippets/zrevrangebylex.js

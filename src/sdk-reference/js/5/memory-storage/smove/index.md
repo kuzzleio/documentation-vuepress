@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: smove
 description: MemoryStorage:smove
 ---
-  
 
 # smove
+
 Moves a member from a set of unique values to another.
 
 [[_Redis documentation_]](https://redis.io/commands/smove)
@@ -14,21 +14,22 @@ Moves a member from a set of unique values to another.
 
 ## smove(key, destination, member, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Source key identifier |
-| `destination` | string | Destination key identifier |
-| `member` | string | Member to be moved |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments     | Type        | Description                |
+| ------------- | ----------- | -------------------------- |
+| `key`         | string      | Source key identifier      |
+| `destination` | string      | Destination key identifier |
+| `member`      | string      | Member to be moved         |
+| `options`     | JSON Object | Optional parameters        |
+| `callback`    | function    | Callback                   |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -43,7 +44,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=smove-1]
+<<< ./snippets/smove-1.js
+
 > Callback response:
 
 ```json

@@ -15,24 +15,24 @@ The index and collection are indicative and serve only to distinguish the rooms.
 <br/>
 
 ```javascript
-publish (index, collection, message, [options])
+publish(index, collection, message, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| ``index`` | <pre>string</pre> | Index name    |
-| ``collection`` | <pre>string</pre> | Collection name    |
-| ``message`` | <pre>object</pre> | Message to send    |
-| ``options`` | <pre>object</pre> | Query options    |
+| Arguments    | Type              | Description     |
+| ------------ | ----------------- | --------------- |
+| `index`      | <pre>string</pre> | Index name      |
+| `collection` | <pre>string</pre> | Collection name |
+| `message`    | <pre>object</pre> | Message to send |
+| `options`    | <pre>object</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Option     | Type<br/>(default)    | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Option     | Type<br/>(default)              | Description                       |
+| ---------- | ------------------------------- | --------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | Make this request queuable or not |
 
 ## Resolves
@@ -41,4 +41,4 @@ A boolean indicating if the message was successfully published.
 
 ## Usage
 
-[snippet=publish]
+<<< ./snippets/publish.js

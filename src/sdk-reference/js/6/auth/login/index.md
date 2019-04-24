@@ -39,4 +39,4 @@ The **login** action returns the encrypted JSON Web Token.
 
 _Local strategy login example_
 
-[snippet=login]
+<<< ./snippets/login.js

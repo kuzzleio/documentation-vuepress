@@ -25,4 +25,4 @@ Returns the new [User](/sdk-reference/js/5/user) object.
 
 ## Usage
 
-[snippet=user-1]
+<<< ./snippets/user-1.js

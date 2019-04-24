@@ -54,4 +54,4 @@ Resolve to the raw Kuzzle API response. See the [API Documentation](/api/1).
 
 ## Usage
 
-[snippet=query]
+<<< ./snippets/query.js

@@ -12,18 +12,17 @@ Removes members from a sorted set, with a score between the provided interval.
 ## Arguments
 
 ```js
-zremrangebyscore(key, min, max, [options])
-
+zremrangebyscore(key, min, max, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Sorted set key |
-| `min` | <pre>string</pre> | Minimum score value |
-| `max` | <pre>string</pre> | Maximum score value |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `key`     | <pre>string</pre> | Sorted set key           |
+| `min`     | <pre>string</pre> | Minimum score value      |
+| `max`     | <pre>string</pre> | Maximum score value      |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 By default, `min` and `max` are inclusive. Check the full Redis documentation for other options.
 
@@ -31,8 +30,8 @@ By default, `min` and `max` are inclusive. Check the full Redis documentation fo
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -41,4 +40,4 @@ Resolves to the number of removed elements.
 
 ## Usage
 
-[snippet=zremrangebyscore]
+<<< ./snippets/zremrangebyscore.js

@@ -54,4 +54,4 @@ Resolve to an object containing the specifications.
 
 ## Usage
 
-[snippet=update-specifications]
+<<< ./snippets/update-specifications.js

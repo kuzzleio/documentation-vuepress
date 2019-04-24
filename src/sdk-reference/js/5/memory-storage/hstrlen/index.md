@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hstrlen
 description: MemoryStorage:hstrlen
 ---
-  
 
 # hstrlen
+
 Returns the string length of a field’s value in a hash.
 
 [[_Redis documentation_]](https://redis.io/commands/hstrlen)
@@ -14,20 +14,20 @@ Returns the string length of a field’s value in a hash.
 
 ## hstrlen(key, field, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `field` | string | Hash field name |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `field`    | string      | Hash field name     |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -37,7 +37,8 @@ Returns the string length of a field's value.
 
 ## Usage
 
-[snippet=hstrlen-1]
+<<< ./snippets/hstrlen-1.js
+
 > Callback response:
 
 ```json

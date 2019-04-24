@@ -38,4 +38,4 @@ Returns the `User` object.
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.js

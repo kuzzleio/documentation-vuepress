@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: save
 description: Profile:save
 ---
-  
 
 # save
+
 Creates or replaces the profile in Kuzzle.
 
 <div class="alert alert-warning">
@@ -16,18 +16,18 @@ Saving the object will return an error if the linked roles have not been previou
 
 ## save([options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                    |
+| ---------- | ----------- | ------------------------------ |
+| `options`  | JSON Object | Optional parameters            |
+| `callback` | function    | Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -43,4 +43,4 @@ Returns a `Profile` object.
 
 ## Usage
 
-[snippet=save-1]
+<<< ./snippets/save-1.js

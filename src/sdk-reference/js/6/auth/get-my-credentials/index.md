@@ -15,25 +15,23 @@ The result can be an empty object.
 <br/>
 
 ```javascript
-getMyCredentials (strategy, [options])
+getMyCredentials(strategy, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | <pre>string</pre> | Strategy to use
-| `options` | <pre>object</pre> | Query options
-
+| Arguments  | Type              | Description     |
+| ---------- | ----------------- | --------------- |
+| `strategy` | <pre>string</pre> | Strategy to use |
+| `options`  | <pre>object</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-
 
 ## Resolves
 
@@ -42,4 +40,4 @@ Its content depends on the authentication strategy.
 
 ## Usage
 
-[snippet=get-my-credentials]
+<<< ./snippets/get-my-credentials.js

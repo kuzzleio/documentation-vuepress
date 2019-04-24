@@ -8,19 +8,18 @@ description: Emits an event
 
 Emits an event with the specified payload.
 
-
 ## Arguments
 
 ```js
-emit (eventName, ...payload);
+emit(eventName, ...payload);
 ```
 
 <br/>
 
-| Argument   | Type     | Description      |
-| ---------- | -------- | -------- |
-| `eventName`    | <pre>string</pre> | The name of the event |
-| `payload` | <pre>any</pre> | Payload(s) to send with the event     |
+| Argument    | Type              | Description                       |
+| ----------- | ----------------- | --------------------------------- |
+| `eventName` | <pre>string</pre> | The name of the event             |
+| `payload`   | <pre>any</pre>    | Payload(s) to send with the event |
 
 ## Return
 
@@ -28,4 +27,4 @@ The `KuzzleEventEmitter` instance.
 
 ## Usage
 
-[snippet=emit]
+<<< ./snippets/emit.js

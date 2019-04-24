@@ -5,7 +5,6 @@ title: hsetnx
 
 # hsetnx
 
-
 Sets a field and its value in a hash, only if the field does not already exist.
 
 [[_Redis documentation_]](https://redis.io/commands/hsetnx)
@@ -13,27 +12,26 @@ Sets a field and its value in a hash, only if the field does not already exist.
 ## Arguments
 
 ```js
-hsetnx(key, [options])
-
+hsetnx(key, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Key |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `key`     | <pre>string</pre> | Key                      |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
 
 ## Usage
 
-[snippet=hsetnx]
+<<< ./snippets/hsetnx.js

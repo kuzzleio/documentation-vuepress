@@ -20,4 +20,4 @@ Resolves to an array of [Role](/sdk-reference/js/6/role).
 
 ## Usage
 
-[snippet=getRoles]
+<<< ./snippets/getRoles.js

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: flushdb
 description: MemoryStorage:flushdb
 ---
-  
 
 # flushdb
+
 Deletes all the keys of the database dedicated to client applications (the reserved space for Kuzzle is unaffected).
 
 [[_Redis documentation_]](https://redis.io/commands/flushdb)
@@ -14,18 +14,18 @@ Deletes all the keys of the database dedicated to client applications (the reser
 
 ## flushdb([options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -41,4 +41,4 @@ Returns null if successful.
 
 ## Usage
 
-[snippet=flushdb-1]
+<<< ./snippets/flushdb-1.js

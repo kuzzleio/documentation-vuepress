@@ -55,4 +55,4 @@ Returns an instance of [SearchResult](/sdk-reference/js/5/search-result).
 
 ## Usage
 
-[snippet=search-1]
+<<< ./snippets/search-1.js

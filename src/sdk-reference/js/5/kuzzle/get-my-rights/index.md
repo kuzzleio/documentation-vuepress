@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: getMyRights
 description: Kuzzle:getMyRights
 ---
-  
 
 # getMyRights
+
 Gets the rights for the current user.
 
 ---
 
 ## getMyRights([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                    |
+| ---------- | ----------- | ------------------------------ |
+| `options`  | JSON Object | Optional parameters            |
+| `callback` | function    | Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -33,7 +33,8 @@ Returns an array of rights.
 
 ## Usage
 
-[snippet=get-my-rights-1]
+<<< ./snippets/get-my-rights-1.js
+
 > Callback response
 
 ```json

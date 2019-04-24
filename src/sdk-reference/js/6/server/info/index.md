@@ -11,21 +11,21 @@ Returns information about Kuzzle: available API (base + extended), plugins, exte
 <br/>
 
 ```javascript
-info ([options])
+info([options]);
 ```
 
 <br/>
 
-| Arguments | Type   | Description                         |
-| --------- | ------ | ----------------------------------- |
+| Arguments | Type              | Description   |
+| --------- | ----------------- | ------------- |
 | `options` | <pre>object</pre> | Query options |
 
 ### **Options**
 
 Additional query options
 
-| Property   | Type<br/>(default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -34,4 +34,4 @@ Resolves to an `object` containing server information.
 
 ## Usage
 
-[snippet=info]
+<<< ./snippets/info.js

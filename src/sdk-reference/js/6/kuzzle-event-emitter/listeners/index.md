@@ -11,7 +11,7 @@ Returns the listener functions bound to a specific event.
 ## Arguments
 
 ```js
-listeners (eventName);
+listeners(eventName);
 ```
 
 ## Return
@@ -20,4 +20,4 @@ An array of listener functions.
 
 ## Usage
 
-[snippet=listeners]
+<<< ./snippets/listeners.js

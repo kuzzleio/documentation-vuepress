@@ -97,4 +97,4 @@ If the `connect` option is set to `manual`, the callback will be called after th
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.js

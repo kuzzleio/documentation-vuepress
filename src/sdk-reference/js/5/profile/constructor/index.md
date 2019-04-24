@@ -40,4 +40,4 @@ Returns to the `Profile` object.
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.js

@@ -11,26 +11,24 @@ Creates new credentials for the specified strategy for the current user.
 <br/>
 
 ```javascript
-createMyCredentials (strategy, credentials, [options])
+createMyCredentials(strategy, credentials, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | <pre>string</pre> | Strategy to use
-| `credentials` | <pre>object</pre> | New credentials
-| `options`  | <pre>object</pre> | Query options
-
+| Arguments     | Type              | Description     |
+| ------------- | ----------------- | --------------- |
+| `strategy`    | <pre>string</pre> | Strategy to use |
+| `credentials` | <pre>object</pre> | New credentials |
+| `options`     | <pre>object</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
-| `queuable` | <pre>boolean</pre><br/>(`true`)| If true, queues the request during downtime, until connected to Kuzzle again |
-
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
+| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
 
@@ -39,4 +37,4 @@ The content depends on the authentication strategy.
 
 ## Usage
 
-[snippet=create-my-credentials]
+<<< ./snippets/create-my-credentials.js

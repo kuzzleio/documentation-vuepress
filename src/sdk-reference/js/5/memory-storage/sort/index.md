@@ -42,7 +42,7 @@ Returns an array of sorted values.
 
 ## Usage
 
-[snippet=sort-1]
+<<< ./snippets/sort-1.js
 
 > Callback response:
 

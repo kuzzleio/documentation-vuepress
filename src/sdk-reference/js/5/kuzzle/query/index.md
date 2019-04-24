@@ -64,7 +64,7 @@ Returns a `JSON object` containing the raw Kuzzle response.
 
 ## Usage
 
-[snippet=query-1]
+<<< ./snippets/query-1.js
 
 > Callback response:
 

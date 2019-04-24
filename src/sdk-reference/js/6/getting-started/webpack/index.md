@@ -98,7 +98,7 @@ const run = async () => {
 
 Your `kuzzle-init.js` file should now look like this:
 
-[snippet=init-kuzzle]
+<<< ./snippets/init-kuzzle.js
 
 This code does the following:
 
@@ -134,7 +134,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 Create a `create.js` file with following code:
 
-[snippet=create]
+<<< ./snippets/create.js
 
 This code does the following:
 
@@ -187,7 +187,7 @@ Kuzzle provides pub/sub features that can be used to trigger real-time notificat
 
 Let's get started. Create a `subscribe.js` file with following code:
 
-[snippet=subscribe]
+<<< ./snippets/subscribe.js
 
 This code does the following:
 

@@ -34,4 +34,4 @@ Returns a [User](/sdk-reference/js/5/user) object.
 
 ## Usage
 
-[snippet=fetch-user-1]
+<<< ./snippets/fetch-user-1.js

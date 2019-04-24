@@ -22,4 +22,4 @@ Unsubscribes first if this `Room` object was already listening to events.
 
 ## Usage
 
-[snippet=renew-1]
+<<< ./snippets/renew-1.js

@@ -42,4 +42,4 @@ Returns a security [Profile](/sdk-reference/js/5/profile) object.
 
 ## Usage
 
-[snippet=create-profile-1]
+<<< ./snippets/create-profile-1.js

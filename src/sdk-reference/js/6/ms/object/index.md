@@ -12,23 +12,23 @@ Inspects the low-level properties of a key.
 ## Arguments
 
 ```js
-object(key, subcommand, [options])
+object(key, subcommand, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Key |
+| Arguments    | Type              | Description                                                                        |
+| ------------ | ----------------- | ---------------------------------------------------------------------------------- |
+| `key`        | <pre>string</pre> | Key                                                                                |
 | `subcommand` | <pre>string</pre> | Object property to inspect.<br/>Allowed values: `encoding`, `idletime`, `refcount` |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| `options`    | <pre>object</pre> | Optional query arguments                                                           |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -37,4 +37,4 @@ Resolves to the inspected property value.
 
 ## Usage
 
-[snippet=object]
+<<< ./snippets/object.js

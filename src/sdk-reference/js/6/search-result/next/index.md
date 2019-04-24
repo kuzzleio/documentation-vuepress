@@ -41,7 +41,7 @@ The results that are returned from a scroll request reflect the state of the ind
 
 As such, even if some documents are added or deleted from the database between two calls to `next`, the result is garanteed to include all items matching the query at the time the initial `search` was sent and to not get any duplicate between two search pages.
 
-[snippet=scroll]
+<<< ./snippets/scroll.js
 
 ## Usage with sort / size
 
@@ -63,4 +63,4 @@ Because this method does not freeze the research between two calls, if some upda
   </p>
 </div>
 
-[snippet=fromsize]
+<<< ./snippets/fromsize.js

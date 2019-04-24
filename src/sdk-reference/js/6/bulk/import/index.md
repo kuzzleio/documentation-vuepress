@@ -81,4 +81,4 @@ Each object has the following structure:
 
 ## Usage
 
-[snippet=import]
+<<< ./snippets/import.js

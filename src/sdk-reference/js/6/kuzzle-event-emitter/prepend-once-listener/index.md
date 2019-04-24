@@ -12,15 +12,15 @@ The next time that event is triggered, this listener is removed, and then invoke
 ## Arguments
 
 ```js
-prependOnceListener (eventName, callback);
+prependOnceListener(eventName, callback);
 ```
 
 <br/>
 
-| Argument   | Type     | Description      |
-| ---------- | -------- | -------- |
-| `eventName`    | <pre>string</pre> | The name of the event |
-| `callback` | <pre>function</pre> | Function to call when the event is triggered     |
+| Argument    | Type                | Description                                  |
+| ----------- | ------------------- | -------------------------------------------- |
+| `eventName` | <pre>string</pre>   | The name of the event                        |
+| `callback`  | <pre>function</pre> | Function to call when the event is triggered |
 
 ## Return
 
@@ -28,4 +28,4 @@ The `KuzzleEventEmitter` instance.
 
 ## Usage
 
-[snippet=prepend-once-listener]
+<<< ./snippets/prepend-once-listener.js

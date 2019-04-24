@@ -20,4 +20,4 @@ Resolves to an array of [Profile](/sdk-reference/js/6/profile).
 
 ## Usage
 
-[snippet=getProfiles]
+<<< ./snippets/getProfiles.js

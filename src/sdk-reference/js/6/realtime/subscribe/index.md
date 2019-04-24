@@ -48,16 +48,16 @@ Resolves to a string containing the room ID
 
 _Simple subscription to document notifications_
 
-[snippet=document-notifications]
+<<< ./snippets/document-notifications.js
 
 _Subscription to document notifications with scope option_
 
-[snippet=document-notifications-leave-scope]
+<<< ./snippets/document-notifications-leave-scope.js
 
 _Subscription to message notifications_
 
-[snippet=message-notifications]
+<<< ./snippets/message-notifications.js
 
 _Subscription to user notifications_
 
-[snippet=user-notifications]
+<<< ./snippets/user-notifications.js

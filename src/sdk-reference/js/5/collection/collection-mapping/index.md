@@ -24,4 +24,4 @@ Returns the newly created [CollectionMapping](/sdk-reference/js/5/collection-map
 
 ## Usage
 
-[snippet=collection-mapping-1]
+<<< ./snippets/collection-mapping-1.js

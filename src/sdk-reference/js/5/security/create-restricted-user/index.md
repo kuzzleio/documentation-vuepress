@@ -42,4 +42,4 @@ Resolves to a [User](/sdk-reference/js/5/user) object.
 
 ## Usage
 
-[snippet=create-restricted-user-1]
+<<< ./snippets/create-restricted-user-1.js

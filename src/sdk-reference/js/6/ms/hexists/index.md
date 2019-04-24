@@ -12,24 +12,23 @@ Checks if a field exists in a hash.
 ## Arguments
 
 ```js
-hexists(key, field, [options])
-
+hexists(key, field, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Hash key |
-| `field` | <pre>string</pre> | Field name |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `key`     | <pre>string</pre> | Hash key                 |
+| `field`   | <pre>string</pre> | Field name               |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -38,4 +37,4 @@ Resolves to a boolean telling whether the checked field exists or not.
 
 ## Usage
 
-[snippet=hexists]
+<<< ./snippets/hexists.js

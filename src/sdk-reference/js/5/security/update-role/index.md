@@ -42,4 +42,4 @@ Returns an updated [Role](/sdk-reference/js/5/role) object.
 
 ## Usage
 
-[snippet=update-role-1]
+<<< ./snippets/update-role-1.js

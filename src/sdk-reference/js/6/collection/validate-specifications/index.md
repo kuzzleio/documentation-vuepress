@@ -62,4 +62,4 @@ It contains the following properties:
 
 ## Usage
 
-[snippet=validate-specifications]
+<<< ./snippets/validate-specifications.js

@@ -36,4 +36,4 @@ Returns the `Profile` object to allow chaining calls.
 
 ## Usage
 
-[snippet=add-policy-1]
+<<< ./snippets/add-policy-1.js

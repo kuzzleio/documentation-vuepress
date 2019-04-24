@@ -11,24 +11,23 @@ Checks that the current authenticated user has credentials for the specified aut
 <br/>
 
 ```javascript
-credentialsExist (strategy, [options]);
+credentialsExist(strategy, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `local` | <pre>string</pre> | Strategy to use
-| `options` | <pre>object</pre> | Query options
+| Arguments | Type              | Description     |
+| --------- | ----------------- | --------------- |
+| `local`   | <pre>string</pre> | Strategy to use |
+| `options` | <pre>object</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-
 
 ## Resolves
 
@@ -36,4 +35,4 @@ Resolves to `true` if the credentials exist, `false` otherwise.
 
 ## Usage
 
-[snippet=credentials-exist]
+<<< ./snippets/credentials-exist.js

@@ -11,7 +11,7 @@ Empties the offline request queue without playing it.
 ## Arguments
 
 ```javascript
-flushQueue ()
+flushQueue();
 ```
 
 ## Return
@@ -20,4 +20,4 @@ The `Kuzzle` instance.
 
 ## Usage
 
-[snippet=flush-queue]
+<<< ./snippets/flush-queue.js

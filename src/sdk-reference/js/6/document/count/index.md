@@ -15,22 +15,22 @@ Kuzzle uses the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasti
 <br/>
 
 ```javascript
-count (index, collection, query, [options]);
+count(index, collection, query, [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
+| Argument     | Type              | Description     |
+| ------------ | ----------------- | --------------- |
+| `index`      | <pre>string</pre> | Index name      |
 | `collection` | <pre>string</pre> | Collection name |
-| `query` | <pre>object</pre> | Query to match |
-| `options` | <pre>object</pre> | Query options |
+| `query`      | <pre>object</pre> | Query to match  |
+| `options`    | <pre>object</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
+| Options    | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
@@ -39,4 +39,4 @@ Resolves to the number of matched documents.
 
 ## Usage
 
-[snippet=count]
+<<< ./snippets/count.js

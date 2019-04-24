@@ -52,4 +52,4 @@ Each returned geopoint is an object with the following properties:
 
 ## Usage
 
-[snippet=georadius]
+<<< ./snippets/georadius.js

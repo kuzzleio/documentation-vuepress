@@ -11,15 +11,15 @@ Removes a listener function from an event.
 ## Arguments
 
 ```js
-removeListener (eventName, callback);
+removeListener(eventName, callback);
 ```
 
 <br/>
 
-| Argument   | Type     | Description      |
-| ---------- | -------- | -------- |
-| `eventName`    | <pre>string</pre> | The name of the event |
-| `callback` | <pre>function</pre> | Callback to remove     |
+| Argument    | Type                | Description           |
+| ----------- | ------------------- | --------------------- |
+| `eventName` | <pre>string</pre>   | The name of the event |
+| `callback`  | <pre>function</pre> | Callback to remove    |
 
 ## Return
 
@@ -27,4 +27,4 @@ The `KuzzleEventEmitter` instance.
 
 ## Usage
 
-[snippet=remove-listener]
+<<< ./snippets/remove-listener.js

@@ -21,4 +21,4 @@ Resolves if the connection is successful.
 
 ## Usage
 
-[snippet=connect]
+<<< ./snippets/connect.js

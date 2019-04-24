@@ -5,9 +5,9 @@ title: hset
 
 # hset
 
-Sets a field and its value in a hash. 
+Sets a field and its value in a hash.
 
-If the key does not exist, a new key holding a hash is created. 
+If the key does not exist, a new key holding a hash is created.
 
 If the field already exists, its value is overwritten.
 
@@ -16,24 +16,24 @@ If the field already exists, its value is overwritten.
 ## Arguments
 
 ```js
-hset(key, field, value, [options])
+hset(key, field, value, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Hash key |
-| `field` | <pre>string</pre> | Field name |
-| `value` | <pre>string</pre> | Field value |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `key`     | <pre>string</pre> | Hash key                 |
+| `field`   | <pre>string</pre> | Field name               |
+| `value`   | <pre>string</pre> | Field value              |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -42,4 +42,4 @@ Resolves once the field has been set.
 
 ## Usage
 
-[snippet=hset]
+<<< ./snippets/hset.js

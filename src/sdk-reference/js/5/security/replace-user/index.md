@@ -42,4 +42,4 @@ Returns a [User](/sdk-reference/js/5/user) object.
 
 ## Usage
 
-[snippet=replace-user-1]
+<<< ./snippets/replace-user-1.js

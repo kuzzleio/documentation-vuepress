@@ -15,22 +15,22 @@ If the credentials that generated the current JWT are removed, the user will rem
 <br/>
 
 ```javascript
-deleteMyCredentials (strategy, [options]);
+deleteMyCredentials(strategy, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | <pre>string</pre> | Strategy to use
-| `options` | <pre>object</pre> | Query options
+| Arguments  | Type              | Description     |
+| ---------- | ----------------- | --------------- |
+| `strategy` | <pre>string</pre> | Strategy to use |
+| `options`  | <pre>object</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
@@ -39,4 +39,4 @@ A `boolean` indicating if the credentials are being deleted.
 
 ## Usage
 
-[snippet=delete-my-credentials]
+<<< ./snippets/delete-my-credentials.js

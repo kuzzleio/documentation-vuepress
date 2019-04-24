@@ -12,22 +12,22 @@ Returns all keys matching the provided pattern.
 ## Arguments
 
 ```js
-keys(pattern, [options])
+keys(pattern, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `pattern` | <pre>string</pre> | Match pattern |
-|| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description       |
+| --------- | ----------------- | ----------------- |
+| `pattern` | <pre>string</pre> | Match pattern     |
+|           | `options`         | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -36,4 +36,4 @@ Resolves to an array of key identifiers.
 
 ## Usage
 
-[snippet=keys]
+<<< ./snippets/keys.js

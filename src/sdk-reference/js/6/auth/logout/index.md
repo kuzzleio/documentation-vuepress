@@ -13,9 +13,9 @@ If there were any, real-time subscriptions are cancelled.
 <br/>
 
 ```javascript
-logout ()
+logout();
 ```
 
 ## Usage
 
-[snippet=logout]
+<<< ./snippets/logout.js

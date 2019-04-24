@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: smembers
 description: MemoryStorage:smembers
 ---
-  
 
 # smembers
+
 Returns the members of a set of unique values.
 
 [[_Redis documentation_]](https://redis.io/commands/smembers)
@@ -14,19 +14,20 @@ Returns the members of a set of unique values.
 
 ## smembers(key, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -41,13 +42,10 @@ Returns an array of values held by the provided set.
 
 ## Usage
 
-[snippet=smembers-1]
+<<< ./snippets/smembers-1.js
+
 > Callback response:
 
 ```json
-[
-  "member1",
-  "member2",
-  "..."
-]
+["member1", "member2", "..."]
 ```

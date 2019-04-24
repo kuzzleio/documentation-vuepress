@@ -41,4 +41,4 @@ Resolves to the calculated distance.
 
 ## Usage
 
-[snippet=geodist]
+<<< ./snippets/geodist.js

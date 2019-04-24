@@ -14,24 +14,24 @@ Positions are 0-based, meaning the first member of the set has a position of 0.
 ## Arguments
 
 ```js
-zremrangebyrank(key, start, stop, [options])
+zremrangebyrank(key, start, stop, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Sorted set key |
-| `start` | <pre>integer</pre> | Starting index offset (inclusive) |
-| `stop` | <pre>integer</pre> | Ending index offset (inclusive) |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type               | Description                       |
+| --------- | ------------------ | --------------------------------- |
+| `key`     | <pre>string</pre>  | Sorted set key                    |
+| `start`   | <pre>integer</pre> | Starting index offset (inclusive) |
+| `stop`    | <pre>integer</pre> | Ending index offset (inclusive)   |
+| `options` | <pre>object</pre>  | Optional query arguments          |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -40,4 +40,4 @@ Resolves to the number of removed elements.
 
 ## Usage
 
-[snippet=zremrangebyrank]
+<<< ./snippets/zremrangebyrank.js

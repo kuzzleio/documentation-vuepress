@@ -12,23 +12,23 @@ Merges multiple [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) data st
 ## Arguments
 
 ```js
-pfmerge(dest, sources, [options])
+pfmerge(dest, sources, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `dest` | <pre>string</pre> | Destination key |
+| Arguments | Type                | Description                       |
+| --------- | ------------------- | --------------------------------- |
+| `dest`    | <pre>string</pre>   | Destination key                   |
 | `sources` | <pre>string[]</pre> | List of HyperLogLog keys to merge |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| `options` | <pre>object</pre>   | Optional query arguments          |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -37,4 +37,4 @@ Resolves once the operation succeeds.
 
 ## Usage
 
-[snippet=pfmerge]
+<<< ./snippets/pfmerge.js

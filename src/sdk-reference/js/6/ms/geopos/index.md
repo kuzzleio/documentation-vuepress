@@ -37,4 +37,4 @@ Resolves to the members positions (`[longitude, latitude]`), in the same order t
 
 ## Usage
 
-[snippet=geopos]
+<<< ./snippets/geopos.js

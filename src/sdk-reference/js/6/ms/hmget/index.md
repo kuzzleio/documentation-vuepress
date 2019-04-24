@@ -12,24 +12,23 @@ Returns the values of the specified hash's fields.
 ## Arguments
 
 ```js
-hmget(key, fields, [options])
-
+hmget(key, fields, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Hash key |
-| `fields` | <pre>string[]</pre> | Field names |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type                | Description              |
+| --------- | ------------------- | ------------------------ |
+| `key`     | <pre>string</pre>   | Hash key                 |
+| `fields`  | <pre>string[]</pre> | Field names              |
+| `options` | <pre>object</pre>   | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -38,4 +37,4 @@ Resolves to the list of requested field values, in the same order than in the qu
 
 ## Usage
 
-[snippet=hmget]
+<<< ./snippets/hmget.js

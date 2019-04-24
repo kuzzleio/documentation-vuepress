@@ -54,4 +54,4 @@ The `Kuzzle` SDK instance.
 
 ## Usage
 
-[snippet=constructor]
+<<< ./snippets/constructor.js

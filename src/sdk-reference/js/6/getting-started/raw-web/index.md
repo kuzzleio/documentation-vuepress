@@ -56,7 +56,7 @@ Then, add the code below in the `body` tag.
 This loads the SDK and connects it to a Kuzzle instance using the WebSocket protocol. If an error occurs, it is displayed
 in the console. Once the connection is established, a success message is displayed in the console.
 
-[snippet=load-sdk]
+<<< ./snippets/load-sdk.js
 
 <div class="alert alert-info">
 Replace <code>kuzzle</code> with <code>localhost</code> or the hostname where your Kuzzle server is running.
@@ -65,7 +65,7 @@ Replace <code>kuzzle</code> with <code>localhost</code> or the hostname where yo
 Now you have to add the code that will access Kuzzle to create a new index `nyc-open-data` and a new collection `yellow-taxi`
 that you will use to store data later on. Make sure the code inside your `body` tag looks like the following:
 
-[snippet=prepare-db]
+<<< ./snippets/prepare-db.js
 
 Now, let's take a look at what your script is doing:
 
@@ -98,7 +98,7 @@ the <code>nyc-open-data</code> index as it already exists.
 Create a `create.html` file with the same structure as `index.html` (see above).
 And, right like before, add some code to the `body` tag:
 
-[snippet=create]
+<<< ./snippets/create.js
 
 This code does the following:
 
@@ -131,7 +131,7 @@ Kuzzle provides pub/sub features that can be used to trigger real-time notificat
 
 Let's get started. Create a `subscribe.html` file (same structure as above) with the following code in the `body` tag:
 
-[snippet=subscribe]
+<<< ./snippets/subscribe.js
 
 Run this code by opening the `subscribe.html` file in a new tab, leaving the previous one (showing `create.html`) open.
 The console should output the following message:

@@ -46,4 +46,4 @@ Returns an instantiated [SearchResult](/sdk-reference/js/5/search-result) object
 
 ## Usage
 
-[snippet=scroll-1]
+<<< ./snippets/scroll-1.js

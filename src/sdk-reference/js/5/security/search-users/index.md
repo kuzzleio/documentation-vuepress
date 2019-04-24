@@ -41,7 +41,7 @@ Return a JSON Object
 
 ## Usage
 
-[snippet=search-users-1]
+<<< ./snippets/search-users-1.js
 
 > Callback response:
 

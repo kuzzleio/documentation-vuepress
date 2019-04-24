@@ -38,4 +38,4 @@ Resolves to a list of element objects.
 
 ## Usage
 
-[snippet=zrevrange]
+<<< ./snippets/zrevrange.js

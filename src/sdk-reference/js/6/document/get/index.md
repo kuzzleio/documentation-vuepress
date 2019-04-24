@@ -11,26 +11,26 @@ Gets a document.
 <br/>
 
 ```javascript
-get (index, collection, id, [options])
+get(index, collection, id, [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
+| Argument     | Type              | Description     |
+| ------------ | ----------------- | --------------- |
+| `index`      | <pre>string</pre> | Index name      |
 | `collection` | <pre>string</pre> | Collection name |
-| `id` | <pre>string</pre> | Document ID  |
-| `options` | <pre>object</pre> | Query options |
+| `id`         | <pre>string</pre> | Document ID     |
+| `options`    | <pre>object</pre> | Query options   |
 
 ### Options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
+| Options    | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
 
 ## Usage
 
-[snippet=get]
+<<< ./snippets/get.js

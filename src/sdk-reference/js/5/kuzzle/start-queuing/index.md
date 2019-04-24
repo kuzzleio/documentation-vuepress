@@ -16,4 +16,4 @@ Returns the `Kuzzle` SDK object to allow chaining.
 
 ## Usage
 
-[snippet=start-queuing-1]
+<<< ./snippets/start-queuing-1.js

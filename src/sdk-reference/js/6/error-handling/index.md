@@ -20,8 +20,8 @@ You can find a detailed list of possible errors messages and statuses in the [do
 
 #### Example with a promise chain
 
-[snippet=error-handling]
+<<< ./snippets/error-handling.js
 
 #### Example with async/await
 
-[snippet=error-handling-async]
+<<< ./snippets/error-handling-async.js

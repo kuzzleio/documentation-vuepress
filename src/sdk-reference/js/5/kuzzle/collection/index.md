@@ -29,4 +29,4 @@ Returns a [Collection](/sdk-reference/js/5/collection) object.
 
 ## Usage
 
-[snippet=collection-1]
+<<< ./snippets/collection-1.js

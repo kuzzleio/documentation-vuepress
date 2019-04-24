@@ -25,4 +25,4 @@ Returns the newly created [Document](/sdk-reference/js/5/document) object.
 
 ## Usage
 
-[snippet=document-1]
+<<< ./snippets/document-1.js

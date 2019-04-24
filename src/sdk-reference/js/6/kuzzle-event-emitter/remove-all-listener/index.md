@@ -12,14 +12,14 @@ If no eventName is specified, removes all listener functions from all events.
 ## Arguments
 
 ```js
-removeAllListeners ([eventName]);
+removeAllListeners([eventName]);
 ```
 
 <br/>
 
-| Argument   | Type     | Description      |
-| ---------- | -------- | -------- |
-| `eventName`    | <pre>string</pre> | Optional name of the event |
+| Argument    | Type              | Description                |
+| ----------- | ----------------- | -------------------------- |
+| `eventName` | <pre>string</pre> | Optional name of the event |
 
 ## Return
 
@@ -27,4 +27,4 @@ The `KuzzleEventEmitter` instance.
 
 ## Usage
 
-[snippet=remove-all-listeners]
+<<< ./snippets/remove-all-listeners.js

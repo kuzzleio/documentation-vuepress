@@ -15,22 +15,22 @@ This request does **not** store or publish the document.
 <br/>
 
 ```javascript
-validate (index, collection, document, [options])
+validate(index, collection, document, [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `document` | <pre>object</pre> | Document to validate |
-| `options` | <pre>object</pre> | Query options |
+| Argument     | Type              | Description          |
+| ------------ | ----------------- | -------------------- |
+| `index`      | <pre>string</pre> | Index name           |
+| `collection` | <pre>string</pre> | Collection name      |
+| `document`   | <pre>object</pre> | Document to validate |
+| `options`    | <pre>object</pre> | Query options        |
 
 ### Options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
+| Options    | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
@@ -39,4 +39,4 @@ Resolves to a boolean value set to true if the document is valid and false other
 
 ## Usage
 
-[snippet=validate]
+<<< ./snippets/validate.js

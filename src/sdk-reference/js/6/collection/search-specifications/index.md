@@ -66,4 +66,4 @@ Resolve to a [SpecificationsSearchResult](/sdk-reference/js/6/search-result).
 
 ## Usage
 
-[snippet=search-specifications]
+<<< ./snippets/search-specifications.js

@@ -34,4 +34,4 @@ Returns a security [Profile](/sdk-reference/js/5/profile) object.
 
 ## Usage
 
-[snippet=fetch-profile-1]
+<<< ./snippets/fetch-profile-1.js

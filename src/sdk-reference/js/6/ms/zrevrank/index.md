@@ -12,23 +12,23 @@ Returns the position of an element in a sorted set, with scores in descending or
 ## Arguments
 
 ```js
-zrevrank(key, member, [options])
+zrevrank(key, member, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Sorted set key |
-| `member` | <pre>string</pre> | Member value |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `key`     | <pre>string</pre> | Sorted set key           |
+| `member`  | <pre>string</pre> | Member value             |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -37,4 +37,4 @@ Resolves to the index of the found member in the sorted set, or to `null` if the
 
 ## Usage
 
-[snippet=zrevrank]
+<<< ./snippets/zrevrank.js

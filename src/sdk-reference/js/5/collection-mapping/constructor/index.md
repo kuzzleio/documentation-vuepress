@@ -38,4 +38,4 @@ Once a field mapping has been set, it cannot be removed without reconstructing t
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.js

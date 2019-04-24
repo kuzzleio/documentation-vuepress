@@ -37,7 +37,7 @@ If you are performing a clean install you might get some `UNMET PEER DEPENDENCY`
 Then, create an `init.js` file and start by adding the code below.  
 This loads the SDK and connects it to a Kuzzle instance using the WebSocket protocol.
 
-[snippet=load-sdk]
+<<< ./snippets/load-sdk.js
 
 <div class="alert alert-info">
 Replace 'kuzzle' which is the Kuzzle server hostname with 'localhost' or the hostname where your Kuzzle server is running.
@@ -53,11 +53,11 @@ kuzzle.on('networkError', error => {
 
 Then, connect the client to your Kuzzle server with the `connect()` method, afterwards you have to add the code that will access Kuzzle to create a new index 'nyc-open-data' and a new collection 'yellow-taxi' that you will use to store data later on.
 
-[snippet=prepare-db]
+<<< ./snippets/prepare-db.js
 
 Your `init.js` file should now look like this:
 
-[snippet=init]
+<<< ./snippets/init.js
 
 This code does the following:
 
@@ -88,7 +88,7 @@ Congratulations! You are now ready to say Hello to the World!
 
 Create a `create.js` file with the following code:
 
-[snippet=create]
+<<< ./snippets/create.js
 
 This code does the following:
 
@@ -118,7 +118,7 @@ Kuzzle provides pub/sub features that can be used to trigger real-time notificat
 
 Let's get started. Create a `subscribe.js` file with the following code:
 
-[snippet=subscribe]
+<<< ./snippets/subscribe.js
 
 Run the code with Node.js:
 

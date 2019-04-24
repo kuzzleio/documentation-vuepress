@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: zcard
 description: MemoryStorage:zcard
 ---
-  
 
 # zcard
+
 Returns the number of elements held by a sorted set.
 
 [[_Redis documentation_]](https://redis.io/commands/zcard)
@@ -14,19 +14,20 @@ Returns the number of elements held by a sorted set.
 
 ## zcard(key, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Callback Response
@@ -35,7 +36,8 @@ Returns an integer containing the number of elements in a sorted set.
 
 ## Usage
 
-[snippet=zcard-1]
+<<< ./snippets/zcard-1.js
+
 > Callback response:
 
 ```json

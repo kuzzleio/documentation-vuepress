@@ -11,21 +11,21 @@ Gets the exhaustive list of registered authentication strategies.
 <br/>
 
 ```javascript
-getStrategies ([options])
+getStrategies([options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `options` | <pre>object</pre> | Query options
+| Arguments | Type              | Description   |
+| --------- | ----------------- | ------------- |
+| `options` | <pre>object</pre> | Query options |
 
 ### options
 
 Additional query options
 
-| Property     | Type    | Description                       | Default
-| ---------- | ------- | --------------------------------- | -------
+| Property   | Type                            | Description                       | Default |
+| ---------- | ------------------------------- | --------------------------------- | ------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | Make this request queuable or not |
 
 ## Resolves
@@ -34,4 +34,4 @@ An array of available strategies names.
 
 ## Usage
 
-[snippet=get-strategies]
+<<< ./snippets/get-strategies.js

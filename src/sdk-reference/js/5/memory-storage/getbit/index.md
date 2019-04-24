@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getbit
 description: MemoryStorage:getbit
 ---
-  
 
 # getbit
+
 Returns the bit value at `offset`, in the string value stored in a key.
 
 [[_Redis documentation_]](https://redis.io/commands/getbit)
@@ -14,20 +14,20 @@ Returns the bit value at `offset`, in the string value stored in a key.
 
 ## getbit(key, offset, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `offset` | int | Offset position in the key's value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                        |
+| ---------- | ----------- | ---------------------------------- |
+| `key`      | string      | Key identifier                     |
+| `offset`   | int         | Offset position in the key's value |
+| `options`  | JSON Object | Optional parameters                |
+| `callback` | function    | Callback                           |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -37,7 +37,8 @@ Returns the bit value at the provided offset.
 
 ## Usage
 
-[snippet=getbit-1]
+<<< ./snippets/getbit-1.js
+
 > Callback response:
 
 ```json

@@ -40,7 +40,7 @@ Returns the calculated distance between the two provided geospatial points.
 
 ## Usage
 
-[snippet=geodist-1]
+<<< ./snippets/geodist-1.js
 
 > Callback response:
 

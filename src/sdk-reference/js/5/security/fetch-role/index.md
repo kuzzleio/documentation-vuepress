@@ -34,4 +34,4 @@ Returns a [Role](/sdk-reference/js/5/role) object.
 
 ## Usage
 
-[snippet=fetch-role-1]
+<<< ./snippets/fetch-role-1.js

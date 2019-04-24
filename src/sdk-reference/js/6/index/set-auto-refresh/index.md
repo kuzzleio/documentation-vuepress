@@ -21,23 +21,23 @@ we recommend that you avoid using it in production or at least carefully monitor
 <br/>
 
 ```javascript
-setAutoRefresh (index, autoRefresh, [options]);
+setAutoRefresh(index, autoRefresh, [options]);
 ```
 
 <br/>
 
-| Arguments     | Type    | Description                        |
-| ------------- | ------- | ---------------------------------- |
-| `index`       | <pre>string</pre> | Index name                         |
-| `autoRefresh` | <pre>boolean</pre> | AutoRefresh value                   |
-| `options`     | <pre>number</pre> | Query options |
+| Arguments     | Type               | Description       |
+| ------------- | ------------------ | ----------------- |
+| `index`       | <pre>string</pre>  | Index name        |
+| `autoRefresh` | <pre>boolean</pre> | AutoRefresh value |
+| `options`     | <pre>number</pre>  | Query options     |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
@@ -46,4 +46,4 @@ Resolves to a `boolean` representing the new value of the autorefresh flag.
 
 ## Usage
 
-[snippet=setAutoRefresh]
+<<< ./snippets/setAutoRefresh.js

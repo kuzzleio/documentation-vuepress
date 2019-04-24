@@ -12,23 +12,23 @@ Appends a value at the end of a list, only if the destination key already exists
 ## Arguments
 
 ```js
-rpushx(key, value, [options])
+rpushx(key, value, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | List key |
-| `value` | <pre>string</pre> | Value to append |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `key`     | <pre>string</pre> | List key                 |
+| `value`   | <pre>string</pre> | Value to append          |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -37,4 +37,4 @@ Resolves to the updated list length.
 
 ## Usage
 
-[snippet=rpushx]
+<<< ./snippets/rpushx.js

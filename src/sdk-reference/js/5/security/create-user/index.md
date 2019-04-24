@@ -50,4 +50,4 @@ Returns a [User](/sdk-reference/js/5/user) object.
 
 ## Usage
 
-[snippet=create-user-1]
+<<< ./snippets/create-user-1.js

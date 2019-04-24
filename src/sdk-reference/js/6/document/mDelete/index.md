@@ -15,24 +15,24 @@ The optional parameter `refresh` can be used with the value `wait_for` in order 
 <br/>
 
 ```javascript
-mDelete (index, collection, ids, [options])
+mDelete(index, collection, ids, [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `ids` | <pre>array<string></pre> | IDs of the documents to delete |
-| `options` | <pre>object</pre> | Query options |
+| Argument     | Type            | Description                    |
+| ------------ | --------------- | ------------------------------ |
+| `index`      | `string`        | Index name                     |
+| `collection` | `string`        | Collection name                |
+| `ids`        | `array<string>` | IDs of the documents to delete |
+| `options`    | `object`        | Query options                  |
 
 ### Options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `refresh` | <pre>string</pre><br/>(`""`) | If set to `wait_for`, waits for the change to be reflected for `search` (up to 1s) |
+| Options    | Type<br/>(default)     | Description                                                                        |
+| ---------- | ---------------------- | ---------------------------------------------------------------------------------- |
+| `queuable` | `boolean`<br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again       |
+| `refresh`  | `string`<br/>(`""`)    | If set to `wait_for`, waits for the change to be reflected for `search` (up to 1s) |
 
 ## Resolves
 
@@ -40,4 +40,4 @@ Resolves to an array of objects representing the deleted documents.
 
 ## Usage
 
-[snippet=m-delete]
+<<< ./snippets/m-delete.js

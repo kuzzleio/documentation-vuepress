@@ -36,4 +36,4 @@ Resolves to the merged HyperLogLog structures cardinality.
 
 ## Usage
 
-[snippet=pfcount]
+<<< ./snippets/pfcount.js

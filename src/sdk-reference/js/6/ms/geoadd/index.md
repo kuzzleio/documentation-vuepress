@@ -12,34 +12,33 @@ Adds geospatial points to the specified key.
 ## Arguments
 
 ```js
-geoadd(key, geopoints, [options])
-
+geoadd(key, geopoints, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `key` | <pre>string</pre> | Key |
+| Arguments   | Type                | Description              |
+| ----------- | ------------------- | ------------------------ |
+| `key`       | <pre>string</pre>   | Key                      |
 | `geopoints` | <pre>object[]</pre> | List of geopoints to add |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| `options`   | <pre>object</pre>   | Optional query arguments |
 
 ### geopoints
 
 List of objects, each one of those being a geopoint to be added, with the following properties:
 
-| Properties | Type | Description |
-|---|---|---|
-| `lat` | <pre>number</pre> | Latitude |
-| `lon` | <pre>number</pre> | Longitude |
-| `name` | <pre>string</pre> | Unique point name (used as an identifier) |
+| Properties | Type              | Description                               |
+| ---------- | ----------------- | ----------------------------------------- |
+| `lat`      | <pre>number</pre> | Latitude                                  |
+| `lon`      | <pre>number</pre> | Longitude                                 |
+| `name`     | <pre>string</pre> | Unique point name (used as an identifier) |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -48,4 +47,4 @@ Resolves to the number of points added.
 
 ## Usage
 
-[snippet=geoadd]
+<<< ./snippets/geoadd.js

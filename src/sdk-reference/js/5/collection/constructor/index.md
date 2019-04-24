@@ -38,4 +38,4 @@ A data collection is a set of data managed by Kuzzle. It acts like a data table 
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.js

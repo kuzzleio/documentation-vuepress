@@ -13,34 +13,33 @@ Throws a partial error (error code 206) if one or more document can not be retri
 <br/>
 
 ```javascript
-mGet (index, collection, ids, [options])
+mGet(index, collection, ids, [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `ids` | <pre>array<string></pre> | Document ids |
-| `options` | <pre>object</pre> | Query options |
+| Argument     | Type            | Description     |
+| ------------ | --------------- | --------------- |
+| `index`      | `string`        | Index name      |
+| `collection` | `string`        | Collection name |
+| `ids`        | `array<string>` | Document ids    |
+| `options`    | `object`        | Query options   |
 
 ### Options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
+| Options    | Type<br/>(default)     | Description                                                                  |
+| ---------- | ---------------------- | ---------------------------------------------------------------------------- |
+| `queuable` | `boolean`<br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
 
 Resolves to an object containing the retrieved documents.
 
-| Property | Type | Description |
-| --- | --- | --- |
-| `hits` | <pre>array<object></pre> | Retrieved documents |
-| `total` | <pre>number</pre> | Total retrieved documents |
-
+| Property | Type            | Description               |
+| -------- | --------------- | ------------------------- |
+| `hits`   | `array<object>` | Retrieved documents       |
+| `total`  | `number`        | Total retrieved documents |
 
 ## Usage
 
-[snippet=m-get]
+<<< ./snippets/m-get.js

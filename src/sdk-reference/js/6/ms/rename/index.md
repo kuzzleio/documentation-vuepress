@@ -14,24 +14,23 @@ If the new key name is already used, then it is overwritten.
 ## Arguments
 
 ```js
-rename(src, dest, [options])
-
+rename(src, dest, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `src` | <pre>string</pre> | Key to rename |
-| `dest` | <pre>string</pre> | New key name |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `src`     | <pre>string</pre> | Key to rename            |
+| `dest`    | <pre>string</pre> | New key name             |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -40,4 +39,4 @@ Resolves once the operation succeeds.
 
 ## Usage
 
-[snippet=rename]
+<<< ./snippets/rename.js

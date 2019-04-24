@@ -34,4 +34,4 @@ A [User](/sdk-reference/js/6/user) representing the current user logged with the
 
 ## Usage
 
-[snippet=get-current-user]
+<<< ./snippets/get-current-user.js

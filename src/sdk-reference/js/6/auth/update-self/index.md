@@ -37,4 +37,4 @@ A [User](/sdk-reference/js/6/user) representing the current user logged with the
 
 ## Usage
 
-[snippet=update-self]
+<<< ./snippets/update-self.js

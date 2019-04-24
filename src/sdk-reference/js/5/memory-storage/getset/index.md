@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getset
 description: MemoryStorage:getset
 ---
-  
 
 # getset
+
 Sets a new value for a key and returns its previous value.
 
 [[_Redis documentation_]](https://redis.io/commands/getset)
@@ -14,20 +14,20 @@ Sets a new value for a key and returns its previous value.
 
 ## getset(key, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `value` | string | Key's new value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `value`    | string      | Key's new value     |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -43,7 +43,8 @@ Returns the key's previous value.
 
 ## Usage
 
-[snippet=getset-1]
+<<< ./snippets/getset-1.js
+
 > Callback response:
 
 ```json

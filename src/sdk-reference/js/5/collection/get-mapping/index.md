@@ -33,4 +33,4 @@ Returns a [CollectionMapping](/sdk-reference/js/5/collection-mapping/) object.
 
 ## Usage
 
-[snippet=get-mapping-1]
+<<< ./snippets/get-mapping-1.js

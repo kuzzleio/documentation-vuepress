@@ -12,23 +12,23 @@ Renames a key, only if the new name is not already used.
 ## Arguments
 
 ```js
-renamenx(src, dest, [options])
+renamenx(src, dest, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `src` | <pre>string</pre> | Key to rename |
-| `dest` | <pre>string</pre> | New key name |
-| ``options`` | <pre>object</pre> | Optional query arguments |
+| Arguments | Type              | Description              |
+| --------- | ----------------- | ------------------------ |
+| `src`     | <pre>string</pre> | Key to rename            |
+| `dest`    | <pre>string</pre> | New key name             |
+| `options` | <pre>object</pre> | Optional query arguments |
 
 ### options
 
 The `options` arguments can contain the following option properties:
 
-| Property   | Type (default)   | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Property   | Type (default)            | Description                                                                  |
+| ---------- | ------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean (true)</pre> | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolve
@@ -37,4 +37,4 @@ Resolves to a boolean telling whether the operation succeeded or not.
 
 ## Usage
 
-[snippet=renamenx]
+<<< ./snippets/renamenx.js

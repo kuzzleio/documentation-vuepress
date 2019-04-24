@@ -3,30 +3,30 @@ layout: sdk.html.hbs
 title: updateCredentials
 description: Security:updateCredentials
 ---
-  
 
 # updateCredentials
-Update the current user's credentials for the specified <strategy>. The credentials to send depend on the authentication plugin and the strategy.
+
+Update the current user's credentials for the specified `<strategy>`. The credentials to send depend on the authentication plugin and the strategy.
 
 ---
 
 ## updateCredentials(strategy, kuid, credentials, [options], [callback])
 
-| Arguments | Type | Description
-|-----------|------|------------
-| `strategy` | string | Strategy you want to create credentials in
-| `kuid` | JSON object | User's kuid
-| `credentials` | JSON object | The credentials
-| `options` | JSON object | Optional parameters
-| `callback`| function | Optional callback handling the response
+| Arguments     | Type        | Description                                |
+| ------------- | ----------- | ------------------------------------------ |
+| `strategy`    | string      | Strategy you want to create credentials in |
+| `kuid`        | JSON object | User's kuid                                |
+| `credentials` | JSON object | The credentials                            |
+| `options`     | JSON object | Optional parameters                        |
+| `callback`    | function    | Optional callback handling the response    |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default
-|--------|------|-------------|---------
-| `queuable` | boolean | Make this request queuable or not  | `true`
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -36,7 +36,8 @@ Returns an object with the updated credentials.
 
 ## Usage
 
-[snippet=update-credentials-1]
+<<< ./snippets/update-credentials-1.js
+
 > Callback response
 
 ```json

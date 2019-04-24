@@ -63,4 +63,4 @@ Resolves if the collection is successfully created.
 
 ## Usage
 
-[snippet=create]
+<<< ./snippets/create.js

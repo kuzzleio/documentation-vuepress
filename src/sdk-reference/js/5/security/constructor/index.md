@@ -21,4 +21,4 @@ Please refer to our [permissions guide](/guide/1/essentials/security/#user-permi
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.js

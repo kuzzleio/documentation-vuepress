@@ -51,4 +51,4 @@ Each returned geopoint is an object with the following properties:
 
 ## Usage
 
-[snippet=georadiusbymember]
+<<< ./snippets/georadiusbymember.js

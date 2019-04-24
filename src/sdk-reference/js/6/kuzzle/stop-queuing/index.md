@@ -12,7 +12,7 @@ Works only in `offline` state, and if the `autoQueue` option is set to false.
 ## Arguments
 
 ```javascript
-stopQueuing ()
+stopQueuing();
 ```
 
 ## Return
@@ -21,4 +21,4 @@ The `Kuzzle` instance.
 
 ## Usage
 
-[snippet=stop-queuing]
+<<< ./snippets/stop-queuing.js

@@ -39,4 +39,4 @@ Resolves to the list of elements in the provided score range, in descending orde
 
 ## Usage
 
-[snippet=zrevrangebyscore]
+<<< ./snippets/zrevrangebyscore.js

@@ -19,33 +19,33 @@ From [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch
 <br/>
 
 ```javascript
-refresh (index, [options]);
+refresh(index, [options]);
 ```
 
 <br/>
 
-| Arguments | Type   | Description                         |
-| --------- | ------ | ----------------------------------- |
+| Arguments | Type              | Description   |
+| --------- | ----------------- | ------------- |
 | `options` | <pre>object</pre> | Query options |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves
 
 Resolves to an `object` containing the refresh status on shards.
 
-| Name     | Type   | Description          |
-| -------- | ------ | ---------------------------------------------- |
-| `total` | <pre>number</pre> | Total number of shards |
+| Name         | Type              | Description                   |
+| ------------ | ----------------- | ----------------------------- |
+| `total`      | <pre>number</pre> | Total number of shards        |
 | `successful` | <pre>number</pre> | Successfully refreshed shards |
-| `failed` | <pre>number</pre> | Shards that failed to refresh |
+| `failed`     | <pre>number</pre> | Shards that failed to refresh |
 
 ## Usage
 
-[snippet=refresh]
+<<< ./snippets/refresh.js

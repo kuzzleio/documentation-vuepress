@@ -45,4 +45,4 @@ Returns an up-to-date [Document](/sdk-reference/js/5/document/) object.
 
 ## Usage
 
-[snippet=update-document-1]
+<<< ./snippets/update-document-1.js

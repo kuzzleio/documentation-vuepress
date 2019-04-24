@@ -17,35 +17,35 @@ You can set the `retryOnConflict` optional argument (with a retry count), to tel
 <br/>
 
 ```javascript
-mUpdate (index, collection, documents, [options])
+mUpdate(index, collection, documents, [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `documents` | <pre>array<object></pre> | Array of documents to update |
-| `options` | <pre>object</pre> | Query options |
+| Argument     | Type            | Description                  |
+| ------------ | --------------- | ---------------------------- |
+| `index`      | `string`        | Index name                   |
+| `collection` | `string`        | Collection name              |
+| `documents`  | `array<object>` | Array of documents to update |
+| `options`    | `object`        | Query options                |
 
 ### Options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `refresh` | <pre>string</pre><br/>(`""`) | If set to `wait_for`, waits for the change to be reflected for `search` (up to 1s) |
-| `retryOnConflict` | <pre>int</pre><br/>(`0`) | The number of times the database layer should retry in case of version conflict |
+| Options           | Type<br/>(default)     | Description                                                                        |
+| ----------------- | ---------------------- | ---------------------------------------------------------------------------------- |
+| `queuable`        | `boolean`<br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again       |
+| `refresh`         | `string`<br/>(`""`)    | If set to `wait_for`, waits for the change to be reflected for `search` (up to 1s) |
+| `retryOnConflict` | `int`<br/>(`0`)        | The number of times the database layer should retry in case of version conflict    |
 
 ## Resolves
 
 Resolves to an object containing the updated documents.
 
-| Property | Type | Description |
-| --- | --- | --- |
-| `hits` | <pre>array<object></pre> | Updated documents |
-| `total` | <pre>number</pre> | Total updated documents |
+| Property | Type            | Description             |
+| -------- | --------------- | ----------------------- |
+| `hits`   | `array<object>` | Updated documents       |
+| `total`  | `number`        | Total updated documents |
 
 ## Usage
 
-[snippet=m-update]
+<<< ./snippets/m-update.js

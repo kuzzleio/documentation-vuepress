@@ -13,15 +13,15 @@ Whenever an event is triggered, listener functions are called in the order they 
 ## Arguments
 
 ```js
-addOnceListener (eventName, callback);
+addOnceListener(eventName, callback);
 ```
 
 <br/>
 
-| Argument   | Type     | Description      |
-| ---------- | -------- | -------- |
-| `eventName`    | <pre>string</pre> | The name of the event |
-| `callback` | <pre>function</pre> | Function to call when the event is triggered     |
+| Argument    | Type                | Description                                  |
+| ----------- | ------------------- | -------------------------------------------- |
+| `eventName` | <pre>string</pre>   | The name of the event                        |
+| `callback`  | <pre>function</pre> | Function to call when the event is triggered |
 
 ## Return
 
@@ -29,4 +29,4 @@ The `KuzzleEventEmitter` instance.
 
 ## Usage
 
-[snippet=add-once-listener]
+<<< ./snippets/add-once-listener.js

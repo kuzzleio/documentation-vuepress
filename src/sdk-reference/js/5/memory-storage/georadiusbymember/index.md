@@ -60,7 +60,7 @@ Returns an array of names for points that are inside the provided radius.
 
 ## Usage
 
-[snippet=georadiusbymember-1]
+<<< ./snippets/georadiusbymember-1.js
 
 > Callback response:
 

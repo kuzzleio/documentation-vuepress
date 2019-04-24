@@ -24,11 +24,11 @@ You may subscribe multiple times to the same room, with identical or different s
 
 ---
 
-[snippet=notifications-1]
+<<< ./snippets/notifications-1.js
 
-[snippet=notifications-2]
+<<< ./snippets/notifications-2.js
 
-[snippet=notifications-3]
+<<< ./snippets/notifications-3.js
 
 ## Document Notification
 

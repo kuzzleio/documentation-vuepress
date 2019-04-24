@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: setnx
 description: MemoryStorage:setnx
 ---
-  
 
 # setnx
+
 Sets a value on a key, only if it does not already exist.
 
 [[_Redis documentation_]](https://redis.io/commands/setnx)
@@ -14,20 +14,21 @@ Sets a value on a key, only if it does not already exist.
 
 ## setnx(key, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `value` | string | Value to store |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `value`    | string      | Value to store      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -42,7 +43,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=setnx-1]
+<<< ./snippets/setnx-1.js
+
 > Callback response:
 
 ```json

@@ -37,4 +37,4 @@ Resolves to an array of converted geohashes, in the same order than the one prov
 
 ## Usage
 
-[snippet=geohash]
+<<< ./snippets/geohash.js

@@ -57,4 +57,4 @@ Resolves to a [SearchResult](/sdk-reference/js/6/search-result) object.
 
 ## Usage
 
-[snippet=search]
+<<< ./snippets/search.js
