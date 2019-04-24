@@ -29,7 +29,7 @@ We can create an `index.js` file in the `realtimePubSub` folder to program our t
 
 The first thing we need to do is connect to Kuzzle. To do this write the following code:
 
-[snippet=load-sdk]
+<<< ./snippets/load-sdk.js
 
 Replace `kuzzle` with the IP address or with the name of the Kuzzle server.
 
@@ -39,7 +39,7 @@ Let's use the _subscribe_ method.
 
 We will perform a subscription request that tells Kuzzle that the App wants to be notified anytime a document is created that contains the _message_ field. We define this subscription filter as follows, for more information about filters click [here](/koncorde/1/):
 
-[snippet=subscribe]
+<<< ./snippets/subscribe.js
 
 We have now programmed the subscription side of the test.
 
@@ -49,16 +49,16 @@ Now let's move on to the publish side of the test. Here we will publish a docume
 
 We will use the _publish_ method that creates a document containing the value `hello world` in the `message` field.
 
-[snippet=publish]
+<<< ./snippets/publish.js
 
 ## Run the Test
 
 The full code should look something like this:
 
-[snippet=pubsubjs]
+<<< ./snippets/pubsubjs.js
 
 Your console should show the following message:
 
 ```bash
-    hello world
+hello world
 ```

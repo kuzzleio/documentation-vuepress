@@ -85,7 +85,7 @@ npm install kuzzle-sdk
 
 Then, let's create a `login.js` file that contains the following code:
 
-[snippet=login]
+<<< ./snippets/login.js
 
 This code will:
 

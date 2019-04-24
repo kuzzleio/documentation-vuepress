@@ -231,6 +231,9 @@ module.exports = {
       permalink: true,
       permalinkBefore: false,
       permalinkSymbol: ''
+    },
+    extendMarkdown: md => {
+      md.use(require('./markdown/relative-snippet'));
     }
   },
   configureWebpack: {

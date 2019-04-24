@@ -9,7 +9,6 @@ For this example we will use Node.js. You will need to install Node.js and NPM.
 
 Let's create a new project folder called `iot` and add a MQTT client to it:
 
-
 ```bash
 mkdir iot
 cd iot
@@ -20,7 +19,7 @@ npm install mqtt
 Now the project configuration is complete, we can create a `subscribe.js` and a `publish.js` files in the `iot` folder to program our example.
 
 ```bash
-touch subscribe.js publish.js 
+touch subscribe.js publish.js
 ```
 
 ## Connect to Kuzzle
@@ -28,8 +27,7 @@ touch subscribe.js publish.js
 In both files, the first thing we need to do is to connect to Kuzzle. To do this add the following code:
 
 ```javascript
-const
-  mqtt = require('mqtt'),
+const mqtt = require('mqtt'),
   //Connect to Kuzzle
   client = mqtt.connect({ host: 'localhost' });
 ```
@@ -38,7 +36,7 @@ Here we assume Kuzzle is accessible locally. If this is not the case, replace `l
 
 ## Publish a message to Kuzzle
 
-Now let's move on to the publish side of the test. Here we will publish a message to Kuzzle using the MQTT protocol, sending a sensor information. 
+Now let's move on to the publish side of the test. Here we will publish a message to Kuzzle using the MQTT protocol, sending a sensor information.
 
 To do so, add the following code to your `publish.js` file:
 
@@ -51,8 +49,8 @@ client.publish('Kuzzle/request', JSON.stringify({
     action: 'publish',
     requestId: 'some-uniq-id',
     _id: 'document-uniq-identifier',
-    body: { 
-      command: 'battery-report' 
+    body: {
+      command: 'battery-report'
     }
   }));
 ```
@@ -68,7 +66,7 @@ Before continuing this guide, a word about how the MQTT topics are organized by 
 2. API responses are sent by Kuzzle to the read-only `Kuzzle/response` topic. This topic is special: despite being a public topic, API responses are private, and sent only to the requesting user (unless you set the `developmentMode` option to true, which is not advisable in production for obvious security reasons)
 
 3. Real-time notifications topic: when you send a real-time subscription to Kuzzle, it sends back a response with a `channel` identifier (a "channel" is a real-time subscription ID), and it also creates a MQTT topic named after that identifier. To receive real-time notifications, you have then to subscribe to this new, dedicated topic.
-Now that's out of the way, let's add a listener handler, for both our API responses and for real-time notifications:
+   Now that's out of the way, let's add a listener handler, for both our API responses and for real-time notifications:
 
 ```Javascript
 // Getting Kuzzle's response
@@ -94,11 +92,11 @@ We have now programmed the subscription side of the MQTT transport.
 
 The full code of your `publish.js` file should look like this:
 
-[snippet=publish]
+<<< ./snippets/publish.js
 
 And your `subscribe.js` file should look like this:
 
-[snippet=subscribe]
+<<< ./snippets/subscribe.js
 
 Now, run the following command in a terminal: it will display real-time notifications.
 

@@ -62,7 +62,7 @@ All the following examples are written in Javascript, therefore using the Javasc
 
 Once our client has started and initialized with the set of TO-DO items it fetched from the persistence layer, we want it to subscribe to the changes happening on them.
 
-[snippet=subscribe-no-filter]
+<<< ./snippets/subscribe-no-filter.js
 
 This code isn't very useful at the moment, but it shows the capability to react to a notification coming from the server.
 
@@ -123,7 +123,7 @@ Kuzzle ships with a powerful filtering tool named [Koncorde](/koncorde/1/). It e
 
 In our case, we want to select all the documents that contain the `URGENT` word in the `label` field. The best pick for this case is the [regexp](/koncorde/1/essentials/terms/#regexp-default) filter.
 
-[snippet=subscribe-filter]
+<<< ./snippets/subscribe-filter.js
 
 This way, Tom will be notified about urgent TO-DO items. Take a look at the [Koncorde Reference](/koncorde/1/) for a comprehensive list of available filters.
 
@@ -146,6 +146,6 @@ This object supports a wide range of options that can be passed directly to its 
 For now, let's concentrate on the question asked at the end of the previous chapter: how do we filter the notifications resulting of our own actions?  
 The option we are looking for is `subscribeToSelf`, which is set to `true` by default.
 
-[snippet=subscribe-options]
+<<< ./snippets/subscribe-options.js
 
 In the code right above, we added the extra "options" object as the fifth argument to avoid subscribing Tom to his own events.

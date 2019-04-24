@@ -31,14 +31,15 @@ If you are performing a clean install you might see some `UNMET PEER DEPENDENCY`
 Then, create an `init.js` file and start by loading the Kuzzle Javascript SDK.
 Next, instantiate a client that automatically connects to Kuzzle via WebSocket. Replace `'kuzzle'` with the corresponding server name or IP address:
 
-[snippet=load-sdk]
+<<< ./snippets/load-sdk.js
+
 Finally, we will add the code that will access Kuzzle to create a new index 'playground' and a new collection 'mycollection' that we will use to store data later on.
 
-[snippet=init-sample]
+<<< ./snippets/init-sample.js
 
 Your `first-step.js` file should now look like this:
 
-[snippet=init]
+<<< ./snippets/init.js
 
 This code does the following:
 
@@ -72,7 +73,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 Create a `create.js` file with the following code:
 
-[snippet=create]
+<<< ./snippets/create.js
 
 This code does the following:
 
@@ -110,7 +111,7 @@ Kuzzle provides pub/sub features that can be used to trigger real-time notificat
 
 Let's get started. Complete your `create.js` file:
 
-[snippet=subscribe]
+<<< ./snippets/subscribe.js
 
 Run your file in Node.js
 
