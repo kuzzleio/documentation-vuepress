@@ -9,7 +9,7 @@ order: 100
 
 ## content
 
-Returns a JSON string representing the user's content stored by Kuzzle.  
+Returns a JSON string representing the user's content stored by Kuzzle.
 
 ### Signature
 
@@ -19,7 +19,7 @@ const std::string& content() const;
 
 ## id
 
-Returns the user's unique identifier (or [kuid]({{ site_base_path }}guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid-default)).
+Returns the user's unique identifier (or [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid-default)).
 
 ### Signature
 

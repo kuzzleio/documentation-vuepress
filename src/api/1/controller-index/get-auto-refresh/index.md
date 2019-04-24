@@ -37,7 +37,7 @@ Method: GET
 
 ## Arguments
 
-* `index`: data index
+- `index`: data index
 
 ---
 
@@ -61,5 +61,5 @@ Returns a boolean giving the current value of the `autoRefresh` flag.
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

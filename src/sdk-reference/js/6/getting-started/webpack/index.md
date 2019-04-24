@@ -15,7 +15,7 @@ Before going through this tutorial, you should have a Kuzzle server running. Ple
 
 ## Fun with the SDK
 
-It's time to play with the [Kuzzle Javscript SDK]({{ site_base_path }}sdk-reference/js/6). In this section, we will store a document and subscribe to notifications in Kuzzle using the Javascript SDK in your browser.
+It's time to play with the [Kuzzle Javscript SDK](/sdk-reference/js/6). In this section, we will store a document and subscribe to notifications in Kuzzle using the Javascript SDK in your browser.
 
 Before proceeding, please make sure your system has **Node.js** version 8 or higher (<a href="https://nodejs.org/en/download/">instructions here</a>) installed.
 
@@ -172,7 +172,7 @@ New document successfully created!
 
 <div class="alert alert-success">
     You have now successfully stored your first document into Kuzzle. Click
-    <a href="{{ site_base_path }}guide/1/essentials/installing-console">here</a> to see how you can use the
+    <a href="/guide/1/essentials/installing-console">here</a> to see how you can use the
     <strong><a href="http://console.kuzzle.io/">Kuzzle Admin Console</a></strong> to browse your collection and 
     confirm that your document was saved.
 </div>
@@ -183,7 +183,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 ## Subscribe to realtime document notifications (pub/sub)
 
-Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the <a href="{{ site_base_path }}sdk-reference/js/6/essentials/realtime-notifications/">realtime notifications</a> documentation).
+Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the <a href="/sdk-reference/js/6/essentials/realtime-notifications/">realtime notifications</a> documentation).
 
 Let's get started. Create a `subscribe.js` file with following code:
 
@@ -226,7 +226,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 Now that you're more familiar with Kuzzle, dive even deeper to learn how to leverage its full capabilities:
 
-- take a look at the <a href="{{ site_base_path }}sdk-reference/js/6">SDK Reference</a>
-- learn how to use <a href="{{ site_base_path }}koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
-- follow our guide to learn how to implement <a href="{{ site_base_path }}guide/1/essentials/user-authentication/#local-strategy">basic authentication</a>
-- follow our guide to learn how to implement <a href="{{ site_base_path }}guide/1/essentials/security/">manage users and setup fine-grained access control</a>
+- take a look at the <a href="/sdk-reference/js/6">SDK Reference</a>
+- learn how to use <a href="/koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
+- follow our guide to learn how to implement <a href="/guide/1/essentials/user-authentication/#local-strategy">basic authentication</a>
+- follow our guide to learn how to implement <a href="/guide/1/essentials/security/">manage users and setup fine-grained access control</a>

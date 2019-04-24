@@ -17,7 +17,7 @@ Updates a user definition.
 
 ```http
 URL: http://kuzzle:7512/users/<_id>/_update[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -39,16 +39,16 @@ Body:
   }
 }
 ```
+
 ---
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the user changes are indexed
-
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the user changes are indexed
 
 ---
 

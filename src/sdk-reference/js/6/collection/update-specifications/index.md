@@ -13,23 +13,23 @@ When the validation specification is not formatted correctly, a detailed error m
 <br/>
 
 ```javascript
-updateSpecifications(index, collection, specifications, [options])
+updateSpecifications(index, collection, specifications, [options]);
 ```
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| ``index`` | <pre>string</pre> | Index name    |
-| ``collection`` | <pre>string</pre> | Collection name    |
-| ``specifications`` | <pre>object</pre> | Specifications to update  |
-| ``options`` | <pre>object</pre> | Query options    |
+| Arguments        | Type              | Description              |
+| ---------------- | ----------------- | ------------------------ |
+| `index`          | <pre>string</pre> | Index name               |
+| `collection`     | <pre>string</pre> | Collection name          |
+| `specifications` | <pre>object</pre> | Specifications to update |
+| `options`        | <pre>object</pre> | Query options            |
 
 ### specifications
 
 An object representing the specifications.
 
-This object must follow the [Specification Structure]({{ site_base_path }}guide/1/essentials/data-validation/):
+This object must follow the [Specification Structure](/guide/1/essentials/data-validation/):
 
 ```js
 {
@@ -44,8 +44,8 @@ This object must follow the [Specification Structure]({{ site_base_path }}guide/
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Resolves

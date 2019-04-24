@@ -12,12 +12,13 @@ Error structs are all of type `KuzzleError`.
 
 The `KuzzleError` type implements the standard `error` interface, and adds the following properties to it:
 
-| Property   | Type    | Description                       |
-| ---------- | ------- | --------------------------------- |
-| `Status` | int | Status following [HTTP Standards](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) |
-| `Stack` | string | Error stacktrace (Only in development mode) |
+| Property | Type   | Description                                                                                |
+| -------- | ------ | ------------------------------------------------------------------------------------------ |
+| `Status` | int    | Status following [HTTP Standards](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) |
+| `Stack`  | string | Error stacktrace (Only in development mode)                                                |
 
-You can find a detailed list of possible errors messages and statuses in the [documentation API]({{ site_base_path }}api/1/essentials/errors).
+You can find a detailed list of possible errors messages and statuses in the [documentation API](/api/1/essentials/errors).
 
 #### Example
+
 [snippet=error-handling]

@@ -12,15 +12,15 @@ Partial request success.
 ## Constructor
 
 ```js
-new context.error.PartialError(message, failures)
+new context.error.PartialError(message, failures);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `message` | <pre>string</pre> | Error message |
-| `failures` | <pre><a href={{ site_base_path }}plugins/1/errors/kuzzleerror>KuzzleError[]</a></pre> | List of encountered errors |
+| Arguments  | Type                                                               | Description                |
+| ---------- | ------------------------------------------------------------------ | -------------------------- |
+| `message`  | <pre>string</pre>                                                  | Error message              |
+| `failures` | <pre><a href=/plugins/1/errors/kuzzleerror>KuzzleError[]</a></pre> | List of encountered errors |
 
 ## Status Code
 

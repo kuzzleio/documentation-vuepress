@@ -3,7 +3,6 @@ layout: full.html.hbs
 title: createProfile
 ---
 
-
 # createProfile
 
 {{{since "1.0.0"}}}
@@ -18,7 +17,7 @@ Creates a new profile.
 
 ```http
 URL: http://kuzzle:7512/profiles/<_id>/_create[?refresh=wait_for]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -83,17 +82,17 @@ Body:
 
 ## Arguments
 
-* `_id`: new profile identifier. An error is returned if the profile already exists
+- `_id`: new profile identifier. An error is returned if the profile already exists
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the created profile is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the created profile is indexed
 
 ---
 
 ## Body properties
 
-* `policies`: [profile definition]({{site_base_path}}guide/1/essentials/security/#defining-profiles)
+- `policies`: [profile definition](/guide/1/essentials/security/#defining-profiles)
 
 ---
 
@@ -101,15 +100,15 @@ Body:
 
 Returns an object with the new profile creation status:
 
-* `_id`: created profile identifier
-* `_source`: profile content
-* `created`: always `true`
-* `version`: always `1`
+- `_id`: created profile identifier
+- `_source`: profile content
+- `created`: always `true`
+- `version`: always `1`
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "result": {
     "_id": "<profileId>",
     "_version": 1,

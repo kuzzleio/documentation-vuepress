@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: createRole
 description: Security:createRole
 ---
-  
 
 # createRole
+
 Create a new role in Kuzzle.
 
 <div class="alert alert-info">
@@ -16,28 +16,28 @@ That means that a role that was just created may not be returned by the <code>se
 
 ## createRole(id, content, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``id`` | string | Unique role identifier |
-| ``content`` | JSON Object | A plain JSON object representing the role |
-| ``options`` | string | (Optional) Optional arguments |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                               |
+| ---------- | ----------- | ----------------------------------------- |
+| `id`       | string      | Unique role identifier                    |
+| `content`  | JSON Object | A plain JSON object representing the role |
+| `options`  | string      | (Optional) Optional arguments             |
+| `callback` | function    | Callback handling the response            |
 
 ---
 
 ## Options
 
-| Filter | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``replaceIfExist`` | boolean | If the same role already exists: throw an error if sets to false. Replace the existing role otherwise | ``false`` |
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
-| ``refresh`` | string | If set to ``wait_for``, Kuzzle will wait the persistence layer to finish indexing (available with Elasticsearch 5.x and above) | ``undefined`` |
+| Filter           | Type    | Description                                                                                                                  | Default     |
+| ---------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `replaceIfExist` | boolean | If the same role already exists: throw an error if sets to false. Replace the existing role otherwise                        | `false`     |
+| `queuable`       | boolean | Make this request queuable or not                                                                                            | `true`      |
+| `refresh`        | string  | If set to `wait_for`, Kuzzle will wait the persistence layer to finish indexing (available with Elasticsearch 5.x and above) | `undefined` |
 
 ---
 
 ## Callback Response
 
-Returns a [Role]({{ site_base_path }}sdk-reference/js/5/role) object.
+Returns a [Role](/sdk-reference/js/5/role) object.
 
 ## Usage
 

@@ -9,7 +9,6 @@ description: Returns the collection list of an index
 Returns the complete list of realtime and stored data collections in requested index sorted by name in alphanumerical order.  
 The `from` and `size` arguments allow pagination. They are returned in the response if provided.
 
-
 ## Signature
 
 ```java
@@ -19,21 +18,21 @@ public String list(String index, io.kuzzle.sdk.QueryOptions io.kuzzle.sdk.QueryO
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | String | Index name    | yes  |
-| ``collection`` | String | Collection name    | yes  |
-| ``options`` | io.kuzzle.sdk.QueryOptions | An object containing query options    | no  |
+| Arguments    | Type                       | Description                        | Required |
+| ------------ | -------------------------- | ---------------------------------- | -------- |
+| `index`      | String                     | Index name                         | yes      |
+| `collection` | String                     | Collection name                    | yes      |
+| `options`    | io.kuzzle.sdk.QueryOptions | An object containing query options | no       |
 
 ### **options**
 
 Additional query options
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
-| `queuable` | boolean | Make this request queuable or not | `true`  |
-| `from` | int | Offset of the first result | `0` |
-| `size` | int | Maximum number of returned results | `10` |
+| Property   | Type    | Description                        | Default |
+| ---------- | ------- | ---------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not  | `true`  |
+| `from`     | int     | Offset of the first result         | `0`     |
+| `size`     | int     | Maximum number of returned results | `10`    |
 
 ## Return
 
@@ -41,7 +40,7 @@ Returns a string containing a JSON representation of the API response.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

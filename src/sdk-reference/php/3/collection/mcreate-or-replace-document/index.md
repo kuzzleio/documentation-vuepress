@@ -3,28 +3,28 @@ layout: sdk.html.hbs
 title: mcreateOrReplaceDocument
 description: Collection:mcreateOrReplaceDocument
 ---
-  
 
 # mCreateOrReplaceDocument
-Create or replace the input [Documents]({{ site_base_path }}sdk-reference/php/3/document/).
+
+Create or replace the input [Documents](/sdk-reference/php/3/document/).
 
 ---
 
 ## mCreateOrReplaceDocument(documents, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``documents`` | Document[] | Array of [Document]({{ site_base_path }}sdk-reference/php/3/document/) to create or replace |
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Optional callback |
+| Arguments   | Type        | Description                                                              |
+| ----------- | ----------- | ------------------------------------------------------------------------ |
+| `documents` | Document[]  | Array of [Document](/sdk-reference/php/3/document/) to create or replace |
+| `options`   | JSON Object | Optional parameters                                                      |
+| `callback`  | function    | Optional callback                                                        |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -42,14 +42,12 @@ Can return a 206 partial error in cases where some documents could not be create
 ## Usage
 
 [snippet=mcreate-or-replace-document-1]
+
 > Callback response:
 
 ```json
 {
-  "hits": [
-    {"first": "document"},
-    {"second": "document"}
-  ],
+  "hits": [{ "first": "document" }, { "second": "document" }],
   "total": 2
 }
 ```

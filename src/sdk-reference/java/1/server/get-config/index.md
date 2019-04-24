@@ -23,15 +23,15 @@ io.kuzzle.sdk.QueryOptions
 public java.lang.String getConfig();
 ```
 
-| Arguments | Type   | Description                         | Required |
-| --------- | ------ | ----------------------------------- | -------- |
+| Arguments | Type                       | Description                         | Required |
+| --------- | -------------------------- | ----------------------------------- | -------- |
 | `options` | io.kuzzle.sdk.QueryOptions | An object containing query options. | no       |
 
 ### **Options**
 
 Additional query options
 
-| Property   | Type  | Description                       | Default |
+| Property   | Type    | Description                       | Default |
 | ---------- | ------- | --------------------------------- | ------- |
 | `queuable` | boolean | Make this request queuable or not | `true`  |
 
@@ -41,7 +41,7 @@ Return server configuration as a `String`.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

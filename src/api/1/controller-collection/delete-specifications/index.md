@@ -11,7 +11,7 @@ Deletes validation specifications for a data collection.
 
 The request succeeds even if no specification exist for that data collection.
 
-***Note:***  an empty specification is implicitly applied to all collections. In a way, "no specification set" means "all documents are valid". 
+**_Note:_** an empty specification is implicitly applied to all collections. In a way, "no specification set" means "all documents are valid".
 
 ---
 
@@ -39,8 +39,8 @@ Method: DELETE
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -64,4 +64,4 @@ Returns a confirmation that the specifications are deleted:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

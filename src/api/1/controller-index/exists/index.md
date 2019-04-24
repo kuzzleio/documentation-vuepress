@@ -34,7 +34,7 @@ Method: GET
 
 ## Arguments
 
-* `index`: index name to test for existence
+- `index`: index name to test for existence
 
 ---
 
@@ -58,4 +58,4 @@ Returns a boolean telling whether the requested index exists.
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

@@ -7,7 +7,7 @@ title: Koncorde
 
 {{{since "1.6.0"}}}
 
-Instantiates a new [Koncorde]({{ site_base_path }}koncorde/1) engine.
+Instantiates a new [Koncorde](/koncorde/1) engine.
 
 ---
 
@@ -26,14 +26,14 @@ Returns a boolean telling whether filters exist for an index-collection pair.
 ### Arguments
 
 ```js
-exists(index, collection)
+exists(index, collection);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `index` | <pre>string</pre> | Data index name |
+| Arguments    | Type              | Description          |
+| ------------ | ----------------- | -------------------- |
+| `index`      | <pre>string</pre> | Data index name      |
 | `collection` | <pre>string</pre> | Data collection name |
 
 ### Return
@@ -51,14 +51,14 @@ Retrieves the list of filter identifiers registered on an index-collection pair.
 ### Arguments
 
 ```js
-getFilterIds(index, collection)
+getFilterIds(index, collection);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `index` | <pre>string</pre> | Data index name |
+| Arguments    | Type              | Description          |
+| ------------ | ----------------- | -------------------- |
+| `index`      | <pre>string</pre> | Data index name      |
 | `collection` | <pre>string</pre> | Data collection name |
 
 ### Return
@@ -78,26 +78,26 @@ The result can be directly used with the [store](#store-default) function.
 ### Arguments
 
 ```js
-normalize(index, collection, filters)
+normalize(index, collection, filters);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `index` | <pre>string</pre> | Data index name |
-| `collection` | <pre>string</pre> | Data collection name |
-| `filters` | <pre>object</pre> | Filters, in [Koncorde]({{ site_base_path }}koncorde/1) format |
+| Arguments    | Type              | Description                                |
+| ------------ | ----------------- | ------------------------------------------ |
+| `index`      | <pre>string</pre> | Data index name                            |
+| `collection` | <pre>string</pre> | Data collection name                       |
+| `filters`    | <pre>object</pre> | Filters, in [Koncorde](/koncorde/1) format |
 
 ### Return
 
 The `normalize` function returns a promise resolving to an object with the following properties:
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `collection` | <pre>string</pre> | Data collection name |
-| `id` | <pre>string</pre> | The filter unique identifier |
-| `index` | <pre>string</pre> | Data index name |
+| Field        | Type                | Description                                          |
+| ------------ | ------------------- | ---------------------------------------------------- |
+| `collection` | <pre>string</pre>   | Data collection name                                 |
+| `id`         | <pre>string</pre>   | The filter unique identifier                         |
+| `index`      | <pre>string</pre>   | Data index name                                      |
 | `normalized` | <pre>object[]</pre> | Normalized/optimized version of the supplied filters |
 
 ---
@@ -106,31 +106,31 @@ The `normalize` function returns a promise resolving to an object with the follo
 
 {{{since "1.0.0"}}}
 
-Registers a filter to this Koncorde instance. 
+Registers a filter to this Koncorde instance.
 
 This method is equivalent to executing [normalize](#normalize-default) + [store](#store-default).
 
 ### Arguments
 
 ```js
-register(index, collection, filters)
+register(index, collection, filters);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `index` | <pre>string</pre> | Data index name |
-| `collection` | <pre>string</pre> | Data collection name |
-| `filters` | <pre>object</pre> | Filters, in [Koncorde]({{ site_base_path }}koncorde/1) format |
+| Arguments    | Type              | Description                                |
+| ------------ | ----------------- | ------------------------------------------ |
+| `index`      | <pre>string</pre> | Data index name                            |
+| `collection` | <pre>string</pre> | Data collection name                       |
+| `filters`    | <pre>object</pre> | Filters, in [Koncorde](/koncorde/1) format |
 
 ### Return
 
 The `register` functions returns a promise, resolving to an object with the following attributes:
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | <pre>string</pre> | The filter unique identifier |
+| Field  | Type              | Description                                                                                                |
+| ------ | ----------------- | ---------------------------------------------------------------------------------------------------------- |
+| `id`   | <pre>string</pre> | The filter unique identifier                                                                               |
 | `diff` | <pre>object</pre> | If the filter doesn't already exist in the engine, contains the normalized version of the provided filters |
 
 ---
@@ -144,13 +144,13 @@ Removes a filter.
 ### Arguments
 
 ```js
-remove(filterId)
+remove(filterId);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
+| Arguments  | Type              | Description                                                                                                     |
+| ---------- | ----------------- | --------------------------------------------------------------------------------------------------------------- |
 | `filterId` | <pre>string</pre> | Filter unique identifier, obtained either with [normalize](#normalize-default) or [register](#register-default) |
 
 ### Return
@@ -168,21 +168,22 @@ Stores filters, normalized with the [normalize](#normalize-default)) function.
 ### Arguments
 
 ```js
-store(normalized)
+store(normalized);
 ```
+
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
+| Arguments    | Type              | Description        |
+| ------------ | ----------------- | ------------------ |
 | `normalized` | <pre>object</pre> | Normalized filters |
 
-### Return 
+### Return
 
 The `store` function returns an object with the following attributes:
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `id` | <pre>string</pre> | The filter unique identifier |
+| Field  | Type              | Description                                                                                 |
+| ------ | ----------------- | ------------------------------------------------------------------------------------------- |
+| `id`   | <pre>string</pre> | The filter unique identifier                                                                |
 | `diff` | <pre>object</pre> | If the filter didn't already exist, contains the normalized version of the provided filters |
 
 ---
@@ -196,15 +197,16 @@ Tests data and returns the matching filter identifiers.
 ### Arguments
 
 ```js
-test(index, collection, data, [documentId])
+test(index, collection, data, [documentId]);
 ```
+
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `index` | <pre>string</pre> | Data index name |
-| `collection` | <pre>string</pre> | Data collection name |
-| `data` | <pre>object</pre> | Data to test |
+| Arguments    | Type              | Description                |
+| ------------ | ----------------- | -------------------------- |
+| `index`      | <pre>string</pre> | Data index name            |
+| `collection` | <pre>string</pre> | Data collection name       |
+| `data`       | <pre>object</pre> | Data to test               |
 | `documentId` | <pre>string</pre> | Document unique identifier |
 
 ### Return
@@ -222,14 +224,14 @@ Validates the provided filters without storing them.
 ### Arguments
 
 ```js
-validate(filters)
+validate(filters);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `filters` | <pre>object</pre> | Filters, in [Koncorde]({{ site_base_path }}koncorde/1) format |
+| Arguments | Type              | Description                                |
+| --------- | ----------------- | ------------------------------------------ |
+| `filters` | <pre>object</pre> | Filters, in [Koncorde](/koncorde/1) format |
 
 ### Return
 

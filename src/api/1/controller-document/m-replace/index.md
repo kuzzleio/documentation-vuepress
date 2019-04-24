@@ -17,7 +17,7 @@ Replaces multiple documents.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_mReplace[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -25,7 +25,7 @@ Body:
 {
   "documents": [
     {
-      "_id": "<documentId>", 
+      "_id": "<documentId>",
       "body": {
         // new document content
       }
@@ -71,20 +71,20 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the replacements are indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the replacements are indexed
 
 ---
 
 ## Body properties
 
-* `documents`: an array of object. Each object describes a document to replace, by exposing the following properties:
-  * `_id` : ID of the document to replace
-  * `body`: document content
+- `documents`: an array of object. Each object describes a document to replace, by exposing the following properties:
+  - `_id` : ID of the document to replace
+  - `body`: document content
 
 ---
 
@@ -94,11 +94,11 @@ Returns a `hits` array containing the list of replaced documents.
 
 Each document has the following properties:
 
-* `_id`: document unique identifier
-* `_source`: document content
-* `_version`: version number of the document
+- `_id`: document unique identifier
+- `_source`: document content
+- `_version`: version number of the document
 
-If one or more document cannot be replaced, the response status is set to `206`, and the `error` object contain a [partial error]({{ site_base_path }}api/1/essentials/errors/#partialerror) error.
+If one or more document cannot be replaced, the response status is set to `206`, and the `error` object contain a [partial error](/api/1/essentials/errors/#partialerror) error.
 
 ```js
 {

@@ -7,7 +7,7 @@ title: create
 
 {{{since "1.0.0"}}}
 
-Creates a new [collection]({{ site_base_path }}guide/1/essentials/persisted), in the provided `index`.  
+Creates a new [collection](/guide/1/essentials/persisted), in the provided `index`.
 
 {{{since "1.3.0"}}}
 
@@ -23,14 +23,14 @@ This method will only update the mapping if the collection already exists.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>
-Method: PUT  
-Body:  
+Method: PUT
+Body:
 ```
 
 ```js
 {
   "properties": {
-    "field1": { 
+    "field1": {
       "type": "integer"
     },
     "field2": {
@@ -46,7 +46,6 @@ Body:
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -55,7 +54,7 @@ Body:
   "action": "create",
   "body": {
     "properties": {
-      "field1": { 
+      "field1": {
         "type": "integer"
       },
       "field2": {
@@ -74,8 +73,8 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection to create
-* `index`: data index that will host the new data collection
+- `collection`: data collection to create
+- `index`: data index that will host the new data collection
 
 ---
 
@@ -83,7 +82,7 @@ Body:
 
 ### Optional:
 
-* `properties`: object describing the data mapping to associate to the new collection, using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html).
+- `properties`: object describing the data mapping to associate to the new collection, using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html).
 
 ---
 
@@ -110,5 +109,5 @@ Returns a confirmation that the collection is being created:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [PreconditionError]({{ site_base_path }}api/1/essentials/errors/#preconditionerror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [PreconditionError](/api/1/essentials/errors/#preconditionerror)

@@ -3,26 +3,26 @@ layout: sdk.html.hbs
 title: query
 description: Kuzzle:query
 ---
-  
 
 ## query
-Base method used to send queries to Kuzzle, following the [API Documentation]({{ site_base_path }}api/1).
+
+Base method used to send queries to Kuzzle, following the [API Documentation](/api/1).
 
 <div class="alert alert-warning">
 This is a low-level method, exposed to allow advanced SDK users to bypass high-level methods.<br/>
-Refer to Kuzzle's API Reference <a href="{{ site_base_path }}api/1">here</a>
+Refer to Kuzzle's API Reference <a href="/api/1">here</a>
 </div>
 
 ---
 
 ## query(queryArgs, query, [options], [callback])
 
-| Argument | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``queryArgs`` | JSON object | Query base arguments |
-| ``query`` | JSON object | Query to execute |
-| ``options`` | JSON object | Optional parameters |
-| ``callback`` | function | Optional callback |
+| Argument    | Type        | Description          |
+| ----------- | ----------- | -------------------- |
+| `queryArgs` | JSON object | Query base arguments |
+| `query`     | JSON object | Query to execute     |
+| `options`   | JSON object | Optional parameters  |
+| `callback`  | function    | Optional callback    |
 
 ---
 
@@ -30,26 +30,25 @@ Refer to Kuzzle's API Reference <a href="{{ site_base_path }}api/1">here</a>
 
 `queryArgs` is a JSON object allowing Kuzzle to route your query to the right API method:
 
-| Option | Type | Description |  Required? |
-|---------------|---------|----------------------------------------|---------|
-| ``controller`` | string | API Controller argument | required |
-| ``action`` | string | API Controller action | required |
-| ``index`` | string | Index concerned by the action | optional |
-| ``collection`` | string | Data collection concerned by the action | optional |
+| Option       | Type   | Description                             | Required? |
+| ------------ | ------ | --------------------------------------- | --------- |
+| `controller` | string | API Controller argument                 | required  |
+| `action`     | string | API Controller action                   | required  |
+| `index`      | string | Index concerned by the action           | optional  |
+| `collection` | string | Data collection concerned by the action | optional  |
 
 ---
 
 ## query
 
-`query` is a JSON object containing arguments specific to the query, such as a `body` property, a JWT hash, a document `_id`, or generic query options (such as `from` or `size` for [search queries]({{ site_base_path }}api/1/controller-document/search/))
----
+## `query` is a JSON object containing arguments specific to the query, such as a `body` property, a JWT hash, a document `_id`, or generic query options (such as `from` or `size` for [search queries](/api/1/controller-document/search/))
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``volatile`` | JSON object | Additional information passed to notifications to other users | ``null`` |
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type        | Description                                                   | Default |
+| ---------- | ----------- | ------------------------------------------------------------- | ------- |
+| `volatile` | JSON object | Additional information passed to notifications to other users | `null`  |
+| `queuable` | boolean     | Make this request queuable or not                             | `true`  |
 
 ---
 
@@ -66,10 +65,12 @@ Returns a `JSON object` containing the raw Kuzzle response.
 ## Usage
 
 [snippet=query-1]
+
 > Callback response:
 
 ```json
-{ "error": null,
+{
+  "error": null,
   "result": {
     "action": "action",
     "controller": "controller",

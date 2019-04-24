@@ -20,26 +20,26 @@ That limit is by default set at 10000 documents, and you can't get over it even 
 <br/>
 
 ```javascript
-search (index, collection, [query], [options])
+search(index, collection, [query], [options]);
 ```
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
+| Argument     | Type              | Description     |
+| ------------ | ----------------- | --------------- |
+| `index`      | <pre>string</pre> | Index name      |
 | `collection` | <pre>string</pre> | Collection name |
-| `query` | <pre>object</pre> | Search query |
-| `options` | <pre>object</pre> | Query options |
+| `query`      | <pre>object</pre> | Search query    |
+| `options`    | <pre>object</pre> | Query options   |
 
 ### Options
 
 Additional query options
 
-| Options | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `from` | <pre>number</pre><br/>(`0`) | Offset of the first document to fetch |
-| `size` | <pre>number</pre><br/>(`10`) | Maximum number of documents to retrieve per page  |
-| `scroll` | <pre>string</pre><br/>(`""`)| When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units)) |
+| Options    | Type<br/>(default)              | Description                                                                                                                                                                                                       |
+| ---------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again                                                                                                                                      |
+| `from`     | <pre>number</pre><br/>(`0`)     | Offset of the first document to fetch                                                                                                                                                                             |
+| `size`     | <pre>number</pre><br/>(`10`)    | Maximum number of documents to retrieve per page                                                                                                                                                                  |
+| `scroll`   | <pre>string</pre><br/>(`""`)    | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units)) |
 
 ## Body properties
 
@@ -53,7 +53,7 @@ An empty body matches all documents in the queried collection.
 
 ## Resolves
 
-Resolves to a [SearchResult]({{ site_base_path }}sdk-reference/js/6/search-result) object.
+Resolves to a [SearchResult](/sdk-reference/js/6/search-result) object.
 
 ## Usage
 

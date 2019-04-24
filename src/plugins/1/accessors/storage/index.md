@@ -7,9 +7,9 @@ title: storage
 
 Initializes the plugin's private data storage.
 
-Data stored in this space can only be accessed by their proprietary plugin, using the [Repository]({{ site_base_path }}plugins/1/constructors/repository) constructor.
+Data stored in this space can only be accessed by their proprietary plugin, using the [Repository](/plugins/1/constructors/repository) constructor.
 
-The only way documents stored in this space can be accessed using Kuzzle is if the plugin voluntarily exposes that data by [adding new API routes]({{ site_base_path }}plugins/1/essentials/controllers/).
+The only way documents stored in this space can be accessed using Kuzzle is if the plugin voluntarily exposes that data by [adding new API routes](/plugins/1/essentials/controllers/).
 
 ---
 
@@ -17,20 +17,21 @@ The only way documents stored in this space can be accessed using Kuzzle is if t
 
 {{{since "1.0.0"}}}
 
-Initializes the plugin storage. 
+Initializes the plugin storage.
 
 Can be called any number of times as long as identical mappings are provided.
 
 ### Arguments
 
 ```js
-bootstrap(collections)
+bootstrap(collections);
 ```
+
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `collections` | <pre>object</pre> | List of data collection to create, with their corresponding [data mapping]({{ site_base_path }}guide/1/essentials/persisted/#document-mapping) |
+| Arguments     | Type              | Description                                                                                                                 |
+| ------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `collections` | <pre>object</pre> | List of data collection to create, with their corresponding [data mapping](/guide/1/essentials/persisted/#document-mapping) |
 
 ### Return
 
@@ -56,7 +57,7 @@ const mappings = {
 
 try {
   await context.accessors.storage.bootstrap(mappings);
-} catch(error) {
+} catch (error) {
   // "error" is a KuzzleError object
 }
 ```
@@ -69,21 +70,20 @@ try {
 
 Creates a data collection in the plugin storage.
 
-Can be called any number of times as long as the mapping is not modified. 
+Can be called any number of times as long as the mapping is not modified.
 
 ### Arguments
 
 ```js
-createCollection(collection, mapping)
+createCollection(collection, mapping);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `collection` | <pre>string</pre> | Data collection name |
-| `mapping` | <pre>object</pre> | Data collection [mapping]({{ site_base_path }}guide/1/essentials/persisted/#document-mapping) |
-
+| Arguments    | Type              | Description                                                                |
+| ------------ | ----------------- | -------------------------------------------------------------------------- |
+| `collection` | <pre>string</pre> | Data collection name                                                       |
+| `mapping`    | <pre>object</pre> | Data collection [mapping](/guide/1/essentials/persisted/#document-mapping) |
 
 ### Return
 

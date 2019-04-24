@@ -7,7 +7,7 @@ title: scrollProfiles
 
 {{{since "1.0.0"}}}
 
-Moves a result set cursor forward, created by a [searchProfiles]({{ site_base_path }}api/1/controller-security/search-profiles) query with the `scroll` argument provided.
+Moves a result set cursor forward, created by a [searchProfiles](/api/1/controller-security/search-profiles) query with the `scroll` argument provided.
 
 Results returned by a `scrollProfiles` request reflect the state of the index at the time of the initial search request, like a fixed snapshot. Subsequent changes to documents do not affect the scroll results.
 
@@ -37,11 +37,11 @@ Method: GET
 
 ## Arguments
 
-* `scrollId`: cursor unique identifier, obtained by either a searchProfiles or a scrollProfiles query
+- `scrollId`: cursor unique identifier, obtained by either a searchProfiles or a scrollProfiles query
 
 ### Optional:
 
-* `scroll`: refresh the cursor duration, using the [time to live](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units) syntax.
+- `scroll`: refresh the cursor duration, using the [time to live](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units) syntax.
 
 ---
 
@@ -49,11 +49,11 @@ Method: GET
 
 Returns a paginated search result set, with the following properties:
 
-* `hits`: array of found profiles. Each document has the following properties:
-  * `_id`: profile unique identifier
-  * `_source`: profile definition
-* `scrollId`: identifier to the next page of result. Can be different than the previous one(s)
-* `total`: total number of found profiles. Usually greater than the number of profiles in a result page
+- `hits`: array of found profiles. Each document has the following properties:
+  - `_id`: profile unique identifier
+  - `_source`: profile definition
+- `scrollId`: identifier to the next page of result. Can be different than the previous one(s)
+- `total`: total number of found profiles. Usually greater than the number of profiles in a result page
 
 ```javascript
 {

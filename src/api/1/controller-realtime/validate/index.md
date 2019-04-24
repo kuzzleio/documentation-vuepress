@@ -7,9 +7,9 @@ title: validate
 
 {{{deprecated "1.5.0"}}}
 
-This API route is deprecated and should not be used. Instead, use [document:validate]({{site_base_path}}api/1/controller-document/validate).
+This API route is deprecated and should not be used. Instead, use [document:validate](/api/1/controller-document/validate).
 
-Validates data against existing validation rules. 
+Validates data against existing validation rules.
 
 Messages are always valid if no validation rules are defined on the provided index and collection.
 
@@ -21,7 +21,7 @@ Messages are always valid if no validation rules are defined on the provided ind
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_validate
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -49,8 +49,8 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -64,8 +64,8 @@ Data content to validate against validation rules.
 
 Returns an object with the following properties:
 
-* `errorMessages`: the exhaustive list of violated validation rules. Present only if `valid` is false
-* `valid`: a boolean telling whether the provided pass all validation rules
+- `errorMessages`: the exhaustive list of violated validation rules. Present only if `valid` is false
+- `valid`: a boolean telling whether the provided pass all validation rules
 
 ```javascript
 {
@@ -77,6 +77,6 @@ Returns an object with the following properties:
   "action": "validate",
   "result": {
     "valid": true
-  }  
+  }
 }
 ```

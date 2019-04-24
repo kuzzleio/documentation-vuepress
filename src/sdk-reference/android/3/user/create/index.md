@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: create
 description: User:create
 ---
-  
 
 # create
-Create the user in Kuzzle. Credentials can be created during the process by using [setCredentials]({{ site_base_path }}sdk-reference/android/3/user/set-credentials) beforehand.
+
+Create the user in Kuzzle. Credentials can be created during the process by using [setCredentials](/sdk-reference/android/3/user/set-credentials) beforehand.
 
 ---
 
 ## create([options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | (Optional) Callback handling the response |
+| Arguments  | Type        | Description                               |
+| ---------- | ----------- | ----------------------------------------- |
+| `options`  | JSON Object | Optional parameters                       |
+| `callback` | function    | (Optional) Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 

@@ -34,7 +34,7 @@ Method: GET
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
 
 ---
 
@@ -42,8 +42,8 @@ Method: GET
 
 Returns the user information:
 
-* `_id`: user kuid
-* `_source`: user description
+- `_id`: user kuid
+- `_source`: user description
 
 ```javascript
 {

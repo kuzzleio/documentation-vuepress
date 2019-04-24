@@ -7,11 +7,11 @@ order: 100
 
 # Events
 
-An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object]({{site_base_path }}sdk-reference/go/1/kuzzle).
+An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object](/sdk-reference/go/1/kuzzle).
 
-Subscription to these events is possible by passing a channel that will receive data when a specific event is issued by the SDK instance.  
+Subscription to these events is possible by passing a channel that will receive data when a specific event is issued by the SDK instance.
 
-These channels can be added by the method [addListener]({{site_base_path }}sdk-reference/go/1/kuzzle/add-listener).
+These channels can be added by the method [addListener](/sdk-reference/go/1/kuzzle/add-listener).
 
 **Note:** channels receive data in the order of their insertion.
 
@@ -42,7 +42,7 @@ Triggered when a login attempt completes, either with a success or a failure res
 ## networkError
 
 Triggered when the SDK has failed to connect to Kuzzle.  
-This event does not trigger the offline mode.  
+This event does not trigger the offline mode.
 
 **Channel signature:** `chan<- error`
 
@@ -66,7 +66,7 @@ Triggered whenever Kuzzle responds with an error
 
 ## reconnected
 
-Triggered when the current session has reconnected to Kuzzle after a disconnection, and only if ``AutoReconnect`` is set to ``true``.
+Triggered when the current session has reconnected to Kuzzle after a disconnection, and only if `AutoReconnect` is set to `true`.
 
 **Channel signature:** `chan<- interface{}` (will receive nil)
 

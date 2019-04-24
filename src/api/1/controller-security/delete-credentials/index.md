@@ -17,7 +17,7 @@ Deletes user credentials for the specified authentication strategy.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/<_id>
-Method: DELETE  
+Method: DELETE
 ```
 
 ### Other protocols
@@ -35,8 +35,8 @@ Method: DELETE
 
 ## Arguments
 
-* `_id`: user [kuid]({{ site_base_path }}guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid) 
-* `strategy`: authentication strategy name to remove
+- `_id`: user [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid)
+- `strategy`: authentication strategy name to remove
 
 ---
 

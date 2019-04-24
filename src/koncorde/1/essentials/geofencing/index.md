@@ -8,7 +8,7 @@ order: 400
 # Geofencing
 
 Geofencing in Koncorde consists in defining forms in the geo-space using geopoints and geodistances within terms like
-[geoBoundingBox]({{ site_base_path}}koncorde/1/essentials/terms#geoboundingbox-default), [geoDistance]({{ site_base_path}}koncorde/1/essentials/terms#geodistance-default) [geoDistanceRange]({{ site_base_path}}koncorde/1/essentials/terms#geodistancerange-default) and [geoPolygon]({{ site_base_path}}koncorde/1/essentials/terms#geopolygon-default). In this section, you will find a detailed
+[geoBoundingBox](/koncorde/1/essentials/terms#geoboundingbox-default), [geoDistance](/koncorde/1/essentials/terms#geodistance-default) [geoDistanceRange](/koncorde/1/essentials/terms#geodistancerange-default) and [geoPolygon](/koncorde/1/essentials/terms#geopolygon-default). In this section, you will find a detailed
 explanation about how to specify geopoints and geodistances.
 
 ## Geopoints
@@ -17,43 +17,42 @@ A geopoint holds the coordinates of a geographical point expressed as latitude a
 
 In Koncorde, geopoints can be defined in multiple ways. All of the following examples are equivalent, and point to the same coordinates with latitude `43.6021299` and longitude `3.8989713`:
 
-* `[ 43.6021299, 3.8989713 ]`
-* `"43.6021299, 3.8989713"`
-* `"spfb09x0ud5s"` ([geohash](https://en.wikipedia.org/wiki/Geohash))
-* `{ lat: 43.6021299, lon: 3.8989713 }`
+- `[ 43.6021299, 3.8989713 ]`
+- `"43.6021299, 3.8989713"`
+- `"spfb09x0ud5s"` ([geohash](https://en.wikipedia.org/wiki/Geohash))
+- `{ lat: 43.6021299, lon: 3.8989713 }`
 
 Alternative 1:
 
-* `{ latLon: [ 43.6021299, 3.8989713 ] }`
-* `{ latLon: { lat: 43.6021299, lon: 3.8989713 } }`
-* `{ latLon: "43.6021299, 3.8989713" }`
-* `{ latLon: "spfb09x0ud5s"}` ([geohash](https://en.wikipedia.org/wiki/Geohash))
+- `{ latLon: [ 43.6021299, 3.8989713 ] }`
+- `{ latLon: { lat: 43.6021299, lon: 3.8989713 } }`
+- `{ latLon: "43.6021299, 3.8989713" }`
+- `{ latLon: "spfb09x0ud5s"}` ([geohash](https://en.wikipedia.org/wiki/Geohash))
 
 Alternative 2:
 
-* `{ lat_lon: [ 43.6021299, 3.8989713 ] }`
-* `{ lat_lon: { lat: 43.6021299, lon: 3.8989713 } }`
-* `{ lat_lon: "43.6021299, 3.8989713" }`
-* `{ lat_lon: "spfb09x0ud5s"}` ([geohash](https://en.wikipedia.org/wiki/Geohash))
-
+- `{ lat_lon: [ 43.6021299, 3.8989713 ] }`
+- `{ lat_lon: { lat: 43.6021299, lon: 3.8989713 } }`
+- `{ lat_lon: "43.6021299, 3.8989713" }`
+- `{ lat_lon: "spfb09x0ud5s"}` ([geohash](https://en.wikipedia.org/wiki/Geohash))
 
 ## Geodistances
 
-Distances used in geofencing filters such as [geoDistance]({{ site_base_path }}koncorde/1/essentials/terms/#geodistance-default/) or [geoDistanceRange]({{ site_base_path }}koncorde/1/essentials/terms/#geodistance-default-range/) can be expressed in various ways.
+Distances used in geofencing filters such as [geoDistance](/koncorde/1/essentials/terms/#geodistance-default/) or [geoDistanceRange](/koncorde/1/essentials/terms/#geodistance-default-range/) can be expressed in various ways.
 
 Accepted units:
 
-* `m`, `meter`, `meters`
-* `ft`, `feet`, `feets`
-* `in`, `inch`, `inches`
-* `yd`, `yard`, `yards`
-* `mi`, `mile`, `miles`
+- `m`, `meter`, `meters`
+- `ft`, `feet`, `feets`
+- `in`, `inch`, `inches`
+- `yd`, `yard`, `yards`
+- `mi`, `mile`, `miles`
 
 **Note:** if no unit is specified, then Koncorde will express the geodistance in meters.
 
 Accepted unit modifiers: from `yocto-` (10e-21) to `yotta-` (10e24), and their corresponding short forms (e.g. `kilometers` or `km`)
 
-Accepted formats: `<int (spaces accepted)>[.|,]<decimals><spaces><unit>`.  
+Accepted formats: `<int (spaces accepted)>[.|,]<decimals><spaces><unit>`.
 
 ### Example
 

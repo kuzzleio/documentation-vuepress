@@ -17,7 +17,7 @@ Creates a new role.
 
 ```http
 URL: http://kuzzle:7512/roles/<_id>/_create[?refresh=wait_for]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -56,17 +56,17 @@ Body:
 
 ## Arguments
 
-* `_id`: role identifier
+- `_id`: role identifier
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the created role is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the created role is indexed
 
 ---
 
 ## Body properties
 
-* `controllers`: [role definition]({{ site_base_path }}guide/1/essentials/security/#defining-roles)
+- `controllers`: [role definition](/guide/1/essentials/security/#defining-roles)
 
 ---
 
@@ -74,15 +74,15 @@ Body:
 
 Returns the role creation/replacement status:
 
-* `_id`: created/replaced role identifier
-* `_source`: role definition
-* `created`: always true
-* `version`: always 1
+- `_id`: created/replaced role identifier
+- `_source`: role definition
+- `created`: always true
+- `version`: always 1
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "result": {
     "_id": "<roleId>",
     "_version": 1,

@@ -18,7 +18,7 @@ Creates a Kuzzle administrator account, only if none exist.
 ```http
 URL: http://kuzzle:7512/<kuid>/_createFirstAdmin[?reset]
 URL(2): http://kuzzle:7512/_createFirstAdmin[?reset]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -45,7 +45,7 @@ Body:
   "action": "createFirstAdmin",
   "body": {
     "content": {
-      // administrator information (optional)               
+      // administrator information (optional)
     },
     "credentials": {
       // for example, with the "local" authentication strategy:
@@ -67,15 +67,15 @@ Body:
 
 ### Optional:
 
-* `_id`: specify the administror [kuid]({{ site_base_path }}guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid), instead of letting Kuzzle generate a random identifier.
-* `reset` (boolean): if true, restricted rights are applied to the `anonymous` and `default` roles (by default, these roles don't have any restriction). 
+- `_id`: specify the administror [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid), instead of letting Kuzzle generate a random identifier.
+- `reset` (boolean): if true, restricted rights are applied to the `anonymous` and `default` roles (by default, these roles don't have any restriction).
 
 ---
 
 ## Body properties
 
-* `content`: administrator additional information. Can be left empty.
-* `credentials`: describe how the new administrator can be authenticated. This object must contain one or multiple properties, named after the target authentication strategy to use. Each one of these properties are objects containing the credentials information, corresponding to that authentication strategy
+- `content`: administrator additional information. Can be left empty.
+- `credentials`: describe how the new administrator can be authenticated. This object must contain one or multiple properties, named after the target authentication strategy to use. Each one of these properties are objects containing the credentials information, corresponding to that authentication strategy
 
 ---
 
@@ -83,13 +83,13 @@ Body:
 
 Returns information about the newly created administrator:
 
-* `_id`: administrator kuid
-* `_source`: administrator user document, contains all properties set in the `content` body argument, but also the list of attributed `profileIds`. That list is initialized with the `admin` profile
+- `_id`: administrator kuid
+- `_source`: administrator user document, contains all properties set in the `content` body argument, but also the list of attributed `profileIds`. That list is initialized with the `admin` profile
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "controller": "security",
   "action": "createFirstAdmin",
   "volatile": {},

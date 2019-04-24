@@ -5,10 +5,9 @@ description: Connecting to Kuzzle using HTTP, WebSocket or Protocol plugins
 order: 100
 ---
 
-
 # Connecting to Kuzzle
 
-A connection to Kuzzle can be made using different protocols. Currently Kuzzle natively supports HTTP, WebSocket and Socket.io, but other protocols can be added by implementing the [Protocol]({{ site_base_path }}protocols/1) interface.
+A connection to Kuzzle can be made using different protocols. Currently Kuzzle natively supports HTTP, WebSocket and Socket.io, but other protocols can be added by implementing the [Protocol](/protocols/1) interface.
 
 ---
 
@@ -16,7 +15,7 @@ A connection to Kuzzle can be made using different protocols. Currently Kuzzle n
 
 By default, Kuzzle can be reached via HTTP on port 7512. Thus, assuming the Kuzzle server is running locally, it can be reached at `http://localhost:7512/`.
 
-The default response for the root endpoint is the [ServerInfo]({{ site_base_path }}api/1/controller-server/info), which gives detailed information about the available HTTP API routes.
+The default response for the root endpoint is the [ServerInfo](/api/1/controller-server/info), which gives detailed information about the available HTTP API routes.
 
 ### Example
 
@@ -34,7 +33,7 @@ By default, Kuzzle has websockets enabled, accepting requests via the http serve
 
 ```html
 <script>
-    var socket = new WebSocket("ws://localhost:7512");
+  var socket = new WebSocket('ws://localhost:7512');
 </script>
 ```
 
@@ -44,16 +43,14 @@ By default, Kuzzle has websockets enabled, accepting requests via the http serve
 
 To ensure compatibility with older web browsers, our official Kuzzle docker images embed the socketio protocol, accepting socket requests via the http server on port 7512.
 
-
 ### Example
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
 <script>
-    var socket = io("http://localhost:7512");
+  var socket = io('http://localhost:7512');
 </script>
 ```
-
 
 ---
 
@@ -62,9 +59,7 @@ To ensure compatibility with older web browsers, our official Kuzzle docker imag
 Kuzzle provides a plugin that supports the [MQTT protocol](https://github.com/kuzzleio/kuzzle-plugin-mqtt).
 Using the plugin you can perform two-way communication between your application and Kuzzle.
 
-
 ### Example
-
 
 ```bash
 # shell 1

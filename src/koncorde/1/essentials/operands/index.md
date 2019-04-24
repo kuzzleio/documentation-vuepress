@@ -7,14 +7,14 @@ order: 300
 
 # Operands
 
-Filters in Koncorde are constituted of terms and operands. In this section, you will find an exhaustive listing of all 
+Filters in Koncorde are constituted of terms and operands. In this section, you will find an exhaustive listing of all
 the available operands. Operands allow you to combine multiple terms together in the same filter.
-You can also refer to the [terms]({{ site_base_path }}koncorde/1/essentials/terms) reference to know about
+You can also refer to the [terms](/koncorde/1/essentials/terms) reference to know about
 all the available terms.
 
 <div class="alert alert-info">
 Note that the ability to combine multiple terms together allows to create different filters that have equivalent scope.
-Such filters are optimized by Koncorde, thus <a href="{{ site_base_path }}koncorde/1/essentials/advanced#filter-equivalence-default">internally represented by the same ID</a>.
+Such filters are optimized by Koncorde, thus <a href="/koncorde/1/essentials/advanced#filter-equivalence-default">internally represented by the same ID</a>.
 </div>
 
 ## and
@@ -55,10 +55,9 @@ The `and` filter takes an array of filter objects, combining them with AND opera
         hobby: 'computer'
       }
     }
-  ]
+  ];
 }
 ```
-
 
 ## bool
 
@@ -68,10 +67,10 @@ Returns documents matching a combination of filters.
 
 This operand accepts the following attributes:
 
-* `must` all listed conditions must be `true`
-* `must_not` all listed conditions must be `false`
-* `should` one of the listed condition must be `true`
-* `should_not` one of the listed condition must be `false`
+- `must` all listed conditions must be `true`
+- `must_not` all listed conditions must be `false`
+- `should` one of the listed condition must be `true`
+- `should_not` one of the listed condition must be `false`
 
 Each one of these attributes are an array of filter objects.
 
@@ -173,12 +172,11 @@ The `not` filter omits the matching data.
 {
   not: {
     equals: {
-      city: 'London'
+      city: 'London';
     }
   }
 }
 ```
-
 
 ## or
 
@@ -224,6 +222,6 @@ The `or` filter takes an array containing filter objects, combining them using O
         city: 'London'
       }
     }
-  ]
+  ];
 }
 ```

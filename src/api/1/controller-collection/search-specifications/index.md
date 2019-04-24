@@ -17,7 +17,7 @@ Searches collection specifications.
 
 ```http
 URL: http://kuzzle:7512/validations/_search[?from=0][&size=10][&scroll=<time to live>]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -48,19 +48,18 @@ Body:
 }
 ```
 
-
 ---
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `from` is usually used with the `size` argument, and defines the offset from the first result you want to fetch
-* `scroll` is used to fetch large result sets, and it must be set with a [time duration](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units). If set, a forward-only cursor will be created (and automatically destroyed at the end of the set duration), and its identifier will be returned in the `scrollId` property, along with the first page of the results. This cursor can then be moved forward using the [`scrollSpecifications` API action]({{ site_base_path }}api/1/controller-collection/scroll-specifications)
-* `size` controls the maximum number of documents returned in the response
+- `from` is usually used with the `size` argument, and defines the offset from the first result you want to fetch
+- `scroll` is used to fetch large result sets, and it must be set with a [time duration](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units). If set, a forward-only cursor will be created (and automatically destroyed at the end of the set duration), and its identifier will be returned in the `scrollId` property, along with the first page of the results. This cursor can then be moved forward using the [`scrollSpecifications` API action](/api/1/controller-collection/scroll-specifications)
+- `size` controls the maximum number of documents returned in the response
 
 ---
 
@@ -68,7 +67,7 @@ Body:
 
 ### Optional:
 
-* `query`: a search query filtering the result, using the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl.html)
+- `query`: a search query filtering the result, using the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl.html)
 
 ---
 
@@ -76,14 +75,14 @@ Body:
 
 Returns an object containing the following properties:
 
-* `hits`: an array of found documents. Each item is an object with the following properties:
-  * `_id`: specification unique identifier
-  * `_score`: search pertinence score
-  * `_source`: validation specification
-* `scrollId`: the cursor unique identifier for the next page of results. Present only if the `scroll` argument has been set
-* `total`: the *total* number of found specifications (usually greater than the number of items in the `hits` array)
+- `hits`: an array of found documents. Each item is an object with the following properties:
+  - `_id`: specification unique identifier
+  - `_score`: search pertinence score
+  - `_source`: validation specification
+- `scrollId`: the cursor unique identifier for the next page of results. Present only if the `scroll` argument has been set
+- `total`: the _total_ number of found specifications (usually greater than the number of items in the `hits` array)
 
-Example: 
+Example:
 
 ```javascript
 {
@@ -134,4 +133,4 @@ Example:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

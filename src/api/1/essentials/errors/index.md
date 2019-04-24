@@ -11,11 +11,11 @@ All errors received by Kuzzle clients are `KuzzleError` error objects.
 
 A `KuzzleError` object has the following properties:
 
-| property | type | description |
-| -------- | ---- | ----------- |
-| `status` | integer | HTTP status code |
-| `message` | text | Short description of the error |
-| `stack` | text | (Available in development mode only) Error stack trace |
+| property  | type    | description                                            |
+| --------- | ------- | ------------------------------------------------------ |
+| `status`  | integer | HTTP status code                                       |
+| `message` | text    | Short description of the error                         |
+| `stack`   | text    | (Available in development mode only) Error stack trace |
 
 Clients can detect the error type based on the `status` and process the error accordingly.
 
@@ -85,7 +85,7 @@ An `InternalError` error is thrown if Kuzzle encountered an unexpected error.
 
 **status**: 500
 
-A `PluginImplementationError` error is a generic error thrown by Kuzzle on a [plugin]({{ site_base_path }}plugins/1) failure.
+A `PluginImplementationError` error is a generic error thrown by Kuzzle on a [plugin](/plugins/1) failure.
 
 ---
 
@@ -128,10 +128,10 @@ The detail of each failure can be retrieved in the `errors` property of the erro
 
 ### Additional Properties
 
-| property | type | description |
-| -------- | ---- | ----------- |
-| `count` | integer | Number of failures encountered |
-| `errors` |  array of objects | Failed actions |
+| property | type             | description                    |
+| -------- | ---------------- | ------------------------------ |
+| `count`  | integer          | Number of failures encountered |
+| `errors` | array of objects | Failed actions                 |
 
 ---
 
@@ -153,7 +153,7 @@ For instance, this error can be generated when trying to create a document on a 
 
 **status**: 413
 
-A `SizeLimitError` error is thrown by Kuzzle if the request size exceeds the limits defined in the [configuration]({{ site_base_path }}guide/1/essentials/configuration).
+A `SizeLimitError` error is thrown by Kuzzle if the request size exceeds the limits defined in the [configuration](/guide/1/essentials/configuration).
 
 ---
 

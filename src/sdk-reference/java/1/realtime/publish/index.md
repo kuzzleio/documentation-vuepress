@@ -26,24 +26,24 @@ public void publish(
 
 <br/>
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `index` | <pre>String</pre> | Index name    |
-| `collection` | <pre>String</pre> | Collection name   |
-| `message` | <pre>String</pre> | JSON string representing the message to send |
-| `options` | <pre>io.kuzzle.sdk.QueryOptions</pre> | Query options |
+| Arguments    | Type                                  | Description                                  |
+| ------------ | ------------------------------------- | -------------------------------------------- |
+| `index`      | <pre>String</pre>                     | Index name                                   |
+| `collection` | <pre>String</pre>                     | Collection name                              |
+| `message`    | <pre>String</pre>                     | JSON string representing the message to send |
+| `options`    | <pre>io.kuzzle.sdk.QueryOptions</pre> | Query options                                |
 
 ### options
 
 Additional query options
 
-| Option     | Type<br/>(default)    | Description                       |
-| ---------- | ------- | --------------------------------- |
+| Option     | Type<br/>(default)              | Description                       |
+| ---------- | ------------------------------- | --------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | Make this request queuable or not |
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

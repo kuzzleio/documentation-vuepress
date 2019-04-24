@@ -6,7 +6,7 @@ description: Base method to send API query to Kuzzle
 
 # query
 
-Base method used to send queries to Kuzzle, following the [API Documentation]({{ site_base_path }}api/1).
+Base method used to send queries to Kuzzle, following the [API Documentation](/api/1).
 
 <div class="alert alert-warning">
 This is a low-level method, exposed to allow advanced SDK users to bypass high-level methods.
@@ -31,14 +31,14 @@ Query(request *types.KuzzleRequest, options types.QueryOptions, responseChannel 
 Properties required for the Kuzzle API can be set in the [KuzzleRequest](https://github.com/kuzzleio/sdk-go/blob/master/types/kuzzle_request.go).
 The following properties are the most common.
 
-| Property     | Type         | Description                               | Required |
-| ------------ | ------------ | ----------------------------------------- | -------- |
-| `Controller` | string       | Controller name                           | yes      |
-| `Action`     | string       | Action name                               | yes      |
-| `Body`       | interface{}  | Query body for this action                | no       |
-| `Index`      | string       | Index name for this action                | no       |
-| `Collection` | string       | Collection name for this action           | no       |
-| `Id`         | string       | id for this action                        | no       |
+| Property     | Type         | Description                              | Required |
+| ------------ | ------------ | ---------------------------------------- | -------- |
+| `Controller` | string       | Controller name                          | yes      |
+| `Action`     | string       | Action name                              | yes      |
+| `Body`       | interface{}  | Query body for this action               | no       |
+| `Index`      | string       | Index name for this action               | no       |
+| `Collection` | string       | Collection name for this action          | no       |
+| `Id`         | string       | id for this action                       | no       |
 | `Volatile`   | VolatileData | Additional information to send to Kuzzle | no       |
 
 ### **options**
@@ -47,8 +47,8 @@ A [QueryOptions](https://github.com/kuzzleio/sdk-go/blob/master/types/query_opti
 Theses properties can bet Get/Set.
 The following properties are the most common.
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `Queuable` | bool | Make this request queuable or not | true    |
 
 ### **responseChannel**

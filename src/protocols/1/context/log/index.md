@@ -10,7 +10,7 @@ The `context.log` object exposes functions used to send messages to Kuzzle's log
 Log levels are assigned to each exposed log function, corresponding to the log priority.  
 The lower the log level, the higher its priority.
 
-Levels above the threshold configued in the `logs` section of Kuzzle's [configuration file]({{ site_base_path }}guide/1/essentials/configuration) are ignored.
+Levels above the threshold configued in the `logs` section of Kuzzle's [configuration file](/guide/1/essentials/configuration) are ignored.
 
 ---
 
@@ -22,7 +22,7 @@ Levels above the threshold configued in the `logs` section of Kuzzle's [configur
 
 `0` (highest priority)
 
-### Example 
+### Example
 
 ```js
 context.log.error('error message');
@@ -70,7 +70,7 @@ context.log.info('info message');
 
 `3` (ignored by default)
 
-### Example 
+### Example
 
 ```js
 context.log.verbose('verbose message');

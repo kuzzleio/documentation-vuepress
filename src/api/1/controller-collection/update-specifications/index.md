@@ -22,7 +22,7 @@ When the validation specification is not formatted correctly, a detailed error m
 
 ```http
 URL: http://kuzzle:7512/_specifications
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -109,5 +109,5 @@ The returned result contains the updated specification:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

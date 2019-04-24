@@ -19,25 +19,26 @@ public void updateMapping(String index, String collection, String mapping, io.ku
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | String | Index name    | yes  |
-| ``collection`` | String | Collection name    | yes  |
-| ``mapping`` | String | Collection data mapping in JSON format  | yes  |
-| `options` | io.kuzzle.sdk.QueryOptions | The query options | no       |
+| Arguments    | Type                       | Description                            | Required |
+| ------------ | -------------------------- | -------------------------------------- | -------- |
+| `index`      | String                     | Index name                             | yes      |
+| `collection` | String                     | Collection name                        | yes      |
+| `mapping`    | String                     | Collection data mapping in JSON format | yes      |
+| `options`    | io.kuzzle.sdk.QueryOptions | The query options                      | no       |
 
 ### **mapping**
 
-An string containing the JSON representation of the collection data mapping.  
+An string containing the JSON representation of the collection data mapping.
 
 The mapping must have a root field `properties` that contain the mapping definition:
+
 ```json
 {
   "properties": {
     "field1": { "type": "text" },
     "field2": {
       "properties": {
-        "nestedField": { "type": "keyword"}
+        "nestedField": { "type": "keyword" }
       }
     }
   }
@@ -56,7 +57,7 @@ Additional query options
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

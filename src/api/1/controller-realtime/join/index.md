@@ -37,13 +37,13 @@ Due to the synchronous nature of the HTTP protocol, real-time messaging is not s
 
 ### Optional:
 
-* `volatile`: subscription information, used in [user join/leave notifications]({{site_base_path}}api/1/essentials/volatile-data/).
+- `volatile`: subscription information, used in [user join/leave notifications](/api/1/essentials/volatile-data/).
 
 ---
 
 ## Body properties
 
-* `roomId`: subscription identifier, returned by Kuzzle during upon a successful subscription
+- `roomId`: subscription identifier, returned by Kuzzle during upon a successful subscription
 
 ---
 

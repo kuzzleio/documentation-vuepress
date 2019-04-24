@@ -15,8 +15,8 @@ Protocols can even decide to propose a dedicated message format and/or query syn
 
 Protocols are provided with objects to interact with Kuzzle:
 
-* [EntryPoint]({{ site_base_path }}protocols/1/entrypoint): base communication layer (declare user connections, forward API requests, ...)
-* [context]({{ site_base_path }}protocols/1/context): utilities and object constructors not directly related to network communications
+- [EntryPoint](/protocols/1/entrypoint): base communication layer (declare user connections, forward API requests, ...)
+- [context](/protocols/1/context): utilities and object constructors not directly related to network communications
 
 Protocol implementation example: [MQTT](https://github.com/kuzzleio/protocol-mqtt)
 
@@ -36,11 +36,11 @@ Kuzzle loads protocols as [Node.js modules](https://nodejs.org/dist/latest-v8.x/
 
 This means that a protocol directory must contain either:
 
-* an `index.js` file
+- an `index.js` file
 
 and/or:
 
-* a valid [package.json](https://docs.npmjs.com/files/package.json) file. If the protocol's entrypoint is not the root `index.js` file, then the [main](https://docs.npmjs.com/files/package.json#main) property must be filled
+- a valid [package.json](https://docs.npmjs.com/files/package.json) file. If the protocol's entrypoint is not the root `index.js` file, then the [main](https://docs.npmjs.com/files/package.json#main) property must be filled
 
 ### manifest.json
 
@@ -48,8 +48,8 @@ Kuzzle needs a few information to make your protocol work properly. These inform
 
 The following properties can be defined in this `manifest.json` file:
 
-* `name` (**required**): protocol unique identifier. This protocol name will be used by Kuzzle for statistics, logs, and to provide context to requests
-* `kuzzleVersion`: a non-empty string describing a [semver range](https://www.npmjs.com/package/semver#ranges), limiting the range of Kuzzle versions supported by this protocol. If not set, a warning is displayed on the console, and Kuzzle assumes that the protocol is only compatible with Kuzzle v1.x
+- `name` (**required**): protocol unique identifier. This protocol name will be used by Kuzzle for statistics, logs, and to provide context to requests
+- `kuzzleVersion`: a non-empty string describing a [semver range](https://www.npmjs.com/package/semver#ranges), limiting the range of Kuzzle versions supported by this protocol. If not set, a warning is displayed on the console, and Kuzzle assumes that the protocol is only compatible with Kuzzle v1.x
 
 ---
 
@@ -57,12 +57,12 @@ The following properties can be defined in this `manifest.json` file:
 
 To add new network capabilities, a protocol must implement a set of functions, to be called by Kuzzle:
 
-* [broadcast]({{ site_base_path }}protocols/1/essentials/broadcast)
-* [disconnect]({{ site_base_path }}protocols/1/essentials/disconnect)
-* [init]({{ site_base_path }}protocols/1/essentials/init)
-* [joinChannel]({{ site_base_path }}protocols/1/essentials/joinchannel)
-* [leaveChannel]({{ site_base_path }}protocols/1/essentials/leavechannel)
-* [notify]({{ site_base_path }}protocols/1/essentials/notify)
+- [broadcast](/protocols/1/essentials/broadcast)
+- [disconnect](/protocols/1/essentials/disconnect)
+- [init](/protocols/1/essentials/init)
+- [joinChannel](/protocols/1/essentials/joinchannel)
+- [leaveChannel](/protocols/1/essentials/leavechannel)
+- [notify](/protocols/1/essentials/notify)
 
 If one or multiple of these functions are missing, Kuzzle fails to load the protocol, and refuses to start.
 
@@ -72,17 +72,17 @@ If one or multiple of these functions are missing, Kuzzle fails to load the prot
 
 `channel` is a recurrent concept in the protocol interface, one that must be implemented by the protocol itself.
 
-Simply put: it is the same `channel` identifier returned to a user after a [real-time subscription]({{ site_base_path }}api/1/controller-realtime/subscribe/). Many users can share the same channel, as it is calculated from the provided subscription filters, after they are normalized (i.e. equivalent yet differently written filters still share the same identifier).
+Simply put: it is the same `channel` identifier returned to a user after a [real-time subscription](/api/1/controller-realtime/subscribe/). Many users can share the same channel, as it is calculated from the provided subscription filters, after they are normalized (i.e. equivalent yet differently written filters still share the same identifier).
 
-Kuzzle notifies protocols when one of their managed connection [joins]({{ site_base_path }}protocols/1/essentials/joinchannel) or [leaves]({{ site_base_path }}protocols/1/essentials/leavechannel) a channel.
+Kuzzle notifies protocols when one of their managed connection [joins](/protocols/1/essentials/joinchannel) or [leaves](/protocols/1/essentials/leavechannel) a channel.
 
-Kuzzle has no opinion on how a protocol handles channels and their associated users. It simply asks protocols to [broadcast]({{ site_base_path }}protocols/1/essentials/broadcast), or to [notify]({{ site_base_path }}protocols/1/essentials/notify) messages to listening users.
+Kuzzle has no opinion on how a protocol handles channels and their associated users. It simply asks protocols to [broadcast](/protocols/1/essentials/broadcast), or to [notify](/protocols/1/essentials/notify) messages to listening users.
 
 ---
 
 ## Configuration
 
-Protocols can be configured in the Kuzzle [configuration]({{ site_base_path }}guide/1/essentials/configuration/) file, under the `server/protocols/<protocol name>` section.
+Protocols can be configured in the Kuzzle [configuration](/guide/1/essentials/configuration/) file, under the `server/protocols/<protocol name>` section.
 
 ### Example
 

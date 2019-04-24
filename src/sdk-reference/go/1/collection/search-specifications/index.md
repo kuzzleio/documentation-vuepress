@@ -27,19 +27,19 @@ SearchSpecifications(
 
 <br/>
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `query` | <pre>json.RawMessage</pre> | Query to match |
+| Argument  | Type                          | Description                       |
+| --------- | ----------------------------- | --------------------------------- |
+| `query`   | <pre>json.RawMessage</pre>    | Query to match                    |
 | `options` | <pre>types.QueryOptions</pre> | A struct containing query options |
 
 ### options
 
-| Options    | Type (default) | Description                       |
-| ---------- | -------------- | --------------------------------- |
-| `queuable` | <pre>boolean</pre> (`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `from` | <pre>int</pre><br/>(`0`) | Offset of the first document to fetch |
-| `size` | <pre>int</pre><br/>(`10`) | Maximum number of documents to retrieve per page  |
-| `scroll` | <pre>string</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units)) |
+| Options    | Type (default)               | Description                                                                                                                                                                                                       |
+| ---------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `queuable` | <pre>boolean</pre> (`true`)  | If true, queues the request during downtime, until connected to Kuzzle again                                                                                                                                      |
+| `from`     | <pre>int</pre><br/>(`0`)     | Offset of the first document to fetch                                                                                                                                                                             |
+| `size`     | <pre>int</pre><br/>(`10`)    | Maximum number of documents to retrieve per page                                                                                                                                                                  |
+| `scroll`   | <pre>string</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units)) |
 
 ## Query properties
 
@@ -53,7 +53,7 @@ An empty body matches all documents in the queried collection.
 
 ## Return
 
-Returns a [types.SearchResult]({{ site_base_path }}sdk-reference/go/1/search-result) struct
+Returns a [types.SearchResult](/sdk-reference/go/1/search-result) struct
 
 ## Usage
 

@@ -3,34 +3,34 @@ layout: sdk.html.hbs
 title: fetchDocument
 description: Collection:fetchDocument
 ---
-  
 
 # fetchDocument
-Retrieves a single stored document using its unique document ID, and returns it as a [Document]({{ site_base_path }}sdk-reference/android/3/document/) object.
+
+Retrieves a single stored document using its unique document ID, and returns it as a [Document](/sdk-reference/android/3/document/) object.
 
 ---
 
 ## fetchDocument(documentId, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``documentId`` | string | Unique document identifier |
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments    | Type        | Description                    |
+| ------------ | ----------- | ------------------------------ |
+| `documentId` | string      | Unique document identifier     |
+| `options`    | JSON Object | Optional parameters            |
+| `callback`   | function    | Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
 ## Callback Response
 
-Returns a [Document]({{ site_base_path }}sdk-reference/android/3/document/) object.
+Returns a [Document](/sdk-reference/android/3/document/) object.
 
 ## Usage
 

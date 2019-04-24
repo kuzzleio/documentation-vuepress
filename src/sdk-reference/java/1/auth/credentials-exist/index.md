@@ -20,20 +20,20 @@ public boolean credentialsExist(
 
 ## Arguments
 
-| Arguments  | Type             | Description
-| ---------- | ---------------- | ---------------------------------------------
-| `strategy` | String      | Strategy to use
-| `options` | io.kuzzle.sdk.QueryOptions | An object containing query options
+| Arguments  | Type                       | Description                        |
+| ---------- | -------------------------- | ---------------------------------- |
+| `strategy` | String                     | Strategy to use                    |
+| `options`  | io.kuzzle.sdk.QueryOptions | An object containing query options |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
+| Property   | Type    | Description                       | Default |
 | ---------- | ------- | --------------------------------- | ------- |
 | `queuable` | boolean | Make this request queuable or not | `true`  |
 
-Throws a `KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Return
 

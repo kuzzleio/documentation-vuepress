@@ -17,14 +17,14 @@ Updates a data collection mapping.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_mapping
-Method: PUT  
+Method: PUT
 Body:
 ```
 
 ```js
 {
   "properties": {
-    "field1": { 
+    "field1": {
       "type": "integer"
     },
     "field2": {
@@ -49,7 +49,7 @@ Body:
 
   "body": {
     "properties": {
-      "field1": { 
+      "field1": {
         "type": "integer"
       },
       "field2": {
@@ -68,14 +68,14 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
 ## Body properties
 
-* `properties`: object describing the data mapping to associate to the new collection, using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html).
+- `properties`: object describing the data mapping to associate to the new collection, using [Elasticsearch mapping format](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/mapping.html).
 
 ---
 
@@ -98,5 +98,5 @@ Body:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

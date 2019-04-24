@@ -17,7 +17,7 @@ Authenticates a user.
 
 ```http
 URL: http://kuzzle:7512/_login/<strategy>[?expiresIn=<expiresIn>]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -47,23 +47,23 @@ Body:
 
 ## Arguments
 
-* `strategy`: the name of the authentication [strategy]({{ site_base_path }}guide/1/kuzzle-depth/authentication/#authentication) used to log the user in.
+- `strategy`: the name of the authentication [strategy](/guide/1/kuzzle-depth/authentication/#authentication) used to log the user in.
 
 ### Optional:
 
-* `expiresIn`: set the expiration duration (default: depends on [Kuzzle configuration file]({{ site_base_path }}guide/1/essentials/configuration/))
-  * if a raw number is provided (not enclosed between quotes), then the expiration delay is in milliseconds. Example: `86400000`
-  * if this value is a string, then its content is parsed by the [ms](https://www.npmjs.com/package/ms) library. Examples: `"6d"`, `"10h"`
+- `expiresIn`: set the expiration duration (default: depends on [Kuzzle configuration file](/guide/1/essentials/configuration/))
+  - if a raw number is provided (not enclosed between quotes), then the expiration delay is in milliseconds. Example: `86400000`
+  - if this value is a string, then its content is parsed by the [ms](https://www.npmjs.com/package/ms) library. Examples: `"6d"`, `"10h"`
 
 ---
 
 ## Body properties
 
-Depending on the chosen authentication strategy, additional [credential arguments]({{ site_base_path }}guide/1/kuzzle-depth/authentication/#authentication) may be required.
+Depending on the chosen authentication strategy, additional [credential arguments](/guide/1/kuzzle-depth/authentication/#authentication) may be required.
 
 The API request example in this page provides the necessary arguments for the [`local` authentication plugin](https://github.com/kuzzleio/kuzzle-plugin-auth-passport-local).
 
-Check the appropriate [authentication plugin]({{ site_base_path }}plugins/1/essentials/strategies/) documentation to get the list of additional arguments to provide.
+Check the appropriate [authentication plugin](/plugins/1/essentials/strategies/) documentation to get the list of additional arguments to provide.
 
 ---
 
@@ -71,10 +71,10 @@ Check the appropriate [authentication plugin]({{ site_base_path }}plugins/1/esse
 
 The result contains the following properties:
 
-* `_id`: user's [kuid]({{ site_base_path }}guide/1/kuzzle-depth/authentication#the-kuzzle-user-identifier) 
-* `jwt`: encrypted JSON Web Token, that must then be sent in the [requests headers]({{ site_base_path }}api/1/essentials/query-syntax/#http-default) or in the [query]({{ site_base_path }}api/1/essentials/query-syntax/#other-protocols-default)
-* `expiresAt`: token expiration date, in Epoch-millis (UTC)
-* `ttl`: token time to live, in milliseconds
+- `_id`: user's [kuid](/guide/1/kuzzle-depth/authentication#the-kuzzle-user-identifier)
+- `jwt`: encrypted JSON Web Token, that must then be sent in the [requests headers](/api/1/essentials/query-syntax/#http-default) or in the [query](/api/1/essentials/query-syntax/#other-protocols-default)
+- `expiresAt`: token expiration date, in Epoch-millis (UTC)
+- `ttl`: token time to live, in milliseconds
 
 ```javascript
 {

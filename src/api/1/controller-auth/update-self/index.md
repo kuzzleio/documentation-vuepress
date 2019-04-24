@@ -9,7 +9,7 @@ title: updateSelf
 
 Updates the currently logged in user information.
 
-This route cannot update the list of associated security profiles. To change a user's security profiles, the route [security:updateUser]({{ site_base_path }}api/1/controller-security/update-user) must be used instead.
+This route cannot update the list of associated security profiles. To change a user's security profiles, the route [security:updateUser](/api/1/controller-security/update-user) must be used instead.
 
 ---
 
@@ -19,8 +19,8 @@ This route cannot update the list of associated security profiles. To change a u
 
 ```http
 URL: http://kuzzle:7512/_updateSelf
-Method: PUT  
-Headers: Authorization: "Bearer <authentication token>"  
+Method: PUT
+Headers: Authorization: "Bearer <authentication token>"
 Body:
 ```
 
@@ -39,7 +39,7 @@ Body:
   "action": "updateSelf",
   "jwt": "<authentication token>",
   "body": {
-    "foo": "bar",        
+    "foo": "bar",
     "name": "Walter Smith"
   }
 }
@@ -49,7 +49,7 @@ Body:
 
 ## Arguments
 
-* `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
+- `jwt`: valid authentication token (for the HTTP protocol, the token is to be passed to the `Authorization` header instead)
 
 ---
 
@@ -63,8 +63,8 @@ User properties that can be set or updated depend on the application hosted by K
 
 Returns the following properties:
 
-* `_id`: current user's [kuid]({{site_base_path}}guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid)
-* `_source`: additional (and optional) user properties
+- `_id`: current user's [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid)
+- `_source`: additional (and optional) user properties
 
 ```js
 {

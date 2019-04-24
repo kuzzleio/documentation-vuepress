@@ -19,18 +19,18 @@ public String updateSpecifications(String index, String collection, String speci
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | String | Index name    | yes  |
-| ``collection`` | String | Collection name    | yes  |
-| ``specifications`` | String | Specifications in JSON format  | yes  |
-| `options` | io.kuzzle.sdk.QueryOptions | The query options | no       |
+| Arguments        | Type                       | Description                   | Required |
+| ---------------- | -------------------------- | ----------------------------- | -------- |
+| `index`          | String                     | Index name                    | yes      |
+| `collection`     | String                     | Collection name               | yes      |
+| `specifications` | String                     | Specifications in JSON format | yes      |
+| `options`        | io.kuzzle.sdk.QueryOptions | The query options             | no       |
 
 ### **specifications**
 
-A JSON representation of the specifications.  
+A JSON representation of the specifications.
 
-The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/datavalidation):
+The JSON must follow the [Specification Structure](/guide/1/datavalidation):
 
 ```json
 {
@@ -59,7 +59,7 @@ Return a string containing a JSON representation of the specifications
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

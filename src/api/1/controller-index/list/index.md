@@ -22,7 +22,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "index",
@@ -58,4 +57,4 @@ Returns a `indexes` array listing all existing index names.
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

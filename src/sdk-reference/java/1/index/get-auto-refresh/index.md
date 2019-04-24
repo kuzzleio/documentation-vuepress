@@ -27,9 +27,9 @@ boolean getAutoRefresh(String index, io.kuzzle.sdk.QueryOptions options) throws 
 
 ## Arguments
 
-| Arguments | Type         | Description       | Required |
-| --------- | ------------ | ----------------- | -------- |
-| `index`   | String       | Index name        | yes      |
+| Arguments | Type                       | Description       | Required |
+| --------- | -------------------------- | ----------------- | -------- |
+| `index`   | String                     | Index name        | yes      |
 | `options` | io.kuzzle.sdk.QueryOptions | The query options | no       |
 
 ### **Options**
@@ -46,7 +46,7 @@ Returns a `boolean` that indicate the status of the **autoRefresh** flag.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

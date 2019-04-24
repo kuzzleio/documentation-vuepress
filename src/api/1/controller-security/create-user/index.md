@@ -71,16 +71,16 @@ Body:
 
 ### Optional:
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier). An error is returned if the provided identifier already exists. If not provided, a random kuid is automatically generated.
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier). An error is returned if the provided identifier already exists. If not provided, a random kuid is automatically generated.
 
 ---
 
 ## Body properties
 
-* `content`: an object describing the user. Properties:
-  * `profileIds`: an array of security profiles attributed to the user
-  * any other property: optional additional user information
-* `credentials`: describe how the new user can be authenticated. This object contains any number of properties, named after the target authentication strategy to use. Each one of these properties are objects containing the credentials information, corresponding to that authentication strategy. If left empty, the new user is created but cannot be authenticated.
+- `content`: an object describing the user. Properties:
+  - `profileIds`: an array of security profiles attributed to the user
+  - any other property: optional additional user information
+- `credentials`: describe how the new user can be authenticated. This object contains any number of properties, named after the target authentication strategy to use. Each one of these properties are objects containing the credentials information, corresponding to that authentication strategy. If left empty, the new user is created but cannot be authenticated.
 
 ---
 
@@ -88,10 +88,10 @@ Body:
 
 Returns the user creation status:
 
-* `_id`: new user kuid
-* `_source`: new user content and attributed profiles
-* `created`: always true
-* `version`: always 1
+- `_id`: new user kuid
+- `_source`: new user content and attributed profiles
+- `created`: always true
+- `version`: always 1
 
 ```javascript
 {

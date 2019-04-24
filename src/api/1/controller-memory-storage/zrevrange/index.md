@@ -7,7 +7,7 @@ title: zrevrange
 
 {{{since "1.0.0"}}}
 
-Identical to [zrange]({{ site_base_path }}api/1/controller-memory-storage/zrange), except that the sorted set is traversed in descending order.
+Identical to [zrange](/api/1/controller-memory-storage/zrange), except that the sorted set is traversed in descending order.
 
 [[_Redis documentation_]](https://redis.io/commands/zrevrange)
 
@@ -40,13 +40,13 @@ Method: GET
 
 ## Arguments
 
-* `_id`: sorted set identifier
-* `start`: starting position index, inclusive
-* `stop`: ending position index, inclusive
+- `_id`: sorted set identifier
+- `start`: starting position index, inclusive
+- `stop`: ending position index, inclusive
 
 ### Optional:
 
-* `withscores`: return the score alongside the found elements
+- `withscores`: return the score alongside the found elements
 
 ---
 

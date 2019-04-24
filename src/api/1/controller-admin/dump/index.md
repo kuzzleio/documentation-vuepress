@@ -10,18 +10,18 @@ title: dump
 Asynchronously create a snapshot of Kuzzle's state.  
 Depending on the configuration of Kuzzle, it may include the following:
 
-* a coredump of Kuzzle
-* the current Kuzzle configuration
-* server logs
-* Node.js binary & properties
-* a list of OS properties
-* plugins configuration
-* usage statistics of the dumped instance
+- a coredump of Kuzzle
+- the current Kuzzle configuration
+- server logs
+- Node.js binary & properties
+- a list of OS properties
+- plugins configuration
+- usage statistics of the dumped instance
 
-(See [configuration]({{ site_base_path }}guide/1/essentials/configuration))
+(See [configuration](/guide/1/essentials/configuration))
 
 The generated directory can be used to feed a complete report to the support team.  
-This report is the same as the one generated during a crash.  
+This report is the same as the one generated during a crash.
 
 **Note:** in a Cluster environment, the dump action will be propagated across all nodes.
 
@@ -61,8 +61,8 @@ Return an acknowledgement.
   "collection": null,
   "index": null,
   "volatile": null,
-  "result": { 
-    "acknowledge": true 
+  "result": {
+    "acknowledge": true
   }
 }
 ```

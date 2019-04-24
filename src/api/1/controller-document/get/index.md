@@ -37,13 +37,13 @@ Method: GET
 
 ## Arguments
 
-* `collection`: data collection
-* `documentId`: document unique identifier
-* `index`: data index
+- `collection`: data collection
+- `documentId`: document unique identifier
+- `index`: data index
 
 ### Optional:
 
-* `includeTrash`: if true, documents in the [trashcan]({{ site_base_path }}guide/1/essentials/document-metadata/) can be returned
+- `includeTrash`: if true, documents in the [trashcan](/guide/1/essentials/document-metadata/) can be returned
 
 ---
 
@@ -51,10 +51,9 @@ Method: GET
 
 Returns an object with the following properties:
 
-* `_id`: document unique identifier
-* `_source`: document content
-* `_version`: version of the created document (should be `1`)
-
+- `_id`: document unique identifier
+- `_source`: document content
+- `_version`: version of the created document (should be `1`)
 
 ```javascript
 {

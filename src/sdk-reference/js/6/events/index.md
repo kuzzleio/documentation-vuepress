@@ -7,11 +7,11 @@ order: 200
 
 # Events
 
-An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object]({{site_base_path }}sdk-reference/js/6/kuzzle).
+An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object](/sdk-reference/js/6/kuzzle).
 
 Subscription to these events is possible by registering callbacks that will be called when a specific event is issued by the SDK instance.
 
-These callbacks can be added by the method [Kuzzle.addListener]({{ site_base_path }}sdk-reference/js/6/kuzzle/add-listener).
+These callbacks can be added by the method [Kuzzle.addListener](/sdk-reference/js/6/kuzzle/add-listener).
 
 **Note:** listeners are called in the order of their insertion.
 
@@ -27,7 +27,7 @@ Triggered when Kuzzle discards a request, typically if no connection is establis
 
 **Callback arguments:**
 
-`@param {object} request`: the discarded [request]({{ site_base_path }}api/1/essentials/query-syntax/)
+`@param {object} request`: the discarded [request](/api/1/essentials/query-syntax/)
 
 ## disconnected
 
@@ -41,10 +41,10 @@ Triggered when a login attempt completes, either with a success or a failure res
 
 `@param {object} data`
 
-| Property   | Type    | Description       |
-| ---------- | ------- | ----------------- |
+| Property  | Type               | Description                       |
+| --------- | ------------------ | --------------------------------- |
 | `success` | <pre>boolean</pre> | Indicate if login attempt succeed |
-| `error` | <pre>string</pre> | Error message when login fail |
+| `error`   | <pre>string</pre>  | Error message when login fail     |
 
 ## networkError
 
@@ -54,11 +54,11 @@ Triggered when the SDK has failed to connect to Kuzzle.
 
 `@param {Error} error`
 
-| Property   | Type    | Description       |
-| ---------- | ------- | ----------------- |
-| `message` | <pre>string</pre> | Error description |
-| `status` | <pre>number</pre> | Error code |
-| `stack` | <pre>string</pre> | Stacktrace (development mode only) |
+| Property  | Type              | Description                        |
+| --------- | ----------------- | ---------------------------------- |
+| `message` | <pre>string</pre> | Error description                  |
+| `status`  | <pre>number</pre> | Error code                         |
+| `stack`   | <pre>string</pre> | Stacktrace (development mode only) |
 
 ## offlineQueuePop
 
@@ -66,8 +66,7 @@ Triggered whenever a request is removed from the offline queue.
 
 **Callback arguments:**
 
-`@param {object} request`: the [request]({{ site_base_path }}api/1/essentials/query-syntax/) removed from the queue
-
+`@param {object} request`: the [request](/api/1/essentials/query-syntax/) removed from the queue
 
 ## offlineQueuePush
 
@@ -77,9 +76,9 @@ Triggered whenever a request is added to the offline queue.
 
 `@param {object} data`
 
-| Property   | Type    | Description       |
-| ---------- | ------- | ----------------- |
-| `request` | <pre>object</pre> | [Request]({{ site_base_path }}api/1/essentials/query-syntax/) added to the queue |
+| Property  | Type              | Description                                                   |
+| --------- | ----------------- | ------------------------------------------------------------- |
+| `request` | <pre>object</pre> | [Request](/api/1/essentials/query-syntax/) added to the queue |
 
 ## queryError
 
@@ -89,14 +88,14 @@ Triggered whenever Kuzzle responds with an error
 
 `@param {object} data`
 
-| Property   | Type    | Description       |
-| ---------- | ------- | ----------------- |
+| Property  | Type              | Description                   |
+| --------- | ----------------- | ----------------------------- |
 | `request` | <pre>object</pre> | Request that causing an error |
-| `error` | <pre>Error</pre> | Error details |
+| `error`   | <pre>Error</pre>  | Error details                 |
 
 ## reconnected
 
-Triggered when the current session has reconnected to Kuzzle after a disconnection, and only if ``autoReconnect`` is set to ``true``.
+Triggered when the current session has reconnected to Kuzzle after a disconnection, and only if `autoReconnect` is set to `true`.
 
 ## tokenExpired
 

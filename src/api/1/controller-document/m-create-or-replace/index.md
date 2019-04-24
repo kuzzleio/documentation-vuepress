@@ -17,7 +17,7 @@ Creates or replaces multiple documents.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_mCreateOrReplace[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -25,7 +25,7 @@ Body:
 {
   "documents": [
     {
-      "_id": "<documentId>", 
+      "_id": "<documentId>",
       "body": {
         // document content
       }
@@ -71,20 +71,20 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced documents are indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced documents are indexed
 
 ---
 
 ## Body properties
 
-* `documents`: an array of object. Each object describes a document to create or replace, by exposing the following properties:
-  * `_id`: document unique identifier
-  * `body`: document content
+- `documents`: an array of object. Each object describes a document to create or replace, by exposing the following properties:
+  - `_id`: document unique identifier
+  - `body`: document content
 
 ---
 
@@ -94,12 +94,12 @@ Returns a `hits` array, containing the list of created documents, in the same or
 
 Each created document is an object with the following properties:
 
-* `_id`: created document unique identifier
-* `_source`: document content
-* `_version`: version number of the document 
-* `created`: a boolean telling whether a document is created 
+- `_id`: created document unique identifier
+- `_source`: document content
+- `_version`: version number of the document
+- `created`: a boolean telling whether a document is created
 
-If one or more document creations fail, the response status is set to `206`, and the `error` object contain a [partial error]({{ site_base_path }}api/1/essentials/errors/#partialerror) error.
+If one or more document creations fail, the response status is set to `206`, and the `error` object contain a [partial error](/api/1/essentials/errors/#partialerror) error.
 
 ### Example
 

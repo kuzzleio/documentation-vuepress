@@ -7,7 +7,7 @@ title: Request
 
 {{{since "1.0.0"}}}
 
-Object representation of a Kuzzle [API call]({{ site_base_path }}api/1/essentials/query-syntax).
+Object representation of a Kuzzle [API call](/api/1/essentials/query-syntax).
 
 That object is continuously updated to reflect the current state of the request, during its entire lifecycle.
 
@@ -32,35 +32,35 @@ To customize the response content, read the [RequestResponse](https://github.com
 {{{since "1.0.0"}}} / {{{deprecated "1.2.0"}}}
 
 ```js
-new Request(request, data, [options])
+new Request(request, data, [options]);
 ```
 
-{{{since "1.2.0"}}} 
+{{{since "1.2.0"}}}
 
 ```js
-new Request(data, [options])
+new Request(data, [options]);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `request` | <a href="#request-default"><pre>Request</pre></a> | A source request to inherit from |
-| `data` | <pre>object</pre> | API call, following the same format than non-HTTP [API calls]({{ site_base_path }}api/1/essentials/query-syntax) |
-| `options` | <pre>object</pre> | Additional request context |
+| Arguments | Type                                              | Description                                                                                   |
+| --------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `request` | <a href="#request-default"><pre>Request</pre></a> | A source request to inherit from                                                              |
+| `data`    | <pre>object</pre>                                 | API call, following the same format than non-HTTP [API calls](/api/1/essentials/query-syntax) |
+| `options` | <pre>object</pre>                                 | Additional request context                                                                    |
 
 ### options
 
 The `options` argument accepts the following parameters:
 
-| Options | Type | Description |
-|---------|------|-------------|
-| `connection` | <pre>object</pre> | {{{since "1.4.1"}}} Connection information (see the <a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#requestcontextconnection-object-format>connection</a> object documentation) |
-| `connectionId` | <pre>string</pre> | {{{deprecated "1.4.1"}}} Connection unique identifier |
-| `error` | <pre><a href={{ site_base_path }}plugins/1/errors>KuzzleError</a>, Error</pre> | Sets the request response with the provided error |
-| `requestId` | <pre>string</pre> | User-defined request identifier |
-| `result` | <pre>*</pre> | Sets the request response with the provided result, and the request status is set to `200` |
-| `status` | <pre>integer</pre> | Request status, following the [HTTP error code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) standard |
+| Options        | Type                                                        | Description                                                                                                                                                                                                     |
+| -------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `connection`   | <pre>object</pre>                                           | {{{since "1.4.1"}}} Connection information (see the <a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#requestcontextconnection-object-format>connection</a> object documentation) |
+| `connectionId` | <pre>string</pre>                                           | {{{deprecated "1.4.1"}}} Connection unique identifier                                                                                                                                                           |
+| `error`        | <pre><a href=/plugins/1/errors>KuzzleError</a>, Error</pre> | Sets the request response with the provided error                                                                                                                                                               |
+| `requestId`    | <pre>string</pre>                                           | User-defined request identifier                                                                                                                                                                                 |
+| `result`       | <pre>\*</pre>                                               | Sets the request response with the provided result, and the request status is set to `200`                                                                                                                      |
+| `status`       | <pre>integer</pre>                                          | Request status, following the [HTTP error code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) standard                                                                                               |
 
 ---
 
@@ -68,21 +68,21 @@ The `options` argument accepts the following parameters:
 
 Read-only:
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `context` | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a></pre> | General request information (logged user, network information, ...) |
-| `error` | <pre><a href={{ site_base_path }}plugins/1/errors>KuzzleError</a></pre> | Request error |
-| `input` | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a></pre> | Input request representation |
-| `response` | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a></pre> | Serialized [request response]({{ site_base_path }}api/1/essentials/kuzzle-response) |
-| `result` | <pre>*</pre> | Request result |
-| `timestamp` | <pre>integer</pre> | Request creation timestamp, in Epoch-millis format |
+| Property    | Type                                                                                                                               | Description                                                         |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `context`   | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a></pre> | General request information (logged user, network information, ...) |
+| `error`     | <pre><a href=/plugins/1/errors>KuzzleError</a></pre>                                                                               | Request error                                                       |
+| `input`     | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a></pre>     | Input request representation                                        |
+| `response`  | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a></pre>                           | Serialized [request response](/api/1/essentials/kuzzle-response)    |
+| `result`    | <pre>\*</pre>                                                                                                                      | Request result                                                      |
+| `timestamp` | <pre>integer</pre>                                                                                                                 | Request creation timestamp, in Epoch-millis format                  |
 
 Writable:
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `id` | <pre>string</pre> | User-defined request unique identifier |
-| `status` | <pre>integer</pre> | Request status code |
+| Property | Type               | Description                            |
+| -------- | ------------------ | -------------------------------------- |
+| `id`     | <pre>string</pre>  | User-defined request unique identifier |
+| `status` | <pre>integer</pre> | Request status code                    |
 
 ---
 
@@ -120,17 +120,18 @@ The request status is also updated to the error status.
 ### Argument
 
 ```js
-setError(error)
+setError(error);
 ```
+
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `error` | <pre><a href={{ site_base_path }}plugins/1/errors>KuzzleError</a></pre> | Request error |
+| Arguments | Type                                                 | Description   |
+| --------- | ---------------------------------------------------- | ------------- |
+| `error`   | <pre><a href=/plugins/1/errors>KuzzleError</a></pre> | Request error |
 
 If a `KuzzleError` object is provided, the request's status attribute is set to the error one.
 
-Otherwise, the provided error is embedded into a [InternalError]({{ site_base_path }}plugins/1/errors/internalerror) object, and the request status is set to 500.
+Otherwise, the provided error is embedded into a [InternalError](/plugins/1/errors/internalerror) object, and the request status is set to 500.
 
 ---
 
@@ -143,23 +144,22 @@ Sets the request result.
 ### Arguments
 
 ```js
-setResult(result, [options])
+setResult(result, [options]);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `result` | <pre>*</pre> | Request result |
+| Arguments | Type              | Description                   |
+| --------- | ----------------- | ----------------------------- |
+| `result`  | <pre>\*</pre>     | Request result                |
 | `options` | <pre>object</pre> | Optional result configuration |
-
 
 ### options
 
 The `options` argument accepts the following parameters:
 
-| Options | Type (default) | Description |
-|---------|------|-------------|
-| `headers` | <pre>object (null)</pre> | Network specific headers. Shortcut to the [response](https://github.com/kuzzleio/kuzzle-common-objects#requestresponse) header functions |
-| `raw` | <pre>boolean (false)</pre> | If `true`, instead of a standard [kuzzle response]({{ site_base_path }}api/1/essentials/kuzzle-response), the result is sent as is to the client, without being interpreted |
-| `status` | <pre>integer (200)</pre> | Request status |
+| Options   | Type (default)             | Description                                                                                                                                              |
+| --------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `headers` | <pre>object (null)</pre>   | Network specific headers. Shortcut to the [response](https://github.com/kuzzleio/kuzzle-common-objects#requestresponse) header functions                 |
+| `raw`     | <pre>boolean (false)</pre> | If `true`, instead of a standard [kuzzle response](/api/1/essentials/kuzzle-response), the result is sent as is to the client, without being interpreted |
+| `status`  | <pre>integer (200)</pre>   | Request status                                                                                                                                           |

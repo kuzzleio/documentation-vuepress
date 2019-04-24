@@ -7,7 +7,7 @@ title: scrollUsers
 
 {{{since "1.0.0"}}}
 
-Moves a result set cursor forward, created by a [searchUsers]({{ site_base_path }}api/1/controller-security/search-users) query with the `scroll` argument provided.
+Moves a result set cursor forward, created by a [searchUsers](/api/1/controller-security/search-users) query with the `scroll` argument provided.
 
 Results returned by a `scrollUsers` request reflect the state of the index at the time of the initial search request, like a fixed snapshot. Subsequent changes to documents do not affect the scroll results.
 
@@ -37,11 +37,11 @@ Method: GET
 
 ## Arguments
 
-* `scrollId`: cursor unique identifier, obtained by either a searchUsers or a scrollUsers query
+- `scrollId`: cursor unique identifier, obtained by either a searchUsers or a scrollUsers query
 
 ### Optional:
 
-* `scroll`: refresh the cursor duration, using the [time to live](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units) syntax.
+- `scroll`: refresh the cursor duration, using the [time to live](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units) syntax.
 
 ---
 
@@ -49,16 +49,16 @@ Method: GET
 
 Returns a paginated search result set, with the following properties:
 
-* `hits`: array of found profiles. Each document has the following properties:
-  * `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
-  * `_source`: user definition
-* `scrollId`: identifier to the next page of result. Can be different than the previous one(s)
-* `total`: total number of found users. Usually greater than the number of users in a result page
+- `hits`: array of found profiles. Each document has the following properties:
+  - `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+  - `_source`: user definition
+- `scrollId`: identifier to the next page of result. Can be different than the previous one(s)
+- `total`: total number of found users. Usually greater than the number of users in a result page
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "scrollUsers",
   "controller": "security",
   "requestId": "<unique request identifier>",
@@ -67,7 +67,7 @@ Returns a paginated search result set, with the following properties:
     "hits": [
       {
         "_id": "kuid1",
-        "_source": { 
+        "_source": {
           "profileIds": [{"roleId": "default"}],
           "fullname": "John Doe"
         }

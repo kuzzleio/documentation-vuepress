@@ -9,7 +9,7 @@ title: list
 
 Returns the list of data collections associated to a provided data index.
 
-The returned list is sorted in alphanumerical order.  
+The returned list is sorted in alphanumerical order.
 
 ---
 
@@ -23,7 +23,6 @@ Method: GET
 ```
 
 ### Other protocols
-
 
 ```js
 {
@@ -40,14 +39,13 @@ Method: GET
 
 ## Arguments
 
-
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `from` and `size`: response pagination
-* `type`: filters the returned collections. Allowed values: `all`, `stored` and `realtime` (default : `all`).  
+- `from` and `size`: response pagination
+- `type`: filters the returned collections. Allowed values: `all`, `stored` and `realtime` (default : `all`).
 
 ---
 
@@ -55,8 +53,8 @@ Method: GET
 
 Returns an array of objects, each one of those describing a collection, using the following properties:
 
-* `name`: data collection name
-* `type`: data collection type (either `stored` or `realtime`)
+- `name`: data collection name
+- `type`: data collection type (either `stored` or `realtime`)
 
 Example:
 
@@ -104,5 +102,5 @@ Example:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

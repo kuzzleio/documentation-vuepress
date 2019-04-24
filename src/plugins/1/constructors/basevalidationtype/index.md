@@ -7,7 +7,7 @@ title: BaseValidationType
 
 {{{since "1.0.0"}}}
 
-Abstract class, used to create custom validation types (see the [validation]({{ site_base_path }}plugins/1/accessors/validation) accessor).
+Abstract class, used to create custom validation types (see the [validation](/plugins/1/accessors/validation) accessor).
 
 ---
 
@@ -19,11 +19,11 @@ This class constructor takes no argument.
 
 ## Properties
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `allowChildren` | <pre>boolean</pre> | If `false`, the field must be a scalar |
-| `allowedTypeOptions` | <pre>string[]</pre> | The list of allowed data type options |
-| `typeName` | <pre>string</pre> | Data type name |
+| Property             | Type                | Description                            |
+| -------------------- | ------------------- | -------------------------------------- |
+| `allowChildren`      | <pre>boolean</pre>  | If `false`, the field must be a scalar |
+| `allowedTypeOptions` | <pre>string[]</pre> | The list of allowed data type options  |
+| `typeName`           | <pre>string</pre>   | Data type name                         |
 
 ---
 
@@ -36,16 +36,16 @@ This is an abstract method. If not overloaded, it always returns `true`
 ### Arguments
 
 ```js
-validate(opts, field, errors)
+validate(opts, field, errors);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `opts` | <pre>object</pre> | Data type options. The provided object can only contain the keys defined in the `allowedTypeOptions` property |
-| `field` | <pre>*</pre> | Data to validate |
-| `errors` | <pre>string[]</pre> | If the provided `field` is not valid, the reason must be pushed in that array |
+| Arguments | Type                | Description                                                                                                   |
+| --------- | ------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `opts`    | <pre>object</pre>   | Data type options. The provided object can only contain the keys defined in the `allowedTypeOptions` property |
+| `field`   | <pre>\*</pre>       | Data to validate                                                                                              |
+| `errors`  | <pre>string[]</pre> | If the provided `field` is not valid, the reason must be pushed in that array                                 |
 
 ### Return
 
@@ -62,17 +62,17 @@ This is an abstract method. If not overloaded, it always returns `true`
 ### Arguments
 
 ```js
-validateFieldSpecification(opts)
+validateFieldSpecification(opts);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `opts` | <pre>object</pre> | Data type options. The provided object can only contain the keys defined in the `allowedTypeOptions` property |
+| Arguments | Type              | Description                                                                                                   |
+| --------- | ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| `opts`    | <pre>object</pre> | Data type options. The provided object can only contain the keys defined in the `allowedTypeOptions` property |
 
 ### Return
 
 The `validateFieldSpecification` returns a copy of the `opts` object, updated with interpreted values.
 
-If the provided options are not valid, this function is expected to throw a [KuzzleError]({{ site_base_path }}plugins/1/errors) error.
+If the provided options are not valid, this function is expected to throw a [KuzzleError](/plugins/1/errors) error.

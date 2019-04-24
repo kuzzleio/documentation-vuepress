@@ -17,11 +17,11 @@ Returns the validation specifications associated to the collection.
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | String | Index name    | yes  |
-| ``collection`` | String | Collection name    | yes  |
-| ``options`` | io.kuzzle.sdk.QueryOptions | Query options    | no  |
+| Arguments    | Type                       | Description     | Required |
+| ------------ | -------------------------- | --------------- | -------- |
+| `index`      | String                     | Index name      | yes      |
+| `collection` | String                     | Collection name | yes      |
+| `options`    | io.kuzzle.sdk.QueryOptions | Query options   | no       |
 
 ### **options**
 
@@ -37,7 +37,7 @@ Return a string in JSON format representing the validation specifications.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

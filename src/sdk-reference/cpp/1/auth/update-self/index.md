@@ -18,26 +18,26 @@ kuzzleio::User updateSelf(const std::string& content, const kuzzleio::query_opti
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------|
-| `content` | <pre>const std::string&</pre> | JSON string representing the user content |
-| `options`  | <pre>kuzzleio::query_options\*</pre>  | Query options |
+| Arguments | Type                                 | Description                               |
+| --------- | ------------------------------------ | ----------------------------------------- |
+| `content` | <pre>const std::string&</pre>        | JSON string representing the user content |
+| `options` | <pre>kuzzleio::query_options\*</pre> | Query options                             |
 
 ### options
 
 Additional query options:
 
-| Option     | Type<br/>(default)   | Description  |
-| ---------- | ------- | -------------- |
+| Option     | Type<br/>(default)           | Description                                                                  |
+| ---------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Return
 
-A [kuzzleio::User]({{ site_base_path }}sdk-reference/cpp/1/user/) object.
+A [kuzzleio::User](/sdk-reference/cpp/1/user/) object.
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk-reference/cpp/1/error-handling).
 
 ## Usage
 

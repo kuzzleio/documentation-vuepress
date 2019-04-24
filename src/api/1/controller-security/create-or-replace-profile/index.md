@@ -52,7 +52,7 @@ Body:
 {
   "controller": "security",
   "action": "createOrReplaceProfile",
-  "_id": "<profileId>",              
+  "_id": "<profileId>",
   "body": {
     "policies": [
       {
@@ -82,17 +82,17 @@ Body:
 
 ## Arguments
 
-* `_id`: profile identifier
+- `_id`: profile identifier
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced profile is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced profile is indexed
 
 ---
 
 ## Body properties
 
-* `policies`: [profile definition]({{site_base_path}}guide/1/essentials/security/#defining-profiles)
+- `policies`: [profile definition](/guide/1/essentials/security/#defining-profiles)
 
 ---
 
@@ -100,10 +100,10 @@ Body:
 
 Returns an object with the new profile modification status:
 
-* `_id`: created/replaced profile identifier
-* `_source`: profile content
-* `created`: if `true`, the profile has been created. Otherwise, it has been replaced
-* `version`: updated version number of the profile
+- `_id`: created/replaced profile identifier
+- `_source`: profile content
+- `created`: if `true`, the profile has been created. Otherwise, it has been replaced
+- `version`: updated version number of the profile
 
 ```javascript
 {

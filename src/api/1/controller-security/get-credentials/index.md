@@ -3,7 +3,6 @@ layout: full.html.hbs
 title: getCredentials
 ---
 
-
 # getCredentials
 
 {{{since "1.0.0"}}}
@@ -20,7 +19,7 @@ The returned content depends on the authentication strategy, but it should never
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/<_id>
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols
@@ -38,8 +37,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
-* `strategy`: authentication strategy name
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `strategy`: authentication strategy name
 
 ---
 

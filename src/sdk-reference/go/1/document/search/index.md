@@ -29,23 +29,23 @@ Search(
 
 <br/>
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>string</pre> | Index name |
-| `collection` | <pre>string</pre> | Collection name |
-| `query` | <pre>json.RawMessage</pre> | Search query |
-| `options` | <pre>types.QueryOptions</pre> | A struct containing query options |
+| Argument     | Type                          | Description                       |
+| ------------ | ----------------------------- | --------------------------------- |
+| `index`      | <pre>string</pre>             | Index name                        |
+| `collection` | <pre>string</pre>             | Collection name                   |
+| `query`      | <pre>json.RawMessage</pre>    | Search query                      |
+| `options`    | <pre>types.QueryOptions</pre> | A struct containing query options |
 
 ### options
 
 Additional query options
 
-| Option | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `Queuable` | <pre>bool</pre> <br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `From` | <pre>int</pre><br/>(`0`) | Offset of the first document to fetch |
-| `Size` | <pre>int</pre><br/>(`10`) | Maximum number of documents to retrieve per page  |
-| `Scroll` | <pre>string</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units)) |
+| Option     | Type<br/>(default)            | Description                                                                                                                                                                                                           |
+| ---------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Queuable` | <pre>bool</pre> <br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again                                                                                                                                          |
+| `From`     | <pre>int</pre><br/>(`0`)      | Offset of the first document to fetch                                                                                                                                                                                 |
+| `Size`     | <pre>int</pre><br/>(`10`)     | Maximum number of documents to retrieve per page                                                                                                                                                                      |
+| `Scroll`   | <pre>string</pre><br/>(`""`)  | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units)) |
 
 ## Body properties
 
@@ -59,7 +59,7 @@ An empty body matches all documents in the queried collection.
 
 ## Return
 
-Returns a pointer on [types.SearchResult]({{ site_base_path }}sdk-reference/go/1/search-result) struct
+Returns a pointer on [types.SearchResult](/sdk-reference/go/1/search-result) struct
 
 ## Usage
 

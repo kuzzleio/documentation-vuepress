@@ -6,7 +6,7 @@ description: Delete validation specifications for a collection
 
 # deleteSpecifications
 
-Delete the validation specifications associated with the collection.  
+Delete the validation specifications associated with the collection.
 
 ## Signature
 
@@ -17,11 +17,11 @@ Delete the validation specifications associated with the collection.
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | String | Index name    | yes  |
-| ``collection`` | String | Collection name    | yes  |
-| ``options`` | io.kuzzle.sdk.QueryOptions | Query options    | no  |
+| Arguments    | Type                       | Description     | Required |
+| ------------ | -------------------------- | --------------- | -------- |
+| `index`      | String                     | Index name      | yes      |
+| `collection` | String                     | Collection name | yes      |
+| `options`    | io.kuzzle.sdk.QueryOptions | Query options   | no       |
 
 ### **options**
 
@@ -33,7 +33,7 @@ Additional query options
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

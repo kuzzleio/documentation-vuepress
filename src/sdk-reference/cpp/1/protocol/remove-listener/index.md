@@ -16,14 +16,14 @@ virtual void removeListener(kuzzleio::Event event, kuzzleio::EventListener* list
 
 ## Arguments
 
-| Argument   | Type                      | Description
-| ---------- | ------------------------- | --------------------------
-| `event`    | <pre>kuzzleio::Event</pre>  | Enum representing the event to emit
-| `listener` | <pre>kuzzleio::EventListener\*</pre> | Pointer to a c++11 lambda
+| Argument   | Type                                 | Description                         |
+| ---------- | ------------------------------------ | ----------------------------------- |
+| `event`    | <pre>kuzzleio::Event</pre>           | Enum representing the event to emit |
+| `listener` | <pre>kuzzleio::EventListener\*</pre> | Pointer to a c++11 lambda           |
 
 ### event
 
-One of the following [event]({{ site_base_path }}sdk-reference/cpp/1/events):
+One of the following [event](/sdk-reference/cpp/1/events):
 
 ```cpp
 EVENT_CONNECTED,

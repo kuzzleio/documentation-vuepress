@@ -5,7 +5,7 @@ title: strategies
 
 # strategies
 
-Dynamically adds or removes [authentication strategies]({{ site_base_path }}plugins/1/essentials/strategies).
+Dynamically adds or removes [authentication strategies](/plugins/1/essentials/strategies).
 
 ---
 
@@ -13,7 +13,7 @@ Dynamically adds or removes [authentication strategies]({{ site_base_path }}plug
 
 {{{since "1.2.0"}}}
 
-Adds a new authentication strategy. 
+Adds a new authentication strategy.
 
 Users can be authenticated using that new strategy as soon as this method resolves.
 
@@ -24,16 +24,15 @@ In a cluster environment, the new strategy is automatically added to all server 
 ### Arguments
 
 ```js
-add(name, properties)
+add(name, properties);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `name` | <pre>string</pre> | Name of the new authentication strategy |
-| `properties` | <pre>object</pre> | Strategy properties (see [managing credentials]({{ site_base_path }}plugins/1/essentials/strategies/#managing-credentials-default)) |
-
+| Arguments    | Type              | Description                                                                                                      |
+| ------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `name`       | <pre>string</pre> | Name of the new authentication strategy                                                                          |
+| `properties` | <pre>object</pre> | Strategy properties (see [managing credentials](/plugins/1/essentials/strategies/#managing-credentials-default)) |
 
 ### Return
 
@@ -41,9 +40,9 @@ The `add` function returns a promise.
 
 The promise is rejected if:
 
-* the properties for that strategy are invalid or incomplete
-* the properties does not expose a known `authenticator` value
-* a strategy of the same name has already been registered by another plugin
+- the properties for that strategy are invalid or incomplete
+- the properties does not expose a known `authenticator` value
+- a strategy of the same name has already been registered by another plugin
 
 ### Example
 
@@ -67,7 +66,7 @@ const strategy = {
 
 try {
   await context.accessors.strategies.add('someStrategy', strategy);
-} catch(error) {
+} catch (error) {
   // "error" is a KuzzleError object
 }
 ```
@@ -89,14 +88,14 @@ Authentication tokens previously created using that strategy ARE NOT invalidated
 ### Arguments
 
 ```js
-remove(name)
+remove(name);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `name` | <pre>string</pre> | Name of the authentication strategy to remove |
+| Arguments | Type              | Description                                   |
+| --------- | ----------------- | --------------------------------------------- |
+| `name`    | <pre>string</pre> | Name of the authentication strategy to remove |
 
 ### Return
 
@@ -109,7 +108,7 @@ This promise is rejected if the strategy to remove does not exist, or if it is o
 ```js
 try {
   context.accessors.strategies.remove('someStrategy');
-} catch(error) {
+} catch (error) {
   // "error" is a KuzzleError object
 }
 ```

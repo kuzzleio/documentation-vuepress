@@ -17,11 +17,11 @@ Returns the mapping for the given `collection`.
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | String | Index name    | yes  |
-| ``collection`` | String | Collection name    | yes  |
-| ``options`` | io.kuzzle.sdk.QueryOptions | Query options    | no  |
+| Arguments    | Type                       | Description     | Required |
+| ------------ | -------------------------- | --------------- | -------- |
+| `index`      | String                     | Index name      | yes      |
+| `collection` | String                     | Collection name | yes      |
+| `options`    | io.kuzzle.sdk.QueryOptions | Query options   | no       |
 
 ### **options**
 
@@ -37,7 +37,7 @@ Return a string containing the collection mapping in JSON format.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

@@ -19,7 +19,7 @@ A query can be provided to alter the count result, otherwise returns the total n
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_count[?includeTrash=<boolean>]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -52,12 +52,12 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `includeTrash`: include documents from the [trashcan]({{ site_base_path }}guide/1/essentials/document-metadata/)
+- `includeTrash`: include documents from the [trashcan](/guide/1/essentials/document-metadata/)
 
 ---
 
@@ -65,7 +65,7 @@ Body:
 
 ### Optional:
 
-* `query`: if provided, will count only documents matching this search query. Uses the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl.html) syntax.
+- `query`: if provided, will count only documents matching this search query. Uses the [ElasticSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/query-dsl.html) syntax.
 
 ---
 

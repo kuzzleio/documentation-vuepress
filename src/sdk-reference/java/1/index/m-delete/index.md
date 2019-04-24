@@ -17,9 +17,9 @@ io.kuzzle.sdk.StringVector mDelete(io.kuzzle.sdk.StringVector indexes, io.kuzzle
 
 ## Arguments
 
-| Arguments | Type         | Description           | Required |
-| --------- | ------------ | --------------------- | -------- |
-| `indexes` | StringVector | List of indexes names | yes      |
+| Arguments | Type                       | Description           | Required |
+| --------- | -------------------------- | --------------------- | -------- |
+| `indexes` | StringVector               | List of indexes names | yes      |
 | `options` | io.kuzzle.sdk.QueryOptions | The query options     | no       |
 
 ### **Options**
@@ -36,7 +36,7 @@ Returns an `io.kuzzle.sdk.StringVector` containing the list of indexes names del
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

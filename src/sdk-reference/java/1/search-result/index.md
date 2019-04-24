@@ -4,19 +4,20 @@ title: SearchResult
 description: How to deal with Kuzzle search results
 order: 600
 ---
+
 # SearchResult
 
-When performing a [search]({{ site_base_path }}sdk-reference/java/1/document/search), Kuzzle returns an `SearchResult` object, which holds the items matching the given query and allows to drill through next result pages if applicable.
+When performing a [search](/sdk-reference/java/1/document/search), Kuzzle returns an `SearchResult` object, which holds the items matching the given query and allows to drill through next result pages if applicable.
 
 ## Properties
 
-| Property | Type | Description |
-|--- |--- |--- |
-| `aggregations` | <pre>String</pre> | The search` aggregations if any |
-| `hits` | <pre>String</pre> | A JSON string containing the retrieved items for the current page |
-| `total` | <pre>int</pre> | The total number of items matching the given query in Kuzzle database |
-| `fetched` | <pre>int</pre> | The number of retrieved items so far |
-| `scrollId` | <pre>String</pre> | A scroll identifier if the search was given a `scroll` parameter |
+| Property       | Type              | Description                                                           |
+| -------------- | ----------------- | --------------------------------------------------------------------- |
+| `aggregations` | <pre>String</pre> | The search` aggregations if any                                       |
+| `hits`         | <pre>String</pre> | A JSON string containing the retrieved items for the current page     |
+| `total`        | <pre>int</pre>    | The total number of items matching the given query in Kuzzle database |
+| `fetched`      | <pre>int</pre>    | The number of retrieved items so far                                  |
+| `scrollId`     | <pre>String</pre> | A scroll identifier if the search was given a `scroll` parameter      |
 
 ## Methods
 

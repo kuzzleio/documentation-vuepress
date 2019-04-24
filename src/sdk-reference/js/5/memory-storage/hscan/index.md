@@ -3,10 +3,10 @@ layout: sdk.html.hbs
 title: hscan
 description: MemoryStorage:hscan
 ---
-  
 
 # hscan
-Identical to [scan]({{ site_base_path }}sdk-reference/js/5/memory-storage/scan), except that `hscan` iterates over the fields contained in a hash.  
+
+Identical to [scan](/sdk-reference/js/5/memory-storage/scan), except that `hscan` iterates over the fields contained in a hash.
 
 [[_Redis documentation_]](https://redis.io/commands/hscan)
 
@@ -14,22 +14,22 @@ Identical to [scan]({{ site_base_path }}sdk-reference/js/5/memory-storage/scan),
 
 ## hscan(key, cursor, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `cursor` | int | Page number (iteration starts with a cursor value of `0`, and ends when the next cursor position is `0`) |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                                                                                              |
+| ---------- | ----------- | -------------------------------------------------------------------------------------------------------- |
+| `key`      | string      | Key identifier                                                                                           |
+| `cursor`   | int         | Page number (iteration starts with a cursor value of `0`, and ends when the next cursor position is `0`) |
+| `options`  | JSON Object | Optional parameters                                                                                      |
+| `callback` | function    | Callback                                                                                                 |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|--------|------|-------------|---------|
-| `count` | int | Return the _approximate_ `count` number of items per result page | `10` |
-| `match` | string | Search only for field names matching the provided pattern | `*` |
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                                                      | Default |
+| ---------- | ------- | ---------------------------------------------------------------- | ------- |
+| `count`    | int     | Return the _approximate_ `count` number of items per result page | `10`    |
+| `match`    | string  | Search only for field names matching the provided pattern        | `*`     |
+| `queuable` | boolean | Make this request queuable or not                                | `true`  |
 
 ---
 
@@ -37,22 +37,18 @@ Identical to [scan]({{ site_base_path }}sdk-reference/js/5/memory-storage/scan),
 
 Returns an object containing 2 entries:
 
-* the cursor position for the next page of results (a next position of `0` indicates the end of the scan)
-* an array of field names and values
+- the cursor position for the next page of results (a next position of `0` indicates the end of the scan)
+- an array of field names and values
 
 ## Usage
 
 [snippet=hscan-1]
+
 > Callback response:
 
 ```json
 {
   "cursor": 18,
-  "values": [
-    "field1",
-    "field1 value",
-    "field2",
-    "field2 value"
-  ]
+  "values": ["field1", "field1 value", "field2", "field2 value"]
 }
 ```

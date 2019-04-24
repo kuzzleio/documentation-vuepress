@@ -17,7 +17,7 @@ Checks if a user has credentials registered for the specified authentication str
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/<_id>/_exists
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols
@@ -35,8 +35,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier) 
-* `strategy`: authentication strategy
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `strategy`: authentication strategy
 
 ---
 

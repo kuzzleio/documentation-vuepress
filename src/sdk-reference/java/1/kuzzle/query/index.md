@@ -6,7 +6,7 @@ description: Base method to send API query to Kuzzle
 
 # query
 
-Base method used to send queries to Kuzzle, following the [API Documentation]({{ site_base_path }}api/1).
+Base method used to send queries to Kuzzle, following the [API Documentation](/api/1).
 
 <div class="alert alert-warning">
 This is a low-level method, exposed to allow advanced SDK users to bypass high-level methods.
@@ -21,8 +21,8 @@ io.kuzzle.sdk.KuzzleResponse query(io.kuzzle.sdk.KuzzleRequest request, io.kuzzl
 
 ## Arguments
 
-| Argument  | Type          | Description              | Required |
-| --------- | ------------- | ------------------------ | -------- |
+| Argument  | Type                        | Description              | Required |
+| --------- | --------------------------- | ------------------------ | -------- |
 | `request` | io.kuzzle.sdk.KuzzleRequest | API request options      | yes      |
 | `options` | io.kuzzle.sdk.QueryOptions  | Additional query options | no       |
 
@@ -32,14 +32,14 @@ A `io.kuzzle.sdk.KuzzleRequest` object containing the properties required for th
 Each property can be accessed with standard getter/setter.
 The following properties are the most common.
 
-| Property     | Type   | Description                                                        | Required |
-| ------------ | ------ | ------------------------------------------------------------------ | -------- |
-| `controller` | String | Controller name                                                    | yes      |
-| `action`     | String | Action name                                                        | yes      |
-| `body`       | String | JSON query body for this action                                    | no       |
-| `index`      | String | Index name for this action                                         | no       |
-| `collection` | String | Collection name for this action                                    | no       |
-| `id`         | String | id for this action                                                 | no       |
+| Property     | Type   | Description                                                       | Required |
+| ------------ | ------ | ----------------------------------------------------------------- | -------- |
+| `controller` | String | Controller name                                                   | yes      |
+| `action`     | String | Action name                                                       | yes      |
+| `body`       | String | JSON query body for this action                                   | no       |
+| `index`      | String | Index name for this action                                        | no       |
+| `collection` | String | Collection name for this action                                   | no       |
+| `id`         | String | id for this action                                                | no       |
 | `volatile`   | String | JSON string representing additional information to send to Kuzzle | no       |
 
 ### **options**
@@ -54,7 +54,7 @@ The following properties are the most common.
 
 ## Return
 
-A `io.kuzzle.sdk.KuzzleResponse` object containing the Kuzzle API response. See the [API Documentation]({{ site_base_path }}api/1).
+A `io.kuzzle.sdk.KuzzleResponse` object containing the Kuzzle API response. See the [API Documentation](/api/1).
 The following properties are the most common.
 
 | Property    | Type   | Description                         |
@@ -66,7 +66,7 @@ The following properties are the most common.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

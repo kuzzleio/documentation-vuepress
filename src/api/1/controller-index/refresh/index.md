@@ -27,7 +27,6 @@ Method: POST
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -40,7 +39,7 @@ Method: POST
 
 ## Arguments
 
-* `index`: data index to refresh
+- `index`: data index to refresh
 
 ---
 
@@ -70,5 +69,5 @@ Returns an object detailing the status of the forced refresh.
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

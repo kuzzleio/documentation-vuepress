@@ -16,10 +16,10 @@ virtual void addListener(kuzzleio::Event event, kuzzleio::EventListener* listene
 
 ## Arguments
 
-| Argument   | Type                      | Description
-| ---------- |------------------------------------------------------------------------------------------------------ |
-| `event`    | <pre>kuzzleio::KuzzleEvent</pre>           | An enum representing the listener [event]({{ site_base_path }}sdk-reference/cpp/1/events)
-| `listener` | <pre>kuzzleio::EventListener\*</pre> | Pointer to a c++11 lambda
+| Argument   | Type                                 | Description                                                            |
+| ---------- | ------------------------------------ | ---------------------------------------------------------------------- |
+| `event`    | <pre>kuzzleio::KuzzleEvent</pre>     | An enum representing the listener [event](/sdk-reference/cpp/1/events) |
+| `listener` | <pre>kuzzleio::EventListener\*</pre> | Pointer to a c++11 lambda                                              |
 
 ### event
 

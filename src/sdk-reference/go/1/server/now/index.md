@@ -16,21 +16,21 @@ Returns the current server timestamp, in Epoch-millis format.
 func (s *Server) Now(options types.QueryOptions) (int64, error)
 ```
 
-| Arguments | Type         | Description                           |
-| --------- | ------------ | ------------------------------------- |
+| Arguments | Type               | Description    |
+| --------- | ------------------ | -------------- |
 | `options` | types.QueryOptions | Query options. |
 
 ### **Options**
 
 Additional query options
 
-| Option     | Type   | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Option     | Type | Description                                                                  | Default |
+| ---------- | ---- | ---------------------------------------------------------------------------- | ------- |
 | `Queuable` | bool | If true, queues the request during downtime, until connected to Kuzzle again | `true`  |
 
 ## Return
 
-Returns current server timestamp as `int64` or a `KuzzleError`. See how to [handle error]({{ site_base_path }}sdk-reference/go/1/error-handling).
+Returns current server timestamp as `int64` or a `KuzzleError`. See how to [handle error](/sdk-reference/go/1/error-handling).
 
 ## Usage
 

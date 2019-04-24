@@ -17,7 +17,7 @@ Deletes multiple users.
 
 ```http
 URL: http://kuzzle:7512/users/_mDelete[?refresh=wait_for]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -45,13 +45,13 @@ Body:
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the deletions are indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the deletions are indexed
 
 ---
 
 ## Body properties
 
-* `ids`: an array of user [kuids]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier) to delete
+- `ids`: an array of user [kuids](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier) to delete
 
 ---
 
@@ -68,7 +68,7 @@ Returns an array of successfully deleted users.
   "requestId": "<unique request identifier>",
   "result": [
     "kuid1",
-    "kuid2", 
+    "kuid2",
     "..."
    ]
   }

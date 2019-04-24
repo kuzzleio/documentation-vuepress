@@ -17,8 +17,8 @@ io.kuzzle.sdk.StringVector list(io.kuzzle.sdk.QueryOptions options) throws io.ku
 
 ## Arguments
 
-| Arguments | Type         | Description       |
-| --------- | ------------ | ----------------- |
+| Arguments | Type                       | Description       |
+| --------- | -------------------------- | ----------------- |
 | `options` | io.kuzzle.sdk.QueryOptions | The query options |
 
 ### **Options**
@@ -35,7 +35,7 @@ Returns an `io.kuzzle.sdk.StringVector` containing the list of indexes names pre
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

@@ -18,19 +18,18 @@ bool credentialsExist(const std::string& strategy, const kuzzleio::query_options
 
 ## Arguments
 
-| Arguments  | Type             | Description                                             |
-| ---------- | ---------------- | ------------------------------------------------------- |
-| `strategy` | <pre>const std::string&</pre>      | Strategy to use                                         |
-| `options`  | <pre>kuzzleio::query_options\*</pre>    | Query options
+| Arguments  | Type                                 | Description     |
+| ---------- | ------------------------------------ | --------------- |
+| `strategy` | <pre>const std::string&</pre>        | Strategy to use |
+| `options`  | <pre>kuzzleio::query_options\*</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description        | 
-| ---------- | ------- | --------------------------------- | 
+| Property   | Type<br/>(default)           | Description                                                                  |
+| ---------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-
 
 ## Return
 
@@ -38,7 +37,7 @@ A boolean indicating if credentials exists for the strategy.
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk-reference/cpp/1/error-handling).
 
 ## Usage
 

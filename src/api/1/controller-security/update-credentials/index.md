@@ -17,7 +17,7 @@ Updates a user credentials for the specified authentication strategy.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/<_id>/_update
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -47,14 +47,14 @@ Body:
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier) 
-* `strategy`: authentication strategy
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `strategy`: authentication strategy
 
 ---
 
 ## Body properties
 
-The properties that can be sent to update a user credentials depend entirely of the authentication strategy. 
+The properties that can be sent to update a user credentials depend entirely of the authentication strategy.
 
 ---
 

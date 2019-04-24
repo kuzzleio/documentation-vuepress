@@ -11,12 +11,12 @@ Loads information about the user profiles.
 ## Arguments
 
 ```js
-getProfiles ();
+getProfiles();
 ```
 
 ## Resolve
 
-Resolves to an array of [Profile]({{ site_base_path }}sdk-reference/js/6/profile).
+Resolves to an array of [Profile](/sdk-reference/js/6/profile).
 
 ## Usage
 

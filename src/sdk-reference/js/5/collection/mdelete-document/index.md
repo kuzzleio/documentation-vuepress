@@ -3,28 +3,28 @@ layout: sdk.html.hbs
 title: mdeleteDocument
 description: Collection:mdeleteDocument
 ---
-  
 
 # mDeleteDocument
-Delete multiple [Documents]({{ site_base_path }}sdk-reference/js/5/document/) according to the input IDs.
+
+Delete multiple [Documents](/sdk-reference/js/5/document/) according to the input IDs.
 
 ---
 
 ## mDeleteDocument(documentIds, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``documentIds`` | String[] | Array of IDs of documents to delete |
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments     | Type        | Description                         |
+| ------------- | ----------- | ----------------------------------- |
+| `documentIds` | String[]    | Array of IDs of documents to delete |
+| `options`     | JSON Object | Optional parameters                 |
+| `callback`    | function    | Callback handling the response      |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -36,6 +36,7 @@ Can return a 206 partial error in cases where some documents could not be delete
 ## Usage
 
 [snippet=mdelete-document-1]
+
 > Callback response:
 
 ```json

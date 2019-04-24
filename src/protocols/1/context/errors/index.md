@@ -19,11 +19,11 @@ This class should only be used to create new Kuzzle error objects.
 
 ### Properties
 
-| Properties | Type | Description |
-|-----------|------|-------------|
-| `message` | <pre>string</pre> | Error message |
-| `stack` | <pre>string[]</pre> | Error stack trace (not available in production mode) |
-| `status` | <pre>integer</pre> | Error status code, following the standard [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+| Properties | Type                | Description                                                                                                           |
+| ---------- | ------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `message`  | <pre>string</pre>   | Error message                                                                                                         |
+| `stack`    | <pre>string[]</pre> | Error stack trace (not available in production mode)                                                                  |
+| `status`   | <pre>integer</pre>  | Error status code, following the standard [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) |
 
 ---
 
@@ -135,11 +135,11 @@ const err = new context.errors.NotFoundError('error message');
 
 ---
 
-## ParseError 
+## ParseError
 
 {{{since "1.0.0"}}} / {{{deprecated "1.4.1"}}}
 
-Parse error. Use [BadRequestError]({{ site_base_path }}protocols/1/context/errors/#badrequesterror-default) instead.
+Parse error. Use [BadRequestError](/protocols/1/context/errors/#badrequesterror-default) instead.
 
 ### Status Code
 
@@ -162,15 +162,15 @@ Partial request success.
 ### Constructor
 
 ```js
-new context.error.PartialError(message, errors)
+new context.error.PartialError(message, errors);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `message` | <pre>string</pre> | Error message |
-| `failures` | <pre><a href={{ site_base_path }}protocols/1/context/errors/#kuzzleerror-default>KuzzleError[]</a></pre> | List of encountered errors |
+| Arguments  | Type                                                                                  | Description                |
+| ---------- | ------------------------------------------------------------------------------------- | -------------------------- |
+| `message`  | <pre>string</pre>                                                                     | Error message              |
+| `failures` | <pre><a href=/protocols/1/context/errors/#kuzzleerror-default>KuzzleError[]</a></pre> | List of encountered errors |
 
 ### Status Code
 
@@ -269,7 +269,7 @@ Authentication failed.
 
 `401`
 
-### Example 
+### Example
 
 ```js
 const err = new context.errors.UnauthorizedError('error message');

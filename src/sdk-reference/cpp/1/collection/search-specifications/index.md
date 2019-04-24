@@ -6,8 +6,6 @@ description: Searches collection specifications
 
 # searchSpecifications
 
-
-
 Searches collection specifications.
 
 There is a limit to how many items can be returned by a single search query.
@@ -23,25 +21,25 @@ That limit is by default set at 10000, and you can't get over it even with the f
 kuzzleio::SearchResult* searchSpecifications(const std::string& query);
 
 kuzzleio::SearchResult* searchSpecifications(
-    const std::string& query, 
+    const std::string& query,
     const kuzzleio::query_options& options);
 ```
 
 ## Arguments
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `query` | <pre>const std::string&</pre> | JSON string representing the query to match |
-| `options` | <pre>kuzzleio::query_options\*</pre> | Query options |
+| Argument  | Type                                 | Description                                 |
+| --------- | ------------------------------------ | ------------------------------------------- |
+| `query`   | <pre>const std::string&</pre>        | JSON string representing the query to match |
+| `options` | <pre>kuzzleio::query_options\*</pre> | Query options                               |
 
 ### options
 
-| Options    | Type (default) | Description                       |
-| ---------- | -------------- | --------------------------------- |
-| `queuable` | <pre>bool</pre> (`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-| `from` | <pre>int</pre><br/>(`0`) | Offset of the first document to fetch |
-| `size` | <pre>int</pre><br/>(`10`) | Maximum number of documents to retrieve per page  |
-| `scroll` | <pre>const std::string&</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units)) |
+| Options    | Type (default)                           | Description                                                                                                                                                                                                       |
+| ---------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `queuable` | <pre>bool</pre> (`true`)                 | If true, queues the request during downtime, until connected to Kuzzle again                                                                                                                                      |
+| `from`     | <pre>int</pre><br/>(`0`)                 | Offset of the first document to fetch                                                                                                                                                                             |
+| `size`     | <pre>int</pre><br/>(`10`)                | Maximum number of documents to retrieve per page                                                                                                                                                                  |
+| `scroll`   | <pre>const std::string&</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/common-options.html#time-units)) |
 
 ## Query properties
 
@@ -55,11 +53,11 @@ An empty body matches all documents in the queried collection.
 
 ## Return
 
-Returns a [kuzzleio::SearchResult]({{ site_base_path }}sdk-reference/cpp/1/search-result).
+Returns a [kuzzleio::SearchResult](/sdk-reference/cpp/1/search-result).
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle errors]({{ site_base_path }}sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle errors](/sdk-reference/cpp/1/error-handling).
 
 ## Usage
 

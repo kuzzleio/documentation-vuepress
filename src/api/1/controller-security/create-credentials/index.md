@@ -17,7 +17,7 @@ Creates authentication credentials for a user.
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/<_id>/_create
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -49,8 +49,8 @@ Body:
 
 ## Arguments
 
-* `_id`: user unique [kuid]({{ site_base_path }}guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid)
-* `strategy`: name of the target authentication strategy for the credentials
+- `_id`: user unique [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid)
+- `strategy`: name of the target authentication strategy for the credentials
 
 ---
 
@@ -62,7 +62,7 @@ The credentials to send. The expected properties depend on the target authentica
 
 ## Response
 
-The result content depends on the authentication strategy. 
+The result content depends on the authentication strategy.
 
 Example with the `local` authentication strategy:
 

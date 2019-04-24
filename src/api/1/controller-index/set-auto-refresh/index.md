@@ -33,7 +33,6 @@ Method: POST
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -49,13 +48,13 @@ Method: POST
 
 ## Arguments
 
-* `index`: data index to configure
+- `index`: data index to configure
 
 ---
 
 ## Body properties
 
-* `autoRefresh`: a boolean value describing the state of the index `autoRefresh` flag
+- `autoRefresh`: a boolean value describing the state of the index `autoRefresh` flag
 
 ---
 
@@ -81,5 +80,5 @@ Returns an object confirming the new value of the `autoRefresh` index property.
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

@@ -19,7 +19,7 @@ Updates a security role definition.
 
 ```http
 URL: http://kuzzle:7512/roles/<_id>/_update[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -58,17 +58,17 @@ Body:
 
 ## Arguments
 
-* `_id`: role identifier
+- `_id`: role identifier
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the role changes are indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the role changes are indexed
 
 ---
 
 ## Body properties
 
-* `controllers`: [role definition]({{ site_base_path }}guide/1/essentials/security/#defining-roles)
+- `controllers`: [role definition](/guide/1/essentials/security/#defining-roles)
 
 ---
 
@@ -78,8 +78,8 @@ Returns the updated role identifier and version number.
 
 ```javascript
 {
-  "status": 200,                     
-  "error": null,                     
+  "status": 200,
+  "error": null,
   "action": "updateRole",
   "controller": "security",
   "requestId": "<unique request identifier>",

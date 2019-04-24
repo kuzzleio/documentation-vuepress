@@ -15,30 +15,30 @@ Except for HTTP, Kuzzle expects the exact same query format for all communicatio
 
 HTTP queries are split into the four HTTP usual parts: URL, verb, headers and body.
 
-Every API route documentation has a dedicated HTTP section, explaining how to use that route with the HTTP protocol. 
+Every API route documentation has a dedicated HTTP section, explaining how to use that route with the HTTP protocol.
 
 ### Optional headers
 
 The following list of HTTP headers can be added to any and all HTTP requests:
 
-* `Accept-Encoding`: compression algorithm(s) usable by Kuzzle to encode the query response. Accepted encodings, in order of preference: `gzip`, `deflate`, `identity`. 
-* `Authorization` (expected value: `Bearer <token>`): user's authentification token, obtained through the [login]({{ site_base_path }}api/1/controller-auth/login) method
-* `Content-Encoding`: compression algorithm(s) used to encode the body sent to Kuzzle. Accepted encodings: `deflate`, `gzip`, `identity`
+- `Accept-Encoding`: compression algorithm(s) usable by Kuzzle to encode the query response. Accepted encodings, in order of preference: `gzip`, `deflate`, `identity`.
+- `Authorization` (expected value: `Bearer <token>`): user's authentification token, obtained through the [login](/api/1/controller-auth/login) method
+- `Content-Encoding`: compression algorithm(s) used to encode the body sent to Kuzzle. Accepted encodings: `deflate`, `gzip`, `identity`
 
 ### Body encoding
 
 Body contents can be sent in the following formats:
 
-* `application/json`: raw JSON
-* `multipart/form-data`: HTML forms; both field-value pairs and field-files pairs can be sent that way
+- `application/json`: raw JSON
+- `multipart/form-data`: HTML forms; both field-value pairs and field-files pairs can be sent that way
 
 If a HTML form is sent that way, the resulting body content will be translated into a JSON object, with as many keys as the provided form fields.  
 If the form field holds a file, then the corresponding JSON key will refer to an object instead of a mere value, with the following properties:
 
-  * `filename`: file's name
-  * `encoding`: file encoding
-  * `mimetype`: MIME type
-  * `file`: file content, encoded in base64
+- `filename`: file's name
+- `encoding`: file encoding
+- `mimetype`: MIME type
+- `file`: file content, encoded in base64
 
 ---
 
@@ -72,8 +72,8 @@ Queries made to Kuzzle must be encoded using JSON, and have the following format
 
 The following 2 parameters are required by all API requests, as these are directly used by Kuzzle to redirect the query to the correct API action:
 
-* `controller`: accessed Kuzzle API controller 
-* `action`: API controller action to be executed
+- `controller`: accessed Kuzzle API controller
+- `action`: API controller action to be executed
 
 Depending on the API route executed, other parameters may be required. Those are detailed in the corresponding API sections.
 
@@ -81,16 +81,16 @@ Depending on the API route executed, other parameters may be required. Those are
 
 There are 3 parameters that can be provided to all queries, independently to the API route executed:
 
-* `jwt`: user's authentification token, obtained through the [login]({{ site_base_path }}api/1/controller-auth/login) method
-* `requestId`: user-defined request identifier. Kuzzle does not guarantee that responses are sent back in the same order than queries are made; use that field to link responses to their  query of origin
-* `volatile`: user-defined data, without any impact to the query. Use that object to pass information about the query itself to real-time subscribers. Read more [here]({{ site_base_path }}api/1/essentials/volatile-data/)
+- `jwt`: user's authentification token, obtained through the [login](/api/1/controller-auth/login) method
+- `requestId`: user-defined request identifier. Kuzzle does not guarantee that responses are sent back in the same order than queries are made; use that field to link responses to their query of origin
+- `volatile`: user-defined data, without any impact to the query. Use that object to pass information about the query itself to real-time subscribers. Read more [here](/api/1/essentials/volatile-data/)
 
 Additionally, a few other parameters are very commonly found in API queries:
 
-* `_id`: unique identifier (e.g. document ID, user kuid, memory storage key, ...)
-* `body`: query content (e.g. document content, message content, mappings, ...)
-* `collection`: data collection
-* `index`: data index
+- `_id`: unique identifier (e.g. document ID, user kuid, memory storage key, ...)
+- `body`: query content (e.g. document content, message content, mappings, ...)
+- `collection`: data collection
+- `index`: data index
 
 ### Other parameters
 

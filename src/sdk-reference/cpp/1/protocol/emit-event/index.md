@@ -16,13 +16,13 @@ virtual void emitEvent(kuzzleio::Event event) = 0;
 
 ## Arguments
 
-| Argument   | Type                      | Description
-| ---------- | ------------------------- | -----------
-| `event`    | <pre>kuzzleio::Event</pre>  | Enum representing the event to emit
+| Argument | Type                       | Description                         |
+| -------- | -------------------------- | ----------------------------------- |
+| `event`  | <pre>kuzzleio::Event</pre> | Enum representing the event to emit |
 
 ### event
 
-One of the following [event]({{ site_base_path }}sdk-reference/cpp/1/events):
+One of the following [event](/sdk-reference/cpp/1/events):
 
 ```cpp
 EVENT_CONNECTED,

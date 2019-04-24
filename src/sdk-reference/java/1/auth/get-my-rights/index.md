@@ -19,15 +19,15 @@ public io.kuzzle.sdk.UserRight[] getMyRights();
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `options`  | io.kuzzle.sdk.QueryOptions    | An object containing query options
+| Arguments | Type                       | Description                        |
+| --------- | -------------------------- | ---------------------------------- |
+| `options` | io.kuzzle.sdk.QueryOptions | An object containing query options |
 
 ### **Options**
 
 Additional query options
 
-| Property     | Type    | Description                       | Default |
+| Property   | Type    | Description                       | Default |
 | ---------- | ------- | --------------------------------- | ------- |
 | `queuable` | boolean | Make this request queuable or not | `true`  |
 
@@ -35,17 +35,17 @@ Additional query options
 
 An array of `UserRight`. The `UserRight` class contain:
 
-| Property     | Type    | Description
-| ---------- | ------- | ---------------------------------
-| `controller` | String | Controller on wich the rights are applied |
-| `action` | String | Action on wich the rights are applied |
-| `index` | String | Index on wich the rights are applied |
-| `collection` | String | Collection on wich the rights are applied |
-| `value` | String | Rights (`allowed|denied|conditional`) |
+| Property      | Type   | Description                               |
+| ------------- | ------ | ----------------------------------------- |
+| `controller`  | String | Controller on wich the rights are applied |
+| `action`      | String | Action on wich the rights are applied     |
+| `index`       | String | Index on wich the rights are applied      |
+|  `collection` | String | Collection on wich the rights are applied |
+|  `value`      | String | Rights (`allowed|denied|conditional`)     |
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

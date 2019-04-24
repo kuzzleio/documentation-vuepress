@@ -27,10 +27,10 @@ public void setAutoRefresh(String index , boolean autoRefresh) throws io.kuzzle.
 
 ## Arguments
 
-| Arguments     | Type         | Description       | Required |
-| ------------- | ------------ | ----------------- | -------- |
-| `index`       | String       | Index name        | yes      |
-| `autoRefresh` | Boolean      | autoRefresh flag  | yes      |
+| Arguments     | Type                       | Description       | Required |
+| ------------- | -------------------------- | ----------------- | -------- |
+| `index`       | String                     | Index name        | yes      |
+| `autoRefresh` | Boolean                    | autoRefresh flag  | yes      |
 | `options`     | io.kuzzle.sdk.QueryOptions | The query options | no       |
 
 ### **Options**
@@ -43,7 +43,7 @@ Additional query options
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

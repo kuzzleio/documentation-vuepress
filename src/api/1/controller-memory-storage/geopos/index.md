@@ -7,7 +7,7 @@ title: geopos
 
 {{{since "1.0.0"}}}
 
-Returns the position (`[longitude, latitude]`) of the provided key's members (see [geoadd]({{ site_base_path }}api/1/controller-memory-storage/geoadd/)).  
+Returns the position (`[longitude, latitude]`) of the provided key's members (see [geoadd](/api/1/controller-memory-storage/geoadd/)).
 
 [[_Redis documentation_]](https://redis.io/commands/geopos)
 
@@ -37,13 +37,12 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key containing the geopoints to fetch
-* `members`: list of geopoint names to fetch
+- `_id`: key containing the geopoints to fetch
+- `members`: list of geopoint names to fetch
 
 ---
 
 ## Response
-
 
 Returns the members positions (`[longitude, latitude]`), in the same order than the one provided in the query.
 

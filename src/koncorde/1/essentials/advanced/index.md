@@ -6,7 +6,7 @@ order: 600
 
 # Advanced Notions
 
-## Filter Equivalence 
+## Filter Equivalence
 
 Koncorde filter identifiers are generated based on their content in its [disjunctive normal form](https://en.wikipedia.org/wiki/Disjunctive_normal_form),
 which guarantees that different **filters that match the same scope will have the same identifier**.
@@ -18,10 +18,10 @@ For example, both these filters will have the same filter identifier:
   "and": [
     {
       "not": {
-        "in": {"some_document_field": ["foo", "bar"]}
+        "in": { "some_document_field": ["foo", "bar"] }
       }
     },
-    {"missing": {"field": "another_field"}}
+    { "missing": { "field": "another_field" } }
   ]
 }
 ```
@@ -34,11 +34,11 @@ And:
     "or": [
       {
         "or": [
-          {"equals": {"some_document_field": "foo"}},
-          {"equals": {"some_document_field": "bar"}}
+          { "equals": { "some_document_field": "foo" } },
+          { "equals": { "some_document_field": "bar" } }
         ]
       },
-      {"exists": {"field": "another_field"}}
+      { "exists": { "field": "another_field" } }
     ]
   }
 }
@@ -58,10 +58,10 @@ Given the following document:
 
 ```json
 {
-    "name": {
-        "first": "Grace",
-        "last": "Hopper"
-    }
+  "name": {
+    "first": "Grace",
+    "last": "Hopper"
+  }
 }
 ```
 
@@ -69,15 +69,15 @@ Here is a filter, testing for equality on the field `last` in the `name` object:
 
 ```json
 {
-    "equals": {
-        "name.last": "Hopper"
-    }
+  "equals": {
+    "name.last": "Hopper"
+  }
 }
 ```
 
 ## Matching array values
 
-A few keywords, like [exists]({{ site_base_path }}koncorde/1/essentials/terms/#exists-default) or [missing]({{ site_base_path }}koncorde/1/essentials/terms/#missing-default), allow searching for array values.
+A few keywords, like [exists](/koncorde/1/essentials/terms/#exists-default) or [missing](/koncorde/1/essentials/terms/#missing-default), allow searching for array values.
 
 These values can be accessed with the following syntax: `<array path>[<value>]`  
 Only one array value per `exists`/`missing` keyword can be searched in this manner.
@@ -86,11 +86,10 @@ Array values must be scalar. Allowed types are `string`, `number`, `boolean` and
 
 The array value must be provided using the JSON format:
 
-* Strings: the value must be enclosed in double quotes. Example: `foo["string value"]`
-* Numbers, booleans and `null` must be used as is. Examples: `foo[3.14]`, `foo[false]`, `foo[null]`
+- Strings: the value must be enclosed in double quotes. Example: `foo["string value"]`
+- Numbers, booleans and `null` must be used as is. Examples: `foo[3.14]`, `foo[false]`, `foo[null]`
 
-
-Array values can be combined with [nested properties]({{ site_base_path }}koncorde/1/essentials/advanced/#testing-nested-fields-default): `nested.array["value"]`
+Array values can be combined with [nested properties](/koncorde/1/essentials/advanced/#testing-nested-fields-default): `nested.array["value"]`
 
 ### Example
 
@@ -98,11 +97,11 @@ Given the following document:
 
 ```json
 {
-    "name": {
-        "first": "Grace",
-        "last": "Hopper",
-        "hobbies": ["compiler", "COBOL"]
-    }
+  "name": {
+    "first": "Grace",
+    "last": "Hopper",
+    "hobbies": ["compiler", "COBOL"]
+  }
 }
 ```
 

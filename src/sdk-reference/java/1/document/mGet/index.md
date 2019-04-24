@@ -28,20 +28,20 @@ String mGet(
 
 <br/>
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>String</pre> | Index name |
-| `collection` | <pre>String</pre> | Collection name |
-| `ids` | io.kuzzle.sdk.StringVector | Document IDs |
-| `options` | <pre>io.kuzzle.sdk.QueryOptions</pre> | Query options |
+| Argument     | Type                                  | Description     |
+| ------------ | ------------------------------------- | --------------- |
+| `index`      | <pre>String</pre>                     | Index name      |
+| `collection` | <pre>String</pre>                     | Collection name |
+| `ids`        | io.kuzzle.sdk.StringVector            | Document IDs    |
+| `options`    | <pre>io.kuzzle.sdk.QueryOptions</pre> | Query options   |
 
 ### options
 
 Additional query options
 
-| Option | Type<br/>(default) | Description |
-| --- | --- | --- |
-| `queuable` | <pre>boolean</pre><br/>(`true`)| If true, queues the request during downtime, until connected to Kuzzle again |
+| Option     | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
+| `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Return
 
@@ -49,7 +49,7 @@ Returns a JSON string containing the retrieved documents.
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

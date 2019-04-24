@@ -22,7 +22,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -36,8 +35,8 @@ Method: GET
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -62,4 +61,4 @@ Returns a boolean telling whether the provided data collection exists:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

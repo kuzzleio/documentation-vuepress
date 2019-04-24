@@ -18,18 +18,18 @@ UpdateSpecifications(index string, collection string, specifications json.RawMes
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | string | Index name    | yes  |
-| ``collection`` | string | Collection name    | yes  |
-| ``specifications`` | json.RawMessage | Specifications in JSON format  | yes  |
-| `options` | QueryOptions | Query options | no       |
+| Arguments        | Type            | Description                   | Required |
+| ---------------- | --------------- | ----------------------------- | -------- |
+| `index`          | string          | Index name                    | yes      |
+| `collection`     | string          | Collection name               | yes      |
+| `specifications` | json.RawMessage | Specifications in JSON format | yes      |
+| `options`        | QueryOptions    | Query options                 | no       |
 
 ### **specifications**
 
-A JSON representation of the specifications.  
+A JSON representation of the specifications.
 
-The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/datavalidation):
+The JSON must follow the [Specification Structure](/guide/1/datavalidation):
 
 ```json
 {
@@ -44,8 +44,8 @@ The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/d
 
 Additional query options
 
-| Property   | Type    | Description                       | Default |
-| ---------- | ------- | --------------------------------- | ------- |
+| Property   | Type | Description                       | Default |
+| ---------- | ---- | --------------------------------- | ------- |
 | `queuable` | bool | Make this request queuable or not | `true`  |
 
 ## Return

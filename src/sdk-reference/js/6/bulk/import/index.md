@@ -6,12 +6,11 @@ description: Performs a bulk import on a collection
 
 # Import
 
-
 Create, update or delete large amount of documents as fast as possible.
 
-This route is faster than the `document:m*` routes family (e.g. [document:mCreate]({{ site_base_path }}sdk-reference/js/6/document/mCreate)), but no real-time notifications will be generated, even if some of the documents in the import match subscription filters.
+This route is faster than the `document:m*` routes family (e.g. [document:mCreate](/sdk-reference/js/6/document/mCreate)), but no real-time notifications will be generated, even if some of the documents in the import match subscription filters.
 
-If some documents actions fail, the client will receive a [PartialError]({{ site_base_path }}api/1/essentials/errors/#partialerror) error.
+If some documents actions fail, the client will receive a [PartialError](/api/1/essentials/errors/#partialerror) error.
 
 <br/>
 
@@ -21,11 +20,10 @@ import (bulkData, [options])
 
 <br/>
 
-| Arguments  | Type        | Description                                         |
-| ---------- | ----------- | --------------------------------------------------- |
+| Arguments  | Type                | Description                                     |
+| ---------- | ------------------- | ----------------------------------------------- |
 | `bulkData` | <pre>object[]</pre> | List of documents to be added to the collection |
-| `options`  | <pre>object</pre> | Query options         |
-
+| `options`  | <pre>object</pre>   | Query options                                   |
 
 ### bulkData
 
@@ -55,8 +53,8 @@ Learn more at [Elasticsearch Bulk API](https://www.elastic.co/guide/en/elasticse
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                                                                  |
+| ---------- | ------------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ---
@@ -65,10 +63,10 @@ Additional query options
 
 An object containing information about the import status for each document.
 
-| Property     | Type  | Description   |
-| -------------- | --------- | ------------- |
-|  `errors`  |  <pre>boolean</pre> |  `true` if there is some errors with the import |
-|  `items`  |  <pre>object[]</pre> |  Array of object containing document import statuses |
+| Property | Type                | Description                                         |
+| -------- | ------------------- | --------------------------------------------------- |
+| `errors` | <pre>boolean</pre>  | `true` if there is some errors with the import      |
+| `items`  | <pre>object[]</pre> | Array of object containing document import statuses |
 
 Each object has the following structure:
 

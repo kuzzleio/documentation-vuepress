@@ -14,31 +14,31 @@ When the validation specification is not formatted correctly, a detailed error m
 
 ```cpp
 std::string updateSpecifications(
-    const std::string& index, 
-    const std::string& collection, 
+    const std::string& index,
+    const std::string& collection,
     const std::string& specifications);
 
 std::string updateSpecifications(
-    const std::string& index, 
-    const std::string& collection, 
-    const std::string& specifications, 
+    const std::string& index,
+    const std::string& collection,
+    const std::string& specifications,
     const kuzzleio::query_options& options);
 ```
 
 ## Arguments
 
-| Arguments    | Type    | Description |
-|--------------|---------|-------------|
-| `index` | <pre>const std::string&</pre> | Index name    | 
-| `collection` | <pre>const std::string&</pre> | Collection name    |
-| `specifications` | const std::string& | Specification in JSON format | yes
-| `options` | <pre>kuzzleio::query_options\*</pre> | Query options    | 
+| Arguments        | Type                                 | Description                  |
+| ---------------- | ------------------------------------ | ---------------------------- |
+| `index`          | <pre>const std::string&</pre>        | Index name                   |
+| `collection`     | <pre>const std::string&</pre>        | Collection name              |
+| `specifications` | const std::string&                   | Specification in JSON format | yes |
+| `options`        | <pre>kuzzleio::query_options\*</pre> | Query options                |
 
 ### specifications
 
-A JSON string representing the specifications.  
+A JSON string representing the specifications.
 
-The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/datavalidation/schema/):
+The JSON must follow the [Specification Structure](/guide/1/datavalidation/schema/):
 
 ```json
 {
@@ -47,7 +47,7 @@ The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/d
     "licence": {
       "mandatory": true,
       "type": "string"
-    },
+    }
     // ... specification for each field
   }
 }
@@ -57,8 +57,8 @@ The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/d
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description        |
-| ---------- | ------- | --------------------------------- | 
+| Property   | Type<br/>(default)           | Description                                                                  |
+| ---------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Return

@@ -19,18 +19,18 @@ io.kuzzle.sdk.ValidationResponse validateSpecifications((String index, String co
 
 ## Arguments
 
-| Arguments    | Type    | Description | Required
-|--------------|---------|-------------|----------
-| ``index`` | java.lang.String | Index name    | yes  |
-| ``collection`` | java.lang.String | Collection name    | yes  |
-| `specifications` | java.lang.String | Specification to validate in JSON format | yes  |
-| `options` | io.kuzzle.sdk.QueryOptions | The query options | no       |
+| Arguments        | Type                       | Description                              | Required |
+| ---------------- | -------------------------- | ---------------------------------------- | -------- |
+| `index`          | java.lang.String           | Index name                               | yes      |
+| `collection`     | java.lang.String           | Collection name                          | yes      |
+| `specifications` | java.lang.String           | Specification to validate in JSON format | yes      |
+| `options`        | io.kuzzle.sdk.QueryOptions | The query options                        | no       |
 
 ### **specifications**
 
 A JSON representation of the specifications.
 
-The JSON must follow the [Specification Structure]({{ site_base_path }}guide/1/datavalidation):
+The JSON must follow the [Specification Structure](/guide/1/datavalidation):
 
 ```json
 {
@@ -54,15 +54,15 @@ Additional query options
 A `io.kuzzle.sdk.ValidationResponse` which contain information about the specifications validity.
 These properties are accessible with the standard getters.
 
-| Property   | Type    | Description        |
-| ---------- | ------- | --------------------- |
-| `valid` | boolean | Specification validity |
-| `details` | String[] | Details about each specification errors |
-| `description` | String | General error message |
+| Property      | Type     | Description                             |
+| ------------- | -------- | --------------------------------------- |
+| `valid`       | boolean  | Specification validity                  |
+| `details`     | String[] | Details about each specification errors |
+| `description` | String   | General error message                   |
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error]({{ site_base_path }}sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
 
 ## Usage
 

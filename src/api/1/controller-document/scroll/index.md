@@ -9,7 +9,7 @@ title: scroll
 
 Moves a search cursor forward.
 
-A search cursor is created by a [search]({{ site_base_path }}api/1/controller-document/search/) API call, with a `scroll` value provided.
+A search cursor is created by a [search](/api/1/controller-document/search/) API call, with a `scroll` value provided.
 
 Results returned by a `scroll` request reflect the state of the index at the time of the initial search request, like a fixed snapshot. Subsequent changes to documents do not affect the scroll results.
 
@@ -39,13 +39,13 @@ Method: GET
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
-* `scrollId`: cursor unique identifier, obtained by either a search or a scroll query
+- `collection`: data collection
+- `index`: data index
+- `scrollId`: cursor unique identifier, obtained by either a search or a scroll query
 
 ### Optional:
 
-* `scroll`: refresh the cursor duration, using the [time to live](https://www.elastic.co/guide/en/elasticsearch/reference/5.4/common-options.html#time-units) syntax.
+- `scroll`: refresh the cursor duration, using the [time to live](https://www.elastic.co/guide/en/elasticsearch/reference/5.4/common-options.html#time-units) syntax.
 
 ---
 
@@ -53,12 +53,12 @@ Method: GET
 
 Returns a paginated search result set, with the following properties:
 
-* `hits`: array of found documents. Each document has the following properties:
-  * `_id`: document unique identifier
-  * `_score`: [relevance score](https://www.elastic.co/guide/en/elasticsearch/guide/current/relevance-intro.html)
-  * `_source`: new document content
-* `scrollId`: identifier to the next page of result. Can be different than the previous one(s)
-* `total`: total number of found documents. Usually greater than the number of documents in a result page
+- `hits`: array of found documents. Each document has the following properties:
+  - `_id`: document unique identifier
+  - `_score`: [relevance score](https://www.elastic.co/guide/en/elasticsearch/guide/current/relevance-intro.html)
+  - `_source`: new document content
+- `scrollId`: identifier to the next page of result. Can be different than the previous one(s)
+- `total`: total number of found documents. Usually greater than the number of documents in a result page
 
 ```javascript
 {
@@ -73,14 +73,14 @@ Returns a paginated search result set, with the following properties:
       {
         "_id": "<document unique identifier>",
         "_score": 1,
-        "_source": { 
+        "_source": {
           // document content
         }
       },
       {
         "_id": "<another document unique identifier>",
         "_score": 1,
-        "_source": { 
+        "_source": {
           // document content
         }
       }

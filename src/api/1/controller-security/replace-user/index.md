@@ -17,7 +17,7 @@ Replaces a user with new configuration.
 
 ```http
 URL: http://kuzzle:7512/users/<_id>/_replace[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -48,21 +48,21 @@ Body:
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the user replacement is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the user replacement is indexed
 
 ---
 
 ## Body properties
 
-* `profileIds`: an array of security profiles attributed to the user
+- `profileIds`: an array of security profiles attributed to the user
 
 ### Optional:
 
-* any other property: additional user information
+- any other property: additional user information
 
 ---
 
@@ -70,8 +70,8 @@ Body:
 
 Returns the user replacement status:
 
-* `_id`: new user kuid
-* `_source`: new user content and attributed profiles
+- `_id`: new user kuid
+- `_source`: new user content and attributed profiles
 
 ```javascript
 {

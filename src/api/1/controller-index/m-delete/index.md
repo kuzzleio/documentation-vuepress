@@ -17,17 +17,13 @@ Deletes multiple indexes.
 
 ```http
 URL: http://kuzzle:7512/_mDelete
-Method: DELETE  
+Method: DELETE
 Body:
 ```
 
 ```js
 {
-  indexes: [
-    "index 1",
-    "index 2",
-    "index ..."
-  ]
+  indexes: ['index 1', 'index 2', 'index ...'];
 }
 ```
 
@@ -55,7 +51,7 @@ If no index is specified in the body, then all indexes that the current user is 
 
 ### Optional:
 
-* `indexes`: an array of index names to delete
+- `indexes`: an array of index names to delete
 
 ---
 
@@ -83,4 +79,4 @@ Returns an array of indexes that were actually deleted.
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

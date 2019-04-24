@@ -14,14 +14,14 @@ Declares a new client connection to Kuzzle.
 ### Arguments
 
 ```js
-newConnection(connection)
+newConnection(connection);
 ```
 
 <br/>
 
-| Arguments | Type | Description |
-|-----------|------|-------------|
-| `connection` | <pre><a href={{ site_base_path }}protocols/1/context/clientconnection>ClientConnection</a></pre> | New user connection |
+| Arguments    | Type                                                                          | Description         |
+| ------------ | ----------------------------------------------------------------------------- | ------------------- |
+| `connection` | <pre><a href=/protocols/1/context/clientconnection>ClientConnection</a></pre> | New user connection |
 
 ---
 

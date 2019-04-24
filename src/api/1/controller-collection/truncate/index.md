@@ -7,7 +7,7 @@ title: truncate
 
 {{{since "1.0.0"}}}
 
-Empties a collection by removing all its documents, while keeping any associated mapping.  
+Empties a collection by removing all its documents, while keeping any associated mapping.
 
 ---
 
@@ -22,7 +22,6 @@ Method: DELETE
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -36,8 +35,8 @@ Method: DELETE
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -64,5 +63,5 @@ Returns a confirmation that the collection is being emptied:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

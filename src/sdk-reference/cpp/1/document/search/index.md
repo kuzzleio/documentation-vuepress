@@ -17,41 +17,40 @@ That limit is by default set at 10000 documents, and you can't get over it even 
   </p>
 </div>
 
-
 ## Arguments
 
 ```cpp
 std::shared_ptr<kuzzleio::SearchResult> search(
-    const std::string& index, 
-    const std::string& collection, 
+    const std::string& index,
+    const std::string& collection,
     const std::string& query);
 
 std::shared_ptr<kuzzleio::SearchResult> search(
-    const std::string& index, 
-    const std::string& collection, 
-    const std::string& query, 
+    const std::string& index,
+    const std::string& collection,
+    const std::string& query,
     const kuzzleio::query_options& options);
 ```
 
 <br/>
 
-| Argument | Type | Description |
-| --- | --- | --- |
-| `index` | <pre>const std::string&</pre> | Index name |
-| `collection` | <pre>const std::string&</pre> | Collection name |
-| `query` | <pre>const std::string&</pre> | JSON string representing the search query |
-| `options` | <pre>kuzzleio::query_options\*</pre> | Query options |
+| Argument     | Type                                 | Description                               |
+| ------------ | ------------------------------------ | ----------------------------------------- |
+| `index`      | <pre>const std::string&</pre>        | Index name                                |
+| `collection` | <pre>const std::string&</pre>        | Collection name                           |
+| `query`      | <pre>const std::string&</pre>        | JSON string representing the search query |
+| `options`    | <pre>kuzzleio::query_options\*</pre> | Query options                             |
 
 ### options
 
 Additional query options
 
-| Option | Type<br/>(default) | Description |
-| ------ | -------------- | ----------- |
-| `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again  |
-| `from` | <pre>int</pre><br/>(`0`) | Offset of the first document to fetch |
-| `size` | <pre>int</pre><br/>(`10`) | Maximum number of documents to retrieve per page  |
-| `scroll` | <pre>const std::string&</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units)) |
+| Option     | Type<br/>(default)                       | Description                                                                                                                                                                                                           |
+| ---------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `queuable` | <pre>bool</pre><br/>(`true`)             | If true, queues the request during downtime, until connected to Kuzzle again                                                                                                                                          |
+| `from`     | <pre>int</pre><br/>(`0`)                 | Offset of the first document to fetch                                                                                                                                                                                 |
+| `size`     | <pre>int</pre><br/>(`10`)                | Maximum number of documents to retrieve per page                                                                                                                                                                      |
+| `scroll`   | <pre>const std::string&</pre><br/>(`""`) | When set, gets a forward-only cursor having its ttl set to the given value (ie `30s`; cf [elasticsearch time limits](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#time-units)) |
 
 ### query
 
@@ -65,11 +64,11 @@ An empty body matches all documents in the queried collection.
 
 ## Return
 
-Returns a [kuzzleio::SearchResult]({{ site_base_path }}sdk-reference/cpp/1/search-result) instance.
+Returns a [kuzzleio::SearchResult](/sdk-reference/cpp/1/search-result) instance.
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle errors]({{ site_base_path }}sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle errors](/sdk-reference/cpp/1/error-handling).
 
 ## Usage
 

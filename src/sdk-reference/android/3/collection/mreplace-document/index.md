@@ -3,28 +3,28 @@ layout: sdk.html.hbs
 title: mreplaceDocument
 description: Collection:mreplaceDocument
 ---
-  
 
 # mReplaceDocument
-Replace the provided [Documents]({{ site_base_path }}sdk-reference/android/3/document/).
+
+Replace the provided [Documents](/sdk-reference/android/3/document/).
 
 ---
 
 ## mReplaceDocument(documents, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``documents`` | Document[] | Array of [Document]({{ site_base_path }}sdk-reference/android/3/document/) to replace |
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Optional callback |
+| Arguments   | Type        | Description                                                        |
+| ----------- | ----------- | ------------------------------------------------------------------ |
+| `documents` | Document[]  | Array of [Document](/sdk-reference/android/3/document/) to replace |
+| `options`   | JSON Object | Optional parameters                                                |
+| `callback`  | function    | Optional callback                                                  |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -37,19 +37,17 @@ Returns the `Collection` object to allow chaining.
 ## Callback Response
 
 Returns a `JSON object` containing the raw Kuzzle response.
-Can return a 206 partial error in cases where documents could not be replaced. 
+Can return a 206 partial error in cases where documents could not be replaced.
 
 ## Usage
 
 [snippet=mreplace-document-1]
+
 > Callback response:
 
 ```json
 {
-  "hits": [
-    {"first": "document"},
-    {"second": "document"}
-  ],
+  "hits": [{ "first": "document" }, { "second": "document" }],
   "total": 2
 }
 ```

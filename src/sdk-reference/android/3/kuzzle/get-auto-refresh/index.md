@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getAutoRefresh
 description: Kuzzle:getAutoRefresh
 ---
-  
 
 # getAutoRefresh
+
 The `autoRefresh` flag, when set to true, will make Kuzzle perform a
 [`refresh`](https://www.elastic.co/guide/en/elasticsearch/reference/5.4/docs-refresh.html) request
 immediately after each write request, causing documents to be immediately visible in a search.
@@ -26,19 +26,19 @@ The `getAutoRefresh` function returns the current `autoRefresh` status for the g
 
 #### getAutoRefresh([index], [options], callback)
 
-| Arguments | Type | Description
-|-----------|------|------------
-| `index` | string | Optional index to query. If no set, defaults to [Kuzzle.defaultIndex]({{ site_base_path }}sdk-reference/android/3/kuzzle/#properties)
-| `options` | JSON object | Optional parameters
-| `callback`| function | Callback handling the response
+| Arguments  | Type        | Description                                                                                                        |
+| ---------- | ----------- | ------------------------------------------------------------------------------------------------------------------ |
+| `index`    | string      | Optional index to query. If no set, defaults to [Kuzzle.defaultIndex](/sdk-reference/android/3/kuzzle/#properties) |
+| `options`  | JSON object | Optional parameters                                                                                                |
+| `callback` | function    | Callback handling the response                                                                                     |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default
-|--------|------|-------------|---------
-| `queuable` | boolean | Make this request queuable or not  | `true`
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 

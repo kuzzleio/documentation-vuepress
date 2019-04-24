@@ -17,7 +17,7 @@ Gets multiple documents.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_mGet[?includeTrash=<true|false>]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -46,18 +46,18 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `includeTrash`: if set, documents in the [trashcan]({{ site_base_path }}guide/1/essentials/document-metadata/) can be returned.
+- `includeTrash`: if set, documents in the [trashcan](/guide/1/essentials/document-metadata/) can be returned.
 
 ---
 
 ## Body properties
 
-* `ids`: an array of document identifiers to fetch
+- `ids`: an array of document identifiers to fetch
 
 ---
 
@@ -67,12 +67,11 @@ Returns a `hits` array with the list of retrieved documents.
 
 Each document is an object with the following properties:
 
-* `_id`: document unique identifier
-* `_source`: document content
-* `_version`: version number of the document
+- `_id`: document unique identifier
+- `_source`: document content
+- `_version`: version number of the document
 
-If one or more document retrievals fail, the response status is set to `206`, and the `error` object contain a [partial error]({{ site_base_path }}api/1/essentials/errors/#partialerror) error.
-
+If one or more document retrievals fail, the response status is set to `206`, and the `error` object contain a [partial error](/api/1/essentials/errors/#partialerror) error.
 
 ```js
 {

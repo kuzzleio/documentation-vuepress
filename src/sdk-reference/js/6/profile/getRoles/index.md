@@ -11,12 +11,12 @@ Loads information about the profile roles.
 ## Arguments
 
 ```js
-getRoles ();
+getRoles();
 ```
 
 ## Resolve
 
-Resolves to an array of [Role]({{ site_base_path }}sdk-reference/js/6/role).
+Resolves to an array of [Role](/sdk-reference/js/6/role).
 
 ## Usage
 

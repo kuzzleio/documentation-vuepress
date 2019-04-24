@@ -7,7 +7,7 @@ title: mCreate
 
 {{{since "1.0.0"}}}
 
-Creates multiple documents. 
+Creates multiple documents.
 
 If a document identifier already exists, the creation fails for that document.
 
@@ -19,7 +19,7 @@ If a document identifier already exists, the creation fails for that document.
 
 ```http
 URL: http://kuzzle:7512/<index>/<collection>/_mCreate[?refresh=wait_for]
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -28,14 +28,14 @@ Body:
   "documents": [
     {
       // Optional. If not provided, will be generated automatically.
-      "_id": "<documentId>", 
+      "_id": "<documentId>",
       "body": {
         // document content
       }
     },
     {
       // Optional. If not provided, will be generated automatically.
-      "_id": "<anotherDocumentId>", 
+      "_id": "<anotherDocumentId>",
       "body": {
         // document content
       }
@@ -77,20 +77,20 @@ Body:
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the newly created documents are indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the newly created documents are indexed
 
 ---
 
 ## Body properties
 
-* `documents`: an array of object. Each object describes a document to create, by exposing the following properties:
-  * `_id` (optional): document identifier. If not provided, an unique identifier is automatically attributed to the new document
-  * `body`: document content
+- `documents`: an array of object. Each object describes a document to create, by exposing the following properties:
+  - `_id` (optional): document identifier. If not provided, an unique identifier is automatically attributed to the new document
+  - `body`: document content
 
 ---
 
@@ -100,12 +100,12 @@ Returns a `hits` array, containing the list of created documents, in the same or
 
 Each created document is an object with the following properties:
 
-* `_id`: created document unique identifier
-* `_source`: document content
-* `_version`: version of the created document (should be `1`)
-* `created`: a boolean telling whether a document is created (should be `true`)
+- `_id`: created document unique identifier
+- `_source`: document content
+- `_version`: version of the created document (should be `1`)
+- `created`: a boolean telling whether a document is created (should be `true`)
 
-If one or more document changes fail, the response status is set to `206`, and the `error` object contain a [partial error]({{ site_base_path }}api/1/essentials/errors/#partialerror) error.
+If one or more document changes fail, the response status is set to `206`, and the `error` object contain a [partial error](/api/1/essentials/errors/#partialerror) error.
 
 ### Example
 

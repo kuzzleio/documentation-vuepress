@@ -3,22 +3,22 @@ layout: sdk.html.hbs
 title: setContent
 description: User:setContent
 ---
-  
 
 # setContent
+
 Replaces the content of User.
 
 <div class="alert alert-info">
-Updating a user will have no impact until the <a href="{{ site_base_path }}sdk-reference/php/3/user/create"><code>create</code></a> or <a href="{{ site_base_path }}sdk-reference/php/3/user/replace"><code>replace</code></a> method is called
+Updating a user will have no impact until the <a href="/sdk-reference/php/3/user/create"><code>create</code></a> or <a href="/sdk-reference/php/3/user/replace"><code>replace</code></a> method is called
 </div>
 
 ---
 
 ## setContent(data)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``data`` | JSON Object |  User content |
+| Arguments | Type        | Description  |
+| --------- | ----------- | ------------ |
+| `data`    | JSON Object | User content |
 
 ---
 

@@ -30,11 +30,11 @@ Method: GET
 }
 ```
 
---- 
+---
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
 
 ---
 
@@ -42,11 +42,11 @@ Method: GET
 
 Returns a `hits` array of objects. Each object is a security right granted or denied to the user:
 
-* `controller`: impacted Kuzzle controller
-* `action`: impacted controller action
-* `index`: data index
-* `collection`: data collection
-* `value`: tell if access is `allowed` or `denied`. If closures have been configured on the detailed scope, the value is `conditional`.
+- `controller`: impacted Kuzzle controller
+- `action`: impacted controller action
+- `index`: data index
+- `collection`: data collection
+- `value`: tell if access is `allowed` or `denied`. If closures have been configured on the detailed scope, the value is `conditional`.
 
 ```javascript
 {
@@ -58,8 +58,8 @@ Returns a `hits` array of objects. Each object is a security right granted or de
         "controller": "auth",
         "action": "login",
         "value": "allowed"
-      }, 
-      { 
+      },
+      {
         "controller": "document",
         "action": "get",
         "index": "foo",

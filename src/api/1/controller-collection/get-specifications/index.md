@@ -22,7 +22,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -36,8 +35,8 @@ Method: GET
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -45,9 +44,9 @@ Method: GET
 
 Returns a specifications object with the following properties:
 
-* `collection`: specified data collection
-* `index`: specified data index
-* `validation`: specifications description
+- `collection`: specified data collection
+- `index`: specified data index
+- `validation`: specifications description
 
 ```js
 {
@@ -78,5 +77,5 @@ Returns a specifications object with the following properties:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

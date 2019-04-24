@@ -3,16 +3,15 @@ layout: full.html.hbs
 title: getCredentialsById
 ---
 
-
 # getCredentialsById
 
 {{{since "1.0.0"}}}
 
 Gets credential information for the user identified by the strategy's unique user identifier `userId`.
 
-The returned `result` object will vary depending on the strategy (see the [getById plugin function]({{ site_base_path }}plugins/1/essentials/strategies/#optional-getbyid-default)), and it can be empty.
+The returned `result` object will vary depending on the strategy (see the [getById plugin function](/plugins/1/essentials/strategies/#optional-getbyid-default)), and it can be empty.
 
-**Note:** the user identifier to use depends on the specified strategy. If you wish to get credential information using a [kuid]({{ site_base_path }}guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid) identifier, use the [getCredentials]({{ site_base_path }}api/1/controller-security/get-credentials/) API route instead.
+**Note:** the user identifier to use depends on the specified strategy. If you wish to get credential information using a [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid) identifier, use the [getCredentials](/api/1/controller-security/get-credentials/) API route instead.
 
 ---
 
@@ -22,7 +21,7 @@ The returned `result` object will vary depending on the strategy (see the [getBy
 
 ```http
 URL: http://kuzzle:7512/credentials/<strategy>/<_id>/_byId
-Method: GET  
+Method: GET
 ```
 
 ### Other protocols
@@ -40,8 +39,8 @@ Method: GET
 
 ## Arguments
 
-* `_id`: user credential identifier (this is NOT the kuid)
-* `strategy`: authentication strategy
+- `_id`: user credential identifier (this is NOT the kuid)
+- `strategy`: authentication strategy
 
 ---
 

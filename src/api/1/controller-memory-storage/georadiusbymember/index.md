@@ -7,7 +7,7 @@ title: georadiusbymember
 
 {{{since "1.0.0"}}}
 
-Returns the members (added with [geoadd]({{ site_base_path }}api/1/controller-memory-storage/geoadd/)) of a given key inside the provided geospatial radius, centered around one of a key's member.
+Returns the members (added with [geoadd](/api/1/controller-memory-storage/geoadd/)) of a given key inside the provided geospatial radius, centered around one of a key's member.
 
 [[_Redis documentation_]](https://redis.io/commands/georadiusbymember)
 
@@ -24,7 +24,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "controller": "ms",
@@ -40,19 +39,19 @@ Method: GET
 
 ## Arguments
 
-* `_id`: key containing the geopoints to fetch
-* `distance`: distance from the center of the radius
-* `member`: name of the point used as the radius center
-* `unit`: unit of the `distance` parameter value. Allowed values: `m`, `km`, `mi`, `ft`
+- `_id`: key containing the geopoints to fetch
+- `distance`: distance from the center of the radius
+- `member`: name of the point used as the radius center
+- `unit`: unit of the `distance` parameter value. Allowed values: `m`, `km`, `mi`, `ft`
 
 ### Optional:
-  
-  * `options`: an array of one or multiple of the following values: `withcoord`, `withdist`, `count <count>`, `asc` and `desc`
-  * `asc`: sort the results in ascending order (from the nearest member to the farthest one)
-  * `count`: limit the number of returned results. The count value must be passed as a separate option (HTTP: `&options=count,<count value>`, Other protocols: `options: ['count', <count value>]`)
-  * `desc`: sort the results in descending order (from the farthest member to the nearest one)
-  * `withcoord`: include the position of the matched geopoint, in the following format: `[longitude, latitude]`
-  * `withdist`: include the calculated distance from the matched geopoint to the radius center
+
+- `options`: an array of one or multiple of the following values: `withcoord`, `withdist`, `count <count>`, `asc` and `desc`
+- `asc`: sort the results in ascending order (from the nearest member to the farthest one)
+- `count`: limit the number of returned results. The count value must be passed as a separate option (HTTP: `&options=count,<count value>`, Other protocols: `options: ['count', <count value>]`)
+- `desc`: sort the results in descending order (from the farthest member to the nearest one)
+- `withcoord`: include the position of the matched geopoint, in the following format: `[longitude, latitude]`
+- `withdist`: include the calculated distance from the matched geopoint to the radius center
 
 ---
 

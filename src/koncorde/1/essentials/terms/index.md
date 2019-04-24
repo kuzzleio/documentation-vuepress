@@ -7,11 +7,10 @@ order: 200
 
 # Filter Terms
 
-Filters in Koncorde are constituted of terms and operands. In this section, you will find an exhaustive listing of all 
+Filters in Koncorde are constituted of terms and operands. In this section, you will find an exhaustive listing of all
 the available terms. Terms allow you to express a predicate to apply on a data stream: if the data matches the filter,
 Koncorde will execute the registered callback. One term can constitute a filter on its own or be combined
-with other terms in the same filter using the [operands]({{ site_base_path }}koncorde/1/essentials/operands).
-
+with other terms in the same filter using the [operands](/koncorde/1/essentials/operands).
 
 ## equals
 
@@ -48,27 +47,26 @@ The following filter validates the first document:
 ```javascript
 {
   equals: {
-    firstName: 'Grace'
+    firstName: 'Grace';
   }
 }
 ```
-
 
 ## exists
 
 {{{since "1.0.0"}}}
 
-Test for the existence of a key in an object, or of a scalar in an array.  
+Test for the existence of a key in an object, or of a scalar in an array.
 
 ### Syntax
 
 Since Koncorde 1.2, the `exists` syntax is as follows:
 
 `exists: 'nested.field.path'`
-(see [nested field syntax]({{ site_base_path }}koncorde/1/essentials/advanced/#testing-nested-fields-default))
+(see [nested field syntax](/koncorde/1/essentials/advanced/#testing-nested-fields-default))
 
 `exists: 'nested.array[value]'`
-(see [array value syntax]({{ site_base_path }}koncorde/1/essentials/advanced/#matching-array-values-default))
+(see [array value syntax](/koncorde/1/essentials/advanced/#matching-array-values-default))
 
 The following syntax is deprecated since Koncorde 1.2, and supported for backward compatibility only:
 
@@ -98,7 +96,7 @@ The following filter validates the first document:
 
 ```javascript
 {
-  exists: 'alive'
+  exists: 'alive';
 }
 ```
 
@@ -106,10 +104,9 @@ And this filter validates the second document:
 
 ```javascript
 {
-  exists: 'hobby["algorithm"]'
+  exists: 'hobby["algorithm"]';
 }
 ```
-
 
 ## geoBoundingBox
 
@@ -117,22 +114,22 @@ And this filter validates the second document:
 
 Filter documents containing a geographical point confined within a bounding box:
 
-![Illustration of geoBoundingBox]({{ site_base_path }}assets/images/geolocation/geoBoundingBox.png)
+![Illustration of geoBoundingBox](/assets/images/geolocation/geoBoundingBox.png)
 
 A bounding box is a 2D box that can be defined using either of the following formats:
 
-* 2 [geopoints]({{ site_base_path }}koncorde/1/essentials/geofencing/#geopoints-default/), defining the top left (`topLeft` or `top_left`) and bottom right (`bottomRight` or `bottom_right`) corners of the box
-* 4 distinct values defining the 4 box corners: `top` and `bottom` are latitudes, `left` and `right` are longitudes
+- 2 [geopoints](/koncorde/1/essentials/geofencing/#geopoints-default/), defining the top left (`topLeft` or `top_left`) and bottom right (`bottomRight` or `bottom_right`) corners of the box
+- 4 distinct values defining the 4 box corners: `top` and `bottom` are latitudes, `left` and `right` are longitudes
 
 The bounding box description must be stored in an attribute, named after the geographical point to be tested in future documents.
 
 ### Syntax
 
 ```
-geoBoundingBox: { 
+geoBoundingBox: {
   <geopoint field name>: {
     <bounding box description>
-  } 
+  }
 }
 ```
 
@@ -140,9 +137,8 @@ geoBoundingBox: {
 
 All syntaxes below are accepted, as they describe the same bounding box, with the following properties:
 
-* top-left corner of latitude `43.5810609` and longitude `3.8433703`
-* bottom-right corner of latitude `43.6331979` and longitude `3.9282093`
-
+- top-left corner of latitude `43.5810609` and longitude `3.8433703`
+- bottom-right corner of latitude `43.6331979` and longitude `3.9282093`
 
 ```javascript
 {
@@ -217,13 +213,13 @@ The following filter will match the second document only:
 
 Filter documents containing a geographical point, whose position is within a distance range from a given point of origin:
 
-![Illustration of geoDistanceRange]({{ site_base_path }}assets/images/geolocation/geoDistanceRange.png)
+![Illustration of geoDistanceRange](/assets/images/geolocation/geoDistanceRange.png)
 
 A `geoDistanceRange` filter contains the following properties:
 
-* a [geopoint]({{ site_base_path }}koncorde/1/essentials/geofencing/#geopoints-default/) defining the center point of the distance range. This geopoint attribute must be named after the geographical point to test in future documents
-* a `from` attribute, describing the minimum distance from the center point, using a [geodistance format]({{ site_base_path }}koncorde/1/essentials/geofencing/#geodistances-default/)
-* a `to` attribute, describing the maximum distance from the center point, using a [geodistance format]({{ site_base_path }}koncorde/1/essentials/geofencing/#geodistances-default/)
+- a [geopoint](/koncorde/1/essentials/geofencing/#geopoints-default/) defining the center point of the distance range. This geopoint attribute must be named after the geographical point to test in future documents
+- a `from` attribute, describing the minimum distance from the center point, using a [geodistance format](/koncorde/1/essentials/geofencing/#geodistances-default/)
+- a `to` attribute, describing the maximum distance from the center point, using a [geodistance format](/koncorde/1/essentials/geofencing/#geodistances-default/)
 
 ### Syntax
 
@@ -278,12 +274,12 @@ The following filter will match the second document only:
 
 Filter documents containing a geographical point, whose position is within a distance radius centered around a provided point of origin:
 
-![Illustration of geoDistance]({{ site_base_path }}assets/images/geolocation/geoDistance.png)
+![Illustration of geoDistance](/assets/images/geolocation/geoDistance.png)
 
 A `geoDistance` filter contains the following properties:
 
-* a [geopoint]({{ site_base_path }}koncorde/1/essentials/geofencing/#geopoints-default/) defining the point of origin. This geopoint attribute must be named after the geographical point to test in future documents
-* a `distance` parameter in [geodistance format]({{ site_base_path }}koncorde/1/essentials/geofencing/#geodistances-default/)
+- a [geopoint](/koncorde/1/essentials/geofencing/#geopoints-default/) defining the point of origin. This geopoint attribute must be named after the geographical point to test in future documents
+- a `distance` parameter in [geodistance format](/koncorde/1/essentials/geofencing/#geodistances-default/)
 
 ### Syntax
 
@@ -339,9 +335,9 @@ The following filter will match the second document only:
 
 Filter documents containing a geographical point, confined within a polygon that has an arbitrary number of sides:
 
-![Illustration of geoPolygon]({{ site_base_path }}assets/images/geolocation/geoPolygon.png)
+![Illustration of geoPolygon](/assets/images/geolocation/geoPolygon.png)
 
-A `geoPolygon` filter is described using a `points` array, containing an arbitrary number of [geopoints]({{ site_base_path }}koncorde/1/essentials/geofencing/#geopoints-default/) (at least 3).  
+A `geoPolygon` filter is described using a `points` array, containing an arbitrary number of [geopoints](/koncorde/1/essentials/geofencing/#geopoints-default/) (at least 3).
 
 Koncorde automatically closes geopolygons.
 
@@ -390,9 +386,9 @@ The following filter will match the second document only:
         { lat: 51.523029, lon: -0.160793 },
         [51.522842, -0.145043],
         '51.518303, -0.146116',
-        { latLon: {lat: 51.516487, lon: -0.162295 }},
+        { latLon: { lat: 51.516487, lon: -0.162295 } },
         'gcpvh6uxh60x1'
-      ]
+      ];
     }
   }
 }
@@ -435,7 +431,7 @@ The following filter validates first document:
 ```javascript
 {
   ids: {
-    values: ['a']
+    values: ['a'];
   }
 }
 ```
@@ -448,18 +444,18 @@ A filter matching documents either with a missing field in an object, or with a 
 
 A `missing` filter used to match arrays without a specific value will also match if:
 
-* the tested array property is entirely missing from the provided document
-* the tested property in the provided document is not an array
+- the tested array property is entirely missing from the provided document
+- the tested property in the provided document is not an array
 
 ### Syntax
 
 Since Koncorde 1.2, the `missing` syntax is as follows:
 
 `missing: 'nested.field.path'`
-(see [nested field syntax]({{ site_base_path }}koncorde/1/essentials/advanced/#testing-nested-fields-default))
+(see [nested field syntax](/koncorde/1/essentials/advanced/#testing-nested-fields-default))
 
 `missing: 'nested.array[value]'`
-(see [array value syntax]({{ site_base_path }}koncorde/1/essentials/advanced/#matching-array-values-default)
+(see [array value syntax](/koncorde/1/essentials/advanced/#matching-array-values-default)
 
 The following syntax is deprecated since Koncorde 1.2, and supported for backward compatibility only:
 
@@ -489,15 +485,15 @@ The following filter validates the second document:
 
 ```javascript
 {
-  missing: 'alive'
+  missing: 'alive';
 }
 ```
 
-And this filter validates the first document: 
+And this filter validates the first document:
 
 ```javascript
 {
-  missing: 'hobbies["algorithm"]'
+  missing: 'hobbies["algorithm"]';
 }
 ```
 
@@ -509,14 +505,14 @@ Filters documents with number attributes within a provided interval.
 
 A range can be defined with at least one of the following arguments:
 
-* `gte`: Greater-than or equal to `<number>`
-* `gt`: Greater-than `<number>`
-* `lte`: Less-than or equal to
-* `lt`: Less-than
+- `gte`: Greater-than or equal to `<number>`
+- `gt`: Greater-than `<number>`
+- `lte`: Less-than or equal to
+- `lt`: Less-than
 
 Ranges can be either bounded or half-bounded.
 
-### Syntax 
+### Syntax
 
 ```
 range: {
@@ -563,7 +559,7 @@ The following filter validates the last two documents:
 {
   range: {
     age: {
-      lt: 85
+      lt: 85;
     }
   }
 }

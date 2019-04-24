@@ -22,7 +22,7 @@ When the validation specification is not formatted correctly, a detailed error m
 
 ```http
 URL: http://kuzzle:7512/_validateSpecifications
-Method: POST  
+Method: POST
 Body:
 ```
 
@@ -85,9 +85,9 @@ The provided body must have the following structure:
 
 Returns an object with the following properties:
 
-* `valid`: a boolean telling whether the provided specifications are valid
-* `details`: the exhaustive list of rejections and their reasons. Only present if the document is invalid
-* `description`: global error description. Only present if the document is invalid
+- `valid`: a boolean telling whether the provided specifications are valid
+- `details`: the exhaustive list of rejections and their reasons. Only present if the document is invalid
+- `description`: global error description. Only present if the document is invalid
 
 Example:
 
@@ -111,4 +111,4 @@ Example:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
+- [Common errors](/api/1/essentials/errors/#common-errors)

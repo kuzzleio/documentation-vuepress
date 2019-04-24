@@ -3,10 +3,10 @@ layout: sdk.html.hbs
 title: startQueuing
 description: Kuzzle:startQueuing
 ---
-  
 
 # startQueuing
-Starts the requests queuing. Works only in offline mode, and if the [autoQueue]({{ site_base_path }}sdk-reference/android/3/kuzzle/#properties) option is set to `false`.
+
+Starts the requests queuing. Works only in offline mode, and if the [autoQueue](/sdk-reference/android/3/kuzzle/#properties) option is set to `false`.
 
 ---
 

@@ -7,7 +7,7 @@ title: delete
 
 {{{since "1.0.0"}}}
 
-Deletes an [index]({{ site_base_path }}guide/1/essentials/persisted).
+Deletes an [index](/guide/1/essentials/persisted).
 
 ---
 
@@ -22,7 +22,6 @@ Method: DELETE
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -35,7 +34,7 @@ Method: DELETE
 
 ## Arguments
 
-* `index`: index name to delete
+- `index`: index name to delete
 
 ---
 
@@ -61,5 +60,5 @@ Returns a confirmation that the index is being deleted:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

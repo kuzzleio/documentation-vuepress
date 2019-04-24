@@ -6,9 +6,9 @@ description: Getting started with Kuzzle in the browser
 
 # Getting Started with Kuzzle in the browser
 
-This tutorial explains how to use **Kuzzle** with the **Javascript SDK** in a **browser**.  
+This tutorial explains how to use **Kuzzle** with the **Javascript SDK** in a **browser**.
 
-To follow this tutorial, you must have a Kuzzle Server up and running (you'll need to know the hostname of the machine running it). If this is not already the case, take a look at [how to run Kuzzle]({{ site_base_path }}guide/1/getting-started/running-kuzzle).
+To follow this tutorial, you must have a Kuzzle Server up and running (you'll need to know the hostname of the machine running it). If this is not already the case, take a look at [how to run Kuzzle](/guide/1/getting-started/running-kuzzle).
 
 Before proceeding, make sure your system has **Node.js** version 8 or higher (<a href="https://nodejs.org/en/download/">instructions here</a>) installed.
 
@@ -32,17 +32,17 @@ Then, create an `index.html` file with the following structure:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Kuzzle SDK Playground</title>
-  
-  <!-- If you are coding for Internet Explorer, please uncomment the following line -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/bluebird@3.5.3/js/browser/bluebird.min.js"></script> -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kuzzle SDK Playground</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/kuzzle-sdk/dist/kuzzle.min.js"></script>
-</head>
-<body></body>
+    <!-- If you are coding for Internet Explorer, please uncomment the following line -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/bluebird@3.5.3/js/browser/bluebird.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/kuzzle-sdk/dist/kuzzle.min.js"></script>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -62,19 +62,19 @@ in the console. Once the connection is established, a success message is display
 Replace <code>kuzzle</code> with <code>localhost</code> or the hostname where your Kuzzle server is running.
 </div>
 
-Now you have to add the code that will access Kuzzle to create a new index `nyc-open-data` and a new collection `yellow-taxi` 
+Now you have to add the code that will access Kuzzle to create a new index `nyc-open-data` and a new collection `yellow-taxi`
 that you will use to store data later on. Make sure the code inside your `body` tag looks like the following:
 
 [snippet=prepare-db]
 
 Now, let's take a look at what your script is doing:
 
-* creates an instance of the SDK,
-* connects it to Kuzzle running on `kuzzle` (change the hostname if needed) using WebSocket,
-* creates the `nyc-open-data` index,
-* creates the `yellow-taxi` collection (within the `nyc-open-data` index),
-* disconnects from Kuzzle after the collection is created,
-* displays an error whenever something goes wrong.
+- creates an instance of the SDK,
+- connects it to Kuzzle running on `kuzzle` (change the hostname if needed) using WebSocket,
+- creates the `nyc-open-data` index,
+- creates the `yellow-taxi` collection (within the `nyc-open-data` index),
+- disconnects from Kuzzle after the collection is created,
+- displays an error whenever something goes wrong.
 
 Run this code by opening the `index.html` file in your favorite browser.
 The console should output the following message:
@@ -101,12 +101,13 @@ And, right like before, add some code to the `body` tag:
 [snippet=create]
 
 This code does the following:
-* creates an instance of the SDK,
-* connects it to Kuzzle running on `kuzzle` (change the hostname if needed) using WebSocket,
-* creates a new document in the `yellow-taxi` collection, within the `nyc-open-data` index
-* logs a success message to the console if everything went fine
-* logs an error message if any of the previous actions fails
-* disconnects from Kuzzle after the document is created or if an error occurs
+
+- creates an instance of the SDK,
+- connects it to Kuzzle running on `kuzzle` (change the hostname if needed) using WebSocket,
+- creates a new document in the `yellow-taxi` collection, within the `nyc-open-data` index
+- logs a success message to the console if everything went fine
+- logs an error message if any of the previous actions fails
+- disconnects from Kuzzle after the document is created or if an error occurs
 
 Run this code by opening the `create.html` file in your favorite browser.
 The console should output the following message:
@@ -117,7 +118,7 @@ New document successfully created!
 ```
 
 <div class="alert alert-success">
-You have now successfully stored your first document into Kuzzle. Click <a href="{{ site_base_path }}guide/1/essentials/installing-console">here</a> to see how you can use the <strong>Kuzzle Admin Console</strong> to browse your collection and confirm that your document was saved.
+You have now successfully stored your first document into Kuzzle. Click <a href="/guide/1/essentials/installing-console">here</a> to see how you can use the <strong>Kuzzle Admin Console</strong> to browse your collection and confirm that your document was saved.
 </div>
 
 <div class="alert alert-info">
@@ -126,7 +127,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 ## Subscribe to realtime document notifications (pub/sub)
 
-Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the <a href="{{ site_base_path }}sdk-reference/js/6/realtime-notifications/">realtime notifications</a> documentation).
+Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the <a href="/sdk-reference/js/6/realtime-notifications/">realtime notifications</a> documentation).
 
 Let's get started. Create a `subscribe.html` file (same structure as above) with the following code in the `body` tag:
 
@@ -144,7 +145,7 @@ The code in the `subscribe.html` page is now running endlessly, waiting for noti
 
 Now go back to the other tab and reload `create.html`.
 
-This creates a new document in Kuzzle which, in turn, triggers a [document notification]({{ site_base_path }}api/1/essentials/notifications/#documents-changes-messages-default) sent to the `subscribe.html` tab. Check the `subscribe.html` tab: a new message is printed everytime a document is created using the `create.html` code.
+This creates a new document in Kuzzle which, in turn, triggers a [document notification](/api/1/essentials/notifications/#documents-changes-messages-default) sent to the `subscribe.html` tab. Check the `subscribe.html` tab: a new message is printed everytime a document is created using the `create.html` code.
 
 ```
 New driver Sirkis with id AWccRe3-DfukVhSzMdUo has B license.
@@ -158,7 +159,7 @@ Congratulations! You have just set up your first pub/sub communication!
 
 Now that you're more familiar with Kuzzle, dive even deeper to learn how to leverage its full capabilities:
 
-* discover what this SDK has to offer by browsing other sections of this documentation
-* learn how to use <a href="{{ site_base_path }}koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
-* learn how to perform a <a href="{{ site_base_path }}sdk-reference/js/6/auth/login">basic authentication</a>
-* follow our guide to learn how to <a href="{{ site_base_path }}guide/1/essentials/security/">manage users, and how to set up fine-grained access control</a>
+- discover what this SDK has to offer by browsing other sections of this documentation
+- learn how to use <a href="/koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
+- learn how to perform a <a href="/sdk-reference/js/6/auth/login">basic authentication</a>
+- follow our guide to learn how to <a href="/guide/1/essentials/security/">manage users, and how to set up fine-grained access control</a>

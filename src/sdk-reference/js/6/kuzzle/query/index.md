@@ -6,7 +6,7 @@ description: Base method to send API query to Kuzzle
 
 # query
 
-Base method used to send queries to Kuzzle, following the [API Documentation]({{ site_base_path }}api/1).
+Base method used to send queries to Kuzzle, following the [API Documentation](/api/1).
 
 <div class="alert alert-warning">
 This is a low-level method, exposed to allow advanced SDK users to bypass high-level methods.
@@ -15,13 +15,13 @@ This is a low-level method, exposed to allow advanced SDK users to bypass high-l
 ## Arguments
 
 ```javascript
-query (request, [options]);
+query(request, [options]);
 ```
 
 <br/>
 
-| Argument  | Type   | Description            |
-| -------------- | --------- | ------------- |
+| Argument  | Type              | Description            |
+| --------- | ----------------- | ---------------------- |
 | `request` | <pre>object</pre> | API request options    |
 | `options` | <pre>object</pre> | Optional query options |
 
@@ -30,27 +30,27 @@ query (request, [options]);
 All properties necessary for the Kuzzle API can be added in the request object.
 The following properties are the most common.
 
-| Property     | Type   | Description                               |
-| -------------- | --------- | ------------- |
-| `controller` | <pre>string</pre> | Controller name (mandatory)               |
-| `action`     | <pre>string</pre> | Action name (mandatory)                   |
-| `body`       | <pre>object</pre> | Query body for this action                |
-| `index`      | <pre>string</pre> | Index name for this action                |
-| `collection` | <pre>string</pre> | Collection name for this action           |
-| `_id`        | <pre>string</pre> | id for this action                        |
+| Property     | Type              | Description                              |
+| ------------ | ----------------- | ---------------------------------------- |
+| `controller` | <pre>string</pre> | Controller name (mandatory)              |
+| `action`     | <pre>string</pre> | Action name (mandatory)                  |
+| `body`       | <pre>object</pre> | Query body for this action               |
+| `index`      | <pre>string</pre> | Index name for this action               |
+| `collection` | <pre>string</pre> | Collection name for this action          |
+| `_id`        | <pre>string</pre> | id for this action                       |
 | `volatile`   | <pre>object</pre> | Additional information to send to Kuzzle |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description   |
-| -------------- | --------- | ------------- |
+| Property   | Type<br/>(default)              | Description                       |
+| ---------- | ------------------------------- | --------------------------------- |
 | `queuable` | <pre>boolean</pre><br/>(`true`) | Make this request queuable or not |
 
 ## Resolves
 
-Resolve to the raw Kuzzle API response. See the [API Documentation]({{ site_base_path }}api/1).
+Resolve to the raw Kuzzle API response. See the [API Documentation](/api/1).
 
 ## Usage
 

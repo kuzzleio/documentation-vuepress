@@ -3,7 +3,6 @@ layout: full.html.hbs
 title: deleteUser
 ---
 
-
 # deleteUser
 
 {{{since "1.0.0"}}}
@@ -35,18 +34,17 @@ Method: DELETE
 
 ## Arguments
 
-* `_id`: user [kuid]({{site_base_path}}guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier) to delete
+- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier) to delete
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the user deletion is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the user deletion is indexed
 
 ---
 
 ## Response
 
 Returns the deleted kuid.
-
 
 ```javascript
 {

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: setAutoRefresh
 description: Kuzzle:setAutoRefresh
 ---
-  
 
 # setAutoRefresh
+
 The `autoRefresh` flag, when set to true, will make Kuzzle perform a
 [`refresh`](https://www.elastic.co/guide/en/elasticsearch/reference/5.4/docs-refresh.html) request
 immediately after each write request, causing documents to be immediately visible in a search.
@@ -26,20 +26,20 @@ Given an index, the `setAutoRefresh` function updates its `autoRefresh` status.
 
 ## setAutoRefresh([index], autoRefresh, [options], [callback])
 
-| Argument | Type | Description
-|----------|------|-------------
-| `index` | string | _Optional_ The index to set the `autoRefresh` for. If not set, defaults to [kuzzle.defaultIndex]({{ site_base_path }}sdk-reference/android/3/kuzzle/#properties).
-| `autoRefresh` | boolean | The value to set for the `autoRefresh` setting.
-| `options` | JSON object | Optional parameters
-| `callback` | function | _Optional_ Callback handling the response
+| Argument      | Type        | Description                                                                                                                                    |
+| ------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index`       | string      | _Optional_ The index to set the `autoRefresh` for. If not set, defaults to [kuzzle.defaultIndex](/sdk-reference/android/3/kuzzle/#properties). |
+| `autoRefresh` | boolean     | The value to set for the `autoRefresh` setting.                                                                                                |
+| `options`     | JSON object | Optional parameters                                                                                                                            |
+| `callback`    | function    | _Optional_ Callback handling the response                                                                                                      |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default
-|--------|------|-------------|---------
-| `queuable` | boolean | Make this request queuable or not | `true`
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 

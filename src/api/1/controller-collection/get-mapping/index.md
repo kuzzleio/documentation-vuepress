@@ -22,7 +22,6 @@ Method: GET
 
 ### Other protocols
 
-
 ```js
 {
   "index": "<index>",
@@ -36,8 +35,8 @@ Method: GET
 
 ## Arguments
 
-* `collection`: data collection
-* `index`: data index
+- `collection`: data collection
+- `index`: data index
 
 ---
 
@@ -72,7 +71,7 @@ Returns a mapping object with the following structure:
       "mappings": {
         "<collection>": {
           "properties": {
-            "field1": { 
+            "field1": {
               "type": "integer"
             },
             "field2": {
@@ -94,5 +93,5 @@ Returns a mapping object with the following structure:
 
 ## Possible errors
 
-- [Common errors]({{ site_base_path }}api/1/essentials/errors/#common-errors)
-- [NotFoundError]({{ site_base_path }}api/1/essentials/errors/#notfounderror)
+- [Common errors](/api/1/essentials/errors/#common-errors)
+- [NotFoundError](/api/1/essentials/errors/#notfounderror)

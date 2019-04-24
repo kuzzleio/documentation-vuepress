@@ -14,16 +14,16 @@ Theses listener will receive a `const std::string` as argument. This string is a
 
 ```cpp
 virtual kuzzleio::KuzzleEventEmitter* addListener(
-    kuzzleio::Event event, 
+    kuzzleio::Event event,
     kuzzleio::SharedEventListener listener);
 ```
 
 <br/>
 
-| Argument   | Type                      | Description            |
-| ---------- | ------------------------- | ------------------------|
-| `event`    | <pre>kuzzleio::Event</pre> | An enum representing the listened [event]({{ site_base_path }}sdk-reference/cpp/1/events) |
-| `listener` | <pre>kuzzleio::SharedEventListener</pre> | Smart pointer to a c++11 lambda   |
+| Argument   | Type                                     | Description                                                            |
+| ---------- | ---------------------------------------- | ---------------------------------------------------------------------- |
+| `event`    | <pre>kuzzleio::Event</pre>               | An enum representing the listened [event](/sdk-reference/cpp/1/events) |
+| `listener` | <pre>kuzzleio::SharedEventListener</pre> | Smart pointer to a c++11 lambda                                        |
 
 ### event
 

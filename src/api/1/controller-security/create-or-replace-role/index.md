@@ -17,7 +17,7 @@ Creates a new role or, if the provided role identifier already exists, replaces 
 
 ```http
 URL: http://kuzzle:7512/roles/<_id>[?refresh=wait_for]
-Method: PUT  
+Method: PUT
 Body:
 ```
 
@@ -56,17 +56,17 @@ Body:
 
 ## Arguments
 
-* `_id`: role identifier
+- `_id`: role identifier
 
 ### Optional:
 
-* `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced role is indexed
+- `refresh`: if set to `wait_for`, Kuzzle will not respond until the created/replaced role is indexed
 
 ---
 
 ## Body properties
 
-* `controllers`: [role definition]({{ site_base_path }}guide/1/essentials/security/#defining-roles)
+- `controllers`: [role definition](/guide/1/essentials/security/#defining-roles)
 
 ---
 
@@ -74,10 +74,10 @@ Body:
 
 Returns the role creation/replacement status:
 
-* `_id`: created/replaced role identifier
-* `_source`: role definition
-* `created`: if true, the role has been created. Otherwise, it has been replaced
-* `version`: updated role version number
+- `_id`: created/replaced role identifier
+- `_source`: role definition
+- `created`: if true, the role has been created. Otherwise, it has been replaced
+- `version`: updated role version number
 
 ```javascript
 {
