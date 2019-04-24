@@ -31,7 +31,7 @@ const std::string& action() const;
 
 ## index
 
-Returns the index name on which the rights apply.   
+Returns the index name on which the rights apply.  
 Can be a wildcard (`*`).
 
 ### Signature
@@ -42,7 +42,7 @@ const std::string& index() const;
 
 ## collection
 
-Returns the collection name on which the rights apply.   
+Returns the collection name on which the rights apply.  
 Can be a wildcard (`*`).
 
 ### Signature
@@ -64,4 +64,4 @@ const std::string& value() const;
 
 ## Usage
 
-[snippet=getters]
+<<< ./snippets/getters.cpp

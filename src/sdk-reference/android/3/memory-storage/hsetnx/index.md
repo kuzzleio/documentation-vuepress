@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hsetnx
 description: MemoryStorage:hsetnx
 ---
-  
 
 # hsetnx
+
 Sets a field and its value in a hash, only if the field does not already exist.
 
 [[_Redis documentation_]](https://redis.io/commands/hsetnx)
@@ -14,21 +14,21 @@ Sets a field and its value in a hash, only if the field does not already exist.
 
 ## hsetnx(key, field, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `field` | string | Field name to insert or to update |
-| `value` | string | Associated field value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                       |
+| ---------- | ----------- | --------------------------------- |
+| `key`      | string      | Key identifier                    |
+| `field`    | string      | Field name to insert or to update |
+| `value`    | string      | Associated field value            |
+| `options`  | JSON Object | Optional parameters               |
+| `callback` | function    | Callback                          |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -44,7 +44,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=hsetnx-1]
+<<< ./snippets/hsetnx-1.java
+
 > Callback response:
 
 ```json

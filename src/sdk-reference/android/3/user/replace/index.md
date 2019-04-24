@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: replace
 description: User:replace
 ---
-  
 
 # replace
+
 Replaces the user in Kuzzle.
 
 ---
 
 ## replace([options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | (Optional) Callback handling the response |
+| Arguments  | Type        | Description                               |
+| ---------- | ----------- | ----------------------------------------- |
+| `options`  | JSON Object | Optional parameters                       |
+| `callback` | function    | (Optional) Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -39,4 +39,4 @@ Returns a `User` object.
 
 ## Usage
 
-[snippet=replace-1]
+<<< ./snippets/replace-1.java

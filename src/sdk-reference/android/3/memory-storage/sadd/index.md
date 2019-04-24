@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: sadd
 description: MemoryStorage:sadd
 ---
-  
 
 # sadd
+
 Adds members to a set of unique values stored at `key`. If the `key` does not exist, it is created beforehand.
 
 [[_Redis documentation_]](https://redis.io/commands/sadd)
@@ -14,20 +14,21 @@ Adds members to a set of unique values stored at `key`. If the `key` does not ex
 
 ## sadd(key, members, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `members` | array | Members to add to the list of unique values |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                                 |
+| ---------- | ----------- | ------------------------------------------- |
+| `key`      | string      | Key identifier                              |
+| `members`  | array       | Members to add to the list of unique values |
+| `options`  | JSON Object | Optional parameters                         |
+| `callback` | function    | Callback                                    |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -42,7 +43,8 @@ Returns an integer containing the number of added elements to the set.
 
 ## Usage
 
-[snippet=sadd-1]
+<<< ./snippets/sadd-1.java
+
 > Callback response:
 
 ```json

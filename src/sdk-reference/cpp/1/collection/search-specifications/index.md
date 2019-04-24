@@ -61,4 +61,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=search-specifications]
+<<< ./snippets/search-specifications.cpp

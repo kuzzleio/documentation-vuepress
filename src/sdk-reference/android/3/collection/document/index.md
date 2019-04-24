@@ -25,4 +25,4 @@ Returns the newly created [Document](/sdk-reference/android/3/document) object.
 
 ## Usage
 
-[snippet=document-1]
+<<< ./snippets/document-1.java

@@ -55,4 +55,4 @@ The `Kuzzle` instance.
 
 ## Usage
 
-[snippet=add-listener]
+<<< ./snippets/add-listener.cpp

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hset
 description: MemoryStorage:hset
 ---
-  
 
 # hset
+
 Sets a field and its value in a hash. If the key does not exist, a new key holding a hash is created. If the field already exists, its value is overwritten.
 
 [[_Redis documentation_]](https://redis.io/commands/hset)
@@ -14,21 +14,21 @@ Sets a field and its value in a hash. If the key does not exist, a new key holdi
 
 ## hset(key, field, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `field` | string | Field name to insert or to update |
-| `value` | string | Associated field value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                       |
+| ---------- | ----------- | --------------------------------- |
+| `key`      | string      | Key identifier                    |
+| `field`    | string      | Field name to insert or to update |
+| `value`    | string      | Associated field value            |
+| `options`  | JSON Object | Optional parameters               |
+| `callback` | function    | Callback                          |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -44,7 +44,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=hset-1]
+<<< ./snippets/hset-1.java
+
 > Callback response:
 
 ```json

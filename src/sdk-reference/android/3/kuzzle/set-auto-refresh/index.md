@@ -55,4 +55,4 @@ Returns a boolean with the new `autoRefresh` status.
 
 ## Usage
 
-[snippet=set-auto-refresh-1]
+<<< ./snippets/set-auto-refresh-1.java

@@ -67,4 +67,4 @@ A JSON string representing the specifications
 
 ## Usage
 
-[snippet=update-specifications]
+<<< ./snippets/update-specifications.cpp

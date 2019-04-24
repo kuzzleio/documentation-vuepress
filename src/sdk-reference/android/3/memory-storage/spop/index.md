@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: spop
 description: MemoryStorage:spop
 ---
-  
 
 # spop
+
 Removes and returns one or more elements at random from a set of unique values.
 
 [[_Redis documentation_]](https://redis.io/commands/spop)
@@ -14,20 +14,21 @@ Removes and returns one or more elements at random from a set of unique values.
 
 ## spop(key, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `count` | int | Number of elements to remove | `1` |
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `count`    | int     | Number of elements to remove      | `1`     |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -42,9 +43,10 @@ Returns an array of removed elements.
 
 ## Usage
 
-[snippet=spop-1]
+<<< ./snippets/spop-1.java
+
 > Callback response:
 
 ```json
-[ "removed element" ]
+["removed element"]
 ```

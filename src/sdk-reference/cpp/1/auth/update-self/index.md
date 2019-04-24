@@ -41,4 +41,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=update-self]
+<<< ./snippets/update-self.cpp

@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: time
 description: MemoryStorage:time
 ---
-  
 
 # time
+
 Returns the current server time.
 
 [[_Redis documentation_]](https://redis.io/commands/time)
@@ -14,35 +14,34 @@ Returns the current server time.
 
 ## time([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Callback Response
 
 Returns an array containing the following two items, in this order:
 
-* a timestamp in [Epoch time](https://en.wikipedia.org/wiki/Unix_time)
-* the number of microseconds already elapsed in the current second
+- a timestamp in [Epoch time](https://en.wikipedia.org/wiki/Unix_time)
+- the number of microseconds already elapsed in the current second
 
 ## Usage
 
-[snippet=time-1]
+<<< ./snippets/time-1.java
+
 > Callback response:
 
 ```json
-[
-  1488791347,
-  494938
-]
+[1488791347, 494938]
 ```

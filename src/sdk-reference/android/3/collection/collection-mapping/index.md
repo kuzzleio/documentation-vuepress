@@ -24,4 +24,4 @@ Returns the newly created [CollectionMapping](/sdk-reference/android/3/collectio
 
 ## Usage
 
-[snippet=collection-mapping-1]
+<<< ./snippets/collection-mapping-1.java

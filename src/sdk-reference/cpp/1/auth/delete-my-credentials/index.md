@@ -39,4 +39,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=delete-my-credentials]
+<<< ./snippets/delete-my-credentials.cpp

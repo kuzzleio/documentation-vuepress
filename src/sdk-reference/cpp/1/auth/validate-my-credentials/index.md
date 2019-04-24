@@ -12,29 +12,29 @@ Validate the current user's credentials for the specified strategy. The `result`
 
 ```cpp
 bool validateMyCredentials(
-    const std::string& strategy, 
+    const std::string& strategy,
     const std::string& credentials);
 
 bool validateMyCredentials(
-    const std::string& strategy, 
-    const std::string& credentials, 
+    const std::string& strategy,
+    const std::string& credentials,
     const kuzzleio::query_options& options);
 ```
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | <pre>const std::string&</pre> | Strategy to use
-| `credentials` | <pre>const std::string&</pre> | JSON string representing the credentials
-| `options`  | <pre>kuzzleio::query_options\*</pre>    | Query options
+| Arguments     | Type                                 | Description                              |
+| ------------- | ------------------------------------ | ---------------------------------------- |
+| `strategy`    | <pre>const std::string&</pre>        | Strategy to use                          |
+| `credentials` | <pre>const std::string&</pre>        | JSON string representing the credentials |
+| `options`     | <pre>kuzzleio::query_options\*</pre> | Query options                            |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description        | 
-| ---------- | ------- | --------------------------------- | 
+| Property   | Type<br/>(default)           | Description                                                                  |
+| ---------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Return
@@ -43,4 +43,4 @@ A boolean indicating if the credentials are valid.
 
 ## Usage
 
-[snippet=validate-my-credentials]
+<<< ./snippets/validate-my-credentials.cpp

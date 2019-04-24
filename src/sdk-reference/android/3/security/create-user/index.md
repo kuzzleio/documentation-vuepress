@@ -50,4 +50,4 @@ Returns a [User](/sdk-reference/android/3/user) object.
 
 ## Usage
 
-[snippet=create-user-1]
+<<< ./snippets/create-user-1.java

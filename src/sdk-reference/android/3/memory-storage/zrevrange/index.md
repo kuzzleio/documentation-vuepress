@@ -47,7 +47,7 @@ Returns an array of objects, each containing the following properties:
 
 ## Usage
 
-[snippet=zrevrange-1]
+<<< ./snippets/zrevrange-1.java
 
 > Callback response:
 

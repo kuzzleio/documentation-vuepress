@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: fetchNext
 description: SearchResult:fetchNext
 ---
-  
 
 # fetchNext
+
 Fetches the next SearchResult, by triggering a new search/scroll request depending on the options and filters of the SearchResult.
 
 If the previous request was a search or a scroll action which provided a `scroll` argument,
@@ -21,6 +21,7 @@ If the previous request was a search action which provided `from` and `size` arg
 ---
 
 ## How to process every document of a collection
+
 The safest way to process all documents in a collection is to fetch them as a batch in order to avoid memory exhaustion and possibly hitting some hard limits<sup>\[1\]</sup> on the database layer.
 
 <div class="alert alert-warning">Make sure your first search request includes <code>size</code> and <code>scroll</code> parameters</div>
@@ -29,6 +30,6 @@ The safest way to process all documents in a collection is to fetch them as a ba
 
 ## Usage
 
-[snippet=fetch-next-1]
+<<< ./snippets/fetch-next-1.java
 
-[snippet=fetch-next-2]
+<<< ./snippets/fetch-next-2.java

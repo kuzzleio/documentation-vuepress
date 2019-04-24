@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hincrby
 description: MemoryStorage:hincrby
 ---
-  
 
 # hincrby
+
 Increments the number stored in a hash field by the provided integer value.
 
 [[_Redis documentation_]](https://redis.io/commands/hincrby)
@@ -14,21 +14,21 @@ Increments the number stored in a hash field by the provided integer value.
 
 ## hincrby(key, field, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `field` | string | Hash field to increment |
-| `value` | int | Increment value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description             |
+| ---------- | ----------- | ----------------------- |
+| `key`      | string      | Key identifier          |
+| `field`    | string      | Hash field to increment |
+| `value`    | int         | Increment value         |
+| `options`  | JSON Object | Optional parameters     |
+| `callback` | function    | Callback                |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -44,7 +44,8 @@ Returns the newly incremented value.
 
 ## Usage
 
-[snippet=hincrby-1]
+<<< ./snippets/hincrby-1.java
+
 > Callback response:
 
 ```json

@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: publish
 description: Document:publish
 ---
-  
 
 # publish
+
 Publishes the content of this document as a real-time message.
 
 ---
 
 ## publish([options])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
+| Arguments | Type        | Description         |
+| --------- | ----------- | ------------------- |
+| `options` | JSON Object | Optional parameters |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``volatile`` | JSON Object | Additional information passed to notifications to other users | ``null`` |
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type        | Description                                                   | Default |
+| ---------- | ----------- | ------------------------------------------------------------- | ------- |
+| `volatile` | JSON Object | Additional information passed to notifications to other users | `null`  |
+| `queuable` | boolean     | Make this request queuable or not                             | `true`  |
 
 ---
 
@@ -33,4 +33,4 @@ Returns this `Document` object to allow chaining.
 
 ## Usage
 
-[snippet=publish-1]
+<<< ./snippets/publish-1.java

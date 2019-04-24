@@ -43,4 +43,4 @@ Returns an updated [Document](/sdk-reference/android/3/document/) object.
 
 ## Usage
 
-[snippet=replace-document-1]
+<<< ./snippets/replace-document-1.java

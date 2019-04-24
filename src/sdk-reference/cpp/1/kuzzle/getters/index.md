@@ -119,4 +119,4 @@ const std::string& volatiles() const noexcept;
 
 ## Usage
 
-[snippet=getters]
+<<< ./snippets/getters.cpp

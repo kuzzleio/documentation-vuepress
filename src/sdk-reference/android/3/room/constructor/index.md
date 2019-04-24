@@ -51,4 +51,4 @@ The `Room` object is the result of a subscription request, allowing you to manip
 
 ## Usage
 
-[snippet=constructor-1]
+<<< ./snippets/constructor-1.java

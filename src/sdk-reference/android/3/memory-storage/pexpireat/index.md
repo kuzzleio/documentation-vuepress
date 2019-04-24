@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: pexpireat
 description: MemoryStorage:pexpireat
 ---
-  
 
 # pexpireat
+
 Sets an expiration timestamp on a key. After the timestamp has been reached, the key will automatically be deleted.  
 The `timestamp` parameter accepts an [Epoch time](https://en.wikipedia.org/wiki/Unix_time) value, in milliseconds.
 
@@ -15,19 +15,21 @@ The `timestamp` parameter accepts an [Epoch time](https://en.wikipedia.org/wiki/
 
 ## pexpireat(key, timestamp, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `timestamp` | int | Key's expiration timestamp, in milliseconds |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments   | Type        | Description                                 |
+| ----------- | ----------- | ------------------------------------------- |
+| `key`       | string      | Key identifier                              |
+| `timestamp` | int         | Key's expiration timestamp, in milliseconds |
+| `options`   | JSON Object | Optional parameters                         |
+| `callback`  | function    | Callback                                    |
+
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -42,7 +44,8 @@ Returns a boolean specifying if the operation was successful or not.
 
 ## Usage
 
-[snippet=pexpireat-1]
+<<< ./snippets/pexpireat-1.java
+
 > Callback response:
 
 ```json

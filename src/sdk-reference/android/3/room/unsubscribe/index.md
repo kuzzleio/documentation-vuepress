@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: unsubscribe
 description: Room:unsubscribe
 ---
-  
 
 # unsubscribe
+
 Cancels the current subscription.
 
 ---
@@ -16,4 +16,4 @@ Returns this `Room` object to allow chaining.
 
 ## Usage
 
-[snippet=unsubscribe-1]
+<<< ./snippets/unsubscribe-1.java

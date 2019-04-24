@@ -65,4 +65,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=create]
+<<< ./snippets/create.cpp

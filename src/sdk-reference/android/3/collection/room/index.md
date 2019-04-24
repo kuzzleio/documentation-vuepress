@@ -28,4 +28,4 @@ Returns the newly created [Room](/sdk-reference/android/3/room/) object.
 
 ## Usage
 
-[snippet=room-1]
+<<< ./snippets/room-1.java

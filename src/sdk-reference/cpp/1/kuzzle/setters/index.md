@@ -30,4 +30,4 @@ Kuzzle* volatiles(const std::string&);
 
 ## Usage
 
-[snippet=setters]
+<<< ./snippets/setters.cpp

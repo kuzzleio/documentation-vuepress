@@ -24,4 +24,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=get-current-user]
+<<< ./snippets/get-current-user.cpp

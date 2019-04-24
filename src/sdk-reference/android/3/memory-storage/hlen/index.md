@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hlen
 description: MemoryStorage:hlen
 ---
-  
 
 # hlen
+
 Returns the number of fields contained in a hash.
 
 [[_Redis documentation_]](https://redis.io/commands/hlen)
@@ -14,19 +14,19 @@ Returns the number of fields contained in a hash.
 
 ## hlen(key, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -36,7 +36,8 @@ Returns an integer containing the number of fields in the hash.
 
 ## Usage
 
-[snippet=hlen-1]
+<<< ./snippets/hlen-1.java
+
 > Callback response:
 
 ```json

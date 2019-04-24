@@ -42,4 +42,4 @@ Returns an updated [Role](/sdk-reference/android/3/role) object.
 
 ## Usage
 
-[snippet=update-role-1]
+<<< ./snippets/update-role-1.java

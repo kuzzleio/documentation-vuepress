@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: hgetall
 description: MemoryStorage:hgetall
 ---
-  
 
 # hgetall
+
 Returns all fields and values of a hash.
 
 [[_Redis documentation_]](https://redis.io/commands/hgetall)
@@ -14,19 +14,19 @@ Returns all fields and values of a hash.
 
 ## hgetall(key, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | `true` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -36,7 +36,8 @@ Returns a JSON object containing the fields and values of a hash.
 
 ## Usage
 
-[snippet=hgetall-1]
+<<< ./snippets/hgetall-1.java
+
 > Callback response:
 
 ```json

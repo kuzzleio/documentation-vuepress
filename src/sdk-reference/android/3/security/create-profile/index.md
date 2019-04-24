@@ -42,4 +42,4 @@ Returns a security [Profile](/sdk-reference/android/3/profile) object.
 
 ## Usage
 
-[snippet=create-profile-1]
+<<< ./snippets/create-profile-1.java

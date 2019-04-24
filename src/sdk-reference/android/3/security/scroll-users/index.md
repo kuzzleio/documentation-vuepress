@@ -3,28 +3,28 @@ layout: sdk.html.hbs
 title: scrollUsers
 description: Security:scrollUsers
 ---
-  
 
 # scrollUsers
+
 Scrolls on stored users using the provided scroll ID.
 
 ---
 
 ## scrollUsers(scrollId, [options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``scrollId`` | string | Scroll identifier retrieved from a search query |
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                                     |
+| ---------- | ----------- | ----------------------------------------------- |
+| `scrollId` | string      | Scroll identifier retrieved from a search query |
+| `options`  | JSON Object | Optional parameters                             |
+| `callback` | function    | Callback handling the response                  |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -34,4 +34,4 @@ Returns the list of fetched users according to the scroll parameters (offset, li
 
 ## Usage
 
-[snippet=scroll-users-1]
+<<< ./snippets/scroll-users-1.java

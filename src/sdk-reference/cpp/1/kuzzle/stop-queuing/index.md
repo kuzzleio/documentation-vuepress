@@ -21,4 +21,4 @@ The `Kuzzle` instance.
 
 ## Usage
 
-[snippet=stop-queuing]
+<<< ./snippets/stop-queuing.cpp

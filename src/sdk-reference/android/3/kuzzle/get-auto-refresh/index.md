@@ -48,4 +48,4 @@ Returns a boolean with the index `autoRefresh` status.
 
 ## Usage
 
-[snippet=get-auto-refresh-1]
+<<< ./snippets/get-auto-refresh-1.java

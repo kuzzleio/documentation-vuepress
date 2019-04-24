@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: getProfileids
 description: User:getProfileids
 ---
-  
 
 # getProfileIds
+
 Returns the list of profile identifiers associated with this user.
 
 ---
@@ -16,4 +16,4 @@ Returns an array of strings, each a profile identifier associated with this user
 
 ## Usage
 
-[snippet=get-profileids-1]
+<<< ./snippets/get-profileids-1.java

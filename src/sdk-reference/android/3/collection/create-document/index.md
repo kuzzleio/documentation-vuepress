@@ -54,4 +54,4 @@ Returns a [Document](/sdk-reference/android/3/document/) object containing the n
 
 ## Usage
 
-[snippet=create-document-1]
+<<< ./snippets/create-document-1.java

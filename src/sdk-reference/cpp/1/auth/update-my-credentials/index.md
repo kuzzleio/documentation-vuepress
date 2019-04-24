@@ -47,4 +47,4 @@ A JSON string representing the updated credentials.
 
 ## Usage
 
-[snippet=update-my-credentials]
+<<< ./snippets/update-my-credentials.cpp

@@ -46,4 +46,4 @@ Returns an instantiated [SearchResult](/sdk-reference/android/3/search-result) o
 
 ## Usage
 
-[snippet=scroll-1]
+<<< ./snippets/scroll-1.java

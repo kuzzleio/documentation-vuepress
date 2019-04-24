@@ -19,4 +19,4 @@ Just replace _Error_ by _Exception_ to find the exception name. (e.g. `BadReques
 
 #### Example
 
-[snippet=error-handling]
+<<< ./snippets/error-handling.cpp

@@ -34,7 +34,7 @@ Returns a `JSON object` containing the raw Kuzzle response.
 
 ## Usage
 
-[snippet=mget-document-1]
+<<< ./snippets/mget-document-1.java
 
 > Callback response:
 

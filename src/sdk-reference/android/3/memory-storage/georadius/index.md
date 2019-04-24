@@ -68,4 +68,4 @@ Returns an array of names for points that are inside the provided radius.
 
 ## Usage
 
-[snippet=georadius-1]
+<<< ./snippets/georadius-1.java

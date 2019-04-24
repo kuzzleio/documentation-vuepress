@@ -47,7 +47,7 @@ Returns a `JSON object` containing the raw Kuzzle response.
 
 ## Usage
 
-[snippet=create-1]
+<<< ./snippets/create-1.java
 
 > Callback response:
 

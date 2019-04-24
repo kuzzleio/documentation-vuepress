@@ -35,4 +35,4 @@ Returns the `User` object.
 
 ## Usage
 
-[snippet=set-profiles-1]
+<<< ./snippets/set-profiles-1.java

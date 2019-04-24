@@ -50,4 +50,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=get-stats]
+<<< ./snippets/get-stats.cpp

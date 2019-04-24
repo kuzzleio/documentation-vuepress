@@ -64,4 +64,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=update]
+<<< ./snippets/update.cpp

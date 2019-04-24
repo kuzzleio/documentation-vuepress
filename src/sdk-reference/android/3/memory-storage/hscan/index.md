@@ -42,7 +42,7 @@ Returns an object containing 2 entries:
 
 ## Usage
 
-[snippet=hscan-1]
+<<< ./snippets/hscan-1.java
 
 > Callback response:
 

@@ -41,7 +41,7 @@ Can return a 206 partial error in cases where some documents could not be create
 
 ## Usage
 
-[snippet=mcreate-document-1]
+<<< ./snippets/mcreate-document-1.java
 
 > Callback response:
 

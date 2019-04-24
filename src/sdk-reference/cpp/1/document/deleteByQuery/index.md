@@ -53,4 +53,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=delete-by-query]
+<<< ./snippets/delete-by-query.cpp

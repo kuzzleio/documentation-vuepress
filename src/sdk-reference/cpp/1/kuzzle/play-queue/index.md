@@ -21,4 +21,4 @@ The `Kuzzle` instance.
 
 ## Usage
 
-[snippet=play-queue]
+<<< ./snippets/play-queue.cpp

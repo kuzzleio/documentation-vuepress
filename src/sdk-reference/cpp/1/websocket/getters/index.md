@@ -29,4 +29,4 @@ bool isSslConnection()
 
 ## Usage
 
-[snippet=getters]
+<<< ./snippets/getters.cpp

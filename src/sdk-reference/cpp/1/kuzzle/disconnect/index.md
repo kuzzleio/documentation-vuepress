@@ -18,4 +18,4 @@ void disconnect() noexcept;
 
 ## Usage
 
-[snippet=disconnect]
+<<< ./snippets/disconnect.cpp

@@ -39,4 +39,4 @@ const std::vector<std::string>& profile_ids() const;
 
 ## Usage
 
-[snippet=getters]
+<<< ./snippets/getters.cpp

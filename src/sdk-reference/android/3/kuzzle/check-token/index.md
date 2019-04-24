@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: checkToken
 description: Kuzzle:checkToken
 ---
-  
 
 # checkToken
+
 > Callback response if the token is valid:
 
 ```json
@@ -34,10 +34,10 @@ This method is non-queuable, meaning that during offline mode, it will be discar
 
 ## checkToken(token, callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``token``    | string   | The token to check |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type     | Description                    |
+| ---------- | -------- | ------------------------------ |
+| `token`    | string   | The token to check             |
+| `callback` | function | Callback handling the response |
 
 **Note:** this method sends an unauthenticated API call to Kuzzle, meaning it ignores the JWT Token property, even if it has been set.
 
@@ -50,4 +50,4 @@ If the token is valid, an `expiresAt` property is set with the expiration timest
 
 ## Usage
 
-[snippet=check-token-1]
+<<< ./snippets/check-token-1.java

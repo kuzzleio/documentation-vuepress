@@ -33,4 +33,4 @@ Returns a [CollectionMapping](/sdk-reference/android/3/collection-mapping/) obje
 
 ## Usage
 
-[snippet=get-mapping-1]
+<<< ./snippets/get-mapping-1.java

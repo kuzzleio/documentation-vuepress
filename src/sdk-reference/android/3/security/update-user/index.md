@@ -42,4 +42,4 @@ Returns an updated [User](/sdk-reference/android/3/user) object.
 
 ## Usage
 
-[snippet=update-user-1]
+<<< ./snippets/update-user-1.java

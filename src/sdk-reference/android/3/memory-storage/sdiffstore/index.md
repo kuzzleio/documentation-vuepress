@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: sdiffstore
 description: MemoryStorage:sdiffstore
 ---
-  
 
 # sdiffstore
+
 Computes the difference between the set of unique values stored at `key` and the other provided sets, and stores the result in the key stored at `destination`.
 
 If the `destination` key already exists, it is overwritten.
@@ -16,21 +16,22 @@ If the `destination` key already exists, it is overwritten.
 
 ## sdiffstore(key, keys, destination, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier to compare |
-| `keys` | array | list of set keys to compare with the set stored at `key` |
-| `destination` | string | Destination key identifier |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments     | Type        | Description                                              |
+| ------------- | ----------- | -------------------------------------------------------- |
+| `key`         | string      | Key identifier to compare                                |
+| `keys`        | array       | list of set keys to compare with the set stored at `key` |
+| `destination` | string      | Destination key identifier                               |
+| `options`     | JSON Object | Optional parameters                                      |
+| `callback`    | function    | Callback                                                 |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -45,7 +46,8 @@ Returns an integer containing the number of stored elements.
 
 ## Usage
 
-[snippet=sdiffstore-1]
+<<< ./snippets/sdiffstore-1.java
+
 > Callback response:
 
 ```json

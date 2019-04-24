@@ -43,4 +43,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=get-my-credentials]
+<<< ./snippets/get-my-credentials.cpp

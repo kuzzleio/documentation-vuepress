@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: incrby
 description: MemoryStorage:incrby
 ---
-  
 
 # incrby
+
 Increments the number stored at `key` by the provided integer value. If the key does not exist, it is set to 0 before performing the operation.
 
 [[_Redis documentation_]](https://redis.io/commands/incrby)
@@ -14,20 +14,20 @@ Increments the number stored at `key` by the provided integer value. If the key 
 
 ## incrby(key, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `value` | int | Increment value |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description         |
+| ---------- | ----------- | ------------------- |
+| `key`      | string      | Key identifier      |
+| `value`    | int         | Increment value     |
+| `options`  | JSON Object | Optional parameters |
+| `callback` | function    | Callback            |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -43,7 +43,8 @@ Returns an integer containing the updated key value.
 
 ## Usage
 
-[snippet=incrby-1]
+<<< ./snippets/incrby-1.java
+
 > Callback response:
 
 ```json

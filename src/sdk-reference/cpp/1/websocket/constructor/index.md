@@ -36,4 +36,4 @@ WebSocket(const std::string& host, kuzzleio::options& options);
 
 ## Usage
 
-[snippet=constructor]
+<<< ./snippets/constructor.cpp

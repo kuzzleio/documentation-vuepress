@@ -40,4 +40,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=admin-exists]
+<<< ./snippets/admin-exists.cpp

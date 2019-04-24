@@ -33,4 +33,4 @@ Returns an array of security [Profile](/sdk-reference/android/3/profile) objects
 
 ## Usage
 
-[snippet=get-profiles-1]
+<<< ./snippets/get-profiles-1.java

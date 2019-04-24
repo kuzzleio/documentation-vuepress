@@ -41,4 +41,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=get-my-rights]
+<<< ./snippets/get-my-rights.cpp

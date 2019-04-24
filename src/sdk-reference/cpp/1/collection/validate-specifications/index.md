@@ -73,4 +73,4 @@ A `kuzzleio::validation_response` object which contain information about the spe
 
 ## Usage
 
-[snippet=validate-specifications]
+<<< ./snippets/validate-specifications.cpp

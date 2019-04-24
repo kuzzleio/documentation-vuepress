@@ -20,4 +20,4 @@ The `Kuzzle` instance.
 
 ## Usage
 
-[snippet=flush-queue]
+<<< ./snippets/flush-queue.cpp

@@ -51,7 +51,7 @@ $ export KUZZLE_SDK_PATH=$PWD/kuzzle-cpp-sdk
 
 Create a `my-first-kuzzle-app.cpp` file and with the following source code :
 
-[snippet=connect]
+<<< ./snippets/connect.cpp
 
 Build and run :
 
@@ -68,7 +68,7 @@ Now we'll learn how to nitializes the Kuzzle Server storage by creating an index
 
 Update `my-first-kuzzle-app.cpp` with the following content :
 
-[snippet=init]
+<<< ./snippets/init.cpp
 
 Build and execute the program with the following commands :
 
@@ -94,7 +94,7 @@ We will create a document in `nyc-open-data/yellow-taxi`
 
 Create a `create-document.cpp` file with the following source code :
 
-[snippet=document]
+<<< ./snippets/document.cpp
 
 Build and run :
 
@@ -117,7 +117,7 @@ Now you know how to:
 
 Time to use realtime with Kuzzle. Create a new file `realtime.cpp` with the following code:
 
-[snippet=realtime]
+<<< ./snippets/realtime.cpp
 
 This program subscribes to changes made to documents with a `license` field set to `B`, within the `yellow-taxi` collection. Whenever a document matching the provided filters changes, a new notification is received from Kuzzle.
 Run your program:

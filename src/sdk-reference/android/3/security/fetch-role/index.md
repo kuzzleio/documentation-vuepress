@@ -34,4 +34,4 @@ Returns a [Role](/sdk-reference/android/3/role) object.
 
 ## Usage
 
-[snippet=fetch-role-1]
+<<< ./snippets/fetch-role-1.java

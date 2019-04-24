@@ -9,7 +9,7 @@ order: 100
 
 ## aggregations
 
-Returns a JSON string representing the search [aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/6.5/search-aggregations.html).  
+Returns a JSON string representing the search [aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/6.5/search-aggregations.html).
 
 ### Arguments
 
@@ -19,7 +19,7 @@ char const* aggregations() const;
 
 ## fetched
 
-Returns the number retrieved items so far.  
+Returns the number retrieved items so far.
 
 ### Arguments
 
@@ -32,11 +32,11 @@ unsigned fetched() const;
 Returns a JSON string representing an array of JSON objects containing the matching documents.  
 Each object has the following properties:
 
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| _id | <pre>string</pre> | Document ID |
-| _score | <pre>number</pre> | [Relevance score](https://www.elastic.co/guide/en/elasticsearch/guide/current/relevance-intro.html) |
-| _source | <pre>object</pre> | Document content |
+| Property | Type              | Description                                                                                         |
+| -------- | ----------------- | --------------------------------------------------------------------------------------------------- |
+| \_id     | <pre>string</pre> | Document ID                                                                                         |
+| \_score  | <pre>number</pre> | [Relevance score](https://www.elastic.co/guide/en/elasticsearch/guide/current/relevance-intro.html) |
+| \_source | <pre>object</pre> | Document content                                                                                    |
 
 ### Arguments
 
@@ -46,7 +46,7 @@ char const* hits() const;
 
 ## total
 
-Returns the total number of found documents. 
+Returns the total number of found documents.
 Can be greater than the number of documents retrieved by the current `SearchResult` instance.
 
 ### Arguments
@@ -67,4 +67,4 @@ char const* scroll_id() const;
 
 ## Usage
 
-[snippet=getters]
+<<< ./snippets/getters.cpp

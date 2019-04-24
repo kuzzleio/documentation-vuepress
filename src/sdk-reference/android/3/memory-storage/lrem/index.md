@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: lrem
 description: MemoryStorage:lrem
 ---
-  
 
 # lrem
+
 Removes the first `count` occurences of elements equal to `value` from a list.
 
 [[_Redis documentation_]](https://redis.io/commands/lrem)
@@ -14,21 +14,22 @@ Removes the first `count` occurences of elements equal to `value` from a list.
 
 ## lrem(key, count, value, [options], [callback])
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| `key` | string | Key identifier |
-| `count` | int | Number of occurences of the value to remove |
-| `value` | string | Value to be removed from the list |
-| `options` | JSON Object | Optional parameters |
-| `callback` | function | Callback |
+| Arguments  | Type        | Description                                 |
+| ---------- | ----------- | ------------------------------------------- |
+| `key`      | string      | Key identifier                              |
+| `count`    | int         | Number of occurences of the value to remove |
+| `value`    | string      | Value to be removed from the list           |
+| `options`  | JSON Object | Optional parameters                         |
+| `callback` | function    | Callback                                    |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| `queuable` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
+
 ---
 
 ## Return Value
@@ -43,7 +44,8 @@ Returns an integer containing the number of removed elements.
 
 ## Usage
 
-[snippet=lrem-1]
+<<< ./snippets/lrem-1.java
+
 > Callback response:
 
 ```json

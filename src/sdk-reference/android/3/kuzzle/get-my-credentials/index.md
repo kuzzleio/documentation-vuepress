@@ -34,7 +34,7 @@ Returns an object with the credentials for the provided authentication strategy.
 
 ## Usage
 
-[snippet=get-my-credentials-1]
+<<< ./snippets/get-my-credentials-1.java
 
 > Callback response
 

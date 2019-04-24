@@ -48,4 +48,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=get-last-stats]
+<<< ./snippets/get-last-stats.cpp

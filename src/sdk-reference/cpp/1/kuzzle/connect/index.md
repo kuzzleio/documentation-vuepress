@@ -21,4 +21,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=connect]
+<<< ./snippets/connect.cpp

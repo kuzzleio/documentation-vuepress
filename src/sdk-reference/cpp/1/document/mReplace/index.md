@@ -58,4 +58,4 @@ Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle er
 
 ## Usage
 
-[snippet=m-replace]
+<<< ./snippets/m-replace.cpp

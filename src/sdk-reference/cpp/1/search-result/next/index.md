@@ -41,7 +41,7 @@ The results that are returned from a scroll request reflect the state of the ind
 
 As such, even if some documents are added or deleted from the database between two calls to `next`, the result is guaranteed to include all items matching the query at the time the initial `search` was sent and to not get any duplicate between two search pages.
 
-[snippet=scroll]
+<<< ./snippets/scroll.cpp
 
 ## Usage with sort / size
 
@@ -63,7 +63,7 @@ Because this method does not freeze the research between two calls, if updates a
   </p>
 </div>
 
-[snippet=fromsize]
+<<< ./snippets/fromsize.cpp
 
 ## Return
 

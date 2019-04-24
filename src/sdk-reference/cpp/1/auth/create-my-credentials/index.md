@@ -45,4 +45,4 @@ A JSON string representing the new credentials.
 
 ## Usage
 
-[snippet=create-my-credentials]
+<<< ./snippets/create-my-credentials.cpp

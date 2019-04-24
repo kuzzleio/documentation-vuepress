@@ -28,4 +28,4 @@ Returns the `User` object.
 
 ## Usage
 
-[snippet=set-content-1]
+<<< ./snippets/set-content-1.java

@@ -46,4 +46,4 @@ The `callback` argument is called when the subscription ends, either successfull
 
 ## Usage
 
-[snippet=subscribe-1]
+<<< ./snippets/subscribe-1.java

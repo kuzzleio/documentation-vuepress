@@ -3,27 +3,27 @@ layout: sdk.html.hbs
 title: now
 description: Kuzzle:now
 ---
-  
 
 # now
+
 Retrieves the current Kuzzle time.
 
 ---
 
 ## now([options], callback)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``options`` | JSON Object | Optional parameters |
-| ``callback`` | function | Callback handling the response |
+| Arguments  | Type        | Description                    |
+| ---------- | ----------- | ------------------------------ |
+| `options`  | JSON Object | Optional parameters            |
+| `callback` | function    | Callback handling the response |
 
 ---
 
 ## Options
 
-| Option | Type | Description | Default |
-|---------------|---------|----------------------------------------|---------|
-| ``queuable`` | boolean | Make this request queuable or not  | ``true`` |
+| Option     | Type    | Description                       | Default |
+| ---------- | ------- | --------------------------------- | ------- |
+| `queuable` | boolean | Make this request queuable or not | `true`  |
 
 ---
 
@@ -33,7 +33,8 @@ Returns an `integer` containing the current Kuzzle time, encoded as an UTC Epoch
 
 ## Usage
 
-[snippet=now-1]
+<<< ./snippets/now-1.java
+
 > Callback response:
 
 ```json

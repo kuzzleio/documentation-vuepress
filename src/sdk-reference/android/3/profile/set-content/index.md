@@ -3,9 +3,9 @@ layout: sdk.html.hbs
 title: setContent
 description: Profile:setContent
 ---
-  
 
 # setContent
+
 Replaces the content of the `Profile` object.
 
 <div class="alert alert-info">
@@ -16,9 +16,9 @@ Updating a profile will have no impact until the <code>save</code> method is cal
 
 ## setContent(data)
 
-| Arguments | Type | Description |
-|---------------|---------|----------------------------------------|
-| ``data`` | JSON Object | Profile content |
+| Arguments | Type        | Description     |
+| --------- | ----------- | --------------- |
+| `data`    | JSON Object | Profile content |
 
 ---
 
@@ -28,4 +28,4 @@ Returns the `Profile` object.
 
 ## Usage
 
-[snippet=set-content-1]
+<<< ./snippets/set-content-1.java

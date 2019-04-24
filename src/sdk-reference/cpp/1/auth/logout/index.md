@@ -16,4 +16,4 @@ void logout() noexcept;
 
 ## Usage
 
-[snippet=logout]
+<<< ./snippets/logout.cpp

@@ -62,4 +62,4 @@ A `Kuzzle` instance.
 
 ## Usage
 
-[snippet=constructor]
+<<< ./snippets/constructor.cpp
