@@ -35,7 +35,6 @@ module.exports = function snippet(md, options = {}) {
       );
     }
     const filename = rawPath.split(/[{:\s]/).shift();
-    // const content = JSON.stringify(rawPath, '', 4);
     const content = fs.existsSync(filename)
       ? fs.readFileSync(filename).toString()
       : 'Not found: ' + filename;

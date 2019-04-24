@@ -234,6 +234,7 @@ module.exports = {
     },
     extendMarkdown: md => {
       md.use(require('./markdown/relative-snippet'));
+      md.use(require('./markdown/copy-paste-snippet-btn'));
     }
   },
   configureWebpack: {

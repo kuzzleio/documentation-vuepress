@@ -26,20 +26,21 @@
     @extend %md-icon;
 
     transition: color 0.25s, opacity 0.25s;
-    color: $md-color-black--lightest;
+    opacity: 0.75;
+    color: $md-code-color;
     content: '\E14D'; // content_copy
 
     // Show on container hover
     pre:hover &,
     .codehilite:hover & {
-      color: $md-color-black--light;
+      opacity: 1;
     }
   }
 
   // Focused or hovered icon
   &:focus::before,
   &:hover::before {
-    color: $md-color-accent;
+    opacity: 1;
   }
 
   // Message
