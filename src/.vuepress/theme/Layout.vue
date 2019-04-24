@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import Clipboard from 'clipboard';
+
 import Vue from 'vue';
 import Header from './Header.vue';
 import Sidebar from './Sidebar.vue';
@@ -62,7 +64,37 @@ export default {
       return resolveSidebarItems(this.$page, this.$site);
     }
   },
-  mounted() {},
+  mounted() {
+    // window.Clipboard = Clipboard;
+    window.copy = new Clipboard('.md-clipboard', {
+      target: trigger => {
+        return trigger.parentElement.nextElementSibling;
+      }
+    });
+
+    copy.on('success', action => {
+      const message = action.trigger.parentElement.querySelector(
+        '.md-clipboard__message'
+      );
+      if (!(message instanceof HTMLElement)) throw new ReferenceError();
+
+      /* Clear selection and reset debounce logic */
+      action.clearSelection();
+      if (message.dataset.mdTimer)
+        clearTimeout(parseInt(message.dataset.mdTimer, 10));
+
+      /* Set message indicating success and show it */
+      message.classList.add('md-clipboard__message--active');
+
+      /* Hide message after two seconds */
+      message.dataset.mdTimer = setTimeout(() => {
+        message.classList.remove('md-clipboard__message--active');
+        message.dataset.mdTimer = '';
+      }, 2000).toString();
+
+      // TODO add Google Analytics event
+    });
+  },
   methods: {
     openSidebar() {
       this.sidebarOpen = true;

@@ -17,8 +17,8 @@ function renderButton(index) {
       <button
         class="md-clipboard"
         title="Copy to clipboard"
-        data-clipboard-target="#__code_${index} pre, #__code_${index} code"
+        data-clipboard-target="#__code_${index} pre code"
       />
-      <span class="md-clipboard__message" />
+      <span class="md-clipboard__message">Copied to clipboard!</span>
     </div>`;
 }
