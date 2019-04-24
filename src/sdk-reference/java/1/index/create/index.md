@@ -36,4 +36,4 @@ Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handl
 
 ## Usage
 
-[snippet=create]
+<<< ./snippets/create.java

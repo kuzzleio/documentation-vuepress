@@ -36,4 +36,4 @@ Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk-
 
 ## Usage
 
-[snippet=check-token]
+<<< ./snippets/check-token.java

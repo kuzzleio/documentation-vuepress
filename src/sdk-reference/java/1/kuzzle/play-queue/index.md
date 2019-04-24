@@ -21,4 +21,4 @@ The `io.kuzzle.sdk.Kuzzle` instance.
 
 ## Usage
 
-[snippet=play-queue]
+<<< ./snippets/play-queue.java

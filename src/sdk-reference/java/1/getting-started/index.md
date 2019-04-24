@@ -43,7 +43,7 @@ If you're using Eclipse, IntelliJ or another Java IDE, you need to add the SDK a
 
 Initialize a new Java project, create a `gettingstartedfirstconnection.java` file and start by adding the code below:
 
-[snippet=firstconnection]
+<<< ./snippets/firstconnection.java
 
 This program initializes the Kuzzle Server storage by creating a data index, and a data collection inside it
 Run the program with the following command:
@@ -73,7 +73,7 @@ Here is how Kuzzle structures its storage space:
 - data collections contain documents
   Create a `gettingstartedstorage.java` file in the playground and add this code:
 
-[snippet=document]
+<<< ./snippets/document.java
 
 As you did before, build and run your program:
 
@@ -95,7 +95,7 @@ Now you know how to:
 
 Time to use realtime with Kuzzle. Create a new file `gettingstartedrealtime.java` with the following code:
 
-[snippet=realtime]
+<<< ./snippets/realtime.java
 
 This program subscribes to changes made to documents with a `license` field set to `B`, within the `yellow-taxi` collection. Whenever a document matching the provided filters changes, a new notification is received from Kuzzle.
 

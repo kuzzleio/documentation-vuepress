@@ -41,4 +41,4 @@ True if exists, false if not.
 
 ## Usage
 
-[snippet=credentials-exist]
+<<< ./snippets/credentials-exist.java

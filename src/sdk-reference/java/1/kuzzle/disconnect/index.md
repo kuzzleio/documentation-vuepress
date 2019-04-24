@@ -18,4 +18,4 @@ void disconnect()
 
 ## Usage
 
-[snippet=disconnect]
+<<< ./snippets/disconnect.java

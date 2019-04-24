@@ -19,9 +19,9 @@ Kuzzle(String host, io.kuzzle.sdk.Options options)
 
 ## Arguments
 
-| Argument  | Type    | Description                     | Required |
-| --------- | ------- | ------------------------------- | -------- |
-| `host`    | String  | The target Kuzzle host          | yes      |
+| Argument  | Type                  | Description                     | Required |
+| --------- | --------------------- | ------------------------------- | -------- |
+| `host`    | String                | The target Kuzzle host          | yes      |
 | `options` | io.kuzzle.sdk.Options | Kuzzle connection configuration | yes      |
 
 ### host
@@ -57,11 +57,11 @@ Can be a hostname or an IP address.
 The properties can be writable.  
 For example, you can read the `volatile` property via `getVolatile()` and set it via `setVolatile()`.
 
-| Property name | Type          | Description                                                   | Availability |
-| ------------- | ------------- | ------------------------------------------------------------- | :----------: |
-| `autoReplay`  | boolean       | Automatically replay queued requests on a `reconnected` event |     Set      |
-| `jwt`         | String        | Token used in requests for authentication.                    |     Get      |
-| `volatile`    | String | Common volatile data in JSON format, will be sent to all future requests     |   Get/Set    |
+| Property name | Type    | Description                                                              | Availability |
+| ------------- | ------- | ------------------------------------------------------------------------ | :----------: |
+| `autoReplay`  | boolean | Automatically replay queued requests on a `reconnected` event            |     Set      |
+| `jwt`         | String  | Token used in requests for authentication.                               |     Get      |
+| `volatile`    | String  | Common volatile data in JSON format, will be sent to all future requests |   Get/Set    |
 
 ## Return
 
@@ -69,4 +69,4 @@ A `io.kuzzle.sdk.Kuzzle` instance.
 
 ## Usage
 
-[snippet=constructor]
+<<< ./snippets/constructor.java

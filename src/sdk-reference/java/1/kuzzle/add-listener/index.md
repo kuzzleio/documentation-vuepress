@@ -50,4 +50,4 @@ The `io.kuzzle.sdk.Kuzzle` instance.
 
 ## Usage
 
-[snippet=add-listener]
+<<< ./snippets/add-listener.java

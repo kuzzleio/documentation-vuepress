@@ -18,12 +18,12 @@ public User getCurrentUser();
 
 A User object with setters and getters containing:
 
-| Property     | Type    | Description                       |
-| ---------- | ------- | --------------------------------- |
-| `id` | String | The user ID |
-| `content` | String | The user content |
+| Property     | Type     | Description                         |
+| ------------ | -------- | ----------------------------------- |
+| `id`         | String   | The user ID                         |
+| `content`    | String   | The user content                    |
 | `profileIds` | String[] | An array containing the profile ids |
 
 ## Usage
 
-[snippet=get-current-user]
+<<< ./snippets/get-current-user.java

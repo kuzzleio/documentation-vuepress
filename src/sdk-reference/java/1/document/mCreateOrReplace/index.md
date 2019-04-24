@@ -54,4 +54,4 @@ Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handl
 
 ## Usage
 
-[snippet=m-create-or-replace]
+<<< ./snippets/m-create-or-replace.java

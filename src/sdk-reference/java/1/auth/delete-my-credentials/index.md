@@ -41,4 +41,4 @@ Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk-
 
 ## Usage
 
-[snippet=delete-my-credentials]
+<<< ./snippets/delete-my-credentials.java

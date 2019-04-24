@@ -21,4 +21,4 @@ A `String` with the error message or `null` if connection is made successfully.
 
 ## Usage
 
-[snippet=connect]
+<<< ./snippets/connect.java

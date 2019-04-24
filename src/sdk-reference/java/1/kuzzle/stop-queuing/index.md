@@ -21,4 +21,4 @@ The `io.kuzzle.sdk.Kuzzle` instance.
 
 ## Usage
 
-[snippet=stop-queuing]
+<<< ./snippets/stop-queuing.java

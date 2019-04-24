@@ -20,4 +20,4 @@ The `io.kuzzle.sdk.Kuzzle` instance.
 
 ## Usage
 
-[snippet=flush-queue]
+<<< ./snippets/flush-queue.java

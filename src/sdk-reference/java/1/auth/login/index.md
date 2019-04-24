@@ -49,4 +49,4 @@ Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk-
 
 ## Usage
 
-[snippet=login]
+<<< ./snippets/login.java

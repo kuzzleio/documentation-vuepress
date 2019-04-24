@@ -16,4 +16,4 @@ void logout();
 
 ## Usage
 
-[snippet=logout]
+<<< ./snippets/logout.java
