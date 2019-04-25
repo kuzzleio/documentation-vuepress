@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="overlay" :class="{hidden: !sidebarOpen}" @click="closeSidebar"></div>
-    <Header @sidebar-open="openSidebar"/>
-    <div class="md-container">
+    <Header ref="headerContainer" @sidebar-open="openSidebar"/>
+    <div ref="mainContainer" class="md-container">
       <!-- Main container -->
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -11,6 +11,7 @@
             class="md-sidebar md-sidebar--primary"
             :class="{'md-sidebar--open': sidebarOpen}"
             data-md-component="navigation"
+            ref="sidebarContainer"
           >
             <div class="md-sidebar__scrollwrap">
               <div class="md-sidebar__inner">
@@ -98,6 +99,35 @@ export default {
       this.$ga('send', 'event', 'snippet', 'copied', 'label', 1, {
         path: this.$route.path
       });
+    },
+    onWindowResize() {
+      const visible = window.innerHeight;
+      const headerHeight = this.$refs.headerContainer.$el.querySelector(
+        'header'
+      ).offsetHeight;
+
+      if (!headerHeight) {
+        return;
+      }
+
+      this.$refs.mainContainer.style = `padding-top: ${headerHeight}px;`;
+
+      const sidebarTop = window
+        .getComputedStyle(this.$refs.sidebarContainer)
+        .top.replace('px', '');
+
+      /**
+       * * This helps to understand if we're on a mobile screen or not.
+       *
+       * On big screens, the Sidebar's top is the same as the mainContainer's
+       * padding-top, while on smaller screens it's 0. On small screens the
+       * height of the sidebar is 100% (this is set in the stylesheets) so
+       * we don't want to change it.
+       */
+      if (parseInt(sidebarTop) > 0) {
+        const sidebarHeight = visible - headerHeight;
+        this.$refs.sidebarContainer.style = `height: ${sidebarHeight}px`;
+      }
     }
   },
   mounted() {
@@ -109,6 +139,9 @@ export default {
     });
 
     copy.on('success', this.onCodeCopied);
+
+    window.addEventListener('resize', this.onWindowResize);
+    this.onWindowResize();
   }
 };
 </script>
