@@ -22,6 +22,9 @@
           <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
             <div class="md-sidebar__scrollwrap">
               <div class="md-sidebar__inner">
+                <div v-if="$route.path.match('sdk-reference')" class="selector-container">
+                  <SDKSelector :items="sdkList"/>
+                </div>
                 <TOC/>
               </div>
             </div>
@@ -50,12 +53,14 @@ import TOC from './TOC.vue';
 import ContentFeedback from './ContentFeedback.vue';
 import Footer from './Footer.vue';
 import { resolveSidebarItems } from './util.js';
+import sdkList from '../sdk.json';
 
 export default {
   components: { Header, Sidebar, TOC, ContentFeedback, Footer },
   data() {
     return {
-      sidebarOpen: false
+      sidebarOpen: false,
+      sdkList
     };
   },
   computed: {

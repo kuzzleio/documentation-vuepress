@@ -72,6 +72,7 @@ $md-toggle__drawer--checked: '[data-md-toggle="drawer"]:checked ~ .md-container'
   // Secondary sidebar with table of contents
   &--secondary {
     display: none;
+    height: 100%;
 
     // [tablet landscape +]: Show table of contents next to body copy
     @include break-from-device(tablet landscape) {
