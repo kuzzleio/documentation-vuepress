@@ -23,7 +23,7 @@
             class="md-nav__link"
             :href="`${section.children && section.children.length ? section.children[0].path : section.path}`"
           >
-            <div v-if="section.children">
+            <div v-if="section.children && section.children.length">
               <i
                 v-if="$page.path.includes(section.path)"
                 class="fa fa-caret-down"

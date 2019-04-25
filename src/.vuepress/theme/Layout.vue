@@ -90,7 +90,9 @@ export default {
         message.dataset.mdTimer = '';
       }, 2000).toString();
 
-      this.$ga('send', 'event', 'clipboard', 'copied', this.$route.path);
+      this.$ga('send', 'event', 'snippet', 'copied', 'label', 1, {
+        path: this.$route.path
+      });
     }
   },
   mounted() {
