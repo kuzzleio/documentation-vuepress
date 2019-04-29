@@ -1,14 +1,14 @@
 <template>
   <!-- Main navigation -->
   <nav class="md-nav md-nav--primary" data-md-level="0">
-    <!-- {{> navMobile}} -->
-
     <label class="md-nav__title md-nav__title--site mobile-only" for="drawer">
       <span class="md-nav__button md-logo">
         <img src="/logo-min.png" width="48" height="48">
       </span>
       <span>Kuzzle Documentation</span>
     </label>
+
+    <TabsMobile/>
 
     <!-- Render item list -->
     <ul class="md-nav__list" data-md-scrollfix>
@@ -58,7 +58,11 @@
 </template>
 
 <script>
+import TabsMobile from './TabsMobile.vue';
 export default {
+  components: {
+    TabsMobile
+  },
   props: {
     sections: Array
   },

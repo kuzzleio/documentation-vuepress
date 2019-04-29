@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="md-layout">
     <div class="overlay" :class="{hidden: !sidebarOpen}" @click="closeSidebar"></div>
-    <Header ref="headerContainer" @sidebar-open="openSidebar"/>
-    <div ref="mainContainer" class="md-container">
+    <Header ref="header" @sidebar-open="openSidebar"/>
+    <div ref="container" class="md-container">
       <!-- Main container -->
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -11,7 +11,7 @@
             class="md-sidebar md-sidebar--primary"
             :class="{'md-sidebar--open': sidebarOpen}"
             data-md-component="navigation"
-            ref="sidebarContainer"
+            ref="sidebar"
           >
             <div class="md-sidebar__scrollwrap">
               <div class="md-sidebar__inner">
@@ -40,7 +40,7 @@
         </div>
       </main>
 
-      <Footer/>
+      <Footer ref="footer"/>
     </div>
   </div>
 </template>
@@ -101,33 +101,60 @@ export default {
       });
     },
     onWindowResize() {
-      const visible = window.innerHeight;
-      const headerHeight = this.$refs.headerContainer.$el.querySelector(
-        'header'
-      ).offsetHeight;
+      this.setContainerPadding();
+      setTimeout(() => {
+        this.computeSidebarHeight();
+      }, 200);
+    },
+    setContainerPadding() {
+      const padding = this.$refs.header.$el.querySelector('header')
+        .offsetHeight;
 
-      if (!headerHeight) {
+      if (padding === null || typeof padding === 'undefined') {
         return;
       }
 
-      this.$refs.mainContainer.style = `padding-top: ${headerHeight}px;`;
-
+      this.$refs.container.style = `padding-top: ${padding}px;`;
+    },
+    computeSidebarHeight() {
       const sidebarTop = window
-        .getComputedStyle(this.$refs.sidebarContainer)
+        .getComputedStyle(this.$refs.sidebar)
         .top.replace('px', '');
 
       /**
        * * This helps to understand if we're on a mobile screen or not.
        *
-       * On big screens, the Sidebar's top is the same as the mainContainer's
+       * On big screens, the Sidebar's top is the same as the container's
        * padding-top, while on smaller screens it's 0. On small screens the
        * height of the sidebar is 100% (this is set in the stylesheets) so
        * we don't want to change it.
        */
-      if (parseInt(sidebarTop) > 0) {
-        const sidebarHeight = visible - headerHeight;
-        this.$refs.sidebarContainer.style = `height: ${sidebarHeight}px`;
+      if (parseInt(sidebarTop) <= 0) {
+        this.$refs.sidebar.style = `height: inherit`;
+        return;
       }
+
+      const topBoundary = this.$refs.header.$el.querySelector('header')
+        .offsetHeight;
+
+      if (topBoundary === null || typeof topBoundary === 'undefined') {
+        return;
+      }
+
+      const visible = window.innerHeight - topBoundary;
+      let sidebarHeight = visible - this.$refs.footer.$el.offsetHeight;
+
+      if (this.$refs.container.offsetHeight > visible) {
+        sidebarHeight = Math.min(
+          visible,
+          this.$refs.container.offsetHeight -
+            this.$refs.footer.$el.offsetHeight -
+            window.pageYOffset -
+            topBoundary
+        );
+      }
+
+      this.$refs.sidebar.style = `height: ${sidebarHeight}px`;
     }
   },
   mounted() {
@@ -141,6 +168,7 @@ export default {
     copy.on('success', this.onCodeCopied);
 
     window.addEventListener('resize', this.onWindowResize);
+    window.addEventListener('scroll', this.computeSidebarHeight);
     this.onWindowResize();
   }
 };
@@ -148,3 +176,9 @@ export default {
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="./styles/main.scss" lang="scss"></style>
+
+<style lang="scss">
+.md-layout {
+  height: 100%;
+}
+</style>
