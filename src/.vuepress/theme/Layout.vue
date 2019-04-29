@@ -13,7 +13,7 @@
             data-md-component="navigation"
             ref="sidebar"
           >
-            <div class="md-sidebar__scrollwrap">
+            <div v-if="!$page.frontmatter.nosidebar" class="md-sidebar__scrollwrap">
               <div class="md-sidebar__inner">
                 <Sidebar :sections="sections"/>
               </div>
