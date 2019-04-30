@@ -2,11 +2,14 @@
   <div class="selector" ref="selector">
     <div class="selector-selectedItem" @click="toggleList()">
       <img
+        v-if="currentLanguage"
         class="selector-selectedItem-icon"
         :src="currentLanguage.icon"
         :alt="currentLanguage.language"
       >
-      <span class="selector-selectedItem-name">{{ currentLanguage.name }}</span>
+      <span
+        class="selector-selectedItem-name"
+      >{{ currentLanguage ? currentLanguage.name : 'Select an SDK' }}</span>
       <i class="fa fa-caret-down" aria-hidden="true"></i>
     </div>
     <ul class="selector-list">
@@ -18,7 +21,7 @@
       >
         <a
           class="selector-list-item-link"
-          :href="`/sdk-reference/${item.language}/${item.version}/`"
+          :href="generateLink(`/sdk-reference/${item.language}/${item.version}/`)"
         >
           <img class="selector-list-item-icon" :src="item.icon" :alt="item.language">
           <span class="selector-list-item-name">{{ item.name }}</span>
@@ -29,6 +32,8 @@
 </template>
 
 <script>
+import { getValidLinkByRootPath } from '../theme/util.js';
+
 export default {
   props: {
     items: Array
@@ -43,12 +48,17 @@ export default {
       const language = this.$route.path.split('/')[2],
         version = this.$route.path.split('/')[3];
 
-      return this.items.find(el => {
+      const lang = this.items.find(el => {
         return el.language === language && el.version === version;
       });
+
+      return lang || null;
     }
   },
   methods: {
+    generateLink(path) {
+      return getValidLinkByRootPath(path, this.$site.pages);
+    },
     toggleList: function() {
       this.isListShowed = !this.isListShowed;
     },

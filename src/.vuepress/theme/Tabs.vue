@@ -5,50 +5,50 @@
       <ul class="md-tabs__list">
         <li class="md-tabs__item">
           <a
-            href="/guide"
+            :class="{'md-tabs__link--active': $route.path.match('/guide/')}"
+            :href="generateLink('/guide/')"
             title="Guide"
             class="md-tabs__link"
-            :class="{'md-tabs__link--active': $route.path.match('guide')}"
           >Guides</a>
         </li>
         <li class="md-tabs__item">
           <a
-            href="/sdk-reference"
+            :class="{'md-tabs__link--active': $route.path.match('/sdk-reference/')}"
+            href="/sdk-reference/"
             title="SDK"
             class="md-tabs__link"
-            :class="{'md-tabs__link--active': $route.path.match('sdk')}"
           >SDK</a>
         </li>
         <li class="md-tabs__item">
           <a
-            href="/api"
+            :class="{'md-tabs__link--active': $route.path.match('/api/')}"
+            :href="generateLink('/api/')"
             title="API"
             class="md-tabs__link"
-            :class="{'md-tabs__link--active': $route.path.match('api')}"
           >API</a>
         </li>
         <li class="md-tabs__item">
           <a
-            href="/plugins"
+            :class="{'md-tabs__link--active': $route.path.match('/plugins/')}"
+            :href="generateLink('/plugins/')"
             title="Plugins"
             class="md-tabs__link"
-            :class="{'md-tabs__link--active': $route.path.match('plugins')}"
           >Plugins</a>
         </li>
         <li class="md-tabs__item">
           <a
-            href="/protocols"
+            :class="{'md-tabs__link--active': $route.path.match('/protocols/')}"
+            :href="generateLink('/protocols/')"
             title="Protocols"
             class="md-tabs__link"
-            :class="{'md-tabs__link--active': $route.path.match('protocols')}"
           >Protocols</a>
         </li>
         <li class="md-tabs__item">
           <a
-            href="/koncorde"
+            :class="{'md-tabs__link--active': $route.path.match('/koncorde/')}"
+            :href="generateLink('/koncorde/')"
             title="Koncorde"
             class="md-tabs__link"
-            :class="{'md-tabs__link--active': $route.path.match('koncorde')}"
           >Koncorde</a>
         </li>
       </ul>
@@ -57,7 +57,15 @@
 </template>
 
 <script>
-export default {};
+import { getValidLinkByRootPath } from './util.js';
+
+export default {
+  methods: {
+    generateLink(path) {
+      return getValidLinkByRootPath(path, this.$site.pages);
+    }
+  }
+};
 </script>
 
 <style>

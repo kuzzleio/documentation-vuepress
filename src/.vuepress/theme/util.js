@@ -1,5 +1,5 @@
 import path from 'path';
-import { get } from 'lodash';
+import { get, endsWith } from 'lodash';
 
 export const hashRE = /#.*$/;
 export const extRE = /\.(md|html)$/;
@@ -114,19 +114,50 @@ function resolvePath(relative, base, append) {
 }
 
 export function getPageDir(page) {
-  if (_.endsWith(page.path, '/')) {
+  if (endsWith(page.path, '/')) {
     return page.path;
   } else {
     return path.parse(page.path).dir;
   }
 }
 
+export function getPageByPath(path, pages) {
+  return pages.find(p => p.path === path);
+}
+
 export function getPageParent(page) {
   return path.normalize(`${getPageDir(page)}../`);
 }
 
+export function getFirstValidChild(page, pages) {
+  const children = getPageChildren(page, pages);
+
+  if (!children.length) {
+    return page;
+  }
+
+  return getFirstValidChild(children[0], pages);
+}
+
+export function getValidLinkByRootPath(pagePath, pages) {
+  const page = getPageByPath(pagePath, pages);
+
+  if (!page) {
+    console.warn(`Unable to find tree node for path ${pagePath}`);
+    return;
+  }
+
+  const validPage = getFirstValidChild(page, pages);
+
+  if (!validPage) {
+    return;
+  }
+
+  return validPage.path;
+}
+
 export function getPageChildren(page, pages) {
-  const pathRE = new RegExp(`^${getPageDir(page)}[a-zA-z_0-9]+/?$`);
+  const pathRE = new RegExp(`^${getPageDir(page)}[a-zA-z_0-9\-]+/?$`);
 
   return pages
     .filter(p => p.path.match(pathRE) && p.path !== page.path)
@@ -166,13 +197,13 @@ function groupPagesByPath(pages) {
 export function sortPagesByOrderAndTitle(p1, p2) {
   const o1 = get(p1, 'frontmatter.order', null);
   const o2 = get(p2, 'frontmatter.order', null);
-  if (o1 === null && o2) {
+
+  if ((o1 === null || typeof o1 === 'undefined') && o2) {
     return 1;
   }
-  if (o2 === null && o1) {
+  if ((o2 === null || typeof o2 === 'undefined') && o1) {
     return -1;
   }
-
   if (o1 === o2) {
     return p1.title < p2.title ? -1 : 1;
   }
