@@ -1,8 +1,0 @@
----
-type: root
-order: 0
-title: Guides
-description: Guides
----
-
-<RedirectToFirstChild />
