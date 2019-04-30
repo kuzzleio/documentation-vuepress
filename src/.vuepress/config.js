@@ -267,7 +267,14 @@ module.exports = {
         before: '<div class="alert alert-info">',
         after: '</div>'
       }
+    ],
+    [
+      'container',
+      {
+        type: 'success',
+        before: '<div class="alert alert-success">',
+        after: '</div>'
+      }
     ]
-    // TODO add another instance of container plugin for alert-success
   ]
 };

@@ -10,7 +10,7 @@ Replaces the roles associated with this security profile.
 
 ---
 
-## setPolicies(Array<String> policyIDs)
+## `setPolicies(Array<String> policyIDs)`
 
 | Arguments   | Type             | Description       |
 | ----------- | ---------------- | ----------------- |
@@ -18,7 +18,7 @@ Replaces the roles associated with this security profile.
 
 ---
 
-## setPolicies(Array<JSONObject> policyDefinitions)
+## `setPolicies(Array<JSONObject> policyDefinitions)`
 
 | Arguments           | Type                  | Description               |
 | ------------------- | --------------------- | ------------------------- |
@@ -30,9 +30,9 @@ Replaces the roles associated with this security profile.
 
 Returns the `Profile` object.
 
-<div class="alert alert-info">
-Updating a profile will have no impact until the <code>save</code> method is called
-</div>
+::: info
+Updating a profile will have no impact until the `save` method is called
+:::
 
 ## Usage
 

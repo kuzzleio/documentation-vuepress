@@ -1,24 +1,24 @@
 <template>
   <div class="Languages">
-    <a :href="generateLink('/sdk-reference/js/6/')" class="Languages-item">
+    <a :href="generateLink('/sdk/js/6/')" class="Languages-item">
       <img src="/logos/javascript.svg" alt="js logo" class="Languages-item-logo">
       <div class="Languages-item-name">Javascript</div>
     </a>
-    <a :href="generateLink('/sdk-reference/go/1/')" class="Languages-item">
+    <a :href="generateLink('/sdk/go/1/')" class="Languages-item">
       <div class="ribbon">
         <span>BETA</span>
       </div>
       <img src="/logos/go.svg" alt="golang logo" class="Languages-item-logo">
       <div class="Languages-item-name">Golang</div>
     </a>
-    <a :href="generateLink('/sdk-reference/cpp/1/')" class="Languages-item">
+    <a :href="generateLink('/sdk/cpp/1/')" class="Languages-item">
       <div class="ribbon">
         <span>BETA</span>
       </div>
       <img src="/logos/cpp.svg" alt="c++ logo" class="Languages-item-logo">
       <div class="Languages-item-name">C++</div>
     </a>
-    <a :href="generateLink('/sdk-reference/java/1/')" class="Languages-item">
+    <a :href="generateLink('/sdk/java/1/')" class="Languages-item">
       <div class="ribbon">
         <span>BETA</span>
       </div>
@@ -26,11 +26,11 @@
       <div class="Languages-item-name">Java</div>
     </a>
 
-    <a :href="generateLink('/sdk-reference/php/3/')" class="Languages-item">
+    <a :href="generateLink('/sdk/php/3/')" class="Languages-item">
       <img src="/logos/php.svg" alt="php logo" class="Languages-item-logo">
       <div class="Languages-item-name">PHP</div>
     </a>
-    <a :href="generateLink('/sdk-reference/android/3/')" class="Languages-item">
+    <a :href="generateLink('/sdk/android/3/')" class="Languages-item">
       <img src="/logos/android.svg" alt="android logo" class="Languages-item-logo">
       <div class="Languages-item-name">Android</div>
     </a>

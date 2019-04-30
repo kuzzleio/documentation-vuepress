@@ -6,15 +6,15 @@
         <li class="md-tabs__item">
           <a
             :class="{'md-tabs__link--active': $route.path.match('/guide/')}"
-            :href="generateLink('/guide/')"
+            :href="generateLink('/core/1/guide/')"
             title="Guide"
             class="md-tabs__link"
           >Guides</a>
         </li>
         <li class="md-tabs__item">
           <a
-            :class="{'md-tabs__link--active': $route.path.match('/sdk-reference/')}"
-            href="/sdk-reference/"
+            :class="{'md-tabs__link--active': $route.path.match('/sdk/')}"
+            href="/sdk/"
             title="SDK"
             class="md-tabs__link"
           >SDK</a>
@@ -22,7 +22,7 @@
         <li class="md-tabs__item">
           <a
             :class="{'md-tabs__link--active': $route.path.match('/api/')}"
-            :href="generateLink('/api/')"
+            :href="generateLink('/core/1/api/')"
             title="API"
             class="md-tabs__link"
           >API</a>
@@ -30,7 +30,7 @@
         <li class="md-tabs__item">
           <a
             :class="{'md-tabs__link--active': $route.path.match('/plugins/')}"
-            :href="generateLink('/plugins/')"
+            :href="generateLink('/core/1/plugins/')"
             title="Plugins"
             class="md-tabs__link"
           >Plugins</a>
@@ -38,7 +38,7 @@
         <li class="md-tabs__item">
           <a
             :class="{'md-tabs__link--active': $route.path.match('/protocols/')}"
-            :href="generateLink('/protocols/')"
+            :href="generateLink('/core/1/protocols/')"
             title="Protocols"
             class="md-tabs__link"
           >Protocols</a>
@@ -46,7 +46,7 @@
         <li class="md-tabs__item">
           <a
             :class="{'md-tabs__link--active': $route.path.match('/koncorde/')}"
-            :href="generateLink('/koncorde/')"
+            :href="generateLink('/core/1/koncorde/')"
             title="Koncorde"
             class="md-tabs__link"
           >Koncorde</a>

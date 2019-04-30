@@ -11,12 +11,13 @@ separator: essentials
 In this tutorial you will learn how to install the Kuzzle **Java SDK**.
 This page shows examples of scripts that **store** documents in Kuzzle, and of scripts that subcribe to real-time **notifications** for each new document created.
 
-<div class="alert alert-success">
+::: success
 Before proceeding, please make sure your system meets the following requirements:
 
-- **Oracle JDK or OpenJDK** version 8 or higher (<a href="https://openjdk.java.net/install/">OpenJDK installation instructions</a>)
-- A running Kuzzle Server (<a href="/guide/1/essentials/installing-kuzzle/">Kuzzle installation guide</a>)
-  </div>
+- **Oracle JDK or OpenJDK** version 8 or higher ([OpenJDK installation instructions](https://openjdk.java.net/install/))
+- A running Kuzzle Server ([Kuzzle installation guide](/guide/1/essentials/installing-kuzzle/))
+
+:::
 
 ## Installation
 
@@ -34,10 +35,10 @@ on our [download
 plateform](https://dl.kuzzle.io/sdk/java/master/index.html). Download
 and add it to your classpath.
 
-<div class="alert alert-info">
+::: info
 The following examples are made to be executed without any IDE.
 If you're using Eclipse, IntelliJ or another Java IDE, you need to add the SDK as a project dependency in your classpath.
-</div>
+:::
 
 ## First connection
 
@@ -118,15 +119,15 @@ Now, you know how to:
 - Create realtime filters
 - Subscribe to notifications
 
-<div class="alert alert-info">
-Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzzle">Gitter!</a> We're happy to help.
-</div>
+::: info
+Having trouble? Get in touch with us on [Gitter](https://gitter.im/kuzzleio/kuzzle)! We're happy to help.
+:::
 
 ## Where do we go from here?
 
 Now that you're more familiar with the Java SDK, you can dive even deeper to learn how to leverage its full capabilities:
 
 - discover what this SDK has to offer by browsing other sections of this documentation
-- learn how to use <a href="/koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
-- follow our guide to learn how to perform <a href="/guide/1/essentials/user-authentication/#local-strategy">basic authentication</a>
-- follow our guide to learn how to <a href="/guide/1/essentials/security/">manage users and how to set up fine-grained access control</a>
+- learn how to use [Koncorde](/koncorde/1) to create incredibly fine-grained and blazing-fast subscriptions
+- follow our guide to learn how to perform [basic authentication](/guide/1/essentials/user-authentication/#local-strategy)
+- follow our guide to learn how to [manage users and how to set up fine-grained access control](/guide/1/essentials/security/)

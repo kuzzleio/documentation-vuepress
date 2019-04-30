@@ -27,12 +27,12 @@ kuzzleio::validation_response* validateSpecifications(
 
 ## Arguments
 
-| Arguments        | Type                                 | Description                                               |
-| ---------------- | ------------------------------------ | --------------------------------------------------------- |
-| `index`          | <pre>const std::string&</pre>        | Index name                                                |
-| `collection`     | <pre>const std::string&</pre>        | Collection name                                           |
-| `specifications` | <pre>const std::string&<pre>         | JSON string representating the specifications to validate |
-| `options`        | <pre>kuzzleio::query_options\*</pre> | Query options                                             |
+| Arguments        | Type                        | Description                                               |
+| ---------------- | --------------------------- | --------------------------------------------------------- |
+| `index`          | `const std::string&`        | Index name                                                |
+| `collection`     | `const std::string&`        | Collection name                                           |
+| `specifications` | `const std::string&`        | JSON string representating the specifications to validate |
+| `options`        | `kuzzleio::query_options\*` | Query options                                             |
 
 ### specifications
 
@@ -57,19 +57,19 @@ The JSON must follow the [Specification Structure](/guide/1/datavalidation):
 
 Additional query options
 
-| Property   | Type<br/>(default)           | Description                                                                  |
-| ---------- | ---------------------------- | ---------------------------------------------------------------------------- |
-| `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
+| Property   | Type<br/>(default) | Description                                                                  |
+| ---------- | ------------------ | ---------------------------------------------------------------------------- |
+| `queuable` | `bool`(`true`)     | If true, queues the request during downtime, until connected to Kuzzle again |
 
 ## Return
 
 A `kuzzleio::validation_response` object which contain information about the specifications validity.
 
-| Property      | Type                              | Description                                                  |
-| ------------- | --------------------------------- | ------------------------------------------------------------ |
-| `valid`       | <pre>bool</pre>                   | Specification validity                                       |
-| `details`     | <pre>const char \* const \*</pre> | Array of string with details about each specification errors |
-| `description` | <pre>const char \*</pre>          | General error message                                        |
+| Property      | Type                     | Description                                                  |
+| ------------- | ------------------------ | ------------------------------------------------------------ |
+| `valid`       | `bool`                   | Specification validity                                       |
+| `details`     | `const char \* const \*` | Array of string with details about each specification errors |
+| `description` | `const char \*`          | General error message                                        |
 
 ## Usage
 

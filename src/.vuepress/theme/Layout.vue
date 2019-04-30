@@ -15,7 +15,7 @@
           >
             <div v-if="!$page.frontmatter.nosidebar" class="md-sidebar__scrollwrap">
               <div class="md-sidebar__inner">
-                <Sidebar :root="sidebarRoot"/>
+                <Sidebar/>
               </div>
             </div>
           </div>
@@ -53,7 +53,6 @@ import Sidebar from './Sidebar.vue';
 import TOC from './TOC.vue';
 import ContentFeedback from './ContentFeedback.vue';
 import Footer from './Footer.vue';
-import { findRootNode } from './util.js';
 import sdkList from '../sdk.json';
 
 export default {
@@ -63,16 +62,6 @@ export default {
       sidebarOpen: false,
       sdkList
     };
-  },
-  computed: {
-    sidebarRoot() {
-      // if (this.$page.frontmatter.type !== 'page') {
-      //   console.warn('Current node is not of type "page"');
-      //   return null;
-      // }
-
-      return findRootNode(this.$page, this.$site.pages);
-    }
   },
   methods: {
     openSidebar() {
