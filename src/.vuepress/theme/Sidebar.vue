@@ -12,46 +12,46 @@
 
     <!-- Render item list -->
     <ul class="md-nav__list" data-md-scrollfix>
-      <div v-for="section in sections">
-        <li
-          v-if="section.frontmatter.separator"
-          class="md-nav__separator"
-        >{{section.frontmatter.separator}}</li>
+      <div v-for="item__1 in getPageChildren(root)">
+        <li class="md-nav__separator">{{item__1.frontmatter.title}}</li>
 
-        <li class="md-nav__item">
-          <a
-            class="md-nav__link"
-            :href="`${section.children && section.children.length ? section.children[0].path : section.path}`"
-          >
-            <div v-if="section.children && section.children.length">
-              <i
-                v-if="$page.path.includes(section.path)"
-                class="fa fa-caret-down"
-                aria-hidden="true"
-              ></i>
-              <i v-else class="fa fa-caret-right" aria-hidden="true"></i>
-              <span>{{section.title}}</span>
-            </div>
-            <div v-else>
-              <span class="no_arrow">{{section.title}}</span>
-            </div>
-          </a>
-        </li>
+        <div v-for="item__2 in getPageChildren(item__1)">
+          <li class="md-nav__item">
+            <a
+              class="md-nav__link"
+              :class="{'md-nav__link--active': $page.path === item__2.path}"
+              :href="getFirstValidChild(item__2).path"
+            >
+              <div v-if="getPageChildren(item__2).length">
+                <i
+                  v-if="$page.path.includes(item__2.path)"
+                  class="fa fa-caret-down"
+                  aria-hidden="true"
+                ></i>
+                <i v-else class="fa fa-caret-right" aria-hidden="true"></i>
+                <span>{{item__2.title}}</span>
+              </div>
+              <div v-else>
+                <span class="no_arrow">{{item__2.title}}</span>
+              </div>
+            </a>
+          </li>
 
-        <ul v-if="$page.path.includes(section.path)" class="md-nav__list sub-menu">
-          <div v-for="page of section.children" class="md-nav__item">
-            <li v-if="$page.path === page.path">
-              <a :href="`${page.path}`" :title="page.title" class="md-nav__link--active">
-                <span class="no_arrow">{{page.title}}</span>
-              </a>
-            </li>
-            <li v-else>
-              <a :href="`${page.path}`" :title="page.title" class="md-nav__link">
-                <span class="no_arrow">{{page.title}}</span>
-              </a>
-            </li>
-          </div>
-        </ul>
+          <ul v-if="$page.path.includes(item__2.path)" class="md-nav__list sub-menu">
+            <div v-for="item__3 of getPageChildren(item__2)" class="md-nav__item">
+              <li v-if="$page.path === item__3.path">
+                <a :href="`${item__3.path}`" :title="item__3.title" class="md-nav__link--active">
+                  <span class="no_arrow">{{item__3.title}}</span>
+                </a>
+              </li>
+              <li v-else>
+                <a :href="`${item__3.path}`" :title="item__3.title" class="md-nav__link">
+                  <span class="no_arrow">{{item__3.title}}</span>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </ul>
   </nav>
@@ -59,15 +59,25 @@
 
 <script>
 import TabsMobile from './TabsMobile.vue';
+import { getPageChildren, getFirstValidChild } from './util.js';
+
 export default {
   components: {
     TabsMobile
   },
   props: {
-    sections: Array
+    root: Object
   },
-  data() {
-    return {};
+  computed: {
+    items() {}
+  },
+  methods: {
+    getPageChildren(page) {
+      return getPageChildren(page, this.$site.pages);
+    },
+    getFirstValidChild(page) {
+      return getFirstValidChild(page, this.$site.pages);
+    }
   }
 };
 </script>

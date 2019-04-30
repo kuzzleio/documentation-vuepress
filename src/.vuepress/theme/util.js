@@ -125,7 +125,11 @@ export function getPageByPath(path, pages) {
   return pages.find(p => p.path === path);
 }
 
-export function getPageParent(page) {
+function getPageParent(page, pages) {
+  return getPageByPath(getPageParentPath(page), pages);
+}
+
+export function getPageParentPath(page) {
   return path.normalize(`${getPageDir(page)}../`);
 }
 
@@ -164,16 +168,39 @@ export function getPageChildren(page, pages) {
     .sort(sortPagesByOrderAndTitle);
 }
 
-export function resolveSidebarItems(page, site) {
-  const sectionPath = path.normalize(`${page.path}../../`);
-  const sectionRE = new RegExp(`^${sectionPath}.+`);
+export function findRootNode(node, nodes) {
+  if (node.frontmatter.type === 'root') {
+    return node;
+  }
+  const parent = getPageParent(node, nodes);
+  if (!parent) {
+    throw new Error(`Node at ${node.path} has no parent`);
+  }
 
-  const pagesInSections = site.pages
-    .filter(page => page.path.match(sectionRE))
-    .sort((page1, page2) => (page1.path < page2.path ? -1 : 1));
+  // if (parent.frontmatter.type === 'root') {
+  //   return parent;
+  // }
 
-  return groupPagesByPath(pagesInSections);
+  return findRootNode(parent, nodes);
 }
+
+// export function resolveSidebar(page, site) {
+//   if (page.frontmatter.type !== 'page') {
+//     console.warn('Current node is not of type "page"');
+//     return [];
+//   }
+
+//   return findRootNode(page, site.pages);
+
+//   // const sectionPath = root.path;
+//   // const sectionRE = new RegExp(`^${sectionPath}.+`);
+
+//   // const pagesInSections = site.pages
+//   //   .filter(page => page.path.match(sectionRE))
+//   //   .sort((page1, page2) => (page1.path < page2.path ? -1 : 1));
+
+//   // return groupPagesByPath(pagesInSections);
+// }
 
 function groupPagesByPath(pages) {
   const sections = [];

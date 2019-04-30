@@ -105,11 +105,6 @@ export default {
       query: '',
       results: [],
       highlightedResult: 0
-      // options: {
-      //   appId: ALGOLIA_APP_ID,
-      //   apiKey: ALGOLIA_API_KEY,
-      //   indexName: ALGOLIA_INDEX
-      // }
     };
   },
   computed: {
