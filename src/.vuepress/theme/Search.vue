@@ -18,7 +18,6 @@
           ref="searchInput"
           v-model="query"
           @focus="$emit('search::on')"
-          @blur="reset"
           @keyup.down="highlightedResult = Math.min(highlightedResult + 1, results.length - 1)"
           @keyup.up="highlightedResult = Math.max(highlightedResult - 1, 0)"
           @keyup.esc="reset"
@@ -29,6 +28,7 @@
           class="md-icon md-search__icon search-reset-button"
           data-md-component="reset"
           tabindex="-1"
+          @click="query = ''"
         >
           &#9003;
           <!-- close -->
@@ -86,16 +86,30 @@ import algoliasearch from 'algoliasearch';
 let algolia;
 
 export default {
+  props: {
+    appId: {
+      type: String,
+      required: true
+    },
+    apiKey: {
+      type: String,
+      required: true
+    },
+    indexName: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       query: '',
       results: [],
-      highlightedResult: 0,
-      options: {
-        appId: ALGOLIA_APP_ID,
-        apiKey: ALGOLIA_API_KEY,
-        indexName: ALGOLIA_INDEX
-      }
+      highlightedResult: 0
+      // options: {
+      //   appId: ALGOLIA_APP_ID,
+      //   apiKey: ALGOLIA_API_KEY,
+      //   indexName: ALGOLIA_INDEX
+      // }
     };
   },
   computed: {
@@ -116,9 +130,9 @@ export default {
     }
   },
   methods: {
-    initializeAlgolia(options) {
-      const client = algoliasearch(options.appId, options.apiKey);
-      algolia = client.initIndex(options.indexName);
+    initializeAlgolia() {
+      const client = algoliasearch(this.appId, this.apiKey);
+      algolia = client.initIndex(this.indexName);
     },
     initializeHotkey() {
       // TODO MacOS version
@@ -143,7 +157,7 @@ export default {
           console.error(err);
           this.results = [];
         }
-        this.results = content.hits.sort(sortByTags);
+        this.results = content.hits.sort(this.sortByTags);
       });
     },
     sortByTags(a, b) {
@@ -179,7 +193,7 @@ export default {
     }
   },
   mounted() {
-    this.initializeAlgolia(this.options);
+    this.initializeAlgolia();
     this.initializeHotkey();
   },
   watch: {

@@ -42,6 +42,10 @@
             <!-- Search interface -->
             <ClientOnly>
               <Search
+                v-if="algoliaApiKey && algoliaAppId && algoliaIndexName"
+                :app-id="algoliaAppId"
+                :api-key="algoliaApiKey"
+                :index-name="algoliaIndexName"
                 @search::on="toggleSearchTrigger(true)"
                 @search::off="toggleSearchTrigger(false)"
               />
@@ -71,6 +75,13 @@ export default {
     Tabs
   },
   name: 'Header',
+  data() {
+    return {
+      algoliaAppId: ALGOLIA_APP_ID,
+      algoliaApiKey: ALGOLIA_API_KEY,
+      algoliaIndexName: ALGOLIA_INDEX
+    };
+  },
   methods: {
     toggleSearchTrigger(toggle) {
       this.$refs.searchTrigger.checked = toggle;
