@@ -17,6 +17,11 @@
     font-family: 'FontAwesome';
   }
 
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   &.alert-success {
     background-color: #bae8f5;
 

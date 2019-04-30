@@ -17,9 +17,9 @@ bash -c "$(curl https://get.kuzzle.io/)"
 
 This command downloads and executes the installation script. The script checks the system for a set of prerequisites and installs missing ones, such as [Docker](https://www.docker.com/). When the installation is complete, it will automatically run Kuzzle.
 
-<div class="alert alert-info">
-There are also more <a :href="`${$site.base}guide/1/essentials/installing-kuzzle/`">alternative ways</a> to install Kuzzle.
-</div>
+::: info
+There are also more [alternative ways](/guide/1/essentials/installing-kuzzle/) to install Kuzzle.
+:::
 
 This command downloads, installs and runs Kuzzle.
 
@@ -31,7 +31,7 @@ Once the installation process is complete, you will see the following message:
 # Kuzzle is now running
 ```
 
-Your Kuzzle is now running! To test it, you can explore the main HTTP API by clicking this <a href="http://localhost:7512?pretty">link</a> or by using cURL on the command line:
+Your Kuzzle is now running! To test it, you can explore the main HTTP API by clicking this [link](http://localhost:7512?pretty) or by using cURL on the command line:
 
 ```bash
 curl "http://localhost:7512/?pretty"
@@ -39,21 +39,20 @@ curl "http://localhost:7512/?pretty"
 
 If everything is working you should see a JSON document that contains a list of API endpoints.
 
-<div class="alert alert-success">
-Congratulations! You have completed the Kuzzle installation, it will now accept requests on <code>localhost:7512</code>:
-<ul>
-  <li>via <strong>HTTP</strong></li>
-  <li>via <strong>Websocket</strong></li>
-</ul>
-</div>
+::: success
+Congratulations! You have completed the Kuzzle installation, it will now accept requests on `localhost:7512`:
 
-<div class="alert alert-info">
+- via **HTTP**
+- via **Websocket**
+  :::
+
+::: info
 Having trouble?
-<ul>
-  <li>Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzzle">Gitter!</a> We're happy to help.</li>
-  <li>Try one of <a :href="`${$site.base}guide/1/essentials/installing-kuzzle/`">these</a> alternative installation methods.</li>
-</ul>
-</div>
+
+- Get in touch with us on [Gitter!](https://gitter.im/kuzzleio/kuzzle) We're happy to help.
+- Try one of [these](/guide/1/essentials/installing-kuzzle/) alternative installation methods.
+
+:::
 
 #### Helper scripts for systemd
 
@@ -68,7 +67,7 @@ If you want to run Kuzzle automatically at startup there are a few scripts in `$
 
 Now that Kuzzle is up and running, you can start playing around with it:
 
-- install and learn a <a :href="`${$site.base}sdk-reference/`">Kuzzle SDK</a> to power-up one of your projects
-- install <a :href="`${$site.base}guide/1/essentials/installing-console`">Kuzzle Admin Console</a>, a handy way to manage data and security in your Kuzzle installation
-- explore the <a :href="`${$site.base}api/1`">Kuzzle API</a> documentation
-- install Kuzzle <a :href="`${$site.base}guide/1/essentials/installing-kuzzle/#manual-installation`">without Docker</a>
+- install and learn a [Kuzzle SDK](/sdk-reference/) to power-up one of your projects
+- install [Kuzzle Admin Console](/guide/1/essentials/installing-console), a handy way to manage data and security in your Kuzzle installation
+- explore the [Kuzzle API](/api/1) documentation
+- install Kuzzle [without Docker](/guide/1/essentials/installing-kuzzle/#manual-installation)
