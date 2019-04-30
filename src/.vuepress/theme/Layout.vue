@@ -7,18 +7,7 @@
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           <!-- Main navigation -->
-          <div
-            class="md-sidebar md-sidebar--primary"
-            :class="{'md-sidebar--open': sidebarOpen}"
-            data-md-component="navigation"
-            ref="sidebar"
-          >
-            <div v-if="!$page.frontmatter.nosidebar" class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                <Sidebar/>
-              </div>
-            </div>
-          </div>
+          <Sidebar ref="sidebar" v-if="!$page.frontmatter.nosidebar" :sidebar-open="sidebarOpen"/>
           <!-- Table of contents -->
           <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
             <div class="md-sidebar__scrollwrap">
@@ -112,7 +101,7 @@ export default {
     },
     computeSidebarHeight() {
       const sidebarTop = window
-        .getComputedStyle(this.$refs.sidebar)
+        .getComputedStyle(this.$refs.sidebar.$el)
         .top.replace('px', '');
 
       /**
@@ -124,7 +113,7 @@ export default {
        * we don't want to change it.
        */
       if (parseInt(sidebarTop) <= 0) {
-        this.$refs.sidebar.style = `height: inherit`;
+        this.$refs.sidebar.$el.style = `height: inherit`;
         return;
       }
 
@@ -148,7 +137,7 @@ export default {
         );
       }
 
-      this.$refs.sidebar.style = `height: ${sidebarHeight}px`;
+      this.$refs.sidebar.$el.style = `height: ${sidebarHeight}px`;
     }
   },
   mounted() {
