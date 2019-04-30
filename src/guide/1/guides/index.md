@@ -1,8 +1,6 @@
 ---
-type: root
+type: branch
 order: 0
 title: Guides
 description: Guides
 ---
-
-<RedirectToFirstChild />
