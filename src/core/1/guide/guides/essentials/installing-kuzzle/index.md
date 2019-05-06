@@ -1,5 +1,5 @@
 ---
-layout: full.html.hbs
+type: page
 title: Install Kuzzle
 order: 1
 ---
@@ -31,8 +31,8 @@ Before launching Kuzzle using Docker containers, ensure that your system meets t
 
 To install docker, you need to download the docker-compose file:
 
-<div class="alert alert-info">
-Before starting the docker stack, you need to increase the maximum amount of virtual memory in order to run Elasticsearch, which is part of our stack (see why <a href="https://www.elastic.co/guide/en/elasticsearch/reference/5.6/_maximum_map_count_check.html">here</a>):
+::: info
+Before starting the docker stack, you need to increase the maximum amount of virtual memory in order to run Elasticsearch, which is part of our stack (see why [here](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/_maximum_map_count_check.html)):
 
 ```bash
 sudo sysctl -w vm.max_map_count=262144
@@ -44,7 +44,7 @@ To make this configuration permanent, you need to update your `/etc/sysctl.conf`
 echo "vm.max_map_count=262144" >> /etc/sysctl.conf
 ```
 
-</div>
+:::
 
 Now, we can start the docker stack:
 
@@ -61,7 +61,7 @@ Your terminal should now be logging startup messages from the Kuzzle stack. Afte
 # kuzzle_1         | [✔] Kuzzle server ready
 ```
 
-Your Kuzzle is now up and running. For a quick test, you can explore the main HTTP API endpoint by clicking this link <a href="http://localhost:7512">http://localhost:7512</a> or by using cURL on the command line:
+Your Kuzzle is now up and running. For a quick test, you can explore the main HTTP API endpoint by clicking this link [http://localhost:7512](http://localhost:7512) or by using cURL on the command line:
 
 ```bash
 curl "http://localhost:7512?pretty"
@@ -71,9 +71,9 @@ curl "http://localhost:7512?pretty"
 
 ## AWS Marketplace
 
-<div class="alert alert-info">
+::: info
 To create a new Kuzzle stack on Amazon, you need a valid AWS account.
-</div>
+:::
 
 In this guide, you'll learn where to find our AWS Marketplace AMI and how to use it. It's a good way to test Kuzzle in a cloud environment. In addition, we recommend that you use our [Kuzzle Admin Console](http://console.kuzzle.io), the easiest way to play with Kuzzle.
 
@@ -116,7 +116,7 @@ If not, wait a few minutes and retry the request.
 Open the [Kuzzle Admin Console](http://console.kuzzle.io) and fill the form with the address of your Kuzzle instance. There is a default admin user with **ec2-user** as username.
 Associated password is your unique instance ID. You can get it from the EC2 AWS Console, it looks like this: **i-xxxxxxxxxxxxxxxxx**.
 
-![Demo Admin Console First Connection](/assets/images/gifs/demo_aws_console.gif)
+![Demo Admin Console First Connection](/demo_aws_console.gif)
 
 ---
 
@@ -124,9 +124,9 @@ Associated password is your unique instance ID. You can get it from the EC2 AWS 
 
 In this section we will perform a manual installation of Kuzzle on a Linux distribution. We choose Linux because all Kuzzle components work natively on it.
 
-<div class="alert alert-info">
-By default, Kuzzle expects all the components to be running on localhost but you can <a :href="`${$site.base}core/1/guide/guides/essentials/configuration`/">change</a> this behavior.
-</div>
+::: info
+By default, Kuzzle expects all the components to be running on localhost but you can [change](/core/1/guide/guides/essentials/configuration/) this behavior.
+:::
 
 We will run Kuzzle using [pm2](http://pm2.keymetrics.io/), a process management tool used to monitor Node.js applications.
 
@@ -148,9 +148,9 @@ The following operating systems are actively supported (64-bit versions only):
 - a C++11 compatible compiler
 - it's strongly advised that the system value for the maximum number of opened files (`ulimit -n` on most Unix systems) is set to a high value (i.e. 65535 is a good min. value)
 
-<div class="alert alert-info">
- The last three prerequisites can be fulfilled on Debian-based systems by installing packages : <code>build-essential</code>, <code>gdb</code> and <code>python</code>.
-</div>
+::: info
+The last three prerequisites can be fulfilled on Debian-based systems by installing packages : `build-essential`, `gdb` and `python`.
+:::
 
 ---
 
@@ -275,7 +275,7 @@ pm2 "<start|stop|restart>" kuzzlebackend
 ```
 
 <div class="alert alert-success">
-Now that Kuzzle is up and running you can <a href="/core/1/guide/guides/essentials/installing-console/">install</a> the <strong>Kuzzle Admin Console</strong>.
+Now that Kuzzle is up and running you can [install](/core/1/guide/guides/essentials/installing-console/) the <strong>Kuzzle Admin Console</strong>.
 </div>
 
 ### Troubleshooting
@@ -326,7 +326,7 @@ Elasticsearch WARNING: 2018-01-12T13:36:34Z
   No living connections
 ```
 
-If you see the following message and your Elasticsearch installation uses a security layer, configure the Elasticsearch client options in the `.kuzzlerc` file. For more information click <a :href="`${$site.base}core/1/guide/guides/essentials/configuration`/">here</a>.
+If you see the following message and your Elasticsearch installation uses a security layer, configure the Elasticsearch client options in the `.kuzzlerc` file. For more information click [here](/core/1/guide/guides/essentials/configuration/).
 
 ```
 [ℹ] Starting Kuzzle server
