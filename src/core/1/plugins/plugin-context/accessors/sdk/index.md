@@ -12,7 +12,7 @@ Accessor to the embedded SDK.
 The embedded SDK is a custom version of our [Javascript SDK](/sdk/js/6) that uses a custom protocol plugged directly into Kuzzle core.
 
 All the documented controllers can be used, except the `realtime` one.  
-Also, the low-level [query](/sdk/js/6/kuzzle/query/) method is available for use.
+Also, the low-level [query](/sdk/js/6/core-classes/kuzzle/query/) method is available for use.
 
 ### Request context
 
@@ -63,7 +63,7 @@ async myAwesomePipe (request) {
 
 <SinceBadge version="1.6.0" />
 
-Accessor to the [query method](/sdk/js/6/kuzzle/query).  
+Accessor to the [query method](/sdk/js/6/core-classes/kuzzle/query/).  
 This can be useful to call plugins custom controller action.
 
 ### Example

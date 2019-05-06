@@ -5,7 +5,7 @@ title: geodist
 
 # geodist
 
-Returns the distance between two geospatial members of a key (see [geoadd](/sdk/js/6/ms/geoadd/)).
+Returns the distance between two geospatial members of a key (see [geoadd](/sdk/js/6/controllers/ms/geoadd)).
 
 The returned distance is expressed in meters by default.
 

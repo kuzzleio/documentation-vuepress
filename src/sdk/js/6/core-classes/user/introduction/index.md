@@ -13,8 +13,8 @@ Refer to the [Security guide](/core/1/guide/essentials/security) for more inform
 
 The following methods return a `User` object:
 
-- [auth:getCurrentUser](/sdk/js/6/auth/get-current-user)
-- [auth:updateSelf](/sdk/js/6/auth/update-self)
+- [auth:getCurrentUser](/sdk/js/6/controllers/auth/get-current-user)
+- [auth:updateSelf](/sdk/js/6/controllers/auth/update-self)
 
 ## Properties
 
