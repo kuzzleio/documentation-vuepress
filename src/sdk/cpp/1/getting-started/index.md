@@ -106,8 +106,8 @@ Document created successfuly
 {"_index":"nyc-open-data","_type":"yellow-taxi","_id":"AWesW0cJYEmXIw2Bonx4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true,"_source":{"birthday":"1959-06-22","license":"B","name":"Sirkis","_kuzzle_info":{"author":"-1","createdAt":1544784922373,"updatedAt":null,"updater":null,"active":true,"deletedAt":null}},"_meta":{"author":"-1","createdAt":1544784922373,"updatedAt":null,"updater":null,"active":true,"deletedAt":null}}
 ```
 
-You can perform other actions such as [delete](/sdk/go/1/document/delete),
-[replace](/sdk/go/1/document/replace) or [search](/sdk/go/1/document/search) documents. There are also other ways to interact with Kuzzle like our [Admin Console](/core/1/guide/guides/essentials/installing-console/), the [Kuzzle HTTP API](/api/1/essentials/connecting-to-kuzzle/) or by using your [own protocol](/protocols/1/essentials/getting-started/).
+You can perform other actions such as [delete](/sdk/go/1/controllers/document/delete/),
+[replace](/sdk/go/1/controllers/document/replace/) or [search](/sdk/go/1/controllers/document/search/) documents. There are also other ways to interact with Kuzzle like our [Admin Console](/core/1/guide/guides/essentials/installing-console/), the [Kuzzle HTTP API](/api/1/essentials/connecting-to-kuzzle/) or by using your [own protocol](/protocols/1/essentials/getting-started/).
 
 Now you know how to:
 

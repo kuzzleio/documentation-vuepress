@@ -85,8 +85,8 @@ Connected!
 New document added to yellow-taxi collection!
 ```
 
-You can perform other actions such as [delete](/sdk/go/1/document/delete),
-[replace](/sdk/go/1/document/replace) or [search](/sdk/go/1/document/search) documents. There are also other ways to interact with Kuzzle like our [Admin Console](/core/1/guide/guides/essentials/installing-console/), the [Kuzzle HTTP API](/api/1/essentials/connecting-to-kuzzle/) or by using your [own protocol](/protocols/1/essentials/getting-started/).
+You can perform other actions such as [delete](/sdk/go/1/controllers/document/delete/),
+[replace](/sdk/go/1/controllers/document/replace/) or [search](/sdk/go/1/controllers/document/search/) documents. There are also other ways to interact with Kuzzle like our [Admin Console](/core/1/guide/guides/essentials/installing-console/), the [Kuzzle HTTP API](/api/1/essentials/connecting-to-kuzzle/) or by using your [own protocol](/protocols/1/essentials/getting-started/).
 
 Now you know how to:
 

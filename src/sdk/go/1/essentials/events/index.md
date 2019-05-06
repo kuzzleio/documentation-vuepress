@@ -11,7 +11,7 @@ An event system allows to be notified when the SDK status changes. These events 
 
 Subscription to these events is possible by passing a channel that will receive data when a specific event is issued by the SDK instance.
 
-These channels can be added by the method [addListener](/sdk/go/1/kuzzle/add-listener).
+These channels can be added by the method [addListener](/sdk/go/1/core-structs/kuzzle/add-listener/).
 
 **Note:** channels receive data in the order of their insertion.
 
