@@ -18,7 +18,7 @@ Also, the low-level [query](/sdk/js/6/core-classes/kuzzle/query/) method is avai
 
 By default, when using the embedded SDK, requests made to Kuzzle API don't have the same context as the original request received by the plugin.
 
-Typically, the `request.context.user` property is not set and thus [Kuzzle metadata](/core/1/guide/essentials/document-metadata) will not be set when creating or updating documents.
+Typically, the `request.context.user` property is not set and thus [Kuzzle metadata](/core/1/guide/guides/essentials/document-metadata/) will not be set when creating or updating documents.
 
 It is possible to use the same user context as the original request with the embedded SDK, for this purpose it is necessary to use the [as()](/plugins/1/accessors/sdk/#as) impersonation method.
 

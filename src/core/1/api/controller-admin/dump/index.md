@@ -18,7 +18,7 @@ Depending on the configuration of Kuzzle, it may include the following:
 - plugins configuration
 - usage statistics of the dumped instance
 
-(See [configuration](/core/1/guide/essentials/configuration))
+(See [configuration](/core/1/guide/guides/essentials/configuration/))
 
 The generated directory can be used to feed a complete report to the support team.  
 This report is the same as the one generated during a crash.

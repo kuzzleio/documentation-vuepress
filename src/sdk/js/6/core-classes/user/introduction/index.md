@@ -9,7 +9,7 @@ order: 0
 
 This class represents a Kuzzle User.
 
-Refer to the [Security guide](/core/1/guide/essentials/security) for more information about users.
+Refer to the [Security guide](/core/1/guide/guides/essentials/security/) for more information about users.
 
 The following methods return a `User` object:
 
@@ -27,7 +27,7 @@ Available properties:
 
 The `content` property is an object containing generic properties alongside custom defined properties.
 
-| Property       | Type                | Description                                                   |
-| -------------- | ------------------- | ------------------------------------------------------------- |
-| `profileIds`   | <pre>string[]</pre> | Profiles IDs for this user                                    |
-| `_kuzzle_info` | <pre>object</pre>   | [Kuzzle metadata](/core/1/guide/essentials/document-metadata) |
+| Property       | Type                | Description                                                           |
+| -------------- | ------------------- | --------------------------------------------------------------------- |
+| `profileIds`   | <pre>string[]</pre> | Profiles IDs for this user                                            |
+| `_kuzzle_info` | <pre>object</pre>   | [Kuzzle metadata](/core/1/guide/guides/essentials/document-metadata/) |

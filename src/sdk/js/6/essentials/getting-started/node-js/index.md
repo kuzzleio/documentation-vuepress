@@ -12,7 +12,7 @@ It will walk you through creating scripts that can **store** documents in Kuzzle
 
 You are going to write an application that **stores** documents in Kuzzle Server and subscribe to **real time notifications** for each created document.
 
-To follow this tutorial, you must have a Kuzzle Server up and running. Follow these instructions if this is not already the case: [Running Kuzzle](/core/1/guide/getting-started/running-kuzzle).
+To follow this tutorial, you must have a Kuzzle Server up and running. Follow these instructions if this is not already the case: [Running Kuzzle](/core/1/guide/guides/getting-started/running-kuzzle/).
 
 ## Explore the SDK
 
@@ -104,7 +104,7 @@ node create.js
 ```
 
 <div class="alert alert-success">
-You have now successfully stored your first document into Kuzzle. Click <a href="/core/1/guide/essentials/installing-console">here</a> to see how you can use the
+You have now successfully stored your first document into Kuzzle. Click <a href="/core/1/guide/guides/essentials/installing-console/">here</a> to see how you can use the
    <a href="http://console.kuzzle.io" target="_blank"><strong>Kuzzle Admin Console</strong></a> to browse your collection and confirm that your document was saved.
 </div>
 
@@ -152,4 +152,4 @@ Now that you're more familiar with Kuzzle, dive even deeper to learn how to leve
 - discover what this SDK has to offer by browsing other sections of this documentation
 - learn how to use <a href="/koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
 - learn how to perform a <a href="/sdk/js/6/controllers/auth/login">basic authentication</a>
-- follow our guide to learn how to <a href="/core/1/guide/essentials/security/">manage users, and how to set up fine-grained access control</a>
+- follow our guide to learn how to <a href="/core/1/guide/guides/essentials/security/">manage users, and how to set up fine-grained access control</a>

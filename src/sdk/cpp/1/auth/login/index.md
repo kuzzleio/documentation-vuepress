@@ -29,9 +29,9 @@ std::string login(
 
 #### **_strategy_**
 
-The name of the authentication [strategy](/core/1/guide/kuzzle-depth/authentication/#authentication) used to log the user in.
+The name of the authentication [strategy](/core/1/guide/guides/kuzzle-depth/authentication/#authentication) used to log the user in.
 
-Depending on the chosen authentication `strategy`, additional [credential arguments](/core/1/guide/kuzzle-depth/authentication/#authentication) may be required.  
+Depending on the chosen authentication `strategy`, additional [credential arguments](/core/1/guide/guides/kuzzle-depth/authentication/#authentication) may be required.  
 The API request example on this page provides the necessary arguments for the [`local` authentication plugin](https://github.com/kuzzleio/kuzzle-plugin-auth-passport-local).
 
 Check the appropriate [authentication plugin](/plugins/1/essentials/strategies/) documentation to get the list of additional arguments to provide.

@@ -343,10 +343,10 @@ search(query, [options]);
 
 <br/>
 
-| Arguments | Type              | Description                                                                                 |
-| --------- | ----------------- | ------------------------------------------------------------------------------------------- |
-| `query`   | <pre>object</pre> | Search query, using Elasticsearch [query format](/core/1/guide/elasticsearch/basic-queries) |
-| `options` | <pre>object</pre> | Optional arguments                                                                          |
+| Arguments | Type              | Description                                                                                            |
+| --------- | ----------------- | ------------------------------------------------------------------------------------------------------ |
+| `query`   | <pre>object</pre> | Search query, using Elasticsearch [query format](/core/1/guide/cookbooks/elasticsearch/basic-queries/) |
+| `options` | <pre>object</pre> | Optional arguments                                                                                     |
 
 #### options
 

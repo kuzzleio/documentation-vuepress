@@ -49,7 +49,7 @@ Body:
 
 ## Arguments
 
-- `_id`: user unique [kuid](/core/1/guide/essentials/user-authentication/#kuzzle-user-identifier-kuid)
+- `_id`: user unique [kuid](/core/1/guide/guides/essentials/user-authentication/#kuzzle-user-identifier-kuid)
 - `strategy`: name of the target authentication strategy for the credentials
 
 ---

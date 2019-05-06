@@ -92,7 +92,7 @@ Body:
 
 ## Body properties
 
-- `policies`: [profile definition](/core/1/guide/essentials/security/#defining-profiles)
+- `policies`: [profile definition](/core/1/guide/guides/essentials/security/#defining-profiles)
 
 ---
 

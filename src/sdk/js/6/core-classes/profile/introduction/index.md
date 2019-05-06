@@ -9,7 +9,7 @@ order: 0
 
 This class represents a Kuzzle Profile.
 
-Refer to the [Security guide](/core/1/guide/essentials/security#defining-profiles-default) for more information about profiles.
+Refer to the [Security guide](/core/1/guide/guides/essentials/security/#defining-profiles-default) for more information about profiles.
 
 ## Properties
 

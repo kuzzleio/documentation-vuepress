@@ -107,7 +107,7 @@ Document created successfuly
 ```
 
 You can perform other actions such as [delete](/sdk/go/1/document/delete),
-[replace](/sdk/go/1/document/replace) or [search](/sdk/go/1/document/search) documents. There are also other ways to interact with Kuzzle like our [Admin Console](/core/1/guide/essentials/installing-console/), the [Kuzzle HTTP API](/api/1/essentials/connecting-to-kuzzle/) or by using your [own protocol](/protocols/1/essentials/getting-started/).
+[replace](/sdk/go/1/document/replace) or [search](/sdk/go/1/document/search) documents. There are also other ways to interact with Kuzzle like our [Admin Console](/core/1/guide/guides/essentials/installing-console/), the [Kuzzle HTTP API](/api/1/essentials/connecting-to-kuzzle/) or by using your [own protocol](/protocols/1/essentials/getting-started/).
 
 Now you know how to:
 
@@ -146,5 +146,5 @@ Now that you're more familiar with the Go SDK, you can dive even deeper to learn
 
 - discover what this SDK has to offer by browsing other sections of this documentation
 - learn how to use <a href="/koncorde/1">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
-- follow our guide to learn how to perform <a href="/core/1/guide/essentials/user-authentication/#local-strategy">basic authentication</a>
-- follow our guide to learn how to <a href="/core/1/guide/essentials/security/">manage users and how to set up fine-grained access control</a>
+- follow our guide to learn how to perform <a href="/core/1/guide/guides/essentials/user-authentication/#local-strategy">basic authentication</a>
+- follow our guide to learn how to <a href="/core/1/guide/guides/essentials/security/">manage users and how to set up fine-grained access control</a>

@@ -33,11 +33,11 @@ Given a Kuzzle user id (`kuid`), retrieves the list of permissions granted to th
 
 ### getUserRights(id, [options], callback)
 
-| Arguments  | Type        | Description                                                                                                |
-| ---------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
-| `kuid`     | String      | [Kuzzle User Unique Identifier](/core/1/guide/essentials/user-authentication/#kuzzle-user-identifier-kuid) |
-| `options`  | JSON Object | Optional parameters                                                                                        |
-| `callback` | function    | Callback handling the response                                                                             |
+| Arguments  | Type        | Description                                                                                                       |
+| ---------- | ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| `kuid`     | String      | [Kuzzle User Unique Identifier](/core/1/guide/guides/essentials/user-authentication/#kuzzle-user-identifier-kuid) |
+| `options`  | JSON Object | Optional parameters                                                                                               |
+| `callback` | function    | Callback handling the response                                                                                    |
 
 ---
 

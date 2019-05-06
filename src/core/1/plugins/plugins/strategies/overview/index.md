@@ -36,7 +36,7 @@ To do so, Kuzzle guarantees that it never interprets, modifies, or stores creden
 
 Instead, Kuzzle:
 
-- provides a global user unique identifier (referred from now on as the user's [kuid](/core/1/guide/kuzzle-depth/authentication/#the-kuzzle-user-identifier-kuid)), giving the possibility to a user to authenticate with multiple strategies
+- provides a global user unique identifier (referred from now on as the user's [kuid](/core/1/guide/guides/kuzzle-depth/authentication/#the-kuzzle-user-identifier-kuid)), giving the possibility to a user to authenticate with multiple strategies
 - entrusts implemented strategies with credentials protection, validation, verification and storage
 
 ---

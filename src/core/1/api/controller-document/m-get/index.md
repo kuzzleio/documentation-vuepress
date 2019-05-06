@@ -51,7 +51,7 @@ Body:
 
 ### Optional:
 
-- `includeTrash`: if set, documents in the [trashcan](/core/1/guide/essentials/document-metadata/) can be returned.
+- `includeTrash`: if set, documents in the [trashcan](/core/1/guide/guides/essentials/document-metadata/) can be returned.
 
 ---
 
