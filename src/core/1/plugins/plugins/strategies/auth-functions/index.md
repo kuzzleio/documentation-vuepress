@@ -8,17 +8,17 @@ order: 1
 
 The `methods` part of the `strategies` object can contain the following properties:
 
-| Arguments       | Type              | Description                                                                                                                   |
-| --------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `create`        | <pre>string</pre> | The name of the exposed [create](/plugins/1/essentials/strategies/#create-default) function                                   |
-| `delete`        | <pre>string</pre> | The name of the exposed [delete](/plugins/1/essentials/strategies/#delete-default) function                                   |
-| `exists`        | <pre>string</pre> | The name of the exposed [exists](/plugins/1/essentials/strategies/#exists-default) function                                   |
-| `update`        | <pre>string</pre> | The name of the exposed [update](/plugins/1/essentials/strategies/#update-default) function                                   |
-| `validate`      | <pre>string</pre> | The name of the exposed [validate](/plugins/1/essentials/strategies/#update-default) function                                 |
-| `verify`        | <pre>string</pre> | The name of the exposed [verify](/plugins/1/essentials/strategies/#verify-default) function                                   |
-| `afterRegister` | <pre>string</pre> | (optional) The name of the exposed [afterRegister](/plugins/1/essentials/strategies/#optional-afterregister-default) function |
-| `getById`       | <pre>string</pre> | (optional) The name of the exposed [getById](/plugins/1/essentials/strategies/#optional-getbyid-default) function             |
-| `getInfo`       | <pre>string</pre> | (optional) The name of the exposed [getInfo](/plugins/1/essentials/strategies/#optional-getinfo-default) function             |
+| Arguments       | Type              | Description                                                                                                                        |
+| --------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `create`        | <pre>string</pre> | The name of the exposed [create](/core/1/plugins/essentials/strategies/#create-default) function                                   |
+| `delete`        | <pre>string</pre> | The name of the exposed [delete](/core/1/plugins/essentials/strategies/#delete-default) function                                   |
+| `exists`        | <pre>string</pre> | The name of the exposed [exists](/core/1/plugins/essentials/strategies/#exists-default) function                                   |
+| `update`        | <pre>string</pre> | The name of the exposed [update](/core/1/plugins/essentials/strategies/#update-default) function                                   |
+| `validate`      | <pre>string</pre> | The name of the exposed [validate](/core/1/plugins/essentials/strategies/#update-default) function                                 |
+| `verify`        | <pre>string</pre> | The name of the exposed [verify](/core/1/plugins/essentials/strategies/#verify-default) function                                   |
+| `afterRegister` | <pre>string</pre> | (optional) The name of the exposed [afterRegister](/core/1/plugins/essentials/strategies/#optional-afterregister-default) function |
+| `getById`       | <pre>string</pre> | (optional) The name of the exposed [getById](/core/1/plugins/essentials/strategies/#optional-getbyid-default) function             |
+| `getInfo`       | <pre>string</pre> | (optional) The name of the exposed [getInfo](/core/1/plugins/essentials/strategies/#optional-getinfo-default) function             |
 
 Even though each strategy must declare its own set of properties, the same strategy method can be used by multiple strategies.
 
@@ -30,7 +30,7 @@ The `create` function adds credentials to a user.
 
 For security reasons, plugins are entirely responsible of how credentials are managed, storage included: Kuzzle does not read, modify, or store credentials.
 
-If needed, Kuzzle exposes a secure and isolated storage space for each plugin. It can be accessed using the [Repository](/plugins/1/constructors/repository) constructor.
+If needed, Kuzzle exposes a secure and isolated storage space for each plugin. It can be accessed using the [Repository](/core/1/plugins/constructors/repository) constructor.
 
 ### Arguments
 

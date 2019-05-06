@@ -9,7 +9,7 @@ title: trigger
 
 Triggers a custom event.
 
-This allows interactions with other plugins using [hooks](/plugins/1/hooks/) or [pipes](/plugins/1/pipes/).
+This allows interactions with other plugins using [hooks](/core/1/plugins/hooks/) or [pipes](/core/1/plugins/pipes/).
 
 ## Arguments
 

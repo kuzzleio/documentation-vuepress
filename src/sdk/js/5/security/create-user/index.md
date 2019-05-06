@@ -31,7 +31,7 @@ The `user` object to provide must have the following properties:
   - This object must contain a `profileIds` properties, an array of strings listing the security [profiles](/core/1/guide/guides/essentials/security/#users-profiles-and-roles) to be attached to the new user
   - Any other property will be copied as additional global user information
 - `credentials` (JSON object): a description of how the new user can identify themselves on Kuzzle
-  - Any number of credentials can be added, each one being an object with name equal to the [authentication strategy](/plugins/1/essentials/strategies/#exposing-authentication-strategies) used to authenticate the user, and with the login data as content.
+  - Any number of credentials can be added, each one being an object with name equal to the [authentication strategy](/core/1/plugins/essentials/strategies/#exposing-authentication-strategies) used to authenticate the user, and with the login data as content.
   - If this object is left empty, the user will be created in Kuzzle but the will not be able to login.
 
 ---

@@ -42,13 +42,13 @@ In order to create a new controller, the plugin must expose the following proper
 
 - A `controllers` object, describing the controller(s) to add. It will automatically be made available to any network protocol, except for HTTP
 - A `routes` objects, describing how the controller(s) should be exposed to the HTTP protocol
-- The controller's actions, which are functions taking a `Request` object as an argument. These functions must return a promise, resolved with the action's result, or rejected with a [KuzzleError](/plugins/1/errors/kuzzleerror) object.
+- The controller's actions, which are functions taking a `Request` object as an argument. These functions must return a promise, resolved with the action's result, or rejected with a [KuzzleError](/core/1/plugins/errors/kuzzleerror) object.
 
 ---
 
 ## Query normalization
 
-Kuzzle normalizes [queries](/core/1/api/essentials/query-syntax) into [Request](/plugins/1/constructors/request) objects.
+Kuzzle normalizes [queries](/core/1/api/essentials/query-syntax) into [Request](/core/1/plugins/constructors/request) objects.
 
 Quick summary of how queries are normalized:
 
@@ -70,7 +70,7 @@ Quick summary of how queries are normalized:
 
 Kuzzle triggers events on all controller routes, including those added by plugins.
 
-Read more about these automatic controller events [here](/plugins/1/events/).
+Read more about these automatic controller events [here](/core/1/plugins/events/).
 
 ---
 

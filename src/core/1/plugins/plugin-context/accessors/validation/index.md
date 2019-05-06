@@ -23,9 +23,9 @@ addType(Type);
 
 <br/>
 
-| Arguments | Type              | Description                                                                                              |
-| --------- | ----------------- | -------------------------------------------------------------------------------------------------------- |
-| `Type`    | <pre>object</pre> | A class implementing the abstract [BaseValidationType](/plugins/1/constructors/basevalidationtype) class |
+| Arguments | Type              | Description                                                                                                   |
+| --------- | ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| `Type`    | <pre>object</pre> | A class implementing the abstract [BaseValidationType](/core/1/plugins/constructors/basevalidationtype) class |
 
 ---
 

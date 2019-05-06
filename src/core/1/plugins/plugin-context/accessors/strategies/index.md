@@ -5,7 +5,7 @@ title: strategies
 
 # strategies
 
-Dynamically adds or removes [authentication strategies](/plugins/1/essentials/strategies).
+Dynamically adds or removes [authentication strategies](/core/1/plugins/essentials/strategies).
 
 ---
 
@@ -29,10 +29,10 @@ add(name, properties);
 
 <br/>
 
-| Arguments    | Type              | Description                                                                                                      |
-| ------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `name`       | <pre>string</pre> | Name of the new authentication strategy                                                                          |
-| `properties` | <pre>object</pre> | Strategy properties (see [managing credentials](/plugins/1/essentials/strategies/#managing-credentials-default)) |
+| Arguments    | Type              | Description                                                                                                           |
+| ------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `name`       | <pre>string</pre> | Name of the new authentication strategy                                                                               |
+| `properties` | <pre>object</pre> | Strategy properties (see [managing credentials](/core/1/plugins/essentials/strategies/#managing-credentials-default)) |
 
 ### Return
 

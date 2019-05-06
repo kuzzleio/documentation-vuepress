@@ -14,7 +14,7 @@ title: auth:strategyAuthenticated
 
 This event is triggered after a successful user authentication, but before a token is generated.
 
-It is also triggered before the [auth:afterLogin](/plugins/1/events/api-events/#after-default) event.
+It is also triggered before the [auth:afterLogin](/core/1/plugins/events/api-events/#after-default) event.
 
 ---
 

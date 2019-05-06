@@ -8,9 +8,9 @@ order: 200
 
 <SinceBadge version="1.0.0" />
 
-Plugins can [add new controllers](/plugins/1/essentials/controllers) to the Kuzzle API.
+Plugins can [add new controllers](/core/1/plugins/essentials/controllers) to the Kuzzle API.
 
-These new controllers and actions behave exactly like [native API actions](/plugins/1/events/api-events/).  
+These new controllers and actions behave exactly like [native API actions](/core/1/plugins/events/api-events/).  
 All calls to plugins API actions trigger two of these three events:
 
 - before the action starts
@@ -33,7 +33,7 @@ The `before` event name is built using the following template:
 
 `<plugin name>/<controller>:before<Action>`
 
-- `plugin name`: the plugin's name defined in the [manifest file](/plugins/1/essentials/getting-started/#prerequisites-default)
+- `plugin name`: the plugin's name defined in the [manifest file](/core/1/plugins/essentials/getting-started/#prerequisites-default)
 - `controller`: API controller name
 - `Action`: controller action, camel cased
 
@@ -59,7 +59,7 @@ The `after` event name is built using the following template:
 
 `<plugin name>/<controller>:after<Action>`
 
-- `plugin name`: the plugin's name defined in the [manifest file](/plugins/1/essentials/getting-started/#prerequisites-default)
+- `plugin name`: the plugin's name defined in the [manifest file](/core/1/plugins/essentials/getting-started/#prerequisites-default)
 - `controller`: API controller name
 - `Action`: controller action, camel cased
 
@@ -85,7 +85,7 @@ The `error` event name is built using the following template:
 
 `<plugin name>/<controller>:error<Action>`
 
-- `plugin name`: the plugin's name defined in the [manifest file](/plugins/1/essentials/getting-started/#prerequisites-default)
+- `plugin name`: the plugin's name defined in the [manifest file](/core/1/plugins/essentials/getting-started/#prerequisites-default)
 - `controller`: API controller name
 - `Action`: controller action, camel cased
 

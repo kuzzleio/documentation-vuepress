@@ -197,4 +197,4 @@ There are multiple ways of adding a business logic layer on top of the standard 
 
 - <DeprecatedBadge version="1.4.0" /> Using [Permission Closures](core/1/guide/guides/kuzzle-depth/roles-definitions/), you can add functions directly into role definitions
 - If all you need is to make sure that submitted documents follow a strict set of formatting rules, you can add [document validators](/core/1/guide/cookbooks/datavalidation/)
-- With a [Pipe Plugin](/plugins/1/essentials/pipes), you can listen to one or multiple [API events](/plugins/1/events/), and decide whether you accept a query or document according to your business rules
+- With a [Pipe Plugin](/core/1/plugins/essentials/pipes), you can listen to one or multiple [API events](/core/1/plugins/events/), and decide whether you accept a query or document according to your business rules

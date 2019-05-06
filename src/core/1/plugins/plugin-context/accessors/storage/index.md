@@ -7,9 +7,9 @@ title: storage
 
 Initializes the plugin's private data storage.
 
-Data stored in this space can only be accessed by their proprietary plugin, using the [Repository](/plugins/1/constructors/repository) constructor.
+Data stored in this space can only be accessed by their proprietary plugin, using the [Repository](/core/1/plugins/constructors/repository) constructor.
 
-The only way documents stored in this space can be accessed using Kuzzle is if the plugin voluntarily exposes that data by [adding new API routes](/plugins/1/essentials/controllers/).
+The only way documents stored in this space can be accessed using Kuzzle is if the plugin voluntarily exposes that data by [adding new API routes](/core/1/plugins/essentials/controllers/).
 
 ---
 

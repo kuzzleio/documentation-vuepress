@@ -13,4 +13,4 @@ title: request:onError
 
 Triggered whenever a request execution fails.
 
-This event occurs after [error events](/plugins/1/events/api-events/#error-default).
+This event occurs after [error events](/core/1/plugins/events/api-events/#error-default).

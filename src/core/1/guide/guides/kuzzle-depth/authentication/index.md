@@ -18,7 +18,7 @@ In the diagram below, we highlighted components of Kuzzle's server [architecture
 - The Auth Controller: to manage the authentication process.
 - The Passport Wrapper: to interface between Kuzzle and the Passport.js library.
 - The User and Token [Repositories](https://github.com/kuzzleio/kuzzle/tree/master/lib/api/core/models/repositories): to store user data.
-- The Auth Strategy: to identify and validate a user's credential using a [dedicated plugin](/plugins/1/essentials/strategies).
+- The Auth Strategy: to identify and validate a user's credential using a [dedicated plugin](/core/1/plugins/essentials/strategies).
 
 ---
 
@@ -54,7 +54,7 @@ The Local Authentication Strategy, implemented in the [Passport Local Plugin](ht
 
 - The _Passport Wrapper_ calls the `verify()` method in the _Local Authentication Plugin_.
 
-- The _Local Authentication Plugin_ validates the credentials against the [local storage](/plugins/1/constructors/repository) and returns the user's `kuid` if the credentials are valid.
+- The _Local Authentication Plugin_ validates the credentials against the [local storage](/core/1/plugins/constructors/repository) and returns the user's `kuid` if the credentials are valid.
 
 - The _Passport Wrapper_ calls the _User Repository_ to get the profile data for the user with the given `kuid`.
 
@@ -193,6 +193,6 @@ Location: http://< kuzzle >/_login/github?code=OAUTH2_CODE
 
 ## Additional Authentication Strategies
 
-Kuzzle can implement any strategy supported by Passport.js. For more information, please refer to the [Plugins Reference](/plugins/1/essentials/strategies).
+Kuzzle can implement any strategy supported by Passport.js. For more information, please refer to the [Plugins Reference](/core/1/plugins/essentials/strategies).
 
 ---

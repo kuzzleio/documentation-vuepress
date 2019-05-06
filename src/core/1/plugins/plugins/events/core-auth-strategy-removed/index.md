@@ -11,7 +11,7 @@ title: core:auth:strategyRemoved
 | ---------- | ----------------- | ----------------------------------- |
 | `strategy` | <pre>object</pre> | Authentication strategy information |
 
-Triggered whenever a plugin [dynamically removes](/plugins/1/accessors/strategies/) an authentication strategy.
+Triggered whenever a plugin [dynamically removes](/core/1/plugins/accessors/strategies/) an authentication strategy.
 
 <div class="alert alert-info">Pipes cannot listen to that event, only hooks can.</div>
 
@@ -21,7 +21,7 @@ Triggered whenever a plugin [dynamically removes](/plugins/1/accessors/strategie
 
 The provided `strategy` object has the following properties:
 
-| Properties   | Type              | Description                                                                                                    |
-| ------------ | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| `pluginName` | <pre>string</pre> | The plugin's name defined in the [manifest file](/plugins/1/essentials/getting-started/#prerequisites-default) |
-| `name`       | <pre>string</pre> | Authentication strategy name                                                                                   |
+| Properties   | Type              | Description                                                                                                         |
+| ------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `pluginName` | <pre>string</pre> | The plugin's name defined in the [manifest file](/core/1/plugins/essentials/getting-started/#prerequisites-default) |
+| `name`       | <pre>string</pre> | Authentication strategy name                                                                                        |

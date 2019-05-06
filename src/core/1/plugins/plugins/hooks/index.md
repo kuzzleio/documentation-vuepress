@@ -5,7 +5,7 @@ order: 200
 
 # Hooks
 
-Hooks are asynchronous listeners, plugged to [events](/plugins/1/events), and receiving information regarding that event.
+Hooks are asynchronous listeners, plugged to [events](/core/1/plugins/events), and receiving information regarding that event.
 
 Hooks can only listen: the received information cannot be changed. And Kuzzle doesn't wait for their execution either, so hooks cannot change the outcome of whatever triggered the listened event.
 
@@ -13,7 +13,7 @@ Hooks can only listen: the received information cannot be changed. And Kuzzle do
 
 ## Usage
 
-Plugins can register hooks by exposing a `hooks` object: keys are listened [events](/plugins/1/events), and values are either a function to execute whenever that event is triggered, or an array of functions.
+Plugins can register hooks by exposing a `hooks` object: keys are listened [events](/core/1/plugins/events), and values are either a function to execute whenever that event is triggered, or an array of functions.
 
 ```javascript
 this.hooks = {

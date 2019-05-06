@@ -5,7 +5,7 @@ order: 300
 
 # Pipes
 
-Pipes are functions plugged to [events](/plugins/1/events/), called synchronously by Kuzzle, and receiving information regarding that event.
+Pipes are functions plugged to [events](/core/1/plugins/events/), called synchronously by Kuzzle, and receiving information regarding that event.
 
 Pipes can:
 
@@ -18,7 +18,7 @@ Pipes can:
 
 ## Usage
 
-Plugins can register pipes by exposing a `pipes` object: keys are listened [events](/plugins/1/events/), and values are either a function to execute whenever that event is triggered, or an array of functions.
+Plugins can register pipes by exposing a `pipes` object: keys are listened [events](/core/1/plugins/events/), and values are either a function to execute whenever that event is triggered, or an array of functions.
 
 ```javascript
 this.pipes = {
@@ -36,7 +36,7 @@ Pipes must notify Kuzzle about their completion by one of these two means:
 
 <div class="alert alert-warning">You must either call the callback with a valid <a href="/core/1/guide/guides/essentials/request-and-response-format/">Request</a> or return a promise resolving to one.</div>
 
-If a pipe throws an error, it is advised to throw one of the available [KuzzleError](/plugins/1/errors/kuzzleerror) object. Otherwise, Kuzzle will reject the task with a `PluginImplementationError` error.
+If a pipe throws an error, it is advised to throw one of the available [KuzzleError](/core/1/plugins/errors/kuzzleerror) object. Otherwise, Kuzzle will reject the task with a `PluginImplementationError` error.
 
 ---
 

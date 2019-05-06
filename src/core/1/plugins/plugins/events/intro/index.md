@@ -9,6 +9,6 @@ order: 0
 
 Kuzzle emits numerous events, especially for API requests.
 
-Plugins can [listen](/plugins/1/essentials/) to events.
+Plugins can [listen](/core/1/plugins/essentials/) to events.
 
-And if a plugin adds new API [controllers](/plugins/1/controllers), then Kuzzle automatically triggers [dedicated events](/plugins/1/events/plugin-events).
+And if a plugin adds new API [controllers](/core/1/plugins/controllers), then Kuzzle automatically triggers [dedicated events](/core/1/plugins/events/plugin-events).
