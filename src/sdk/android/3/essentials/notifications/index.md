@@ -26,12 +26,12 @@ You may subscribe multiple times to the same room, with identical or different s
 
 ## Document Notification
 
-| Notification field | Type                                              | Description                                                                                                | Possible values   |
-| ------------------ | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------- |
-| `document`         | [Document](/sdk/android/3/controllers/document//) | Content of the document or real-time message that generated the notification                               |                   |
-| `scope`            | string                                            | Indicates if the document enters or exits the subscription scope                                           | `in`, `out`       |
-| `state`            | string                                            | <DeprecatedBadge version="1.5.0" /> Shows if the document is about to be changed, or if the change is done | `pending`, `done` |
-| `type`             | string                                            | Notification type                                                                                          | `document`        |
+| Notification field | Type                                             | Description                                                                                                | Possible values   |
+| ------------------ | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ----------------- |
+| `document`         | [Document](/sdk/android/3/controllers/document/) | Content of the document or real-time message that generated the notification                               |                   |
+| `scope`            | string                                           | Indicates if the document enters or exits the subscription scope                                           | `in`, `out`       |
+| `state`            | string                                           | <DeprecatedBadge version="1.5.0" /> Shows if the document is about to be changed, or if the change is done | `pending`, `done` |
+| `type`             | string                                           | Notification type                                                                                          | `document`        |
 
 #### Example
 

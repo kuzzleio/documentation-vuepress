@@ -38,7 +38,7 @@ Returns the `Security` object to allow chaining.
 
 ## Callback Response
 
-Returns an updated [Role](/sdk/android/3/controllers/role//) object.
+Returns an updated [Role](/sdk/android/3/controllers/role/) object.
 
 ## Usage
 

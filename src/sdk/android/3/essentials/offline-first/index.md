@@ -35,7 +35,7 @@ While in offline mode, API requests can be queued, and then executed once the ne
 By default, there is no request queuing.
 
 - Queue all requests automatically when going offline by setting the `autoQueue` option to `true` (see [Kuzzle SDK constructor](/sdk/android/3/core-classes/kuzzle/))
-- Start and stop queuing manually, by using the [startQueuing](/sdk/android/3/core-classes/kuzzle/start-queuing) and [stopQueuing](/sdk/android/3/core-classes/kuzzle/stop-queuing) methods
+- Start and stop queuing manually, by using the [startQueuing](/sdk/android/3/core-classes/kuzzle/start-queuing/) and [stopQueuing](/sdk/android/3/core-classes/kuzzle/stop-queuing/) methods
 
 The queue itself can be configured using the `queueTTL` and `queueMaxSize` options.
 

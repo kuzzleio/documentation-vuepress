@@ -6,7 +6,7 @@ description: Security:profile
 
 # profile
 
-Instantiate a new security [Profile](/sdk/android/3/controllers/profile//) object.
+Instantiate a new security [Profile](/sdk/android/3/controllers/profile/) object.
 
 ---
 
@@ -21,7 +21,7 @@ Instantiate a new security [Profile](/sdk/android/3/controllers/profile//) objec
 
 ## Return Value
 
-Returns the new security [Profile](/sdk/android/3/controllers/profile//) object.
+Returns the new security [Profile](/sdk/android/3/controllers/profile/) object.
 
 ## Usage
 

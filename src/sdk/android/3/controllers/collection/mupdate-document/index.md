@@ -6,17 +6,17 @@ description: Collection:mupdateDocument
 
 # mUpdateDocument
 
-Update the provided [Documents](/sdk/android/3/controllers/document//).
+Update the provided [Documents](/sdk/android/3/controllers/document/).
 
 ---
 
 ## mUpdateDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                           |
-| ----------- | ----------- | --------------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Documents](/sdk/android/3/controllers/document//) to update |
-| `options`   | JSON Object | Optional parameters                                                   |
-| `callback`  | function    | Optional callback                                                     |
+| Arguments   | Type        | Description                                                          |
+| ----------- | ----------- | -------------------------------------------------------------------- |
+| `documents` | Document[]  | Array of [Documents](/sdk/android/3/controllers/document/) to update |
+| `options`   | JSON Object | Optional parameters                                                  |
+| `callback`  | function    | Optional callback                                                    |
 
 ---
 

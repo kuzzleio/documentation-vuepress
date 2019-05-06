@@ -38,7 +38,7 @@ Returns the `Security` object to allow chaining.
 
 ## Callback Response
 
-Return an updated [Profile](/sdk/android/3/controllers/profile//) object.
+Return an updated [Profile](/sdk/android/3/controllers/profile/) object.
 
 ## Usage
 

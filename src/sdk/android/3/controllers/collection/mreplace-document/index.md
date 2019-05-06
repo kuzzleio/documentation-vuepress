@@ -6,17 +6,17 @@ description: Collection:mreplaceDocument
 
 # mReplaceDocument
 
-Replace the provided [Documents](/sdk/android/3/controllers/document//).
+Replace the provided [Documents](/sdk/android/3/controllers/document/).
 
 ---
 
 ## mReplaceDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                           |
-| ----------- | ----------- | --------------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Document](/sdk/android/3/controllers/document//) to replace |
-| `options`   | JSON Object | Optional parameters                                                   |
-| `callback`  | function    | Optional callback                                                     |
+| Arguments   | Type        | Description                                                          |
+| ----------- | ----------- | -------------------------------------------------------------------- |
+| `documents` | Document[]  | Array of [Document](/sdk/android/3/controllers/document/) to replace |
+| `options`   | JSON Object | Optional parameters                                                  |
+| `callback`  | function    | Optional callback                                                    |
 
 ---
 

@@ -24,9 +24,9 @@ Updating a user will have no impact until the <a href="/sdk/android/3/controller
 
 ## addProfile(profile)
 
-| Arguments | Type    | Description                                                            |
-| --------- | ------- | ---------------------------------------------------------------------- |
-| `profile` | Profile | An instantiated [Profile](/sdk/android/3/controllers/profile//) object |
+| Arguments | Type    | Description                                                           |
+| --------- | ------- | --------------------------------------------------------------------- |
+| `profile` | Profile | An instantiated [Profile](/sdk/android/3/controllers/profile/) object |
 
 ---
 

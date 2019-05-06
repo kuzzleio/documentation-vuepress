@@ -6,7 +6,7 @@ description: Collection:mgetDocument
 
 # mGetDocument
 
-Get multiple [Documents](/sdk/android/3/controllers/document//) according to the input document IDs.
+Get multiple [Documents](/sdk/android/3/controllers/document/) according to the input document IDs.
 
 ---
 

@@ -13,12 +13,12 @@ Instantiates a new `Role` object, which defines a set of right policies.
 
 ## Role(Security, id, content, [meta])
 
-| Arguments  | Type        | Description                                                              |
-| ---------- | ----------- | ------------------------------------------------------------------------ |
-| `Security` | Security    | An instantiated [Security](/sdk/android/3/controllers/security//) object |
-| `id`       | string      | Unique role identifier                                                   |
-| `content`  | JSON Object | Role content                                                             |
-| `meta`     | JSON Object | Role metadata                                                            |
+| Arguments  | Type        | Description                                                             |
+| ---------- | ----------- | ----------------------------------------------------------------------- |
+| `Security` | Security    | An instantiated [Security](/sdk/android/3/controllers/security/) object |
+| `id`       | string      | Unique role identifier                                                  |
+| `content`  | JSON Object | Role content                                                            |
+| `meta`     | JSON Object | Role metadata                                                           |
 
 **Note:** this constructor won't make any call to Kuzzle.
 

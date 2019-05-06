@@ -6,7 +6,7 @@ description: Kuzzle:collection
 
 # collection
 
-Instantiates a new [Collection](/sdk/android/3/controllers/collection//) object.
+Instantiates a new [Collection](/sdk/android/3/controllers/collection/) object.
 
 ---
 
@@ -25,7 +25,7 @@ The `index` argument takes precedence over the default index.
 
 ## Return Value
 
-Returns a [Collection](/sdk/android/3/controllers/collection//) object.
+Returns a [Collection](/sdk/android/3/controllers/collection/) object.
 
 ## Usage
 

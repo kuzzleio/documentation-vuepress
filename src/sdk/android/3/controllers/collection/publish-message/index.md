@@ -12,11 +12,11 @@ Publish a real-time message.
 
 ## publishMessage(Document, [options], [callback])
 
-| Arguments  | Type        | Description                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| `Document` | object      | [Document](/sdk/android/3/controllers/document//) object |
-| `options`  | JSON Object | Optional parameters                                      |
-| `callback` | function    | Optional callback                                        |
+| Arguments  | Type        | Description                                             |
+| ---------- | ----------- | ------------------------------------------------------- |
+| `Document` | object      | [Document](/sdk/android/3/controllers/document/) object |
+| `options`  | JSON Object | Optional parameters                                     |
+| `callback` | function    | Optional callback                                       |
 
 ---
 

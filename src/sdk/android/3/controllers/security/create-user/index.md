@@ -46,7 +46,7 @@ The `user` object to provide must have the following properties:
 
 ## Callback Response
 
-Returns a [User](/sdk/android/3/controllers/user//) object.
+Returns a [User](/sdk/android/3/controllers/user/) object.
 
 ## Usage
 

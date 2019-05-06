@@ -51,7 +51,7 @@ See [`SearchResult.fetchNext`](/sdk/android/3/controllers/search-result/fetch-ne
 
 ## Callback Response
 
-Returns an instance of [SearchResult](/sdk/android/3/controllers/search-result//).
+Returns an instance of [SearchResult](/sdk/android/3/controllers/search-result/).
 
 ## Usage
 
