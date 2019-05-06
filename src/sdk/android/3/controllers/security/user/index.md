@@ -1,0 +1,28 @@
+---
+layout: sdk.html.hbs
+title: user
+description: Security:user
+---
+
+# user
+
+Instantiates a new [User](/sdk/android/3/controllers/user//) object.
+
+---
+
+## user(id, content)
+
+| Arguments | Type        | Description            |
+| --------- | ----------- | ---------------------- |
+| `id`      | string      | Unique user identifier |
+| `content` | JSON Object | User content           |
+
+---
+
+## Return value
+
+Returns the new [User](/sdk/android/3/controllers/user//) object.
+
+## Usage
+
+<<< ./snippets/user-1.java
