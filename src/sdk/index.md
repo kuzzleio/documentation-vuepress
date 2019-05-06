@@ -1,7 +1,7 @@
 ---
-title: SDKs
+type: root
 order: 3
-layout: full.html.hbs
+title: SDKs
 nosidebar: true
 ---
 
