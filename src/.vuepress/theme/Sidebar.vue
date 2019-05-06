@@ -43,7 +43,10 @@
                   </a>
                 </li>
 
-                <ul v-if="$page.path.includes(item__2.path)" class="md-nav__list sub-menu">
+                <ul
+                  v-if="$page.path.includes(item__2.path) && getPageChildren(item__2).length"
+                  class="md-nav__list sub-menu"
+                >
                   <div v-for="item__3 of getPageChildren(item__2)" class="md-nav__item">
                     <li v-if="$page.path === item__3.path">
                       <a
