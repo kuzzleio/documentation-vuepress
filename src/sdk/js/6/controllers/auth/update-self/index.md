@@ -8,7 +8,7 @@ description: Updates the current user object in Kuzzle.
 
 Updates the currently logged in user content.
 
-This route cannot update the list of associated security profiles. To change a user's security profiles, the route [security:updateUser](/api/1/controller-security/update-user) must be used instead.
+This route cannot update the list of associated security profiles. To change a user's security profiles, the route [security:updateUser](/core/1/api/api-reference/controller-security/update-user/) must be used instead.
 
 <br/>
 

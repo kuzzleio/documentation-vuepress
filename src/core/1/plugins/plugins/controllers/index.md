@@ -5,7 +5,7 @@ order: 400
 
 # Controllers
 
-Kuzzle's API is divided into controllers, each exposing executable actions (see [API reference](/api/1/essentials/query-syntax)).
+Kuzzle's API is divided into controllers, each exposing executable actions (see [API reference](/core/1/api/essentials/query-syntax)).
 
 Plugins can extend Kuzzle's API by adding new controllers to it.
 
@@ -48,7 +48,7 @@ In order to create a new controller, the plugin must expose the following proper
 
 ## Query normalization
 
-Kuzzle normalizes [queries](/api/1/essentials/query-syntax) into [Request](/plugins/1/constructors/request) objects.
+Kuzzle normalizes [queries](/core/1/api/essentials/query-syntax) into [Request](/plugins/1/constructors/request) objects.
 
 Quick summary of how queries are normalized:
 

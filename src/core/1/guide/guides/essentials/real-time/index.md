@@ -42,7 +42,7 @@ Clients can subscribe to many types of notifications. Below are some examples:
 3. **changes happening** on any document within a collection (e.g. Matt checks an item as "done");
 4. **changes happening on a given set of documents** (e.g. clients must play a sound every time an item containing the word "URGENT" is created).
 
-The scope of possibilities is huge. Take a look at the [Notifications section](/api/1/essentials/notifications) in the API Reference for more details.
+The scope of possibilities is huge. Take a look at the [Notifications section](/core/1/api/essentials/notifications) in the API Reference for more details.
 
 ---
 
@@ -111,7 +111,7 @@ The Notification bears some useful information about what just happened:
 - the `index` and `collection` attributes show _where_ it happened;
 - the `result` shows _the consequence_ of what just happened (in this case, the newly created document).
 
-We won't analyze the other attributes for the moment. Take a look at the [Notifications section of the API Reference](/api/1/essentials/notifications) for a comprehensive list of available notification properties.
+We won't analyze the other attributes for the moment. Take a look at the [Notifications section of the API Reference](/core/1/api/essentials/notifications) for a comprehensive list of available notification properties.
 
 This subscription is very handy and will notify Tom about the events 1, 2 and 3 of the list above (the `controller`, `action` and `result` will vary depending on the case). But what about the event number 4? How does Tom subscribe to items that only contain the word `URGENT` in their `label` field? Looks like a job for [Koncorde](/koncorde/1/).
 

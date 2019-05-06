@@ -46,7 +46,7 @@ example:
 
 ### Sending an API request and getting the response
 
-By default, the MQTT protocol listens to the `Kuzzle/request` MQTT topic (see [configuration](#configuration)) for requests to the [Kuzzle API](/api/1/essentials/connecting-to-kuzzle/).
+By default, the MQTT protocol listens to the `Kuzzle/request` MQTT topic (see [configuration](#configuration)) for requests to the [Kuzzle API](/core/1/api/essentials/connecting-to-kuzzle/).
 
 It then forwards Kuzzle response to the `Kuzzle/response` MQTT topic, **and only to the client who made the initial request**.
 
@@ -87,7 +87,7 @@ client.on('message', (topic, raw) => {
 
 ### Using Kuzzle subscriptions
 
-Kuzzle allows to [subscribe](https://docs.kuzzle.io/api/1/controller-realtime/subscribe/) to messages and events using advanced filters.
+Kuzzle allows to [subscribe](https://docs.kuzzle.io/core/1/api/api-reference/controller-realtime/subscribe/) to messages and events using advanced filters.
 
 Each time a subscription is sent, a dedicated MQTT topic is created, named after the `channel` property issued by Kuzzle.
 

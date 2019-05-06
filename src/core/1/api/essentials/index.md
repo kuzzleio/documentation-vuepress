@@ -1,6 +1,6 @@
 ---
-layout: full.html.hbs
-title: Essentials
+type: branch
 order: 0
-separator: API
+title: Essentials
+description: Essentials
 ---

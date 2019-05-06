@@ -6,7 +6,7 @@ order: 500
 
 # Real-time Notifications
 
-Clients can [subscribe](/api/1/controller-realtime/subscribe) to documents, messages and events, in order to receive a notification whenever a change occurs matching the subscription scope.
+Clients can [subscribe](/core/1/api/api-reference/controller-realtime/subscribe/) to documents, messages and events, in order to receive a notification whenever a change occurs matching the subscription scope.
 
 ---
 
@@ -42,7 +42,7 @@ A document notification contains the following fields:
 | `state`      | string | <DeprecatedBadge version="1.5.0" /><br/>`done`: the change has been applied<br/>`pending`: the change is about to happen | `pending`, `done` |
 | `timestamp`  | number | Timestamp of the event, in Epoch-millis format                                                                           |
 | `type`       | string | `document`: the notification type                                                                                        |
-| `volatile`   | object | Request [volatile data](/api/1/essentials/volatile-data/)                                                                |
+| `volatile`   | object | Request [volatile data](/core/1/api/essentials/volatile-data/)                                                           |
 
 The `result` object is the notification content, and it has the following structure:
 
@@ -89,7 +89,7 @@ User notifications about users are triggered by the following events:
 - A user subscribes to the same room
 - A user leaves that room
 
-These notifications are sent only if the `users` argument is set to any other value than the default `none` one (see [subscription request](/api/1/controller-realtime/subscribe/)).
+These notifications are sent only if the `users` argument is set to any other value than the default `none` one (see [subscription request](/core/1/api/api-reference/controller-realtime/subscribe/)).
 
 ### Format
 
@@ -105,7 +105,7 @@ These notifications are sent only if the `users` argument is set to any other va
 | `timestamp`  | number | Timestamp of the event, in Epoch-millis format                                                        |
 | `type`       | string | `user`: the notification type                                                                         |
 | `user`       | string | `in`: a new user has subscribed to the same filters<br/>`out`: a user cancelled a shared subscription |
-| `volatile`   | object | Request [volatile data](/api/1/essentials/volatile-data/)                                             |
+| `volatile`   | object | Request [volatile data](/core/1/api/essentials/volatile-data/)                                        |
 
 The `result` object is the notification content, and it has the following structure:
 

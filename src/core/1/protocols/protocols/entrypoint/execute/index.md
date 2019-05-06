@@ -7,7 +7,7 @@ title: execute
 
 <SinceBadge version="1.0.0" />
 
-Executes a Kuzzle's [API action](/api/1/).
+Executes a Kuzzle's [API action](/core/1/api/).
 
 The `execute` function main usage is to forward users API requests to Kuzzle.
 

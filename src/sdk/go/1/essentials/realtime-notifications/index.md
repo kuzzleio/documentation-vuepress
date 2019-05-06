@@ -11,7 +11,7 @@ The [Realtime.Subscribe](/sdk/go/1/controllers/realtime/subscribe/) method takes
 
 ## Document & messages
 
-These notifications represent [documents changes & messages](/api/1/essentials/notifications#documents-changes-messages-default).
+These notifications represent [documents changes & messages](/core/1/api/essentials/notifications#documents-changes-messages-default).
 
 | Property     | Type                       | Description                                                                                           |
 | ------------ | -------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -25,7 +25,7 @@ These notifications represent [documents changes & messages](/api/1/essentials/n
 | `Scope`      | string                     | `in`: document enters (or stays) in the scope<br/>`out`: document leaves the scope                    |
 | `Timestamp`  | int                        | Timestamp of the event, in Epoch-millis format                                                        |
 | `Type`       | string                     | `document`: the notification type                                                                     |
-| `Volatile`   | json.RawMessage            | Request [volatile data](/api/1/essentials/volatile-data/)                                             |
+| `Volatile`   | json.RawMessage            | Request [volatile data](/core/1/api/essentials/volatile-data/)                                        |
 
 The `Result` property has the following structure for document notifications & messages:
 
@@ -36,7 +36,7 @@ The `Result` property has the following structure for document notifications & m
 
 ## User
 
-These notifications represent [user events](/api/1/essentials/notifications#user-events-default).
+These notifications represent [user events](/core/1/api/essentials/notifications#user-events-default).
 
 | Property     | Type                       | Description                                                                                           |
 | ------------ | -------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ These notifications represent [user events](/api/1/essentials/notifications#user
 | `Timestamp`  | int                        | Timestamp of the event, in Epoch-millis format                                                        |
 | `Type`       | string                     | `user`: the notification type                                                                         |
 | `User`       | string                     | `in`: a new user has subscribed to the same filters<br/>`out`: a user cancelled a shared subscription |
-| `Volatile`   | json.RawMessage            | Request [volatile data](/api/1/essentials/volatile-data/)                                             |
+| `Volatile`   | json.RawMessage            | Request [volatile data](/core/1/api/essentials/volatile-data/)                                        |
 
 The `Result` property has the following structure for user events:
 

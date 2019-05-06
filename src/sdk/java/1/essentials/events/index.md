@@ -73,7 +73,7 @@ Triggered whenever a request is removed from the offline queue.
 
 **Callback arguments**
 
-A String representing a JSON object containing the [request](/api/1/essentials/query-syntax/) removed from the queue.
+A String representing a JSON object containing the [request](/core/1/api/essentials/query-syntax/) removed from the queue.
 
 ## offlineQueuePush
 
@@ -83,9 +83,9 @@ Triggered whenever a request is added to the offline queue.
 
 A String representing a JSON object containing the following properties:
 
-| Property  | Type        | Description                                                       |
-| --------- | ----------- | ----------------------------------------------------------------- |
-| `request` | JSON object | The [request](/api/1/essentials/query-syntax/) added to the queue |
+| Property  | Type        | Description                                                            |
+| --------- | ----------- | ---------------------------------------------------------------------- |
+| `request` | JSON object | The [request](/core/1/api/essentials/query-syntax/) added to the queue |
 
 ## queryError
 

@@ -7,7 +7,7 @@ title: Request
 
 <SinceBadge version="1.0.0" />
 
-Object representation of a Kuzzle [API call](/api/1/essentials/query-syntax), to be used with the [entryPoint.execute](/protocols/1/entrypoint/execute) function.
+Object representation of a Kuzzle [API call](/core/1/api/essentials/query-syntax), to be used with the [entryPoint.execute](/protocols/1/entrypoint/execute) function.
 
 That object is continuously updated to reflect the current state of the request, during its entire lifecycle.
 
@@ -31,10 +31,10 @@ new Request(data, [options]);
 
 <br/>
 
-| Arguments | Type     | Description                                                                                   |
-| --------- | -------- | --------------------------------------------------------------------------------------------- |
-| `data`    | `object` | API call, following the same format than non-HTTP [API calls](/api/1/essentials/query-syntax) |
-| `options` | `object` | Additional request context                                                                    |
+| Arguments | Type     | Description                                                                                        |
+| --------- | -------- | -------------------------------------------------------------------------------------------------- |
+| `data`    | `object` | API call, following the same format than non-HTTP [API calls](/core/1/api/essentials/query-syntax) |
+| `options` | `object` | Additional request context                                                                         |
 
 ### options
 
@@ -55,14 +55,14 @@ The `options` object can contain the following properties:
 
 Read-only:
 
-| Properties  | Type                                                                                                                      | Description                                                         |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `context`   | `<a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a>` | General request information (logged user, network information, ...) |
+| Properties  | Type                                                                                                                      | Description                                                           |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `context`   | `<a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a>` | General request information (logged user, network information, ...)   |
 | `error`     | `<a href=/protocols/1/context/errors>KuzzleError</a> | Request error                                                      |
-| `input`     | `<a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a>`     | Input request representation                                        |
-| `response`  | `<a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a>`                           | Serialized [request response](/api/1/essentials/kuzzle-response)    |
-| `result`    | `\*`                                                                                                                      | Request result                                                      |
-| `timestamp` | `integer`                                                                                                                 | Request creation timestamp, in Epoch-millis format                  |
+| `input`     | `<a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a>`     | Input request representation                                          |
+| `response`  | `<a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a>`                           | Serialized [request response](/core/1/api/essentials/kuzzle-response) |
+| `result`    | `\*`                                                                                                                      | Request result                                                        |
+| `timestamp` | `integer`                                                                                                                 | Request creation timestamp, in Epoch-millis format                    |
 
 Writable:
 
@@ -145,8 +145,8 @@ setResult(result, [options]);
 
 The `options` object can contain the following properties:
 
-| Properties | Type (default)    | Description                                                                                                                                              |
-| ---------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `headers`  | `object`          | Network specific headers. Shortcut to the [response](https://github.com/kuzzleio/kuzzle-common-objects#requestresponse) header functions                 |
-| `raw`      | `boolean (false)` | If `true`, instead of a standard [kuzzle response](/api/1/essentials/kuzzle-response), the result is sent as is to the client, without being interpreted |
-| `status`   | `integer (200)`   | Request status                                                                                                                                           |
+| Properties | Type (default)    | Description                                                                                                                                                   |
+| ---------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `headers`  | `object`          | Network specific headers. Shortcut to the [response](https://github.com/kuzzleio/kuzzle-common-objects#requestresponse) header functions                      |
+| `raw`      | `boolean (false)` | If `true`, instead of a standard [kuzzle response](/core/1/api/essentials/kuzzle-response), the result is sent as is to the client, without being interpreted |
+| `status`   | `integer (200)`   | Request status                                                                                                                                                |

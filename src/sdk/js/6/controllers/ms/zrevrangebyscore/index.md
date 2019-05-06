@@ -5,7 +5,7 @@ title: zrevrangebyscore
 
 # zrevrangebyscore
 
-Identical to [zrangebyscore](/api/1/controller-memory-storage/zrangebyscore), except that the sorted set is traversed in descending order.
+Identical to [zrangebyscore](/core/1/api/api-reference/controller-memory-storage/zrangebyscore/), except that the sorted set is traversed in descending order.
 
 [[_Redis documentation_]](https://redis.io/commands/zrevrangebyscore)
 

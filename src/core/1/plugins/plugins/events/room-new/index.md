@@ -11,7 +11,7 @@ title: room:new
 | --------- | ----------------- | ----------------------- |
 | `room`    | <pre>object</pre> | Joined room information |
 
-Triggered whenever a new [subscription](/api/1/controller-realtime/subscribe) is created.
+Triggered whenever a new [subscription](/core/1/api/api-reference/controller-realtime/subscribe/) is created.
 
 <div class="alert alert-info">Pipes cannot listen to that event, only hooks can.</div>
 

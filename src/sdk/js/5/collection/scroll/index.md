@@ -14,7 +14,7 @@ There is a small delay between the time a document is created and its availabili
 </div>
 
 <div class="alert alert-info">
-  To get more information about scroll sessions, please refer to the <a href="/api/1/controller-document/search">API reference documentation</a>.
+  To get more information about scroll sessions, please refer to the <a href="/core/1/api/api-reference/controller-document/search/">API reference documentation</a>.
 </div>
 
 ---

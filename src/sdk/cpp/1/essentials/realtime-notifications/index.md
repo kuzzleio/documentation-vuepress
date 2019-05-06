@@ -12,7 +12,7 @@ That listener is called with a `const kuzzleio::notification_result*` argument, 
 
 ## Document & messages
 
-These `kuzzleio::notification_result` represent [documents changes & messages](/api/1/essentials/notifications#documents-changes-messages-default).
+These `kuzzleio::notification_result` represent [documents changes & messages](/core/1/api/essentials/notifications#documents-changes-messages-default).
 
 | Property     | Type                                        | Description                                                                                           |
 | ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ These `kuzzleio::notification_result` represent [documents changes & messages](/
 | `scope`      | <pre>const char\*</pre>                     | `in`: document enters (or stays) in the scope<br/>`out`: document leaves the scope                    |
 | `timestamp`  | <pre>unsigned long long</pre>               | Timestamp of the event, in Epoch-millis format                                                        |
 | `n_type`     | <pre>const char\*</pre>                     | `document`: the notification type                                                                     |
-| `volatiles`  | <pre>const char\*</pre>                     | JSON String representing request [volatile data](/api/1/essentials/volatile-data/)                    |
+| `volatiles`  | <pre>const char\*</pre>                     | JSON String representing request [volatile data](/core/1/api/essentials/volatile-data/)               |
 
 The `kuzzleio::notification_content` struct has the following properties for document notifications & messages:
 
@@ -37,7 +37,7 @@ The `kuzzleio::notification_content` struct has the following properties for doc
 
 ## User
 
-These `kuzzleio::notification_result` represent [user events](/api/1/essentials/notifications#user-events-default).
+These `kuzzleio::notification_result` represent [user events](/core/1/api/essentials/notifications#user-events-default).
 
 | Property     | Type                                        | Description                                                                                           |
 | ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ These `kuzzleio::notification_result` represent [user events](/api/1/essentials/
 | `timestamp`  | <pre>unsigned long long</pre>               | Timestamp of the event, in Epoch-millis format                                                        |
 | `n_type`     | <pre>const char\*</pre>                     | `user`: the notification type                                                                         |
 | `user`       | <pre>const char\*</pre>                     | `in`: a new user has subscribed to the same filters<br/>`out`: a user cancelled a shared subscription |
-| `volatiles`  | <pre>const char\*</pre>                     | JSON String representing request [volatile data](/api/1/essentials/volatile-data/)                    |
+| `volatiles`  | <pre>const char\*</pre>                     | JSON String representing request [volatile data](/core/1/api/essentials/volatile-data/)               |
 
 The `kuzzleio::notification_content` struct has the following properties for document notifications & messages:
 

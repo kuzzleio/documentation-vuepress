@@ -14,7 +14,7 @@ Members:
 - `unsigned int status`: error code, following [HTTP Standards](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 - `const char * what() const;`: returns the error message
 
-You can find a detailed list of possible errors messages and statuses in the [documentation API](/api/1/essentials/errors).  
+You can find a detailed list of possible errors messages and statuses in the [documentation API](/core/1/api/essentials/errors).  
 Just replace _Error_ by _Exception_ to find the exception name. (e.g. `BadRequestError` becomes `kuzzleio::BadRequestException`).
 
 #### Example

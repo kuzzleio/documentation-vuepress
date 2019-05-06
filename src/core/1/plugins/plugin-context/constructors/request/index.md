@@ -7,7 +7,7 @@ title: Request
 
 <SinceBadge version="1.0.0" />
 
-Object representation of a Kuzzle [API call](/api/1/essentials/query-syntax).
+Object representation of a Kuzzle [API call](/core/1/api/essentials/query-syntax).
 
 That object is continuously updated to reflect the current state of the request, during its entire lifecycle.
 
@@ -43,11 +43,11 @@ new Request(data, [options]);
 
 <br/>
 
-| Arguments | Type                                              | Description                                                                                   |
-| --------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `request` | <a href="#request-default"><pre>Request</pre></a> | A source request to inherit from                                                              |
-| `data`    | <pre>object</pre>                                 | API call, following the same format than non-HTTP [API calls](/api/1/essentials/query-syntax) |
-| `options` | <pre>object</pre>                                 | Additional request context                                                                    |
+| Arguments | Type                                              | Description                                                                                        |
+| --------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `request` | <a href="#request-default"><pre>Request</pre></a> | A source request to inherit from                                                                   |
+| `data`    | <pre>object</pre>                                 | API call, following the same format than non-HTTP [API calls](/core/1/api/essentials/query-syntax) |
+| `options` | <pre>object</pre>                                 | Additional request context                                                                         |
 
 ### options
 
@@ -68,14 +68,14 @@ The `options` argument accepts the following parameters:
 
 Read-only:
 
-| Property    | Type                                                                                                                               | Description                                                         |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `context`   | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a></pre> | General request information (logged user, network information, ...) |
-| `error`     | <pre><a href=/plugins/1/errors>KuzzleError</a></pre>                                                                               | Request error                                                       |
-| `input`     | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a></pre>     | Input request representation                                        |
-| `response`  | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a></pre>                           | Serialized [request response](/api/1/essentials/kuzzle-response)    |
-| `result`    | <pre>\*</pre>                                                                                                                      | Request result                                                      |
-| `timestamp` | <pre>integer</pre>                                                                                                                 | Request creation timestamp, in Epoch-millis format                  |
+| Property    | Type                                                                                                                               | Description                                                           |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `context`   | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a></pre> | General request information (logged user, network information, ...)   |
+| `error`     | <pre><a href=/plugins/1/errors>KuzzleError</a></pre>                                                                               | Request error                                                         |
+| `input`     | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a></pre>     | Input request representation                                          |
+| `response`  | <pre><a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a></pre>                           | Serialized [request response](/core/1/api/essentials/kuzzle-response) |
+| `result`    | <pre>\*</pre>                                                                                                                      | Request result                                                        |
+| `timestamp` | <pre>integer</pre>                                                                                                                 | Request creation timestamp, in Epoch-millis format                    |
 
 Writable:
 
@@ -158,8 +158,8 @@ setResult(result, [options]);
 
 The `options` argument accepts the following parameters:
 
-| Options   | Type (default)             | Description                                                                                                                                              |
-| --------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `headers` | <pre>object (null)</pre>   | Network specific headers. Shortcut to the [response](https://github.com/kuzzleio/kuzzle-common-objects#requestresponse) header functions                 |
-| `raw`     | <pre>boolean (false)</pre> | If `true`, instead of a standard [kuzzle response](/api/1/essentials/kuzzle-response), the result is sent as is to the client, without being interpreted |
-| `status`  | <pre>integer (200)</pre>   | Request status                                                                                                                                           |
+| Options   | Type (default)             | Description                                                                                                                                                   |
+| --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `headers` | <pre>object (null)</pre>   | Network specific headers. Shortcut to the [response](https://github.com/kuzzleio/kuzzle-common-objects#requestresponse) header functions                      |
+| `raw`     | <pre>boolean (false)</pre> | If `true`, instead of a standard [kuzzle response](/core/1/api/essentials/kuzzle-response), the result is sent as is to the client, without being interpreted |
+| `status`  | <pre>integer (200)</pre>   | Request status                                                                                                                                                |

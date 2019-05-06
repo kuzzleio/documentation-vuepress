@@ -54,7 +54,7 @@ Additional query options
 
 ## Return
 
-A `kuzzle_response` containing the Kuzzle API response. See the [API Documentation](/api/1/essentials/kuzzle-response).
+A `kuzzle_response` containing the Kuzzle API response. See the [API Documentation](/core/1/api/essentials/kuzzle-response).
 The following properties are the most common.
 
 | Property     | Type              | Description                                |

@@ -35,10 +35,10 @@ The `before` event name is built using the following template:
 
 #### Example
 
-| API action                                                               | After event name                 |
-| ------------------------------------------------------------------------ | -------------------------------- |
-| [auth:login](/api/1/controller-auth/login)                               | `auth:beforeLogin`               |
-| [document:createOrReplace](/api/1/controller-document/create-or-replace) | `document:beforeCreateOrReplace` |
+| API action                                                                                   | After event name                 |
+| -------------------------------------------------------------------------------------------- | -------------------------------- |
+| [auth:login](/core/1/api/api-reference/controller-auth/login/)                               | `auth:beforeLogin`               |
+| [document:createOrReplace](/core/1/api/api-reference/controller-document/create-or-replace/) | `document:beforeCreateOrReplace` |
 
 ---
 
@@ -61,10 +61,10 @@ The `after` event name is built using the following template:
 
 #### Example
 
-| API action                                                               | After event name                |
-| ------------------------------------------------------------------------ | ------------------------------- |
-| [auth:login](/api/1/controller-auth/login)                               | `auth:afterLogin`               |
-| [document:createOrReplace](/api/1/controller-document/create-or-replace) | `document:afterCreateOrReplace` |
+| API action                                                                                   | After event name                |
+| -------------------------------------------------------------------------------------------- | ------------------------------- |
+| [auth:login](/core/1/api/api-reference/controller-auth/login/)                               | `auth:afterLogin`               |
+| [document:createOrReplace](/core/1/api/api-reference/controller-document/create-or-replace/) | `document:afterCreateOrReplace` |
 
 ---
 
@@ -87,7 +87,7 @@ The `error` event name is built using the following template:
 
 #### Example
 
-| API action                                                               | After event name                |
-| ------------------------------------------------------------------------ | ------------------------------- |
-| [auth:login](/api/1/controller-auth/login)                               | `auth:errorLogin`               |
-| [document:createOrReplace](/api/1/controller-document/create-or-replace) | `document:errorCreateOrReplace` |
+| API action                                                                                   | After event name                |
+| -------------------------------------------------------------------------------------------- | ------------------------------- |
+| [auth:login](/core/1/api/api-reference/controller-auth/login/)                               | `auth:errorLogin`               |
+| [document:createOrReplace](/core/1/api/api-reference/controller-document/create-or-replace/) | `document:errorCreateOrReplace` |

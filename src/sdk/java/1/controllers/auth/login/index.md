@@ -41,7 +41,7 @@ Check the appropriate [authentication plugin](/plugins/1/essentials/strategies/)
 
 ## Return
 
-The **login** action returns an encrypted JSON Web Token, that must then be sent in the [requests headers](/api/1/essentials/query-syntax/).
+The **login** action returns an encrypted JSON Web Token, that must then be sent in the [requests headers](/core/1/api/essentials/query-syntax/).
 
 ## Exceptions
 
