@@ -19,10 +19,10 @@ init(entryPoint, context);
 
 <br/>
 
-| Arguments    | Type                                                      | Description                                                                              |
-| ------------ | --------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `entryPoint` | <pre><a href=/protocols/1/entrypoint>EntryPoint</a></pre> | Provides an interface to protocol related methods                                        |
-| `context`    | <pre><a href=/protocols/1/context>context</a></pre>       | Generic interface exposing objects and methods not directly related to the network layer |
+| Arguments    | Type                                                           | Description                                                                              |
+| ------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `entryPoint` | <pre><a href=/core/1/protocols/entrypoint>EntryPoint</a></pre> | Provides an interface to protocol related methods                                        |
+| `context`    | <pre><a href=/core/1/protocols/context>context</a></pre>       | Generic interface exposing objects and methods not directly related to the network layer |
 
 ---
 

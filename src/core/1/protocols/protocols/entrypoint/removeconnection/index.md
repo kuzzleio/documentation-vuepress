@@ -19,6 +19,6 @@ removeConnection(connectionId);
 
 <br/>
 
-| Arguments      | Type              | Description                                                                               |
-| -------------- | ----------------- | ----------------------------------------------------------------------------------------- |
-| `connectionId` | <pre>string</pre> | The [ClientConnection](/protocols/1/context/clientconnection) unique identifier to remove |
+| Arguments      | Type              | Description                                                                                    |
+| -------------- | ----------------- | ---------------------------------------------------------------------------------------------- |
+| `connectionId` | <pre>string</pre> | The [ClientConnection](/core/1/protocols/context/clientconnection) unique identifier to remove |

@@ -7,7 +7,7 @@ order: 100
 
 # Connecting to Kuzzle
 
-A connection to Kuzzle can be made using different protocols. Currently Kuzzle natively supports HTTP, WebSocket and Socket.io, but other protocols can be added by implementing the [Protocol](/protocols/1) interface.
+A connection to Kuzzle can be made using different protocols. Currently Kuzzle natively supports HTTP, WebSocket and Socket.io, but other protocols can be added by implementing the [Protocol](/core/1/protocols) interface.
 
 ---
 

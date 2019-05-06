@@ -7,7 +7,7 @@ title: Request
 
 <SinceBadge version="1.0.0" />
 
-Object representation of a Kuzzle [API call](/core/1/api/essentials/query-syntax), to be used with the [entryPoint.execute](/protocols/1/entrypoint/execute) function.
+Object representation of a Kuzzle [API call](/core/1/api/essentials/query-syntax), to be used with the [entryPoint.execute](/core/1/protocols/entrypoint/execute) function.
 
 That object is continuously updated to reflect the current state of the request, during its entire lifecycle.
 
@@ -40,14 +40,14 @@ new Request(data, [options]);
 
 The `options` object can contain the following properties:
 
-| Properties     | Type                                                             | Description                                                                                                                                                                                                                |
-| -------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `connection`   | `object`                                                         | <SinceBadge version="1.4.1" /> Connection information (see the <a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#requestcontextconnection-object-format>connection</a> object documentation) |
-| `connectionId` | `string`                                                         | <DeprecatedBadge version="1.4.1" /> Connection unique identifier                                                                                                                                                           |
-| `error`        | `<a href=/protocols/1/context/errors>KuzzleError</a>,<br/>Error` | Sets the request response with the provided error                                                                                                                                                                          |
-| `requestId`    | `string`                                                         | User-defined request identifier                                                                                                                                                                                            |
-| `result`       | `\*`                                                             | Sets the request response with the provided result, and the request status is set to `200`                                                                                                                                 |
-| `status`       | `integer`                                                        | Request status, following the [HTTP error code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) standard                                                                                                          |
+| Properties     | Type                                                                  | Description                                                                                                                                                                                                                |
+| -------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `connection`   | `object`                                                              | <SinceBadge version="1.4.1" /> Connection information (see the <a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#requestcontextconnection-object-format>connection</a> object documentation) |
+| `connectionId` | `string`                                                              | <DeprecatedBadge version="1.4.1" /> Connection unique identifier                                                                                                                                                           |
+| `error`        | `<a href=/core/1/protocols/context/errors>KuzzleError</a>,<br/>Error` | Sets the request response with the provided error                                                                                                                                                                          |
+| `requestId`    | `string`                                                              | User-defined request identifier                                                                                                                                                                                            |
+| `result`       | `\*`                                                                  | Sets the request response with the provided result, and the request status is set to `200`                                                                                                                                 |
+| `status`       | `integer`                                                             | Request status, following the [HTTP error code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) standard                                                                                                          |
 
 ---
 
@@ -58,7 +58,7 @@ Read-only:
 | Properties  | Type                                                                                                                      | Description                                                           |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | `context`   | `<a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestcontext>RequestContext</a>` | General request information (logged user, network information, ...)   |
-| `error`     | `<a href=/protocols/1/context/errors>KuzzleError</a> | Request error                                                      |
+| `error`     | `<a href=/core/1/protocols/context/errors>KuzzleError</a> | Request error                                                 |
 | `input`     | `<a href=https://github.com/kuzzleio/kuzzle-common-objects/blob/master/README.md#modelsrequestinput>RequestInput</a>`     | Input request representation                                          |
 | `response`  | `<a href=https://github.com/kuzzleio/kuzzle-common-objects#requestresponse>RequestResponse</a>`                           | Serialized [request response](/core/1/api/essentials/kuzzle-response) |
 | `result`    | `\*`                                                                                                                      | Request result                                                        |
@@ -112,13 +112,13 @@ setError(error);
 
 <br/>
 
-| Arguments | Type                                                         | Description   |
-| --------- | ------------------------------------------------------------ | ------------- |
-| `error`   | `<a href=/protocols/1/context/errors>KuzzleError</a>, Error` | Request error |
+| Arguments | Type                                                              | Description   |
+| --------- | ----------------------------------------------------------------- | ------------- |
+| `error`   | `<a href=/core/1/protocols/context/errors>KuzzleError</a>, Error` | Request error |
 
 If a `KuzzleError` object is provided, the request's status attribute is set to the error one.
 
-Otherwise, the provided error is embedded into a [InternalError](/protocols/1/context/errors/#internalerror-default) object, and the request status is set to 500.
+Otherwise, the provided error is embedded into a [InternalError](/core/1/protocols/context/errors/#internalerror-default) object, and the request status is set to 500.
 
 ---
 

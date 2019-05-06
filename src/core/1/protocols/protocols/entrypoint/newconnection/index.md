@@ -19,9 +19,9 @@ newConnection(connection);
 
 <br/>
 
-| Arguments    | Type                                                                          | Description         |
-| ------------ | ----------------------------------------------------------------------------- | ------------------- |
-| `connection` | <pre><a href=/protocols/1/context/clientconnection>ClientConnection</a></pre> | New user connection |
+| Arguments    | Type                                                                               | Description         |
+| ------------ | ---------------------------------------------------------------------------------- | ------------------- |
+| `connection` | <pre><a href=/core/1/protocols/context/clientconnection>ClientConnection</a></pre> | New user connection |
 
 ---
 

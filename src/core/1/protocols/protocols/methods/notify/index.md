@@ -5,7 +5,7 @@ title: notify
 
 # notify
 
-Asks the protocol to send data to a specific connection, on some of its [channels](/protocols/1/essentials/getting-started/#channels-default).
+Asks the protocol to send data to a specific connection, on some of its [channels](/core/1/protocols/essentials/getting-started/#channels-default).
 
 ---
 
@@ -14,7 +14,7 @@ Asks the protocol to send data to a specific connection, on some of its [channel
 `notify(channels, connectionId, payload)`
 
 - `channels` | <pre>string[]</pre> | list of channels
-- `connectionId` | <pre>string</pre> | connection unique identifier, previously registered by the protocol using [newConnection](/protocols/1/entrypoint/newconnection)
+- `connectionId` | <pre>string</pre> | connection unique identifier, previously registered by the protocol using [newConnection](/core/1/protocols/entrypoint/newconnection)
 - `payload` | <pre>object</pre> | data payload
 
 ---

@@ -6,7 +6,7 @@ order: 0
 
 # Getting Started
 
-Kuzzle has native support for the following network protocols: [HTTP](/protocols/1/native-protocols/http), [MQTT](/protocols/1/native-protocols/mqtt) (disabled by default), [Websocket](/protocols/1/native-protocols/websocket) and [Socket.io](/protocols/1/native-protocols/socketio).
+Kuzzle has native support for the following network protocols: [HTTP](/core/1/protocols/native-protocols/http), [MQTT](/core/1/protocols/native-protocols/mqtt) (disabled by default), [Websocket](/core/1/protocols/native-protocols/websocket) and [Socket.io](/core/1/protocols/native-protocols/socketio).
 
 However, any number of protocols can be implemented, adding new network capabilities.
 
@@ -15,8 +15,8 @@ Protocols can even decide to propose a dedicated message format and/or query syn
 
 Protocols are provided with objects to interact with Kuzzle:
 
-- [EntryPoint](/protocols/1/entrypoint): base communication layer (declare user connections, forward API requests, ...)
-- [context](/protocols/1/context): utilities and object constructors not directly related to network communications
+- [EntryPoint](/core/1/protocols/entrypoint): base communication layer (declare user connections, forward API requests, ...)
+- [context](/core/1/protocols/context): utilities and object constructors not directly related to network communications
 
 ---
 
@@ -55,12 +55,12 @@ The following properties can be defined in this `manifest.json` file:
 
 To add new network capabilities, a protocol must implement a set of functions, to be called by Kuzzle:
 
-- [broadcast](/protocols/1/essentials/broadcast)
-- [disconnect](/protocols/1/essentials/disconnect)
-- [init](/protocols/1/essentials/init)
-- [joinChannel](/protocols/1/essentials/joinchannel)
-- [leaveChannel](/protocols/1/essentials/leavechannel)
-- [notify](/protocols/1/essentials/notify)
+- [broadcast](/core/1/protocols/essentials/broadcast)
+- [disconnect](/core/1/protocols/essentials/disconnect)
+- [init](/core/1/protocols/essentials/init)
+- [joinChannel](/core/1/protocols/essentials/joinchannel)
+- [leaveChannel](/core/1/protocols/essentials/leavechannel)
+- [notify](/core/1/protocols/essentials/notify)
 
 If one or multiple of these functions are missing, Kuzzle fails to load the protocol, and refuses to start.
 
@@ -72,9 +72,9 @@ If one or multiple of these functions are missing, Kuzzle fails to load the prot
 
 Simply put: it is the same `channel` identifier returned to a user after a [real-time subscription](/core/1/api/api-reference/controller-realtime/subscribe/). Many users can share the same channel, as it is calculated from the provided subscription filters, after they are normalized (i.e. equivalent yet differently written filters still share the same identifier).
 
-Kuzzle notifies protocols when one of their managed connection [joins](/protocols/1/essentials/joinchannel) or [leaves](/protocols/1/essentials/leavechannel) a channel.
+Kuzzle notifies protocols when one of their managed connection [joins](/core/1/protocols/essentials/joinchannel) or [leaves](/core/1/protocols/essentials/leavechannel) a channel.
 
-Kuzzle has no opinion on how a protocol handles channels and their associated users. It simply asks protocols to [broadcast](/protocols/1/essentials/broadcast), or to [notify](/protocols/1/essentials/notify) messages to listening users.
+Kuzzle has no opinion on how a protocol handles channels and their associated users. It simply asks protocols to [broadcast](/core/1/protocols/essentials/broadcast), or to [notify](/core/1/protocols/essentials/notify) messages to listening users.
 
 ---
 

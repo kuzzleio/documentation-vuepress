@@ -40,7 +40,7 @@ Kuzzle ships with the [Local Strategy Plugin](https://github.com/kuzzleio/kuzzle
 
 ## Protocols
 
-[Protocols](/protocols/1) add extended networking capabilities to your Kuzzle installation. These are useful if you need to handle other, even proprietary transport protocols.
+[Protocols](/core/1/protocols) add extended networking capabilities to your Kuzzle installation. These are useful if you need to handle other, even proprietary transport protocols.
 
 _Example - "Allow Kuzzle to interact with XMPP-oriented services"_
 Kuzzle ships with the [MQTT Protocol](https://github.com/kuzzleio/protocol-mqtt).
