@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
-const siteTitle = 'Hello VuePress';
-const siteDescription = 'Just playing around';
+const siteTitle = 'Kuzzle Docs';
+const siteDescription = 'Kuzzle Documentation';
 
 module.exports = {
   title: siteTitle,
