@@ -107,7 +107,7 @@ _You can find more resources about Kuzzle SDK in the [SDK Reference](/sdk)._
 
 ## Subscribe to data changes (pub/sub)
 
-Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the **Room** class definition in the <a :href="`${$site.base}sdk`">SDK Reference</a>).
+Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the **Room** class definition in the [/sdk](SDK Reference)).
 
 Let's get started. Complete your `create.js` file:
 
@@ -139,7 +139,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 Now that you're more familiar with Kuzzle, dive even deeper to learn how to leverage its full capabilities:
 
-- take a look at the <a :href="`${$site.base}sdk`">SDK Reference</a>
-- learn how to use <a :href="`${$site.base}core/1/koncorde`">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
-- follow our guide to learn how to implement <a :href="`${$site.base}core/1/guide/guides/essentials/user-authentication/#local-strategy`">basic authentication</a>
-- follow our guide to learn how to implement <a :href="`${$site.base}core/1/guide/guides/essentials/security/`">manage users and setup fine-grained access control</a>
+- take a look at the [/sdk](SDK Reference)
+- learn how to use [/core/1/koncorde](Koncorde) to create incredibly fine-grained and blazing-fast subscriptions
+- follow our guide to learn how to implement [/core/1/guide/guides/essentials/user-authentication/#local-strategy](basic authentication)
+- follow our guide to learn how to implement [/core/1/guide/guides/essentials/security/](manage users and setup fine-grained access control)
