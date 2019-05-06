@@ -11,7 +11,7 @@ An event system allows to be notified when the SDK status changes. These events 
 
 Subscription to these events is possible by specifying callbacks that will be executed when a specific event is issued by the SDK instance.
 
-These callbacks can be added by the method [addListener](/sdk/java/1/core-classes/kuzzle/).
+These callbacks can be added by the method [addListener](/sdk/java/1/core-classes/kuzzle/add-listener/).
 
 **Note:** listeners are called in the order of their insertion.
 

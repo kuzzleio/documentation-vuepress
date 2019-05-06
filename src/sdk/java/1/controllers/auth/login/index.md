@@ -45,7 +45,7 @@ The **login** action returns an encrypted JSON Web Token, that must then be sent
 
 ## Exceptions
 
-Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk/java/1/error-handling).
+Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk/java/1/essentials/error-handling/).
 
 ## Usage
 
