@@ -27,13 +27,13 @@ std::string subscribe(
 
 ## Arguments
 
-| Arguments    | Type                                        | Description                                                                                          |
-| ------------ | ------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `index`      | <pre>const std::string&</pre>               | Index name                                                                                           |
-| `collection` | <pre>const std::string&</pre>               | Collection name                                                                                      |
-| `filters`    | <pre>const std::string&</pre>               | JSON string representing a set of filters following [Koncorde syntax](/koncorde/1/essentials/terms/) |
-| `listener`   | <pre>kuzzleio::NotificationListener\*</pre> | Listener function to handle notifications                                                            |
-| `options`    | <pre>kuzzleio::room_options\*</pre>         | Subscription options                                                                                 |
+| Arguments    | Type                                        | Description                                                                                               |
+| ------------ | ------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `index`      | <pre>const std::string&</pre>               | Index name                                                                                                |
+| `collection` | <pre>const std::string&</pre>               | Collection name                                                                                           |
+| `filters`    | <pre>const std::string&</pre>               | JSON string representing a set of filters following [Koncorde syntax](/core/1/koncorde/essentials/terms/) |
+| `listener`   | <pre>kuzzleio::NotificationListener\*</pre> | Listener function to handle notifications                                                                 |
+| `options`    | <pre>kuzzleio::room_options\*</pre>         | Subscription options                                                                                      |
 
 ### listener
 

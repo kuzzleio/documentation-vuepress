@@ -22,13 +22,13 @@ func (r *Realtime) Subscribe(
 
 <br/>
 
-| Arguments    | Type                                       | Description                                                |
-| ------------ | ------------------------------------------ | ---------------------------------------------------------- |
-| `index`      | <pre>string</pre>                          | Index name                                                 |
-| `collection` | <pre>string</pre>                          | Collection name                                            |
-| `filters`    | <pre>json.RawMessage</pre>                 | A set of filters following [Koncorde syntax](/koncorde/1/) |
-| `listener`   | <pre>chan<- types.NotificationResult</pre> | Channel receiving the notification                         |
-| `options`    | <pre>types.RoomOptions</pre>               | A struct containing subscription options                   |
+| Arguments    | Type                                       | Description                                                     |
+| ------------ | ------------------------------------------ | --------------------------------------------------------------- |
+| `index`      | <pre>string</pre>                          | Index name                                                      |
+| `collection` | <pre>string</pre>                          | Collection name                                                 |
+| `filters`    | <pre>json.RawMessage</pre>                 | A set of filters following [Koncorde syntax](/core/1/koncorde/) |
+| `listener`   | <pre>chan<- types.NotificationResult</pre> | Channel receiving the notification                              |
+| `options`    | <pre>types.RoomOptions</pre>               | A struct containing subscription options                        |
 
 ### listener
 

@@ -16,13 +16,13 @@ subscribe(index, collection, filters, callback, [options]);
 
 <br/>
 
-| Arguments    | Type                | Description                                              |
-| ------------ | ------------------- | -------------------------------------------------------- |
-| `index`      | <pre>string</pre>   | Index name                                               |
-| `collection` | <pre>string</pre>   | Collection name                                          |
-| `filters`    | <pre>object</pre>   | Set of filters following [Koncorde syntax](/koncorde/1/) |
-| `callback`   | <pre>function</pre> | Callback function to handle notifications                |
-| `options`    | <pre>object</pre>   | Query options                                            |
+| Arguments    | Type                | Description                                                   |
+| ------------ | ------------------- | ------------------------------------------------------------- |
+| `index`      | <pre>string</pre>   | Index name                                                    |
+| `collection` | <pre>string</pre>   | Collection name                                               |
+| `filters`    | <pre>object</pre>   | Set of filters following [Koncorde syntax](/core/1/koncorde/) |
+| `callback`   | <pre>function</pre> | Callback function to handle notifications                     |
+| `options`    | <pre>object</pre>   | Query options                                                 |
 
 ### callback
 

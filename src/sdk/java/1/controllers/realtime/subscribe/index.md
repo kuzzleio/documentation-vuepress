@@ -28,13 +28,13 @@ public String subscribe(
 
 <br/>
 
-| Arguments    | Type                                                                                                       | Description                                                                                   |
-| ------------ | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `index`      | <pre>String</pre>                                                                                          | Index name                                                                                    |
-| `collection` | <pre>String</pre>                                                                                          | Collection name                                                                               |
-| `filters`    | <pre>String</pre>                                                                                          | JSON string representing a set of filters following [Koncorde syntax](/koncorde/1/essentials) |
-| `listener`   | <pre><a href="/sdk/java/1/essentials/realtime-notifications/">io.kuzzle.sdk.NotificationListener</a></pre> | Listener function to handle notifications                                                     |
-| `options`    | <pre>io.kuzzle.sdk.RoomOptions</pre>                                                                       | Subscription options                                                                          |
+| Arguments    | Type                                                                                                       | Description                                                                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `index`      | <pre>String</pre>                                                                                          | Index name                                                                                         |
+| `collection` | <pre>String</pre>                                                                                          | Collection name                                                                                    |
+| `filters`    | <pre>String</pre>                                                                                          | JSON string representing a set of filters following [Koncorde syntax](/core/1/koncorde/essentials) |
+| `listener`   | <pre><a href="/sdk/java/1/essentials/realtime-notifications/">io.kuzzle.sdk.NotificationListener</a></pre> | Listener function to handle notifications                                                          |
+| `options`    | <pre>io.kuzzle.sdk.RoomOptions</pre>                                                                       | Subscription options                                                                               |
 
 ### options
 

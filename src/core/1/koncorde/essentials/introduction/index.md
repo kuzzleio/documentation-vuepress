@@ -121,4 +121,4 @@ node koncorde-demo.js
 
 Feel free to play with the `geoDistance` position and radius,
 as well as with tested points to see the different results in the previous example.
-You can also dive into more complex filters by playing with other [terms](/koncorde/1/essentials/terms) and [operands](/koncorde/1/essentials/operands).
+You can also dive into more complex filters by playing with other [terms](/core/1/koncorde/essentials/terms) and [operands](/core/1/koncorde/essentials/operands).

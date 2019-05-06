@@ -16,7 +16,7 @@ The provided callback will be called everytime a [notification](/sdk/js/5/notifi
 
 | Arguments  | Type        | Description                                                                 |
 | ---------- | ----------- | --------------------------------------------------------------------------- |
-| `filters`  | JSON Object | [Koncorde Filters](/koncorde/1)                                             |
+| `filters`  | JSON Object | [Koncorde Filters](/core/1/koncorde)                                        |
 | `options`  | object      | (Optional) Subscription configuration. Passed to the Room constructor.      |
 | `callback` | function    | Callback to call every time a notification is received on this subscription |
 

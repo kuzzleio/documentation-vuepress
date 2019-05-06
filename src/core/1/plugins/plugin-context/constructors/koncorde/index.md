@@ -7,7 +7,7 @@ title: Koncorde
 
 <SinceBadge version="1.6.0" />
 
-Instantiates a new [Koncorde](/koncorde/1) engine.
+Instantiates a new [Koncorde](/core/1/koncorde) engine.
 
 ---
 
@@ -83,11 +83,11 @@ normalize(index, collection, filters);
 
 <br/>
 
-| Arguments    | Type              | Description                                |
-| ------------ | ----------------- | ------------------------------------------ |
-| `index`      | <pre>string</pre> | Index name                                 |
-| `collection` | <pre>string</pre> | Collection name                            |
-| `filters`    | <pre>object</pre> | Filters, in [Koncorde](/koncorde/1) format |
+| Arguments    | Type              | Description                                     |
+| ------------ | ----------------- | ----------------------------------------------- |
+| `index`      | <pre>string</pre> | Index name                                      |
+| `collection` | <pre>string</pre> | Collection name                                 |
+| `filters`    | <pre>object</pre> | Filters, in [Koncorde](/core/1/koncorde) format |
 
 ### Return
 
@@ -118,11 +118,11 @@ register(index, collection, filters);
 
 <br/>
 
-| Arguments    | Type              | Description                                |
-| ------------ | ----------------- | ------------------------------------------ |
-| `index`      | <pre>string</pre> | Index name                                 |
-| `collection` | <pre>string</pre> | Collection name                            |
-| `filters`    | <pre>object</pre> | Filters, in [Koncorde](/koncorde/1) format |
+| Arguments    | Type              | Description                                     |
+| ------------ | ----------------- | ----------------------------------------------- |
+| `index`      | <pre>string</pre> | Index name                                      |
+| `collection` | <pre>string</pre> | Collection name                                 |
+| `filters`    | <pre>object</pre> | Filters, in [Koncorde](/core/1/koncorde) format |
 
 ### Return
 
@@ -229,9 +229,9 @@ validate(filters);
 
 <br/>
 
-| Arguments | Type              | Description                                |
-| --------- | ----------------- | ------------------------------------------ |
-| `filters` | <pre>object</pre> | Filters, in [Koncorde](/koncorde/1) format |
+| Arguments | Type              | Description                                     |
+| --------- | ----------------- | ----------------------------------------------- |
+| `filters` | <pre>object</pre> | Filters, in [Koncorde](/core/1/koncorde) format |
 
 ### Return
 
