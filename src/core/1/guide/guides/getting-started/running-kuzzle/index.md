@@ -69,5 +69,5 @@ Now that Kuzzle is up and running, you can start playing around with it:
 
 - install and learn a [Kuzzle SDK](/sdk/) to power-up one of your projects
 - install [Kuzzle Admin Console](/core/1/guide/guides/essentials/installing-console/), a handy way to manage data and security in your Kuzzle installation
-- explore the [Kuzzle API](/api/1) documentation
+- explore the [Kuzzle API](/core/1/api) documentation
 - install Kuzzle [without Docker](/core/1/guide/guides/essentials/installing-kuzzle/#manual-installation)

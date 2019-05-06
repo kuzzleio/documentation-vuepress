@@ -72,7 +72,7 @@ Check the appropriate [authentication plugin](/core/1/plugins/essentials/strateg
 The result contains the following properties:
 
 - `_id`: user's [kuid](/core/1/guide/guides/kuzzle-depth/authentication/#the-kuzzle-user-identifier)
-- `jwt`: encrypted JSON Web Token, that must then be sent in the [requests headers](/core/1/api/essentials/query-syntax/#http-default) or in the [query](/api/1/essentials/query-syntax/#other-protocols-default)
+- `jwt`: encrypted JSON Web Token, that must then be sent in the [requests headers](/core/1/api/essentials/query-syntax/#http-default) or in the [query](/core/1/api/essentials/query-syntax/#other-protocols-default)
 - `expiresAt`: token expiration date, in Epoch-millis (UTC)
 - `ttl`: token time to live, in milliseconds
 

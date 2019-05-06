@@ -6,7 +6,7 @@ description: Base method to send API query to Kuzzle
 
 # query
 
-Base method used to send queries to Kuzzle, following the [API Documentation](/api/1).
+Base method used to send queries to Kuzzle, following the [API Documentation](/core/1/api).
 
 <div class="alert alert-warning">
 This is a low-level method, exposed to allow advanced SDK users to bypass high-level methods.

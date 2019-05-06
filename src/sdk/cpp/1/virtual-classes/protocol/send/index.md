@@ -6,7 +6,7 @@ description: Sends a query to the Kuzzle API
 
 # send
 
-Sends a query to the [Kuzzle API](/api/1).
+Sends a query to the [Kuzzle API](/core/1/api).
 
 ## Signature
 
