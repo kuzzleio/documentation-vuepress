@@ -38,7 +38,7 @@ Returns the `Security` object to allow chaining.
 
 ## Callback Response
 
-Returns an updated [User](/sdk-reference/js/5/user) object.
+Returns an updated [User](/sdk/js/5/user) object.
 
 ## Usage
 

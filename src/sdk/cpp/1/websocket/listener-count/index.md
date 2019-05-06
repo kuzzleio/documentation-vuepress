@@ -16,9 +16,9 @@ int listenerCount(kuzzleio::Event event);
 
 ## Arguments
 
-| Argument | Type                       | Description                                                            |
-| -------- | -------------------------- | ---------------------------------------------------------------------- |
-| `event`  | <pre>kuzzleio::Event</pre> | An enum representing the listener [event](/sdk-reference/cpp/1/events) |
+| Argument | Type                       | Description                                                  |
+| -------- | -------------------------- | ------------------------------------------------------------ |
+| `event`  | <pre>kuzzleio::Event</pre> | An enum representing the listener [event](/sdk/cpp/1/events) |
 
 ### event
 

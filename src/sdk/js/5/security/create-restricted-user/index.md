@@ -38,7 +38,7 @@ That means that a user that was just created may not be returned by the <code>se
 
 ## Callback response
 
-Resolves to a [User](/sdk-reference/js/5/user) object.
+Resolves to a [User](/sdk/js/5/user) object.
 
 ## Usage
 

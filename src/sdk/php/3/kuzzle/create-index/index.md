@@ -12,11 +12,11 @@ Create a new empty data index, with no associated mapping.
 
 ## createIndex([index], [options], callback)
 
-| Arguments  | Type        | Description                                                                                                    |
-| ---------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
-| `index`    | string      | Optional index to query. If no set, defaults to [Kuzzle.defaultIndex](/sdk-reference/php/3/kuzzle/#properties) |
-| `options`  | JSON object | Optional parameters                                                                                            |
-| `callback` | function    | Callback handling the response                                                                                 |
+| Arguments  | Type        | Description                                                                                          |
+| ---------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| `index`    | string      | Optional index to query. If no set, defaults to [Kuzzle.defaultIndex](/sdk/php/3/kuzzle/#properties) |
+| `options`  | JSON object | Optional parameters                                                                                  |
+| `callback` | function    | Callback handling the response                                                                       |
 
 ---
 

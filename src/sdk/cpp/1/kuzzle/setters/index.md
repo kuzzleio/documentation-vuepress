@@ -19,7 +19,7 @@ Kuzzle* autoReplay(bool);
 
 ## volatiles
 
-Set the value of the global [volatile data](/sdk-reference/cpp/1/kuzzle/introduction#volatile-data-default).  
+Set the value of the global [volatile data](/sdk/cpp/1/kuzzle/introduction#volatile-data-default).  
 Value must be a JSON string representing a JSON object. (eg: `{"username": "Aschen"}`)
 
 ### Signature

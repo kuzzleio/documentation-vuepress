@@ -30,7 +30,7 @@ Fetches a single stored profile using its unique ID.
 
 ## Callback Response
 
-Returns a security [Profile](/sdk-reference/php/3/profile) object.
+Returns a security [Profile](/sdk/php/3/profile) object.
 
 ## Usage
 

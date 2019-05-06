@@ -30,7 +30,7 @@ Fetches a single stored user using its unique ID.
 
 ## Callback Response
 
-Returns a [User](/sdk-reference/js/5/user) object.
+Returns a [User](/sdk/js/5/user) object.
 
 ## Usage
 

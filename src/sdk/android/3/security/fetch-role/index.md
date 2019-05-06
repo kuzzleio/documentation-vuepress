@@ -30,7 +30,7 @@ Fetches a single stored role using its unique ID.
 
 ## Callback Response
 
-Returns a [Role](/sdk-reference/android/3/role) object.
+Returns a [Role](/sdk/android/3/role) object.
 
 ## Usage
 

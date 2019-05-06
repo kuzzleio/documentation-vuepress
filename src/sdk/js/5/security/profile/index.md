@@ -6,7 +6,7 @@ description: Security:profile
 
 # profile
 
-Instantiate a new security [Profile](/sdk-reference/js/5/profile) object.
+Instantiate a new security [Profile](/sdk/js/5/profile) object.
 
 ---
 
@@ -21,7 +21,7 @@ Instantiate a new security [Profile](/sdk-reference/js/5/profile) object.
 
 ## Return Value
 
-Returns the new security [Profile](/sdk-reference/js/5/profile) object.
+Returns the new security [Profile](/sdk/js/5/profile) object.
 
 ## Usage
 

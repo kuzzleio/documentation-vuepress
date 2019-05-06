@@ -7,7 +7,7 @@ order: 1
 
 # Constructors
 
-## Instantiates a new User object, which is a representation of a Kuzzle user and is linked to a security [Profile](/sdk-reference/js/5/profile).
+## Instantiates a new User object, which is a representation of a Kuzzle user and is linked to a security [Profile](/sdk/js/5/profile).
 
 ## User(Security, id, content, [meta])
 

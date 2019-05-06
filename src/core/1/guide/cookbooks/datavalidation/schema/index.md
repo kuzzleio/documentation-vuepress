@@ -60,4 +60,4 @@ const specification = {
 };
 ```
 
-Learn how to [create simple field validators](/guide/1/datavalidation/fields/) and [complex validators](/guide/1/datavalidation/validators/).
+Learn how to [create simple field validators](/core/1/guide/datavalidation/fields/) and [complex validators](/core/1/guide/datavalidation/validators/).

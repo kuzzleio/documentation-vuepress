@@ -38,7 +38,7 @@ std::string updateSpecifications(
 
 A JSON string representing the specifications.
 
-The JSON must follow the [Specification Structure](/guide/1/datavalidation/schema/):
+The JSON must follow the [Specification Structure](/core/1/guide/datavalidation/schema/):
 
 ```json
 {

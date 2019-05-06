@@ -54,7 +54,7 @@ A JSON string representing an object containing the following properties:
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle errors](/sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle errors](/sdk/cpp/1/error-handling).
 
 ## Usage
 

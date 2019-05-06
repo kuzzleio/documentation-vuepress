@@ -6,7 +6,7 @@ description: Collection:fetchDocument
 
 # fetchDocument
 
-Retrieves a single stored document using its unique document ID, and returns it as a [Document](/sdk-reference/android/3/document/) object.
+Retrieves a single stored document using its unique document ID, and returns it as a [Document](/sdk/android/3/document/) object.
 
 ---
 
@@ -30,7 +30,7 @@ Retrieves a single stored document using its unique document ID, and returns it 
 
 ## Callback Response
 
-Returns a [Document](/sdk-reference/android/3/document/) object.
+Returns a [Document](/sdk/android/3/document/) object.
 
 ## Usage
 

@@ -83,7 +83,7 @@ You should receive the following response:
 }
 ```
 
-**Note:** we have just created a new collection without specifying any mappings. As a result, the database layer will automatically create a mapping that assigns a best guess data type to any new field it detects in input documents. Since these mappings cannot be changed once they are created, we strongly recommend that you [**create your own mappings**](/guide/1/essentials/persisted/#mappings) as soon as the collection has been created. For the purpose of this tutorial, we will continue without defining our own mappings.
+**Note:** we have just created a new collection without specifying any mappings. As a result, the database layer will automatically create a mapping that assigns a best guess data type to any new field it detects in input documents. Since these mappings cannot be changed once they are created, we strongly recommend that you [**create your own mappings**](/core/1/guide/essentials/persisted/#mappings) as soon as the collection has been created. For the purpose of this tutorial, we will continue without defining our own mappings.
 
 ---
 
@@ -123,7 +123,7 @@ You should receive the following response:
 ```
 
 The `result` field in the response contains an array of `collections`, each with its own `name` and a `type`.  
-Note that the `mycollection`'s type is `stored`, which means it is a persistant store. The `type` allows us to distinguish between persistant store collections and temporary store collections, such as those used for [real-time messaging](/guide/1/essentials/real-time).
+Note that the `mycollection`'s type is `stored`, which means it is a persistant store. The `type` allows us to distinguish between persistant store collections and temporary store collections, such as those used for [real-time messaging](/core/1/guide/essentials/real-time).
 
 ---
 
@@ -189,7 +189,7 @@ You should receive the following response (with your own `_id` value):
 }
 ```
 
-Note that the document contains the auto-generated id `AVkDBl3YsT6qHI7MxLz0`. Take some time to examine the content of the [response](/guide/1/essentials/request-and-response-format/#status-codes) message as it contains useful information, like the name of the controller, the action performed in the request, and of course the object we just created in the `source` field.
+Note that the document contains the auto-generated id `AVkDBl3YsT6qHI7MxLz0`. Take some time to examine the content of the [response](/core/1/guide/essentials/request-and-response-format/#status-codes) message as it contains useful information, like the name of the controller, the action performed in the request, and of course the object we just created in the `source` field.
 
 ### READ
 
@@ -311,7 +311,7 @@ You should receive the following response (with your own `_id` value):
 
 ## Document Search
 
-One thing that Elasticsearch is _really_ good at doing is... Searching! Thanks to its powerful query DSL it can create extremely precise search queries. We wrote an [Elasticsearch Cookbook](/guide/1/elasticsearch) to help you understand how it works in detail, but let's take a look at a couple of simple examples, just to get started.
+One thing that Elasticsearch is _really_ good at doing is... Searching! Thanks to its powerful query DSL it can create extremely precise search queries. We wrote an [Elasticsearch Cookbook](/core/1/guide/elasticsearch) to help you understand how it works in detail, but let's take a look at a couple of simple examples, just to get started.
 
 Say we want to [**find**](/api/1/controller-document/search) all documents in the `mycollection` collection. Whe can do this by sending a `POST` request to `http://localhost:7512/<index name>/<collection name>/_search` and setting any search filters in the request body.
 
@@ -536,6 +536,6 @@ Please note that the mappings of a collection cannot be updated once they are cr
 
 ## What Now?
 
-- Read our [Elasticsearch Cookbook](/guide/1/elasticsearch) to learn more about how querying works in Kuzzle
-- Use [document metadata](/guide/1/essentials/document-metadata) to find or recover documents
-- Keep track of data changes using [Real-time Notifications](/guide/1/essentials/real-time)
+- Read our [Elasticsearch Cookbook](/core/1/guide/elasticsearch) to learn more about how querying works in Kuzzle
+- Use [document metadata](/core/1/guide/essentials/document-metadata) to find or recover documents
+- Keep track of data changes using [Real-time Notifications](/core/1/guide/essentials/real-time)

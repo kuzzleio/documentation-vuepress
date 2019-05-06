@@ -20,7 +20,7 @@ Returns informations about the user who is currently loggedin.
 
 ## Callback Response
 
-Returns an instantiated [User](/sdk-reference/android/3/user) object.
+Returns an instantiated [User](/sdk/android/3/user) object.
 
 ## Usage
 

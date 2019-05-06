@@ -57,7 +57,7 @@ Body:
 
 ### Optional:
 
-- `includeTrash`: include documents from the [trashcan](/guide/1/essentials/document-metadata/)
+- `includeTrash`: include documents from the [trashcan](/core/1/guide/essentials/document-metadata/)
 
 ---
 

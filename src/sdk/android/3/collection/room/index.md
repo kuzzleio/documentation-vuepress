@@ -6,7 +6,7 @@ description: Collection:room
 
 # room
 
-Creates a new [Room](/sdk-reference/android/3/room/) object, using its constructor.
+Creates a new [Room](/sdk/android/3/room/) object, using its constructor.
 
 ---
 
@@ -18,13 +18,13 @@ Creates a new [Room](/sdk-reference/android/3/room/) object, using its construct
 
 ## Options
 
-Provided options are passed directly to the [Room](/sdk-reference/android/3/room/) object constructor.
+Provided options are passed directly to the [Room](/sdk/android/3/room/) object constructor.
 
 ---
 
 ## Return Value
 
-Returns the newly created [Room](/sdk-reference/android/3/room/) object.
+Returns the newly created [Room](/sdk/android/3/room/) object.
 
 ## Usage
 

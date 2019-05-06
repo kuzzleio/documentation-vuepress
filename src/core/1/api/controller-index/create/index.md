@@ -7,7 +7,7 @@ title: create
 
 <SinceBadge version="1.0.0" />
 
-Creates a new [data index](/guide/1/essentials/persisted) in Kuzzle.
+Creates a new [data index](/core/1/guide/essentials/persisted) in Kuzzle.
 
 ---
 

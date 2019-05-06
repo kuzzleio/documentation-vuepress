@@ -6,7 +6,7 @@ description: Collection:getMapping
 
 # getMapping
 
-Retrieves the current mapping of this collection as a [CollectionMapping](/sdk-reference/php/3/collection-mapping/) object.
+Retrieves the current mapping of this collection as a [CollectionMapping](/sdk/php/3/collection-mapping/) object.
 
 ---
 
@@ -29,7 +29,7 @@ Retrieves the current mapping of this collection as a [CollectionMapping](/sdk-r
 
 ## Callback Response
 
-Returns a [CollectionMapping](/sdk-reference/php/3/collection-mapping/) object.
+Returns a [CollectionMapping](/sdk/php/3/collection-mapping/) object.
 
 ## Usage
 

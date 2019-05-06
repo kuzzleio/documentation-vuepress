@@ -6,4 +6,4 @@ description: Kuzzle:security
 
 # security
 
-A [Security](/sdk-reference/php/3/security) singleton.
+A [Security](/sdk/php/3/security) singleton.

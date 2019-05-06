@@ -6,7 +6,7 @@ description: Collection:replaceDocument
 
 # replaceDocument
 
-Replace an existing document and return the updated version as a [Document](/sdk-reference/android/3/document/) object.
+Replace an existing document and return the updated version as a [Document](/sdk/android/3/document/) object.
 
 ---
 
@@ -39,7 +39,7 @@ Returns the `Collection` object to allow chaining.
 
 ## Callback Response
 
-Returns an updated [Document](/sdk-reference/android/3/document/) object.
+Returns an updated [Document](/sdk/android/3/document/) object.
 
 ## Usage
 

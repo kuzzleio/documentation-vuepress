@@ -9,7 +9,7 @@ description: Document:subscribe
 Listens to changes occuring in this document.
 Throws an error if this document has not yet been created in Kuzzle.
 
-The provided callback will be called everytime a [notification](/sdk-reference/android/3/notifications) is received from Kuzzle.
+The provided callback will be called everytime a [notification](/sdk/android/3/notifications) is received from Kuzzle.
 
 ---
 
@@ -24,7 +24,7 @@ The provided callback will be called everytime a [notification](/sdk-reference/a
 
 ## Options
 
-Options are directly passed to the [Room](/sdk-reference/android/3/room/) object constructor.
+Options are directly passed to the [Room](/sdk/android/3/room/) object constructor.
 
 ---
 

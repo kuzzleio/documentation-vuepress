@@ -5,7 +5,7 @@ title: geopos
 
 # geopos
 
-Returns the positions of the provided key's members (see [geoadd](/sdk-reference/js/6/ms/geoadd/)).
+Returns the positions of the provided key's members (see [geoadd](/sdk/js/6/ms/geoadd/)).
 
 [[_Redis documentation_]](https://redis.io/commands/geopos)
 

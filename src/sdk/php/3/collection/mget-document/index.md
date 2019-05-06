@@ -6,7 +6,7 @@ description: Collection:mgetDocument
 
 # mGetDocument
 
-Get multiple [Documents](/sdk-reference/php/3/document/) according to the input document IDs.
+Get multiple [Documents](/sdk/php/3/document/) according to the input document IDs.
 
 ---
 

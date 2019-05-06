@@ -30,7 +30,7 @@ public String updateSpecifications(String index, String collection, String speci
 
 A JSON representation of the specifications.
 
-The JSON must follow the [Specification Structure](/guide/1/datavalidation):
+The JSON must follow the [Specification Structure](/core/1/guide/datavalidation):
 
 ```json
 {
@@ -59,7 +59,7 @@ Return a string containing a JSON representation of the specifications
 
 ## Exceptions
 
-Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
+Throws a `io.kuzzle.sdk.KuzzleException` if there is an error. See how to [handle error](/sdk/java/1/error-handling).
 
 ## Usage
 

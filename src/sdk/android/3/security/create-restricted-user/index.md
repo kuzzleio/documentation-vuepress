@@ -38,7 +38,7 @@ That means that a user that was just created may not be returned by the <code>se
 
 ## Callback response
 
-Resolves to a [User](/sdk-reference/android/3/user) object.
+Resolves to a [User](/sdk/android/3/user) object.
 
 ## Usage
 

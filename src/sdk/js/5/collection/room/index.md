@@ -6,7 +6,7 @@ description: Collection:room
 
 # room
 
-Creates a new [Room](/sdk-reference/js/5/room/) object, using its constructor.
+Creates a new [Room](/sdk/js/5/room/) object, using its constructor.
 
 ---
 
@@ -18,13 +18,13 @@ Creates a new [Room](/sdk-reference/js/5/room/) object, using its constructor.
 
 ## Options
 
-Provided options are passed directly to the [Room](/sdk-reference/js/5/room/) object constructor.
+Provided options are passed directly to the [Room](/sdk/js/5/room/) object constructor.
 
 ---
 
 ## Return Value
 
-Returns the newly created [Room](/sdk-reference/js/5/room/) object.
+Returns the newly created [Room](/sdk/js/5/room/) object.
 
 ## Usage
 

@@ -6,4 +6,4 @@ description: Alias for addListener
 
 # on
 
-Alias for [addListener](/sdk-reference/js/6/kuzzle-event-emitter/add-listener).
+Alias for [addListener](/sdk/js/6/kuzzle-event-emitter/add-listener).

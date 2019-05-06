@@ -6,17 +6,17 @@ description: Collection:mupdateDocument
 
 # mUpdateDocument
 
-Update the provided [Documents](/sdk-reference/js/5/document/).
+Update the provided [Documents](/sdk/js/5/document/).
 
 ---
 
 ## mUpdateDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                   |
-| ----------- | ----------- | ------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Documents](/sdk-reference/js/5/document/) to update |
-| `options`   | JSON Object | Optional parameters                                           |
-| `callback`  | function    | Optional callback                                             |
+| Arguments   | Type        | Description                                         |
+| ----------- | ----------- | --------------------------------------------------- |
+| `documents` | Document[]  | Array of [Documents](/sdk/js/5/document/) to update |
+| `options`   | JSON Object | Optional parameters                                 |
+| `callback`  | function    | Optional callback                                   |
 
 ---
 

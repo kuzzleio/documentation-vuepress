@@ -26,11 +26,11 @@ on it, making the documents visible to search immediately.
 
 ## refreshIndex([index], [options], [callback])
 
-| Argument   | Type        | Description                                                                                                               |
-| ---------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `index`    | string      | _Optional_. The index to refresh. If not set, defaults to [kuzzle.defaultIndex](/sdk-reference/php/3/kuzzle/#properties). |
-| `options`  | JSON object | Optional parameters                                                                                                       |
-| `callback` | function    | _Optional_. Callback handling the response.                                                                               |
+| Argument   | Type        | Description                                                                                                     |
+| ---------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
+| `index`    | string      | _Optional_. The index to refresh. If not set, defaults to [kuzzle.defaultIndex](/sdk/php/3/kuzzle/#properties). |
+| `options`  | JSON object | Optional parameters                                                                                             |
+| `callback` | function    | _Optional_. Callback handling the response.                                                                     |
 
 ---
 

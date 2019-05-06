@@ -14,9 +14,9 @@ It uses Redis internally, and most of its underlying functions are exposed by Ku
 
 ## MemoryStorage(Kuzzle)
 
-| Arguments | Type   | Description                                                     |
-| --------- | ------ | --------------------------------------------------------------- |
-| `Kuzzle`  | object | An instantiated [Kuzzle](/sdk-reference/js/5/kuzzle) SDK object |
+| Arguments | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| `Kuzzle`  | object | An instantiated [Kuzzle](/sdk/js/5/kuzzle) SDK object |
 
 ## Usage
 

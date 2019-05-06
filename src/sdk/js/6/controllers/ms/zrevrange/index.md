@@ -5,7 +5,7 @@ title: zrevrange
 
 # zrevrange
 
-Identical to [zrange](/sdk-reference/js/6/ms/zrange), except that the sorted set is traversed in descending order.
+Identical to [zrange](/sdk/js/6/ms/zrange), except that the sorted set is traversed in descending order.
 
 [[_Redis documentation_]](https://redis.io/commands/zrevrange)
 

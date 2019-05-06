@@ -33,7 +33,7 @@ Additional query options
 
 ## Resolves
 
-A [User](/sdk-reference/js/6/user) representing the current user logged with the SDK.
+A [User](/sdk/js/6/user) representing the current user logged with the SDK.
 
 ## Usage
 

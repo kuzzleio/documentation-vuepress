@@ -17,10 +17,10 @@ addListener(event, callback);
 
 <br/>
 
-| Argument   | Type                | Description                                                                                          |
-| ---------- | ------------------- | ---------------------------------------------------------------------------------------------------- |
-| `event`    | <pre>string</pre>   | One of the event described in the [Events](/sdk-reference/js/6/events) section of this documentation |
-| `callback` | <pre>function</pre> | The function to call every time the event is triggered                                               |
+| Argument   | Type                | Description                                                                                |
+| ---------- | ------------------- | ------------------------------------------------------------------------------------------ |
+| `event`    | <pre>string</pre>   | One of the event described in the [Events](/sdk/js/6/events) section of this documentation |
+| `callback` | <pre>function</pre> | The function to call every time the event is triggered                                     |
 
 ## Return
 

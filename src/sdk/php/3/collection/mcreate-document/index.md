@@ -6,17 +6,17 @@ description: Collection:mcreateDocument
 
 # mCreateDocument
 
-Create the input [Documents](/sdk-reference/php/3/document/).
+Create the input [Documents](/sdk/php/3/document/).
 
 ---
 
 ## mCreateDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                   |
-| ----------- | ----------- | ------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Document](/sdk-reference/php/3/document/) to create |
-| `options`   | JSON Object | Optional parameters                                           |
-| `callback`  | function    | Optional callback                                             |
+| Arguments   | Type        | Description                                         |
+| ----------- | ----------- | --------------------------------------------------- |
+| `documents` | Document[]  | Array of [Document](/sdk/php/3/document/) to create |
+| `options`   | JSON Object | Optional parameters                                 |
+| `callback`  | function    | Optional callback                                   |
 
 ---
 

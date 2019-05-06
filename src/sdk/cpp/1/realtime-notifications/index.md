@@ -7,7 +7,7 @@ order: 100
 
 # Notifications
 
-The [realtime:subscribe](/sdk-reference/cpp/1/realtime/subscribe) method takes a listener of type `kuzzleio::NotificationListener`.  
+The [realtime:subscribe](/sdk/cpp/1/realtime/subscribe) method takes a listener of type `kuzzleio::NotificationListener`.  
 That listener is called with a `const kuzzleio::notification_result*` argument, pointing to an object whose content depends on the type of notification received.
 
 ## Document & messages

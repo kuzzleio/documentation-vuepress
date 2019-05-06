@@ -7,11 +7,11 @@ order: 0
 
 # User
 
-The `User` class is the SDK representation of a Kuzzle [user](/guide/1/essentials/user-authentication/#creating-users-default).
+The `User` class is the SDK representation of a Kuzzle [user](/core/1/guide/essentials/user-authentication/#creating-users-default).
 
 Instances of the `User` class are returned by the following methods:
 
-- [auth:getCurrentUser](/sdk-reference/cpp/1/auth/get-current-user)
+- [auth:getCurrentUser](/sdk/cpp/1/auth/get-current-user)
 
 ## Public class definition
 

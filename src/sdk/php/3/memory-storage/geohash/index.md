@@ -6,7 +6,7 @@ description: MemoryStorage:geohash
 
 # geohash
 
-Returns a valid [geohash](https://en.wikipedia.org/wiki/Geohash) for the provided key's members (see [geoadd](/sdk-reference/php/3/memory-storage/geoadd)).
+Returns a valid [geohash](https://en.wikipedia.org/wiki/Geohash) for the provided key's members (see [geoadd](/sdk/php/3/memory-storage/geoadd)).
 
 [[_Redis documentation_]](https://redis.io/commands/geohash)
 

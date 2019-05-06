@@ -7,7 +7,7 @@ order: 100
 
 # Notifications
 
-The [Realtime.Subscribe](/sdk-reference/go/1/realtime/subscribe) method takes a channel for `types.NotificationResult` objects, whose content depend on the type of notification received.
+The [Realtime.Subscribe](/sdk/go/1/realtime/subscribe) method takes a channel for `types.NotificationResult` objects, whose content depend on the type of notification received.
 
 ## Document & messages
 

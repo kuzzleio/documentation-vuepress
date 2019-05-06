@@ -7,7 +7,7 @@ order: 100
 
 # Notifications
 
-The [Realtime.subscribe](/sdk-reference/java/1/realtime/subscribe) method takes a `io.kuzzle.sdk.NotificationListener` event listener (implements the `EventListener` interface).  
+The [Realtime.subscribe](/sdk/java/1/realtime/subscribe) method takes a `io.kuzzle.sdk.NotificationListener` event listener (implements the `EventListener` interface).  
 That listener is fed with a `io.kuzzle.sdk.NotificationResult` object, whose content depends on the type of notification.
 
 Properties can be accessed with usual getters and setters.

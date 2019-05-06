@@ -7,11 +7,11 @@ order: 0
 
 # UserRight
 
-The `UserRight` class is the SDK representation of a single [user's right](/guide/1/essentials/user-authentication/#creating-users-default).
+The `UserRight` class is the SDK representation of a single [user's right](/core/1/guide/essentials/user-authentication/#creating-users-default).
 
 Instances of the `UserRight` class are returned by the followings methods:
 
-- [auth:getMyRights](/sdk-reference/cpp/1/auth/get-my-rights).
+- [auth:getMyRights](/sdk/cpp/1/auth/get-my-rights).
 
 ## Public class definition
 

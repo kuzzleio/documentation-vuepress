@@ -6,7 +6,7 @@ description: Collection:document
 
 # document
 
-Creates a new [Document](/sdk-reference/js/5/document/) object, using its constructor.
+Creates a new [Document](/sdk/js/5/document/) object, using its constructor.
 
 ---
 
@@ -21,7 +21,7 @@ Creates a new [Document](/sdk-reference/js/5/document/) object, using its constr
 
 ## Return Value
 
-Returns the newly created [Document](/sdk-reference/js/5/document) object.
+Returns the newly created [Document](/sdk/js/5/document) object.
 
 ## Usage
 

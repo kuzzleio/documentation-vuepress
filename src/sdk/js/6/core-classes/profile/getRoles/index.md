@@ -16,7 +16,7 @@ getRoles();
 
 ## Resolve
 
-Resolves to an array of [Role](/sdk-reference/js/6/role).
+Resolves to an array of [Role](/sdk/js/6/role).
 
 ## Usage
 

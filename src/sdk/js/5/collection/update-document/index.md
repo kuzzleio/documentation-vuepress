@@ -41,7 +41,7 @@ Returns the `Collection` object to allow chaining.
 
 ## Callback Response
 
-Returns an up-to-date [Document](/sdk-reference/js/5/document/) object.
+Returns an up-to-date [Document](/sdk/js/5/document/) object.
 
 ## Usage
 

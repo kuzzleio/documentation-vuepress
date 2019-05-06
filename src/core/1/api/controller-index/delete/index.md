@@ -7,7 +7,7 @@ title: delete
 
 <SinceBadge version="1.0.0" />
 
-Deletes an [index](/guide/1/essentials/persisted).
+Deletes an [index](/core/1/guide/essentials/persisted).
 
 ---
 

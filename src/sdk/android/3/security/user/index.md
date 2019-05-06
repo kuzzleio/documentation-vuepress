@@ -6,7 +6,7 @@ description: Security:user
 
 # user
 
-Instantiates a new [User](/sdk-reference/android/3/user) object.
+Instantiates a new [User](/sdk/android/3/user) object.
 
 ---
 
@@ -21,7 +21,7 @@ Instantiates a new [User](/sdk-reference/android/3/user) object.
 
 ## Return value
 
-Returns the new [User](/sdk-reference/android/3/user) object.
+Returns the new [User](/sdk/android/3/user) object.
 
 ## Usage
 

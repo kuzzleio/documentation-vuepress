@@ -9,15 +9,15 @@ order: 1
 
 The Security component lets you handle user permissions in Kuzzle.
 
-Please refer to our [permissions guide](/guide/1/essentials/security/#user-permissions) for more information.
+Please refer to our [permissions guide](/core/1/guide/essentials/security/#user-permissions) for more information.
 
 ---
 
 ## Security
 
-| Arguments | Type   | Description                                                 |
-| --------- | ------ | ----------------------------------------------------------- |
-| `Kuzzle`  | object | An instantiated [Kuzzle](/sdk-reference/js/5/kuzzle) object |
+| Arguments | Type   | Description                                       |
+| --------- | ------ | ------------------------------------------------- |
+| `Kuzzle`  | object | An instantiated [Kuzzle](/sdk/js/5/kuzzle) object |
 
 ## Usage
 

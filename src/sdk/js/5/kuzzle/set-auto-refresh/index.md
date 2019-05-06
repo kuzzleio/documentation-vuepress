@@ -26,12 +26,12 @@ Given an index, the `setAutoRefresh` function updates its `autoRefresh` status.
 
 ## setAutoRefresh([index], autoRefresh, [options], [callback])
 
-| Argument      | Type        | Description                                                                                                                               |
-| ------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `index`       | string      | _Optional_ The index to set the `autoRefresh` for. If not set, defaults to [kuzzle.defaultIndex](/sdk-reference/js/5/kuzzle/#properties). |
-| `autoRefresh` | boolean     | The value to set for the `autoRefresh` setting.                                                                                           |
-| `options`     | JSON object | Optional parameters                                                                                                                       |
-| `callback`    | function    | _Optional_ Callback handling the response                                                                                                 |
+| Argument      | Type        | Description                                                                                                                     |
+| ------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `index`       | string      | _Optional_ The index to set the `autoRefresh` for. If not set, defaults to [kuzzle.defaultIndex](/sdk/js/5/kuzzle/#properties). |
+| `autoRefresh` | boolean     | The value to set for the `autoRefresh` setting.                                                                                 |
+| `options`     | JSON object | Optional parameters                                                                                                             |
+| `callback`    | function    | _Optional_ Callback handling the response                                                                                       |
 
 ---
 

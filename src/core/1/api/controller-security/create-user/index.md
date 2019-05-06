@@ -71,7 +71,7 @@ Body:
 
 ### Optional:
 
-- `_id`: user [kuid](/guide/1/kuzzle-depth/authentication/#the-kuzzle-user-identifier). An error is returned if the provided identifier already exists. If not provided, a random kuid is automatically generated.
+- `_id`: user [kuid](/core/1/guide/kuzzle-depth/authentication/#the-kuzzle-user-identifier). An error is returned if the provided identifier already exists. If not provided, a random kuid is automatically generated.
 
 ---
 

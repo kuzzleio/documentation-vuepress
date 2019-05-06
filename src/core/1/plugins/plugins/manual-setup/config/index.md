@@ -9,7 +9,7 @@ order: 1
 
 When Kuzzle calls the plugin `init` method, it passes the plugin's custom configuration to it.
 
-Custom configuration parameters are specified for each plugin in the `plugins` object of the Kuzzle [configuration file](/guide/1/essentials/configuration).
+Custom configuration parameters are specified for each plugin in the `plugins` object of the Kuzzle [configuration file](/core/1/guide/essentials/configuration).
 
 For example:
 

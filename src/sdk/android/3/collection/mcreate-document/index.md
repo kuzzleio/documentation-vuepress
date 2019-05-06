@@ -6,17 +6,17 @@ description: Collection:mcreateDocument
 
 # mCreateDocument
 
-Create the input [Documents](/sdk-reference/android/3/document/).
+Create the input [Documents](/sdk/android/3/document/).
 
 ---
 
 ## mCreateDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                       |
-| ----------- | ----------- | ----------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Document](/sdk-reference/android/3/document/) to create |
-| `options`   | JSON Object | Optional parameters                                               |
-| `callback`  | function    | Optional callback                                                 |
+| Arguments   | Type        | Description                                             |
+| ----------- | ----------- | ------------------------------------------------------- |
+| `documents` | Document[]  | Array of [Document](/sdk/android/3/document/) to create |
+| `options`   | JSON Object | Optional parameters                                     |
+| `callback`  | function    | Optional callback                                       |
 
 ---
 

@@ -7,7 +7,7 @@ order: 200
 
 # First Steps with Kuzzle
 
-It's time to play with the [Kuzzle JS SDK](/sdk-reference). In this section, we will learn how to store a document and subscribe to notifications in Kuzzle using the Javascript SDK in a simple NodeJS client application.
+It's time to play with the [Kuzzle JS SDK](/sdk). In this section, we will learn how to store a document and subscribe to notifications in Kuzzle using the Javascript SDK in a simple NodeJS client application.
 
 Before proceeding, please make sure your system has these programs installed:
 
@@ -16,7 +16,7 @@ Before proceeding, please make sure your system has these programs installed:
 
 ## Prepare your environment
 
-Create your playground directory and install the [Javascript SDK](/sdk-reference) from the command line using npm:
+Create your playground directory and install the [Javascript SDK](/sdk) from the command line using npm:
 
 ```bash
 mkdir toto "kuzzle-playground"
@@ -95,7 +95,7 @@ document created
 ```
 
 <div class="alert alert-success">
-You have now successfully stored your first document into Kuzzle. Click guide/1/essentials/installing-console">here</a> to see how you can use the
+You have now successfully stored your first document into Kuzzle. Click core/1/guide/essentials/installing-console">here</a> to see how you can use the
   <strong>Kuzzle Admin Console</strong> to browse your collection and confirm that your document was saved.
 </div>
 
@@ -103,11 +103,11 @@ You have now successfully stored your first document into Kuzzle. Click guide/1/
 Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzzle">Gitter!</a> We're happy to help.
 </div>
 
-_You can find more resources about Kuzzle SDK in the [SDK Reference](/sdk-reference)._
+_You can find more resources about Kuzzle SDK in the [SDK Reference](/sdk)._
 
 ## Subscribe to data changes (pub/sub)
 
-Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the **Room** class definition in the <a :href="`${$site.base}sdk-reference`">SDK Reference</a>).
+Kuzzle provides pub/sub features that can be used to trigger real-time notifications based on the state of your data (for a deep-dive on notifications check out the **Room** class definition in the <a :href="`${$site.base}sdk`">SDK Reference</a>).
 
 Let's get started. Complete your `create.js` file:
 
@@ -119,7 +119,7 @@ Run your file in Node.js
 node create.js
 ```
 
-This creates a new document in Kuzzle, triggering a [notification](/guide/1/essentials/real-time):
+This creates a new document in Kuzzle, triggering a [notification](/core/1/guide/essentials/real-time):
 
 ```bash
 subscribe ok
@@ -139,7 +139,7 @@ Having trouble? Get in touch with us on <a href="https://gitter.im/kuzzleio/kuzz
 
 Now that you're more familiar with Kuzzle, dive even deeper to learn how to leverage its full capabilities:
 
-- take a look at the <a :href="`${$site.base}sdk-reference`">SDK Reference</a>
+- take a look at the <a :href="`${$site.base}sdk`">SDK Reference</a>
 - learn how to use <a :href="`${$site.base}koncorde/1`">Koncorde</a> to create incredibly fine-grained and blazing-fast subscriptions
-- follow our guide to learn how to implement <a :href="`${$site.base}guide/1/essentials/user-authentication/#local-strategy`">basic authentication</a>
-- follow our guide to learn how to implement <a :href="`${$site.base}guide/1/essentials/security/`">manage users and setup fine-grained access control</a>
+- follow our guide to learn how to implement <a :href="`${$site.base}core/1/guide/essentials/user-authentication/#local-strategy`">basic authentication</a>
+- follow our guide to learn how to implement <a :href="`${$site.base}core/1/guide/essentials/security/`">manage users and setup fine-grained access control</a>

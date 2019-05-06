@@ -9,7 +9,7 @@ order: 0
 
 This class represents a Kuzzle Role.
 
-Refer to the [Security guide](/guide/1/essentials/security#defining-roles-default) for more information about roles.
+Refer to the [Security guide](/core/1/guide/essentials/security#defining-roles-default) for more information about roles.
 
 ## Properties
 

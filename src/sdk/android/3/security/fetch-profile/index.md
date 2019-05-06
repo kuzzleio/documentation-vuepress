@@ -30,7 +30,7 @@ Fetches a single stored profile using its unique ID.
 
 ## Callback Response
 
-Returns a security [Profile](/sdk-reference/android/3/profile) object.
+Returns a security [Profile](/sdk/android/3/profile) object.
 
 ## Usage
 

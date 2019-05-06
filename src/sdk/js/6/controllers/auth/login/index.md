@@ -24,7 +24,7 @@ login(strategy, [credentials], [expiresIn]);
 
 #### strategy
 
-The name of the [authentication strategy](/guide/1/kuzzle-depth/authentication) used to log the user in.
+The name of the [authentication strategy](/core/1/guide/kuzzle-depth/authentication) used to log the user in.
 
 Depending on the chosen authentication strategy, additional credential arguments may be required.
 The API request example in this page provides the necessary arguments for the [`local` authentication plugin](https://github.com/kuzzleio/kuzzle-plugin-auth-passport-local).

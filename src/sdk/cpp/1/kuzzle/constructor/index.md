@@ -20,17 +20,17 @@ kuzzleio::Kuzzle(kuzzleio::Protocol* protocol, const options& options);
 
 ## Arguments
 
-| Argument   | Type                                                             | Description                       |
-| ---------- | ---------------------------------------------------------------- | --------------------------------- |
-| `protocol` | <pre><a href=/sdk-reference/cpp/1/protocol/>Protocol\*</a></pre> | Protocol used by the SDK instance |
-| `options`  | <pre>const kuzzleio::options\&</pre>                             | Kuzzle object configuration       |
+| Argument   | Type                                                   | Description                       |
+| ---------- | ------------------------------------------------------ | --------------------------------- |
+| `protocol` | <pre><a href=/sdk/cpp/1/protocol/>Protocol\*</a></pre> | Protocol used by the SDK instance |
+| `options`  | <pre>const kuzzleio::options\&</pre>                   | Kuzzle object configuration       |
 
 ### protocol
 
 The protocol used to connect to the Kuzzle instance.  
 It can be one of the following available protocols:
 
-- [WebSocket](/sdk-reference/cpp/1/websocket)
+- [WebSocket](/sdk/cpp/1/websocket)
 
 ### options
 

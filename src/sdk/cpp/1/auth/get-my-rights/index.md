@@ -33,11 +33,11 @@ Additional query options:
 
 ## Return
 
-A vector of pointer to [kuzzleio::UserRight](/sdk-reference/cpp/1/user-right/) object.
+A vector of pointer to [kuzzleio::UserRight](/sdk/cpp/1/user-right/) object.
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk/cpp/1/error-handling).
 
 ## Usage
 

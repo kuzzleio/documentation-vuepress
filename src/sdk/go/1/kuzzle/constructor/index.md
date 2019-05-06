@@ -24,7 +24,7 @@ NewKuzzle(protocol connection.Connection) (*Kuzzle, error)
 
 ### **protocol**
 
-A [Protocol](/sdk-reference/go/1/protocols/) is a structure implementing the `connection.Connection` interface.
+A [Protocol](/sdk/go/1/protocols/) is a structure implementing the `connection.Connection` interface.
 The available protocols are:
 
 - `websocket.Websocket`
@@ -91,7 +91,7 @@ For example, you can read the `volatile` property via `getVolatile()` and set it
 
 ## Return
 
-A `Kuzzle` struct and an [error struct](/sdk-reference/go/1/error-handling).  
+A `Kuzzle` struct and an [error struct](/sdk/go/1/error-handling).  
 The `error` struct is nil if everything was ok.
 
 ## Usage

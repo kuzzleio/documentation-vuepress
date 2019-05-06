@@ -8,11 +8,11 @@ order: 0
 # SocketIO
 
 The SocketIO protocol can be used by an instance of the SDK to communicate with your Kuzzle server.  
-This protocol allows you to use all the features of Kuzzle, including [real-time notifications](/sdk-reference/js/6/realtime-notifications).
+This protocol allows you to use all the features of Kuzzle, including [real-time notifications](/sdk/js/6/realtime-notifications).
 
 <div class="alert alert-info">
   <p>
-  The SocketIO protocol is used for websocket compatibility with older browsers. It is preferable to use the <a href="/sdk-reference/js/6/websocket">WebSocket</a> protocol when possible.
+  The SocketIO protocol is used for websocket compatibility with older browsers. It is preferable to use the <a href="/sdk/js/6/websocket">WebSocket</a> protocol when possible.
   </p>
 </div>
 

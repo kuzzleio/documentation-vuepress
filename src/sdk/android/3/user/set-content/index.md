@@ -9,7 +9,7 @@ description: User:setContent
 Replaces the content of User.
 
 <div class="alert alert-info">
-Updating a user will have no impact until the <a href="/sdk-reference/android/3/user/create"><code>create</code></a> or <a href="/sdk-reference/android/3/user/replace"><code>replace</code></a> method is called
+Updating a user will have no impact until the <a href="/sdk/android/3/user/create"><code>create</code></a> or <a href="/sdk/android/3/user/replace"><code>replace</code></a> method is called
 </div>
 
 ---

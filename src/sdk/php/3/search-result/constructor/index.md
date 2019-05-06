@@ -7,7 +7,7 @@ order: 1
 
 # Constructor
 
-This object can only be instantiated internally by this SDK, and is an easy-to-use representation of a paginated result from a [search](/sdk-reference/php/3/collection/search) or a [scroll](/sdk-reference/php/3/collection/scroll) request.
+This object can only be instantiated internally by this SDK, and is an easy-to-use representation of a paginated result from a [search](/sdk/php/3/collection/search) or a [scroll](/sdk/php/3/collection/scroll) request.
 
 ---
 

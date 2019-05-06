@@ -59,7 +59,7 @@ An empty body matches all documents in the queried collection.
 
 ## Return
 
-Returns a pointer on [types.SearchResult](/sdk-reference/go/1/search-result) struct
+Returns a pointer on [types.SearchResult](/sdk/go/1/search-result) struct
 
 ## Usage
 

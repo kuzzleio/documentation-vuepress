@@ -11,7 +11,7 @@ Kuzzle uses [Passport.js](http://Passportjs.org/) to support numerous authentica
 - SAML: for authentication using providers such as OneLogin and for supporting single sign-on.
 - Local: for authentication using a user's username and password managed in your own domain.
 
-In the diagram below, we highlighted components of Kuzzle's server [architecture](/guide/1/kuzzle-depth) that are used in the authentication process:
+In the diagram below, we highlighted components of Kuzzle's server [architecture](/core/1/guide/kuzzle-depth) that are used in the authentication process:
 
 ![read_scenario_http_overview](./Authentication_Overview.png)
 

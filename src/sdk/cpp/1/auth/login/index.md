@@ -29,9 +29,9 @@ std::string login(
 
 #### **_strategy_**
 
-The name of the authentication [strategy](/guide/1/kuzzle-depth/authentication/#authentication) used to log the user in.
+The name of the authentication [strategy](/core/1/guide/kuzzle-depth/authentication/#authentication) used to log the user in.
 
-Depending on the chosen authentication `strategy`, additional [credential arguments](/guide/1/kuzzle-depth/authentication/#authentication) may be required.  
+Depending on the chosen authentication `strategy`, additional [credential arguments](/core/1/guide/kuzzle-depth/authentication/#authentication) may be required.  
 The API request example on this page provides the necessary arguments for the [`local` authentication plugin](https://github.com/kuzzleio/kuzzle-plugin-auth-passport-local).
 
 Check the appropriate [authentication plugin](/plugins/1/essentials/strategies/) documentation to get the list of additional arguments to provide.
@@ -43,7 +43,7 @@ Once `auth:login` has been called, the returned JWT is stored by the SDK and use
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk/cpp/1/error-handling).
 
 ## Usage
 

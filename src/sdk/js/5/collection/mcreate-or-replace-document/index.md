@@ -6,17 +6,17 @@ description: Collection:mcreateOrReplaceDocument
 
 # mCreateOrReplaceDocument
 
-Create or replace the input [Documents](/sdk-reference/js/5/document/).
+Create or replace the input [Documents](/sdk/js/5/document/).
 
 ---
 
 ## mCreateOrReplaceDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                             |
-| ----------- | ----------- | ----------------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Document](/sdk-reference/js/5/document/) to create or replace |
-| `options`   | JSON Object | Optional parameters                                                     |
-| `callback`  | function    | Optional callback                                                       |
+| Arguments   | Type        | Description                                                   |
+| ----------- | ----------- | ------------------------------------------------------------- |
+| `documents` | Document[]  | Array of [Document](/sdk/js/5/document/) to create or replace |
+| `options`   | JSON Object | Optional parameters                                           |
+| `callback`  | function    | Optional callback                                             |
 
 ---
 

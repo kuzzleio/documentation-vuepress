@@ -67,7 +67,7 @@ Body:
 
 ### Optional:
 
-- `_id`: specify the administror [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid), instead of letting Kuzzle generate a random identifier.
+- `_id`: specify the administror [kuid](/core/1/guide/essentials/user-authentication/#kuzzle-user-identifier-kuid), instead of letting Kuzzle generate a random identifier.
 - `reset` (boolean): if true, restricted rights are applied to the `anonymous` and `default` roles (by default, these roles don't have any restriction).
 
 ---

@@ -6,7 +6,7 @@ description: Collection:mgetDocument
 
 # mGetDocument
 
-Get multiple [Documents](/sdk-reference/js/5/document/) according to the input document IDs.
+Get multiple [Documents](/sdk/js/5/document/) according to the input document IDs.
 
 ---
 

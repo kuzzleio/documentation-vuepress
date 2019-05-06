@@ -27,7 +27,7 @@ subscribe(index, collection, filters, callback, [options]);
 ### callback
 
 Callback function that will be called each time a new notifications is received.
-The callback will receive the [notifications object](/sdk-reference/js/6/realtime-notifications) as only argument.
+The callback will receive the [notifications object](/sdk/js/6/realtime-notifications) as only argument.
 
 ### options
 

@@ -29,9 +29,9 @@ bootstrap(collections);
 
 <br/>
 
-| Arguments     | Type              | Description                                                                                                            |
-| ------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `collections` | <pre>object</pre> | List of collection to create, with their corresponding [data mapping](/guide/1/essentials/persisted/#document-mapping) |
+| Arguments     | Type              | Description                                                                                                                 |
+| ------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `collections` | <pre>object</pre> | List of collection to create, with their corresponding [data mapping](/core/1/guide/essentials/persisted/#document-mapping) |
 
 ### Return
 
@@ -80,10 +80,10 @@ createCollection(collection, mapping);
 
 <br/>
 
-| Arguments    | Type              | Description                                                           |
-| ------------ | ----------------- | --------------------------------------------------------------------- |
-| `collection` | <pre>string</pre> | Collection name                                                       |
-| `mapping`    | <pre>object</pre> | Collection [mapping](/guide/1/essentials/persisted/#document-mapping) |
+| Arguments    | Type              | Description                                                                |
+| ------------ | ----------------- | -------------------------------------------------------------------------- |
+| `collection` | <pre>string</pre> | Collection name                                                            |
+| `mapping`    | <pre>object</pre> | Collection [mapping](/core/1/guide/essentials/persisted/#document-mapping) |
 
 ### Return
 

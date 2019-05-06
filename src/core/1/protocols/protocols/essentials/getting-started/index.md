@@ -80,7 +80,7 @@ Kuzzle has no opinion on how a protocol handles channels and their associated us
 
 ## Configuration
 
-Protocols can be configured in the Kuzzle [configuration](/guide/1/essentials/configuration/) file, under the `server/protocols/<protocol name>` section.
+Protocols can be configured in the Kuzzle [configuration](/core/1/guide/essentials/configuration/) file, under the `server/protocols/<protocol name>` section.
 
 ### Example
 

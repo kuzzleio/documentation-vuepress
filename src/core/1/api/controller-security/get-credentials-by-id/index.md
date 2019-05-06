@@ -11,7 +11,7 @@ Gets credential information for the user identified by the strategy's unique use
 
 The returned `result` object will vary depending on the strategy (see the [getById plugin function](/plugins/1/essentials/strategies/#optional-getbyid-default)), and it can be empty.
 
-**Note:** the user identifier to use depends on the specified strategy. If you wish to get credential information using a [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid) identifier, use the [getCredentials](/api/1/controller-security/get-credentials/) API route instead.
+**Note:** the user identifier to use depends on the specified strategy. If you wish to get credential information using a [kuid](/core/1/guide/essentials/user-authentication/#kuzzle-user-identifier-kuid) identifier, use the [getCredentials](/api/1/controller-security/get-credentials/) API route instead.
 
 ---
 

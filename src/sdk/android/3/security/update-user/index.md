@@ -38,7 +38,7 @@ Returns the `Security` object to allow chaining.
 
 ## Callback Response
 
-Returns an updated [User](/sdk-reference/android/3/user) object.
+Returns an updated [User](/sdk/android/3/user) object.
 
 ## Usage
 

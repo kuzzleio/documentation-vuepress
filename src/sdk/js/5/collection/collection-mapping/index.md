@@ -6,7 +6,7 @@ description: Collection:collectionMapping
 
 # collectionMapping
 
-Creates a new [CollectionMapping](/sdk-reference/js/5/collection-mapping/) object, using its constructor.
+Creates a new [CollectionMapping](/sdk/js/5/collection-mapping/) object, using its constructor.
 
 ---
 
@@ -20,7 +20,7 @@ Creates a new [CollectionMapping](/sdk-reference/js/5/collection-mapping/) objec
 
 ## Return Value
 
-Returns the newly created [CollectionMapping](/sdk-reference/js/5/collection-mapping/) object.
+Returns the newly created [CollectionMapping](/sdk/js/5/collection-mapping/) object.
 
 ## Usage
 

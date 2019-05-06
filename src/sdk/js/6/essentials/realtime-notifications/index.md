@@ -7,7 +7,7 @@ order: 300
 
 # Notifications
 
-The [realtime.subscribe](/sdk-reference/js/6/realtime/subscribe) method takes a callback argument, called with a notification object, whose properties depends on the type of notification received.
+The [realtime.subscribe](/sdk/js/6/realtime/subscribe) method takes a callback argument, called with a notification object, whose properties depends on the type of notification received.
 
 ## Document & messages
 

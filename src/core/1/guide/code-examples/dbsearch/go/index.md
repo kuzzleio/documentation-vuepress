@@ -66,7 +66,7 @@ c.CreateDocument("", planet, q)
 
 Now that the document is created and stored in Kuzzle, let's perform a search that will return this document in the result.
 
-First we need to define the search criteria. Here we use the `match` term to find any document that has a `mountain` terrain. For additional terms refer to our [Elasticsearch Cookbook](/guide/1/elasticsearch) or Elasticsearch's own documentation.
+First we need to define the search criteria. Here we use the `match` term to find any document that has a `mountain` terrain. For additional terms refer to our [Elasticsearch Cookbook](/core/1/guide/elasticsearch) or Elasticsearch's own documentation.
 
 We use the Collection `Search` method to search for the document in Kuzzle once the document is created:
 

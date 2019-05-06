@@ -8,15 +8,15 @@ order: 750
 
 ## Creating Users
 
-Once we have created security [roles and profiles](/guide/1/essentials/security), we can go on to create the users that will access the Kuzzle.
+Once we have created security [roles and profiles](/core/1/guide/essentials/security), we can go on to create the users that will access the Kuzzle.
 
-Users can be created by either using the [Kuzzle Admin Console](/guide/1/essentials/installing-console) or the [API](/api/1/controller-security/create-user/).
+Users can be created by either using the [Kuzzle Admin Console](/core/1/guide/essentials/installing-console) or the [API](/api/1/controller-security/create-user/).
 
-When creating a user, you will need to assign them one or more [profiles](/guide/1/essentials/security/#defining-profiles).
+When creating a user, you will need to assign them one or more [profiles](/core/1/guide/essentials/security/#defining-profiles).
 
 Additionally, you can set:
 
-- [User credentials](/guide/1/essentials/user-authentication/#user-credentials): If no credentials are provided, then the user cannot [login](/api/1/controller-auth/login/)
+- [User credentials](/core/1/guide/essentials/user-authentication/#user-credentials): If no credentials are provided, then the user cannot [login](/api/1/controller-auth/login/)
 - Any number of properties that you want to store in your user object, such as a lastname or a list of hobbies. These properties are stored at the user level and are not linked to any particular authentication strategy.
 
 Let's create a user with username `jondoe` and password `letmein` through the API:
@@ -59,7 +59,7 @@ When a user is created, Kuzzle will automatically generate a random unique ident
 
 This system allows a user to login to Kuzzle using different strategies and, potentially, different login identifiers, while still being considered as an unique entity by Kuzzle.
 
-If you're interested for a more in-depth explanation on how all of this work, then please check our [Kuzzle In-Depth Documentation](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid).
+If you're interested for a more in-depth explanation on how all of this work, then please check our [Kuzzle In-Depth Documentation](/core/1/guide/essentials/user-authentication/#kuzzle-user-identifier-kuid).
 
 ---
 

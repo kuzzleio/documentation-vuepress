@@ -6,7 +6,7 @@ description: Collection:mdeleteDocument
 
 # mDeleteDocument
 
-Delete multiple [Documents](/sdk-reference/php/3/document/) according to the input IDs.
+Delete multiple [Documents](/sdk/php/3/document/) according to the input IDs.
 
 ---
 

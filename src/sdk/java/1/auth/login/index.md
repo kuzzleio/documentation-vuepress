@@ -32,9 +32,9 @@ String login(
 
 #### **_strategy_**
 
-The name of the authentication [strategy](/guide/1/kuzzle-depth/authentication/#authentication) used to log the user in.
+The name of the authentication [strategy](/core/1/guide/kuzzle-depth/authentication/#authentication) used to log the user in.
 
-Depending on the chosen authentication `strategy`, additional [credential arguments](/guide/1/kuzzle-depth/authentication/#authentication) may be required.  
+Depending on the chosen authentication `strategy`, additional [credential arguments](/core/1/guide/kuzzle-depth/authentication/#authentication) may be required.  
 The API request example in this page provides the necessary arguments for the [`local` authentication plugin](https://github.com/kuzzleio/kuzzle-plugin-auth-passport-local).
 
 Check the appropriate [authentication plugin](/plugins/1/essentials/strategies/) documentation to get the list of additional arguments to provide.
@@ -45,7 +45,7 @@ The **login** action returns an encrypted JSON Web Token, that must then be sent
 
 ## Exceptions
 
-Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk-reference/java/1/error-handling).
+Throws a `KuzzleException` if there is an error. See how to [handle error](/sdk/java/1/error-handling).
 
 ## Usage
 

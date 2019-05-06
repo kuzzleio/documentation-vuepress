@@ -6,7 +6,7 @@ description: Security:role
 
 # role
 
-Instantiate a new [Role](/sdk-reference/android/3/role) object.
+Instantiate a new [Role](/sdk/android/3/role) object.
 
 ---
 
@@ -21,7 +21,7 @@ Instantiate a new [Role](/sdk-reference/android/3/role) object.
 
 ## Return Value
 
-Returns the new [Role](/sdk-reference/android/3/role) object.
+Returns the new [Role](/sdk/android/3/role) object.
 
 ## Usage
 

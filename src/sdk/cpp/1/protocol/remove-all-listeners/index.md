@@ -23,7 +23,7 @@ virtual void removeAllListeners(kuzzleio::Event event) = 0;
 
 ### event
 
-One of the following [event](/sdk-reference/cpp/1/events):
+One of the following [event](/sdk/cpp/1/events):
 
 ```cpp
 EVENT_CONNECTED,

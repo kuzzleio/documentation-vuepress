@@ -6,17 +6,17 @@ description: Collection:mcreateDocument
 
 # mCreateDocument
 
-Create the input [Documents](/sdk-reference/js/5/document/).
+Create the input [Documents](/sdk/js/5/document/).
 
 ---
 
 ## mCreateDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                  |
-| ----------- | ----------- | ------------------------------------------------------------ |
-| `documents` | Document[]  | Array of [Document](/sdk-reference/js/5/document/) to create |
-| `options`   | JSON Object | Optional parameters                                          |
-| `callback`  | function    | Optional callback                                            |
+| Arguments   | Type        | Description                                        |
+| ----------- | ----------- | -------------------------------------------------- |
+| `documents` | Document[]  | Array of [Document](/sdk/js/5/document/) to create |
+| `options`   | JSON Object | Optional parameters                                |
+| `callback`  | function    | Optional callback                                  |
 
 ---
 

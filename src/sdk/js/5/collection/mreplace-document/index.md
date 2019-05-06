@@ -6,17 +6,17 @@ description: Collection:mreplaceDocument
 
 # mReplaceDocument
 
-Replace the provided [Documents](/sdk-reference/js/5/document/).
+Replace the provided [Documents](/sdk/js/5/document/).
 
 ---
 
 ## mReplaceDocument(documents, [options], [callback])
 
-| Arguments   | Type        | Description                                                   |
-| ----------- | ----------- | ------------------------------------------------------------- |
-| `documents` | Document[]  | Array of [Document](/sdk-reference/js/5/document/) to replace |
-| `options`   | JSON Object | Optional parameters                                           |
-| `callback`  | function    | Optional callback                                             |
+| Arguments   | Type        | Description                                         |
+| ----------- | ----------- | --------------------------------------------------- |
+| `documents` | Document[]  | Array of [Document](/sdk/js/5/document/) to replace |
+| `options`   | JSON Object | Optional parameters                                 |
+| `callback`  | function    | Optional callback                                   |
 
 ---
 

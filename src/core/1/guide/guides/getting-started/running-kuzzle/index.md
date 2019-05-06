@@ -18,7 +18,7 @@ bash -c "$(curl https://get.kuzzle.io/)"
 This command downloads and executes the installation script. The script checks the system for a set of prerequisites and installs missing ones, such as [Docker](https://www.docker.com/). When the installation is complete, it will automatically run Kuzzle.
 
 ::: info
-There are also more [alternative ways](/guide/1/essentials/installing-kuzzle/) to install Kuzzle.
+There are also more [alternative ways](/core/1/guide/guides/essentials/installing-kuzzle/) to install Kuzzle.
 :::
 
 This command downloads, installs and runs Kuzzle.
@@ -50,7 +50,7 @@ Congratulations! You have completed the Kuzzle installation, it will now accept 
 Having trouble?
 
 - Get in touch with us on [Gitter!](https://gitter.im/kuzzleio/kuzzle) We're happy to help.
-- Try one of [these](/guide/1/essentials/installing-kuzzle/) alternative installation methods.
+- Try one of [these](/core/1/guide/guides/essentials/installing-kuzzle/) alternative installation methods.
 
 :::
 
@@ -67,7 +67,7 @@ If you want to run Kuzzle automatically at startup there are a few scripts in `$
 
 Now that Kuzzle is up and running, you can start playing around with it:
 
-- install and learn a [Kuzzle SDK](/sdk-reference/) to power-up one of your projects
-- install [Kuzzle Admin Console](/guide/1/essentials/installing-console), a handy way to manage data and security in your Kuzzle installation
+- install and learn a [Kuzzle SDK](/sdk/) to power-up one of your projects
+- install [Kuzzle Admin Console](/core/1/guide/essentials/installing-console), a handy way to manage data and security in your Kuzzle installation
 - explore the [Kuzzle API](/api/1) documentation
-- install Kuzzle [without Docker](/guide/1/essentials/installing-kuzzle/#manual-installation)
+- install Kuzzle [without Docker](/core/1/guide/guides/essentials/installing-kuzzle/#manual-installation)

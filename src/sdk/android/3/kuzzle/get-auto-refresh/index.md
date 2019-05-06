@@ -26,11 +26,11 @@ The `getAutoRefresh` function returns the current `autoRefresh` status for the g
 
 #### getAutoRefresh([index], [options], callback)
 
-| Arguments  | Type        | Description                                                                                                        |
-| ---------- | ----------- | ------------------------------------------------------------------------------------------------------------------ |
-| `index`    | string      | Optional index to query. If no set, defaults to [Kuzzle.defaultIndex](/sdk-reference/android/3/kuzzle/#properties) |
-| `options`  | JSON object | Optional parameters                                                                                                |
-| `callback` | function    | Callback handling the response                                                                                     |
+| Arguments  | Type        | Description                                                                                              |
+| ---------- | ----------- | -------------------------------------------------------------------------------------------------------- |
+| `index`    | string      | Optional index to query. If no set, defaults to [Kuzzle.defaultIndex](/sdk/android/3/kuzzle/#properties) |
+| `options`  | JSON object | Optional parameters                                                                                      |
+| `callback` | function    | Callback handling the response                                                                           |
 
 ---
 

@@ -7,11 +7,11 @@ order: 100
 
 # Events
 
-An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object](/sdk-reference/java/1/kuzzle).
+An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object](/sdk/java/1/kuzzle).
 
 Subscription to these events is possible by specifying callbacks that will be executed when a specific event is issued by the SDK instance.
 
-These callbacks can be added by the method [addListener](/sdk-reference/java/1/kuzzle/add-listener).
+These callbacks can be added by the method [addListener](/sdk/java/1/kuzzle/add-listener).
 
 **Note:** listeners are called in the order of their insertion.
 

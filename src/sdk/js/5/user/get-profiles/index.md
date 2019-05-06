@@ -6,7 +6,7 @@ description: User:getProfiles
 
 # getProfiles
 
-Gets the security [Profile](/sdk-reference/js/5/profile) instances linked to the user from Kuzzle's API.
+Gets the security [Profile](/sdk/js/5/profile) instances linked to the user from Kuzzle's API.
 
 ---
 
@@ -29,7 +29,7 @@ Gets the security [Profile](/sdk-reference/js/5/profile) instances linked to the
 
 ## Callback Response
 
-Returns an array of security [Profile](/sdk-reference/js/5/profile) objects.
+Returns an array of security [Profile](/sdk/js/5/profile) objects.
 
 ## Usage
 

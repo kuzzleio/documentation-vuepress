@@ -38,7 +38,7 @@ Returns the `Security` object to allow chaining.
 
 ## Callback Response
 
-Return an updated [Profile](/sdk-reference/js/5/profile) object.
+Return an updated [Profile](/sdk/js/5/profile) object.
 
 ## Usage
 

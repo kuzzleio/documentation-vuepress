@@ -6,7 +6,7 @@ description: User:getProfiles
 
 # getProfiles
 
-Gets the security [Profile](/sdk-reference/php/3/profile) instances linked to the user from Kuzzle's API.
+Gets the security [Profile](/sdk/php/3/profile) instances linked to the user from Kuzzle's API.
 
 ---
 
@@ -29,7 +29,7 @@ Gets the security [Profile](/sdk-reference/php/3/profile) instances linked to th
 
 ## Callback Response
 
-Returns an array of security [Profile](/sdk-reference/php/3/profile) objects.
+Returns an array of security [Profile](/sdk/php/3/profile) objects.
 
 ## Usage
 

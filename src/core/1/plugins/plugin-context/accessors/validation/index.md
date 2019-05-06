@@ -5,7 +5,7 @@ title: validation
 
 # validation
 
-Accessor to the [data validation API](/guide/1/datavalidation)
+Accessor to the [data validation API](/core/1/guide/datavalidation)
 
 ---
 

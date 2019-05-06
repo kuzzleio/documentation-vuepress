@@ -6,7 +6,7 @@ description: Kuzzle:startQueuing
 
 # startQueuing
 
-Starts the requests queuing. Works only in offline mode, and if the [autoQueue](/sdk-reference/js/5/kuzzle/#properties) option is set to `false`.
+Starts the requests queuing. Works only in offline mode, and if the [autoQueue](/sdk/js/5/kuzzle/#properties) option is set to `false`.
 
 ---
 

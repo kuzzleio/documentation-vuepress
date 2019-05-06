@@ -6,7 +6,7 @@ description: User:create
 
 # create
 
-Create the user in Kuzzle. Credentials can be created during the process by using [setCredentials](/sdk-reference/php/3/user/set-credentials) beforehand.
+Create the user in Kuzzle. Credentials can be created during the process by using [setCredentials](/sdk/php/3/user/set-credentials) beforehand.
 
 ---
 

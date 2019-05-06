@@ -13,18 +13,18 @@ Once instantiated, it represents a connection to your Kuzzle server.
 It gives access to the different features of the SDKs:
 
 - access to the available controllers
-- [SDK events](/sdk-reference/cpp/1/events) handling
+- [SDK events](/sdk/cpp/1/events) handling
 - activation of resilience to connection loss
 - offline queue management
 
 ## Network protocol
 
 Each instance of the class communicates with the Kuzzle server through a class representing a network protocol implementation.  
-Theses protocol classes must implement the [Protocol](/sdk-reference/cpp/1/protocol) class.
+Theses protocol classes must implement the [Protocol](/sdk/cpp/1/protocol) class.
 
 The following protocols are available in the SDK CPP 1:
 
-- [WebSocket](/sdk-reference/cpp/1/websocket)
+- [WebSocket](/sdk/cpp/1/websocket)
 
 ## Volatile data
 

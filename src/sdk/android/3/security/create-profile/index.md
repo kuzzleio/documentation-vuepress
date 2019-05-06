@@ -38,7 +38,7 @@ That means that a profile that was just created might not be returned by the <co
 
 ## Callback Response
 
-Returns a security [Profile](/sdk-reference/android/3/profile) object.
+Returns a security [Profile](/sdk/android/3/profile) object.
 
 ## Usage
 

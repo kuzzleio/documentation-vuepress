@@ -29,7 +29,7 @@ UpdateSpecifications(index string, collection string, specifications json.RawMes
 
 A JSON representation of the specifications.
 
-The JSON must follow the [Specification Structure](/guide/1/datavalidation):
+The JSON must follow the [Specification Structure](/core/1/guide/datavalidation):
 
 ```json
 {

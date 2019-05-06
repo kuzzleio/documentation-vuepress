@@ -9,7 +9,7 @@ description: User:setCredentials
 Sets the user's credentials.
 
 <div class="alert alert-info">
-  Updating user credentials will have no impact until the <a href="/sdk-reference/js/5/user/create"><code>create</code></a> method is called.<br />
+  Updating user credentials will have no impact until the <a href="/sdk/js/5/user/create"><code>create</code></a> method is called.<br />
   The credentials to send depend on the authentication plugin and the strategy you want to create credentials for.
 </div>
 ---

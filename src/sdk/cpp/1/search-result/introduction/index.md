@@ -10,8 +10,8 @@ order: 0
 The class is used to retrieve the subsequent paginated results of a search query.  
 The following methods returns a `SearchResult` or a `SpecificationSearchResult` (which acts the same):
 
-- [document:search](/sdk-reference/cpp/1/document/search)
-- [collection:searchSpecifications](/sdk-reference/cpp/1/collection/search-specifications)
+- [document:search](/sdk/cpp/1/document/search)
+- [collection:searchSpecifications](/sdk/cpp/1/collection/search-specifications)
 
 ## Public class definition
 

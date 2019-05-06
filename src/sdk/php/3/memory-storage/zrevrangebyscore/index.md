@@ -6,7 +6,7 @@ description: MemoryStorage:zrevrangebyscore
 
 # zrevrangebyscore
 
-Identical to [zrangebyscore](/sdk-reference/php/3/memory-storage/zrangebyscore) except that the sorted set is traversed in descending order.
+Identical to [zrangebyscore](/sdk/php/3/memory-storage/zrangebyscore) except that the sorted set is traversed in descending order.
 
 [[_Redis documentation_]](https://redis.io/commands/zrevrangebyscore)
 

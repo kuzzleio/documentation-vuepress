@@ -9,7 +9,7 @@ description: User:addProfile
 Replaces the security profile associated with the user.
 
 <div class="alert alert-info">
-Updating a user will have no impact until the <a href="/sdk-reference/php/3/user/create"><code>create</code></a> or <a href="/sdk-reference/php/3/user/replace"><code>replace</code></a> method is called
+Updating a user will have no impact until the <a href="/sdk/php/3/user/create"><code>create</code></a> or <a href="/sdk/php/3/user/replace"><code>replace</code></a> method is called
 </div>
 
 ---
@@ -24,9 +24,9 @@ Updating a user will have no impact until the <a href="/sdk-reference/php/3/user
 
 ## addProfile(profile)
 
-| Arguments | Type    | Description                                                    |
-| --------- | ------- | -------------------------------------------------------------- |
-| `profile` | Profile | An instantiated [Profile](/sdk-reference/php/3/profile) object |
+| Arguments | Type    | Description                                          |
+| --------- | ------- | ---------------------------------------------------- |
+| `profile` | Profile | An instantiated [Profile](/sdk/php/3/profile) object |
 
 ---
 

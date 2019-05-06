@@ -23,9 +23,9 @@ Updating a user will have no impact until the <code>create</code> or <code>repla
 
 ## setProfiles(profiles)
 
-| Arguments  | Type                     | Description                                                              |
-| ---------- | ------------------------ | ------------------------------------------------------------------------ |
-| `profiles` | array of Profile objects | An array of instantiated [Profile](/sdk-reference/php/3/profile) objects |
+| Arguments  | Type                     | Description                                                    |
+| ---------- | ------------------------ | -------------------------------------------------------------- |
+| `profiles` | array of Profile objects | An array of instantiated [Profile](/sdk/php/3/profile) objects |
 
 ---
 

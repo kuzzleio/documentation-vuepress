@@ -17,10 +17,10 @@ io.kuzzle.sdk.KuzzleEventEmitter addListener(io.kuzzle.sdk.Event event, io.kuzzl
 
 ## Arguments
 
-| Argument   | Type                        | Description                                                             | Required |
-| ---------- | --------------------------- | ----------------------------------------------------------------------- | -------- |
-| `event`    | io.kuzzle.sdk.Event         | An enum representing the listened [event](/sdk-reference/java/1/events) | yes      |
-| `listener` | io.kuzzle.sdk.EventListener | An instance of an `io.kuzzle.sdk.EventListener`                         | yes      |
+| Argument   | Type                        | Description                                                   | Required |
+| ---------- | --------------------------- | ------------------------------------------------------------- | -------- |
+| `event`    | io.kuzzle.sdk.Event         | An enum representing the listened [event](/sdk/java/1/events) | yes      |
+| `listener` | io.kuzzle.sdk.EventListener | An instance of an `io.kuzzle.sdk.EventListener`               | yes      |
 
 ### **event**
 

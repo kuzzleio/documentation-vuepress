@@ -29,7 +29,7 @@ validateSpecifications(index, collection, specifications, [options]);
 
 An object representing the specifications.
 
-This object must follow the [Specification Structure](/guide/1/datavalidation):
+This object must follow the [Specification Structure](/core/1/guide/datavalidation):
 
 ```js
 {

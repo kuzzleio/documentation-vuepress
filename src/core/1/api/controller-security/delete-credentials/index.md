@@ -35,7 +35,7 @@ Method: DELETE
 
 ## Arguments
 
-- `_id`: user [kuid](/guide/1/essentials/user-authentication/#kuzzle-user-identifier-kuid)
+- `_id`: user [kuid](/core/1/guide/essentials/user-authentication/#kuzzle-user-identifier-kuid)
 - `strategy`: authentication strategy name to remove
 
 ---

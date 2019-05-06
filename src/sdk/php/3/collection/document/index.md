@@ -6,7 +6,7 @@ description: Collection:document
 
 # document
 
-Creates a new [Document](/sdk-reference/php/3/document/) object, using its constructor.
+Creates a new [Document](/sdk/php/3/document/) object, using its constructor.
 
 ---
 
@@ -21,7 +21,7 @@ Creates a new [Document](/sdk-reference/php/3/document/) object, using its const
 
 ## Return Value
 
-Returns the newly created [Document](/sdk-reference/php/3/document) object.
+Returns the newly created [Document](/sdk/php/3/document) object.
 
 ## Usage
 

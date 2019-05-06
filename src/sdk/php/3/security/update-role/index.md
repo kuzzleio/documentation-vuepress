@@ -38,7 +38,7 @@ Returns the `Security` object to allow chaining.
 
 ## Callback Response
 
-Returns an updated [Role](/sdk-reference/php/3/role) object.
+Returns an updated [Role](/sdk/php/3/role) object.
 
 ## Usage
 

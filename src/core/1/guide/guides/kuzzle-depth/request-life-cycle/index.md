@@ -27,7 +27,7 @@ Depending on the transport protocol used to communicate with the Kuzzle server, 
 
 ### Synchronous Request using HTTP Protocol
 
-In the diagram below, we highlighted the components of Kuzzle's server [architecture](/guide/1/kuzzle-depth) that are used in a read request using HTTP:
+In the diagram below, we highlighted the components of Kuzzle's server [architecture](/core/1/guide/kuzzle-depth) that are used in a read request using HTTP:
 
 ![read_scenario_http_overview](Synchronous_Request_HTTP_Protocol_Overview.png)
 
@@ -85,7 +85,7 @@ The following diagram shows how a request flows between the client application, 
 
 ### Synchronous Request using Websocket Protocol
 
-In the diagram below, we highlighted the components of Kuzzle's server [architecture](/guide/1/kuzzle-depth) that are used in a read request using Websockets:
+In the diagram below, we highlighted the components of Kuzzle's server [architecture](/core/1/guide/kuzzle-depth) that are used in a read request using Websockets:
 
 ![read_scenario_websocket_overview](Synchronous_Request_Websocket_Protocol_Overview.png)
 
@@ -169,7 +169,7 @@ In an asynchronous request, Kuzzle server will receive a request over one channe
 
 This form of communication is generally referred to as publish/subscribe, because on the one side a client is **subscribing** to a channel and on the other side a client is **publishing** to a channel.
 
-This subsection describes the life-cycle of real-time notifications which implement the [Publish/Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern. In the diagram below, we highlighted the components of Kuzzle's server [architecture](/guide/1/kuzzle-depth) that are used in this pattern:
+This subsection describes the life-cycle of real-time notifications which implement the [Publish/Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern. In the diagram below, we highlighted the components of Kuzzle's server [architecture](/core/1/guide/kuzzle-depth) that are used in this pattern:
 ![pubsub_overview](Asynchronous_Communication_Overview.png)
 
 #### Subscribing to a Channel

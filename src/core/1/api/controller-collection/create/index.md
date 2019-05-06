@@ -7,7 +7,7 @@ title: create
 
 <SinceBadge version="1.0.0" />
 
-Creates a new [collection](/guide/1/essentials/persisted), in the provided `index`.
+Creates a new [collection](/core/1/guide/essentials/persisted), in the provided `index`.
 
 <SinceBadge version="1.3.0" />
 

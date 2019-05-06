@@ -18,9 +18,9 @@ When processing a large number of documents (i.e. more than 1000), using `search
 
 Pagination of results can be done by using the from and size but the cost becomes prohibitive when deep pagination is reached. In fact, Elasticsearch, Kuzzle's embedded database, limits results to 10,000 records by default.
 
-Instead, the recommended way to process a large number of documents is to use [`Collection.scroll`](/sdk-reference/android/3/collection/scroll/) or, easier, [`SearchResult.fetchNext`](/sdk-reference/android/3/search-result/fetch-next).
+Instead, the recommended way to process a large number of documents is to use [`Collection.scroll`](/sdk/android/3/collection/scroll/) or, easier, [`SearchResult.fetchNext`](/sdk/android/3/search-result/fetch-next).
 
-See [`SearchResult.fetchNext`](/sdk-reference/android/3/search-result/fetch-next/#how-to-process-every-document-of-a-collection) for an example of how to process every document of a collection.
+See [`SearchResult.fetchNext`](/sdk/android/3/search-result/fetch-next/#how-to-process-every-document-of-a-collection) for an example of how to process every document of a collection.
 
 ---
 
@@ -51,7 +51,7 @@ See [`SearchResult.fetchNext`](/sdk-reference/android/3/search-result/fetch-next
 
 ## Callback Response
 
-Returns an instance of [SearchResult](/sdk-reference/android/3/search-result).
+Returns an instance of [SearchResult](/sdk/android/3/search-result).
 
 ## Usage
 

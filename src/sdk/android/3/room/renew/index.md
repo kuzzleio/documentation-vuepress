@@ -14,11 +14,11 @@ Unsubscribes first if this `Room` object was already listening to events.
 
 ## renew([filters], notificationCallback, subscriptionCallback)
 
-| Arguments              | Type        | Description                                                                                    |
-| ---------------------- | ----------- | ---------------------------------------------------------------------------------------------- |
-| `filters`              | JSON Object | [Filters](/koncorde/1)                                                                         |
-| `notificationCallback` | function    | Function called each time a [notification](/sdk-reference/android/3/notifications) is received |
-| `subscriptionCallback` | function    | Function called with the subscription result                                                   |
+| Arguments              | Type        | Description                                                                          |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------ |
+| `filters`              | JSON Object | [Filters](/koncorde/1)                                                               |
+| `notificationCallback` | function    | Function called each time a [notification](/sdk/android/3/notifications) is received |
+| `subscriptionCallback` | function    | Function called with the subscription result                                         |
 
 ## Usage
 

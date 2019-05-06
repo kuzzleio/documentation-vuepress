@@ -33,11 +33,11 @@ Additional query options:
 
 ## Return
 
-A [kuzzleio::User](/sdk-reference/cpp/1/user/) object.
+A [kuzzleio::User](/sdk/cpp/1/user/) object.
 
 ## Exceptions
 
-Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk-reference/cpp/1/error-handling).
+Throws a `kuzzleio::KuzzleException` if there is an error. See how to [handle error](/sdk/cpp/1/error-handling).
 
 ## Usage
 
