@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { getValidLinkByRootPath } from '../theme/util.js';
+const { getValidLinkByRootPath } = require('../util.js');
 
 export default {
   props: {

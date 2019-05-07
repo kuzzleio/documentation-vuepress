@@ -30,7 +30,7 @@
 import Header from './Header.vue';
 import Footer from './Footer.vue';
 
-import { getFirstValidChild, getPageByPath } from './util.js';
+const { getFirstValidChild, getNodeByPath } = require('../util.js');
 
 const msgs = [
   `There's nothing here.`,
@@ -49,7 +49,7 @@ export default {
       return msgs[Math.floor(Math.random() * msgs.length)];
     },
     generateHomeLink(path) {
-      const rootPage = getPageByPath(path, this.$site.pages);
+      const rootPage = getNodeByPath(path, this.$site.pages);
       return getFirstValidChild(rootPage, this.$site.pages);
     },
     setContainerPadding() {

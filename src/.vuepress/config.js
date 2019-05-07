@@ -248,10 +248,13 @@ module.exports = {
         ),
         ALGOLIA_APP_ID:
           JSON.stringify(process.env.ALGOLIA_APP_ID) ||
-          JSON.stringify('VF5HP4ZVDU'),
-        ALGOLIA_API_KEY: JSON.stringify(process.env.ALGOLIA_API_KEY),
+          JSON.stringify('4RFBRWISJR'),
+        ALGOLIA_SEARCH_KEY:
+          JSON.stringify(process.env.ALGOLIA_SEARCH_KEY) ||
+          JSON.stringify('34968884815f91ed23d6fd7058bc561a'),
         ALGOLIA_INDEX:
-          JSON.stringify(process.env.ALGOLIA_INDEX) || JSON.stringify('doc-v2'),
+          JSON.stringify(process.env.ALGOLIA_INDEX) ||
+          JSON.stringify('kuzzle-documentation'),
         REPO_SLUG:
           JSON.stringify(process.env.TRAVIS_REPO_SLUG) ||
           JSON.stringify('kuzzleio/documentation')
@@ -260,6 +263,14 @@ module.exports = {
   },
   plugins: [
     require('./meta-tags-plugin/index.js'),
+    process.env.ALGOLIA_WRITE_KEY
+      ? [
+          require('./index-to-algolia/index.js'),
+          {
+            algoliaWriteKey: process.env.ALGOLIA_WRITE_KEY
+          }
+        ]
+      : {},
     [
       'container',
       {
@@ -273,6 +284,14 @@ module.exports = {
       {
         type: 'success',
         before: '<div class="alert alert-success">',
+        after: '</div>'
+      }
+    ],
+    [
+      'container',
+      {
+        type: 'warning',
+        before: '<div class="alert alert-warning">',
         after: '</div>'
       }
     ]

@@ -1,37 +1,37 @@
-import path from 'path';
-import { get, endsWith } from 'lodash';
+const path = require('path');
+const { get, endsWith } = require('lodash');
 
-export const hashRE = /#.*$/;
-export const extRE = /\.(md|html)$/;
-export const endingSlashRE = /\/$/;
-export const outboundRE = /^(https?:|mailto:|tel:)/;
+const hashRE = /#.*$/;
+const extRE = /\.(md|html)$/;
+const endingSlashRE = /\/$/;
+const outboundRE = /^(https?:|mailto:|tel:)/;
 
-export function normalize(path) {
+function normalize(path) {
   return decodeURI(path)
     .replace(hashRE, '')
     .replace(extRE, '');
 }
 
-export function getHash(path) {
+function getHash(path) {
   const match = path.match(hashRE);
   if (match) {
     return match[0];
   }
 }
 
-export function isExternal(path) {
+function isExternal(path) {
   return outboundRE.test(path);
 }
 
-export function isMailto(path) {
+function isMailto(path) {
   return /^mailto:/.test(path);
 }
 
-export function isTel(path) {
+function isTel(path) {
   return /^tel:/.test(path);
 }
 
-export function ensureExt(path) {
+function ensureExt(path) {
   if (isExternal(path)) {
     return path;
   }
@@ -45,7 +45,7 @@ export function ensureExt(path) {
   return normalized + '.html' + hash;
 }
 
-export function isActive(route, path) {
+function isActive(route, path) {
   const routeHash = route.hash;
   const linkHash = getHash(path);
   if (linkHash && routeHash !== linkHash) {
@@ -56,7 +56,7 @@ export function isActive(route, path) {
   return routePath === pagePath;
 }
 
-export function resolvePage(pages, rawPath, base) {
+function resolvePage(pages, rawPath, base) {
   if (base) {
     rawPath = resolvePath(rawPath, base);
   }
@@ -113,7 +113,7 @@ function resolvePath(relative, base, append) {
   return stack.join('/');
 }
 
-export function getPageDir(page) {
+function getPageDir(page) {
   if (endsWith(page.path, '/')) {
     return page.path;
   } else {
@@ -121,30 +121,30 @@ export function getPageDir(page) {
   }
 }
 
-export function getPageByPath(path, pages) {
-  return pages.find(p => p.path === path);
+function getNodeByPath(path, nodes) {
+  return nodes.find(p => p.path === path);
 }
 
-function getPageParent(page, pages) {
-  return getPageByPath(getPageParentPath(page), pages);
+function getParentNode(node, nodes) {
+  return getNodeByPath(getParentPath(node), nodes);
 }
 
-export function getPageParentPath(page) {
-  return path.normalize(`${getPageDir(page)}../`);
+function getParentPath(node) {
+  return path.normalize(`${getPageDir(node)}../`);
 }
 
-export function getFirstValidChild(page, pages) {
-  const children = getPageChildren(page, pages);
+function getFirstValidChild(node, nodes) {
+  const children = getPageChildren(node, nodes);
 
   if (!children.length) {
-    return page;
+    return node;
   }
 
-  return getFirstValidChild(children[0], pages);
+  return getFirstValidChild(children[0], nodes);
 }
 
-export function getValidLinkByRootPath(pagePath, pages) {
-  const page = getPageByPath(pagePath, pages);
+function getValidLinkByRootPath(pagePath, pages) {
+  const page = getNodeByPath(pagePath, pages);
 
   if (!page) {
     console.warn(`Unable to find tree node for path ${pagePath}`);
@@ -160,7 +160,7 @@ export function getValidLinkByRootPath(pagePath, pages) {
   return validPage.path;
 }
 
-export function getPageChildren(page, pages) {
+function getPageChildren(page, pages) {
   const pathRE = new RegExp(`^${getPageDir(page)}[a-zA-z_0-9\-]+/?$`);
 
   return pages
@@ -168,13 +168,14 @@ export function getPageChildren(page, pages) {
     .sort(sortPagesByOrderAndTitle);
 }
 
-export function findRootNode(node, nodes) {
+function findRootNode(node, nodes) {
   if (node.frontmatter.type === 'root') {
     return node;
   }
-  const parent = getPageParent(node, nodes);
+  const parent = getParentNode(node, nodes);
   if (!parent) {
-    throw new Error(`Node at ${node.path} has no parent`);
+    return node;
+    // throw new Error(`Node at ${node.path} has no parent`);
   }
 
   // if (parent.frontmatter.type === 'root') {
@@ -184,7 +185,7 @@ export function findRootNode(node, nodes) {
   return findRootNode(parent, nodes);
 }
 
-// export function resolveSidebar(page, site) {
+// function resolveSidebar(page, site) {
 //   if (page.frontmatter.type !== 'page') {
 //     console.warn('Current node is not of type "page"');
 //     return [];
@@ -221,7 +222,7 @@ function groupPagesByPath(pages) {
   return sections.sort(sortPagesByOrderAndTitle);
 }
 
-export function sortPagesByOrderAndTitle(p1, p2) {
+function sortPagesByOrderAndTitle(p1, p2) {
   const o1 = get(p1, 'frontmatter.order', null);
   const o2 = get(p2, 'frontmatter.order', null);
 
@@ -238,7 +239,7 @@ export function sortPagesByOrderAndTitle(p1, p2) {
   return o1 < o2 ? -1 : 1;
 }
 
-export function resolveHeaders(page) {
+function resolveHeaders(page) {
   const headers = groupHeaders(page.headers || []);
   return [
     {
@@ -256,7 +257,7 @@ export function resolveHeaders(page) {
   ];
 }
 
-export function groupHeaders(headers) {
+function groupHeaders(headers) {
   // group h3s under h2
   headers = headers.map(h => Object.assign({}, h));
   let lastH2;
@@ -270,13 +271,13 @@ export function groupHeaders(headers) {
   return headers.filter(h => h.level === 2);
 }
 
-export function resolveNavLinkItem(linkItem) {
+function resolveNavLinkItem(linkItem) {
   return Object.assign(linkItem, {
     type: linkItem.items && linkItem.items.length ? 'links' : 'link'
   });
 }
 
-export function resolveMatchingConfig(route, config) {
+function resolveMatchingConfig(route, config) {
   if (Array.isArray(config)) {
     return {
       base: '/',
@@ -321,3 +322,12 @@ function resolveItem(item, pages, base, isNested) {
     };
   }
 }
+
+module.exports = {
+  getFirstValidChild,
+  getValidLinkByRootPath,
+  getParentNode,
+  getNodeByPath,
+  findRootNode,
+  resolveHeaders
+};

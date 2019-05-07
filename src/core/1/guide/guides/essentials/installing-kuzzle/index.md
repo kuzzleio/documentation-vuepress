@@ -274,9 +274,9 @@ pm2 "<start|stop|restart>" kuzzlebackend
 ~/kuzzle/bin/kuzzle -h
 ```
 
-<div class="alert alert-success">
+::: success
 Now that Kuzzle is up and running you can [install](/core/1/guide/guides/essentials/installing-console/) the <strong>Kuzzle Admin Console</strong>.
-</div>
+:::
 
 ### Troubleshooting
 

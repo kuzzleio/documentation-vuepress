@@ -42,9 +42,9 @@
             <!-- Search interface -->
             <ClientOnly>
               <Search
-                v-if="algoliaApiKey && algoliaAppId && algoliaIndexName"
+                v-if="algoliaSearchKey && algoliaAppId && algoliaIndexName"
                 :app-id="algoliaAppId"
-                :api-key="algoliaApiKey"
+                :api-key="algoliaSearchKey"
                 :index-name="algoliaIndexName"
                 @search::on="toggleSearchTrigger(true)"
                 @search::off="toggleSearchTrigger(false)"
@@ -78,7 +78,7 @@ export default {
   data() {
     return {
       algoliaAppId: ALGOLIA_APP_ID,
-      algoliaApiKey: ALGOLIA_API_KEY,
+      algoliaSearchKey: ALGOLIA_SEARCH_KEY,
       algoliaIndexName: ALGOLIA_INDEX
     };
   },

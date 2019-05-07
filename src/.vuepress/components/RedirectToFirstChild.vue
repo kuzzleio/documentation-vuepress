@@ -4,7 +4,7 @@
 
 <script>
 import Redirect from './Redirect.vue';
-import { getFirstValidChild } from '../theme/util.js';
+const { getFirstValidChild } = require('../util.js');
 export default {
   components: {
     Redirect

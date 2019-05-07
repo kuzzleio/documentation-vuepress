@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { resolveHeaders } from './util';
+const { resolveHeaders } = require('../util');
 
 export default {
   computed: {
