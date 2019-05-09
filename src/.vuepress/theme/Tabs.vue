@@ -57,7 +57,7 @@
 </template>
 
 <script>
-const { getValidLinkByRootPath } = require('../util.js');
+import { getValidLinkByRootPath } from '../util.js';
 
 export default {
   methods: {

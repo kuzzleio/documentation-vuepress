@@ -121,87 +121,9 @@ function getPageDir(page) {
   }
 }
 
-function getNodeByPath(path, nodes) {
-  return nodes.find(p => p.path === path);
-}
-
-function getParentNode(node, nodes) {
-  return getNodeByPath(getParentPath(node), nodes);
-}
-
 function getParentPath(node) {
   return path.normalize(`${getPageDir(node)}../`);
 }
-
-function getFirstValidChild(node, nodes) {
-  const children = getPageChildren(node, nodes);
-
-  if (!children.length) {
-    return node;
-  }
-
-  return getFirstValidChild(children[0], nodes);
-}
-
-function getValidLinkByRootPath(pagePath, pages) {
-  const page = getNodeByPath(pagePath, pages);
-
-  if (!page) {
-    console.warn(`Unable to find tree node for path ${pagePath}`);
-    return;
-  }
-
-  const validPage = getFirstValidChild(page, pages);
-
-  if (!validPage) {
-    return;
-  }
-
-  return validPage.path;
-}
-
-function getPageChildren(page, pages) {
-  const pathRE = new RegExp(`^${getPageDir(page)}[a-zA-z_0-9\-]+/?$`);
-
-  return pages
-    .filter(p => p.path.match(pathRE) && p.path !== page.path)
-    .sort(sortPagesByOrderAndTitle);
-}
-
-function findRootNode(node, nodes) {
-  if (node.frontmatter.type === 'root') {
-    return node;
-  }
-  const parent = getParentNode(node, nodes);
-  if (!parent) {
-    return node;
-    // throw new Error(`Node at ${node.path} has no parent`);
-  }
-
-  // if (parent.frontmatter.type === 'root') {
-  //   return parent;
-  // }
-
-  return findRootNode(parent, nodes);
-}
-
-// function resolveSidebar(page, site) {
-//   if (page.frontmatter.type !== 'page') {
-//     console.warn('Current node is not of type "page"');
-//     return [];
-//   }
-
-//   return findRootNode(page, site.pages);
-
-//   // const sectionPath = root.path;
-//   // const sectionRE = new RegExp(`^${sectionPath}.+`);
-
-//   // const pagesInSections = site.pages
-//   //   .filter(page => page.path.match(sectionRE))
-//   //   .sort((page1, page2) => (page1.path < page2.path ? -1 : 1));
-
-//   // return groupPagesByPath(pagesInSections);
-// }
 
 function groupPagesByPath(pages) {
   const sections = [];
@@ -237,24 +159,6 @@ function sortPagesByOrderAndTitle(p1, p2) {
   }
 
   return o1 < o2 ? -1 : 1;
-}
-
-function resolveHeaders(page) {
-  const headers = groupHeaders(page.headers || []);
-  return [
-    {
-      type: 'group',
-      collapsable: false,
-      title: page.title,
-      children: headers.map(h => ({
-        type: 'auto',
-        title: h.title,
-        basePath: page.path,
-        path: page.path + '#' + h.slug,
-        children: h.children || []
-      }))
-    }
-  ];
 }
 
 function groupHeaders(headers) {
@@ -323,11 +227,75 @@ function resolveItem(item, pages, base, isNested) {
   }
 }
 
-module.exports = {
-  getFirstValidChild,
-  getValidLinkByRootPath,
-  getParentNode,
-  getNodeByPath,
-  findRootNode,
-  resolveHeaders
+export const getPageChildren = (page, pages) => {
+  const pathRE = new RegExp(`^${getPageDir(page)}[a-zA-z_0-9\-]+/?$`);
+
+  return pages
+    .filter(p => p.path.match(pathRE) && p.path !== page.path)
+    .sort(sortPagesByOrderAndTitle);
+};
+
+export const findRootNode = (node, nodes) => {
+  if (node.frontmatter.type === 'root') {
+    return node;
+  }
+  const parent = getParentNode(node, nodes);
+  if (!parent) {
+    return node;
+  }
+
+  return findRootNode(parent, nodes);
+};
+
+export const getFirstValidChild = (node, nodes) => {
+  const children = getPageChildren(node, nodes);
+
+  if (!children.length) {
+    return node;
+  }
+
+  return getFirstValidChild(children[0], nodes);
+};
+
+export const getValidLinkByRootPath = (pagePath, pages) => {
+  const page = getNodeByPath(pagePath, pages);
+
+  if (!page) {
+    console.warn(`Unable to find tree node for path ${pagePath}`);
+    return;
+  }
+
+  const validPage = getFirstValidChild(page, pages);
+
+  if (!validPage) {
+    return;
+  }
+
+  return validPage.path;
+};
+
+export const getNodeByPath = (path, nodes) => {
+  return nodes.find(p => p.path === path);
+};
+
+export const getParentNode = (node, nodes) => {
+  return getNodeByPath(getParentPath(node), nodes);
+};
+
+export const resolveHeaders = page => {
+  const headers = groupHeaders(page.headers || []);
+  return [
+    {
+      type: 'group',
+      collapsable: false,
+      title: page.title,
+      children: headers.map(h => ({
+        type: 'auto',
+        title: h.title,
+        basePath: page.path,
+        path: page.path + '#' + h.slug,
+        children: h.children || []
+      }))
+    }
+  ];
 };

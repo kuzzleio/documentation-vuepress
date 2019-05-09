@@ -30,7 +30,7 @@
 import Header from './Header.vue';
 import Footer from './Footer.vue';
 
-const { getFirstValidChild, getNodeByPath } = require('../util.js');
+import { getFirstValidChild, getNodeByPath } from '../util.js';
 
 const msgs = [
   `There's nothing here.`,

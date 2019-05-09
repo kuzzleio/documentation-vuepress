@@ -1,7 +1,7 @@
 const { readFileSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 const cheerio = require('cheerio');
-const { findRootNode, getParentNode } = require('../util');
+const { findRootNode, getParentNode } = require('./util.js');
 const records = [];
 
 module.exports = (options, ctx) => ({

@@ -75,11 +75,7 @@
 
 <script>
 import TabsMobile from './TabsMobile.vue';
-const {
-  getPageChildren,
-  getFirstValidChild,
-  findRootNode
-} = require('../util.js');
+import { getPageChildren, getFirstValidChild, findRootNode } from '../util.js';
 
 export default {
   components: {
