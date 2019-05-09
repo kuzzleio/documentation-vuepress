@@ -1,6 +1,7 @@
 const { readFileSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 const cheerio = require('cheerio');
+const algolia = require('algoliasearch');
 const { findRootNode, getParentNode } = require('./util.js');
 const records = [];
 
@@ -37,36 +38,57 @@ module.exports = (options, ctx) => ({
     });
   },
 
-  ready() {
-    records.forEach(record => {
-      const generatedFilePath = resolve(
-        ctx.outDir,
-        record.path.replace(/^\//, ''), // Strip first slash so that this path is not considered as absolute
-        'index.html'
-      );
-      const fileContent = readFileSync(generatedFilePath).toString();
-      const $ = cheerio.load(fileContent, {
-        normalizeWhitespace: true
-      });
-      const content = $('.md-content');
-
-      // remove useless content
-      $('h1, pre, .md-clipboard__message, .ContentFeedback', content).remove();
-
-      record.content = content.text();
-    });
-
-    writeFileSync('./records.json', JSON.stringify(records, null, 4));
-  },
+  ready() {},
 
   async generated(pagePaths) {
-    if (!options.algoliaWriteKey) {
-      throw new Error('Please provide a valid Algolia Write Key');
-    }
-
-    // TODO send records to Algolia
+    enrichRecordsWithContent(records, ctx.outDir, true);
+    pushRecords(records, {
+      appId: options.algoliaAppId,
+      writeKey: options.algoliaWriteKey,
+      index: options.algoliaIndex
+    });
   }
 });
+
+function enrichRecordsWithContent(records, outDir, write = false) {
+  records.forEach(record => {
+    const generatedFilePath = resolve(
+      outDir,
+      record.path.replace(/^\//, ''), // Strip first slash so that this path is not considered as absolute
+      'index.html'
+    );
+    const fileContent = readFileSync(generatedFilePath).toString();
+    const $ = cheerio.load(fileContent, {
+      normalizeWhitespace: true
+    });
+    const content = $('.md-content');
+
+    // remove useless content
+    $('h1, pre, .md-clipboard__message, .ContentFeedback', content).remove();
+
+    record.content = content.text();
+  });
+
+  if (write) {
+    writeFileSync('./records.json', JSON.stringify(records, null, 4));
+  }
+}
+
+function pushRecords(records, algoliaOptions) {
+  if (!algoliaOptions.writeKey) {
+    throw new Error('Please provide a valid Algolia Write Key');
+  }
+
+  const client = algolia(algoliaOptions.appId, algoliaOptions.writeKey);
+  const index = client.initIndex(algoliaOptions.index);
+
+  index.addObjects(records, (err, content) => {
+    if (err) {
+      return console.error(err);
+    }
+    console.log('Successfully added records to Algolia!');
+  });
+}
 
 function extractTags(path) {
   const start = 0,

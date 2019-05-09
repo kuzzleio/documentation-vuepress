@@ -267,7 +267,9 @@ module.exports = {
       ? [
           require('./index-to-algolia/index.js'),
           {
-            algoliaWriteKey: process.env.ALGOLIA_WRITE_KEY
+            algoliaAppId: process.env.ALGOLIA_APP_ID || '4RFBRWISJR',
+            algoliaWriteKey: process.env.ALGOLIA_WRITE_KEY,
+            algoliaIndex: process.env.ALGOLIA_INDEX || 'kuzzle-documentation'
           }
         ]
       : {},
