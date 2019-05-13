@@ -1,5 +1,7 @@
 ---
-layout: full.html.hbs
+type: page
+order: 40
+code: true
 title: resetSecurity
 ---
 

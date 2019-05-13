@@ -1,5 +1,7 @@
 ---
-layout: full.html.hbs
+type: page
+order: 20
+code: true
 title: resetDatabase
 ---
 
