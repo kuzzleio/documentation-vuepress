@@ -1,4 +1,6 @@
 ---
-layout: full.html.hbs
+type: branch
+order: 10
+code: true
 title: auth
 ---

@@ -1,4 +1,6 @@
 ---
-layout: full.html.hbs
+type: branch
+order: 40
+code: true
 title: index
 ---

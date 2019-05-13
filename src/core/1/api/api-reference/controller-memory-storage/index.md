@@ -1,4 +1,6 @@
 ---
-layout: full.html.hbs
+type: branch
+order: 50
+code: true
 title: memoryStorage
 ---

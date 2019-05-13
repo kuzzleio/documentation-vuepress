@@ -25,7 +25,7 @@
                 <li class="md-nav__item">
                   <a
                     class="md-nav__link"
-                    :class="{'md-nav__link--active': $page.path === item__2.path}"
+                    :class="{'md-nav__link--active': $page.path === item__2.path, 'md-nav__item--code': item__2.frontmatter.code == true}"
                     :href="getFirstValidChild(item__2).path"
                   >
                     <div v-if="getPageChildren(item__2).length">
@@ -50,15 +50,21 @@
                   <div v-for="item__3 of getPageChildren(item__2)" class="md-nav__item">
                     <li v-if="$page.path === item__3.path">
                       <a
+                        class="md-nav__link--active"
+                        :class="{'md-nav__item--code': item__3.frontmatter.code}"
                         :href="`${item__3.path}`"
                         :title="item__3.title"
-                        class="md-nav__link--active"
                       >
                         <span class="no_arrow">{{item__3.title}}</span>
                       </a>
                     </li>
                     <li v-else>
-                      <a :href="`${item__3.path}`" :title="item__3.title" class="md-nav__link">
+                      <a
+                        :href="`${item__3.path}`"
+                        :title="item__3.title"
+                        class="md-nav__link"
+                        :class="{'md-nav__item--code': item__3.frontmatter.code}"
+                      >
                         <span class="no_arrow">{{item__3.title}}</span>
                       </a>
                     </li>

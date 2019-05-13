@@ -1,5 +1,7 @@
 ---
-layout: full.html.hbs
+type: branch
+order: 0
 title: admin
-separator: API reference
+description: API v1.x Admin controller
+code: true
 ---
