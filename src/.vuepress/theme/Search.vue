@@ -30,7 +30,7 @@
           tabindex="-1"
           @click="query = ''"
         >
-          &#9003;
+          
           <!-- close -->
         </button>
       </form>

@@ -310,7 +310,7 @@ $md-toggle__search--checked: '[data-md-toggle="search"]:checked ~ .md-header';
 
     // Reset button
     &[type='reset'] {
-      top: 0;
+      top: 7px;
       right: 1rem;
       transform: scale(0.125);
       transition: transform 0.15s cubic-bezier(0.1, 0.7, 0.1, 1), opacity 0.15s;
