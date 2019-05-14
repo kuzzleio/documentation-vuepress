@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: once
 description: Attaches a listener to an event and removes it after it has been triggered once
 ---

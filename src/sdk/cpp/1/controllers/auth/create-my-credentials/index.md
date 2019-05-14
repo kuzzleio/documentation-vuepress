@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: createMyCredentials
 description: Create the current user's credentials for the specified strategy.
 ---
@@ -12,32 +11,30 @@ Create the current user's credentials for the specified strategy.
 
 ```cpp
 std::string createMyCredentials(
-    const std::string& strategy, 
+    const std::string& strategy,
     const std::string& credentials);
 
 std::string createMyCredentials(
-    const std::string& strategy, 
-    const std::string& credentials, 
+    const std::string& strategy,
+    const std::string& credentials,
     const kuzzleio::query_options& options);
 ```
 
 ## Arguments
 
-| Arguments    | Type    | Description
-|--------------|---------|-------------
-| `strategy` | <pre>const std::string&</pre> | Strategy to use
-| `credentials` | <pre>const std::string&</pre> | JSON string representing the credentials
-| `options`  | <pre>kuzzleio::query_options\*</pre>    | Query options
-
+| Arguments     | Type                                 | Description                              |
+| ------------- | ------------------------------------ | ---------------------------------------- |
+| `strategy`    | <pre>const std::string&</pre>        | Strategy to use                          |
+| `credentials` | <pre>const std::string&</pre>        | JSON string representing the credentials |
+| `options`     | <pre>kuzzleio::query_options\*</pre> | Query options                            |
 
 ### options
 
 Additional query options
 
-| Property     | Type<br/>(default)    | Description        | 
-| ---------- | ------- | --------------------------------- | 
+| Property   | Type<br/>(default)           | Description                                                                  |
+| ---------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | `queuable` | <pre>bool</pre><br/>(`true`) | If true, queues the request during downtime, until connected to Kuzzle again |
-
 
 ## Return
 

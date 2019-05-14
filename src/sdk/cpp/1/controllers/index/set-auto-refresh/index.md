@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: setAutoRefresh
 description: Set the autorefresh flag
 ---

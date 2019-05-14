@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: emitEvent
 description: Emits an event
 ---

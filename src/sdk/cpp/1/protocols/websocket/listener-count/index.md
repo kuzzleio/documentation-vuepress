@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: listenerCount
 description: Returns the number of listeners attached on an event
 ---

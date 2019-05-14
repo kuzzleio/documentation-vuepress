@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: truncate
 description: Remove all documents from collection
 ---

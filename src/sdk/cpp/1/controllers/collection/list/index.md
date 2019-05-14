@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: list
 description: Returns the collection list of an index
 ---

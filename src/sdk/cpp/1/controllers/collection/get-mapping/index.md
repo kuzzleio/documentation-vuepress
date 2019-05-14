@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getMapping
 description: Return collection mapping
 ---

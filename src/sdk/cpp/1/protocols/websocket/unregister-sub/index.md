@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: unregisterSub
 description: Removes a subscription's notifications listener.
 ---
@@ -16,9 +15,9 @@ void unregisterSub(const std::string&);
 
 ## Arguments
 
-| Argument   | Type                      | Description
-| ---------- |---------------------------|-------------------------------------------------- |
-| `room_id` | <pre>const std::string&</pre>  | Subscription unique identifier
+| Argument  | Type                          | Description                    |
+| --------- | ----------------------------- | ------------------------------ |
+| `room_id` | <pre>const std::string&</pre> | Subscription unique identifier |
 
 ### listener
 

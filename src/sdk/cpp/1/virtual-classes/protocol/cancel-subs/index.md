@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: cancelSubs
 description: Cancels all subscriptions
 ---

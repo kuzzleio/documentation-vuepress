@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Getters
 description: Getters for User class
 order: 100

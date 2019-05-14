@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Setters
 description: Setters for WebSocket class
 order: 200
@@ -7,4 +6,4 @@ order: 200
 
 # WebSocket class setters
 
-*There is no setters for the `WebSocket` class*
+_There is no setters for the `WebSocket` class_

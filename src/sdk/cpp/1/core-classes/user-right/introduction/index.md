@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Introduction
 description: Kuzzle right representation
 order: 0

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Setters
 description: Setters for Kuzzle class
 order: 200

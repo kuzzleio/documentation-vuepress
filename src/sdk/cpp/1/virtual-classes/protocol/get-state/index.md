@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getState
 description: Gets the current state
 ---

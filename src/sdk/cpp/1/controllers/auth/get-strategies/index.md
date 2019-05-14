@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getStrategies
 description: Get all authentication strategies registered in Kuzzle.
 ---

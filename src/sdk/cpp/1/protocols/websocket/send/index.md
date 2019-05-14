@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: send
 description: Base method to send API query to Kuzzle
 ---

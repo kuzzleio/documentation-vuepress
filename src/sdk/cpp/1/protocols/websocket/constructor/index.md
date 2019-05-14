@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Constructor
 description: Create a new Websocket object connected to Kuzzle server
 order: 0

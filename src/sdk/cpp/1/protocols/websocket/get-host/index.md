@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getHost
 description: Returns the host name on which the protocol is connected
 ---

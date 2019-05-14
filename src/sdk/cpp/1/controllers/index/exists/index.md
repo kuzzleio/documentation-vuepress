@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: exists
 description: Check for index existence
 ---

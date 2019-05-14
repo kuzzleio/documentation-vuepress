@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: removeAllListeners
 description: Removes all listeners from an event
 ---

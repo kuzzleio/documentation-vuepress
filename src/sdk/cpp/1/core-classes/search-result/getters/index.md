@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Getters
 description: Getters for SearchResult class
 order: 100

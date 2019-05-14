@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: searchSpecifications
 description: Searches collection specifications
 ---

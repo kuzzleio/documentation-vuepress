@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: next
 description: SearchResult next method
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Introduction
 description: Kuzzle object
 order: 0
