@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: hexists
 description: MemoryStorage:hexists
 ---

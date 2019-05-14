@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: pfcount
 description: MemoryStorage:pfcount
 ---

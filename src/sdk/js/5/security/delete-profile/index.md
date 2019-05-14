@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: deleteProfile
 description: Security:deleteProfile
 ---

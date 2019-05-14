@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: deleteSpecifications
 description: Collection:deleteSpecifications
 ---

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Webpack
 description: Getting started with Kuzzle and Webpack
 ---

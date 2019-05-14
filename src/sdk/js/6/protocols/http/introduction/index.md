@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Introduction
 description: Http protocol implementation
 order: 0

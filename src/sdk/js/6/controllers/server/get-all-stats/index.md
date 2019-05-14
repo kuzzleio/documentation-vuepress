@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getAllStats
 description: Gets all stored internal statistic snapshots.
 ---

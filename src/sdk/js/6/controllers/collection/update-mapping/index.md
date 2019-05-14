@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: updateMapping
 description: Update the collection mapping
 ---

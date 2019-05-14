@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Node.js
 description: Getting started with Kuzzle and Node.js
 order: 100

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: update
 description: Update a document
 ---

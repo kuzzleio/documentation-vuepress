@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: georadiusbymember
 description: MemoryStorage:georadiusbymember
 ---

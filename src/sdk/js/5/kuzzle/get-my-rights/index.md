@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getMyRights
 description: Kuzzle:getMyRights
 ---

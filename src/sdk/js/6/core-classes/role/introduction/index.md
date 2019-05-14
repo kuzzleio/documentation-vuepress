@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Introduction
 description: Role class
 order: 0

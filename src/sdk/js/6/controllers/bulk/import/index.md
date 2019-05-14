@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: import
 description: Performs a bulk import on a collection
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: prependOnceListener
 description: Prepends a new once listener for an event
 ---

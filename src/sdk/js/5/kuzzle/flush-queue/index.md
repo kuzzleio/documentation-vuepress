@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: flushQueue
 description: Kuzzle:flushQueue
 ---

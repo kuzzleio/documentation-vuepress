@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: addOnceListener
 description: Adds a new listener for an event
 ---

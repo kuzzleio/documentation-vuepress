@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Constructor
 description: Creates a new WebSocket protocol
 order: 50

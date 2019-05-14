@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Browser (Vanilla)
 description: Getting started with Kuzzle in the browser
 ---

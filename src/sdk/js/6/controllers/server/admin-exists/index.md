@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: adminExists
 description: Checks that an administrator account exists.
 ---

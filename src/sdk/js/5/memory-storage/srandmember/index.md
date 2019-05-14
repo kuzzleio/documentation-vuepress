@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: srandmember
 description: MemoryStorage:srandmember
 ---

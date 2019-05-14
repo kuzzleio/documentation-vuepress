@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: connect
 description: Connects the SDK to Kuzzle
 ---

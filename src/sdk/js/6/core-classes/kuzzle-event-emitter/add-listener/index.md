@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: addListener
 description: Adds a new listener for an event
 ---

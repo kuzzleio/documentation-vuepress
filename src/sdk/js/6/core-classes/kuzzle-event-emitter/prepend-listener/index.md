@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: prependListener
 description: Prepends a new listener for an event
 ---

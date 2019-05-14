@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Offline Tools
 description: Tools to handle the loss of connection to the Kuzzle server
 order: 400
@@ -8,7 +7,7 @@ order: 400
 # Offline tools
 
 The Kuzzle SDK provides a set of properties that help your application to be resilient to the loss of network connection
-during its lifespan. 
+during its lifespan.
 
 ## offlineQueue
 
@@ -35,7 +34,7 @@ Works only in the `offline` state, and if the `autoQueue` option is set to `fals
 
 ## playQueue()
 
-Sends to Kuzzle all the requests in the `offlineQueue`. Works only if the SDK is not in a `offline` state, and if the 
+Sends to Kuzzle all the requests in the `offlineQueue`. Works only if the SDK is not in a `offline` state, and if the
 `autoReplay` option is set to false.
 
 ## flushQueue()
@@ -55,7 +54,7 @@ A writable `boolean` telling the SDK whether to automatically send or not the re
 
 A writable `boolean` telling the SDK whether to automatically reconnect or not to Kuzzle after a connection loss.
 
-## reconnectionDelay 	
+## reconnectionDelay
 
 A read-only `number` specifying the time in milliseconds between different reconnection attempts.
 

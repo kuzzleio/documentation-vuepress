@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: refresh
 description: Forces an Elasticsearch search index update
 ---

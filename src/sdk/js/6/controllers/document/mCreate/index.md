@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: mCreate
 description: Create multiple documents in kuzzle
 ---

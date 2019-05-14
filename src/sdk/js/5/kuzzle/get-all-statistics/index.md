@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getAllStatistics
 description: Kuzzle:getAllStatistics
 ---

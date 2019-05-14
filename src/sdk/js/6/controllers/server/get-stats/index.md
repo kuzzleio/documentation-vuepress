@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getStats
 description: Returns statistics snapshots within a provided timestamp range.
 ---

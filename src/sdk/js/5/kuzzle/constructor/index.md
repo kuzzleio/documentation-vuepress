@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 language-tab:
   js: Javascript
   java: Android

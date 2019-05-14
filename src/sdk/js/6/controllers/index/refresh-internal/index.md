@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: refreshInternal
 description: Forces an immediate reindexation of Kuzzle internal storage.
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: refresh
 description: Document:refresh
 ---

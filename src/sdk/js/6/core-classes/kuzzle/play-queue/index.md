@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: playQueue
 description: Play the offline request queue
 ---

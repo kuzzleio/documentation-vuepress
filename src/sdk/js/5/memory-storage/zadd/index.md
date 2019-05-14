@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: zadd
 description: MemoryStorage:zadd
 ---

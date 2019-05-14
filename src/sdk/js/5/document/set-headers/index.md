@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: setHeaders
 description: Document:setHeaders
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: zrank
 description: MemoryStorage:zrank
 ---

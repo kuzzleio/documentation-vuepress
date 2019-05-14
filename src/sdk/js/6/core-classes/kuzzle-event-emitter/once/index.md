@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: once
 description: Alias for addOnceListener
 ---

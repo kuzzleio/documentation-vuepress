@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: sdiff
 description: MemoryStorage:sdiff
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Offline First
 order: 400
 ---

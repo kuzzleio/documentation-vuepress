@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: listeners
 description: Returns listeners for an event
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: hlen
 description: MemoryStorage:hlen
 ---

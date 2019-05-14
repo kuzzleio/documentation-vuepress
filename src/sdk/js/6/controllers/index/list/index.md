@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: list
 description: Lists the indexes
 ---
