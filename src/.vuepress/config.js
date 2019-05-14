@@ -274,13 +274,12 @@ module.exports = {
         ]
       : {},
     [
-      require('./validate-frontmatter/index.js'),
+      require('vuepress-validate-frontmatter'),
       {
         specs: {
           type: {
             type: String,
-            allowedValued: ['root', 'branch', 'page'],
-            default: 'branch'
+            allowedValues: ['root', 'branch', 'page']
           },
           order: {
             type: Number
