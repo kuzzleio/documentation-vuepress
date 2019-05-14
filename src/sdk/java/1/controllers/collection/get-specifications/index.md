@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getSpecifications
 description: Returns the validation specifications
 ---

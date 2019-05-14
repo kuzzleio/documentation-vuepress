@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: updateSpecifications
 description: Update the validation specifications
 ---

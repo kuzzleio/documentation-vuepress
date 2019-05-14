@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: delete
 description: Deletes an index
 ---

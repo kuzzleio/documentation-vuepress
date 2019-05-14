@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getMyRights
 description: Returns the rights for the user linked to the `JSON Web Token`.
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: mDelete
 description: Deletes multiple indexes
 ---

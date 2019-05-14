@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: replace
 description: Replaces the content of an existing document
 ---

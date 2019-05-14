@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: mCreateOrReplace
 description: Create or replace documents
 ---

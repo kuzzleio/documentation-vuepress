@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: publish
 description: Publish a real-time message
 ---

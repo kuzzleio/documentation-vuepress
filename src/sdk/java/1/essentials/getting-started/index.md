@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Getting started
 description: Java Getting started
 order: 99
