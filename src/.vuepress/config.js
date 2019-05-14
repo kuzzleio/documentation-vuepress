@@ -273,7 +273,34 @@ module.exports = {
           }
         ]
       : {},
-    require('./validate-frontmatter/index.js'),
+    [
+      require('./validate-frontmatter/index.js'),
+      {
+        specs: {
+          type: {
+            type: String,
+            allowedValued: ['root', 'branch', 'page'],
+            default: 'branch'
+          },
+          order: {
+            type: Number
+          },
+          title: {
+            type: String,
+            required: true
+          },
+          description: {
+            type: String
+          },
+          nosidebar: {
+            type: Boolean
+          },
+          code: {
+            type: Boolean
+          }
+        }
+      }
+    ],
     [
       'container',
       {
