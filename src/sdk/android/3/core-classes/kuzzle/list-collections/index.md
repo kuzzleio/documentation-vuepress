@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: listCollections
 description: Kuzzle:listCollections
 ---

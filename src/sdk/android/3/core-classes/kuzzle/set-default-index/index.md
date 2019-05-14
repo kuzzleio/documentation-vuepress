@@ -1,11 +1,10 @@
 ---
-layout: sdk.html.hbs
 title: setDefaultIndex
 description: Kuzzle:setDefaultIndex
 ---
-  
 
 # setDefaultIndex
+
 Set the default data index. Has the same effect than the `defaultIndex` constructor option.
 
 ---

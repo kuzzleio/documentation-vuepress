@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getPolicies
 description: Profile:getPolicies
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: scard
 description: MemoryStorage:scard
 ---

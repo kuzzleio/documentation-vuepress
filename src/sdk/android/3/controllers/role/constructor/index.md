@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: constructor
 description: Role:constructor
 order: 1

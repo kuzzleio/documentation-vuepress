@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: whoAmI
 description: Kuzzle:whoAmI
 ---

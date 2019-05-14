@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: sscan
 description: MemoryStorage:sscan
 ---

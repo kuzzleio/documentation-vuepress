@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: set
 description: MemoryStorage:set
 ---

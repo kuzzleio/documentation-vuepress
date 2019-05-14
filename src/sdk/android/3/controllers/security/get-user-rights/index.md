@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getUserRights
 description: Security:getUserRights
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: geoadd
 description: MemoryStorage:geoadd
 ---

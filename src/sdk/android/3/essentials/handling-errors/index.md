@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Error Handling
 order: 100
 separator: essentials

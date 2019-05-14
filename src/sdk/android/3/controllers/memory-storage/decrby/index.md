@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: decrby
 description: MemoryStorage:decrby
 ---

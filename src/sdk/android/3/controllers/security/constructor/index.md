@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: constructor
 description: Security:constructor
 order: 1

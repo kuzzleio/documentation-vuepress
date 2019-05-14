@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: fetchProfile
 description: Security:fetchProfile
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: constructor
 description: CollectionMapping:constructor
 order: 1
