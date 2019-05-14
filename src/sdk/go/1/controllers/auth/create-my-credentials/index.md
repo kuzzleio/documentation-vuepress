@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: CreateMyCredentials
 description: Create the current user's credentials for the specified `<strategy>`.
 ---

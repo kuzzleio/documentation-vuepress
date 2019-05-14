@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: refreshInternal
 description: Force refresh of Kuzzle internal index
 ---

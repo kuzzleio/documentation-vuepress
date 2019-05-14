@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: flushQueue
 description: Empties the offline request queue
 ---

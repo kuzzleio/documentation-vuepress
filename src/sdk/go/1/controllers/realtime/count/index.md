@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Count
 description: Count subscribers for a subscription room
 ---

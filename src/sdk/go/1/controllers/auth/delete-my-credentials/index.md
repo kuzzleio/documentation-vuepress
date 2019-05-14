@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: DeleteMyCredentials
 description: Delete the current user's credentials for the specified strategy
 ---

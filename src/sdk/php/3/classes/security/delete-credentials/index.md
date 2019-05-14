@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: deleteCredentials
 description: Security:deleteCredentials
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: CheckToken
 description: Checks a JWT Token's validity.
 ---

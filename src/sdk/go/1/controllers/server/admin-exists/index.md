@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: AdminExists
 description: Returns information about Kuzzle server.
 ---

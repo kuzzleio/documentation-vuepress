@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: ValidateMyCredentials
 description: Validate the current user's credentials for the specified `<strategy>`.
 ---

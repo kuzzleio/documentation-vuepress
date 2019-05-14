@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: GetLastStats
 description: Returns the most recent statistics snapshot.
 ---

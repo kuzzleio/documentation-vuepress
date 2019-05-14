@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Subscribe
 description: Subscribe to real-time notifications
 ---

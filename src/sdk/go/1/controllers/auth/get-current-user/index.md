@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: GetCurrentUser
 description: Returns the profile object for the user linked to the `JSON Web Token`
 ---

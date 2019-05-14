@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: refreshIndex
 description: Kuzzle:refreshIndex
 ---

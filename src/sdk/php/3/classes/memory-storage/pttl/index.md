@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: pttl
 description: MemoryStorage:pttl
 ---

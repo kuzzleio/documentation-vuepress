@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Now
 description: Returns the current server timestamp, in Epoch-millis
 ---

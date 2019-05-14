@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Info
 description: Returns information about Kuzzle server.
 ---

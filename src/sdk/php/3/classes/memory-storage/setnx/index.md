@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: setnx
 description: MemoryStorage:setnx
 ---

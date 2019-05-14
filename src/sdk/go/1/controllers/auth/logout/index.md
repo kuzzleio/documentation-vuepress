@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Logout
 description: Revokes the user's token & unsubscribe them from registered rooms.
 ---

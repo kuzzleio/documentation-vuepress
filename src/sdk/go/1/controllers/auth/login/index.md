@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Login
 description: Authenticate a user
 ---

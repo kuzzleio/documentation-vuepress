@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: document
 description: Collection:document
 ---

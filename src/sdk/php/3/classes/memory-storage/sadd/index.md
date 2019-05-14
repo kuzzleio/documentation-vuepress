@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: sadd
 description: MemoryStorage:sadd
 ---

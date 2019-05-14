@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: Unsubscribe
 description: Removes a subscription
 ---

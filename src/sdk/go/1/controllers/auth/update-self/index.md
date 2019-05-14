@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: UpdateSelf
 description: Updates the current user object in Kuzzle.
 ---

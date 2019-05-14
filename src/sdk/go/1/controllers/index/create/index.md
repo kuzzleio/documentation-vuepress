@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: create
 description: Create an index
 ---

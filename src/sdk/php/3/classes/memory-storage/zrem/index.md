@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: zrem
 description: MemoryStorage:zrem
 ---

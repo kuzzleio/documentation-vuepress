@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: deleteByQuery
 description: Delete documents matching query
 ---

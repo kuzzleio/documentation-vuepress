@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: mGet
 description: Get multiple documents
 ---

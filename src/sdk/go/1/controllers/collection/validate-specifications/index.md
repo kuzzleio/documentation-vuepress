@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: validateSpecifications
 description: Validate specifications format
 ---

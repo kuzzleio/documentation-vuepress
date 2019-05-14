@@ -1,5 +1,5 @@
 ---
-layout: sdk.html.hbs
+
 title: GetMyCredentials
 description:
 ---

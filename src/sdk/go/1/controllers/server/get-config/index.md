@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: GetConfig
 description: Returns the current Kuzzle configuration.
 ---

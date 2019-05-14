@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: profile
 description: Security:profile
 ---

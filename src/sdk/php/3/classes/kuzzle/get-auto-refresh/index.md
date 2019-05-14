@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getAutoRefresh
 description: Kuzzle:getAutoRefresh
 ---

@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: disconnect
 description: Kuzzle:disconnect
 ---

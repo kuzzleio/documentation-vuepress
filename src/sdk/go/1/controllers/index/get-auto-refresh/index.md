@@ -1,5 +1,4 @@
 ---
-layout: sdk.html.hbs
 title: getAutoRefresh
 description: Returns the status of autorefresh flag
 ---
