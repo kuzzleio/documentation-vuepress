@@ -2,7 +2,6 @@
 title: The bool (Boolean) query
 description: learn how to combine filters with elasticsearch
 order: 500
-has-toc: true
 ---
 
 # The `bool` (Boolean) query

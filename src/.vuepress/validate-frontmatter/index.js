@@ -46,11 +46,24 @@ module.exports = (options, ctx) => ({
     });
 
     Object.keys(frontmatter).forEach(key => {
-      const value = frontmatter[key];
+      if (!key) {
+        addError(errors, _filePath, {
+          error: 'EMPTY_KEY'
+        });
+        return;
+      }
       if (!hasOwn(propSpecs, key)) {
         addError(errors, _filePath, {
           error: 'INVALID_KEY',
           got: key
+        });
+        return;
+      }
+      const value = frontmatter[key];
+      if (value === null || typeof value === 'undefined') {
+        addError(errors, _filePath, {
+          error: 'EMPTY_VALUE',
+          key
         });
         return;
       }
@@ -59,7 +72,8 @@ module.exports = (options, ctx) => ({
       if (!assertResult.valid) {
         addError(errors, _filePath, {
           error: 'INVALID_TYPE',
-          expected: propSpec.type,
+          key,
+          expected: getType(propSpec.type),
           got: typeof value
         });
         return;
@@ -68,6 +82,7 @@ module.exports = (options, ctx) => ({
         if (!assertAllowedValue(value, propSpec.allowedValues)) {
           addError(errors, _filePath, {
             error: 'INVALID_VALUE',
+            key,
             expected: propSpec.allowedValues,
             got: value
           });

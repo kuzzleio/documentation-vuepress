@@ -1,6 +1,6 @@
 ---
 title: Command Line Interface (CLI)
-Order: 900
+order: 900
 ---
 
 # Command Line Interface (CLI)

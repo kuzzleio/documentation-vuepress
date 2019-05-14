@@ -1,6 +1,6 @@
 ---
 title: UpdateMyCredentials
-description: Update the current user's credentials for the specified `<strategy>`.
+description: Update the current user's credentials for the specified strategy.
 ---
 
 # UpdateMyCredentials

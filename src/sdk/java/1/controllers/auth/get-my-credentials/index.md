@@ -1,7 +1,5 @@
 ---
-
 title: getMyCredentials
-description:
 ---
 
 # getMyCredentials

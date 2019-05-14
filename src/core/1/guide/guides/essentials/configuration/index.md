@@ -1,6 +1,6 @@
 ---
 title: Configure Kuzzle
-Order: 200
+order: 200
 ---
 
 # Configuring Kuzzle

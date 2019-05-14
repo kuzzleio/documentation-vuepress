@@ -1,7 +1,5 @@
 ---
-
 title: searchSpecifications
-description:
 ---
 
 # searchSpecifications
