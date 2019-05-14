@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Running Kuzzle
 description: Running Kuzzle
 order: 100

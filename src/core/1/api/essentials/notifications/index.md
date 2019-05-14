@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Real-time Notifications
 order: 500
 ---

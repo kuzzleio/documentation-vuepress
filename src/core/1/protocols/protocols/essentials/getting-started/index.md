@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Getting Started
 order: 0
 ---

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Filter Operands
 description: Combines multiple terms to create complex filters
 order: 300

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Introduction
 description: learn mechanisms of kuzzle
 order: 0

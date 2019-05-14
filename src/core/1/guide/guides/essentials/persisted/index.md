@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Working with Persistent Data
 order: 400
 ---

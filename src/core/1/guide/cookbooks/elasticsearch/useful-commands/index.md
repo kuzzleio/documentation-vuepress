@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Useful Commands
 description: learn time-saving elasticsearch commands
 order: 300
@@ -19,7 +18,6 @@ List all available indices on your Elasticsearch instance:
 curl -g "http://localhost:9200/_cat/indices?pretty"
 ```
 
-
 Reply:
 
 ```bash
@@ -27,7 +25,6 @@ Reply:
 ```
 
 ---
-
 
 ## Get an Index Mapping
 
@@ -42,50 +39,50 @@ Reply:
 
 ```json
 {
-  "example" : {
-    "aliases" : { },
-    "mappings" : {
-      "blogpost" : {
-        "properties" : {
-          "author" : {
-            "type" : "string",
-            "analyzer" : "standard"
+  "example": {
+    "aliases": {},
+    "mappings": {
+      "blogpost": {
+        "properties": {
+          "author": {
+            "type": "string",
+            "analyzer": "standard"
           },
-          "body" : {
-            "type" : "string",
-            "analyzer" : "english"
+          "body": {
+            "type": "string",
+            "analyzer": "english"
           },
-          "publish_date" : {
-            "type" : "date",
-            "format" : "yyyy-MM-dd||epoch_millis"
+          "publish_date": {
+            "type": "date",
+            "format": "yyyy-MM-dd||epoch_millis"
           },
-          "status" : {
-            "type" : "string",
-            "index" : "not_analyzed"
+          "status": {
+            "type": "string",
+            "index": "not_analyzed"
           },
-          "tags" : {
-            "type" : "string",
-            "index" : "not_analyzed"
+          "tags": {
+            "type": "string",
+            "index": "not_analyzed"
           },
-          "title" : {
-            "type" : "string",
-            "analyzer" : "english"
+          "title": {
+            "type": "string",
+            "analyzer": "english"
           }
         }
       }
     },
-    "settings" : {
-      "index" : {
-        "creation_date" : "1474364614778",
-        "number_of_shards" : "1",
-        "number_of_replicas" : "1",
-        "uuid" : "UXxlOo1uSy-vIlvo_8o5vA",
-        "version" : {
-          "created" : "2040099"
+    "settings": {
+      "index": {
+        "creation_date": "1474364614778",
+        "number_of_shards": "1",
+        "number_of_replicas": "1",
+        "uuid": "UXxlOo1uSy-vIlvo_8o5vA",
+        "version": {
+          "created": "2040099"
         }
       }
     },
-    "warmers" : { }
+    "warmers": {}
   }
 }
 ```

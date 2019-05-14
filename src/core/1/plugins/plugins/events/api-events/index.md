@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: 'API Events'
 order: 100
 ---

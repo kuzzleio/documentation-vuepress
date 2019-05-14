@@ -70,7 +70,7 @@ function enrichRecordsWithContent(records, outDir, write = false) {
   });
 
   if (write) {
-    writeFileSync('./records.json', JSON.stringify(records, null, 4));
+    writeFileSync('./algolia-records.json', JSON.stringify(records, null, 4));
   }
 }
 

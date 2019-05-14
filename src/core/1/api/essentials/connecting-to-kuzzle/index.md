@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Connecting to Kuzzle
 description: Connecting to Kuzzle using HTTP, WebSocket or Protocol plugins
 order: 100

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Validators
 description: learn how to create complex validators
 order: 200

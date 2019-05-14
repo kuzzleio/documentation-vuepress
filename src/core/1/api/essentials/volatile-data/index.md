@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Volatile Data
 description: broadcast extra information to subscribers
 order: 400

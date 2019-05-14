@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Fields Specification
 ---
 
@@ -17,22 +16,22 @@ The property name defines the path of the field in the document. For root fields
 
 **Possible values (Elasticsearch types)**:
 
-*   `string`: value(s) must be a string, additional **optional constraints in typeOptions**
-*   `ip_address`: value(s) must be a valid IP address(v4 or v6)
-*   `integer`: value(s) must be a valid integer, additional **optional constraints in typeOptions**
-*   `numeric`: value(s) must be a valid number, additional **optional constraints in typeOptions**
-*   `geo_point`: value(s) must be a valid geo-point
-*   `geo_shape`: value(s) must be a valid geo-shape
-*   `boolean`: value(s) must be a valid boolean
-*   `date`: value(s) must be a valid date, additional **optional constraints in typeOptions**
-*   `object`: value(s) must be a valid object, additional **optional constraints in typeOptions**
+- `string`: value(s) must be a string, additional **optional constraints in typeOptions**
+- `ip_address`: value(s) must be a valid IP address(v4 or v6)
+- `integer`: value(s) must be a valid integer, additional **optional constraints in typeOptions**
+- `numeric`: value(s) must be a valid number, additional **optional constraints in typeOptions**
+- `geo_point`: value(s) must be a valid geo-point
+- `geo_shape`: value(s) must be a valid geo-shape
+- `boolean`: value(s) must be a valid boolean
+- `date`: value(s) must be a valid date, additional **optional constraints in typeOptions**
+- `object`: value(s) must be a valid object, additional **optional constraints in typeOptions**
 
 **Possible values (Special types)**:
 
-*   `email`: value(s) must be a valid email address, additional **optional constraints in typeOptions**
-*   `url`: value(s) must be a valid url
-*   `enum`: (**string**) value(s) must be contained in the valid values, additional **mandatory configuration in typeOptions**
-*   `anything`: value(s) can be of any type (useful to specify a **mandatory** or multi-valued field without any other constraints, or when you use the **strict** option)
+- `email`: value(s) must be a valid email address, additional **optional constraints in typeOptions**
+- `url`: value(s) must be a valid url
+- `enum`: (**string**) value(s) must be contained in the valid values, additional **mandatory configuration in typeOptions**
+- `anything`: value(s) can be of any type (useful to specify a **mandatory** or multi-valued field without any other constraints, or when you use the **strict** option)
 
 **Default**: no default (mandatory)
 
@@ -140,10 +139,10 @@ This configuration is available depending on the types of the field.
 
 **Examples**:
 
-*   Full format: "2010-12-25T14:12:44.123+01:00"
-*   Date & Time (without millis) : "2010-12-25T14:12:44"
-*   Only date: "2010-12-25"
-*   Time relative to the current day : "T14:12:44"
+- Full format: "2010-12-25T14:12:44.123+01:00"
+- Date & Time (without millis) : "2010-12-25T14:12:44"
+- Only date: "2010-12-25"
+- Time relative to the current day : "T14:12:44"
 
 <div class="alert alert-warning">Beware when using dates as range values: always make sure that, at some point, your rule won't prevent all documents from entering the system.</div>
 
@@ -264,7 +263,6 @@ year_month_day
 strict_year_month_day
 ```
 
-
 **Documentation**: [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.x/mapping-date-format.html) (all except date_optional_time)
 
 **Default**: `["epoch_millis"]`
@@ -293,7 +291,7 @@ Non strict mode has been implemented to fit Elasticsearch date formats but we re
 
 **Associated type**: `enum` (mandatory)
 
-**Values**: an `array` of strings defining the valid values 
+**Values**: an `array` of strings defining the valid values
 
 **Purpose**: Defines all valid values for an enum field. All field values have to match one of the valid values for a multi-valued field.
 
@@ -303,15 +301,15 @@ Non strict mode has been implemented to fit Elasticsearch date formats but we re
 
 **Possible value**: an `array` of shape types within
 
-*   point
-*   linestring
-*   polygon
-*   multipoint
-*   multilinestring
-*   multipolygon
-*   geometrycollection
-*   envelope
-*   circle
+- point
+- linestring
+- polygon
+- multipoint
+- multilinestring
+- multipolygon
+- geometrycollection
+- envelope
+- circle
 
 **Default**: an array of all types
 

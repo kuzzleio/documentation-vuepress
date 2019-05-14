@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Signal Handling
 order: 1000
 ---

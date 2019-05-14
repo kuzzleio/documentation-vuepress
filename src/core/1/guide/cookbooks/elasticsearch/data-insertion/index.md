@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Data Insertion
 description: learn how to index data with elasticsearch
 order: 200
@@ -60,17 +59,15 @@ curl -g -X PUT "http://localhost:9200/example/?pretty" -d '{
 }'
 ```
 
-
 Reply:
 
 ```json
 {
-  "acknowledged" : true
+  "acknowledged": true
 }
 ```
 
 ---
-
 
 ## Creating a Document
 
@@ -122,86 +119,84 @@ curl -g -X PUT "http://localhost:9200/example/blogpost/5?pretty" -d '{
 
 ```
 
-
 Replies:
 
 ```json
 {
-  "_index" : "example",
-  "_type" : "blogpost",
-  "_id" : "1",
-  "_version" : 1,
-  "_shards" : {
-    "total" : 2,
-    "successful" : 1,
-    "failed" : 0
+  "_index": "example",
+  "_type": "blogpost",
+  "_id": "1",
+  "_version": 1,
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
   },
-  "created" : true
+  "created": true
 }
 ```
 
 ```json
 {
-  "_index" : "example",
-  "_type" : "blogpost",
-  "_id" : "2",
-  "_version" : 1,
-  "_shards" : {
-    "total" : 2,
-    "successful" : 1,
-    "failed" : 0
+  "_index": "example",
+  "_type": "blogpost",
+  "_id": "2",
+  "_version": 1,
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
   },
-  "created" : true
+  "created": true
 }
 ```
 
 ```json
 {
-  "_index" : "example",
-  "_type" : "blogpost",
-  "_id" : "3",
-  "_version" : 1,
-  "_shards" : {
-    "total" : 2,
-    "successful" : 1,
-    "failed" : 0
+  "_index": "example",
+  "_type": "blogpost",
+  "_id": "3",
+  "_version": 1,
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
   },
-  "created" : true
+  "created": true
 }
 ```
 
 ```json
 {
-  "_index" : "example",
-  "_type" : "blogpost",
-  "_id" : "4",
-  "_version" : 1,
-  "_shards" : {
-    "total" : 2,
-    "successful" : 1,
-    "failed" : 0
+  "_index": "example",
+  "_type": "blogpost",
+  "_id": "4",
+  "_version": 1,
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
   },
-  "created" : true
+  "created": true
 }
 ```
 
 ```json
 {
-  "_index" : "example",
-  "_type" : "blogpost",
-  "_id" : "5",
-  "_version" : 1,
-  "_shards" : {
-    "total" : 2,
-    "successful" : 1,
-    "failed" : 0
+  "_index": "example",
+  "_type": "blogpost",
+  "_id": "5",
+  "_version": 1,
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
   },
-  "created" : true
+  "created": true
 }
 ```
 
 ---
-
 
 ## The 'id'
 
@@ -219,7 +214,6 @@ The body of the request must contain the content of the document you want to cre
 
 In the requests outlined above, the structure of the document matches our mapping.
 As a result, Elasticsearch will analyze and index our document as specified.
-
 
 ---
 

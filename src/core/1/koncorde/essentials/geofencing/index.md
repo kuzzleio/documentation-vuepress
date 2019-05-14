@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Geofencing
 description: Geopoint description
 order: 400

@@ -1,23 +1,18 @@
 ---
-layout: full.html.hbs
 title: Android
 ---
 
 ## IoT with Android
 
-Let's create a new Android project. 
+Let's create a new Android project.
 
 ![create android project](androidstudio_project_iot.png)
 
-
 There's no need to add an Activity because we will only be using the project to perform a test.
-
 
 ![create android project](androidstudio_project_noactivity.png)
 
-
 For this test we will use the [Paho](https://github.com/eclipse/paho.mqtt.android) MQTT Android library. Once the project is created, add these line to your `build.gradle` file:
-
 
 ```json
 repositories {
@@ -33,9 +28,7 @@ dependencies {
 }
 ```
 
-
 Now create a Class that will handle the MQTT test, we will call it `IoTSnippet`.
-
 
 ## Connect to Kuzzle
 
@@ -43,7 +36,7 @@ The first thing we need to do is connect to Kuzzle. To do this write the followi
 
 ```Java
 //Create the mqtt client
-MqttClient client = new MqttClient("tcp://localhost:1883", MqttClient.generateClientId(), new MemoryPersistence()); 
+MqttClient client = new MqttClient("tcp://localhost:1883", MqttClient.generateClientId(), new MemoryPersistence());
 
 //Connect to Kuzzle
 client.connect();
@@ -122,7 +115,7 @@ client.connect();
 
 // Listen for the Kuzzle response
 client.setCallback(new MqttCallback() {
-        
+
         @Override
         public void connectionLost(Throwable cause) {
         }

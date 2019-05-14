@@ -273,6 +273,7 @@ module.exports = {
           }
         ]
       : {},
+    require('./validate-frontmatter/index.js'),
     [
       'container',
       {

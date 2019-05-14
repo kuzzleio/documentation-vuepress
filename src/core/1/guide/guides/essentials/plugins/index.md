@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Kuzzle's Plugin Engine
 order: 1100
 ---

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: 'Getting Started'
 description: Exhaustive events list
 order: 0

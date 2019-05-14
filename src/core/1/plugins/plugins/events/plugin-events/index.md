@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: 'Plugin Events'
 order: 200
 ---

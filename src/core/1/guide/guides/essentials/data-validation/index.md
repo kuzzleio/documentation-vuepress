@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Data Validation
 order: 500
 ---

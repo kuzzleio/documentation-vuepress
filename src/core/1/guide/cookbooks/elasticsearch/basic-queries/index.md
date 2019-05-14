@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Basic Queries
 description: learn how to search data with elasticsearch
 order: 400
@@ -35,82 +34,88 @@ Reply:
 
 ```json
 {
-  "took" : 4,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 4,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 5,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
+  "hits": {
+    "total": 5,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "3",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Smith",
-        "title" : "I hate fish",
-        "body" : "They do not bring the ball back",
-        "tags" : [ "pet", "animal", "fish" ],
-        "status" : "pending",
-        "publish_date" : "2017-08-03"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "5",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Will Smith",
-        "title" : "I admire lions",
-        "body" : "They are so regal",
-        "tags" : [ "wild animal", "animal", "lion" ],
-        "status" : "published",
-        "publish_date" : "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -133,43 +138,46 @@ Reply:
 
 ```json
 {
-  "took" : 28,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 28,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 5,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
+  "hits": {
+    "total": 5,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "5",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Will Smith",
-        "title" : "I admire lions",
-        "body" : "They are so regal",
-        "tags" : [ "wild animal", "animal", "lion" ],
-        "status" : "published",
-        "publish_date" : "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -185,7 +193,6 @@ or when you want to be sure the data set will not change during your processing.
 for more details.
 
 ---
-
 
 ## The `ids` query
 
@@ -205,43 +212,46 @@ Reply:
 
 ```json
 {
-  "took" : 2,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 2,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 2,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
+  "hits": {
+    "total": 2,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -267,43 +277,46 @@ Reply:
 
 ```json
 {
-  "took" : 6,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 6,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 2,
-    "max_score" : 0.35355338,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : 0.35355338,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
+  "hits": {
+    "total": 2,
+    "max_score": 0.35355338,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.35355338,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.35355338,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : 0.35355338,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -335,43 +348,46 @@ Reply:
 
 ```json
 {
-  "took" : 3,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 3,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 2,
-    "max_score" : 1.2201192,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 1.2201192,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
+  "hits": {
+    "total": 2,
+    "max_score": 1.2201192,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.2201192,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 0.23384948,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "3",
-      "_score" : 0.23384948,
-      "_source" : {
-        "author" : "John Smith",
-        "title" : "I hate fish",
-        "body" : "They do not bring the ball back",
-        "tags" : [ "pet", "animal", "fish" ],
-        "status" : "pending",
-        "publish_date" : "2017-08-03"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -397,30 +413,32 @@ Reply:
 
 ```json
 {
-  "took" : 1,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 1,
-    "max_score" : 1.2201192,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 1.2201192,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
+  "hits": {
+    "total": 1,
+    "max_score": 1.2201192,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.2201192,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
       }
-    } ]
+    ]
   }
 }
 ```
@@ -446,43 +464,46 @@ Reply:
 
 ```json
 {
-  "took" : 107,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 107,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 2,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
+  "hits": {
+    "total": 2,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "5",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Will Smith",
-        "title" : "I admire lions",
-        "body" : "They are so regal",
-        "tags" : [ "wild animal", "animal", "lion" ],
-        "status" : "published",
-        "publish_date" : "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -512,68 +533,70 @@ Reply:
 
 ```json
 {
-  "took" : 6,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 6,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 3,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
+  "hits": {
+    "total": 3,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "5",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Will Smith",
-        "title" : "I admire lions",
-        "body" : "They are so regal",
-        "tags" : [ "wild animal", "animal", "lion" ],
-        "status" : "published",
-        "publish_date" : "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
-
 ```
 
 ---
 
 ## The `term` query
 
-The `term` query is used to find exact matches on the *indexed* value of a field.
+The `term` query is used to find exact matches on the _indexed_ value of a field.
 It should not be used on analyzed fields: the analyzed value that is indexed is a modified version of the input value.
-
 
 ```bash
 curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
@@ -589,43 +612,46 @@ Reply:
 
 ```json
 {
-  "took" : 4,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 4,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 2,
-    "max_score" : 1.5108256,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : 1.5108256,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
+  "hits": {
+    "total": 2,
+    "max_score": 1.5108256,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 1.5108256,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 1.5108256,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "3",
-      "_score" : 1.5108256,
-      "_source" : {
-        "author" : "John Smith",
-        "title" : "I hate fish",
-        "body" : "They do not bring the ball back",
-        "tags" : [ "pet", "animal", "fish" ],
-        "status" : "pending",
-        "publish_date" : "2017-08-03"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -650,65 +676,67 @@ Reply:
 
 ```json
 {
-  "took" : 1,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 3,
-    "max_score" : 0.7524203,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 0.7524203,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
+  "hits": {
+    "total": 3,
+    "max_score": 0.7524203,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 0.7524203,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.46769896,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 0.46769896,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : 0.46769896,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "3",
-      "_score" : 0.46769896,
-      "_source" : {
-        "author" : "John Smith",
-        "title" : "I hate fish",
-        "body" : "They do not bring the ball back",
-        "tags" : [ "pet", "animal", "fish" ],
-        "status" : "pending",
-        "publish_date" : "2017-08-03"
-      }
-    } ]
+    ]
   }
 }
-
 ```
 
 ---
 
 ## The `exists` query
-
 
 The `exists` query matches the documents where a given field is present:
 
@@ -726,82 +754,88 @@ Reply:
 
 ```json
 {
-  "took" : 2,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 2,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 5,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
+  "hits": {
+    "total": 5,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They belong to the Savanna",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "3",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "John Smith",
-        "title" : "I hate fish",
-        "body" : "They do not bring the ball back",
-        "tags" : [ "pet", "animal", "fish" ],
-        "status" : "pending",
-        "publish_date" : "2017-08-03"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
-      }
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "5",
-      "_score" : 1.0,
-      "_source" : {
-        "author" : "Will Smith",
-        "title" : "I admire lions",
-        "body" : "They belong to the Savanna",
-        "tags" : [ "wild animal", "animal", "lion" ],
-        "status" : "published",
-        "publish_date" : "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -833,17 +867,17 @@ Reply:
 
 ```json
 {
-  "took" : 4,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 4,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 0,
-    "max_score" : null,
-    "hits" : [ ]
+  "hits": {
+    "total": 0,
+    "max_score": null,
+    "hits": []
   }
 }
 ```
@@ -870,90 +904,95 @@ Reply:
 
 ```json
 {
-  "took" : 9,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  "took": 9,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
   },
-  "hits" : {
-    "total" : 5,
-    "max_score" : null,
-    "hits" : [ {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "4",
-      "_score" : null,
-      "_source" : {
-        "author" : "Jane Doe",
-        "title" : "I hate cheese cake",
-        "body" : "I prefer chocolat cake",
-        "tags" : [ "food", "cake" ],
-        "status" : "archived",
-        "publish_date" : "1985-08-03"
+  "hits": {
+    "total": 5,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": null,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        },
+        "sort": ["archived"]
       },
-      "sort" : [ "archived" ]
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "1",
-      "_score" : null,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I love cats",
-        "body" : "They are so cute",
-        "tags" : [ "pet", "animal", "cat" ],
-        "status" : "pending",
-        "publish_date" : "2016-08-03"
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": null,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        },
+        "sort": ["pending"]
       },
-      "sort" : [ "pending" ]
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "3",
-      "_score" : null,
-      "_source" : {
-        "author" : "John Smith",
-        "title" : "I hate fish",
-        "body" : "They do not bring the ball back",
-        "tags" : [ "pet", "animal", "fish" ],
-        "status" : "pending",
-        "publish_date" : "2017-08-03"
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": null,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        },
+        "sort": ["pending"]
       },
-      "sort" : [ "pending" ]
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "2",
-      "_score" : null,
-      "_source" : {
-        "author" : "John Doe",
-        "title" : "I like dogs",
-        "body" : "They are loyal",
-        "tags" : [ "pet", "animal", "dog" ],
-        "status" : "published",
-        "publish_date" : "2016-08-01"
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": null,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        },
+        "sort": ["published"]
       },
-      "sort" : [ "published" ]
-    }, {
-      "_index" : "example",
-      "_type" : "blogpost",
-      "_id" : "5",
-      "_score" : null,
-      "_source" : {
-        "author" : "Will Smith",
-        "title" : "I admire lions",
-        "body" : "They are so regal",
-        "tags" : [ "wild animal", "animal", "lion" ],
-        "status" : "published",
-        "publish_date" : "2016-08-02"
-      },
-      "sort" : [ "published" ]
-    } ]
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": null,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        },
+        "sort": ["published"]
+      }
+    ]
   }
 }
-
 ```
 
 If the `_score` is not used in the sort, it is not calculated and nullified in the reply.

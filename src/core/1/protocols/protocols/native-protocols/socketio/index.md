@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Socket.IO
 order: 0
 ---

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Configure Kuzzle
 Order: 200
 ---
@@ -34,8 +33,8 @@ You can write your custom config parameters in a `.kuzzlerc` and store it in `$H
 
 The name of the environment variable must match the path of the configuration parameter in the `.kuzzlerc` file. To set the name of the environment variable:
 
-* Use the prefix `kuzzle_`,
-* then append the parameter path (as defined in the  `.kuzzlerc` file) by using a **double underscore** `__` to separate each level of its hierarchy. 
+- Use the prefix `kuzzle_`,
+- then append the parameter path (as defined in the `.kuzzlerc` file) by using a **double underscore** `__` to separate each level of its hierarchy.
 
 For example, the `.kuzzlerc` parameter `services.db.host` in example 1, is represented by the environment variable `kuzzle_services__db__host`:
 

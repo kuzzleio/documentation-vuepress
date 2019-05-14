@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: The bool (Boolean) query
 description: learn how to combine filters with elasticsearch
 order: 500
@@ -13,7 +12,7 @@ If you're interested, you can find a good description on [Wikipedia](https://en.
 
 In the boolean compound query, there are 4 occurrence types:
 
-- `must` and `should` are used to filter *AND* score the documents.
+- `must` and `should` are used to filter _AND_ score the documents.
 - `filter` and `must_not` are used to filter the documents (whether they match or not) but don't influence the score.
 
 This is what it looks like when we use every occurence type:
@@ -61,36 +60,38 @@ Reply (don't spend too much time reading it, we will explain each occurence type
   "hits": {
     "total": 2,
     "max_score": 2.4638538,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 2.4638538,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 2.4638538,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.78557956,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 0.78557956,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
-      }
-    } ]
+    ]
   }
 }
-
 ```
 
 You can find a full description in the [Bool Query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/5.x/query-dsl-bool-query.html).
@@ -105,7 +106,6 @@ to make basic `filter` requests. It will be up to you to choose your favorite.
 
 Each example produces the same result. As you will see, there are different ways to achieve
 the same result using the `filter` occurence type.
-
 
 ### Using a logical `AND` operator between fields
 
@@ -136,7 +136,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 Both examples above generate the same result:
 
 ```json
@@ -151,40 +150,42 @@ Both examples above generate the same result:
   "hits": {
     "total": 2,
     "max_score": 0.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.0,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
 
-You can notice that the score of both documents is *0* : this is because we only use the `filter` occurence type
+You can notice that the score of both documents is _0_ : this is because we only use the `filter` occurence type
 of the `bool` query.
-
 
 ### Using a logical `AND` operator between terms
 
@@ -232,7 +233,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 All examples above generate the same result:
 
 ```json
@@ -247,37 +247,39 @@ All examples above generate the same result:
   "hits": {
     "total": 2,
     "max_score": 0.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
-      }
-    } ]
+    ]
   }
 }
 ```
-
 
 ### Using a logical `OR` operator between fields
 
@@ -312,7 +314,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 Both examples above generate the same result:
 
 ```json
@@ -327,37 +328,39 @@ Both examples above generate the same result:
   "hits": {
     "total": 2,
     "max_score": 0.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.0,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
-
 
 ### Using a logical `OR` operator between terms
 
@@ -411,7 +414,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 The last query is tricky. We specified 3 terms in the query, but as the field `status` is not analyzed,
 the query isn't analyzed either. To split the query string into terms, we have to force the use of the `standard` analyzer.
 This allows the string `"published pending refused"` to be tokenized into the 3 following terms:
@@ -431,64 +433,67 @@ Reply:
   "hits": {
     "total": 4,
     "max_score": 0.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "3",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Smith",
-        "title": "I hate fish",
-        "body": "They do not bring the ball back",
-        "tags": [ "pet", "animal", "fish" ],
-        "status": "pending",
-        "publish_date": "2017-08-03"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.0,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
-
 ```
-
 
 ### Using a logical `NOT` operator
 
@@ -524,7 +529,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 Both examples above generate the same result:
 
 ```json
@@ -539,46 +543,50 @@ Both examples above generate the same result:
   "hits": {
     "total": 3,
     "max_score": 0.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 0.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 0.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "4",
-      "_score": 0.0,
-      "_source": {
-        "author": "Jane Doe",
-        "title": "I hate cheese cake",
-        "body": "I prefer chocolat cake",
-        "tags": [ "food", "cake" ],
-        "status": "archived",
-        "publish_date": "1985-08-03"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.0,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -604,7 +612,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 Expected reply:
 
 ```json
@@ -619,46 +626,50 @@ Expected reply:
   "hits": {
     "total": 3,
     "max_score": 1.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 1.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "4",
-      "_score": 1.0,
-      "_source": {
-        "author": "Jane Doe",
-        "title": "I hate cheese cake",
-        "body": "I prefer chocolat cake",
-        "tags": [ "food", "cake" ],
-        "status": "archived",
-        "publish_date": "1985-08-03"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 1.0,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
@@ -784,36 +795,38 @@ Have the same reply with the same score:
   "hits": {
     "total": 2,
     "max_score": 1.8117931,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 1.8117931,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.8117931,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.8117931,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They belong to the Savanna",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 1.8117931,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They belong to the Savanna",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
-
 ```
 
 ### Using a logical `AND` operator between terms
@@ -862,7 +875,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 All examples above generate the same result:
 
 ```json
@@ -877,38 +889,39 @@ All examples above generate the same result:
   "hits": {
     "total": 2,
     "max_score": 1.0811163,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 1.0811163,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 1.0811163,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0811163,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 1.0811163,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
-      }
-    } ]
+    ]
   }
 }
-
 ```
-
 
 ### Using a logical `OR` operator between fields
 
@@ -943,7 +956,6 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
 }'
 ```
 
-
 Both examples above generate the same result:
 
 ```json
@@ -958,38 +970,39 @@ Both examples above generate the same result:
   "hits": {
     "total": 2,
     "max_score": 0.67751116,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.67751116,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They belong to the Savanna",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.67751116,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They belong to the Savanna",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.33875558,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 0.33875558,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
-      }
-    } ]
+    ]
   }
 }
-
 ```
-
 
 ### Using a logical `OR` operator between terms
 
@@ -1057,63 +1070,67 @@ Reply:
   "hits": {
     "total": 4,
     "max_score": 0.22560257,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "1",
-      "_score": 0.22560257,
-      "_source": {
-        "author": "John Doe",
-        "title": "I love cats",
-        "body": "They are so cute",
-        "tags": [ "pet", "animal", "cat" ],
-        "status": "pending",
-        "publish_date": "2016-08-03"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "1",
+        "_score": 0.22560257,
+        "_source": {
+          "author": "John Doe",
+          "title": "I love cats",
+          "body": "They are so cute",
+          "tags": ["pet", "animal", "cat"],
+          "status": "pending",
+          "publish_date": "2016-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.22560257,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "3",
+        "_score": 0.22560257,
+        "_source": {
+          "author": "John Smith",
+          "title": "I hate fish",
+          "body": "They do not bring the ball back",
+          "tags": ["pet", "animal", "fish"],
+          "status": "pending",
+          "publish_date": "2017-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.22560257,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They belong to the Savanna",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 0.22560257,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "3",
-      "_score": 0.22560257,
-      "_source": {
-        "author": "John Smith",
-        "title": "I hate fish",
-        "body": "They do not bring the ball back",
-        "tags": [ "pet", "animal", "fish" ],
-        "status": "pending",
-        "publish_date": "2017-08-03"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.22560257,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They belong to the Savanna",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
 ```
-
 
 ### Using a logical `NOT` operator
 
@@ -1146,6 +1163,7 @@ curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
   }
 }'
 ```
+
 (the second example is a bit useless as we could use `must_not` directly)
 
 Both examples above generate the same result:
@@ -1162,49 +1180,52 @@ Both examples above generate the same result:
   "hits": {
     "total": 3,
     "max_score": 1.0,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 1.0,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 1.0,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 1.0,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They belong to the Savanna",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "4",
-      "_score": 1.0,
-      "_source": {
-        "author": "Jane Doe",
-        "title": "I hate cheese cake",
-        "body": "I prefer chocolat cake",
-        "tags": [ "food", "cake" ],
-        "status": "archived",
-        "publish_date": "1985-08-03"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 1.0,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They belong to the Savanna",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
-      }
-    } ]
+    ]
   }
 }
-
 ```
 
 ---
@@ -1245,50 +1266,53 @@ Reply:
   "hits": {
     "total": 3,
     "max_score": 0.98358554,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.98358554,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.98358554,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "4",
+        "_score": 0.3945096,
+        "_source": {
+          "author": "Jane Doe",
+          "title": "I hate cheese cake",
+          "body": "I prefer chocolat cake",
+          "tags": ["food", "cake"],
+          "status": "archived",
+          "publish_date": "1985-08-03"
+        }
+      },
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "2",
+        "_score": 0.24522427,
+        "_source": {
+          "author": "John Doe",
+          "title": "I like dogs",
+          "body": "They are loyal",
+          "tags": ["pet", "animal", "dog"],
+          "status": "published",
+          "publish_date": "2016-08-01"
+        }
       }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "4",
-      "_score": 0.3945096,
-      "_source": {
-        "author": "Jane Doe",
-        "title": "I hate cheese cake",
-        "body": "I prefer chocolat cake",
-        "tags": [ "food", "cake" ],
-        "status": "archived",
-        "publish_date": "1985-08-03"
-      }
-    }, {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "2",
-      "_score": 0.24522427,
-      "_source": {
-        "author": "John Doe",
-        "title": "I like dogs",
-        "body": "They are loyal",
-        "tags": [ "pet", "animal", "dog" ],
-        "status": "published",
-        "publish_date": "2016-08-01"
-      }
-    } ]
+    ]
   }
 }
 ```
-
 
 ```bash
 curl -g -X POST "http://localhost:9200/example/blogpost/_search?pretty" -d '{
@@ -1319,20 +1343,22 @@ Reply:
   "hits": {
     "total": 1,
     "max_score": 0.98358554,
-    "hits": [ {
-      "_index": "example",
-      "_type": "blogpost",
-      "_id": "5",
-      "_score": 0.98358554,
-      "_source": {
-        "author": "Will Smith",
-        "title": "I admire lions",
-        "body": "They are so regal",
-        "tags": [ "wild animal", "animal", "lion" ],
-        "status": "published",
-        "publish_date": "2016-08-02"
+    "hits": [
+      {
+        "_index": "example",
+        "_type": "blogpost",
+        "_id": "5",
+        "_score": 0.98358554,
+        "_source": {
+          "author": "Will Smith",
+          "title": "I admire lions",
+          "body": "They are so regal",
+          "tags": ["wild animal", "animal", "lion"],
+          "status": "published",
+          "publish_date": "2016-08-02"
+        }
       }
-    } ]
+    ]
   }
 }
 ```

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: silly
 order: 5
 ---

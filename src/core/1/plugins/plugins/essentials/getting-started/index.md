@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Getting started
 description: how to create a custom plugin
 order: 1

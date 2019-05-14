@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Request and Response Format
 order: 800
 ---

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Command Line Interface (CLI)
 Order: 900
 ---

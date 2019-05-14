@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Query Syntax
 description: Kuzzle query format
 order: 200

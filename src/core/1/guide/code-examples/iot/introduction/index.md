@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Introduction
 order: 0
 description: IoT Code Examples

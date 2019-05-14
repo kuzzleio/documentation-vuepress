@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Go
 ---
 
@@ -7,13 +6,11 @@ title: Go
 
 Let's create a new project folder called `iot`:
 
-
 ```bash
     mkdir iot
 ```
 
 For this code example we'll need the `Paho` package. To install it run the following command:
-
 
 ```bash
     go get github.com/eclipse/paho.mqtt.golang

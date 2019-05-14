@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Advanced Roles Definitions
 ---
 

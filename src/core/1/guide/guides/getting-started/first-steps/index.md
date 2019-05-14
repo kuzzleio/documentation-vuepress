@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: First Steps
 description: learn kuzzle in a few steps
 order: 200

@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Configure Security
 order: 700
 ---

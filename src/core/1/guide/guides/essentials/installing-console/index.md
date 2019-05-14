@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Install Kuzzle Admin Console
 order: 100
 ---

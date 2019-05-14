@@ -1,2 +1,4 @@
 node_modules
 dist
+algolia-records.json
+frontmatter-errors.json

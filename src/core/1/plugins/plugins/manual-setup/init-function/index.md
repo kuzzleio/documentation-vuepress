@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: init function
 description: how to create a custom plugin
 order: 2

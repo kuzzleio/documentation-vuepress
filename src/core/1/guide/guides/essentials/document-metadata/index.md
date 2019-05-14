@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: Document Metadata
 order: 450
 ---

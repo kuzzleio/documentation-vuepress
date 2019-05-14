@@ -1,5 +1,4 @@
 ---
-layout: full.html.hbs
 title: MQTT
 order: 0
 ---
