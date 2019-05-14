@@ -2,7 +2,6 @@
 title: Getting started
 description: Java Getting started
 order: 99
-separator: essentials
 ---
 
 # Getting Started

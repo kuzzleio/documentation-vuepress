@@ -1,7 +1,6 @@
 ---
 title: Error Handling
 order: 100
-separator: essentials
 ---
 
 # Error Handling

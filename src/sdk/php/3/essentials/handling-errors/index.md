@@ -2,7 +2,6 @@
 type: page
 order: 100
 title: Error Handling
-separator: essentials
 ---
 
 # Error Handling

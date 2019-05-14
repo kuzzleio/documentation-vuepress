@@ -1,6 +1,6 @@
 ---
 title: Kuzzle
 description: Kuzzle object documentation
-separator: Core classes
+  classes
 order: 500
 ---
