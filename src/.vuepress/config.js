@@ -276,10 +276,14 @@ module.exports = {
     [
       require('vuepress-validate-frontmatter'),
       {
+        dumpToFile: true,
+        abortBuild: true,
+        onReady: require('./validate-frontmatter/append-fixes'),
         specs: {
           type: {
             type: String,
-            allowedValues: ['root', 'branch', 'page']
+            allowedValues: ['root', 'branch', 'page'],
+            required: true
           },
           order: {
             type: Number
@@ -295,7 +299,8 @@ module.exports = {
             type: Boolean
           },
           code: {
-            type: Boolean
+            type: Boolean,
+            required: true
           }
         }
       }

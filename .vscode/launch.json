@@ -8,8 +8,8 @@
       "type": "node",
       "request": "launch",
       "name": "Debug Frontmatter Fix Tool",
-      "program": "${workspaceFolder}/src/.vuepress/frontmatter-fix-tool/fix.js",
-      "args": ["../frontmatter-fixes.json"],
+      "program": "${workspaceFolder}/src/.vuepress/validate-frontmatter/fix.js",
+      "args": ["-e", "../frontmatter-errors.json", "-y"],
       "cwd": "${workspaceFolder}/src/"
     },
     {

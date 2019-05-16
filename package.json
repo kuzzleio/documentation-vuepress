@@ -18,6 +18,7 @@
     "cheerio": "^1.0.0-rc.3",
     "clipboard": "^2.0.4",
     "commander": "^2.20.0",
+    "diff": "^4.0.1",
     "docsearch.js": "^2.6.2",
     "expose-loader": "^0.7.5",
     "js-cookie": "^2.1.4",
@@ -25,10 +26,12 @@
     "lunr": "^2.3.6",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
+    "prompt-confirm": "^2.0.4",
     "sass-loader": "^7.1.0",
     "vuepress": "1.0.0-alpha.47",
     "vuepress-plugin-container": "^2.0.1",
-    "vuepress-validate-frontmatter": "^1.0.1"
+    "vuepress-validate-frontmatter": "^1.0.1",
+    "yaml": "^1.5.1"
   },
   "devDependencies": {
     "webpack-dev-middleware": "^3.6.0"
