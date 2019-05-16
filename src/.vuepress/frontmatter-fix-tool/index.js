@@ -47,7 +47,9 @@ function computeFixes(children, nodes) {
         fix.type = 'page';
       }
     }
-    fixes[child.path] = defaultsDeep(fix, child.frontmatter);
+    if (Object.keys(fix).length) {
+      fixes[child.path] = defaultsDeep(fix, child.frontmatter);
+    }
     if (grandChildren.length) {
       computeFixes(grandChildren, nodes);
     }

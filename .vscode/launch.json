@@ -7,6 +7,14 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Debug Frontmatter Fix Tool",
+      "program": "${workspaceFolder}/src/.vuepress/frontmatter-fix-tool/fix.js",
+      "args": ["../frontmatter-fixes.json"],
+      "cwd": "${workspaceFolder}/src/"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Debug VuePress",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run-script", "debug"],
