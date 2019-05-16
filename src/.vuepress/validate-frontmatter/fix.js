@@ -1,6 +1,6 @@
 const program = require('commander');
 const path = require('path');
-const { trimEnd, assign } = require('lodash');
+const { trimEnd, assign, truncate } = require('lodash');
 const fs = require('fs');
 const YAML = require('yaml');
 
@@ -108,7 +108,15 @@ function outputDiff(diff) {
     if (d.removed) {
       return console.log(c.red(`${value.replace(/^/gm, '- ')}`));
     }
-    return console.log(c.grey(value.replace(/^/gm, '  ')));
+    return console.log(
+      c.grey(
+        truncate(value.replace(/^/gm, '  '), {
+          length: 200,
+          separator: '\n',
+          omission: '\n  [...]'
+        })
+      )
+    );
   });
   console.log('');
 }
