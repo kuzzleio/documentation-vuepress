@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: send
 description: Base method to send API query to Kuzzle
 ---

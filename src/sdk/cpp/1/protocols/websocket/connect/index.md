@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: connect
 description: Connects the SDK to Kuzzle
 ---

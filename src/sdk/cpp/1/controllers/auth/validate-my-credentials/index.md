@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: validateMyCredentials
 description: Validate the current user's credentials for the specified strategy.
 ---

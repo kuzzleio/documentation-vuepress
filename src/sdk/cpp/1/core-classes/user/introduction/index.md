@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Introduction
 description: Kuzzle user representation
 order: 0

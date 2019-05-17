@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: removeListener
 description: Removes a listener from an event
 ---

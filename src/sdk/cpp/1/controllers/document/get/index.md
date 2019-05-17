@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: get
 description: Get a document from kuzzle
 ---

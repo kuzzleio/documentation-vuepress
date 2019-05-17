@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: registerSub
 description: Used when subscribing to store a listener.
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: close
 description: Closes the current connection to Kuzzle
 ---

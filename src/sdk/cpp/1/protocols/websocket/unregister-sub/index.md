@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: unregisterSub
 description: Removes a subscription's notifications listener.
 ---

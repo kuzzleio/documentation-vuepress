@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Introduction
 description: Websocket protocol implementation
 order: 0

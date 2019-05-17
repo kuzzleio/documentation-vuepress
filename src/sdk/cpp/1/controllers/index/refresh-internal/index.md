@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: refreshInternal
 description: Force refresh of Kuzzle internal index
 ---

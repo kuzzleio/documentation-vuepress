@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: once
 description: Attaches a listener to an event and removes it after it has been triggered once
 ---

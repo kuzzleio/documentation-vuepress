@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: checkToken
 description: Checks a JWT Token's validity.
 ---

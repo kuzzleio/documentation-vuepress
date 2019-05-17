@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: mDelete
 description: Delete a document
 ---

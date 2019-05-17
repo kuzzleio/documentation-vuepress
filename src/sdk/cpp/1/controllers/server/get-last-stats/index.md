@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: getLastStats
 description: Returns the most recent statistics snapshot.
 ---

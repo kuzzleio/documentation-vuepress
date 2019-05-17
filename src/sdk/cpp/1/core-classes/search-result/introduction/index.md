@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Introduction
 description: SearchResult class
 order: 0

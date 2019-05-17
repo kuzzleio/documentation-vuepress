@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: delete_
 description: Deletes an index
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: close
 description: Disconnects the SDK
 ---

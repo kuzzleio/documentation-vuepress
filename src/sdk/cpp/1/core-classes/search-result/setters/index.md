@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Setters
 description: Setters for SearchResult class
 order: 200

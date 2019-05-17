@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: listenerCount
 description: Returns the number of listeners attached to an event
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: cancelSubs
 description: Cancels all subscriptions
 ---

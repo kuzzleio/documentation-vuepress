@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: getMyCredentials
 description: Returns the current user's credential information for the specified strategy.
 ---

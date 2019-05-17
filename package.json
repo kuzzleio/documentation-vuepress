@@ -30,7 +30,7 @@
     "sass-loader": "^7.1.0",
     "vuepress": "1.0.0-alpha.47",
     "vuepress-plugin-container": "^2.0.1",
-    "vuepress-validate-frontmatter": "^2.0.3",
+    "vuepress-validate-frontmatter": "^2.0.6",
     "yaml": "^1.5.1"
   },
   "devDependencies": {

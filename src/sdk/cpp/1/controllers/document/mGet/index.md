@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: mGet
 description: Get multiple documents from kuzzle
 ---

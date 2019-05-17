@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Getters
 description: Getters for User class
 order: 100

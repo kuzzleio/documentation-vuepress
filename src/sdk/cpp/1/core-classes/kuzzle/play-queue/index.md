@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: playQueue
 description: Play the offline request queue
 ---

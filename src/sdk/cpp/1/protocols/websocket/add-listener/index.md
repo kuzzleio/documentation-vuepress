@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: addListener
 description: Adds a listener to an event
 ---
