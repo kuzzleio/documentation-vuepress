@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Introduction
 description: learn mechanisms of kuzzle
 order: 0

@@ -1,4 +1,5 @@
 ---
+code: false
 type: page
 title: Install Kuzzle
 order: 1

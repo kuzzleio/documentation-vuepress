@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Document Metadata
 order: 450
 ---

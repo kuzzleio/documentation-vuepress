@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Command Line Interface (CLI)
 order: 900
 ---

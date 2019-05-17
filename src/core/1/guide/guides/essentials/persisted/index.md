@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Working with Persistent Data
 order: 400
 ---

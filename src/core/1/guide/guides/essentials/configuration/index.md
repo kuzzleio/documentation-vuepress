@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Configure Kuzzle
 order: 200
 ---

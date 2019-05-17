@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Configure Security
 order: 700
 ---

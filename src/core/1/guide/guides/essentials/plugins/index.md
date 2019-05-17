@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Kuzzle's Plugin Engine
 order: 1100
 ---
