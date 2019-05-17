@@ -1,7 +1,7 @@
 const { mapValues, assign, endsWith } = require('lodash');
 const path = require('path');
 
-const codeRE = /api-reference|plugin-context|controllers|core-classes|virtual-classes|sdk\/.*\/protocols|core-structs|sdk\/.*\/classes/;
+const codeRE = /api-reference\/.+|plugin-context|controllers|core-classes|virtual-classes|sdk\/.*\/protocols|core-structs|sdk\/.*\/classes/;
 
 module.exports = (errorsByPath, ctx) => {
   return mapValues(errorsByPath, (errors, url) => {

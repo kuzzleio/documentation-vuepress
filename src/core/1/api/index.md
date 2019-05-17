@@ -1,4 +1,5 @@
 ---
+code: false
 type: root
 order: 20
 title: API
