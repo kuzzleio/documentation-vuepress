@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: HTTP
 order: 0
 ---

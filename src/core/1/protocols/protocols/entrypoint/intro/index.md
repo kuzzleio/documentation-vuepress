@@ -1,4 +1,6 @@
 ---
+type: page
+code: false
 title: Properties
 order: 0
 ---

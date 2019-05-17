@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Socket.IO
 order: 0
 ---

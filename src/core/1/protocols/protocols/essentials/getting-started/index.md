@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Getting Started
 order: 0
 ---
