@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: addListener
 description: Kuzzle:addListener
 ---

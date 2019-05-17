@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: prependListener
 description: Prepends a new listener for an event
 ---

@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Offline Tools
 description: Tools to handle the loss of connection to the Kuzzle server
 order: 400

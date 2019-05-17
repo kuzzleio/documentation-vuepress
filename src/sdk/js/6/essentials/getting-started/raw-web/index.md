@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Browser (Vanilla)
 description: Getting started with Kuzzle in the browser
 ---

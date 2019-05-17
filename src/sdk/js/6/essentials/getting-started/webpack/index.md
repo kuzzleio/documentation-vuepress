@@ -1,4 +1,6 @@
 ---
+type: page
+code: false
 title: Webpack
 description: Getting started with Kuzzle and Webpack
 ---

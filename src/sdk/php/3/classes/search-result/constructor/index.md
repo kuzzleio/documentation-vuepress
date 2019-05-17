@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: constructor
 description: SearchResult:constructor
 order: 1

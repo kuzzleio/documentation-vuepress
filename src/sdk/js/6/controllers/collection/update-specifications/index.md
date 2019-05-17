@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: updateSpecifications
 description: Update the validation specifications
 ---

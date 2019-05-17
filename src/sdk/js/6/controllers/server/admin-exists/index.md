@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: adminExists
 description: Checks that an administrator account exists.
 ---

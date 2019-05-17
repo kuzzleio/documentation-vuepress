@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: keys
 description: MemoryStorage:keys
 ---

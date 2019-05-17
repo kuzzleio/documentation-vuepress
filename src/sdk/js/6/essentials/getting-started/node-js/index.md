@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Node.js
 description: Getting started with Kuzzle and Node.js
 order: 100

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: pfcount
 description: MemoryStorage:pfcount
 ---

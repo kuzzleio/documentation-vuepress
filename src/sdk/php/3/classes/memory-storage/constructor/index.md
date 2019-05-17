@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: constructor
 description: MemoryStorage:constructor
 order: 1

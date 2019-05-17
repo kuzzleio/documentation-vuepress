@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: updateMyCredentials
 description: Update the current user's credentials for the specified strategy.
 ---

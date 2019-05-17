@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: refresh
 description: Forces an Elasticsearch search index update
 ---

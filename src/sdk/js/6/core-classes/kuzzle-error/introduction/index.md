@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Introduction
 description: KuzzleError object
 order: 0

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: on
 description: Alias for addListener
 ---

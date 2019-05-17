@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: listeners
 description: Returns listeners for an event
 ---

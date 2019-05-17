@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Introduction
 description: SocketIO protocol implementation
 order: 0

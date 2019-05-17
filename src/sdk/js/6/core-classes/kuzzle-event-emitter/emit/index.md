@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: emit
 description: Emits an event
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: prependOnceListener
 description: Prepends a new once listener for an event
 ---

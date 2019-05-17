@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: addOnceListener
 description: Adds a new listener for an event
 ---

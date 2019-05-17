@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: deleteSpecifications
 description: Delete validation specifications for a collection
 ---

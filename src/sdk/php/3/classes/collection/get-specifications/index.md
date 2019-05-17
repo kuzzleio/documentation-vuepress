@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: getSpecifications
 description: Collection:getSpecifications
 ---

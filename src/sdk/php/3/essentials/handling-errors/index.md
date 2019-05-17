@@ -1,4 +1,5 @@
 ---
+code: false
 type: page
 order: 100
 title: Error Handling

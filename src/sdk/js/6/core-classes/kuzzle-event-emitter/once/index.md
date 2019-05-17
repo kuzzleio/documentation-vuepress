@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: once
 description: Alias for addOnceListener
 ---

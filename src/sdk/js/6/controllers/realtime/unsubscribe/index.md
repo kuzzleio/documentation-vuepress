@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: unsubscribe
 description: Removes a subscription
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: type
 description: MemoryStorage:type
 ---

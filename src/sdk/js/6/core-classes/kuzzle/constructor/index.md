@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Constructor
 description: Creates a new Kuzzle object connected to the backend
 order: 50

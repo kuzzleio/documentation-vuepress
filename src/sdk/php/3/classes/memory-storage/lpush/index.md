@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: lpush
 description: MemoryStorage:lpush
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Constructor
 description: Creates a new SocketIO protocol
 order: 50

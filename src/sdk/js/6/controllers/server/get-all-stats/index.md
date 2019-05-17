@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: getAllStats
 description: Gets all stored internal statistic snapshots.
 ---
