@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Useful Commands
 description: learn time-saving elasticsearch commands
 order: 300

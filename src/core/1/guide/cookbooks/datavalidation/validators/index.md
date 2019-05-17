@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Validators
 description: learn how to create complex validators
 order: 200

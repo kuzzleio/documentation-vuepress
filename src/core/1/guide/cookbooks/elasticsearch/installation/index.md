@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Installation
 description: learn how to install elasticsearch from scratch
 order: 100
