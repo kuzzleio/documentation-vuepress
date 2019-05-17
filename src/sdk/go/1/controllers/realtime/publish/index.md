@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Publish
 description: Publish a real-time message
 ---

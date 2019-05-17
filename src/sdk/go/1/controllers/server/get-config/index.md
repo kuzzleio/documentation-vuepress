@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: GetConfig
 description: Returns the current Kuzzle configuration.
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: updateMapping
 description: Update the collection mapping
 ---

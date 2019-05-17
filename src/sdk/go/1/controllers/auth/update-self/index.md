@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: UpdateSelf
 description: Updates the current user object in Kuzzle.
 ---

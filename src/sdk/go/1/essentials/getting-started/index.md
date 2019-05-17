@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Getting started
 description: Getting started
 order: 99

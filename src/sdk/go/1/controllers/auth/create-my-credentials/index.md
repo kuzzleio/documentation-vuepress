@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: CreateMyCredentials
 description: Create the current user's credentials for the specified `<strategy>`.
 ---

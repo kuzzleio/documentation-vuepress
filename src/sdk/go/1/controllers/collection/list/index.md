@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: list
 description: Returns the collection list of an index
 ---

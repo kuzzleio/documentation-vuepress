@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: AdminExists
 description: Returns information about Kuzzle server.
 ---

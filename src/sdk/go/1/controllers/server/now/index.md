@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Now
 description: Returns the current server timestamp, in Epoch-millis
 ---

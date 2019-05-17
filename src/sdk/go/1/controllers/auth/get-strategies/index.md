@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: GetStrategies
 description: Get all authentication strategies registered in Kuzzle.
 ---

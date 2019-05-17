@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Count
 description: Count subscribers for a subscription room
 ---

@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: mCreate
 description: Creates multiple documents in kuzzle
 ---
