@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Introduction
 order: 0
 description: Pub/Sub Code Examples

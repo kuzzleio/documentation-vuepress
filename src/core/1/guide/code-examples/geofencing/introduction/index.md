@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Introduction
 order: 0
 description: Geofencing Code Examples
