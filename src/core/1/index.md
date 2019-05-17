@@ -1,4 +1,5 @@
 ---
+code: false
 type: root
 order: 0
 title: Core v1.x
