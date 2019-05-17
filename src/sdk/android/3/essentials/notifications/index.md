@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Notifications
 order: 300
 ---

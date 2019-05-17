@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: Kuzzle
 description: Entry point and main class for the entire SDK
 order: 100

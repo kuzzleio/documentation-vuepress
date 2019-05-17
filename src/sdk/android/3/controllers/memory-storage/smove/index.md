@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: smove
 description: MemoryStorage:smove
 ---

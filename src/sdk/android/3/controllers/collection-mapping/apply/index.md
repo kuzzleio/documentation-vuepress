@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: apply
 description: CollectionMapping:apply
 ---

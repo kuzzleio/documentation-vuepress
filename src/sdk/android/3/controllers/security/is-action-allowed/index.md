@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: isActionAllowed
 description: Security:isActionAllowed
 ---

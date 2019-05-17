@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: constructor
 description: User:constructor
 order: 1

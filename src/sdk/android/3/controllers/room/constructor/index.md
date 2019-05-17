@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: constructor
 description: Room:constructor
 order: 1
