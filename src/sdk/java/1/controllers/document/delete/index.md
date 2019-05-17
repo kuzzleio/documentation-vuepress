@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: delete
 description: Deletes a document from kuzzle
 ---

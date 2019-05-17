@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: getStats
 description: Returns statistics snapshots within a provided timestamp range.
 ---

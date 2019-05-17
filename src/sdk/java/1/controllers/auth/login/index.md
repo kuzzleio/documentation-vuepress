@@ -1,4 +1,6 @@
 ---
+code: true
+type: page
 title: login
 description: Authenticate a user
 ---
