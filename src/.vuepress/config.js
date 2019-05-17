@@ -275,6 +275,7 @@ module.exports = {
       : {},
     [
       require('vuepress-validate-frontmatter'),
+      // require('./validate-frontmatter/index'),
       {
         dumpToFile: true,
         abortBuild: true,
