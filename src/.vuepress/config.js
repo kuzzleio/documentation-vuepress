@@ -279,7 +279,7 @@ module.exports = {
       {
         dumpToFile: true,
         abortBuild: true,
-        onReady: require('./validate-frontmatter/append-fixes'),
+        postProcessErrors: require('./validate-frontmatter/append-fixes'),
         specs: {
           type: {
             type: String,
