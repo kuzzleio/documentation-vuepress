@@ -1,6 +1,6 @@
 ---
-code: false
 type: page
+code: false
 title: Specification Structure
 description: understanding the validation mechanisms
 order: 0
