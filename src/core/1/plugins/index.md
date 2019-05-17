@@ -1,4 +1,5 @@
 ---
+code: false
 type: root
 order: 30
 title: Plugins

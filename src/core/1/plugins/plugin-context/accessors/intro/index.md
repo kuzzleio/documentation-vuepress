@@ -1,4 +1,6 @@
 ---
+type: page
+code: false
 title: Introduction
 order: 0
 ---

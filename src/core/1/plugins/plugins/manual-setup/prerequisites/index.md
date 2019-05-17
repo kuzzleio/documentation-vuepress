@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Prerequisites
 description: how to create a custom plugin
 order: 0

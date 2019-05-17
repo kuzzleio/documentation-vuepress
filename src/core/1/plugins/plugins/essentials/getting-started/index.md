@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Getting started
 description: how to create a custom plugin
 order: 1

@@ -1,5 +1,7 @@
 ---
-title: 'API Events'
+type: page
+code: false
+title: API Events
 order: 100
 ---
 

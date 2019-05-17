@@ -1,5 +1,7 @@
 ---
-title: 'Getting Started'
+type: page
+code: false
+title: Getting Started
 description: Exhaustive events list
 order: 0
 ---

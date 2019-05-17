@@ -1,5 +1,7 @@
 ---
-title: 'Plugin Events'
+type: page
+code: false
+title: Plugin Events
 order: 200
 ---
 

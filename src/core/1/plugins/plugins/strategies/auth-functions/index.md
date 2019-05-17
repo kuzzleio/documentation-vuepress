@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Authentication methods
 order: 1
 ---
