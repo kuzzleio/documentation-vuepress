@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Real-time Notifications
 order: 500
 ---

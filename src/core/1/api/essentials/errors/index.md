@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Error Handling
 description: Understanding the Kuzzle error handling mechanisms
 order: 500

@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Kuzzle Response
 order: 300
 ---

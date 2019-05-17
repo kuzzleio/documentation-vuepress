@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Query Syntax
 description: Kuzzle query format
 order: 200

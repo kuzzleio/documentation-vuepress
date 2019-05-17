@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Connecting to Kuzzle
 description: Connecting to Kuzzle using HTTP, WebSocket or Protocol plugins
 order: 100

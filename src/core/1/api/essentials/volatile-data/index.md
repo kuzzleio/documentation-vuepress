@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Volatile Data
 description: broadcast extra information to subscribers
 order: 400
