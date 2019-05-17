@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Request Life-Cycle
 ---
 

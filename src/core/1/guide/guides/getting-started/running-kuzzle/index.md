@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Running Kuzzle
 description: Running Kuzzle
 order: 100
