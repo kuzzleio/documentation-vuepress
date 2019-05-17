@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: touch
 description: MemoryStorage:touch
 ---

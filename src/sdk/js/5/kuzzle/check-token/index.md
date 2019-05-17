@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: checkToken
 description: Kuzzle:checkToken
 ---

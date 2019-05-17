@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: constructor
 description: Role:constructor
 order: 1

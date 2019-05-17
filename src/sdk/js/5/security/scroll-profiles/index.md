@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: scrollProfiles
 description: Security:scrollProfiles
 ---

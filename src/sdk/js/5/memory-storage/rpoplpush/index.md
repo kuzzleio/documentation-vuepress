@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: rpoplpush
 description: MemoryStorage:rpoplpush
 ---

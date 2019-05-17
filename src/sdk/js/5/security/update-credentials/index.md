@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: updateCredentials
 description: Security:updateCredentials
 ---

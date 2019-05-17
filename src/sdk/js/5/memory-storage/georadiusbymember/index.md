@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: georadiusbymember
 description: MemoryStorage:georadiusbymember
 ---

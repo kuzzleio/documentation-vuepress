@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: validateCredentials
 description: Security:validateCredentials
 ---

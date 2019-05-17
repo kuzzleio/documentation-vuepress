@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: expireat
 description: MemoryStorage:expireat
 ---

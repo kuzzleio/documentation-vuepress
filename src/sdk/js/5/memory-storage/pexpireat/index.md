@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: pexpireat
 description: MemoryStorage:pexpireat
 ---

@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: mgetDocument
 description: Collection:mgetDocument
 ---

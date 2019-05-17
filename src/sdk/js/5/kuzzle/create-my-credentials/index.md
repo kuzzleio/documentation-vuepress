@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: createMyCredentials
 description: Kuzzle:createMyCredentials
 ---

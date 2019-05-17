@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: linsert
 description: MemoryStorage:linsert
 ---

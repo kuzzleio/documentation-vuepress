@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: incrbyfloat
 description: MemoryStorage:incrbyfloat
 ---

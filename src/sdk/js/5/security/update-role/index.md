@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: updateRole
 description: Security:updateRole
 ---

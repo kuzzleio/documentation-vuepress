@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: deleteMyCredentials
 description: Kuzzle:deleteMyCredentials
 ---

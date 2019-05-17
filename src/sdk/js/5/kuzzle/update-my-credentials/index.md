@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: updateMyCredentials
 description: Kuzzle:updateMyCredentials
 ---

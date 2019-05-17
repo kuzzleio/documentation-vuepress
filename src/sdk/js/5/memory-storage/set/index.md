@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: set
 description: MemoryStorage:set
 ---

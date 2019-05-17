@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: validateSpecifications
 description: Collection:validateSpecifications
 ---

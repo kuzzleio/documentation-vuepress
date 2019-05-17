@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: save
 description: User:save
 ---

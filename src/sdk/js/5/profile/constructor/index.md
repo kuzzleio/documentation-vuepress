@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: constructor
 description: Profile:constructor
 order: 1

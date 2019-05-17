@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: listIndexes
 description: Kuzzle:listIndexes
 ---

@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: fetchRole
 description: Security:fetchRole
 ---

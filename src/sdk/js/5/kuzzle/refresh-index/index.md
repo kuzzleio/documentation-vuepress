@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: refreshIndex
 description: Kuzzle:refreshIndex
 ---

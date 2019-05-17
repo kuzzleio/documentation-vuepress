@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: whoAmI
 description: Kuzzle:whoAmI
 ---

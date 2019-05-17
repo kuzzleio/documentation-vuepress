@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: updateSpecifications
 description: Collection:updateSpecifications
 ---

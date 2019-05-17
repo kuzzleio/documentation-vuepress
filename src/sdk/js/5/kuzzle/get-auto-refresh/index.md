@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: getAutoRefresh
 description: Kuzzle:getAutoRefresh
 ---

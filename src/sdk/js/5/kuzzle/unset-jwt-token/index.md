@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: unsetJwtToken
 description: Kuzzle:unsetJwtToken
 ---

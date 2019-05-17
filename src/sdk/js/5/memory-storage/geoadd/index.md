@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: geoadd
 description: MemoryStorage:geoadd
 ---

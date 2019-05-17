@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: memoryStorage
 description: Kuzzle:memoryStorage
 ---

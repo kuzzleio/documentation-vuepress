@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: geohash
 description: MemoryStorage:geohash
 ---

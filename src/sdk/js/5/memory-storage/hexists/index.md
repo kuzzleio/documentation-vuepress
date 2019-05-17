@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: hexists
 description: MemoryStorage:hexists
 ---

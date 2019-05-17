@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: pttl
 description: MemoryStorage:pttl
 ---

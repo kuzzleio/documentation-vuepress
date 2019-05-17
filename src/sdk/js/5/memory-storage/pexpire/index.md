@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: pexpire
 description: MemoryStorage:pexpire
 ---

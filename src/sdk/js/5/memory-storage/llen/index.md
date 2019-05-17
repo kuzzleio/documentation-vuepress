@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: llen
 description: MemoryStorage:llen
 ---

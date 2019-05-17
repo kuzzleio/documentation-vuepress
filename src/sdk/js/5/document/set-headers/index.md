@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: setHeaders
 description: Document:setHeaders
 ---

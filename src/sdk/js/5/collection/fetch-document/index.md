@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: fetchDocument
 description: Collection:fetchDocument
 ---

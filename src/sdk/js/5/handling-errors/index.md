@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Error Handling
 order: 100
 ---

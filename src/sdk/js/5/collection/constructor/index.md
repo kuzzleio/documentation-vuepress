@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: constructor
 description: Collection:constructor
 order: 1

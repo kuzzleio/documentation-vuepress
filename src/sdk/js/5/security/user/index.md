@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: user
 description: Security:user
 ---

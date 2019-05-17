@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: hset
 description: MemoryStorage:hset
 ---

@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: setPolicies
 description: Profile:setPolicies
 ---
