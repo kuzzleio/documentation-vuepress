@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Filter Operands
 description: Combines multiple terms to create complex filters
 order: 300

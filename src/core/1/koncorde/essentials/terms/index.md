@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Filter Terms
 description: Filtering terms rundown
 order: 200

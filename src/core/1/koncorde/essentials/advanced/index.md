@@ -1,4 +1,6 @@
 ---
+code: false
+type: page
 title: Advanced Notions
 order: 600
 ---
