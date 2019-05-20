@@ -1,1 +1,0 @@
-../../../../vuepress-validate-frontmatter/index.js
