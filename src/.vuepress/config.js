@@ -306,7 +306,6 @@ module.exports = {
         }
       }
     ],
-    require('./frontmatter-fix-tool/index'),
     [
       'container',
       {
