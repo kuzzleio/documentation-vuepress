@@ -6,7 +6,7 @@
   kuzzle.on('networkError', error => {
     console.error('Network Error: ', error);
   });
-  kuzzle.addListener('connected', () => {
+  kuzzle.on('connected', () => {
     console.log('Successfully connected to Kuzzle');
   });
 
@@ -17,7 +17,7 @@
         birthday: '1959-06-22',
         license: 'B'
       };
-      return kuzzle.document.create('nyc-open-data', 'yellow-taxi', driver);
+      return kuzzle.document.on('nyc-open-data', 'yellow-taxi', driver);
     })
     .then(() => {
       console.log('New document successfully created!');

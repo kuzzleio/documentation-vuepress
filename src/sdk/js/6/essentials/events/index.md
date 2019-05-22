@@ -8,11 +8,9 @@ order: 200
 
 # Events
 
-An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle SDK object](/sdk/js/6/kuzzle).
+An event system allows to be notified when the SDK status changes. These events are issued by the [Kuzzle](/sdk/js/6/kuzzle) SDK object.
 
-Subscription to these events is possible by registering callbacks that will be called when a specific event is issued by the SDK instance.
-
-These callbacks can be added by the method [Kuzzle.addListener](/sdk/js/6/core-classes/kuzzle/add-listener/).
+The API for interacting with events is described by our [KuzzleEventEmitter](/sdk-reference/js/6/kuzzle-event-emitter) class documentation.
 
 **Note:** listeners are called in the order of their insertion.
 

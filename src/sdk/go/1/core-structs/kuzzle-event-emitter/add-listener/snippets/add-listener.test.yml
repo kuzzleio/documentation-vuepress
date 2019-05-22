@@ -3,7 +3,7 @@ description: Adds new listener for the given event
 hooks:
   before:
   after:
-template: eventemitter
-expected: Caught event "myEvent"!
-sdk: js
-version: 6
+template: before-connect
+expected: "Connected to Kuzzle"
+sdk: go
+version: 1
