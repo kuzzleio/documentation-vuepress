@@ -29,20 +29,20 @@ stages:
   if: type != pull_request AND branch = master
 jobs:
   include:
-  - stage: Build
-    name: Build documentation site
-    language: node_js
-    node_js:
-    - '8'
-    script:
-    - npm install
-    - npm run lint
-    - npm run build
-    after_script:
-    - |
-      if [ -f "src/links_failed.json" ]; then
-        cat src/links_failed.json | jq
-      fi;
+  # - stage: Lint
+  #   name: Lint and check for dead links
+  #   language: node_js
+  #   node_js:
+  #   - '8'
+  #   script:
+  #   - npm install
+  #   - npm run lint
+  #   - npm run build
+  #   after_script:
+  #   - |
+  #     if [ -f "src/links_failed.json" ]; then
+  #       cat src/links_failed.json | jq
+  #     fi;
   - stage: Tests
     name: Kuzzle SDK JS - v5
     language: node_js
