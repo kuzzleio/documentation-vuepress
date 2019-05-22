@@ -89,14 +89,15 @@ const anonymousRole = {
       actions: {
         login: true,
         checkToken: true,
-        getCurrentUser: true
+        getCurrentUser: true,
+        getMyRights: true
       }
     }
   }
 };
 ```
 
-In the above `role` definition, anonymous users can perform the `login`, `checkToken` and `getCurrentUser` actions of the `auth` controller.
+In the above `role` definition, anonymous users can perform the [login](/api/1/controller-auth/login/), [checkToken](/api/1/controller-auth/check-token/), [getCurrentUser](/api/1/controller-auth/get-current-user/) and [getMyRights](/api/1/controller-auth/get-my-rights/) actions of the `auth` controller.
 
 For a list of available controllers and actions from Kuzzle's API by sending a `GET` request as follows:
 
