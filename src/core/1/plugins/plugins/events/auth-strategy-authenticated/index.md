@@ -6,7 +6,7 @@ title: auth:strategyAuthenticated
 
 # auth:strategyAuthenticated
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments  | Type              | Description                                                                                                            |
 | ---------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |

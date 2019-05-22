@@ -6,7 +6,7 @@ title: createFirstAdmin
 
 # createFirstAdmin
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a Kuzzle administrator account, only if none exist.
 

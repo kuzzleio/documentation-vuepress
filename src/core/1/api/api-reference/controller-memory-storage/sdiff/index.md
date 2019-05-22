@@ -6,7 +6,7 @@ title: sdiff
 
 # sdiff
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the difference between a reference set and a list of other sets.
 

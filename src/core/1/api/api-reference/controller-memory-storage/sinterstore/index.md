@@ -6,7 +6,7 @@ title: sinterstore
 
 # sinterstore
 
-<SinceBadge version="1.0.0" />
+
 
 Computes the intersection of the provided sets of unique values, and stores the result in a destination key.
 

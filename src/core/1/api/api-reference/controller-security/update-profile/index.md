@@ -6,7 +6,7 @@ title: updateProfile
 
 # updateProfile
 
-<SinceBadge version="1.0.0" />
+
 
 Updates a security profile definition.
 

@@ -7,7 +7,7 @@ description: Returns information about Kuzzle server.
 
 # Info
 
-<SinceBadge version="1.0.0" />
+
 
 Returns information about Kuzzle: available API (base + extended), plugins, external services (Redis, Elasticsearch, ...), servers, etc.
 

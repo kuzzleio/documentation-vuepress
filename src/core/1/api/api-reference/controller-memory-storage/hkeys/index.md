@@ -6,7 +6,7 @@ title: hkeys
 
 # hkeys
 
-<SinceBadge version="1.0.0" />
+
 
 Returns all field names contained in a hash.
 

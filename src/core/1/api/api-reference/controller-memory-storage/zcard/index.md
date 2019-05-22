@@ -6,7 +6,7 @@ title: zcard
 
 # zcard
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the number of elements held by a sorted set.
 

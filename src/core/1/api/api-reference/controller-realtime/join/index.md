@@ -6,7 +6,7 @@ title: join
 
 # join
 
-<SinceBadge version="1.0.0" />
+
 
 Joins a previously created subscription.
 

@@ -6,7 +6,7 @@ title: llen
 
 # llen
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the length of a list.
 

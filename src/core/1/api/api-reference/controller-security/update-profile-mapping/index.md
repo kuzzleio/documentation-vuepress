@@ -6,7 +6,7 @@ title: updateProfileMapping
 
 # updateProfileMapping
 
-<SinceBadge version="1.0.0" />
+
 
 Updates the internal profile storage mapping.
 

@@ -6,7 +6,7 @@ title: mget
 
 # mget
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the values of the provided keys.
 

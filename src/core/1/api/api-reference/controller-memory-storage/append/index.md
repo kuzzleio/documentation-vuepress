@@ -6,7 +6,7 @@ title: append
 
 # append
 
-<SinceBadge version="1.0.0" />
+
 
 Appends a value to a key. If the key does not exist, it is created.
 

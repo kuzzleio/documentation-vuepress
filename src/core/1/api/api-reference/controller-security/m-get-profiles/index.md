@@ -6,7 +6,7 @@ title: mGetProfiles
 
 # mGetProfiles
 
-<SinceBadge version="1.0.0" />
+
 
 Gets multiple security profiles.
 

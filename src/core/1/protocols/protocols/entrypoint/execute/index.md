@@ -6,7 +6,7 @@ title: execute
 
 # execute
 
-<SinceBadge version="1.0.0" />
+
 
 Executes a Kuzzle's [API action](/core/1/api/).
 

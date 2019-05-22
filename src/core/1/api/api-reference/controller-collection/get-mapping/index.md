@@ -6,7 +6,7 @@ title: getMapping
 
 # getMapping
 
-<SinceBadge version="1.0.0" />
+
 
 Returns a data collection mapping.
 

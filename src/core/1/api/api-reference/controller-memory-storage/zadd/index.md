@@ -6,7 +6,7 @@ title: zadd
 
 # zadd
 
-<SinceBadge version="1.0.0" />
+
 
 Adds elements to a sorted set.
 

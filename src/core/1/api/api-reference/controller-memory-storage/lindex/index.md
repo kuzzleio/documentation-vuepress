@@ -6,7 +6,7 @@ title: lindex
 
 # lindex
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the element at the provided index in a list.
 

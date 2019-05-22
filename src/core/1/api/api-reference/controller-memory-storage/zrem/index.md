@@ -6,7 +6,7 @@ title: zrem
 
 # zrem
 
-<SinceBadge version="1.0.0" />
+
 
 Removes members from a sorted set.
 

@@ -6,7 +6,7 @@ title: update
 
 # update
 
-<SinceBadge version="1.0.0" />
+
 
 Updates a document content.
 

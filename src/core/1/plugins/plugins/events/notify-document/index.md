@@ -6,7 +6,7 @@ title: notify:document
 
 # notify:document
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments | Type                                                                      | Description                           |
 | --------- | ------------------------------------------------------------------------- | ------------------------------------- |

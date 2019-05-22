@@ -6,7 +6,7 @@ title: mCreateOrReplace
 
 # mCreateOrReplace
 
-<SinceBadge version="1.0.0" />
+
 
 Creates or replaces multiple documents.
 

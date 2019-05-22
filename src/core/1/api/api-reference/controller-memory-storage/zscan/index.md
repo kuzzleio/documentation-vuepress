@@ -6,7 +6,7 @@ title: zscan
 
 # zscan
 
-<SinceBadge version="1.0.0" />
+
 
 Iterates incrementally over members contained in a sorted set, using a cursor.
 

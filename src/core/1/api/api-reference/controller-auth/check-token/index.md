@@ -6,7 +6,7 @@ title: checkToken
 
 # checkToken
 
-<SinceBadge version="1.0.0" />
+
 
 Checks a JWT validity.
 

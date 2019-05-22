@@ -6,7 +6,7 @@ title: dbsize
 
 # dbsize
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the number of keys in the application database.
 

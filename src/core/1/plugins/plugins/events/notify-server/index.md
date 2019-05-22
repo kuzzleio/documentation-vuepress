@@ -6,7 +6,7 @@ title: notify:server
 
 # notify:server
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments | Type                                                                      | Description                           |
 | --------- | ------------------------------------------------------------------------- | ------------------------------------- |

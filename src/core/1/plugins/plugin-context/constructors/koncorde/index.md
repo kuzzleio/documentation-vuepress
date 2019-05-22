@@ -20,7 +20,7 @@ This class constructor takes no argument.
 
 ## exists
 
-<SinceBadge version="1.0.0" />
+
 
 Returns a boolean telling whether filters exist for an index-collection pair.
 
@@ -45,7 +45,7 @@ The `exists` function returns a boolean telling whether at least one filter exis
 
 ## getFilterIds
 
-<SinceBadge version="1.0.0" />
+
 
 Retrieves the list of filter identifiers registered on an index-collection pair.
 
@@ -105,7 +105,7 @@ The `normalize` function returns a promise resolving to an object with the follo
 
 ## register
 
-<SinceBadge version="1.0.0" />
+
 
 Registers a filter to this Koncorde instance.
 
@@ -138,7 +138,7 @@ The `register` functions returns a promise, resolving to an object with the foll
 
 ## remove
 
-<SinceBadge version="1.0.0" />
+
 
 Removes a filter.
 
@@ -191,7 +191,7 @@ The `store` function returns an object with the following attributes:
 
 ## test
 
-<SinceBadge version="1.0.0" />
+
 
 Tests data and returns the matching filter identifiers.
 
@@ -218,7 +218,7 @@ The `test` function returns an array of strings, which is the exhaustive list of
 
 ## validate
 
-<SinceBadge version="1.0.0" />
+
 
 Validates the provided filters without storing them.
 

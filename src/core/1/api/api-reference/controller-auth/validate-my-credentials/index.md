@@ -6,7 +6,7 @@ title: validateMyCredentials
 
 # validateMyCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Validates the provided credentials against a specified authentication strategy.
 

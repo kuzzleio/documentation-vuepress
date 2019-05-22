@@ -6,7 +6,7 @@ title: deleteMyCredentials
 
 # deleteMyCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes credentials associated to the current user.
 

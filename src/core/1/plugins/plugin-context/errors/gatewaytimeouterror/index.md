@@ -6,7 +6,7 @@ title: GatewayTimeoutError
 
 # GatewayTimeoutError
 
-<SinceBadge version="1.0.0" />
+
 
 Timeout error.
 

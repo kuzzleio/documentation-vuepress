@@ -6,7 +6,7 @@ title: linsert
 
 # linsert
 
-<SinceBadge version="1.0.0" />
+
 
 Inserts a value in a list, either before or after a pivot value.
 

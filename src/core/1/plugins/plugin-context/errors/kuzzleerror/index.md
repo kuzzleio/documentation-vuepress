@@ -7,7 +7,7 @@ order: 10
 
 # KuzzleError
 
-<SinceBadge version="1.0.0" />
+
 
 Inherits from the standard Javascript `Error` object: abstract class inherited by all Kuzzle error objects.
 

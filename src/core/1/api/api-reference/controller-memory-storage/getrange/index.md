@@ -6,7 +6,7 @@ title: getrange
 
 # getrange
 
-<SinceBadge version="1.0.0" />
+
 
 Returns a substring of a key's value.
 

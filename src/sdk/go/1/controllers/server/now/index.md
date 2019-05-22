@@ -7,7 +7,7 @@ description: Returns the current server timestamp, in Epoch-millis
 
 # Now
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the current server timestamp, in Epoch-millis format.
 

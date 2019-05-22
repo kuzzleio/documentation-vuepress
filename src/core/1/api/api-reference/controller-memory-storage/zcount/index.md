@@ -6,7 +6,7 @@ title: zcount
 
 # zcount
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the number of elements held by a sorted set with a score within the provided `min` and `max` values.
 

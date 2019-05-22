@@ -6,7 +6,7 @@ title: pfmerge
 
 # pfmerge
 
-<SinceBadge version="1.0.0" />
+
 
 Merges multiple [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) data structures into an unique HyperLogLog structure stored at `_id`, approximating the cardinality of the union of the source structures.
 

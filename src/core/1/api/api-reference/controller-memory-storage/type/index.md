@@ -6,7 +6,7 @@ title: type
 
 # type
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the type of the value held by a key.
 

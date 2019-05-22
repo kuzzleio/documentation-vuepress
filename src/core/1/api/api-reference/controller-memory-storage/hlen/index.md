@@ -6,7 +6,7 @@ title: hlen
 
 # hlen
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the number of fields contained in a hash.
 

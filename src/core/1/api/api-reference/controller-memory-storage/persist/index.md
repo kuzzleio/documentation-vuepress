@@ -6,7 +6,7 @@ title: persist
 
 # persist
 
-<SinceBadge version="1.0.0" />
+
 
 Removes the expiration delay or timestamp from a key, making it persistent.
 

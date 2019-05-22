@@ -6,7 +6,7 @@ title: scan
 
 # scan
 
-<SinceBadge version="1.0.0" />
+
 
 Iterates incrementally over the set of keys in the database using a cursor.
 

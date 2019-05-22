@@ -6,7 +6,7 @@ title: hsetnx
 
 # hsetnx
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a field and its value in a hash, only if the field does not already exist.
 

@@ -6,7 +6,7 @@ title: keys
 
 # keys
 
-<SinceBadge version="1.0.0" />
+
 
 Returns all keys matching the provided pattern.
 

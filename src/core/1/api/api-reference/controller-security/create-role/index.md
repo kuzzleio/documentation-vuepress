@@ -6,7 +6,7 @@ title: createRole
 
 # createRole
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a new role.
 

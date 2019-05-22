@@ -6,7 +6,7 @@ title: Request
 
 # Request
 
-<SinceBadge version="1.0.0" />
+
 
 Object representation of a Kuzzle [API call](/core/1/api/essentials/query-syntax).
 
@@ -30,7 +30,7 @@ To customize the response content, read the [RequestResponse](https://github.com
 
 ## Constructor
 
-<SinceBadge version="1.0.0" /> / <DeprecatedBadge version="1.2.0" />
+ / <DeprecatedBadge version="1.2.0" />
 
 ```js
 new Request(request, data, [options]);
@@ -89,7 +89,7 @@ Writable:
 
 ## clearError
 
-<SinceBadge version="1.0.0" />
+
 
 Clears the error: sets the `error` property to `null`, and the request status to `200`.
 
@@ -97,7 +97,7 @@ Clears the error: sets the `error` property to `null`, and the request status to
 
 ## serialize
 
-<SinceBadge version="1.0.0" />
+
 
 Serializes the request into into a pair of objects that can be sent across the network, and then used to rebuild another equivalent `Request` object.
 
@@ -112,7 +112,7 @@ const bar = new context.constructors.Request(foo.data, foo.options);
 
 ## setError
 
-<SinceBadge version="1.0.0" />
+
 
 Adds an error to the request.
 
@@ -138,7 +138,7 @@ Otherwise, the provided error is embedded into a [InternalError](/core/1/plugins
 
 ## setResult
 
-<SinceBadge version="1.0.0" />
+
 
 Sets the request result.
 

@@ -6,7 +6,7 @@ title: room:new
 
 # room:new
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments | Type              | Description             |
 | --------- | ----------------- | ----------------------- |

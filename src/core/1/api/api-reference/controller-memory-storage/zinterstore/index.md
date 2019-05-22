@@ -6,7 +6,7 @@ title: zinterstore
 
 # zinterstore
 
-<SinceBadge version="1.0.0" />
+
 
 Computes the intersection of the provided sorted sets, and stores the result in a new sorted set.
 

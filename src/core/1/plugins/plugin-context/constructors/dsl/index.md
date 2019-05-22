@@ -6,7 +6,7 @@ title: Dsl
 
 # Dsl
 
-<SinceBadge version="1.0.0" /> <DeprecatedBadge version="1.6.0" />
+ <DeprecatedBadge version="1.6.0" />
 
 Instantiates a new [Koncorde](/core/1/koncorde) engine.
 

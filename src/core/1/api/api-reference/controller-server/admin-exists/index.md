@@ -6,7 +6,7 @@ title: adminExists
 
 # adminExists
 
-<SinceBadge version="1.0.0" />
+
 
 Checks that an administrator account exists.
 

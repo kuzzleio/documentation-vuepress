@@ -6,7 +6,7 @@ title: createOrReplaceRole
 
 # createOrReplaceRole
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a new role or, if the provided role identifier already exists, replaces it.
 

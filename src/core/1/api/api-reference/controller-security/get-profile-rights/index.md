@@ -6,7 +6,7 @@ title: getProfileRights
 
 # getProfileRights
 
-<SinceBadge version="1.0.0" />
+
 
 Gets the detailed rights configured by a security profile.
 

@@ -6,7 +6,7 @@ title: randomkey
 
 # randomkey
 
-<SinceBadge version="1.0.0" />
+
 
 Returns a key identifier from the memory storage, at random.
 

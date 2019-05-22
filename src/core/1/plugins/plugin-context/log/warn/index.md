@@ -7,7 +7,7 @@ order: 1
 
 # warn
 
-<SinceBadge version="1.0.0" />
+
 
 ## Priority
 

@@ -6,7 +6,7 @@ title: replace
 
 # replace
 
-<SinceBadge version="1.0.0" />
+
 
 Replaces the content of an existing document.
 

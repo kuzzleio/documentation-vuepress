@@ -6,7 +6,7 @@ title: updateRole
 
 # updateRole
 
-<SinceBadge version="1.0.0" />
+
 
 Updates a security role definition.
 

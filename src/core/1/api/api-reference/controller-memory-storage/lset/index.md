@@ -6,7 +6,7 @@ title: lset
 
 # lset
 
-<SinceBadge version="1.0.0" />
+
 
 Sets the list element at `index` with the provided value.
 

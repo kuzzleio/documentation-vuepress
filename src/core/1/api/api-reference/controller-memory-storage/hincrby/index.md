@@ -6,7 +6,7 @@ title: hincrby
 
 # hincrby
 
-<SinceBadge version="1.0.0" />
+
 
 Increments the number stored in a hash field by the provided integer value.
 

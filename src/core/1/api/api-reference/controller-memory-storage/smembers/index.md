@@ -6,7 +6,7 @@ title: smembers
 
 # smembers
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the members of a set of unique values.
 

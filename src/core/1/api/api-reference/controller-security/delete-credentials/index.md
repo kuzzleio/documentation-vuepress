@@ -6,7 +6,7 @@ title: deleteCredentials
 
 # deleteCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes user credentials for the specified authentication strategy.
 

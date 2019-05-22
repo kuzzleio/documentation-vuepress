@@ -7,7 +7,7 @@ description: Gets all stored internal statistic snapshots.
 
 # getAllStats
 
-<SinceBadge version="1.0.0" />
+
 
 Gets all stored internal statistic snapshots.
 By default, snapshots are made every 10 seconds and they are stored for 1 hour.

@@ -6,7 +6,7 @@ title: getset
 
 # getset
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a new value for a key, and returns its previously stored value.
 

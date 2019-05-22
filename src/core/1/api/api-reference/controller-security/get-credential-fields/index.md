@@ -6,7 +6,7 @@ title: getCredentialFields
 
 # getCredentialFields
 
-<SinceBadge version="1.0.0" />
+
 
 Retrieves the list of accepted field names by the specified authenticaiton strategy.
 

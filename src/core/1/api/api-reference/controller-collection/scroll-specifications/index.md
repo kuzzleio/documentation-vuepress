@@ -6,7 +6,7 @@ title: scrollSpecifications
 
 # scrollSpecifications
 
-<SinceBadge version="1.0.0" />
+
 
 Moves a result set cursor forward, created by the [`searchSpecifications` request](/core/1/api/api-reference/controller-collection/search-specifications/) when the `scroll` argument is provided.
 

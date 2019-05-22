@@ -6,7 +6,7 @@ title: logout
 
 # logout
 
-<SinceBadge version="1.0.0" />
+
 
 Revokes the provided authentication token.
 

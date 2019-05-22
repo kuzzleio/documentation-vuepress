@@ -6,7 +6,7 @@ title: sscan
 
 # sscan
 
-<SinceBadge version="1.0.0" />
+
 
 Iterates incrementally over members contained in a set of unique values, using a cursor.
 

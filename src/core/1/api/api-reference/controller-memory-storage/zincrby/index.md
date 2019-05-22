@@ -6,7 +6,7 @@ title: zincrby
 
 # zincrby
 
-<SinceBadge version="1.0.0" />
+
 
 Increments the score of a sorted set member by the provided value.
 

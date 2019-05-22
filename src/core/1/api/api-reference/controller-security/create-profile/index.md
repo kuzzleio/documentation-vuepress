@@ -6,7 +6,7 @@ title: createProfile
 
 # createProfile
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a new profile.
 

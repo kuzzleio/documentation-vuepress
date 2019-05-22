@@ -6,7 +6,7 @@ title: credentialsExist
 
 # credentialsExist
 
-<SinceBadge version="1.0.0" />
+
 
 Checks that the current authenticated user has credentials for the specified authentication strategy.
 

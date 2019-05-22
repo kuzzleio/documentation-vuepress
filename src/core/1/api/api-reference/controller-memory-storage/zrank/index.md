@@ -6,7 +6,7 @@ title: zrank
 
 # zrank
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the position of an element in a sorted set, with scores sorted in ascending order. The index returned is 0-based (the lowest score member has an index of 0).
 

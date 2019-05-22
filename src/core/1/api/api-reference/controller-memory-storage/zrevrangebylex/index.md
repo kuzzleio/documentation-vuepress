@@ -6,7 +6,7 @@ title: zrevrangebylex
 
 # zrevrangebylex
 
-<SinceBadge version="1.0.0" />
+
 
 Identical to [zrangebylex](/core/1/api/api-reference/controller-memory-storage/zrangebylex/) except that the sorted set is traversed in descending order.
 

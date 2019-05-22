@@ -28,7 +28,7 @@ All Kuzzle requests can return one of the following errors:
 
 ### BadRequestError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 400
 
@@ -38,7 +38,7 @@ A `BadRequestError` error is thrown if Kuzzle was unable to process the action d
 
 ### ExternalServiceError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 500
 
@@ -48,7 +48,7 @@ An `ExternalServiceError` error is thrown if Kuzzle was unable to process the ac
 
 ### ForbiddenError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 403
 
@@ -58,7 +58,7 @@ A `ForbiddenError` error is thrown if the current authenticated user is not auth
 
 ### GatewayTimeoutError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 504
 
@@ -72,7 +72,7 @@ The Client Application will have to determine if the process was completed.
 
 ### InternalError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 500
 
@@ -82,7 +82,7 @@ An `InternalError` error is thrown if Kuzzle encountered an unexpected error.
 
 ### PluginImplementationError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 500
 
@@ -92,7 +92,7 @@ A `PluginImplementationError` error is a generic error thrown by Kuzzle on a [pl
 
 ### ServiceUnavailableError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 503
 
@@ -107,7 +107,7 @@ Check controllers documentation.
 
 ### NotFoundError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 404
 
@@ -117,7 +117,7 @@ A `NotFoundError` error is thrown if the requested resource could not be found (
 
 ### PartialError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 206
 
@@ -138,7 +138,7 @@ The detail of each failure can be retrieved in the `errors` property of the erro
 
 ### PreconditionError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 412
 
@@ -150,7 +150,7 @@ For instance, this error can be generated when trying to create a document on a 
 
 ### SizeLimitError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 413
 
@@ -160,7 +160,7 @@ A `SizeLimitError` error is thrown by Kuzzle if the request size exceeds the lim
 
 ### UnauthorizedError
 
-<SinceBadge version="1.0.0" />
+
 
 **status**: 401
 

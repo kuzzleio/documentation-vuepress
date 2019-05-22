@@ -6,7 +6,7 @@ title: zlexcount
 
 # zlexcount
 
-<SinceBadge version="1.0.0" />
+
 
 Counts elements in a sorted set where all members have equal score, using lexicographical ordering.
 

@@ -6,7 +6,7 @@ title: lpushx
 
 # lpushx
 
-<SinceBadge version="1.0.0" />
+
 
 Prepends the specified value to a list, only if the key already exists and if it holds a list.
 

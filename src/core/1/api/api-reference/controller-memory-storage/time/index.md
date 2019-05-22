@@ -6,7 +6,7 @@ title: time
 
 # time
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the current server time.
 

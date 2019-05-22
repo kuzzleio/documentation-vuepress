@@ -6,7 +6,7 @@ title: hgetall
 
 # hgetall
 
-<SinceBadge version="1.0.0" />
+
 
 Returns all fields and values of a hash.
 

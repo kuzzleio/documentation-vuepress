@@ -6,7 +6,7 @@ title: hstrlen
 
 # hstrlen
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the string length of a field's value in a hash.
 

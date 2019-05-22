@@ -7,7 +7,7 @@ description: Returns information about Kuzzle server.
 
 # AdminExists
 
-<SinceBadge version="1.0.0" />
+
 
 Checks that an administrator account exists.
 

@@ -7,7 +7,7 @@ description: Search for specifications
 
 # searchSpecifications
 
-<SinceBadge version="1.0.0" />
+
 
 Searches collection specifications.
 

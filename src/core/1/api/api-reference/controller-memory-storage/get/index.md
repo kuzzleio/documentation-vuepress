@@ -6,7 +6,7 @@ title: get
 
 # get
 
-<SinceBadge version="1.0.0" />
+
 
 Gets the value of a key.
 

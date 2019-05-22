@@ -6,7 +6,7 @@ title: georadius
 
 # georadius
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the members (added with [geoadd](/core/1/api/api-reference/controller-memory-storage/geoadd/)) of a given key inside the provided geospatial radius.
 

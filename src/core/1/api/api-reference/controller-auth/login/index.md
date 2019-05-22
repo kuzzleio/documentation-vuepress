@@ -6,7 +6,7 @@ title: login
 
 # login
 
-<SinceBadge version="1.0.0" />
+
 
 Authenticates a user.
 

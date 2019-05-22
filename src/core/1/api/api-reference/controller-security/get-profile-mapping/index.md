@@ -6,7 +6,7 @@ title: getProfileMapping
 
 # getProfileMapping
 
-<SinceBadge version="1.0.0" />
+
 
 Gets the mapping of the internal security profiles collection.
 

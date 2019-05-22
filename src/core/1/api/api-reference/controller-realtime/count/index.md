@@ -6,7 +6,7 @@ title: count
 
 # count
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the number of other connections sharing the same subscription.
 

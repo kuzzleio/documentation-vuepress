@@ -6,7 +6,7 @@ title: hmget
 
 # hmget
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the values of the specified hash's fields.
 

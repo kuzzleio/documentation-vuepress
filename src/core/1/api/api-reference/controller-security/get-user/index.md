@@ -6,7 +6,7 @@ title: getUser
 
 # getUser
 
-<SinceBadge version="1.0.0" />
+
 
 Gets a user.
 

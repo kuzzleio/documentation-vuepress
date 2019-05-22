@@ -6,7 +6,7 @@ title: renamenx
 
 # renamenx
 
-<SinceBadge version="1.0.0" />
+
 
 Renames a key, only if the new name is not already used.
 

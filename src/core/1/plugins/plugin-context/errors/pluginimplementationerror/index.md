@@ -6,7 +6,7 @@ title: PluginImplementationError
 
 # PluginImplementationError
 
-<SinceBadge version="1.0.0" />
+
 
 Unexpected plugin failure.
 

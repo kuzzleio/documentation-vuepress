@@ -6,7 +6,7 @@ title: deleteByQuery
 
 # deleteByQuery
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes documents matching the provided search query.
 

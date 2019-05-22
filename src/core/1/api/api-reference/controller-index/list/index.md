@@ -6,7 +6,7 @@ title: list
 
 # list
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the complete list of data indexes.
 

@@ -6,7 +6,7 @@ title: hmset
 
 # hmset
 
-<SinceBadge version="1.0.0" />
+
 
 Sets multiple fields at once in a hash.
 

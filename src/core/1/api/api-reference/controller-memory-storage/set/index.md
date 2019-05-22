@@ -6,7 +6,7 @@ title: set
 
 # set
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a key holding the provided value, or overwrites it if it already exists.
 

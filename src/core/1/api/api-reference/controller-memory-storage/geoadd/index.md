@@ -6,7 +6,7 @@ title: geoadd
 
 # geoadd
 
-<SinceBadge version="1.0.0" />
+
 
 Adds geospatial points to the specified key.
 

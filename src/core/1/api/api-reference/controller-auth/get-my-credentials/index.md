@@ -6,7 +6,7 @@ title: getMyCredentials
 
 # getMyCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Returns credential information for the currently logged in user.
 

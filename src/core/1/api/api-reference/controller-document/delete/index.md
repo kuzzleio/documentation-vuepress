@@ -6,7 +6,7 @@ title: delete
 
 # delete
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes a document.
 

@@ -6,7 +6,7 @@ title: validateCredentials
 
 # validateCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Checks if the provided credentials are well-formed. Does not actually save credentials.
 

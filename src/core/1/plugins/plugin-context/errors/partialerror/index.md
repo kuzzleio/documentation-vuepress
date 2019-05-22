@@ -6,7 +6,7 @@ title: PartialError
 
 # PartialError
 
-<SinceBadge version="1.0.0" />
+
 
 Partial request success.
 

@@ -6,7 +6,7 @@ title: refresh
 
 # refresh
 
-<SinceBadge version="1.0.0" />
+
 
 Forces an immediate [reindexation](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/docs-refresh.html) of the provided index.
 

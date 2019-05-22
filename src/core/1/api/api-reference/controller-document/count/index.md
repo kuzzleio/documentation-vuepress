@@ -6,7 +6,7 @@ title: count
 
 # count
 
-<SinceBadge version="1.0.0" />
+
 
 Counts documents in a data collection.
 

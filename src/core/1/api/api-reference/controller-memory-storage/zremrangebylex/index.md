@@ -6,7 +6,7 @@ title: zremrangebylex
 
 # zremrangebylex
 
-<SinceBadge version="1.0.0" />
+
 
 Removes members within a provided range, from a sorted set where all elements have the same score, using lexicographical ordering.
 

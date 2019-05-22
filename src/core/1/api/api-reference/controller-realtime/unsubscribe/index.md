@@ -6,7 +6,7 @@ title: unsubscribe
 
 # unsubscribe
 
-<SinceBadge version="1.0.0" />
+
 
 Removes a subscription.
 

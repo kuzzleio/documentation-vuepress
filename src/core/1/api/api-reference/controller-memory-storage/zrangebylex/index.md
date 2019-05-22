@@ -6,7 +6,7 @@ title: zrangebylex
 
 # zrangebylex
 
-<SinceBadge version="1.0.0" />
+
 
 Returns elements within a provided interval, in a sorted set where all members have equal score, using lexicographical ordering.
 

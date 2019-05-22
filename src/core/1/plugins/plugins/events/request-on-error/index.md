@@ -6,7 +6,7 @@ title: request:onError
 
 # request:onError
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments | Type                                                           | Description                |
 | --------- | -------------------------------------------------------------- | -------------------------- |

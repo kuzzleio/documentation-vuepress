@@ -6,7 +6,7 @@ title: BaseValidationType
 
 # BaseValidationType
 
-<SinceBadge version="1.0.0" />
+
 
 Abstract class, used to create custom validation types (see the [validation](/core/1/plugins/accessors/validation) accessor).
 

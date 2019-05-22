@@ -6,7 +6,7 @@ title: pexpireat
 
 # pexpireat
 
-<SinceBadge version="1.0.0" />
+
 
 Sets an expiration timestamp on a key. After the timestamp has been reached, the key will automatically be deleted.
 

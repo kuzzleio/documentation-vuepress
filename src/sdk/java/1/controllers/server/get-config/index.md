@@ -7,7 +7,7 @@ description: Returns the current Kuzzle configuration.
 
 # getConfig
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the current Kuzzle configuration.
 

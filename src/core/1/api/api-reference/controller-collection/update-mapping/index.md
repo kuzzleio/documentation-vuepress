@@ -6,7 +6,7 @@ title: updateMapping
 
 # updateMapping
 
-<SinceBadge version="1.0.0" />
+
 
 Updates a data collection mapping.
 

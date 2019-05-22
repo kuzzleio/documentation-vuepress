@@ -6,7 +6,7 @@ title: rpushx
 
 # rpushx
 
-<SinceBadge version="1.0.0" />
+
 
 Appends a value at the end of a list, only if the destination key already exists, and if it holds a list.
 

@@ -6,7 +6,7 @@ title: createOrReplace
 
 # createOrReplace
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a new document in the persistent data storage, or replaces its content if it already exists.
 

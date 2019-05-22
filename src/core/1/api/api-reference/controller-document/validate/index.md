@@ -6,7 +6,7 @@ title: validate
 
 # validate
 
-<SinceBadge version="1.0.0" />
+
 
 Validates data against existing validation rules.
 

@@ -6,7 +6,7 @@ title: sinter
 
 # sinter
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the intersection of the provided sets of unique values.
 

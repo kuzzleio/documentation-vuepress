@@ -6,7 +6,7 @@ title: updateSelf
 
 # updateSelf
 
-<SinceBadge version="1.0.0" />
+
 
 Updates the currently logged in user information.
 

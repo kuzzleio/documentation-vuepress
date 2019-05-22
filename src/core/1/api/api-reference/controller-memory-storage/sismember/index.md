@@ -6,7 +6,7 @@ title: sismember
 
 # sismember
 
-<SinceBadge version="1.0.0" />
+
 
 Checks if a value is a member of a set of unique values.
 

@@ -7,7 +7,7 @@ order: 200
 
 # Plugin Events
 
-<SinceBadge version="1.0.0" />
+
 
 Plugins can [add new controllers](/core/1/plugins/essentials/controllers) to the Kuzzle API.
 

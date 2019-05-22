@@ -6,7 +6,7 @@ title: hset
 
 # hset
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a field and its value in a hash.
 

@@ -6,7 +6,7 @@ title: strlen
 
 # strlen
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the length of a value.
 

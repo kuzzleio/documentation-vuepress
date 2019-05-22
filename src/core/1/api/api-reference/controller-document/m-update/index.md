@@ -6,7 +6,7 @@ title: mUpdate
 
 # mUpdate
 
-<SinceBadge version="1.0.0" />
+
 
 Updates multiple documents.
 

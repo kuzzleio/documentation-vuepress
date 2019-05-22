@@ -7,7 +7,7 @@ order: 100
 
 # API Events
 
-<SinceBadge version="1.0.0" />
+
 
 All API actions, without exception, trigger two of these three events:
 

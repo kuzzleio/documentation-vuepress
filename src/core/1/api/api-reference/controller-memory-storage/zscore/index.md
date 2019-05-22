@@ -6,7 +6,7 @@ title: zscore
 
 # zscore
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the score of an element in a sorted set.
 

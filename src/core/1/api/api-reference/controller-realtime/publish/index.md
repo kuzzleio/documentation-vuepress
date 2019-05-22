@@ -6,7 +6,7 @@ title: publish
 
 # publish
 
-<SinceBadge version="1.0.0" />
+
 
 Sends a real-time message to Kuzzle. The message will be dispatched to all clients with subscriptions matching the index, the collection and the message content.
 

@@ -6,7 +6,7 @@ title: UnauthorizedError
 
 # UnauthorizedError
 
-<SinceBadge version="1.0.0" />
+
 
 Authentication failed.
 

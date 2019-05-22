@@ -6,7 +6,7 @@ title: expire
 
 # expire
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a timeout (in seconds) on a key. After the timeout has expired, the key is automatically deleted.
 

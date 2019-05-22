@@ -6,7 +6,7 @@ title: zremrangebyrank
 
 # zremrangebyrank
 
-<SinceBadge version="1.0.0" />
+
 
 Removes members from a sorted set, with their position in the set within a provided index range.
 

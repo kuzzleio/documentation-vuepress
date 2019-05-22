@@ -6,7 +6,7 @@ title: hscan
 
 # hscan
 
-<SinceBadge version="1.0.0" />
+
 
 Iterates incrementally over fields contained in a hash, using a cursor.
 

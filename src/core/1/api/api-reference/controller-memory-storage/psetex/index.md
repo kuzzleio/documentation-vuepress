@@ -6,7 +6,7 @@ title: psetex
 
 # psetex
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a key with the provided value, and an expiration delay expressed in milliseconds. If the key does not exist, it is created beforehand.
 

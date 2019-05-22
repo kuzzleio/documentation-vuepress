@@ -6,7 +6,7 @@ title: core:overload
 
 # core:overload
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments | Type              | Description                    |
 | --------- | ----------------- | ------------------------------ |

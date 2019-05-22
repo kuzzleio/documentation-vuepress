@@ -6,7 +6,7 @@ title: rpoplpush
 
 # rpoplpush
 
-<SinceBadge version="1.0.0" />
+
 
 Removes the last element of a list, and pushes it back at the start of another list.
 

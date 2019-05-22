@@ -6,7 +6,7 @@ title: lpush
 
 # lpush
 
-<SinceBadge version="1.0.0" />
+
 
 Prepends the specified values to a list.
 

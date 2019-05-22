@@ -6,7 +6,7 @@ title: exists
 
 # exists
 
-<SinceBadge version="1.0.0" />
+
 
 Checks whether a collection exists.
 

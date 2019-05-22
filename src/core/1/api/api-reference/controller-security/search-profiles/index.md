@@ -6,7 +6,7 @@ title: searchProfiles
 
 # searchProfiles
 
-<SinceBadge version="1.0.0" />
+
 
 Searches security profiles, optionally returning only those linked to the provided list of security roles.
 

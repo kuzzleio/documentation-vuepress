@@ -6,7 +6,7 @@ title: request:onAuthorized
 
 # request:onAuthorized
 
-<SinceBadge version="1.0.0" />
+
 
 | Arguments | Type                                                           | Description                |
 | --------- | -------------------------------------------------------------- | -------------------------- |

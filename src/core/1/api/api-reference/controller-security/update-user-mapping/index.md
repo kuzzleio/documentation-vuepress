@@ -6,7 +6,7 @@ title: updateUserMapping
 
 # updateUserMapping
 
-<SinceBadge version="1.0.0" />
+
 
 Updates the internal user storage mapping.
 

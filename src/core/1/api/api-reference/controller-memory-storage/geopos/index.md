@@ -6,7 +6,7 @@ title: geopos
 
 # geopos
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the position (`[longitude, latitude]`) of the provided key's members (see [geoadd](/core/1/api/api-reference/controller-memory-storage/geoadd/)).
 

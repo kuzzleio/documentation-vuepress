@@ -6,7 +6,7 @@ title: deleteRole
 
 # deleteRole
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes a security role.
 

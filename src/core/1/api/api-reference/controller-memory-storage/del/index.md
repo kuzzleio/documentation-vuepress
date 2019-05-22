@@ -6,7 +6,7 @@ title: del
 
 # del
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes a list of keys.
 

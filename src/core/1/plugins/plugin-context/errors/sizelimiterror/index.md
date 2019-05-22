@@ -6,7 +6,7 @@ title: SizeLimitError
 
 # SizeLimitError
 
-<SinceBadge version="1.0.0" />
+
 
 Request exceeds the maximum limits.
 

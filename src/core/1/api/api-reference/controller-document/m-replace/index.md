@@ -6,7 +6,7 @@ title: mReplace
 
 # mReplace
 
-<SinceBadge version="1.0.0" />
+
 
 Replaces multiple documents.
 

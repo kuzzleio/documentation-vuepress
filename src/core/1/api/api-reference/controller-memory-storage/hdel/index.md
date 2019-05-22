@@ -6,7 +6,7 @@ title: hdel
 
 # hdel
 
-<SinceBadge version="1.0.0" />
+
 
 Removes fields from a hash.
 

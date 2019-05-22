@@ -6,7 +6,7 @@ title: searchUsers
 
 # searchUsers
 
-<SinceBadge version="1.0.0" />
+
 
 Searches users.
 

@@ -6,7 +6,7 @@ title: updateMyCredentials
 
 # updateMyCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Updates the credentials of the currently logged in user.
 

@@ -6,7 +6,7 @@ title: list
 
 # list
 
-<SinceBadge version="1.0.0" />
+
 
 Lists subscriptions on all indexes and all collections.
 

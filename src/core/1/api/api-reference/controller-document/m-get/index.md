@@ -6,7 +6,7 @@ title: mGet
 
 # mGet
 
-<SinceBadge version="1.0.0" />
+
 
 Gets multiple documents.
 

@@ -6,7 +6,7 @@ title: hincrbyfloat
 
 # hincrbyfloat
 
-<SinceBadge version="1.0.0" />
+
 
 Increments the number stored in a hash field by the provided float value.
 

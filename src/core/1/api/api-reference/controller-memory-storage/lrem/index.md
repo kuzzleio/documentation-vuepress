@@ -6,7 +6,7 @@ title: lrem
 
 # lrem
 
-<SinceBadge version="1.0.0" />
+
 
 Removes the first occurences of an element from a list.
 

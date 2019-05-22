@@ -6,7 +6,7 @@ title: sunion
 
 # sunion
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the union of sets of unique values.
 

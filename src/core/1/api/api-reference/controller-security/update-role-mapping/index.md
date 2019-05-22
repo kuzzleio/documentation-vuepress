@@ -6,7 +6,7 @@ title: updateRoleMapping
 
 # updateRoleMapping
 
-<SinceBadge version="1.0.0" />
+
 
 Updates the internal role storage mapping.
 

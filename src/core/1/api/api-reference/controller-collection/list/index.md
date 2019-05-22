@@ -6,7 +6,7 @@ title: list
 
 # list
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the list of data collections associated to a provided data index.
 

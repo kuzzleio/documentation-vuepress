@@ -6,7 +6,7 @@ title: getStats
 
 # getStats
 
-<SinceBadge version="1.0.0" />
+
 
 Returns statistics snapshots within a provided timestamp range.
 

@@ -6,7 +6,7 @@ title: hvals
 
 # hvals
 
-<SinceBadge version="1.0.0" />
+
 
 Returns all values contained in a hash.
 

@@ -6,7 +6,7 @@ title: mDeleteProfiles
 
 # mDeleteProfiles
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes multiple security profiles.
 

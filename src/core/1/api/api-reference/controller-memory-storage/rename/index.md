@@ -6,7 +6,7 @@ title: rename
 
 # rename
 
-<SinceBadge version="1.0.0" />
+
 
 Renames a key.
 

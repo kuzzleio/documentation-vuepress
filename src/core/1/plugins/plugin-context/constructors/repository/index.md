@@ -6,7 +6,7 @@ title: Repository
 
 # Repository
 
-<SinceBadge version="1.0.0" />
+
 
 Provides access to a collection inside the plugin's dedicated and secure storage.
 
@@ -31,7 +31,7 @@ new context.Repository(collection, [ObjectConstructor]);
 
 ## create
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a document.
 
@@ -96,7 +96,7 @@ try {
 
 ## createOrReplace
 
-<SinceBadge version="1.0.0" />
+
 
 Creates or replaces a document.
 
@@ -161,7 +161,7 @@ try {
 
 ## delete
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes a document.
 
@@ -216,7 +216,7 @@ try {
 
 ## get
 
-<SinceBadge version="1.0.0" />
+
 
 Gets a document.
 
@@ -242,7 +242,7 @@ If an `ObjectConstructor` argument was provided to the repository constructor, t
 
 ## mGet
 
-<SinceBadge version="1.0.0" />
+
 
 Gets multiple documents.
 
@@ -268,7 +268,7 @@ If an `ObjectConstructor` argument was provided to the repository constructor, t
 
 ## replace
 
-<SinceBadge version="1.0.0" />
+
 
 Replaces the content of a document.
 
@@ -332,7 +332,7 @@ try {
 
 ## search
 
-<SinceBadge version="1.0.0" />
+
 
 Searches documents.
 
@@ -402,7 +402,7 @@ The `scroll` function returns a promise resolving to a search result object, wit
 
 ## update
 
-<SinceBadge version="1.0.0" />
+
 
 Updates parts of a document's content.
 

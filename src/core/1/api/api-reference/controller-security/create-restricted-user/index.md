@@ -6,7 +6,7 @@ title: createRestrictedUser
 
 # createRestrictedUser
 
-<SinceBadge version="1.0.0" />
+
 
 Creates a new user in Kuzzle, with a preset list of security profiles.
 

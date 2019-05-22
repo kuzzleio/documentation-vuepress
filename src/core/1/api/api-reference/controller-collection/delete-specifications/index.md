@@ -6,7 +6,7 @@ title: deleteSpecifications
 
 # deleteSpecifications
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes validation specifications for a data collection.
 

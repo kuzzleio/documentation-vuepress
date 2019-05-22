@@ -6,7 +6,7 @@ title: BadRequestError
 
 # BadRequestError
 
-<SinceBadge version="1.0.0" />
+
 
 Invalid request syntax.
 

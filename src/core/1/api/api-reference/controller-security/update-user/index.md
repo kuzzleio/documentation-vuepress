@@ -6,7 +6,7 @@ title: updateUser
 
 # updateUser
 
-<SinceBadge version="1.0.0" />
+
 
 Updates a user definition.
 

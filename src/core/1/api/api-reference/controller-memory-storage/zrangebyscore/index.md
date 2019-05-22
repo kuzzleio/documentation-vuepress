@@ -6,7 +6,7 @@ title: zrangebyscore
 
 # zrangebyscore
 
-<SinceBadge version="1.0.0" />
+
 
 Returns all sorted set elements with a score within a provided range.
 

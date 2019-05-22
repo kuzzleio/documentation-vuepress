@@ -7,7 +7,7 @@ order: 2
 
 # info
 
-<SinceBadge version="1.0.0" />
+
 
 ## Priority
 

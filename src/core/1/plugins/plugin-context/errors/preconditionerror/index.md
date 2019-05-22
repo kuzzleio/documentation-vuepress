@@ -6,7 +6,7 @@ title: PreconditionError
 
 # PreconditionError
 
-<SinceBadge version="1.0.0" />
+
 
 Unmet request prerequisites.
 

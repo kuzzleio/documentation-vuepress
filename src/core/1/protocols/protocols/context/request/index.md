@@ -6,7 +6,7 @@ title: Request
 
 # Request
 
-<SinceBadge version="1.0.0" />
+
 
 Object representation of a Kuzzle [API call](/core/1/api/essentials/query-syntax), to be used with the [entryPoint.execute](/core/1/protocols/entrypoint/execute) function.
 
@@ -76,7 +76,7 @@ Writable:
 
 ## clearError
 
-<SinceBadge version="1.0.0" />
+
 
 Clears the error: sets the `error` property to `null`, and the request status to `200`.
 
@@ -84,7 +84,7 @@ Clears the error: sets the `error` property to `null`, and the request status to
 
 ## serialize
 
-<SinceBadge version="1.0.0" />
+
 
 Serializes the request into into a pair of objects that can be sent across the network.
 
@@ -99,7 +99,7 @@ const bar = new context.Request(foo.data, foo.options);
 
 ## setError
 
-<SinceBadge version="1.0.0" />
+
 
 Adds an error to the request.
 
@@ -125,7 +125,7 @@ Otherwise, the provided error is embedded into a [InternalError](/core/1/protoco
 
 ## setResult
 
-<SinceBadge version="1.0.0" />
+
 
 Sets the request result.
 

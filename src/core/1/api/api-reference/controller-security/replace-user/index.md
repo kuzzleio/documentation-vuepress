@@ -6,7 +6,7 @@ title: replaceUser
 
 # replaceUser
 
-<SinceBadge version="1.0.0" />
+
 
 Replaces a user with new configuration.
 

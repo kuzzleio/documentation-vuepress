@@ -6,7 +6,7 @@ title: flushdb
 
 # flushdb
 
-<SinceBadge version="1.0.0" />
+
 
 Empties the database dedicated to client applications (the reserved space for Kuzzle is unaffected).
 

@@ -6,7 +6,7 @@ title: zrevrangebyscore
 
 # zrevrangebyscore
 
-<SinceBadge version="1.0.0" />
+
 
 Identical to [zrangebyscore](/core/1/api/api-reference/controller-memory-storage/zrangebyscore/), except that the sorted set is traversed in descending order.
 

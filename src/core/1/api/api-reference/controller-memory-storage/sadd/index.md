@@ -6,7 +6,7 @@ title: sadd
 
 # sadd
 
-<SinceBadge version="1.0.0" />
+
 
 Adds members to a set of unique values stored at `key`.
 

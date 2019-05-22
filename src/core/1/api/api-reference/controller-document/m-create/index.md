@@ -6,7 +6,7 @@ title: mCreate
 
 # mCreate
 
-<SinceBadge version="1.0.0" />
+
 
 Creates multiple documents.
 

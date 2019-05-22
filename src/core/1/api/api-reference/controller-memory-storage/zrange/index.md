@@ -6,7 +6,7 @@ title: zrange
 
 # zrange
 
-<SinceBadge version="1.0.0" />
+
 
 Returns elements depending on their position in the sorted set.
 

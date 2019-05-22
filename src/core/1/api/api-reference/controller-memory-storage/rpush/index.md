@@ -6,7 +6,7 @@ title: rpush
 
 # rpush
 
-<SinceBadge version="1.0.0" />
+
 
 Appends values at the end of a list.
 

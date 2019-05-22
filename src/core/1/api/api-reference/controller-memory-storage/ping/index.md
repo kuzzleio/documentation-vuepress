@@ -6,7 +6,7 @@ title: ping
 
 # ping
 
-<SinceBadge version="1.0.0" />
+
 
 Pings the memory storage database.
 

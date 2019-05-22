@@ -6,7 +6,7 @@ title: pexpire
 
 # pexpire
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a timeout (in milliseconds) on a key. After the timeout has expired, the key will automatically be deleted.
 

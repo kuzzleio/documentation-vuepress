@@ -6,7 +6,7 @@ title: scroll
 
 # scroll
 
-<SinceBadge version="1.0.0" />
+
 
 Moves a search cursor forward.
 

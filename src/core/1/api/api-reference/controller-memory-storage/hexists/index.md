@@ -6,7 +6,7 @@ title: hexists
 
 # hexists
 
-<SinceBadge version="1.0.0" />
+
 
 Checks if a field exists in a hash.
 

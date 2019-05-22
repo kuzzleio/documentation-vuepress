@@ -6,7 +6,7 @@ title: ttl
 
 # ttl
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the remaining time to live of a key, in seconds.
 

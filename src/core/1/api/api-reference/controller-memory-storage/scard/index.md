@@ -6,7 +6,7 @@ title: scard
 
 # scard
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the number of members stored in a set of unique values.
 

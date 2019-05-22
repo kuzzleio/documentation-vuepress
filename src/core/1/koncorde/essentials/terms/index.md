@@ -15,7 +15,7 @@ with other terms in the same filter using the [operands](/core/1/koncorde/essent
 
 ## equals
 
-<SinceBadge version="1.0.0" />
+
 
 Matches attributes using strict equality.  
 The tested attribute must be a scalar (number, string or boolean), and of the same type than the provided filter value.
@@ -55,7 +55,7 @@ The following filter validates the first document:
 
 ## exists
 
-<SinceBadge version="1.0.0" />
+
 
 Test for the existence of a key in an object, or of a scalar in an array.
 
@@ -111,7 +111,7 @@ And this filter validates the second document:
 
 ## geoBoundingBox
 
-<SinceBadge version="1.0.0" />
+
 
 Filter documents containing a geographical point confined within a bounding box:
 
@@ -210,7 +210,7 @@ The following filter will match the second document only:
 
 ## geoDistanceRange
 
-<SinceBadge version="1.0.0" />
+
 
 Filter documents containing a geographical point, whose position is within a distance range from a given point of origin:
 
@@ -271,7 +271,7 @@ The following filter will match the second document only:
 
 ## geoDistance
 
-<SinceBadge version="1.0.0" />
+
 
 Filter documents containing a geographical point, whose position is within a distance radius centered around a provided point of origin:
 
@@ -332,7 +332,7 @@ The following filter will match the second document only:
 
 ## geoPolygon
 
-<SinceBadge version="1.0.0" />
+
 
 Filter documents containing a geographical point, confined within a polygon that has an arbitrary number of sides:
 
@@ -397,7 +397,7 @@ The following filter will match the second document only:
 
 ## ids
 
-<SinceBadge version="1.0.0" />
+
 
 This filter returns only documents having their unique document ID listed in the provided list.
 
@@ -439,7 +439,7 @@ The following filter validates first document:
 
 ## missing
 
-<SinceBadge version="1.0.0" />
+
 
 A filter matching documents either with a missing field in an object, or with a missing value in an array.
 
@@ -500,7 +500,7 @@ And this filter validates the first document:
 
 ## range
 
-<SinceBadge version="1.0.0" />
+
 
 Filters documents with number attributes within a provided interval.
 
@@ -568,7 +568,7 @@ The following filter validates the last two documents:
 
 ## regexp
 
-<SinceBadge version="1.0.0" />
+
 
 The `regexp` filter matches attributes using [PCREs](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions).
 

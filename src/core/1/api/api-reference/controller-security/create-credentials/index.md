@@ -6,7 +6,7 @@ title: createCredentials
 
 # createCredentials
 
-<SinceBadge version="1.0.0" />
+
 
 Creates authentication credentials for a user.
 

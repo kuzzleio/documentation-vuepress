@@ -6,7 +6,7 @@ title: object
 
 # object
 
-<SinceBadge version="1.0.0" />
+
 
 Inspects the low-level properties of a key.
 

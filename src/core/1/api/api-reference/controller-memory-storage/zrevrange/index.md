@@ -6,7 +6,7 @@ title: zrevrange
 
 # zrevrange
 
-<SinceBadge version="1.0.0" />
+
 
 Identical to [zrange](/core/1/api/api-reference/controller-memory-storage/zrange/), except that the sorted set is traversed in descending order.
 

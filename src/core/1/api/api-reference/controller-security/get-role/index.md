@@ -6,7 +6,7 @@ title: getRole
 
 # getRole
 
-<SinceBadge version="1.0.0" />
+
 
 Gets a security role.
 

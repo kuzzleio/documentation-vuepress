@@ -6,7 +6,7 @@ title: smove
 
 # smove
 
-<SinceBadge version="1.0.0" />
+
 
 Moves a member from a set of unique values to another.
 

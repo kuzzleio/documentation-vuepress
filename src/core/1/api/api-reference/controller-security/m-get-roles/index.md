@@ -6,7 +6,7 @@ title: mGetRoles
 
 # mGetRoles
 
-<SinceBadge version="1.0.0" />
+
 
 Gets multiple security roles.
 

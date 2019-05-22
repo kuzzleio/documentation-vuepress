@@ -6,7 +6,7 @@ title: rpop
 
 # rpop
 
-<SinceBadge version="1.0.0" />
+
 
 Removes the last element of a list and returns it.
 

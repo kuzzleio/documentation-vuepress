@@ -6,7 +6,7 @@ title: import
 
 # import
 
-<SinceBadge version="1.0.0" />
+
 
 Creates, updates or deletes large amounts of documents as fast as possible.
 

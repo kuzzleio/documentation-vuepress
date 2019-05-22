@@ -6,7 +6,7 @@ title: msetnx
 
 # msetnx
 
-<SinceBadge version="1.0.0" />
+
 
 Sets the provided keys to their respective values, only if they do not exist. If a key exists, then the whole operation is aborted and no key is set.
 

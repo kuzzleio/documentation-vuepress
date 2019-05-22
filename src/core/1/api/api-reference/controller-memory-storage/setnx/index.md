@@ -6,7 +6,7 @@ title: setnx
 
 # setnx
 
-<SinceBadge version="1.0.0" />
+
 
 Sets a value on a key, only if it does not already exist.
 

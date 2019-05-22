@@ -6,7 +6,7 @@ title: bitop
 
 # bitop
 
-<SinceBadge version="1.0.0" />
+
 
 Performs a bitwise operation between multiple keys (containing string values) and stores the result in the destination key.
 

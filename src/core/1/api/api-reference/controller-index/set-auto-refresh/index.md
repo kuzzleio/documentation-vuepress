@@ -6,7 +6,7 @@ title: setAutoRefresh
 
 # setAutoRefresh
 
-<SinceBadge version="1.0.0" />
+
 
 Changes the `autoRefresh` configuration of an index.
 

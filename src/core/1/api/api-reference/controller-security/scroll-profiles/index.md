@@ -6,7 +6,7 @@ title: scrollProfiles
 
 # scrollProfiles
 
-<SinceBadge version="1.0.0" />
+
 
 Moves a result set cursor forward, created by a [searchProfiles](/core/1/api/api-reference/controller-security/search-profiles/) query with the `scroll` argument provided.
 

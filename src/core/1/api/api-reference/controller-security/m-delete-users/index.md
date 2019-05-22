@@ -6,7 +6,7 @@ title: mDeleteUsers
 
 # mDeleteUsers
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes multiple users.
 

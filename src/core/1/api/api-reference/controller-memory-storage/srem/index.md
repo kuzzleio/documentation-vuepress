@@ -6,7 +6,7 @@ title: srem
 
 # srem
 
-<SinceBadge version="1.0.0" />
+
 
 Removes members from a set of unique values.
 

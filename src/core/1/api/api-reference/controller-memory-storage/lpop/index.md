@@ -6,7 +6,7 @@ title: lpop
 
 # lpop
 
-<SinceBadge version="1.0.0" />
+
 
 Removes and returns the first element of a list.
 

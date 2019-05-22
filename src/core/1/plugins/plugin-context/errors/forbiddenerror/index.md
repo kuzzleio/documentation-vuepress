@@ -6,7 +6,7 @@ title: ForbiddenError
 
 # ForbiddenError
 
-<SinceBadge version="1.0.0" />
+
 
 Unauthorized access to a resource.
 

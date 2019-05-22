@@ -6,7 +6,7 @@ title: srandmember
 
 # srandmember
 
-<SinceBadge version="1.0.0" />
+
 
 Returns one or more members of a set of unique values, at random.
 

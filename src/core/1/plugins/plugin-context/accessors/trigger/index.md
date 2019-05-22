@@ -6,7 +6,7 @@ title: trigger
 
 # trigger
 
-<SinceBadge version="1.0.0" />
+
 
 Triggers a custom event.
 

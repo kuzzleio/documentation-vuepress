@@ -6,7 +6,7 @@ title: hget
 
 # hget
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the field's value of a hash.
 

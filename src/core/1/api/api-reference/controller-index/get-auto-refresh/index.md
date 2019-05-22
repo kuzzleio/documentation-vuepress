@@ -6,7 +6,7 @@ title: getAutoRefresh
 
 # getAutoRefresh
 
-<SinceBadge version="1.0.0" />
+
 
 Returns the current `autoRefresh` status for the given index.
 

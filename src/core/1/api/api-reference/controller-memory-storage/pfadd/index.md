@@ -6,7 +6,7 @@ title: pfadd
 
 # pfadd
 
-<SinceBadge version="1.0.0" />
+
 
 Adds elements to a [HyperLogLog](https://en.wikipedia.org/wiki/HyperLogLog) data structure.
 

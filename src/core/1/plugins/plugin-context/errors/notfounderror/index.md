@@ -6,7 +6,7 @@ title: NotFoundError
 
 # NotFoundError
 
-<SinceBadge version="1.0.0" />
+
 
 Resource not found.
 

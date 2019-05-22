@@ -6,7 +6,7 @@ title: zremrangebyscore
 
 # zremrangebyscore
 
-<SinceBadge version="1.0.0" />
+
 
 Removes members from a sorted set, with a score between the provided interval.
 

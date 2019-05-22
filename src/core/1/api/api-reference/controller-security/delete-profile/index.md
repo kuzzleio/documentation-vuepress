@@ -6,7 +6,7 @@ title: deleteProfile
 
 # deleteProfile
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes a security profile.
 

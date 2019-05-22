@@ -6,7 +6,7 @@ title: mDeleteRoles
 
 # mDeleteRoles
 
-<SinceBadge version="1.0.0" />
+
 
 Deletes multiple security roles.
 

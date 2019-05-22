@@ -6,7 +6,7 @@ title: sunionstore
 
 # sunionstore
 
-<SinceBadge version="1.0.0" />
+
 
 Computes the union of multiple sets of unique values and stores it in a new set.
 

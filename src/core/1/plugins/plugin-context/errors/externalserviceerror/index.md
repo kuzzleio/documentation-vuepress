@@ -6,7 +6,7 @@ title: ExternalServiceError
 
 # ExternalServiceError
 
-<SinceBadge version="1.0.0" />
+
 
 External service failure.
 
