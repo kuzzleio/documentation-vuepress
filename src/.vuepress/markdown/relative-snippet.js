@@ -1,4 +1,5 @@
 const { fs, path } = require('@vuepress/shared-utils');
+const SNIPPET_EXTRACT = /\/\* *snippet:start *\*\/\n?((.|\n)*?)\/\* *snippet:end *\*\//;
 
 module.exports = function snippet(md, options = {}) {
   const root = options.root || process.cwd();
@@ -35,9 +36,13 @@ module.exports = function snippet(md, options = {}) {
       );
     }
     const filename = rawPath.split(/[{:\s]/).shift();
-    const content = fs.existsSync(filename)
+    let content = fs.existsSync(filename)
       ? fs.readFileSync(filename).toString()
       : 'Not found: ' + filename;
+    const match = SNIPPET_EXTRACT.exec(content);
+      if (match) {
+        content = match[1];
+      }
     const meta = rawPath.replace(filename, '');
 
     state.line = startLine + 1;

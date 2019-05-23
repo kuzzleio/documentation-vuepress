@@ -1,5 +1,6 @@
 ---
-layout: sdk.html.hbs
+code: true
+type: page
 title: RemoveAllListeners
 description: Removes all channels, or all channels from an event
 ---

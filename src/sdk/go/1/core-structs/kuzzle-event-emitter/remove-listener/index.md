@@ -1,5 +1,6 @@
 ---
-layout: sdk.html.hbs
+code: true
+type: page
 title: RemoveListener
 description: Removes a channel from an event
 ---

@@ -1,5 +1,6 @@
 ---
-layout: sdk.html.hbs
+code: true
+type: page
 title: AddListener
 description: Adds a new channel for an event
 ---

@@ -1,5 +1,6 @@
 ---
-layout: sdk.html.hbs
+code: true
+type: page
 title: Introduction
 description: KuzzleEventEmitter class
 order: 0

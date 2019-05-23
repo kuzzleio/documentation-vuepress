@@ -1,5 +1,6 @@
 ---
-layout: sdk.html.hbs
+code: true
+type: page
 title: Once
 description: Adds a one-time channel for an event
 ---

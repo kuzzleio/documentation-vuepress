@@ -1,5 +1,6 @@
 ---
-layout: sdk.html.hbs
+code: false
+type: page
 title: Extends the SDK
 description: Extend the SDK
 order: 410

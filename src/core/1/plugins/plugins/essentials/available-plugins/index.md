@@ -1,5 +1,6 @@
 ---
-layout: full.html.hbs
+code: false
+type: page
 title: Available plugins
 order: 0
 ---
