@@ -47,7 +47,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-scope": "^4.0.3",
     "eslint-visitor-keys": "^1.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mocha": "^6.1.4",
     "mock-require": "^3.0.3",
     "should": "^13.2.3",
